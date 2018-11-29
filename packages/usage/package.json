@@ -1,0 +1,11 @@
+{
+    "name": "@my-scope/usage",
+    "version": "1.0.0",
+    "dependencies": {
+        "@my-scope/alpha": "^1.0.0",
+        "@my-scope/beta": "^1.0.0"
+    },
+    "publishConfig": {
+        "registry": "http://localhost:4873"
+    }
+}
