@@ -8,7 +8,6 @@ before_install:
 install:
   - yarn --frozen-lockfile
 script:
-  - ls
   - yarn test:ci
 deploy:
   provider: script
