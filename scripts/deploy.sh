@@ -16,4 +16,4 @@ yarn config set _auth $AUTH
 git checkout master
 
 # Bump versions, commit, push to git, publish to npm/jfrog
-$(yarn bin)/lerna publish --no-verify-access --registry https://quid.jfrog.io/quid/api/npm/npm-quid/
+$(yarn bin)/lerna publish --yes --no-verify-access --registry https://quid.jfrog.io/quid/api/npm/npm-quid/
