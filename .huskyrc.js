@@ -1,5 +1,6 @@
 module.exports = {
   hooks: {
-    commitmsg: 'commitlint -e $GIT_PARAMS',
-  },
+    commitmsg: "commitlint -e $GIT_PARAMS",
+    "pre-commit": "lint-staged"
+  }
 };
