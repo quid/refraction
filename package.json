@@ -15,8 +15,7 @@
     "start": "styleguidist server",
     "build": "styleguidist build",
     "test": "jest --watch",
-    "test:ci": "jest --coverage",
-    "commitmsg": "commitlint -e $GIT_PARAMS"
+    "test:ci": "jest --coverage"
   },
   "commitlint": {
     "extends": [
