@@ -1,16 +1,17 @@
-EMAIL="automated+write@quid.com"
-NAME="automated.write"
-AUTH=$AUTOMATED_WRITE_AUTH
+NPM_EMAIL="automated+write@quid.com"
+NPM_NAME="automated.write"
+NPM_AUTH=$AUTOMATED_WRITE_AUTH
 
 # Setup Git user for automatic deploy
-git config --global user.email $EMAIL
-git config --global user.name $NAME
+git config --global user.email $GITHUB_EMAIL
+git config --global user.name $GITHUB_NAME
+git config --global user.password $GITHUB_TOKEN
 
 # Override the read-only npmrc with one with write permissions
 # the auth key is stored in Travis CI
-yarn config set username $NAME
-yarn config set email $EMAIL
-yarn config set _auth $AUTH
+yarn config set username $NPM_NAME
+yarn config set email $NPM_EMAIL
+yarn config set _auth $NPM_AUTH
 
 # Lerna can publish only if on master, Travis CI goes in detached state initially
 git checkout master
