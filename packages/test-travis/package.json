@@ -1,0 +1,6 @@
+{
+  "name": "@quid/test-travis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
