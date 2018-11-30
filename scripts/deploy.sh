@@ -5,7 +5,7 @@ NPM_AUTH=$AUTOMATED_WRITE_AUTH
 # Setup Git user for automatic deploy
 git config --global user.email $GITHUB_EMAIL
 git config --global user.name $GITHUB_NAME
-git config --global user.password $GITHUB_TOKEN
+git remote set-url origin https://${GITHUB_TOKEN}@github.com/quid/ui-framework.git
 
 # Override the read-only npmrc with one with write permissions
 # the auth key is stored in Travis CI
