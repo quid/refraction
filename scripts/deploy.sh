@@ -7,4 +7,4 @@ git config --global user.name "automated.write"
 bash scripts/npmrc.sh automated.write automated+write@quid.com $AUTOMATED_WRITE_AUTH > .npmrc
 
 # Bump versions, commit, push to git, publish to npm/jfrog
-lerna publish
+$(yarn bin)/lerna publish
