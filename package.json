@@ -17,11 +17,6 @@
     "test": "jest --watch",
     "test:ci": "jest --coverage"
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
   "lint-staged": {
     "*.{js,jsx,md,json}": [
       "prettier --write",
