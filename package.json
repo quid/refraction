@@ -2,7 +2,7 @@
   "name": "quid-ui",
   "version": "INDEPENDENT",
   "description": "The official Quid UI project",
-  "repository": "https://github.com/quid/ui-framework.git",
+  "repository": "git@github.com:quid/ui-framework.git",
   "author": "Federico Zivolo <fzivolo@quid.com>",
   "license": "UNLICENSED",
   "private": true,
