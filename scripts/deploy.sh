@@ -4,7 +4,10 @@ git config --global user.name "automated.write"
 
 # Override the read-only npmrc with one with write permissions
 # the auth key is stored in Travis CI
-bash scripts/npmrc.sh automated.write automated+write@quid.com $AUTOMATED_WRITE_AUTH > .npmrc
+bash scripts/npmrc.sh $AUTOMATED_WRITE_AUTH > .npmrc
+
+cat .npmrc
+npm whoami
 
 # Bump versions, commit, push to git, publish to npm/jfrog
 $(yarn bin)/lerna publish
