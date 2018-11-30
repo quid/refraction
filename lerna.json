@@ -1,11 +1,12 @@
 {
   "lerna": "3.5.1",
-  "version": "1.1.1",
+  "version": "INDEPENDENT",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "ignoreChanges": ["*.md"]
     }
   }
 }
