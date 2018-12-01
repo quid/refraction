@@ -2,5 +2,8 @@
   "name": "@quid/test-travis",
   "version": "1.0.3",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://quid.jfrog.io/quid/api/npm/npm-quid/"
+  }
 }
