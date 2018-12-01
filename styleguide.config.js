@@ -1,4 +1,4 @@
 module.exports = {
-  styleguideDir: './gh-pages',
+  styleguideDir: './docs',
   components: 'packages/**/*.js',
 };
