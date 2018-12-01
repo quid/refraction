@@ -7,7 +7,7 @@ products we build at Quid!
 
 ## Committing and publishing
 
-This repository follows the [conventional commits][conventional-commits] convention,
+This repository follows the [conventional commits][conventional-commits] specification,
 in addition with the Lerna `publish` command.
 
 This means that the package versions will automatically bump accordingly to the commit
