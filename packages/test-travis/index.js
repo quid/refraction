@@ -1,1 +1,2 @@
+// comment
 module.exports = 'foobar';
