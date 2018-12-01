@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/quid/ui-framework/compare/v1.0.2...v1.0.3) (2018-12-01)
+
+### Bug Fixes
+
+- add comment ([aa7c353](https://github.com/quid/ui-framework/commit/aa7c353))
+
 ## [1.0.2](https://github.com/quid/ui-framework/compare/v1.0.1...v1.0.2) (2018-11-30)
 
 ### Bug Fixes
