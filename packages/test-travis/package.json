@@ -1,6 +1,6 @@
 {
   "name": "@quid/test-travis",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
