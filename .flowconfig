@@ -1,0 +1,15 @@
+[ignore]
+# Ignore any node_modules json file that may contain invalid syntax
+# they are usually used inside tests
+.*/node_modules/.*[^e]\.json$
+.*/node_modules/.*\(lib\|test\).*\.json$
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
