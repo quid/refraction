@@ -1,0 +1,21 @@
+{
+  "name": "@quid/example",
+  "version": "1.0.0",
+  "description": "Minimal example to create a React library using Emotion in Quid UI",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "microbundle watch",
+    "prepare": "microbundle build"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.1",
+    "@emotion/styled": "^10.0.1"
+  },
+  "devDependencies": {
+    "microbundle": "^0.8.3"
+  }
+}
