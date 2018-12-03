@@ -14,8 +14,7 @@
   "scripts": {
     "start": "styleguidist server",
     "build": "styleguidist build",
-    "test": "jest --watch",
-    "test:ci": "jest --coverage"
+    "test": "jest --watch"
   },
   "lint-staged": {
     "*.{js,jsx,md,json}": [

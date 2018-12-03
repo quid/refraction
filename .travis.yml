@@ -14,13 +14,18 @@ install:
   - yarn --frozen-lockfile
 
 # Here we run all our tests
-script:
-  - yarn test:ci
-
-# The deploy script will run only on master
-deploy:
-  skip_cleanup: true # Keep all the artifacts generated on prev steps
-  provider: script
-  script: bash scripts/deploy.sh
-  on:
-    branch: master
+jobs:
+  include:
+    - stage: type checks
+      script: flow check
+    - stage: unit tests
+      script: jest --coverage
+    - stage: publish to Artifactory
+      script: skip
+      deploy:
+        skip_cleanup: true # Keep all the artifacts generated on prev steps
+        provider: script
+        script: bash scripts/deploy.sh
+        # The deploy script will run only on master
+        on:
+          branch: master
