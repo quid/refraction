@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a button 1`] = `
+.emotion-0 {
+  color: red;
+}
+
+<Styled(button)>
+  <button
+    className="emotion-0"
+  >
+    foo
+  </button>
+</Styled(button)>
+`;
