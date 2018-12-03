@@ -18,6 +18,16 @@ jobs:
   include:
     - stage: type checks and unit tests
       script: flow check && jest --coverage
+    - stage: publish gh-pages
+      script: yarn build
+      deploy:
+        provider: pages
+        skip-cleanup: true
+        github-token: $GITHUB_TOKEN
+        keep-history: true
+        local-dir: styleguide
+        on:
+          branch: master
     - stage: publish to Artifactory
       script: skip
       deploy:
