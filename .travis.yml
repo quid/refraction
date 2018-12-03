@@ -16,10 +16,8 @@ install:
 # Here we run all our tests
 jobs:
   include:
-    - stage: type checks
-      script: flow check
-    - stage: unit tests
-      script: jest --coverage
+    - stage: type checks and unit tests
+      script: flow check && jest --coverage
     - stage: publish to Artifactory
       script: skip
       deploy:
