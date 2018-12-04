@@ -17,7 +17,7 @@ install:
 jobs:
   include:
     - stage: type checks and unit tests
-      script: flow check && jest --coverage
+      script: flow check && react-app-rewired test
     - stage: publish gh-pages
       script: yarn build
       deploy:
