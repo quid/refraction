@@ -9,13 +9,14 @@
   "private": true,
   "scripts": {
     "start": "microbundle watch",
-    "prepare": "microbundle build"
+    "prepare": "microbundle build && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist"
   },
   "dependencies": {
     "@emotion/core": "^10.0.1",
     "@emotion/styled": "^10.0.1"
   },
   "devDependencies": {
+    "flow-copy-source": "^2.0.2",
     "microbundle": "^0.8.3"
   }
 }
