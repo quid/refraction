@@ -19,7 +19,7 @@ jobs:
     - stage: type checks and unit tests
       script:
         - flow check
-        - react-app-rewired test
+        - react-app-rewired test --coverage
     - stage: publish gh-pages
       script: yarn build
       deploy:
