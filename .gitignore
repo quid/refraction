@@ -1,6 +1,7 @@
 node_modules
 *.log
 styleguide
+dist
 
 # OS generated files
 .DS_Store

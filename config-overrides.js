@@ -14,8 +14,15 @@ const {
  * create-react-app to be able to tweak it without ejecting the
  * project. Be careful!
  */
-module.exports = override(
-  babelInclude([path.resolve('packages')]),
-  useBabelRc(),
-  useEslintRc()
-);
+module.exports = {
+  webpack: override(
+    babelInclude([path.resolve('packages')]),
+    useBabelRc(),
+    useEslintRc()
+  ),
+  jest: config => {
+    // create-react-app looks for tests in `src`, we look in `packages`
+    config.testMatch = config.testMatch.map(m => m.replace('src', 'packages'));
+    return config;
+  },
+};
