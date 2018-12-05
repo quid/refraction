@@ -58,7 +58,7 @@
     "jest-emotion": "^10.0.2",
     "lerna": "~3.3.2",
     "lint-staged": "^8.1.0",
-    "microbundle": "^0.8.3",
+    "microbundle": "https://github.com/developit/microbundle.git#remove_import_pruning",
     "prettier": "^1.15.3",
     "react": "16.3",
     "react-app-rewired": "^1.6.2",
