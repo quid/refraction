@@ -1,11 +1,2 @@
 // @flow
-// @flow
-// @flow
-// @flow
-// @flow
-// @flow
-// @flow
-// @flow
-// @flow
-// @flow
-// @flow
+export default 'Hello, World!';
