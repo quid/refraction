@@ -52,8 +52,11 @@ Additionally, it will automatically prepare your package to be bundled
 using [microbundle][microbundle] and ready to be consumed by [Flow][flow] on
 any consumer application.
 
-You can build your new package running `yarn prepare` and can build it in
-watch mode with `yarn start`.
+The newly created package will have the following commands available:
+
+- `yarn prepare` _(builds the library in `/dist`)_
+- `yarn start` _(builds the library in `/dist` and watches for changes)_
+- `yarn test` _(starts the Jest tests of this package)_
 
 ## Hacking a package
 
