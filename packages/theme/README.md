@@ -41,8 +41,8 @@ const Button = styled.button`
 
 ### `textStyles`
 
-This utility will provide a set of CSS class names to style a text
-according to the Quid UI guidelines.
+This utility will provide a set of CSS-in-JS compatible rules
+to style a text according to the Quid UI guidelines.
 
 The available styles are:
 
