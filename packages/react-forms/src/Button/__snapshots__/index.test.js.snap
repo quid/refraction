@@ -1,206 +1,374 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`applies Button classes to child if child is Icon 1`] = `
-.emotion-0 {
-  font-family: 'quid-icons' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: inherit;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  font-feature-settings: 'liga';
-  font-variant-ligatures: discretionary-ligatures;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 1em;
-  width: 1em;
-}
-
-<button
-  className="Button Button--secondary"
-  data-action="foo"
-  disabled={false}
-  type="button"
->
-  <div
-    className="Button__inner"
-  >
-    <i
-      className="Button__icon Button__icon--alone emotion-0 emotion-1"
-      name="arrow"
-    >
-      arrow
-    </i>
-  </div>
-</button>
-`;
-
-exports[`applies Button classes to child if child is Icon with near text 1`] = `
-.emotion-0 {
-  font-family: 'quid-icons' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: inherit;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  font-feature-settings: 'liga';
-  font-variant-ligatures: discretionary-ligatures;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 1em;
-  width: 1em;
-}
-
-<button
-  className="Button Button--secondary"
-  disabled={false}
-  type="button"
->
-  <div
-    className="Button__inner"
-  >
-    <i
-      className="Button__icon Button__icon--side emotion-0 emotion-1"
-      name="arrow"
-    >
-      arrow
-    </i>
-    Foobar
-  </div>
-</button>
-`;
-
-exports[`does not apply Button classes to child if child is not Icon 1`] = `
-<button
-  className="Button Button--secondary"
-  data-action="foo"
-  disabled={false}
-  type="button"
->
-  <div
-    className="Button__inner"
-  >
-    <div>
-      Hello, World!
-    </div>
-  </div>
-</button>
-`;
-
 exports[`renders a Button with external link 1`] = `
-<a
-  className="Button Button--secondary"
+.emotion-0 {
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: inherit;
+  -webkit-letter-spacing: 0.08em;
+  -moz-letter-spacing: 0.08em;
+  -ms-letter-spacing: 0.08em;
+  letter-spacing: 0.08em;
+  font-family: Asap,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 1.23;
+  font-size: 13px;
+  line-height: 1.23;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 2px;
+  line-height: 2.3;
+  padding-left: 0.769em;
+  padding-right: 0.769em;
+  -webkit-transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  color: #121212;
+  background-color: #1ED7D1;
+}
+
+.emotion-0:hover {
+  background-color: hsl(178.10000000000002,75.5%,43.2%);
+}
+
+.emotion-0:active {
+  background-color: hsl(178.10000000000002,75.5%,38.4%);
+}
+
+.emotion-0:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.emotion-0:focus-visible {
+  box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
+}
+
+<Styled(button)
+  as="a"
   data-action="foo"
   href="https://example.org"
+  importance="primary"
 >
-  <div
-    className="Button__inner"
+  <a
+    className="emotion-0"
+    data-action="foo"
+    href="https://example.org"
   >
     Hello, World!
-  </div>
-</a>
+  </a>
+</Styled(button)>
 `;
 
-exports[`renders a Button with link 1`] = `""`;
+exports[`renders a Button with link 1`] = `
+<Styled(button)
+  as={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "children": "Hello, World!",
+            "className": "css-1kthtkh",
+            "data-action": "foo",
+            "importance": "primary",
+            "replace": false,
+            "to": "/",
+          },
+          Object {
+            "router": undefined,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  data-action="foo"
+  importance="primary"
+  to="/"
+/>
+`;
 
 exports[`renders a button using the text property 1`] = `
-<button
-  className="Button Button--secondary"
+.emotion-0 {
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: inherit;
+  -webkit-letter-spacing: 0.08em;
+  -moz-letter-spacing: 0.08em;
+  -ms-letter-spacing: 0.08em;
+  letter-spacing: 0.08em;
+  font-family: Asap,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 1.23;
+  font-size: 13px;
+  line-height: 1.23;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 2px;
+  line-height: 2.3;
+  padding-left: 0.769em;
+  padding-right: 0.769em;
+  -webkit-transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  color: #121212;
+  background-color: #1ED7D1;
+}
+
+.emotion-0:hover {
+  background-color: hsl(178.10000000000002,75.5%,43.2%);
+}
+
+.emotion-0:active {
+  background-color: hsl(178.10000000000002,75.5%,38.4%);
+}
+
+.emotion-0:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.emotion-0:focus-visible {
+  box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
+}
+
+<Styled(button)
+  as="button"
   data-action="foo"
-  disabled={false}
-  type="button"
+  importance="primary"
+  text="Hello, World!"
 >
-  <div
-    className="Button__inner"
-  >
-    Hello, World!
-  </div>
-</button>
+  <button
+    className="emotion-0"
+    data-action="foo"
+  />
+</Styled(button)>
 `;
 
 exports[`renders a disabled Button with external link 1`] = `
-<a
-  className="Button Button--secondary Button--disabled"
+.emotion-0 {
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: inherit;
+  -webkit-letter-spacing: 0.08em;
+  -moz-letter-spacing: 0.08em;
+  -ms-letter-spacing: 0.08em;
+  letter-spacing: 0.08em;
+  font-family: Asap,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 1.23;
+  font-size: 13px;
+  line-height: 1.23;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 2px;
+  line-height: 2.3;
+  padding-left: 0.769em;
+  padding-right: 0.769em;
+  -webkit-transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  color: #121212;
+  background-color: #1ED7D1;
+  cursor: default;
+}
+
+.emotion-0:hover {
+  background-color: hsl(178.10000000000002,75.5%,43.2%);
+}
+
+.emotion-0:active {
+  background-color: hsl(178.10000000000002,75.5%,38.4%);
+}
+
+.emotion-0:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.emotion-0:focus-visible {
+  box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
+}
+
+.emotion-0,
+.emotion-0:hover,
+.emotion-0:focus,
+.emotion-0:active {
+  opacity: 0.4;
+}
+
+<Styled(button)
+  as="a"
   data-action="foo"
+  disabled={true}
+  href="https://example.org"
+  importance="primary"
 >
-  <div
-    className="Button__inner"
+  <a
+    className="emotion-0"
+    data-action="foo"
+    disabled={true}
+    href="https://example.org"
   >
     Hello, World!
-  </div>
-</a>
+  </a>
+</Styled(button)>
 `;
 
 exports[`renders a link without href if \`to\` is given but \`disabled={true}\` 1`] = `
-<a
-  className="Button Button--secondary Button--disabled"
+.emotion-0 {
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: inherit;
+  -webkit-letter-spacing: 0.08em;
+  -moz-letter-spacing: 0.08em;
+  -ms-letter-spacing: 0.08em;
+  letter-spacing: 0.08em;
+  font-family: Asap,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 1.23;
+  font-size: 13px;
+  line-height: 1.23;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 2px;
+  line-height: 2.3;
+  padding-left: 0.769em;
+  padding-right: 0.769em;
+  -webkit-transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  color: #121212;
+  background-color: #1ED7D1;
+  cursor: default;
+}
+
+.emotion-0:hover {
+  background-color: hsl(178.10000000000002,75.5%,43.2%);
+}
+
+.emotion-0:active {
+  background-color: hsl(178.10000000000002,75.5%,38.4%);
+}
+
+.emotion-0:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.emotion-0:focus-visible {
+  box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
+}
+
+.emotion-0,
+.emotion-0:hover,
+.emotion-0:focus,
+.emotion-0:active {
+  opacity: 0.4;
+}
+
+<Styled(button)
+  as="a"
   data-action="foo"
+  disabled={true}
+  importance="primary"
+  to="/"
 >
-  <div
-    className="Button__inner"
+  <a
+    className="emotion-0"
+    data-action="foo"
+    disabled={true}
+    to="/"
   >
     Hello, World!
-  </div>
-</a>
-`;
-
-exports[`renders properly with isGroupChild property 1`] = `
-<button
-  className="Button Button--secondary Button--groupChild"
-  disabled={false}
-  type="button"
->
-  <div
-    className="Button__inner"
-  />
-</button>
+  </a>
+</Styled(button)>
 `;
 
 exports[`renders the expected markup 1`] = `
-<button
-  className="Button Button--secondary"
+.emotion-0 {
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: inherit;
+  -webkit-letter-spacing: 0.08em;
+  -moz-letter-spacing: 0.08em;
+  -ms-letter-spacing: 0.08em;
+  letter-spacing: 0.08em;
+  font-family: Asap,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 1.23;
+  font-size: 13px;
+  line-height: 1.23;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 2px;
+  line-height: 2.3;
+  padding-left: 0.769em;
+  padding-right: 0.769em;
+  -webkit-transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  color: #121212;
+  background-color: #1ED7D1;
+}
+
+.emotion-0:hover {
+  background-color: hsl(178.10000000000002,75.5%,43.2%);
+}
+
+.emotion-0:active {
+  background-color: hsl(178.10000000000002,75.5%,38.4%);
+}
+
+.emotion-0:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.emotion-0:focus-visible {
+  box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
+}
+
+<Styled(button)
+  as="button"
   data-action="foo"
-  disabled={false}
-  type="button"
+  importance="primary"
 >
-  <div
-    className="Button__inner"
+  <button
+    className="emotion-0"
+    data-action="foo"
   >
     Hello, World!
-  </div>
-</button>
+  </button>
+</Styled(button)>
 `;
