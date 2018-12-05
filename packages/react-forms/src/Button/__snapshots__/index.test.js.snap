@@ -46,6 +46,7 @@ exports[`renders a Button with external link 1`] = `
 }
 
 .emotion-0:focus-visible {
+  outline: 0;
   box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
 }
 
@@ -73,7 +74,7 @@ exports[`renders a Button with link 1`] = `
         Array [
           Object {
             "children": "Hello, World!",
-            "className": "css-1kthtkh",
+            "className": "css-9z1v7q",
             "data-action": "foo",
             "importance": "primary",
             "replace": false,
@@ -144,6 +145,7 @@ exports[`renders a button using the text property 1`] = `
 }
 
 .emotion-0:focus-visible {
+  outline: 0;
   box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
 }
 
@@ -207,6 +209,7 @@ exports[`renders a disabled Button with external link 1`] = `
 }
 
 .emotion-0:focus-visible {
+  outline: 0;
   box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
 }
 
@@ -282,6 +285,7 @@ exports[`renders a link without href if \`to\` is given but \`disabled={true}\` 
 }
 
 .emotion-0:focus-visible {
+  outline: 0;
   box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
 }
 
@@ -356,6 +360,7 @@ exports[`renders the expected markup 1`] = `
 }
 
 .emotion-0:focus-visible {
+  outline: 0;
   box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
 }
 
