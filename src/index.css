@@ -1,0 +1,37 @@
+html {
+  letter-spacing: 0.05em !important;
+  font-family: Asap !important;
+  font-size: 13px !important;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.DemoTable {
+  width: 100%;
+  overflow: auto;
+  margin-top: 3em;
+}
+.DemoTable:first-child {
+  margin-top: 0;
+}
+
+.DemoTable th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.DemoTable th,
+.DemoTable td {
+  padding: 1em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.DemoTable td > hr {
+  border: 0;
+  border-bottom: 1em solid var(--gray1);
+}
