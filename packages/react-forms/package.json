@@ -1,0 +1,24 @@
+{
+  "name": "@quid/react-forms",
+  "version": "1.0.0",
+  "description": "Collection of form-related React components, such as buttons, inputs, etc...",
+  "main": "dist/index.js",
+  "main:umd": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "microbundle watch",
+    "prepare": "microbundle build && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.2",
+    "@emotion/styled": "^10.0.2",
+    "@quid/theme": "^1.0.0",
+    "color": "^3.1.0",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "flow-copy-source": "^2.0.2",
+    "microbundle": "^0.8.3"
+  }
+}
