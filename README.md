@@ -52,6 +52,19 @@ Additionally, it will automatically prepare your package to be bundled
 using [microbundle][microbundle] and ready to be consumed by [Flow][flow] on
 any consumer application.
 
+You can build your new package running `yarn prepare` and can build it in
+watch mode with `yarn start`.
+
+## Hacking a package
+
+Most of the packages available in this code-base export React components.
+
+To test the components while you are working on their code, you can run
+`yarn start` on the root of the project, this will start the styleguide
+playground, where you'll find your components ready to be tested.
+
+Any code change will be reflected instantly on the playground.
+
 ## Running the playground
 
 You can run our style guide playground by running `yarn start` on the root
