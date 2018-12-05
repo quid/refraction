@@ -38,9 +38,25 @@ The allowed commit prefixes are:
 - `style` _(formatting, missing semi colons, etc; no code change)_
 - `test` _(adding missing tests, refactoring tests; no production code change)_
 
+## Creating a new package
+
+You can quickly bootstrap a new package running:
+
+```
+yarn create-package
+```
+
+It will ask for a name and a description and will create the new package
+in the `packages` folder.
+Additionally, it will automatically prepare your package to be bundled
+using [microbundle][microbundle] and ready to be consumed by [Flow][flow] on
+any consumer application.
+
 ## Running the playground
 
 You can run our style guide playground by running `yarn start` on the root
 of this repository.
 
 [conventional-commits]: https://www.conventionalcommits.org/en/v1.0.0-beta.2/
+[microbundle]: https://github.com/developit/microbundle
+[flow]: https://flow.org/
