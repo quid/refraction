@@ -1,5 +1,3 @@
-## @quid/theme
-
 This package provides a set of colors, sizes, and font styles, used to style
 the applications created at Quid.
 

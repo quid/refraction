@@ -1,5 +1,3 @@
-## Package Name
-
 Your package description, use this file to give as much details
 as possible to help future consumers.
 
