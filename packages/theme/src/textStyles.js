@@ -1,6 +1,6 @@
 // @flow
 import { css } from '@emotion/core';
-import { withFallback as wf } from '.';
+import wf from './withFallback';
 
 const primaryFontFamily = [
   'Asap',

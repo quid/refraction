@@ -1,27 +1,14 @@
 // @flow
 import React, { type Node } from 'react';
 import { ThemeProvider } from 'emotion-theming';
-import { type SerializedStyles } from '@emotion/utils';
 
-import colors from './colors';
+import themeData from './theme';
 import * as themes from './themes';
-import sizes from './sizes';
-import textStyles from './textStyles';
-
-const themeData = {
-  light: {
-    colors,
-    sizes,
-    textStyles,
-    ...themes.light,
-  },
-  dark: {
-    colors,
-    sizes,
-    textStyles,
-    ...themes.dark,
-  },
-};
+export { themes };
+export { default as colors } from './colors';
+export { default as sizes } from './sizes';
+export { default as textStyles } from './textStyles';
+export { default as withFallback } from './withFallback';
 
 type Props = {
   theme?: 'dark' | 'light',
@@ -37,17 +24,4 @@ const QuidThemeProvider = ({ theme, children, ...props }: Props) => (
   />
 );
 
-// Use this function in your components to provide a fallback theme in case
-// no ThemeProvider is available
-const withFallback = (fn: Object => SerializedStyles) => ({
-  theme,
-  ...props
-}: {
-  theme: Object,
-}) => {
-  const t = Object.keys(theme).length ? theme : themeData.light;
-  return fn({ theme: t, ...props });
-};
-
-export { colors, themes, sizes, textStyles, withFallback };
 export default QuidThemeProvider;
