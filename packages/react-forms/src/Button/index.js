@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 import Color from 'color';
-import { withFallback as wf } from '@quid/theme';
+import { withFallback as wf, textStyles } from '@quid/theme';
 
 const IMPORTANCE_SECONDARY: 'secondary' = 'secondary';
 const IMPORTANCE_PRIMARY: 'primary' = 'primary';
@@ -57,13 +57,13 @@ const reset = css`
 const BaseButton = styled.button`
   ${reset}
 
+  ${textStyles('normal', 'bold')}
   display: inline-block;
   border-radius: 2px;
   line-height: ${props => (props.size === 'small' ? 1.9 : 2.3)};
   padding-left: 0.769em;
   padding-right: 0.769em;
   transition: padding 0.2s ease-in-out, background 0.2s ease-in-out;
-  font-weight: bold;
   color: ${wf(props => props.theme.primary)};
 
   ${wf(props => {
