@@ -11,9 +11,9 @@ const ignore = [
 
 const packages = fs
   .readdirSync('./packages')
-  .filter(pkg => !pkg.startsWith('.'))
-  .filter(pkg => pkg !== '_example')
+  .filter(pkg => fs.existsSync(`packages/${pkg}/README.md`))
   .map(pkg => ({
+    name: pkg,
     content: `packages/${pkg}/README.md`,
     components: `packages/${pkg}/**/*.js`,
     ignore,
