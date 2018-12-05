@@ -89,6 +89,7 @@ const BaseButton = styled.button`
         outline: 0;
       }
       &:focus-visible {
+        outline: 0;
         box-shadow: 0 0 0 0.5px white, 0 0 2px 2px ${color};
       }
     `;
