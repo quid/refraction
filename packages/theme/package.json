@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "start": "microbundle watch",
-    "prepare": "microbundle build && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist"
+    "prepare": "microbundle build && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
+    "test": "cd ../.. && yarn test --runTestsByPath packages/theme"
   },
   "dependencies": {
     "@emotion/core": "^10.0.2",
