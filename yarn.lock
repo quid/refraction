@@ -8933,44 +8933,6 @@ methods@~1.1.2:
   resolved "https://registry.npmjs.org/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
-microbundle@^0.8.3:
-  version "0.8.3"
-  resolved "https://registry.npmjs.org/microbundle/-/microbundle-0.8.3.tgz#9e8b7988ddeb8b0e316709949c77f64789823ec6"
-  integrity sha512-vJHzfwWFG4Q6Oly+gVE4mm/3t+eqtG+VeHaHNo5ev6i00XoMXJJ5RbTg7Rawh4r5ZkltjLEgk4kICk+4WUcj3w==
-  dependencies:
-    "@babel/core" "^7.1.6"
-    "@babel/plugin-proposal-class-properties" "7.1.0"
-    "@babel/plugin-syntax-jsx" "^7.0.0"
-    "@babel/polyfill" "^7.0.0"
-    asyncro "^3.0.0"
-    autoprefixer "^9.0.0"
-    babel-plugin-transform-async-to-promises "^0.8.1"
-    brotli-size "^0.0.3"
-    camelcase "^5.0.0"
-    chalk "^2.4.0"
-    cssnano "^4.1.7"
-    es6-promisify "^6.0.1"
-    gzip-size "^5.0.0"
-    pretty-bytes "^5.1.0"
-    rollup "^0.67.3"
-    rollup-plugin-babel "^4.1.0-0"
-    rollup-plugin-buble "^0.19.4"
-    rollup-plugin-bundle-size "^1.0.1"
-    rollup-plugin-commonjs "^9.0.0"
-    rollup-plugin-es3 "^1.1.0"
-    rollup-plugin-flow "^1.1.1"
-    rollup-plugin-node-resolve "^3.3.0"
-    rollup-plugin-postcss "^1.6.1"
-    rollup-plugin-preserve-shebang "^0.1.6"
-    rollup-plugin-sizes "^0.4.2"
-    rollup-plugin-strict-alias "^1.0.0"
-    rollup-plugin-terser "^3.0.0"
-    rollup-plugin-typescript2 "^0.18.0"
-    sade "^1.4.0"
-    tiny-glob "^0.2.6"
-    tslib "^1.9.0"
-    typescript ">=2.8.3"
-
 "microbundle@https://github.com/developit/microbundle.git#remove_import_pruning":
   version "0.8.3"
   resolved "https://github.com/developit/microbundle.git#3176b69754562a1e1913ca4d2917a8ebb79a972d"
@@ -12602,11 +12564,6 @@ rollup-plugin-sizes@^0.4.2:
     lodash.foreach "^4.5.0"
     lodash.sumby "^4.6.0"
     module-details-from-path "^1.0.3"
-
-rollup-plugin-strict-alias@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/rollup-plugin-strict-alias/-/rollup-plugin-strict-alias-1.0.0.tgz#7079ee25785c5f9506e4430b5abff4c581ac8cfc"
-  integrity sha1-cHnuJXhcX5UG5EMLWr/0xYGsjPw=
 
 rollup-plugin-terser@^3.0.0:
   version "3.0.0"

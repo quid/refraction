@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "flow-copy-source": "^2.0.2",
-    "microbundle": "^0.8.3"
+    "microbundle": "https://github.com/developit/microbundle.git#remove_import_pruning"
   }
 }
