@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`applies Button classes to child if child is Icon 1`] = `
+.emotion-0 {
+  font-family: 'quid-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-feature-settings: 'liga';
+  font-variant-ligatures: discretionary-ligatures;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 1em;
+  width: 1em;
+}
+
+<button
+  className="Button Button--secondary"
+  data-action="foo"
+  disabled={false}
+  type="button"
+>
+  <div
+    className="Button__inner"
+  >
+    <i
+      className="Button__icon Button__icon--alone emotion-0 emotion-1"
+      name="arrow"
+    >
+      arrow
+    </i>
+  </div>
+</button>
+`;
+
+exports[`applies Button classes to child if child is Icon with near text 1`] = `
+.emotion-0 {
+  font-family: 'quid-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-feature-settings: 'liga';
+  font-variant-ligatures: discretionary-ligatures;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 1em;
+  width: 1em;
+}
+
+<button
+  className="Button Button--secondary"
+  disabled={false}
+  type="button"
+>
+  <div
+    className="Button__inner"
+  >
+    <i
+      className="Button__icon Button__icon--side emotion-0 emotion-1"
+      name="arrow"
+    >
+      arrow
+    </i>
+    Foobar
+  </div>
+</button>
+`;
+
+exports[`does not apply Button classes to child if child is not Icon 1`] = `
+<button
+  className="Button Button--secondary"
+  data-action="foo"
+  disabled={false}
+  type="button"
+>
+  <div
+    className="Button__inner"
+  >
+    <div>
+      Hello, World!
+    </div>
+  </div>
+</button>
+`;
+
+exports[`renders a Button with external link 1`] = `
+<a
+  className="Button Button--secondary"
+  data-action="foo"
+  href="https://example.org"
+>
+  <div
+    className="Button__inner"
+  >
+    Hello, World!
+  </div>
+</a>
+`;
+
+exports[`renders a Button with link 1`] = `""`;
+
+exports[`renders a button using the text property 1`] = `
+<button
+  className="Button Button--secondary"
+  data-action="foo"
+  disabled={false}
+  type="button"
+>
+  <div
+    className="Button__inner"
+  >
+    Hello, World!
+  </div>
+</button>
+`;
+
+exports[`renders a disabled Button with external link 1`] = `
+<a
+  className="Button Button--secondary Button--disabled"
+  data-action="foo"
+>
+  <div
+    className="Button__inner"
+  >
+    Hello, World!
+  </div>
+</a>
+`;
+
+exports[`renders a link without href if \`to\` is given but \`disabled={true}\` 1`] = `
+<a
+  className="Button Button--secondary Button--disabled"
+  data-action="foo"
+>
+  <div
+    className="Button__inner"
+  >
+    Hello, World!
+  </div>
+</a>
+`;
+
+exports[`renders properly with isGroupChild property 1`] = `
+<button
+  className="Button Button--secondary Button--groupChild"
+  disabled={false}
+  type="button"
+>
+  <div
+    className="Button__inner"
+  />
+</button>
+`;
+
+exports[`renders the expected markup 1`] = `
+<button
+  className="Button Button--secondary"
+  data-action="foo"
+  disabled={false}
+  type="button"
+>
+  <div
+    className="Button__inner"
+  >
+    Hello, World!
+  </div>
+</button>
+`;
