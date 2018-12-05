@@ -47,7 +47,7 @@ yarn create-package
 ```
 
 It will ask for a name and a description and will create the new package
-in the `packages` folder.
+in the `packages` folder.  
 Additionally, it will automatically prepare your package to be bundled
 using [microbundle][microbundle] and ready to be consumed by [Flow][flow] on
 any consumer application.
