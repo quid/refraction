@@ -16,7 +16,8 @@
     "build": "styleguidist build",
     "create-package": "builder-init $(pwd)/packages/react-package-template",
     "test": "react-app-rewired test",
-    "format": "eslint \"**/*.js\" --fix && prettier \"**/*.{js,md,json}\" --write"
+    "format": "eslint \"**/*.js\" --fix && prettier \"**/*.{js,md,json}\" --write",
+    "postinstall": "lerna run prepare"
   },
   "lint-staged": {
     "*.{js,jsx,md,json}": [
