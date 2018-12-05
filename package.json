@@ -33,7 +33,11 @@
         "branches": 100,
         "lines": 100
       }
-    }
+    },
+    "coveragePathIgnorePatterns": [
+      "src",
+      ".*mock\\.js$"
+    ]
   },
   "dependencies": {
     "@quid/theme": "^1.0.0"
