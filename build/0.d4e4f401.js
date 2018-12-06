@@ -1,5 +1,113 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[0],{
 
+/***/ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _assertThisInitialized; });\nfunction _assertThisInitialized(self) {\n  if (self === void 0) {\n    throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");\n  }\n\n  return self;\n}\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _classCallCheck; });\nfunction _classCallCheck(instance, Constructor) {\n  if (!(instance instanceof Constructor)) {\n    throw new TypeError(\"Cannot call a class as a function\");\n  }\n}\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/esm/classCallCheck.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/createClass.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/createClass.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _createClass; });\nfunction _defineProperties(target, props) {\n  for (var i = 0; i < props.length; i++) {\n    var descriptor = props[i];\n    descriptor.enumerable = descriptor.enumerable || false;\n    descriptor.configurable = true;\n    if (\"value\" in descriptor) descriptor.writable = true;\n    Object.defineProperty(target, descriptor.key, descriptor);\n  }\n}\n\nfunction _createClass(Constructor, protoProps, staticProps) {\n  if (protoProps) _defineProperties(Constructor.prototype, protoProps);\n  if (staticProps) _defineProperties(Constructor, staticProps);\n  return Constructor;\n}\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/esm/createClass.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _getPrototypeOf; });\nfunction _getPrototypeOf(o) {\n  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {\n    return o.__proto__ || Object.getPrototypeOf(o);\n  };\n  return _getPrototypeOf(o);\n}\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/inherits.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/inherits.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _inherits; });\n/* harmony import */ var _setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setPrototypeOf */ \"./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js\");\n\nfunction _inherits(subClass, superClass) {\n  if (typeof superClass !== \"function\" && superClass !== null) {\n    throw new TypeError(\"Super expression must either be null or a function\");\n  }\n\n  subClass.prototype = Object.create(superClass && superClass.prototype, {\n    constructor: {\n      value: subClass,\n      writable: true,\n      configurable: true\n    }\n  });\n  if (superClass) Object(_setPrototypeOf__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(subClass, superClass);\n}\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/esm/inherits.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _objectWithoutProperties; });\n/* harmony import */ var _objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./objectWithoutPropertiesLoose */ \"./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js\");\n\nfunction _objectWithoutProperties(source, excluded) {\n  if (source == null) return {};\n  var target = Object(_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(source, excluded);\n  var key, i;\n\n  if (Object.getOwnPropertySymbols) {\n    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);\n\n    for (i = 0; i < sourceSymbolKeys.length; i++) {\n      key = sourceSymbolKeys[i];\n      if (excluded.indexOf(key) >= 0) continue;\n      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;\n      target[key] = source[key];\n    }\n  }\n\n  return target;\n}\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _objectWithoutPropertiesLoose; });\nfunction _objectWithoutPropertiesLoose(source, excluded) {\n  if (source == null) return {};\n  var target = {};\n  var sourceKeys = Object.keys(source);\n  var key, i;\n\n  for (i = 0; i < sourceKeys.length; i++) {\n    key = sourceKeys[i];\n    if (excluded.indexOf(key) >= 0) continue;\n    target[key] = source[key];\n  }\n\n  return target;\n}\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _possibleConstructorReturn; });\n/* harmony import */ var _helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/esm/typeof */ \"./node_modules/@babel/runtime/helpers/esm/typeof.js\");\n/* harmony import */ var _assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assertThisInitialized */ \"./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js\");\n\n\nfunction _possibleConstructorReturn(self, call) {\n  if (call && (Object(_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(call) === \"object\" || typeof call === \"function\")) {\n    return call;\n  }\n\n  return Object(_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(self);\n}\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _setPrototypeOf; });\nfunction _setPrototypeOf(o, p) {\n  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {\n    o.__proto__ = p;\n    return o;\n  };\n\n  return _setPrototypeOf(o, p);\n}\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js?");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js":
 /*!**************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js ***!
@@ -9,6 +117,18 @@
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _taggedTemplateLiteral; });\nfunction _taggedTemplateLiteral(strings, raw) {\n  if (!raw) {\n    raw = strings.slice(0);\n  }\n\n  return Object.freeze(Object.defineProperties(strings, {\n    raw: {\n      value: Object.freeze(raw)\n    }\n  }));\n}\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/typeof.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/typeof.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _typeof; });\nfunction _typeof2(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof2(obj); }\n\nfunction _typeof(obj) {\n  if (typeof Symbol === \"function\" && _typeof2(Symbol.iterator) === \"symbol\") {\n    _typeof = function _typeof(obj) {\n      return _typeof2(obj);\n    };\n  } else {\n    _typeof = function _typeof(obj) {\n      return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : _typeof2(obj);\n    };\n  }\n\n  return _typeof(obj);\n}\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/esm/typeof.js?");
 
 /***/ }),
 
@@ -5339,7 +5459,7 @@ eval("\nvar content = __webpack_require__(/*! !../../react-styleguidist/loaders/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nif (false) {}\n\nmodule.exports = {\n    'config': {\n        'title': 'Quid Ui Style Guide',\n        'version': void 0,\n        'showCode': false,\n        'showUsage': false,\n        'showSidebar': true,\n        'previewDelay': 500,\n        'theme': {},\n        'styles': {},\n        'compilerConfig': { 'objectAssign': 'Object.assign' },\n        'editorConfig': {\n            'theme': 'base16-light',\n            'mode': 'jsx',\n            'lineWrapping': true,\n            'smartIndent': false,\n            'matchBrackets': true,\n            'viewportMargin': Infinity,\n            'lineNumbers': false\n        },\n        'ribbon': void 0,\n        'pagePerSection': false,\n        'mountPointId': 'rsg-root'\n    },\n    'welcomeScreen': false,\n    'patterns': void 0,\n    'sections': [\n        {\n            'name': 'Introduction',\n            'exampleMode': 'collapse',\n            'usageMode': 'collapse',\n            'sectionDepth': 0,\n            'description': void 0,\n            'slug': 'introduction',\n            'sections': [],\n            'filepath': 'docs/introduction.md',\n            'href': void 0,\n            'components': [],\n            'content': __webpack_require__(/*! !./node_modules/react-styleguidist/loaders/examples-loader.js!./docs/introduction.md */ \"./node_modules/react-styleguidist/loaders/examples-loader.js!./docs/introduction.md\"),\n            'external': void 0\n        },\n        {\n            'name': 'Packages',\n            'exampleMode': 'collapse',\n            'usageMode': 'collapse',\n            'sectionDepth': 0,\n            'description': void 0,\n            'slug': 'packages',\n            'sections': [\n                {\n                    'name': 'react-forms',\n                    'exampleMode': 'collapse',\n                    'usageMode': 'collapse',\n                    'sectionDepth': 0,\n                    'description': void 0,\n                    'slug': 'react-forms',\n                    'sections': [],\n                    'filepath': 'packages/react-forms/README.md',\n                    'href': void 0,\n                    'components': [{\n                            'filepath': 'packages/react-forms/src/Button/index.js',\n                            'slug': 'button',\n                            'pathLine': 'packages/react-forms/src/Button/index.js',\n                            'module': __webpack_require__(/*! ./packages/react-forms/src/Button/index.js */ \"./packages/react-forms/src/Button/index.js\"),\n                            'props': __webpack_require__(/*! !./node_modules/react-styleguidist/loaders/props-loader.js!./packages/react-forms/src/Button/index.js */ \"./node_modules/react-styleguidist/loaders/props-loader.js!./packages/react-forms/src/Button/index.js\"),\n                            'hasExamples': true,\n                            'metadata': {}\n                        }],\n                    'content': __webpack_require__(/*! !./node_modules/react-styleguidist/loaders/examples-loader.js!./packages/react-forms/README.md */ \"./node_modules/react-styleguidist/loaders/examples-loader.js!./packages/react-forms/README.md\"),\n                    'external': void 0\n                },\n                {\n                    'name': 'theme',\n                    'exampleMode': 'collapse',\n                    'usageMode': 'collapse',\n                    'sectionDepth': 0,\n                    'description': void 0,\n                    'slug': 'theme',\n                    'sections': [],\n                    'filepath': 'packages/theme/README.md',\n                    'href': void 0,\n                    'components': [],\n                    'content': __webpack_require__(/*! !./node_modules/react-styleguidist/loaders/examples-loader.js!./packages/theme/README.md */ \"./node_modules/react-styleguidist/loaders/examples-loader.js!./packages/theme/README.md\"),\n                    'external': void 0\n                }\n            ],\n            'filepath': void 0,\n            'href': void 0,\n            'components': [],\n            'content': void 0,\n            'external': void 0\n        }\n    ]\n}\n\t\n\n//# sourceURL=webpack:///./node_modules/react-styleguidist/lib/index.js?./node_modules/react-styleguidist/loaders/styleguide-loader.js");
+eval("\nif (false) {}\n\nmodule.exports = {\n    'config': {\n        'title': 'Quid Ui Style Guide',\n        'version': void 0,\n        'showCode': false,\n        'showUsage': false,\n        'showSidebar': true,\n        'previewDelay': 500,\n        'theme': {},\n        'styles': {},\n        'compilerConfig': { 'objectAssign': 'Object.assign' },\n        'editorConfig': {\n            'theme': 'base16-light',\n            'mode': 'jsx',\n            'lineWrapping': true,\n            'smartIndent': false,\n            'matchBrackets': true,\n            'viewportMargin': Infinity,\n            'lineNumbers': false\n        },\n        'ribbon': void 0,\n        'pagePerSection': false,\n        'mountPointId': 'rsg-root'\n    },\n    'welcomeScreen': false,\n    'patterns': void 0,\n    'sections': [\n        {\n            'name': 'Introduction',\n            'exampleMode': 'collapse',\n            'usageMode': 'expand',\n            'sectionDepth': 0,\n            'description': void 0,\n            'slug': 'introduction',\n            'sections': [],\n            'filepath': 'docs/introduction.md',\n            'href': void 0,\n            'components': [],\n            'content': __webpack_require__(/*! !./node_modules/react-styleguidist/loaders/examples-loader.js!./docs/introduction.md */ \"./node_modules/react-styleguidist/loaders/examples-loader.js!./docs/introduction.md\"),\n            'external': void 0\n        },\n        {\n            'name': 'Packages',\n            'exampleMode': 'collapse',\n            'usageMode': 'expand',\n            'sectionDepth': 0,\n            'description': void 0,\n            'slug': 'packages',\n            'sections': [\n                {\n                    'name': 'react-ellipsis',\n                    'exampleMode': 'collapse',\n                    'usageMode': 'expand',\n                    'sectionDepth': 0,\n                    'description': void 0,\n                    'slug': 'react-ellipsis',\n                    'sections': [],\n                    'filepath': 'packages/react-ellipsis/README.md',\n                    'href': void 0,\n                    'components': [{\n                            'filepath': 'packages/react-ellipsis/src/index.js',\n                            'slug': 'src',\n                            'pathLine': 'packages/react-ellipsis/src/index.js',\n                            'module': __webpack_require__(/*! ./packages/react-ellipsis/src/index.js */ \"./packages/react-ellipsis/src/index.js\"),\n                            'props': __webpack_require__(/*! !./node_modules/react-styleguidist/loaders/props-loader.js!./packages/react-ellipsis/src/index.js */ \"./node_modules/react-styleguidist/loaders/props-loader.js!./packages/react-ellipsis/src/index.js\"),\n                            'hasExamples': true,\n                            'metadata': {}\n                        }],\n                    'content': __webpack_require__(/*! !./node_modules/react-styleguidist/loaders/examples-loader.js!./packages/react-ellipsis/README.md */ \"./node_modules/react-styleguidist/loaders/examples-loader.js!./packages/react-ellipsis/README.md\"),\n                    'external': void 0\n                },\n                {\n                    'name': 'react-forms',\n                    'exampleMode': 'collapse',\n                    'usageMode': 'expand',\n                    'sectionDepth': 0,\n                    'description': void 0,\n                    'slug': 'react-forms',\n                    'sections': [],\n                    'filepath': 'packages/react-forms/README.md',\n                    'href': void 0,\n                    'components': [{\n                            'filepath': 'packages/react-forms/src/Button/index.js',\n                            'slug': 'button',\n                            'pathLine': 'packages/react-forms/src/Button/index.js',\n                            'module': __webpack_require__(/*! ./packages/react-forms/src/Button/index.js */ \"./packages/react-forms/src/Button/index.js\"),\n                            'props': __webpack_require__(/*! !./node_modules/react-styleguidist/loaders/props-loader.js!./packages/react-forms/src/Button/index.js */ \"./node_modules/react-styleguidist/loaders/props-loader.js!./packages/react-forms/src/Button/index.js\"),\n                            'hasExamples': true,\n                            'metadata': {}\n                        }],\n                    'content': __webpack_require__(/*! !./node_modules/react-styleguidist/loaders/examples-loader.js!./packages/react-forms/README.md */ \"./node_modules/react-styleguidist/loaders/examples-loader.js!./packages/react-forms/README.md\"),\n                    'external': void 0\n                },\n                {\n                    'name': 'theme',\n                    'exampleMode': 'collapse',\n                    'usageMode': 'expand',\n                    'sectionDepth': 0,\n                    'description': void 0,\n                    'slug': 'theme',\n                    'sections': [],\n                    'filepath': 'packages/theme/README.md',\n                    'href': void 0,\n                    'components': [],\n                    'content': __webpack_require__(/*! !./node_modules/react-styleguidist/loaders/examples-loader.js!./packages/theme/README.md */ \"./node_modules/react-styleguidist/loaders/examples-loader.js!./packages/theme/README.md\"),\n                    'external': void 0\n                }\n            ],\n            'filepath': void 0,\n            'href': void 0,\n            'components': [],\n            'content': void 0,\n            'external': void 0\n        }\n    ]\n}\n\t\n\n//# sourceURL=webpack:///./node_modules/react-styleguidist/lib/index.js?./node_modules/react-styleguidist/loaders/styleguide-loader.js");
 
 /***/ }),
 
