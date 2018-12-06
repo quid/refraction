@@ -21,6 +21,27 @@ import ThemeProvider from '@quid/theme';
 </ThemeProvider>
 ```
 
+Once a styled component is wrapped by the ThemeProvider, it can access
+the current theme from the `props.theme` property.
+
+Additionally, inside the theme object, you will find a `current` property
+that will be set to `light` or `dark` depending by the active theme.  
+This can be useful to conditionally style a component depending by its theme.
+
+```jsx static
+import styled from '@emotion/styled';
+import ThemeProvider from '@quid/theme';
+
+const Test = styled.span`
+  color: ${props => props.theme.primary};
+  background-color: ${props => props.theme.current === 'dark' ? 'black' : 'white'};
+`;
+
+<ThemeProvider theme="light">
+  <Test>Foobar</Test>
+</ThemeProvider>
+```
+
 ### `withFallback`
 
 The `withFallback` function is available to make it possible to create
