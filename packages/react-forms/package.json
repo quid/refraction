@@ -9,7 +9,7 @@
   "scripts": {
     "start": "microbundle watch",
     "prepare": "microbundle build && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
-    "test": "cd ../.. && yarn test --runTestsByPath packages/react-forms"
+    "test": "cd ../.. && yarn test --testPathPattern packages/react-forms"
   },
   "dependencies": {
     "@emotion/core": "^10.0.2",

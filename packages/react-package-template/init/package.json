@@ -13,7 +13,7 @@
   "scripts": {
     "start": "microbundle watch",
     "prepare": "microbundle build && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
-    "test": "cd ../.. && yarn test --runTestsByPath <%= destination %>"
+    "test": "cd ../.. && yarn test --testPathPattern <%= destination %>"
   },
   "devDependencies": {
     "flow-copy-source": "^2.0.2",
