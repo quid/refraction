@@ -1,6 +1,6 @@
 # Quid UI
 
-[![lerna][lerna-badge]](https://lernajs.io/)[![Build Status][travis-badge]](https://travis-ci.com/quid/ui-framework)
+[![lerna][lerna-badge]](https://lernajs.io/) [![Build Status][travis-badge]](https://travis-ci.com/quid/ui-framework)
 
 This is the home of the front-end technologies that compose the awesome
 products we build at Quid!
