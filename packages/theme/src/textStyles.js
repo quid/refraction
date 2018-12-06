@@ -38,18 +38,26 @@ const styles = {
   regular: css`
     font-weight: normal;
   `,
-  secondary: css`
-    color: ${wf(props => props.theme.secondary)};
-  `,
-  disabled: css`
-    color: ${wf(props => props.theme.disabled)};
-  `,
-  link: css`
-    color: ${wf(props => props.theme.link)};
-  `,
-  highlighted: css`
-    color: ${wf(props => props.theme.highlighted)};
-  `,
+  secondary: wf(
+    props => css`
+      color: props.theme.secondary;
+    `
+  ),
+  disabled: wf(
+    props => css`
+      color: ${props.theme.disabled};
+    `
+  ),
+  link: wf(
+    props => css`
+      color: ${props.theme.link};
+    `
+  ),
+  highlighted: wf(
+    props => css`
+      color: ${props.theme.highlighted};
+    `
+  ),
 };
 
 const baseStyle = css`
