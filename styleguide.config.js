@@ -33,5 +33,6 @@ module.exports = {
       sections: packages,
     },
   ],
+  usageMode: 'expand',
   require: ['@quid/theme/fonts/asap/index.css', './src/index.css'],
 };
