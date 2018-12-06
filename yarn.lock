@@ -8933,7 +8933,7 @@ methods@~1.1.2:
   resolved "https://registry.npmjs.org/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
-"microbundle@https://github.com/developit/microbundle.git#remove_import_pruning":
+microbundle@^0.8.3, "microbundle@https://github.com/developit/microbundle.git#remove_import_pruning":
   version "0.8.3"
   resolved "https://github.com/developit/microbundle.git#3176b69754562a1e1913ca4d2917a8ebb79a972d"
   dependencies:
