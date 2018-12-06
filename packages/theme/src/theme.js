@@ -5,11 +5,13 @@ import sizes from './sizes';
 
 const theme = {
   light: {
+    current: 'light',
     colors,
     sizes,
     ...themes.light,
   },
   dark: {
+    current: 'dark',
     colors,
     sizes,
     ...themes.dark,
