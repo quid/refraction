@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.1](https://github.com/quid/ui-framework/compare/v1.5.0...v1.5.1) (2018-12-06)
+
+
+### Bug Fixes
+
+* use resolutions to point to microbundle fork ([16819ab](https://github.com/quid/ui-framework/commit/16819ab))
+
+
+
+
+
 # [1.5.0](https://github.com/quid/ui-framework/compare/v1.4.0...v1.5.0) (2018-12-06)
 
 
