@@ -59,12 +59,14 @@
     "jest-emotion": "^10.0.2",
     "lerna": "~3.3.2",
     "lint-staged": "^8.1.0",
-    "microbundle": "https://github.com/developit/microbundle.git#remove_import_pruning",
     "prettier": "^1.15.3",
     "react": "16.3",
     "react-app-rewired": "^1.6.2",
     "react-dom": "16.3",
     "react-scripts": "^2.1.1",
     "react-styleguidist": "^8.0.6"
+  },
+  "resolutions": {
+    "microbundle": "https://github.com/developit/microbundle.git#remove_import_pruning"
   }
 }
