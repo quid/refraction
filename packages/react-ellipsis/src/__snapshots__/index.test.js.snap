@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the title tag if \`addTitle\` is true 1`] = `
+<div
+  title="some text here"
+>
+  some text here
+</div>
+`;
