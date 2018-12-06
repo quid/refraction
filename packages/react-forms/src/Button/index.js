@@ -6,30 +6,24 @@ import { Link } from 'react-router-dom';
 import Color from 'color';
 import { withFallback as wf, textStyles } from '@quid/theme';
 
-const IMPORTANCE_SECONDARY: 'secondary' = 'secondary';
-const IMPORTANCE_PRIMARY: 'primary' = 'primary';
-const IMPORTANCE_OKAY: 'okay' = 'okay';
-const IMPORTANCE_WARNING: 'warning' = 'warning';
-const IMPORTANCE_HAZARD: 'hazard' = 'hazard';
-const SIZE_REGULAR: 'regular' = 'regular';
-const SIZE_SMALL: 'small' = 'small';
-
 const OKAY = '#039849';
 const WARNING = '#FFCE03';
 const HAZARD = '#E61E27';
 
 type Props = {
-  importance?:
-    | typeof IMPORTANCE_PRIMARY
-    | typeof IMPORTANCE_SECONDARY
-    | typeof IMPORTANCE_OKAY
-    | typeof IMPORTANCE_WARNING
-    | typeof IMPORTANCE_HAZARD,
+  /** The "color" of the button */
+  importance?: 'primary' | 'secondary' | 'okay' | 'warning' | 'hazard',
+  /** Make the button background transparent */
   transparent?: boolean,
-  size?: typeof SIZE_REGULAR | typeof SIZE_SMALL,
+  /** Button height */
+  size?: 'regular' | 'small',
+  /** What to render inside the button */
   children?: Node,
+  /** Normal `href` URL, if present, the button will render as anchor (`<a />`) */
   href?: string,
+  /** react-router URL, if present, the button will render as `Link` */
   to?: string | Object,
+  /** when `true`, the button can't be clicked */
   disabled?: boolean,
 };
 
