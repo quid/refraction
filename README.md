@@ -76,6 +76,5 @@ of this repository.
 [conventional-commits]: https://www.conventionalcommits.org/en/v1.0.0-beta.2/
 [microbundle]: https://github.com/developit/microbundle
 [flow]: https://flow.org/
-
 [lerna-badge]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg
 [travis-badge]: https://travis-ci.com/quid/ui-framework.svg?token=eAsu8PgyKpfsPmbvLfUx&branch=master
