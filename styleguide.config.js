@@ -34,5 +34,5 @@ module.exports = {
     },
   ],
   usageMode: 'expand',
-  require: ['@quid/theme/fonts/asap/index.css', './src/index.css'],
+  require: ['@quid/theme/fonts/ibmplex/index.css', './src/index.css'],
 };
