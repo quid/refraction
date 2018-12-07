@@ -1,4 +1,5 @@
 // @noflow
+// istanbul ignore next
 module.exports = {
   destination: {
     default: function(data) {

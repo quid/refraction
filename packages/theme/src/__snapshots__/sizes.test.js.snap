@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`exposes the right sizes 1`] = `
+Object {
+  "large": "20px",
+  "regular": "10px",
+  "small": "5px",
+}
+`;

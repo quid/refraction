@@ -15,13 +15,8 @@ type Props = {
   children: Node,
 };
 
-const DEFAULT = 'light';
-const QuidThemeProvider = ({ theme, children, ...props }: Props) => (
-  <ThemeProvider
-    {...props}
-    theme={themeData[theme != null ? theme : DEFAULT]}
-    children={children}
-  />
+const QuidThemeProvider = ({ theme = 'light', children, ...props }: Props) => (
+  <ThemeProvider {...props} theme={themeData[theme]} children={children} />
 );
 
 export default QuidThemeProvider;

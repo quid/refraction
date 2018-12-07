@@ -24,6 +24,20 @@ it('renders a Button with link', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
+it('renders a Button with small size', () => {
+  const wrapper = mount(<Button size="small">Hello, World!</Button>);
+  expect(wrapper).toMatchSnapshot();
+});
+
+it('renders a disabled and transparent Button', () => {
+  const wrapper = mount(
+    <Button transparent disabled>
+      Hello, World!
+    </Button>
+  );
+  expect(wrapper).toMatchSnapshot();
+});
+
 it('renders a Button with external link', () => {
   const wrapper = mount(
     <Button data-action="foo" href="https://example.org">

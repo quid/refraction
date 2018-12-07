@@ -95,6 +95,66 @@ exports[`renders a Button with link 1`] = `
 />
 `;
 
+exports[`renders a Button with small size 1`] = `
+.emotion-0 {
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  font-size: 14px;
+  line-height: 1.57;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 2px;
+  line-height: 1.9;
+  padding-left: 0.769em;
+  padding-right: 0.769em;
+  -webkit-transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  color: #121212;
+  background-color: #1ED7D1;
+}
+
+.emotion-0:hover {
+  background-color: hsl(178.10000000000002,75.5%,43.2%);
+}
+
+.emotion-0:active {
+  background-color: hsl(178.10000000000002,75.5%,38.4%);
+}
+
+.emotion-0:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.emotion-0:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
+}
+
+<Styled(button)
+  as="button"
+  importance="primary"
+  size="small"
+>
+  <button
+    className="emotion-0"
+    size="small"
+  >
+    Hello, World!
+  </button>
+</Styled(button)>
+`;
+
 exports[`renders a button using the text property 1`] = `
 .emotion-0 {
   border: 0;
@@ -223,6 +283,76 @@ exports[`renders a disabled Button with external link 1`] = `
   >
     Hello, World!
   </a>
+</Styled(button)>
+`;
+
+exports[`renders a disabled and transparent Button 1`] = `
+.emotion-0 {
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  font-size: 14px;
+  line-height: 1.57;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 2px;
+  line-height: 2.3;
+  padding-left: 0.769em;
+  padding-right: 0.769em;
+  -webkit-transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
+  color: #121212;
+  background-color: #1ED7D1;
+  cursor: default;
+  background-color: transparent;
+}
+
+.emotion-0:hover {
+  background-color: hsl(178.10000000000002,75.5%,43.2%);
+}
+
+.emotion-0:active {
+  background-color: hsl(178.10000000000002,75.5%,38.4%);
+}
+
+.emotion-0:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.emotion-0:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
+}
+
+.emotion-0,
+.emotion-0:hover,
+.emotion-0:focus,
+.emotion-0:active {
+  opacity: 0.4;
+}
+
+<Styled(button)
+  as="button"
+  disabled={true}
+  importance="primary"
+  transparent={true}
+>
+  <button
+    className="emotion-0"
+    disabled={true}
+  >
+    Hello, World!
+  </button>
 </Styled(button)>
 `;
 

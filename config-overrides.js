@@ -24,7 +24,7 @@ module.exports = {
     // create-react-app looks for tests in `src`, we look in `packages`
     config.testMatch = config.testMatch.map(m => m.replace('src', 'packages'));
     config.collectCoverageFrom = ['**/packages/**'];
-    config.coveragePathIgnorePatterns = ['/dist/', 'json$'];
+    config.coveragePathIgnorePatterns = ['/dist/', '.snap$', '.json$'];
     return config;
   },
 };
