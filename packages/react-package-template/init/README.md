@@ -7,15 +7,18 @@ The code examples will automatically get converted to live examples.
 
 Example:
 
-    /src
-      - Button.js
-      - Button.md
+```bash
+/src
+  - Button.js
+  - Button.md
+```
 
 Button.md:
 
-    This is a nice button:
-    
-    ​```jsx
-    <Button color="rebeccapurple">This is purple</Button>
-    ​```
+````bash
+This is a nice button:
 
+​```jsx
+<Button color="rebeccapurple">This is purple</Button>
+​```
+````
