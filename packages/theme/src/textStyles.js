@@ -3,34 +3,35 @@ import { css } from '@emotion/core';
 import wf from './withFallback';
 
 const primaryFontFamily = css`
-  font-family: Asap, Lucida Grande, Tahoma, Verdana, Arial, sans-serif;
+  font-family: IBM Plex Sans, Lucida Grande, Tahoma, Verdana, Arial, sans-serif;
 `;
 
 const secondaryFontFamily = css`
-  font-family: Georgia, Gudea, Lucida Grande, Tahoma, Verdana, Arial, sans-serif;
+  font-family: IBM Plex Serif, Gudea, Lucida Grande, Tahoma, Verdana, Arial,
+    sans-serif;
 `;
 
 const styles = {
   xlarge: css`
     font-size: 20px;
-    line-height: 1.3;
+    line-height: 1.4;
   `,
   large: css`
-    font-size: 15px;
-    line-height: 1.27;
+    font-size: 16px;
+    line-height: 1.5;
   `,
   title: css`
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.5;
     ${secondaryFontFamily}
   `,
   body: css`
-    line-height: 1.54;
+    line-height: 1.57;
     ${secondaryFontFamily}
   `,
   normal: css`
-    font-size: 13px;
-    line-height: 1.23;
+    font-size: 14px;
+    line-height: 1.57;
   `,
   bold: css`
     font-weight: bold;
@@ -61,7 +62,6 @@ const styles = {
 };
 
 const baseStyle = css`
-  letter-spacing: 0.08em;
   ${primaryFontFamily}
   ${styles.normal}
 `;
