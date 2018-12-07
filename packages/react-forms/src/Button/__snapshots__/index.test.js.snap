@@ -12,15 +12,11 @@ exports[`renders a Button with external link 1`] = `
   text-decoration: none;
   box-sizing: border-box;
   color: inherit;
-  -webkit-letter-spacing: 0.08em;
-  -moz-letter-spacing: 0.08em;
-  -ms-letter-spacing: 0.08em;
-  letter-spacing: 0.08em;
-  font-family: Asap,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
-  font-size: 13px;
-  line-height: 1.23;
-  font-size: 13px;
-  line-height: 1.23;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  font-size: 14px;
+  line-height: 1.57;
   font-weight: bold;
   display: inline-block;
   border-radius: 2px;
@@ -74,7 +70,7 @@ exports[`renders a Button with link 1`] = `
         Array [
           Object {
             "children": "Hello, World!",
-            "className": "css-9z1v7q",
+            "className": "css-ttmjkv",
             "data-action": "foo",
             "importance": "primary",
             "replace": false,
@@ -111,15 +107,11 @@ exports[`renders a button using the text property 1`] = `
   text-decoration: none;
   box-sizing: border-box;
   color: inherit;
-  -webkit-letter-spacing: 0.08em;
-  -moz-letter-spacing: 0.08em;
-  -ms-letter-spacing: 0.08em;
-  letter-spacing: 0.08em;
-  font-family: Asap,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
-  font-size: 13px;
-  line-height: 1.23;
-  font-size: 13px;
-  line-height: 1.23;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  font-size: 14px;
+  line-height: 1.57;
   font-weight: bold;
   display: inline-block;
   border-radius: 2px;
@@ -174,15 +166,11 @@ exports[`renders a disabled Button with external link 1`] = `
   text-decoration: none;
   box-sizing: border-box;
   color: inherit;
-  -webkit-letter-spacing: 0.08em;
-  -moz-letter-spacing: 0.08em;
-  -ms-letter-spacing: 0.08em;
-  letter-spacing: 0.08em;
-  font-family: Asap,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
-  font-size: 13px;
-  line-height: 1.23;
-  font-size: 13px;
-  line-height: 1.23;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  font-size: 14px;
+  line-height: 1.57;
   font-weight: bold;
   display: inline-block;
   border-radius: 2px;
@@ -250,15 +238,11 @@ exports[`renders a link without href if \`to\` is given but \`disabled={true}\` 
   text-decoration: none;
   box-sizing: border-box;
   color: inherit;
-  -webkit-letter-spacing: 0.08em;
-  -moz-letter-spacing: 0.08em;
-  -ms-letter-spacing: 0.08em;
-  letter-spacing: 0.08em;
-  font-family: Asap,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
-  font-size: 13px;
-  line-height: 1.23;
-  font-size: 13px;
-  line-height: 1.23;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  font-size: 14px;
+  line-height: 1.57;
   font-weight: bold;
   display: inline-block;
   border-radius: 2px;
@@ -326,15 +310,11 @@ exports[`renders the expected markup 1`] = `
   text-decoration: none;
   box-sizing: border-box;
   color: inherit;
-  -webkit-letter-spacing: 0.08em;
-  -moz-letter-spacing: 0.08em;
-  -ms-letter-spacing: 0.08em;
-  letter-spacing: 0.08em;
-  font-family: Asap,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
-  font-size: 13px;
-  line-height: 1.23;
-  font-size: 13px;
-  line-height: 1.23;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  font-size: 14px;
+  line-height: 1.57;
   font-weight: bold;
   display: inline-block;
   border-radius: 2px;
