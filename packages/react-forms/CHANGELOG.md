@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/quid/ui-framework/compare/v1.5.3...v1.6.0) (2018-12-07)
+
+**Note:** Version bump only for package @quid/react-forms
+
+
+
+
+
 ## [1.5.3](https://github.com/quid/ui-framework/compare/v1.5.1...v1.5.3) (2018-12-06)
 
 **Note:** Version bump only for package @quid/react-forms
