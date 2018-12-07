@@ -18,7 +18,7 @@ import ThemeProvider from '@quid/theme';
 
 <ThemeProvider theme="light">
   <Button>I'll use the light theme</Button>
-</ThemeProvider>
+</ThemeProvider>;
 ```
 
 Once a styled component is wrapped by the ThemeProvider, it can access
@@ -34,12 +34,13 @@ import ThemeProvider from '@quid/theme';
 
 const Test = styled.span`
   color: ${props => props.theme.primary};
-  background-color: ${props => props.theme.current === 'dark' ? 'black' : 'white'};
+  background-color: ${props =>
+    props.theme.current === 'dark' ? 'black' : 'white'};
 `;
 
 <ThemeProvider theme="light">
   <Test>Foobar</Test>
-</ThemeProvider>
+</ThemeProvider>;
 ```
 
 ### `withFallback`
