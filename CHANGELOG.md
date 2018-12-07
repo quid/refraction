@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.1](https://github.com/quid/ui-framework/compare/v1.7.0...v1.7.1) (2018-12-07)
+
+
+### Bug Fixes
+
+* microbundle doesn't support this syntax ([724623c](https://github.com/quid/ui-framework/commit/724623c))
+* textStyles now works reliably ([ece6ff6](https://github.com/quid/ui-framework/commit/ece6ff6))
+* use semibold instead of bold ([5014425](https://github.com/quid/ui-framework/commit/5014425))
+
+
+
+
+
 # [1.7.0](https://github.com/quid/ui-framework/compare/v1.6.0...v1.7.0) (2018-12-07)
 
 
