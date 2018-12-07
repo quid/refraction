@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.1](https://github.com/quid/ui-framework/compare/v1.7.0...v1.7.1) (2018-12-07)
+
+
+### Bug Fixes
+
+* textStyles now works reliably ([ece6ff6](https://github.com/quid/ui-framework/commit/ece6ff6))
+
+
+
+
+
 # [1.7.0](https://github.com/quid/ui-framework/compare/v1.6.0...v1.7.0) (2018-12-07)
 
 **Note:** Version bump only for package @quid/react-forms
