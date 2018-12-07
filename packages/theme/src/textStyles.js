@@ -41,7 +41,7 @@ const styles = {
   `,
   secondary: wf(
     props => css`
-      color: props.theme.secondary;
+      color: ${props.theme.secondary};
     `
   ),
   disabled: wf(
@@ -56,20 +56,20 @@ const styles = {
   ),
   highlighted: wf(
     props => css`
-      color: ${props.theme.highlighted};
+      color: ${props.theme.colors.highlighted};
     `
   ),
 };
 
-const baseStyle = css`
-  ${primaryFontFamily}
-  ${styles.normal}
-`;
-
-const textStyles = (...ss: Array<string>) =>
-  css`
-    ${baseStyle};
-    ${ss.map(s => styles[s])}
+const textStyles = (...ss: Array<string>) => (props: Object) => {
+  const rules = ss.map(s =>
+    typeof styles[s] === 'function' ? styles[s](props) : styles[s]
+  );
+  return css`
+    ${primaryFontFamily}
+    ${styles.normal}
+    ${rules}
   `;
+};
 
 export default textStyles;
