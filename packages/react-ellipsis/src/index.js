@@ -64,7 +64,7 @@ export default class Ellipsis extends Component<Props, State> {
     bad: null,
   };
 
-  element = createRef<HTMLElement>();
+  element = createRef/*:: <HTMLElement> */();
   width: number = 0;
 
   componentDidMount() {
