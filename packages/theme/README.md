@@ -83,4 +83,21 @@ const Paragraph = styled.p`
 `;
 ```
 
+### Font Faces
+
+This package exposes two font-faces, IBM Plex (Sans and Serif), and the
+iconic Quid Icons.
+
+The first is used as font family of all our texts, while the second is
+an iconic font family used to provide our icons.
+
+You can import both of them in your project with:
+
+```js static
+import '@quid/theme/fonts/ibmplex';
+import '@quid/theme/fonts/icons';
+```
+
+Once imported, they will be globally available for all the consumer components.
+
 [theme-provider]: https://emotion.sh/docs/emotion-theming

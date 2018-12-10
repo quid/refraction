@@ -1,14 +1,18 @@
 With the `Icon` component you can insert one of the supported icons
 in your component:
 
-```js
-<Icon name="globe" style={{ fontSize: '2em' }} />
+```js static
+// first import the iconic font in your root index.js file
+import '@quid/theme/fonts/icons';
+
+// then use the Icon component anywhere in your app
+<Icon name="globe" />;
 ```
 
 This is the complete list of available icons:
 
 ```js noeditor
-const iconNames = require('./icons/quid-icons.json').icons.map(
+const iconNames = require('@quid/theme/fonts/icons/quid-icons.json').icons.map(
   ({ icon }) => icon.tags[0]
 );
 const cell = {
