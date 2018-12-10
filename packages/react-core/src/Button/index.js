@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import { css } from '@emotion/core';
-import styled from '@emotion/styled';
+import styled from '@emotion/styled/macro';
 import { Link } from 'react-router-dom';
 import Color from 'color';
 import { withFallback as wf, textStyles } from '@quid/theme';

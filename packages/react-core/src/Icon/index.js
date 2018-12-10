@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import { css } from '@emotion/core';
-import styled from '@emotion/styled';
+import styled from '@emotion/styled/macro';
 
 type Props = {
   /** Icon name */
@@ -42,4 +42,5 @@ const Icon = styled(({ name, squared = true, ...props }: Props) => (
     `};
 `;
 
+// @component
 export default Icon;

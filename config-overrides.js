@@ -1,11 +1,6 @@
 // @noflow
 const path = require('path');
-const {
-  override,
-  useEslintRc,
-  addBabelPlugin,
-  babelInclude,
-} = require('customize-cra');
+const { override, useEslintRc, babelInclude } = require('customize-cra');
 
 /**
  * react-app-rewired configuration file
@@ -15,17 +10,7 @@ const {
  * project. Be careful!
  */
 module.exports = {
-  webpack: override(
-    babelInclude([path.resolve('packages')]),
-    addBabelPlugin([
-      'emotion',
-      {
-        sourceMap: process.env.NODE_ENV !== 'production',
-        autoLabel: true,
-      },
-    ]),
-    useEslintRc()
-  ),
+  webpack: override(babelInclude([path.resolve('packages')]), useEslintRc()),
   jest: config => {
     // create-react-app looks for tests in `src`, we look in `packages`
     config.testMatch = config.testMatch.map(m => m.replace('src', 'packages'));
