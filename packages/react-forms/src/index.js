@@ -1,2 +1,2 @@
 // @flow
-export { default as Button } from './Button';
+export { Button } from '@quid/react-core';
