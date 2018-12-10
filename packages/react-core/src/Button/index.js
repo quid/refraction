@@ -58,7 +58,23 @@ const reset = css`
   color: inherit;
 `;
 
-const BaseButton = styled.button`
+const Button = styled(
+  ({ to, href, transparent, size, importance, disabled, ...props }: Props) => {
+    let Tag, specificProps;
+    if (to && !disabled) {
+      Tag = Link;
+      specificProps = { to };
+    } else if ((href || to) && !disabled) {
+      Tag = 'a';
+      specificProps = { href };
+    } else {
+      Tag = 'button';
+      specificProps = { disabled };
+    }
+
+    return <Tag {...specificProps} {...props} />;
+  }
+)`
   ${reset}
 
   ${textStyles('normal', 'bold')}
@@ -145,21 +161,10 @@ const BaseButton = styled.button`
   }
 `;
 
-const Button = (props: Props) => {
-  let tag;
-  if (props.to && !props.disabled) {
-    tag = Link;
-  } else if (props.href || (props.to && props.disabled)) {
-    tag = 'a';
-  } else {
-    tag = 'button';
-  }
-
-  return <BaseButton as={tag} {...props} />;
-};
 Button.defaultProps = {
   importance: 'primary',
   size: 'regular',
 };
 
+// @component
 export default Button;
