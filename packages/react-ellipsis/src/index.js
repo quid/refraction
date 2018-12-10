@@ -12,15 +12,9 @@
  *   we may create an hidden `span` with a single letter inside to compute a line height
  */
 
-import React, { Component, createRef, type Node } from 'react';
-
-export function nlToBr(text: string): Array<string | Node> {
-  return text.split(/\n()/g).map((str, i) => (str ? str : <br key={i} />));
-}
-
-export function isWidthDifferentFn(element: ?HTMLElement, width: number) {
-  return !!element && width !== element.clientWidth;
-}
+import * as React from 'react';
+import nlToBr from './nlToBr';
+import isWidthDifferentFn from './isWidthDifferentFn';
 
 type Children = string | null | boolean | void;
 
@@ -43,7 +37,7 @@ type State = {
   bad: ?number,
 };
 
-export default class Ellipsis extends Component<Props, State> {
+export default class Ellipsis extends React.Component<Props, State> {
   props: Props;
 
   static defaultProps = {
@@ -64,7 +58,7 @@ export default class Ellipsis extends Component<Props, State> {
     bad: null,
   };
 
-  element = createRef/*:: <HTMLElement> */();
+  element = React.createRef /*:: <HTMLElement> */();
   width: number = 0;
 
   componentDidMount() {

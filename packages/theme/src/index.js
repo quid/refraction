@@ -1,5 +1,5 @@
 // @flow
-import React, { type Node } from 'react';
+import * as React from 'react';
 import { ThemeProvider } from 'emotion-theming';
 
 import themeData from './theme';
@@ -12,7 +12,7 @@ export { default as withFallback } from './withFallback';
 
 type Props = {
   theme?: 'dark' | 'light',
-  children: Node,
+  children: React.Node,
 };
 
 const QuidThemeProvider = ({ theme = 'light', children, ...props }: Props) => (
