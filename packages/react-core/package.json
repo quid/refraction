@@ -1,0 +1,33 @@
+{
+  "name": "@quid/react-core",
+  "version": "1.0.0",
+  "description": "Core React Quid components",
+  "main": "dist/index.js",
+  "main:umd": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quid/ui-framework.git"
+  },
+  "scripts": {
+    "start": "microbundle watch",
+    "prepare": "microbundle build && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
+    "test": "cd ../.. && yarn test --testPathPattern packages/react-core"
+  },
+  "devDependencies": {
+    "flow-copy-source": "^2.0.2",
+    "microbundle": "^0.8.3"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.4",
+    "@emotion/styled": "^10.0.4",
+    "@quid/theme": "^1.7.0",
+    "color": "^3.1.0",
+    "emotion": "^10.0.4",
+    "react-router-dom": "^4.3.1"
+  },
+  "peerDependencies": {
+    "react": "15||16"
+  }
+}
