@@ -1,6 +1,5 @@
 // @flow
 import * as React from 'react';
-import { injectGlobal } from 'emotion';
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 
@@ -40,21 +39,6 @@ type Props = {
   /** Forces the icon to be rendered with a squared area, this helps icons alignment */
   squared?: boolean,
 };
-
-// FIXME(fzivolo): JSDOM doesn't really like this unfortunately
-// istanbul ignore next
-if (process.env.NODE_ENV !== 'test') {
-  injectGlobal`
-    @font-face {
-      font-family: 'quid-icons';
-      src: url(${require('./icons/quid-icons.ttf')}) format('truetype'),
-        url(${require('./icons/quid-icons.woff')}) format('woff'),
-        url(${require('./icons/quid-icons.svg')}) format('svg');
-      font-weight: normal;
-      font-style: normal;
-    }
-  `;
-}
 
 const Icon = ({ name, squared = true }: Props) => (
   <I squared={squared}>{name}</I>

@@ -34,5 +34,9 @@ module.exports = {
     },
   ],
   usageMode: 'expand',
-  require: ['@quid/theme/fonts/ibmplex/index.css', './src/index.css'],
+  require: [
+    '@quid/theme/fonts/ibmplex/index.css',
+    '@quid/theme/fonts/icons/index.css',
+    './src/index.css',
+  ],
 };
