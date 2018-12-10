@@ -3,7 +3,16 @@ import * as React from 'react';
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 
-const I = styled.i`
+type Props = {
+  /** Icon name */
+  name: string,
+  /** Forces the icon to be rendered with a squared area, this helps icons alignment */
+  squared?: boolean,
+};
+
+const Icon = styled(({ name, squared = true, ...props }: Props) => (
+  <i {...props}>{name}</i>
+))`
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'quid-icons' !important;
   speak: none;
@@ -32,16 +41,5 @@ const I = styled.i`
       width: 1em;
     `};
 `;
-
-type Props = {
-  /** Icon name */
-  name: string,
-  /** Forces the icon to be rendered with a squared area, this helps icons alignment */
-  squared?: boolean,
-};
-
-const Icon = ({ name, squared = true }: Props) => (
-  <I squared={squared}>{name}</I>
-);
 
 export default Icon;
