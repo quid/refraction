@@ -45,12 +45,12 @@ These are all the supported style variations:
       <td>Primary with Icon</td>
       <td>
         <Button importance="primary">
-          <x-icon name="scatter" />
+          <Icon name="scatter" />
         </Button>
       </td>
       <td>
         <Button importance="primary" disabled>
-          <x-icon name="scatter" />
+          <Icon name="scatter" />
         </Button>
       </td>
     </tr>
@@ -58,12 +58,12 @@ These are all the supported style variations:
       <td>Primary Small with Icon</td>
       <td>
         <Button importance="primary" size="small">
-          <x-icon name="scatter" />
+          <Icon name="scatter" />
         </Button>
       </td>
       <td>
         <Button importance="primary" size="small" disabled>
-          <x-icon name="scatter" />
+          <Icon name="scatter" />
         </Button>
       </td>
     </tr>
@@ -71,12 +71,12 @@ These are all the supported style variations:
       <td>Primary with both</td>
       <td>
         <Button importance="primary">
-          <x-icon name="download" /> Button
+          <Icon name="download" /> Button
         </Button>
       </td>
       <td>
         <Button importance="primary" disabled>
-          <x-icon name="download" /> Button
+          <Icon name="download" /> Button
         </Button>
       </td>
     </tr>
@@ -84,12 +84,12 @@ These are all the supported style variations:
       <td>Primary Small with both</td>
       <td>
         <Button importance="primary" size="small">
-          <x-icon name="download" /> Button
+          <Icon name="download" /> Button
         </Button>
       </td>
       <td>
         <Button importance="primary" size="small" disabled>
-          <x-icon name="download" /> Button
+          <Icon name="download" /> Button
         </Button>
       </td>
     </tr>
@@ -126,12 +126,12 @@ These are all the supported style variations:
       <td>Secondary with Icon</td>
       <td>
         <Button importance="secondary">
-          <x-icon name="scatter" />
+          <Icon name="scatter" />
         </Button>
       </td>
       <td>
         <Button importance="secondary" disabled>
-          <x-icon name="scatter" />
+          <Icon name="scatter" />
         </Button>
       </td>
     </tr>
@@ -139,12 +139,12 @@ These are all the supported style variations:
       <td>Secondary Small with Icon</td>
       <td>
         <Button importance="secondary" size="small">
-          <x-icon name="scatter" />
+          <Icon name="scatter" />
         </Button>
       </td>
       <td>
         <Button importance="secondary" size="small" disabled>
-          <x-icon name="scatter" />
+          <Icon name="scatter" />
         </Button>
       </td>
     </tr>
@@ -152,12 +152,12 @@ These are all the supported style variations:
       <td>Secondary with both</td>
       <td>
         <Button importance="secondary">
-          <x-icon name="download" /> Button
+          <Icon name="download" /> Button
         </Button>
       </td>
       <td>
         <Button importance="secondary" disabled>
-          <x-icon name="download" /> Button
+          <Icon name="download" /> Button
         </Button>
       </td>
     </tr>
@@ -165,12 +165,12 @@ These are all the supported style variations:
       <td>Secondary Small with both</td>
       <td>
         <Button importance="secondary" size="small">
-          <x-icon name="download" /> Button
+          <Icon name="download" /> Button
         </Button>
       </td>
       <td>
         <Button importance="secondary" size="small" disabled>
-          <x-icon name="download" /> Button
+          <Icon name="download" /> Button
         </Button>
       </td>
     </tr>

@@ -5,6 +5,7 @@ import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 import Color from 'color';
 import { withFallback as wf, textStyles } from '@quid/theme';
+import Icon from '../Icon';
 
 const OKAY = '#039849';
 const WARNING = '#FFCE03';
@@ -115,6 +116,33 @@ const BaseButton = styled.button`
     css`
       background-color: transparent;
     `}
+
+  ${Icon} {
+      display: block;
+      line-height: 1;
+      font-size: 1.42em;
+      margin-left: -6px;
+      margin-right: -6px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+
+      ${props =>
+        props.size === 'small' &&
+        css`
+          font-size: 1em;
+        `}
+
+      ${props =>
+        React.Children.count(props.children) > 1 &&
+        css`
+          display: inline-block;
+          position: relative;
+          font-size: 1em;
+          margin-left: 0;
+          bottom: -1px;
+          margin-right: 0.35em;
+        `}
+  }
 `;
 
 const Button = (props: Props) => {
@@ -131,6 +159,7 @@ const Button = (props: Props) => {
 };
 Button.defaultProps = {
   importance: 'primary',
+  size: 'regular',
 };
 
 export default Button;

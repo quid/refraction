@@ -3,7 +3,7 @@ const path = require('path');
 const {
   override,
   useEslintRc,
-  useBabelRc,
+  addBabelPlugin,
   babelInclude,
 } = require('customize-cra');
 
@@ -17,7 +17,13 @@ const {
 module.exports = {
   webpack: override(
     babelInclude([path.resolve('packages')]),
-    useBabelRc(),
+    addBabelPlugin([
+      'emotion',
+      {
+        sourceMap: process.env.NODE_ENV !== 'production',
+        autoLabel: true,
+      },
+    ]),
     useEslintRc()
   ),
   jest: config => {
