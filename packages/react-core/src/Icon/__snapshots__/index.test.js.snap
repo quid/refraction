@@ -48,10 +48,25 @@ exports[`renders the expected markup 1`] = `
   font-variant-ligatures: discretionary-ligatures;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 1em;
+  width: 1em;
 }
 
 <Icon
   name="network"
+  squared={true}
 >
   <i
     className="emotion-0 emotion-1"

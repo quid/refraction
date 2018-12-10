@@ -69,7 +69,7 @@ it('applies Button classes to child if child is Icon', () => {
     </Button>
   );
   expect(wrapper.find('i').props().className).toMatchInlineSnapshot(
-    `"css-7yf5rg-Icon e1t5eso00"`
+    `"css-1k94zxf-Icon e1t5eso00"`
   );
 });
 
@@ -92,7 +92,7 @@ it('applies Button classes to child if child is Icon with near text', () => {
     </Button>
   );
   expect(wrapper.find('i').props().className).toMatchInlineSnapshot(
-    `"css-7yf5rg-Icon e1t5eso00"`
+    `"css-1k94zxf-Icon e1t5eso00"`
   );
 });
 

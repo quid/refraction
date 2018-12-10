@@ -10,7 +10,7 @@ type Props = {
   squared?: boolean,
 };
 
-const Icon = styled(({ name, squared = true, ...props }: Props) => (
+const Icon = styled(({ name, squared, ...props }: Props) => (
   <i {...props}>{name}</i>
 ))`
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -41,6 +41,10 @@ const Icon = styled(({ name, squared = true, ...props }: Props) => (
       width: 1em;
     `};
 `;
+
+Icon.defaultProps = {
+  squared: true,
+};
 
 // @component
 export default Icon;
