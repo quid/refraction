@@ -23,8 +23,8 @@ module.exports = {
   jest: config => {
     // create-react-app looks for tests in `src`, we look in `packages`
     config.testMatch = config.testMatch.map(m => m.replace('src', 'packages'));
-    config.collectCoverageFrom = ['**/packages/**'];
-    config.coveragePathIgnorePatterns = ['/dist/', '.snap$', '.json$'];
+    config.collectCoverageFrom = ['**/packages/**/*.js'];
+    config.coveragePathIgnorePatterns = ['/dist/'];
     return config;
   },
 };
