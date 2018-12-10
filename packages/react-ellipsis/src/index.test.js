@@ -1,7 +1,9 @@
 // @flow
-import React from 'react';
+import * as React from 'react';
 import { mount } from 'enzyme';
-import Ellipsis, { nlToBr, isWidthDifferentFn } from './';
+import Ellipsis from './';
+import nlToBr from './nlToBr';
+import isWidthDifferentFn from './isWidthDifferentFn';
 import ReactDOM from 'react-dom';
 
 it('converts \\n to <br />', () => {
