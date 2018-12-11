@@ -18,7 +18,7 @@
     "test": "react-app-rewired test",
     "format": "eslint \"**/*.js\" --fix && prettier \"**/*.{js,md,json}\" --write",
     "postinstall": "lerna run prepare",
-    "clean": "rimraf '**/node_modules' && rimraf 'packages/*/dist'"
+    "clean": "rimraf 'packages/*/dist' && rimraf '**/node_modules'"
   },
   "lint-staged": {
     "*.{js,jsx,md,json}": [
