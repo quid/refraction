@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "microbundle watch",
-    "prepare": "microbundle build && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
+    "prepare": "microbundle build --jsx React.createElement && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
     "test": "cd ../.. && yarn test --testPathPattern packages/react-core"
   },
   "devDependencies": {
