@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
-import styled from '@emotion/styled';
-import { css } from '@emotion/core';
+import styled from '@emotion/styled/macro';
+import css from '@emotion/css/macro';
 import { mount } from 'enzyme';
 import textStyles from './textStyles';
 

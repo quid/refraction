@@ -1,5 +1,5 @@
 // @flow
-import { css } from '@emotion/core';
+import css from '@emotion/css/macro';
 import wf from './withFallback';
 
 const primaryFontFamily = css`

@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { css } from '@emotion/core';
+import css from '@emotion/css/macro';
 import styled from '@emotion/styled/macro';
 
 type Props = {

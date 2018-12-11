@@ -12,7 +12,7 @@
     "test": "cd ../.. && yarn test --testPathPattern packages/react-forms"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.2",
+    "@emotion/css": "^10.0.4",
     "@emotion/styled": "^10.0.2",
     "@quid/react-core": "^1.8.0",
     "@quid/theme": "^1.8.0",
