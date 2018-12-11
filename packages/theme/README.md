@@ -29,7 +29,7 @@ that will be set to `light` or `dark` depending by the active theme.
 This can be useful to conditionally style a component depending by its theme.
 
 ```jsx static
-import styled from '@emotion/styled';
+import styled from '@emotion/styled/macro';
 import ThemeProvider from '@quid/theme';
 
 const Test = styled.span`
@@ -52,7 +52,7 @@ is defined to provide a theme to your component.
 It will take care to set the light theme as default theme if no one is set.
 
 ```jsx static
-import styled from '@emotion/styled';
+import styled from '@emotion/styled/macro';
 import { withFallback as wf } from '@quid/theme';
 
 const Button = styled.button`
@@ -74,7 +74,7 @@ The available styles are:
 - `secondary`, `disabled`, `link`, `highlighted` (text color)
 
 ```jsx static
-import styled from '@emotion/styled';
+import styled from '@emotion/styled/macro';
 import { textStyles } from '@quid/theme';
 
 // This paragraph will have bold text, with the secondary text color
