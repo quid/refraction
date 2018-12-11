@@ -110,7 +110,7 @@ const Button = styled(
       }
       &:focus-visible {
         outline: 0;
-        box-shadow: 0 0 0 0.5px white, 0 0 2px 2px ${color};
+        box-shadow: 0 0 0 0.5px ${props.theme.background}, 0 0 2px 2px ${color};
       }
     `;
   })}
