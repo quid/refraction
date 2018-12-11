@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.1](https://github.com/quid/ui-framework/compare/v1.9.0...v1.9.1) (2018-12-11)
+
+
+### Bug Fixes
+
+* properly set JSX pragma at build time ([817eab8](https://github.com/quid/ui-framework/commit/817eab8))
+
+
+
+
+
 ## [1.7.1](https://github.com/quid/ui-framework/compare/v1.7.0...v1.7.1) (2018-12-07)
 
 **Note:** Version bump only for package @quid/react-package-template
