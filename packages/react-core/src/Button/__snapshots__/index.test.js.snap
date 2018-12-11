@@ -43,7 +43,7 @@ exports[`renders a Button with small size 1`] = `
 
 .emotion-0:focus-visible {
   outline: 0;
-  box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px #1ED7D1;
 }
 
 .emotion-0 .e1t5eso00 {
@@ -114,7 +114,7 @@ exports[`renders a disabled and transparent Button 1`] = `
 
 .emotion-0:focus-visible {
   outline: 0;
-  box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px #1ED7D1;
 }
 
 .emotion-0,
@@ -192,7 +192,7 @@ exports[`renders the expected markup 1`] = `
 
 .emotion-0:focus-visible {
   outline: 0;
-  box-shadow: 0 0 0 0.5px white,0 0 2px 2px #1ED7D1;
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px #1ED7D1;
 }
 
 .emotion-0 .e1t5eso00 {
