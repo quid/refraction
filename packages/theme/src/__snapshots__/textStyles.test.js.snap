@@ -1,37 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`returns a valid CSS 1`] = `
-"
-    
-  font-family: IBM Plex Sans, Lucida Grande, Tahoma, Verdana, Arial, sans-serif;
+exports[`returns a valid CSS 1`] = `"font-family:IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;label:primaryFontFamily; font-size:14px;line-height:1.57;label:normal;"`;
 
-    
-    font-size: 14px;
-    line-height: 1.57;
-  
-    
-    font-size: 14px;
-    line-height: 1.57;
-  
-  "
-`;
-
-exports[`works with "withFallback" powered styles (css) 1`] = `
-"
-      
-    
-  font-family: IBM Plex Sans, Lucida Grande, Tahoma, Verdana, Arial, sans-serif;
-
-    
-    font-size: 14px;
-    line-height: 1.57;
-  
-    
-      color: #28beb8;
-    
-  
-    "
-`;
+exports[`works with "withFallback" powered styles (css) 1`] = `"font-family:IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;label:primaryFontFamily; font-size:14px;line-height:1.57;label:normal; color:#28beb8;label:styles;"`;
 
 exports[`works with "withFallback" powered styles 1`] = `
 .emotion-0 {
@@ -44,9 +15,9 @@ exports[`works with "withFallback" powered styles 1`] = `
   color: rgba(0,193,187,0.6);
 }
 
-<Styled(div)>
+<T>
   <div
-    className="emotion-0"
+    className="emotion-0 emotion-1"
   />
-</Styled(div)>
+</T>
 `;
