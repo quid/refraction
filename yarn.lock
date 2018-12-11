@@ -9004,7 +9004,8 @@ methods@~1.1.2:
 
 microbundle@^0.8.3, "microbundle@https://github.com/FezVrasta/microbundle.git#quid-fork":
   version "0.8.3"
-  resolved "https://github.com/FezVrasta/microbundle.git#8274ff04bc0278879e4051a9af6b0db4c0f86777"
+  uid "834297a3134eaf24e0cc35da60812a53b2aef96b"
+  resolved "https://github.com/FezVrasta/microbundle.git#834297a3134eaf24e0cc35da60812a53b2aef96b"
   dependencies:
     "@babel/core" "^7.1.6"
     "@babel/plugin-proposal-class-properties" "7.1.0"
