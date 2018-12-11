@@ -10,7 +10,10 @@ const { override, useEslintRc, babelInclude } = require('customize-cra');
  * project. Be careful!
  */
 module.exports = {
-  webpack: override(babelInclude([path.resolve('packages')]), useEslintRc()),
+  webpack: override(
+    babelInclude([path.resolve('src'), path.resolve('packages')]),
+    useEslintRc()
+  ),
   jest: config => {
     // create-react-app looks for tests in `src`, we look in `packages`
     config.testMatch = config.testMatch.map(m => m.replace('src', 'packages'));
