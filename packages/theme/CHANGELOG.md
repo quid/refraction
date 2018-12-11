@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/quid/ui-framework/compare/v1.8.0...v1.9.0) (2018-12-11)
+
+
+### Bug Fixes
+
+* use Emotion babel macro ([b4e2746](https://github.com/quid/ui-framework/commit/b4e2746))
+
+
+
+
+
 # [1.8.0](https://github.com/quid/ui-framework/compare/v1.7.1...v1.8.0) (2018-12-10)
 
 
