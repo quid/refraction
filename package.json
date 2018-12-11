@@ -67,6 +67,6 @@
     "rimraf": "^2.6.2"
   },
   "resolutions": {
-    "microbundle": "https://github.com/developit/microbundle.git#remove_import_pruning"
+    "microbundle": "https://github.com/FezVrasta/microbundle.git#quid-fork"
   }
 }
