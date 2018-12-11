@@ -84,7 +84,7 @@ const Button = styled(
   padding-left: 0.769em;
   padding-right: 0.769em;
   transition: padding 0.2s ease-in-out, background 0.2s ease-in-out;
-  color: ${wf(props => props.theme.primary)};
+  color: ${wf(props => props.theme.colors.black)};
 
   ${wf(props => {
     const variations = {
