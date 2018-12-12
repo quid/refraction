@@ -67,7 +67,6 @@ const textStyles = (...ss: Array<string>) => (props: Object) => {
   );
   return css`
     ${primaryFontFamily}
-    ${styles.normal}
     ${rules}
   `;
 };
