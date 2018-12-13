@@ -1,8 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`returns a valid CSS 1`] = `"font-family:IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;label:primaryFontFamily; font-size:14px;line-height:1.57;label:normal;"`;
+exports[`returns a valid CSS 1`] = `
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+}
 
-exports[`works with "withFallback" powered styles (css) 1`] = `"font-family:IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;label:primaryFontFamily; color:#28beb8;label:styles;label:textStyles;"`;
+<T>
+  <div
+    className="emotion-0 emotion-1"
+  />
+</T>
+`;
 
 exports[`works with "withFallback" powered styles 1`] = `
 .emotion-0 {
