@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/quid/ui-framework/compare/v1.10.0...v1.11.0) (2018-12-13)
+
+
+### Bug Fixes
+
+* loosen return type ([0586418](https://github.com/quid/ui-framework/commit/0586418))
+
+
+
+
+
 # [1.10.0](https://github.com/quid/ui-framework/compare/v1.9.3...v1.10.0) (2018-12-13)
 
 
