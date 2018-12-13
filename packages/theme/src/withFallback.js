@@ -1,10 +1,9 @@
 // @flow
-import { type SerializedStyles } from '@emotion/utils';
 import themeData from './theme';
 
 // Use this function in your components to provide a fallback theme in case
 // no ThemeProvider is available
-const withFallback = (fn: Object => SerializedStyles) => ({
+const withFallback = (fn: Object => any) => ({
   theme,
   ...props
 }: {
