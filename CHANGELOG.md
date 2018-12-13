@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/quid/ui-framework/compare/v1.9.3...v1.10.0) (2018-12-13)
+
+
+### Bug Fixes
+
+* don't apply "normal" text style by default ([775c447](https://github.com/quid/ui-framework/commit/775c447))
+
+
+### Features
+
+* export a fonts index.css to include all at once ([668fefb](https://github.com/quid/ui-framework/commit/668fefb))
+
+
+
+
+
 ## [1.9.3](https://github.com/quid/ui-framework/compare/v1.9.2...v1.9.3) (2018-12-11)
 
 **Note:** Version bump only for package quid-ui
