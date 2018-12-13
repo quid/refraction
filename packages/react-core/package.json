@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-core",
-  "version": "1.9.3",
+  "version": "1.10.0",
   "description": "Core React Quid components",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
@@ -23,7 +23,7 @@
     "@emotion/core": "^10.0.4",
     "@emotion/css": "^10.0.4",
     "@emotion/styled": "^10.0.4",
-    "@quid/theme": "^1.9.1",
+    "@quid/theme": "^1.10.0",
     "color": "^3.1.0",
     "react-router-dom": "^4.3.1"
   },
