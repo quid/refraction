@@ -34,11 +34,7 @@ module.exports = {
     },
   ],
   usageMode: 'expand',
-  require: [
-    '@quid/theme/fonts/ibmplex/index.css',
-    '@quid/theme/fonts/icons/index.css',
-    './src/index.css',
-  ],
+  require: ['@quid/theme/fonts/index.css', './src/index.css'],
   styleguideComponents: {
     StyleGuide: require.resolve('./src/components/StyleGuide'),
     Wrapper: require.resolve('./src/components/Wrapper'),
