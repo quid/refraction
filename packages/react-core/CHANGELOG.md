@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/quid/ui-framework/compare/v1.10.0...v1.11.0) (2018-12-13)
+
+
+### Features
+
+* add Text component ([5f639a3](https://github.com/quid/ui-framework/commit/5f639a3))
+
+
+
+
+
 # [1.10.0](https://github.com/quid/ui-framework/compare/v1.9.3...v1.10.0) (2018-12-13)
 
 **Note:** Version bump only for package @quid/react-core
