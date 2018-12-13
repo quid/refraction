@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a Skeleton with a different tag 1`] = `
+@keyframes animation-0 {
+  0% {
+    background-color: #C7CCD1;
+  }
+
+  50% {
+    background-color: rgba(199,204,209,0.5);
+  }
+
+  100% {
+    background-color: #C7CCD1;
+  }
+}
+
+.emotion-0 {
+  color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 2px;
+  background-color: #C7CCD1;
+  -webkit-animation: animation-0 3s ease-in-out infinite;
+  animation: animation-0 3s ease-in-out infinite;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+}
+
+<Skeleton
+  as="h1"
+>
+  <h1>
+    <span
+      className="emotion-0 emotion-1"
+    >
+      foobar foo
+    </span>
+  </h1>
+</Skeleton>
+`;
+
+exports[`renders a Skeleton with set width 1`] = `
+@keyframes animation-0 {
+  0% {
+    background-color: #C7CCD1;
+  }
+
+  50% {
+    background-color: rgba(199,204,209,0.5);
+  }
+
+  100% {
+    background-color: #C7CCD1;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    background-color: #C7CCD1;
+  }
+
+  50% {
+    background-color: rgba(199,204,209,0.5);
+  }
+
+  100% {
+    background-color: #C7CCD1;
+  }
+}
+
+.emotion-0 {
+  color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 2px;
+  background-color: #C7CCD1;
+  -webkit-animation: animation-0 3s ease-in-out infinite;
+  animation: animation-0 3s ease-in-out infinite;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  width: 20px;
+  display: inline-block;
+}
+
+.emotion-0::before {
+  content: 'X';
+}
+
+<Skeleton
+  width="20px"
+>
+  <span>
+    <span
+      className="emotion-0 emotion-1"
+    />
+  </span>
+</Skeleton>
+`;
+
+exports[`renders a component with a different tag 1`] = `
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+<Text
+  as="h1"
+  type="xlarge"
+>
+  <h1
+    className="emotion-0 emotion-1"
+    type="xlarge"
+  />
+</Text>
+`;
+
+exports[`renders the expected markup 1`] = `
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+}
+
+<Text>
+  <span
+    className="emotion-0 emotion-1"
+  />
+</Text>
+`;
+
+exports[`renders the plain skeleton 1`] = `
+@keyframes animation-0 {
+  0% {
+    background-color: #C7CCD1;
+  }
+
+  50% {
+    background-color: rgba(199,204,209,0.5);
+  }
+
+  100% {
+    background-color: #C7CCD1;
+  }
+}
+
+.emotion-0 {
+  color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 2px;
+  background-color: #C7CCD1;
+  -webkit-animation: animation-0 3s ease-in-out infinite;
+  animation: animation-0 3s ease-in-out infinite;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+}
+
+<Skeleton>
+  <span>
+    <span
+      className="emotion-0 emotion-1"
+    >
+      foobar foobaz
+    </span>
+  </span>
+</Skeleton>
+`;
