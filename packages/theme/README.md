@@ -94,6 +94,12 @@ an iconic font family used to provide our icons.
 You can import both of them in your project with:
 
 ```js static
+import '@quid/theme/fonts';
+```
+
+Or singularly with:
+
+```js static
 import '@quid/theme/fonts/ibmplex';
 import '@quid/theme/fonts/icons';
 ```
