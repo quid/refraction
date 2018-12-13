@@ -1,27 +1,25 @@
-language: node_js
-node_js: 11
+language: c
+services:
+  - docker
 
 # We cache the node_modules and other Yarn related files to speed up the build
 cache: yarn
 
-# Upgrade Yarn
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.12.1
-  - export PATH="$HOME/.yarn/bin:$PATH"
+  - docker pull fezvr4sta/node:11.1.0-alpine-yarn-flow
+  - docker run -v ${TRAVIS_BUILD_DIR}:/root/src/ -v $HOME/.yarn-cache:/root/.yarn-cache -it -d --name build fezvr4sta/node:11.1.0-alpine-yarn-flow bash
 
-# Override default install command (it would run without --frozen-lockfile by default)
 install:
-  - yarn --frozen-lockfile
+  - docker exec build sh -c 'cd /root/src/; yarn --frozen-lockfile'
 
-# Here we run all our tests
 jobs:
   include:
     - stage: type checks and unit tests
       script:
-        - flow check
-        - react-app-rewired test --coverage --colors
+        - docker exec build sh -c 'cd /root/src/; ./node_modules/.bin/flow check'
+        - docker exec build sh -c 'cd /root/src/; ./node_modules/.bin/react-app-rewired test --coverage --colors'
     - stage: publish gh-pages
-      script: yarn build
+      script: docker exec build sh -c 'cd /root/src/; yarn build'
       deploy:
         provider: pages
         skip-cleanup: true
@@ -31,11 +29,9 @@ jobs:
         on:
           branch: master
     - stage: publish to Artifactory
+      if: (NOT type IN (pull_request)) AND (branch = master)
       script: skip
       deploy:
         skip_cleanup: true # Keep all the artifacts generated on prev steps
         provider: script
         script: bash scripts/deploy.sh
-        # The deploy script will run only on master
-        on:
-          branch: master
