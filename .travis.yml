@@ -21,6 +21,7 @@ jobs:
         - flow check
         - react-app-rewired test --coverage --colors
     - stage: publish gh-pages
+      if: (NOT type IN (pull_request)) AND (branch = master)
       script: yarn build
       deploy:
         provider: pages
@@ -31,6 +32,7 @@ jobs:
         on:
           branch: master
     - stage: publish to Artifactory
+      if: (NOT type IN (pull_request)) AND (branch = master)
       script: skip
       deploy:
         skip_cleanup: true # Keep all the artifacts generated on prev steps
