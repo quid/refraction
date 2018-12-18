@@ -29,8 +29,6 @@ jobs:
         github-token: $GITHUB_TOKEN
         keep-history: true
         local-dir: styleguide
-        on:
-          branch: master
     - stage: publish to Artifactory
       if: (NOT type IN (pull_request)) AND (branch = master)
       script: skip
@@ -38,6 +36,3 @@ jobs:
         skip_cleanup: true # Keep all the artifacts generated on prev steps
         provider: script
         script: bash scripts/deploy.sh
-        # The deploy script will run only on master
-        on:
-          branch: master
