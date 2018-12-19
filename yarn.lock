@@ -5047,10 +5047,10 @@ entities@^1.1.1, entities@~1.1.1:
   resolved "https://registry.npmjs.org/entities/-/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
   integrity sha512-f2LZMYl1Fzu7YSBKg+RoROelpOaNrcGmE9AZubeDfrCEia483oW4MI4VyFd5VNHIgQ/7qm1I0wUHK1eJnn2y2w==
 
-enzyme-adapter-react-16.3@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.npmjs.org/enzyme-adapter-react-16.3/-/enzyme-adapter-react-16.3-1.4.0.tgz#1232b6b0460b7257b03bad7eb9c8a30e74582817"
-  integrity sha512-7m/FRUPFEorR4X0uoqpPhreipQOz3/pzfOT/hSJ0qUpPGH8L70tb/jG9/nexk8qOwpyHgnNz3Cw+Gq97v3b5Pg==
+enzyme-adapter-react-16.3@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.npmjs.org/enzyme-adapter-react-16.3/-/enzyme-adapter-react-16.3-1.4.1.tgz#7da00e529ddecf62aafd4f7cda132c13f18c99ee"
+  integrity sha512-5jhavjTSid0KqW0pPKDZV3CpNX3Pfw6Urwbz/Lt8k1iX5qnxh+7hbICjbEK9IGh5FeMQMO5VGOpmFk77C+EL/A==
   dependencies:
     enzyme-adapter-utils "^1.9.0"
     function.prototype.name "^1.1.0"

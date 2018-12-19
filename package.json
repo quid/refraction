@@ -50,7 +50,7 @@
     "builder-init": "^0.5.1",
     "customize-cra": "^0.2.7",
     "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16.3": "^1.4.0",
+    "enzyme-adapter-react-16.3": "^1.4.1",
     "enzyme-to-json": "^3.3.5",
     "eslint-plugin-flow-header": "^0.2.0",
     "flow-bin": "~0.87.0",
