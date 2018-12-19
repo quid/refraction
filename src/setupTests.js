@@ -6,8 +6,11 @@ import 'jest-date-mock';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16.3';
 
-import serializer from 'jest-emotion';
+import serializer, { matchers } from 'jest-emotion';
 import { createSerializer as createEnzymeToJsonSerializer } from 'enzyme-to-json';
+
+// Add the custom matchers provided by 'jest-emotion'
+expect.extend(matchers);
 
 // Initialize Enzyme to work with React 16
 Enzyme.configure({ adapter: new Adapter() });
