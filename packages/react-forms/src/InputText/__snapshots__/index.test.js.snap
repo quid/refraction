@@ -82,26 +82,31 @@ exports[`renders the expected markup 1`] = `
 <InputText
   data-foo="bar"
 >
-  <Container
+  <ForwardRef
     className="emotion-5 emotion-2"
     data-foo="bar"
-    isInvalid={false}
   >
-    <div
-      className="emotion-2 emotion-3 emotion-4"
+    <Container
+      className="emotion-5 emotion-2"
       data-foo="bar"
+      isInvalid={false}
     >
-      <Input
-        onChange={[Function]}
-        onInvalid={[Function]}
+      <div
+        className="emotion-2 emotion-3 emotion-4"
+        data-foo="bar"
       >
-        <input
-          className="emotion-0 emotion-1"
+        <Input
           onChange={[Function]}
           onInvalid={[Function]}
-        />
-      </Input>
-    </div>
-  </Container>
+        >
+          <input
+            className="emotion-0 emotion-1"
+            onChange={[Function]}
+            onInvalid={[Function]}
+          />
+        </Input>
+      </div>
+    </Container>
+  </ForwardRef>
 </InputText>
 `;

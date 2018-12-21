@@ -32,6 +32,17 @@ const include = obj => keys =>
     }, {});
 
 // istanbul ignore next
+const mergeRefs = (...refs: Array<any>) => (ref: any) => {
+  refs.forEach(resolvableRef => {
+    if (typeof resolvableRef === 'function') {
+      resolvableRef(ref);
+    } else if (resolvableRef != null) {
+      (resolvableRef: any).current = ref;
+    }
+  });
+};
+
+// istanbul ignore next
 const noop = () => undefined;
 
 const INPUT_ATTRIBUTES = [
@@ -128,29 +139,31 @@ const Container = styled.div`
 `;
 
 const InputText: React.StatelessFunctionalComponent<Props> = styled(
-  ({ onChange, validationErrorMessage, ...props }: Props) => {
-    const input = React.createRef();
-    return (
-      <InvalidHandler errorMessage={validationErrorMessage}>
-        {(getInputProps, isInvalid) => (
-          <Container {...omit(props)(INPUT_ATTRIBUTES)} isInvalid={isInvalid}>
-            <Input
-              ref={input}
-              {...include(props)([...INPUT_ATTRIBUTES, 'disabled'])}
-              {...getInputProps({ onChange })}
-            />
-            {props.renderAddon &&
-              props.renderAddon({
-                onClick: () =>
-                  input.current
-                    ? input.current.focus()
-                    : /* istanbul ignore next */ noop(),
-              })}
-          </Container>
-        )}
-      </InvalidHandler>
-    );
-  }
+  React.forwardRef(
+    ({ onChange, validationErrorMessage, ...props }: Props, ref) => {
+      const input = React.createRef();
+      return (
+        <InvalidHandler errorMessage={validationErrorMessage}>
+          {(getInputProps, isInvalid) => (
+            <Container {...omit(props)(INPUT_ATTRIBUTES)} isInvalid={isInvalid}>
+              <Input
+                ref={mergeRefs(input, ref)}
+                {...include(props)([...INPUT_ATTRIBUTES, 'disabled'])}
+                {...getInputProps({ onChange })}
+              />
+              {props.renderAddon &&
+                props.renderAddon({
+                  onClick: () =>
+                    input.current
+                      ? input.current.focus()
+                      : /* istanbul ignore next */ noop(),
+                })}
+            </Container>
+          )}
+        </InvalidHandler>
+      );
+    }
+  )
 )();
 
 // @component
