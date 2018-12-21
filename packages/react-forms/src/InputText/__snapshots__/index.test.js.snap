@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders an input with addon 1`] = `
+<div
+  onClick={[Function]}
+>
+  foo
+</div>
+`;
+
+exports[`renders the expected markup 1`] = `
+.emotion-3 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #C7CCD1;
+  -webkit-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+  border-radius: 2px;
+  padding: 0 10px;
+  height: 30px;
+  background-color: #FFFFFF;
+  color: #121212;
+}
+
+.emotion-3:focus-within {
+  border-color: #00c1bb;
+}
+
+.emotion-0 {
+  all: unset;
+  min-width: 0;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-shadow: none;
+}
+
+.emotion-0[type='number'],
+.emotion-0[type='date'] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+.emotion-0[type='number']::-webkit-outer-spin-button,
+.emotion-0[type='date']::-webkit-outer-spin-button,
+.emotion-0[type='number']::-webkit-inner-spin-button,
+.emotion-0[type='date']::-webkit-inner-spin-button,
+.emotion-0[type='number']::-webkit-calendar-picker-indicator,
+.emotion-0[type='date']::-webkit-calendar-picker-indicator,
+.emotion-0[type='number']::-webkit-inner-spin-button,
+.emotion-0[type='date']::-webkit-inner-spin-button,
+.emotion-0[type='number']::-webkit-clear-button,
+.emotion-0[type='date']::-webkit-clear-button {
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  display: none;
+}
+
+.emotion-0:focus {
+  outline: 0;
+}
+
+.emotion-0:not(:last-child) {
+  padding-right: 10px;
+}
+
+<InputText
+  data-foo="bar"
+>
+  <Container
+    className="emotion-5 emotion-2"
+    data-foo="bar"
+    isInvalid={false}
+  >
+    <div
+      className="emotion-2 emotion-3 emotion-4"
+      data-foo="bar"
+    >
+      <Input
+        onChange={[Function]}
+        onInvalid={[Function]}
+      >
+        <input
+          className="emotion-0 emotion-1"
+          onChange={[Function]}
+          onInvalid={[Function]}
+        />
+      </Input>
+    </div>
+  </Container>
+</InputText>
+`;
