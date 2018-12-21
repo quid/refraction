@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.13.0](https://github.com/quid/ui-framework/compare/v1.12.0...v1.13.0) (2018-12-21)
+
+
+### Features
+
+* add InputText and InvalidHandler components ([43465ee](https://github.com/quid/ui-framework/commit/43465ee))
+
+
+
+
+
 # [1.11.0](https://github.com/quid/ui-framework/compare/v1.10.0...v1.11.0) (2018-12-13)
 
 **Note:** Version bump only for package @quid/react-forms
