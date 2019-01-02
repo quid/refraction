@@ -18,12 +18,13 @@ exports[`renders a Button with small size 1`] = `
   font-weight: bold;
   display: inline-block;
   border-radius: 2px;
-  line-height: 1.9;
+  height: 24px;
   padding-left: 0.769em;
   padding-right: 0.769em;
   -webkit-transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
   transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
   color: #121212;
+  border: 1px solid transparent;
   background-color: #1ED7D1;
 }
 
@@ -85,12 +86,13 @@ exports[`renders a disabled and transparent Button 1`] = `
   font-weight: bold;
   display: inline-block;
   border-radius: 2px;
-  line-height: 2.3;
+  height: 32px;
   padding-left: 0.769em;
   padding-right: 0.769em;
   -webkit-transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
   transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
   color: #121212;
+  border: 1px solid transparent;
   background-color: #1ED7D1;
   cursor: default;
   background-color: transparent;
@@ -163,12 +165,13 @@ exports[`renders the expected markup 1`] = `
   font-weight: bold;
   display: inline-block;
   border-radius: 2px;
-  line-height: 2.3;
+  height: 32px;
   padding-left: 0.769em;
   padding-right: 0.769em;
   -webkit-transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
   transition: padding 0.2s ease-in-out,background 0.2s ease-in-out;
   color: #121212;
+  border: 1px solid transparent;
   background-color: #1ED7D1;
 }
 

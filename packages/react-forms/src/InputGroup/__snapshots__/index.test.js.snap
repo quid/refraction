@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`applies the expected class names 1`] = `
+.emotion-3 {
+  display: inline-block;
+  border-radius: 2px;
+  -webkit-transition: 0.2s ease-in-out border-color;
+  transition: 0.2s ease-in-out border-color;
+  border: 1px solid #8F9BA3;
+}
+
+.emotion-3:focus-within {
+  border-color: #00c1bb;
+}
+
+.emotion-0 {
+  border-radius: 1px 0 0 1px;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.emotion-1 {
+  border-radius: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.emotion-2 {
+  border-radius: 0 1px 1px 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+<InputGroup>
+  <div
+    className="emotion-3 emotion-4"
+  >
+    <span
+      className="emotion-0"
+      key=".$.0"
+    />
+    <span
+      className="emotion-1"
+      key=".$.1"
+    />
+    <span
+      className="emotion-2"
+      key=".$.2"
+    />
+  </div>
+</InputGroup>
+`;

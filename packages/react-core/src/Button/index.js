@@ -11,6 +11,11 @@ const OKAY = '#039849';
 const WARNING = '#FFCE03';
 const HAZARD = '#E61E27';
 
+const HEIGHT = {
+  small: 24,
+  regular: 32,
+};
+
 export type Importance =
   | 'primary'
   | 'secondary'
@@ -80,11 +85,12 @@ const Button = styled(
   ${textStyles('normal', 'bold')}
   display: inline-block;
   border-radius: 2px;
-  line-height: ${props => (props.size === 'small' ? 1.9 : 2.3)};
+  height: ${props => HEIGHT[props.size]}px;
   padding-left: 0.769em;
   padding-right: 0.769em;
   transition: padding 0.2s ease-in-out, background 0.2s ease-in-out;
   color: ${wf(props => props.theme.colors.black)};
+  border: 1px solid transparent;
 
   ${wf(props => {
     const variations = {
