@@ -17,6 +17,7 @@ const Addon = styled.div`
   flex-direction: column;
   align-items: center;
   align-self: stretch;
+  justify-content: center;
 `;
 
 const Unit = styled.div`
