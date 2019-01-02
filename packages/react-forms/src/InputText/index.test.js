@@ -11,7 +11,7 @@ it('renders the expected markup', () => {
 
 it('renders a disabled input', () => {
   const wrapper = mount(<InputText disabled />);
-  expect(wrapper).toHaveStyleRule('color', colors.gray3);
+  expect(wrapper).toHaveStyleRule('color', colors.gray2);
 });
 
 it('renders an input with addon', () => {
