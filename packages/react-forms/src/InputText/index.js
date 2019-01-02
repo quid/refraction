@@ -105,6 +105,12 @@ const Input = styled.input`
   &:not(:last-child) {
     padding-right: ${props => PADDING[props.size || 'regular']}px;
   }
+  &::placeholder {
+    color: ${wf(props => props.theme.colors.gray3)};
+  }
+  &:disabled::placeholder {
+    color: ${wf(props => props.theme.colors.gray2)};
+  }
 `;
 
 const Container = styled.div`
@@ -117,17 +123,17 @@ const Container = styled.div`
     ${wf(props =>
       props.isInvalid
         ? /* istanbul ignore next */ props.theme.colors.red
-        : props.theme.colors.gray2
+        : props.disabled
+        ? props.theme.colors.gray1
+        : props.theme.colors.gray3
     )};
   transition: border 0.2s ease-in-out;
   border-radius: 2px;
   padding: 0 ${props => PADDING[props.size || 'regular']}px;
   height: ${props => HEIGHT[props.size || 'regular']}px;
-  background-color: ${wf(props =>
-    props.disabled ? props.theme.colors.gray1 : props.theme.colors.white
-  )};
+  background-color: transparent;
   color: ${wf(props =>
-    props.disabled ? props.theme.colors.gray3 : props.theme.colors.black
+    props.disabled ? props.theme.colors.gray2 : props.theme.colors.primary
   )};
 
   &:focus-within {

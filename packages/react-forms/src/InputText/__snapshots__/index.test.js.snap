@@ -22,14 +22,13 @@ exports[`renders the expected markup 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #C7CCD1;
+  border: 1px solid #8F9BA3;
   -webkit-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
   border-radius: 2px;
   padding: 0 10px;
   height: 32px;
-  background-color: #FFFFFF;
-  color: #121212;
+  background-color: transparent;
 }
 
 .emotion-3:focus-within {
@@ -78,6 +77,38 @@ exports[`renders the expected markup 1`] = `
 
 .emotion-0:not(:last-child) {
   padding-right: 10px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #8F9BA3;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #8F9BA3;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #8F9BA3;
+}
+
+.emotion-0::placeholder {
+  color: #8F9BA3;
+}
+
+.emotion-0:disabled::-webkit-input-placeholder {
+  color: #C7CCD1;
+}
+
+.emotion-0:disabled::-moz-placeholder {
+  color: #C7CCD1;
+}
+
+.emotion-0:disabled:-ms-input-placeholder {
+  color: #C7CCD1;
+}
+
+.emotion-0:disabled::placeholder {
+  color: #C7CCD1;
 }
 
 <InputText
