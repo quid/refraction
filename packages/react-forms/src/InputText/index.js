@@ -66,7 +66,7 @@ const INPUT_ATTRIBUTES = [
 const HEIGHT = {
   large: 50,
   small: 24,
-  regular: 30,
+  regular: 32,
 };
 
 const PADDING = {
@@ -109,6 +109,7 @@ const Input = styled.input`
 
 const Container = styled.div`
   ${textStyles('normal')}
+  vertical-align: top;
 
   display: inline-flex;
   align-items: center;
