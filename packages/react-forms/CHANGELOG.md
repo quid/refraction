@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/quid/ui-framework/compare/v1.13.0...v1.14.0) (2019-01-03)
+
+
+### Bug Fixes
+
+* add missing exports ([bab4e18](https://github.com/quid/ui-framework/commit/bab4e18))
+* dark theme support ([d4a3272](https://github.com/quid/ui-framework/commit/d4a3272))
+* inputNumber alignment ([7c87e8a](https://github.com/quid/ui-framework/commit/7c87e8a))
+
+
+### Features
+
+* add InputGroup ([ccf13be](https://github.com/quid/ui-framework/commit/ccf13be))
+* add InputNumber component ([353f254](https://github.com/quid/ui-framework/commit/353f254))
+* add InputToggle component ([c02d3fe](https://github.com/quid/ui-framework/commit/c02d3fe))
+* add support for input validation to InputGroup ([4934336](https://github.com/quid/ui-framework/commit/4934336))
+
+
+### Performance Improvements
+
+* "include" utils improvements ([6b72dc9](https://github.com/quid/ui-framework/commit/6b72dc9))
+
+
+
+
+
 # [1.13.0](https://github.com/quid/ui-framework/compare/v1.12.0...v1.13.0) (2018-12-21)
 
 
