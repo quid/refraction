@@ -4,6 +4,7 @@ import { css } from 'emotion';
 import styled from '@emotion/styled/macro';
 import { textStyles, withFallback as wf } from '@quid/theme';
 import InvalidHandler from '../InvalidHandler';
+import { INPUT_ATTRIBUTES, omit, include } from '../utils/inputPropsFilters';
 
 type RenderProp<P> = P => React.Node;
 
@@ -19,22 +20,6 @@ type Props = {
   validationErrorMessage?: string,
 };
 
-const omit = obj => keys =>
-  Object.keys(obj)
-    .filter(key => !keys.includes(key))
-    .reduce((acc, current) => {
-      acc[current] = obj[current];
-      return acc;
-    }, {});
-
-const include = obj => keys =>
-  Object.keys(obj)
-    .filter(key => keys.includes(key))
-    .reduce((acc, current) => {
-      acc[current] = obj[current];
-      return acc;
-    }, {});
-
 // istanbul ignore next
 const mergeRefs = (...refs: Array<any>) => (ref: any) => {
   refs.forEach(resolvableRef => {
@@ -48,24 +33,6 @@ const mergeRefs = (...refs: Array<any>) => (ref: any) => {
 
 // istanbul ignore next
 const noop = () => undefined;
-
-const INPUT_ATTRIBUTES = [
-  'autoComplete',
-  'autoFocus',
-  'defaultValue',
-  'form',
-  'list',
-  'min',
-  'max',
-  'name',
-  'onChange',
-  'placeholder',
-  'readOnly',
-  'required',
-  'tabIndex',
-  'type',
-  'value',
-];
 
 const HEIGHT = {
   large: 50,
