@@ -13,6 +13,7 @@ exports[`renders the expected markup 1`] = `
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
+  vertical-align: top;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -21,14 +22,12 @@ exports[`renders the expected markup 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #C7CCD1;
+  border: 1px solid #8F9BA3;
   -webkit-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
   border-radius: 2px;
-  padding: 0 10px;
-  height: 30px;
-  background-color: #FFFFFF;
-  color: #121212;
+  height: 32px;
+  background-color: transparent;
 }
 
 .emotion-3:focus-within {
@@ -44,6 +43,7 @@ exports[`renders the expected markup 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  padding: 0 10px;
   box-shadow: none;
 }
 
@@ -79,29 +79,66 @@ exports[`renders the expected markup 1`] = `
   padding-right: 10px;
 }
 
+.emotion-0::-webkit-input-placeholder {
+  color: #8F9BA3;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #8F9BA3;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #8F9BA3;
+}
+
+.emotion-0::placeholder {
+  color: #8F9BA3;
+}
+
+.emotion-0:disabled::-webkit-input-placeholder {
+  color: #C7CCD1;
+}
+
+.emotion-0:disabled::-moz-placeholder {
+  color: #C7CCD1;
+}
+
+.emotion-0:disabled:-ms-input-placeholder {
+  color: #C7CCD1;
+}
+
+.emotion-0:disabled::placeholder {
+  color: #C7CCD1;
+}
+
 <InputText
   data-foo="bar"
 >
-  <Container
+  <ForwardRef
     className="emotion-5 emotion-2"
     data-foo="bar"
-    isInvalid={false}
   >
-    <div
-      className="emotion-2 emotion-3 emotion-4"
+    <Container
+      className="emotion-5 emotion-2"
       data-foo="bar"
+      isInvalid={false}
     >
-      <Input
-        onChange={[Function]}
-        onInvalid={[Function]}
+      <div
+        className="emotion-2 emotion-3 emotion-4"
+        data-foo="bar"
       >
-        <input
-          className="emotion-0 emotion-1"
+        <Input
           onChange={[Function]}
           onInvalid={[Function]}
-        />
-      </Input>
-    </div>
-  </Container>
+        >
+          <input
+            className="emotion-0 emotion-1"
+            onChange={[Function]}
+            onInvalid={[Function]}
+          />
+        </Input>
+      </div>
+    </Container>
+  </ForwardRef>
 </InputText>
 `;

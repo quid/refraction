@@ -77,8 +77,12 @@ with some useful additions.
         <td>
           <InputText
             placeholder="I'm a Label"
-            renderAddon={({ onClick }) => (
-              <Icon name="calendar" onClick={onClick} />
+            renderAddon={({ onClick, marginRightClass }) => (
+              <Icon
+                className={marginRightClass}
+                name="calendar"
+                onClick={onClick}
+              />
             )}
           />
         </td>
@@ -86,8 +90,12 @@ with some useful additions.
           <InputText
             placeholder="I'm a Label"
             defaultValue="Typed something"
-            renderAddon={({ onClick }) => (
-              <Icon name="calendar" onClick={onClick} />
+            renderAddon={({ onClick, marginRightClass }) => (
+              <Icon
+                className={marginRightClass}
+                name="calendar"
+                onClick={onClick}
+              />
             )}
           />
         </td>
@@ -95,8 +103,12 @@ with some useful additions.
           <InputText
             placeholder="I'm a Label"
             disabled
-            renderAddon={({ onClick }) => (
-              <Icon name="calendar" onClick={onClick} />
+            renderAddon={({ onClick, marginRightClass }) => (
+              <Icon
+                className={marginRightClass}
+                name="calendar"
+                onClick={onClick}
+              />
             )}
           />
         </td>
@@ -138,6 +150,8 @@ text fields get focused when its addon is clicked.
 
 ```js
 <InputText
-  renderAddon={({ onClick }) => <Icon name="caret_down" onClick={onClick} />}
+  renderAddon={({ onClick, marginRightClass }) => (
+    <Icon className={marginRightClass} name="caret_down" onClick={onClick} />
+  )}
 />
 ```

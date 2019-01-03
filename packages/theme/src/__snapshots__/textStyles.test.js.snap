@@ -17,8 +17,8 @@ exports[`returns a valid CSS 1`] = `
 exports[`works with "withFallback" powered styles 1`] = `
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
-  color: #6D7983;
-  color: #909BA3;
+  color: #6C7983;
+  color: #8F9BA3;
   color: #28beb8;
   color: rgba(0,193,187,0.6);
 }
