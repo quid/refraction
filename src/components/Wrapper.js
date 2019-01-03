@@ -15,7 +15,7 @@ const Label = styled.label`
   display: block;
   padding-bottom: 1em;
   margin-bottom: 1em;
-  border-bottom: 1px solid ${props => props.theme.disabled};
+  border-bottom: 1px solid ${props => props.theme.colors.gray1};
 `;
 
 export default class Wrapper extends Component {
