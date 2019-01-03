@@ -7,6 +7,8 @@ Array [
   "Button",
   "InputText",
   "InputNumber",
+  "InputGroup",
+  "InputToggle",
 ]
 `);
 });
