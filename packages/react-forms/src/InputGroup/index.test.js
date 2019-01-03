@@ -6,9 +6,9 @@ import InputGroup from '.';
 it('provides the expected class names', () => {
   mount(
     <InputGroup>
-      {cn => expect(cn).toMatchInlineSnapshot(`"css-eklp95"`)}
-      {cn => expect(cn).toMatchInlineSnapshot(`"css-1ts4n50"`)}
-      {cn => expect(cn).toMatchInlineSnapshot(`"css-cesvsp"`)}
+      {cn => expect(cn).toMatchInlineSnapshot(`"css-1qvwxaf"`)}
+      {cn => expect(cn).toMatchInlineSnapshot(`"css-93venf"`)}
+      {cn => expect(cn).toMatchInlineSnapshot(`"css-1biyg7j"`)}
     </InputGroup>
   );
 });

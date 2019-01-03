@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { css } from 'emotion';
 import styled from '@emotion/styled/macro';
 import { textStyles, withFallback as wf } from '@quid/theme';
 import InvalidHandler from '../InvalidHandler';
@@ -9,7 +10,10 @@ type RenderProp<P> = P => React.Node;
 type Props = {
   type?: string,
   size?: 'regular' | 'large' | 'small',
-  renderAddon?: RenderProp<{ onClick: (SyntheticEvent<Element>) => void }>,
+  renderAddon?: RenderProp<{
+    onClick: (SyntheticEvent<Element>) => void,
+    marginRightClass: string,
+  }>,
   as?: string,
   onChange?: (SyntheticInputEvent<any>) => void,
   validationErrorMessage?: string,
@@ -80,6 +84,7 @@ const Input = styled.input`
   min-width: 0;
   align-self: stretch;
   flex: 1;
+  padding: 0 ${props => PADDING[props.size || 'regular']}px;
 
   // needed to remove :invalid red border in Firefox
   box-shadow: none;
@@ -129,7 +134,6 @@ const Container = styled.div`
     )};
   transition: border 0.2s ease-in-out;
   border-radius: 2px;
-  padding: 0 ${props => PADDING[props.size || 'regular']}px;
   height: ${props => HEIGHT[props.size || 'regular']}px;
   background-color: transparent;
   color: ${wf(props =>
@@ -164,6 +168,9 @@ const InputText: React.StatelessFunctionalComponent<Props> = styled(
                     input.current
                       ? input.current.focus()
                       : /* istanbul ignore next */ noop(),
+                  marginRightClass: css`
+                    margin-right: ${PADDING[props.size || 'regular']}px;
+                  `,
                 })}
             </Container>
           )}

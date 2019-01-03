@@ -48,10 +48,10 @@ const InputNumber = styled(
         step={step}
         disabled={disabled}
         readOnly={readOnly}
-        renderAddon={() => (
+        renderAddon={({ marginRightClass }) => (
           <>
             <Unit>{unit}</Unit>
-            <Addon>
+            <Addon className={marginRightClass}>
               <Caret
                 disabled={disabled || readOnly}
                 onClick={() => input.current && input.current.stepUp(step)}

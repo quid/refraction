@@ -26,6 +26,19 @@ not desired, a render-prop can be passed, with the `className` as first argument
 </InputGroup>
 ```
 
+The component supports HTML validation:
+
+```js
+<form onSubmit={e => e.preventDefault()}>
+  <InputGroup>
+    <InputText type="email" required placeholder="InputText" />
+    <Button type="submit" importance="secondary">
+      Submit
+    </Button>
+  </InputGroup>
+</form>
+```
+
 You can combine any of the components exported by `@quid/react-forms`:
 
 ```js

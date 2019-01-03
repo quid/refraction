@@ -2,6 +2,7 @@
 
 exports[`applies the expected class names 1`] = `
 .emotion-3 {
+  all: unset;
   display: inline-block;
   border-radius: 2px;
   -webkit-transition: 0.2s ease-in-out border-color;
@@ -11,6 +12,10 @@ exports[`applies the expected class names 1`] = `
 
 .emotion-3:focus-within {
   border-color: #00c1bb;
+}
+
+.emotion-3[data-invalid='true'] {
+  border-color: #E61E27;
 }
 
 .emotion-0 {
@@ -34,8 +39,11 @@ exports[`applies the expected class names 1`] = `
 }
 
 <InputGroup>
-  <div
+  <fieldset
     className="emotion-3 emotion-4"
+    data-invalid={false}
+    onChange={[Function]}
+    onInvalid={[Function]}
   >
     <span
       className="emotion-0"
@@ -49,6 +57,6 @@ exports[`applies the expected class names 1`] = `
       className="emotion-2"
       key=".$.2"
     />
-  </div>
+  </fieldset>
 </InputGroup>
 `;
