@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a disabled InputToggle 1`] = `
+.emotion-6 {
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  width: 40px;
+}
+
+.emotion-0 {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.emotion-0:focus-visible ~ .emotion-5 {
+  box-shadow: 0 0 2px 2px rgba(27,31,34,0.4);
+}
+
+.emotion-0:checked.emotion-0:focus-visible ~ .emotion-5 {
+  box-shadow: 0 0 2px 2px rgba(0,193,187,0.8);
+}
+
+.emotion-0:checked ~ .emotion-3 {
+  background-color: #00c1bb;
+}
+
+.emotion-0:checked ~ .emotion-5 {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.emotion-0:not(:disabled) ~ .emotion-5:active {
+  width: 20px;
+}
+
+.emotion-0:checked:not(:disabled) ~ .emotion-5:active {
+  margin-left: -4px;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #C7CCD1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.4;
+}
+
+.emotion-4 {
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: default;
+}
+
+.emotion-4:hover {
+  box-shadow: 0 0 4px rgba(27,31,34,0.8);
+}
+
+.emotion-4:hover {
+  box-shadow: none;
+}
+
+<Container
+  disabled={true}
+>
+  <label
+    className="emotion-6 emotion-7"
+    disabled={true}
+  >
+    <Input
+      disabled={true}
+      id="quid-random-id"
+      type="checkbox"
+    >
+      <input
+        className="emotion-0 emotion-1"
+        disabled={true}
+        id="quid-random-id"
+        type="checkbox"
+      />
+    </Input>
+    <Slider
+      disabled={true}
+    >
+      <div
+        className="emotion-2 emotion-3"
+        disabled={true}
+      />
+    </Slider>
+    <Handle
+      disabled={true}
+      htmlFor="quid-random-id"
+    >
+      <label
+        className="emotion-4 emotion-5"
+        disabled={true}
+        htmlFor="quid-random-id"
+      />
+    </Handle>
+  </label>
+</Container>
+`;
+
+exports[`renders an InputToggle 1`] = `
+.emotion-6 {
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  width: 40px;
+}
+
+.emotion-0 {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.emotion-0:focus-visible ~ .emotion-5 {
+  box-shadow: 0 0 2px 2px rgba(27,31,34,0.4);
+}
+
+.emotion-0:checked.emotion-0:focus-visible ~ .emotion-5 {
+  box-shadow: 0 0 2px 2px rgba(0,193,187,0.8);
+}
+
+.emotion-0:checked ~ .emotion-3 {
+  background-color: #00c1bb;
+}
+
+.emotion-0:checked ~ .emotion-5 {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.emotion-0:not(:disabled) ~ .emotion-5:active {
+  width: 20px;
+}
+
+.emotion-0:checked:not(:disabled) ~ .emotion-5:active {
+  margin-left: -4px;
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #C7CCD1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.emotion-4 {
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.emotion-4:hover {
+  box-shadow: 0 0 4px rgba(27,31,34,0.8);
+}
+
+<Container>
+  <label
+    className="emotion-6 emotion-7"
+  >
+    <Input
+      id="quid-random-id"
+      type="checkbox"
+    >
+      <input
+        className="emotion-0 emotion-1"
+        id="quid-random-id"
+        type="checkbox"
+      />
+    </Input>
+    <Slider>
+      <div
+        className="emotion-2 emotion-3"
+      />
+    </Slider>
+    <Handle
+      htmlFor="quid-random-id"
+    >
+      <label
+        className="emotion-4 emotion-5"
+        htmlFor="quid-random-id"
+      />
+    </Handle>
+  </label>
+</Container>
+`;

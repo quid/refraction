@@ -8,11 +8,11 @@ export const grayPalette = {
   white: '#FFFFFF',
   gray1: '#E3E6E8',
   gray2: '#C7CCD1',
-  gray3: '#909BA3',
-  gray4: '#6D7983',
+  gray3: '#8F9BA3',
+  gray4: '#6C7983',
   gray5: '#49535A',
   gray6: '#2E3338',
-  gray7: '#1B1F21',
+  gray7: '#1B1F22',
   black: '#121212',
 };
 

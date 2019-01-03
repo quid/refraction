@@ -4,6 +4,9 @@
 .*/node_modules/.*[^e]\.json$
 .*/node_modules/.*\(lib\|test\).*\.json$
 
+[untyped]
+.*/node_modules/@emotion/core/src/context.js
+
 [include]
 
 [libs]

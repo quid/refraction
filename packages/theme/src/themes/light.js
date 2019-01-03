@@ -3,8 +3,8 @@ import Color from 'color';
 import colors from '../colors';
 
 const lightTheme = {
-  primary: colors.black,
-  primaryInverse: colors.white,
+  primary: colors.gray6,
+  primaryInverse: colors.gray1,
   secondary: colors.gray4,
   background: colors.white,
   backdrop: Color(colors.white)

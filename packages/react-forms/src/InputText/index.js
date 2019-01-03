@@ -1,61 +1,43 @@
 // @flow
 import * as React from 'react';
+import { css } from 'emotion';
 import styled from '@emotion/styled/macro';
 import { textStyles, withFallback as wf } from '@quid/theme';
 import InvalidHandler from '../InvalidHandler';
+import { INPUT_ATTRIBUTES, omit, include } from '../utils/inputPropsFilters';
 
 type RenderProp<P> = P => React.Node;
 
 type Props = {
   type?: string,
   size?: 'regular' | 'large' | 'small',
-  renderAddon?: RenderProp<{ onClick: (SyntheticEvent<Element>) => void }>,
+  renderAddon?: RenderProp<{
+    onClick: (SyntheticEvent<Element>) => void,
+    marginRightClass: string,
+  }>,
   as?: string,
   onChange?: (SyntheticInputEvent<any>) => void,
   validationErrorMessage?: string,
 };
 
-const omit = obj => keys =>
-  Object.keys(obj)
-    .filter(key => !keys.includes(key))
-    .reduce((acc, current) => {
-      acc[current] = obj[current];
-      return acc;
-    }, {});
-
-const include = obj => keys =>
-  Object.keys(obj)
-    .filter(key => keys.includes(key))
-    .reduce((acc, current) => {
-      acc[current] = obj[current];
-      return acc;
-    }, {});
+// istanbul ignore next
+const mergeRefs = (...refs: Array<any>) => (ref: any) => {
+  refs.forEach(resolvableRef => {
+    if (typeof resolvableRef === 'function') {
+      resolvableRef(ref);
+    } else if (resolvableRef != null) {
+      (resolvableRef: any).current = ref;
+    }
+  });
+};
 
 // istanbul ignore next
 const noop = () => undefined;
 
-const INPUT_ATTRIBUTES = [
-  'autoComplete',
-  'autoFocus',
-  'defaultValue',
-  'form',
-  'list',
-  'min',
-  'max',
-  'name',
-  'onChange',
-  'placeholder',
-  'readOnly',
-  'required',
-  'tabIndex',
-  'type',
-  'value',
-];
-
 const HEIGHT = {
   large: 50,
   small: 24,
-  regular: 30,
+  regular: 32,
 };
 
 const PADDING = {
@@ -69,6 +51,7 @@ const Input = styled.input`
   min-width: 0;
   align-self: stretch;
   flex: 1;
+  padding: 0 ${props => PADDING[props.size || 'regular']}px;
 
   // needed to remove :invalid red border in Firefox
   box-shadow: none;
@@ -94,10 +77,17 @@ const Input = styled.input`
   &:not(:last-child) {
     padding-right: ${props => PADDING[props.size || 'regular']}px;
   }
+  &::placeholder {
+    color: ${wf(props => props.theme.colors.gray3)};
+  }
+  &:disabled::placeholder {
+    color: ${wf(props => props.theme.colors.gray2)};
+  }
 `;
 
 const Container = styled.div`
   ${textStyles('normal')}
+  vertical-align: top;
 
   display: inline-flex;
   align-items: center;
@@ -105,17 +95,16 @@ const Container = styled.div`
     ${wf(props =>
       props.isInvalid
         ? /* istanbul ignore next */ props.theme.colors.red
-        : props.theme.colors.gray2
+        : props.disabled
+        ? props.theme.colors.gray1
+        : props.theme.colors.gray3
     )};
   transition: border 0.2s ease-in-out;
   border-radius: 2px;
-  padding: 0 ${props => PADDING[props.size || 'regular']}px;
   height: ${props => HEIGHT[props.size || 'regular']}px;
-  background-color: ${wf(props =>
-    props.disabled ? props.theme.colors.gray1 : props.theme.colors.white
-  )};
+  background-color: transparent;
   color: ${wf(props =>
-    props.disabled ? props.theme.colors.gray3 : props.theme.colors.black
+    props.disabled ? props.theme.colors.gray2 : props.theme.colors.primary
   )};
 
   &:focus-within {
@@ -128,29 +117,34 @@ const Container = styled.div`
 `;
 
 const InputText: React.StatelessFunctionalComponent<Props> = styled(
-  ({ onChange, validationErrorMessage, ...props }: Props) => {
-    const input = React.createRef();
-    return (
-      <InvalidHandler errorMessage={validationErrorMessage}>
-        {(getInputProps, isInvalid) => (
-          <Container {...omit(props)(INPUT_ATTRIBUTES)} isInvalid={isInvalid}>
-            <Input
-              ref={input}
-              {...include(props)([...INPUT_ATTRIBUTES, 'disabled'])}
-              {...getInputProps({ onChange })}
-            />
-            {props.renderAddon &&
-              props.renderAddon({
-                onClick: () =>
-                  input.current
-                    ? input.current.focus()
-                    : /* istanbul ignore next */ noop(),
-              })}
-          </Container>
-        )}
-      </InvalidHandler>
-    );
-  }
+  React.forwardRef(
+    ({ onChange, validationErrorMessage, ...props }: Props, ref) => {
+      const input = React.createRef();
+      return (
+        <InvalidHandler errorMessage={validationErrorMessage}>
+          {(getInputProps, isInvalid) => (
+            <Container {...omit(props)(INPUT_ATTRIBUTES)} isInvalid={isInvalid}>
+              <Input
+                ref={mergeRefs(input, ref)}
+                {...include(props)([...INPUT_ATTRIBUTES, 'disabled'])}
+                {...getInputProps({ onChange })}
+              />
+              {props.renderAddon &&
+                props.renderAddon({
+                  onClick: () =>
+                    input.current
+                      ? input.current.focus()
+                      : /* istanbul ignore next */ noop(),
+                  marginRightClass: css`
+                    margin-right: ${PADDING[props.size || 'regular']}px;
+                  `,
+                })}
+            </Container>
+          )}
+        </InvalidHandler>
+      );
+    }
+  )
 )();
 
 // @component
