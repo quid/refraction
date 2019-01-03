@@ -49,7 +49,7 @@ const InputNumber = styled(
         disabled={disabled}
         readOnly={readOnly}
         renderAddon={({ marginRightClass }) => (
-          <>
+          <React.Fragment>
             <Unit>{unit}</Unit>
             <Addon className={marginRightClass}>
               <Caret
@@ -65,7 +65,7 @@ const InputNumber = styled(
                 <Icon name="caret_down" />
               </Caret>
             </Addon>
-          </>
+          </React.Fragment>
         )}
         {...props}
       />
