@@ -111,6 +111,7 @@ const Input = styled.input`
 
 type Props = {
   disabled?: boolean,
+  id?: string,
 };
 
 type State = {
@@ -128,11 +129,14 @@ class InputToggle extends React.Component<Props, State> {
       <Container {...omit(this.props)(INPUT_ATTRIBUTES)}>
         <Input
           {...include(this.props)([...INPUT_ATTRIBUTES, 'disabled'])}
-          id={this.state.id}
+          id={this.props.id || this.state.id}
           type="checkbox"
         />
         <Slider disabled={isDisabled} />
-        <Handle disabled={isDisabled} htmlFor={this.state.id} />
+        <Handle
+          disabled={isDisabled}
+          htmlFor={this.props.id || this.state.id}
+        />
       </Container>
     );
   }
