@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/quid/ui-framework/compare/v1.13.0...v1.14.0) (2019-01-03)
+
+
+### Features
+
+* add InputGroup ([ccf13be](https://github.com/quid/ui-framework/commit/ccf13be))
+
+
+
+
+
 # [1.11.0](https://github.com/quid/ui-framework/compare/v1.10.0...v1.11.0) (2018-12-13)
 
 
