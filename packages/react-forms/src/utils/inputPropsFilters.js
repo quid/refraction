@@ -28,9 +28,7 @@ export const omit = (obj: Object) => (keys: Array<string>) =>
     }, {});
 
 export const include = (obj: Object) => (keys: Array<string>) =>
-  Object.keys(obj)
-    .filter(key => keys.includes(key))
-    .reduce((acc, current) => {
-      acc[current] = obj[current];
-      return acc;
-    }, {});
+  keys.reduce((acc, current) => {
+    acc[current] = obj[current];
+    return acc;
+  }, {});
