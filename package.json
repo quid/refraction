@@ -62,7 +62,7 @@
     "lint-staged": "^8.1.0",
     "prettier": "^1.15.3",
     "react": "^16.7.0",
-    "react-app-rewired": "^1.6.2",
+    "react-app-rewired": "2.0.2-next.0",
     "react-dom": "^16.7.0",
     "react-scripts": "^2.1.1",
     "react-styleguidist": "^8.0.6",
