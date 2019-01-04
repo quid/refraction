@@ -40,13 +40,13 @@ const HEIGHT = {
   regular: 32,
 };
 
-const PADDING = {
+export const PADDING = {
   large: 15,
   small: 5,
   regular: 10,
 };
 
-const Input = styled.input`
+export const Input = styled.input`
   all: unset;
   min-width: 0;
   align-self: stretch;
@@ -118,7 +118,7 @@ const Container = styled.div`
 
 const InputText: React.StatelessFunctionalComponent<Props> = styled(
   React.forwardRef(
-    ({ onChange, validationErrorMessage, ...props }: Props, ref) => {
+    ({ onChange, validationErrorMessage, as, ...props }: Props, ref) => {
       const input = React.createRef();
       return (
         <InvalidHandler errorMessage={validationErrorMessage}>
@@ -126,6 +126,7 @@ const InputText: React.StatelessFunctionalComponent<Props> = styled(
             <Container {...omit(props)(INPUT_ATTRIBUTES)} isInvalid={isInvalid}>
               <Input
                 ref={mergeRefs(input, ref)}
+                as={as}
                 {...include(props)([...INPUT_ATTRIBUTES, 'disabled'])}
                 {...getInputProps({ onChange })}
               />
