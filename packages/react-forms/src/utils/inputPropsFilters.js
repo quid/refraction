@@ -6,6 +6,7 @@ export const INPUT_ATTRIBUTES = [
   'defaultValue',
   'checked',
   'form',
+  'id',
   'list',
   'min',
   'max',
