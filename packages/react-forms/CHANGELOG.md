@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.18.0](https://github.com/quid/ui-framework/compare/v1.17.0...v1.18.0) (2019-01-07)
+
+
+### Features
+
+* add InputColor component ([39921c7](https://github.com/quid/ui-framework/commit/39921c7))
+
+
+
+
+
 # [1.17.0](https://github.com/quid/ui-framework/compare/v1.16.0...v1.17.0) (2019-01-07)
 
 
