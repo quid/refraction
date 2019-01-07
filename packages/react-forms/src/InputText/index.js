@@ -24,7 +24,7 @@ type Props = {
 // istanbul ignore next
 const noop = () => undefined;
 
-const HEIGHT = {
+export const HEIGHT = {
   large: 50,
   small: 24,
   regular: 32,

@@ -28,11 +28,13 @@ exports[`renders a Button with small size 1`] = `
   background-color: #1ED7D1;
 }
 
-.emotion-0:hover {
+.emotion-0:hover,
+.emotion-0[data-state*='hover'] {
   background-color: hsl(178.10000000000002,75.5%,43.2%);
 }
 
-.emotion-0:active {
+.emotion-0:active,
+.emotion-0[data-state*='active'] {
   background-color: hsl(178.10000000000002,75.5%,38.4%);
 }
 
@@ -40,7 +42,8 @@ exports[`renders a Button with small size 1`] = `
   outline: 0;
 }
 
-.emotion-0:focus-visible {
+.emotion-0:focus-visible,
+.emotion-0[data-state*='focus'] {
   outline: 0;
   box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px #1ED7D1;
 }
@@ -98,11 +101,13 @@ exports[`renders a disabled and transparent Button 1`] = `
   background-color: transparent;
 }
 
-.emotion-0:hover {
+.emotion-0:hover,
+.emotion-0[data-state*='hover'] {
   background-color: hsl(178.10000000000002,75.5%,43.2%);
 }
 
-.emotion-0:active {
+.emotion-0:active,
+.emotion-0[data-state*='active'] {
   background-color: hsl(178.10000000000002,75.5%,38.4%);
 }
 
@@ -110,7 +115,8 @@ exports[`renders a disabled and transparent Button 1`] = `
   outline: 0;
 }
 
-.emotion-0:focus-visible {
+.emotion-0:focus-visible,
+.emotion-0[data-state*='focus'] {
   outline: 0;
   box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px #1ED7D1;
 }
@@ -175,11 +181,13 @@ exports[`renders the expected markup 1`] = `
   background-color: #1ED7D1;
 }
 
-.emotion-0:hover {
+.emotion-0:hover,
+.emotion-0[data-state*='hover'] {
   background-color: hsl(178.10000000000002,75.5%,43.2%);
 }
 
-.emotion-0:active {
+.emotion-0:active,
+.emotion-0[data-state*='active'] {
   background-color: hsl(178.10000000000002,75.5%,38.4%);
 }
 
@@ -187,7 +195,8 @@ exports[`renders the expected markup 1`] = `
   outline: 0;
 }
 
-.emotion-0:focus-visible {
+.emotion-0:focus-visible,
+.emotion-0[data-state*='focus'] {
   outline: 0;
   box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px #1ED7D1;
 }
