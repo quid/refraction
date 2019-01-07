@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the expected markup 1`] = `
+.emotion-7 {
+  all: unset;
+  display: inline-block;
+  border-radius: 2px;
+  -webkit-transition: 0.2s ease-in-out border-color;
+  transition: 0.2s ease-in-out border-color;
+  border: 1px solid #8F9BA3;
+}
+
+.emotion-7:focus-within {
+  border-color: #00c1bb;
+}
+
+.emotion-7[data-invalid='true'] {
+  border-color: #E61E27;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  height: 32px;
+}
+
+.emotion-1 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.emotion-1:focus:not(:focus-visible) ~ button {
+  box-shadow: none;
+}
+
+.emotion-0 {
+  border-radius: 1px 0 0 1px;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.emotion-3 {
+  border-radius: 0 1px 1px 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+<InputColor
+  onChange={[Function]}
+>
+  <ForwardRef
+    className="emotion-9 emotion-6"
+    onChange={[Function]}
+  >
+    <InputGroup
+      className="emotion-9 emotion-6"
+    >
+      <fieldset
+        className="emotion-6 emotion-7 emotion-8"
+        data-invalid={false}
+        onChange={[Function]}
+        onInvalid={[Function]}
+      >
+        <input
+          className="emotion-0"
+          key=".0"
+          maxLength={7}
+          onChange={[Function]}
+          value="#000000"
+        />
+        <Wrapper
+          key=".1"
+        >
+          <div
+            className="emotion-4 emotion-5"
+          >
+            <ColorSelector
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              type="color"
+              value="#000000"
+            >
+              <input
+                className="emotion-1 emotion-2"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                type="color"
+                value="#000000"
+              />
+            </ColorSelector>
+            <button
+              className="emotion-3"
+              data-state=""
+              importance="secondary"
+              tabIndex={-1}
+            >
+              <x-icon
+                name="tint"
+                style={
+                  Object {
+                    "color": "#000000",
+                  }
+                }
+              />
+            </button>
+          </div>
+        </Wrapper>
+      </fieldset>
+    </InputGroup>
+  </ForwardRef>
+</InputColor>
+`;
