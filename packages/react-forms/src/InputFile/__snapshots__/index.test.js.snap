@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders an InputFile 1`] = `
+.emotion-5 {
+  all: unset;
+  display: inline-block;
+  border-radius: 2px;
+  -webkit-transition: 0.2s ease-in-out border-color;
+  transition: 0.2s ease-in-out border-color;
+  border: 1px solid #8F9BA3;
+}
+
+.emotion-5:focus-within {
+  border-color: #00c1bb;
+}
+
+.emotion-5[data-invalid='true'] {
+  border-color: #E61E27;
+}
+
+.emotion-1 {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.emotion-0 {
+  border-radius: 1px 0 0 1px;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.emotion-3 {
+  border-radius: 0 1px 1px 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+<InputFile>
+  <ForwardRef
+    className="emotion-7 emotion-4"
+  >
+    <InputGroup
+      className="emotion-7 emotion-4"
+    >
+      <fieldset
+        className="emotion-4 emotion-5 emotion-6"
+        data-invalid={false}
+        onChange={[Function]}
+        onInvalid={[Function]}
+      >
+        <input
+          className="emotion-0"
+          key=".0"
+          onClick={[Function]}
+          readOnly={true}
+          value=""
+        />
+        <FileSelector
+          key=".1"
+          onChange={[Function]}
+          type="file"
+        >
+          <input
+            className="emotion-1 emotion-2"
+            onChange={[Function]}
+            type="file"
+          />
+        </FileSelector>
+        <button
+          className="emotion-3"
+          importance="secondary"
+          key=".2"
+          onClick={[Function]}
+        >
+          Select file
+        </button>
+      </fieldset>
+    </InputGroup>
+  </ForwardRef>
+</InputFile>
+`;
