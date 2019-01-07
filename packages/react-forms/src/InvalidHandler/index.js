@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import callAll from '../utils/callAll';
 
 type GetInputProps = (
   ?{ onChange?: Function, onInvalid?: Function }
@@ -16,9 +17,6 @@ type Props = {
 type State = {
   invalid: boolean,
 };
-
-const callAll = (...fns: Array<?Function>) => (...args) =>
-  fns.forEach(fn => fn && fn(...args));
 
 class InvalidHandler extends React.Component<Props, State> {
   state = {
