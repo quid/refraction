@@ -5,6 +5,7 @@ import styled from '@emotion/styled/macro';
 import { textStyles, withFallback as wf } from '@quid/theme';
 import InvalidHandler from '../InvalidHandler';
 import { INPUT_ATTRIBUTES, omit, include } from '../utils/inputPropsFilters';
+import mergeRefs from '../utils/mergeRefs';
 
 type RenderProp<P> = P => React.Node;
 
@@ -18,17 +19,6 @@ type Props = {
   as?: string,
   onChange?: (SyntheticInputEvent<any>) => void,
   validationErrorMessage?: string,
-};
-
-// istanbul ignore next
-const mergeRefs = (...refs: Array<any>) => (ref: any) => {
-  refs.forEach(resolvableRef => {
-    if (typeof resolvableRef === 'function') {
-      resolvableRef(ref);
-    } else if (resolvableRef != null) {
-      (resolvableRef: any).current = ref;
-    }
-  });
 };
 
 // istanbul ignore next
