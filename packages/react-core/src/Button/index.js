@@ -105,16 +105,19 @@ const Button = styled(
 
     return css`
       background-color: ${color};
-      &:hover {
+      &:hover,
+      &[data-state*='hover'] {
         background-color: ${hoverMod(color)};
       }
-      &:active {
+      &:active,
+      &[data-state*='active'] {
         background-color: ${activeMod(color)};
       }
       &:focus:not(:focus-visible) {
         outline: 0;
       }
-      &:focus-visible {
+      &:focus-visible,
+      &[data-state*='focus'] {
         outline: 0;
         box-shadow: 0 0 0 0.5px ${props.theme.background}, 0 0 2px 2px ${color};
       }
