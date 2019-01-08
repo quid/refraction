@@ -1,0 +1,23 @@
+{
+  "name": "@quid/stylis-plugin-focus-visible",
+  "version": "1.0.0",
+  "description": "Polyfill for the CSS :focus-visible pseudo-class, to use with Emotion",
+  "main": "dist/index.js",
+  "main:umd": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quid/ui-framework.git"
+  },
+  "scripts": {
+    "start": "microbundle watch",
+    "prepare": "microbundle build --jsx React.createElement && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
+    "test": "cd ../.. && yarn test --testPathPattern packages/stylis-plugin-focus-visible"
+  },
+  "devDependencies": {
+    "flow-copy-source": "^2.0.2",
+    "microbundle": "^0.8.3",
+    "stylis": "^3.5.4"
+  }
+}
