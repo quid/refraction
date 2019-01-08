@@ -2,6 +2,13 @@
 import React, { Component } from 'react';
 import ThemeProvider from '@quid/theme';
 import styled from '@emotion/styled/macro';
+import { CacheProvider } from '@emotion/core';
+import 'what-input';
+import emotionCache from './emotionCache';
+
+const EmotionProvider = props => (
+  <CacheProvider value={emotionCache} {...props} />
+);
 
 const Container = styled.div`
   margin: -16px;
@@ -24,21 +31,23 @@ export default class Wrapper extends Component {
   render() {
     return (
       <ThemeProvider theme={this.state.theme}>
-        <Container>
-          <Label>
-            <input
-              type="checkbox"
-              checked={this.state.theme === 'light'}
-              onChange={() =>
-                this.setState(({ theme }) => ({
-                  theme: theme === 'light' ? 'dark' : 'light',
-                }))
-              }
-            />{' '}
-            toggle theme ({this.state.theme})
-          </Label>
-          {this.props.children}
-        </Container>
+        <EmotionProvider>
+          <Container>
+            <Label>
+              <input
+                type="checkbox"
+                checked={this.state.theme === 'light'}
+                onChange={() =>
+                  this.setState(({ theme }) => ({
+                    theme: theme === 'light' ? 'dark' : 'light',
+                  }))
+                }
+              />{' '}
+              toggle theme ({this.state.theme})
+            </Label>
+            {this.props.children}
+          </Container>
+        </EmotionProvider>
       </ThemeProvider>
     );
   }
