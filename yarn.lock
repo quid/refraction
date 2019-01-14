@@ -9020,7 +9020,7 @@ methods@~1.1.2:
   resolved "https://registry.npmjs.org/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
-microbundle@^0.8.3, "microbundle@https://github.com/FezVrasta/microbundle.git#quid-fork":
+microbundle@^0.8.3:
   version "0.8.3"
   resolved "https://github.com/FezVrasta/microbundle.git#834297a3134eaf24e0cc35da60812a53b2aef96b"
   dependencies:
@@ -11746,6 +11746,11 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-resize-aware@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.npmjs.org/react-resize-aware/-/react-resize-aware-2.7.1.tgz#e54bc5fc4d67e3f9cc0342626e836bfc207e322e"
+  integrity sha1-5UvF/E1n4/nMA0JiboNr/CB+Mi4=
 
 react-router-dom@^4.3.1:
   version "4.3.1"
