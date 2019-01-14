@@ -15,7 +15,7 @@ const packages = fs
   .map(pkg => ({
     name: pkg,
     content: `packages/${pkg}/README.md`,
-    components: `packages/${pkg}/**/*.js`,
+    components: [`packages/${pkg}/**/index.js`],
     ignore,
   }));
 
