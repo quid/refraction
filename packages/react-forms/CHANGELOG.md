@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.20.0](https://github.com/quid/ui-framework/compare/v1.19.0...v1.20.0) (2019-01-14)
+
+
+### Features
+
+* add InputRange component ([1eebf98](https://github.com/quid/ui-framework/commit/1eebf98))
+
+
+
+
+
 # [1.18.0](https://github.com/quid/ui-framework/compare/v1.17.0...v1.18.0) (2019-01-07)
 
 
