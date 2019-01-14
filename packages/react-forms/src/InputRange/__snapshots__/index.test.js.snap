@@ -1,0 +1,453 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a Track component 1`] = `
+.emotion-0 {
+  position: relative;
+  top: 50%;
+  background-position: center;
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  height: 2px;
+  border-radius: 2px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.emotion-0::before {
+  content: '';
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  -webkit-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  transform: translateY(-25%);
+}
+
+<Track>
+  <div
+    className="emotion-0 emotion-1"
+  />
+</Track>
+`;
+
+exports[`renders a Track component 2`] = `
+.emotion-0 {
+  position: relative;
+  top: 50%;
+  background-position: center;
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  height: 2px;
+  border-radius: 2px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.emotion-0::before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  -webkit-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  transform: translateY(-25%);
+}
+
+<Track
+  disabled={true}
+>
+  <div
+    className="emotion-0 emotion-1"
+    disabled={true}
+  />
+</Track>
+`;
+
+exports[`renders an InputRange 1`] = `
+@keyframes animation-0 {
+  from {
+    box-shadow: 0 0 0 0 rgba(0,167,184,0.26);
+  }
+
+  to {
+    box-shadow: 0 0 0 3px rgba(0,167,184,0.26);
+  }
+}
+
+.emotion-22 {
+  position: relative;
+  height: 12px;
+  isolation: isolate;
+}
+
+.emotion-8 {
+  position: relative;
+  top: 50%;
+  background-position: center;
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  height: 2px;
+  border-radius: 2px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.emotion-8::before {
+  content: '';
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  -webkit-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  transform: translateY(-25%);
+}
+
+.emotion-2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  color: #6C7983;
+}
+
+.emotion-0 {
+  fill: #00c1bb;
+  height: 2px;
+  width: 0px;
+  x: 0px;
+  rx: 1;
+  ry: 1;
+}
+
+.emotion-6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  color: #00c1bb;
+}
+
+.emotion-4 {
+  fill: #6C7983;
+  height: 2px;
+  width: 0px;
+  x: 0px;
+  rx: 1;
+  ry: 1;
+}
+
+.emotion-10 {
+  color: #00c1bb;
+  top: 50%;
+  left: 0;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  cursor: default;
+  z-index: 2;
+  -webkit-transform: translateX(calc(0px - 50%));
+  -ms-transform: translateX(calc(0px - 50%));
+  transform: translateX(calc(0px - 50%));
+}
+
+.emotion-10::before {
+  content: '';
+  display: block;
+  background-color: currentColor;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out,width 0.2s ease-in-out,height 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out,width 0.2s ease-in-out,height 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out,width 0.2s ease-in-out,height 0.2s ease-in-out;
+}
+
+.emotion-10:active::before {
+  -webkit-transform: scale(3);
+  -ms-transform: scale(3);
+  transform: scale(3);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.emotion-10:focus {
+  outline: 0;
+}
+
+.emotion-10:focus-visible::before {
+  -webkit-animation: animation-0 1s infinite alternate ease-in-out;
+  animation: animation-0 1s infinite alternate ease-in-out;
+}
+
+.emotion-20 {
+  pointer-events: none;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-12 {
+  height: 6px;
+  width: 2px;
+  position: relative;
+  -webkit-transform: translateX(1px) translateY(3px);
+  -ms-transform: translateX(1px) translateY(3px);
+  transform: translateX(1px) translateY(3px);
+  color: #00c1bb;
+  border-radius: 2px;
+  background-color: #6C7983;
+  opacity: 0;
+}
+
+.emotion-12:first-of-type {
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+}
+
+.emotion-14 {
+  height: 6px;
+  width: 2px;
+  position: relative;
+  -webkit-transform: translateX(1px) translateY(3px);
+  -ms-transform: translateX(1px) translateY(3px);
+  transform: translateX(1px) translateY(3px);
+  color: #00c1bb;
+  border-radius: 2px;
+  background-color: #6C7983;
+  opacity: 1;
+}
+
+.emotion-14:first-of-type {
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+}
+
+<InputRange
+  defaultValue={0}
+  disabled={false}
+  discrete={true}
+  max={10}
+  min={0}
+  name="x"
+  readOnly={false}
+  step={5}
+>
+  <Container
+    aria-disabled={false}
+    aria-orientation="horizontal"
+    aria-readonly={false}
+    aria-valuemax={10}
+    aria-valuemin={0}
+    aria-valuetext="0"
+    as={[Function]}
+    defaultValue={0}
+    onResize={[Function]}
+    role="slider"
+  >
+    <div
+      aria-disabled={false}
+      aria-orientation="horizontal"
+      aria-readonly={false}
+      aria-valuemax={10}
+      aria-valuemin={0}
+      aria-valuetext="0"
+      className="emotion-22 emotion-23"
+      defaultValue={0}
+      role="slider"
+    >
+      <object
+        aria-hidden={true}
+        onLoad={[Function]}
+        style={
+          Object {
+            "display": "block",
+            "height": "100%",
+            "left": 0,
+            "overflow": "hidden",
+            "pointerEvents": "none",
+            "position": "absolute",
+            "top": 0,
+            "visibility": "hidden",
+            "width": "100%",
+            "zIndex": -1,
+          }
+        }
+        tabIndex={-1}
+        type="text/html"
+      />
+      <Track
+        data-action="click-track"
+        disabled={false}
+        key=".0"
+        onMouseDown={[Function]}
+      >
+        <div
+          className="emotion-8 emotion-9"
+          data-action="click-track"
+          disabled={false}
+          onMouseDown={[Function]}
+        >
+          <Segment
+            as={[Function]}
+            key="2"
+            on={true}
+          >
+            <svg
+              className="emotion-2 emotion-3"
+              height="100"
+              width="100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <Rect
+                disabled={false}
+                offset={0}
+                width={0}
+              >
+                <rect
+                  className="emotion-0 emotion-1"
+                  disabled={false}
+                  offset={0}
+                  width={0}
+                />
+              </Rect>
+            </svg>
+          </Segment>
+          <Segment
+            as={[Function]}
+            key="3"
+          >
+            <svg
+              className="emotion-6 emotion-3"
+              height="100"
+              width="100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <Rect
+                disabled={true}
+                offset={0}
+                width={0}
+              >
+                <rect
+                  className="emotion-4 emotion-1"
+                  disabled={true}
+                  offset={0}
+                  width={0}
+                />
+              </Rect>
+            </svg>
+          </Segment>
+        </div>
+      </Track>
+      <Handle
+        disabled={false}
+        dragging={false}
+        key=".1"
+        name="x"
+        offset={0}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        readOnly={false}
+        value={0}
+      >
+        <div
+          className="emotion-10 emotion-11"
+          data-action="drag-handle"
+          data-value={0}
+          offset={0}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          tabIndex={0}
+        >
+          <input
+            disabled={false}
+            name="x"
+            readOnly={false}
+            type="hidden"
+            value={0}
+          />
+        </div>
+      </Handle>
+      <StepTicks
+        hidden={
+          Array [
+            0,
+          ]
+        }
+        key=".2"
+        max={10}
+        min={0}
+        step={5}
+      >
+        <div
+          className="emotion-20 emotion-21"
+        >
+          <Tick
+            hidden={true}
+            key="0"
+          >
+            <div
+              className="emotion-12 emotion-13"
+              hidden={true}
+            />
+          </Tick>
+          <Tick
+            hidden={false}
+            key="1"
+          >
+            <div
+              className="emotion-14 emotion-13"
+              hidden={false}
+            />
+          </Tick>
+          <Tick
+            hidden={false}
+            key="2"
+          >
+            <div
+              className="emotion-14 emotion-13"
+              hidden={false}
+            />
+          </Tick>
+          <Tick
+            hidden={false}
+            key="3"
+          >
+            <div
+              className="emotion-14 emotion-13"
+              hidden={false}
+            />
+          </Tick>
+        </div>
+      </StepTicks>
+    </div>
+  </Container>
+</InputRange>
+`;
