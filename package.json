@@ -4,7 +4,7 @@
   "description": "The official Quid UI project",
   "repository": "git@github.com:quid/ui-framework.git",
   "author": "Federico Zivolo <fzivolo@quid.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true,
   "workspaces": {
     "packages": [
