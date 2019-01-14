@@ -14,5 +14,8 @@
 [lints]
 
 [options]
+suppress_comment= \\(.\\|\n\\)*\\$FlowExpectError
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnoreMe
 
 [strict]
