@@ -8,6 +8,7 @@ Array [
   "InputFile",
   "InputGroup",
   "InputNumber",
+  "InputRadio",
   "InputRange",
   "InputText",
   "InputToggle",

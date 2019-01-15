@@ -3,6 +3,7 @@ export { default as InputColor } from './InputColor';
 export { default as InputFile } from './InputFile';
 export { default as InputGroup } from './InputGroup';
 export { default as InputNumber } from './InputNumber';
+export { default as InputRadio } from './InputRadio';
 export { default as InputRange } from './InputRange';
 export { default as InputText } from './InputText';
 export { default as InputToggle } from './InputToggle';
