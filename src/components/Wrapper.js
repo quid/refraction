@@ -4,6 +4,7 @@ import ThemeProvider from '@quid/theme';
 import styled from '@emotion/styled/macro';
 import { CacheProvider } from '@emotion/core';
 import 'what-input';
+import { Label, InputToggle } from '@quid/react-forms';
 import emotionCache from './emotionCache';
 
 const EmotionProvider = props => (
@@ -18,7 +19,7 @@ const Container = styled.div`
   color: ${props => props.theme.primary};
 `;
 
-const Label = styled.label`
+const Header = styled.label`
   display: block;
   padding-bottom: 1em;
   margin-bottom: 1em;
@@ -33,18 +34,23 @@ export default class Wrapper extends Component {
       <ThemeProvider theme={this.state.theme}>
         <EmotionProvider>
           <Container>
-            <Label>
-              <input
-                type="checkbox"
-                checked={this.state.theme === 'light'}
-                onChange={() =>
-                  this.setState(({ theme }) => ({
-                    theme: theme === 'light' ? 'dark' : 'light',
-                  }))
-                }
-              />{' '}
-              toggle theme ({this.state.theme})
-            </Label>
+            <Header>
+              <Label
+                renderControl={controlClass => (
+                  <InputToggle
+                    className={controlClass}
+                    checked={this.state.theme === 'light'}
+                    onChange={() =>
+                      this.setState(({ theme }) => ({
+                        theme: theme === 'light' ? 'dark' : 'light',
+                      }))
+                    }
+                  />
+                )}
+              >
+                Dark/Light theme
+              </Label>
+            </Header>
             {this.props.children}
           </Container>
         </EmotionProvider>
