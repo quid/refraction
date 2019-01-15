@@ -1,0 +1,22 @@
+// @flow
+import React from 'react';
+import { mount } from 'enzyme';
+import InputCheckbox, { OUTLINE_HOVER } from '.';
+
+jest.mock('nanoid', () => () => 'random-id');
+
+it('renders an InputCheckbox', () => {
+  const wrapper = mount(<InputCheckbox />);
+  expect(wrapper).toMatchSnapshot();
+});
+
+it('renders a disabled InputCheckbox', () => {
+  const wrapper = mount(<InputCheckbox disabled />);
+  expect(wrapper).toMatchSnapshot();
+});
+
+it('works with dark theme', () => {
+  expect(
+    OUTLINE_HOVER({ theme: { current: 'dark', colors: { gray2: 'black' } } })
+  ).toMatchInlineSnapshot(`"rgba(0, 0, 0, 0.8)"`);
+});
