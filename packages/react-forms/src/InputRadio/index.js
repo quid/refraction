@@ -14,7 +14,7 @@ const OUTLINE_ON = wf(props =>
     .alpha(0.8)
     .string()
 );
-const OUTLINE_HOVER = wf(props =>
+export const OUTLINE_HOVER = wf(props =>
   Color(
     props.theme.current === 'light'
       ? props.theme.colors.gray7
