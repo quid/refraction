@@ -1,4 +1,5 @@
 // @flow
+export { default as InputCheckbox } from './InputCheckbox';
 export { default as InputColor } from './InputColor';
 export { default as InputFile } from './InputFile';
 export { default as InputGroup } from './InputGroup';
