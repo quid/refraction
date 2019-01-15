@@ -17,7 +17,7 @@ it('renders a form control', () => {
   mount(
     <Label
       renderControl={cn => {
-        expect(cn).toMatchInlineSnapshot(`"css-12frltk"`);
+        expect(cn).toMatchInlineSnapshot(`"css-lvyu5j"`);
       }}
     >
       foobar
@@ -29,7 +29,7 @@ it('renders a left aligned label with form control', () => {
   const wrapper = mount(
     <Label
       renderControl={cn => {
-        expect(cn).toMatchInlineSnapshot(`"css-17nfp2s"`);
+        expect(cn).toMatchInlineSnapshot(`"css-1y6ic72"`);
 
         return <div className={cn} />;
       }}
