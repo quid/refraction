@@ -22,9 +22,14 @@ type Props = {
   size?: 'large' | 'small' | 'regular',
 };
 
-const genControlClass = ({ size, labelAlignment }) => css`
-  margin-${labelAlignment}: ${MARGIN[size]}px;
-`;
+const margin = {
+  left: 'marginLeft',
+  right: 'marginRight',
+};
+const genControlClass = ({ size, labelAlignment }) =>
+  css({
+    [margin[labelAlignment]]: MARGIN[size],
+  });
 
 const Label = styled(
   ({

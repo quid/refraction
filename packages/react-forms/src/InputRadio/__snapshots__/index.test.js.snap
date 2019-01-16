@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a disabled InputRadio 1`] = `
+.emotion-0 {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.emotion-3 {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #8F9BA3;
+  margin: 1px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.4;
+}
+
+.emotion-1:checked ~ .emotion-3 {
+  border-width: 5px;
+  border-color: #00c1bb;
+}
+
+.emotion-1:focus-visible ~ .emotion-3 {
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(0,193,187,0.8);
+}
+
+.emotion-1:focus-visible ~ .emotion-3:hover {
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(0,193,187,0.8),0 0 4px rgba(27,31,34,0.8);
+}
+
+.emotion-3:hover {
+  box-shadow: 0 0 4px rgba(27,31,34,0.8);
+}
+
+.emotion-3:hover {
+  box-shadow: none;
+}
+
+<InputRadio
+  disabled={true}
+>
+  <label>
+    <Input
+      disabled={true}
+      type="radio"
+    >
+      <input
+        className="emotion-0 emotion-1"
+        disabled={true}
+        type="radio"
+      />
+    </Input>
+    <Circle
+      className="emotion-5 emotion-2"
+      disabled={true}
+    >
+      <div
+        className="emotion-2 emotion-3 emotion-4"
+        disabled={true}
+      />
+    </Circle>
+  </label>
+</InputRadio>
+`;
+
+exports[`renders an InputRadio 1`] = `
+.emotion-0 {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.emotion-3 {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #8F9BA3;
+  margin: 1px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.emotion-1:checked ~ .emotion-3 {
+  border-width: 5px;
+  border-color: #00c1bb;
+}
+
+.emotion-1:focus-visible ~ .emotion-3 {
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(0,193,187,0.8);
+}
+
+.emotion-1:focus-visible ~ .emotion-3:hover {
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(0,193,187,0.8),0 0 4px rgba(27,31,34,0.8);
+}
+
+.emotion-3:hover {
+  box-shadow: 0 0 4px rgba(27,31,34,0.8);
+}
+
+<InputRadio>
+  <label>
+    <Input
+      type="radio"
+    >
+      <input
+        className="emotion-0 emotion-1"
+        type="radio"
+      />
+    </Input>
+    <Circle
+      className="emotion-5 emotion-2"
+    >
+      <div
+        className="emotion-2 emotion-3 emotion-4"
+      />
+    </Circle>
+  </label>
+</InputRadio>
+`;
