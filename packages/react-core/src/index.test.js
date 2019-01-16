@@ -6,6 +6,7 @@ it('exports the expected named exports', () => {
 Array [
   "Button",
   "Icon",
+  "Text",
 ]
 `);
 });
