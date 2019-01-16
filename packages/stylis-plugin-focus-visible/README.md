@@ -20,6 +20,16 @@ Example output:
 }
 ```
 
+#### Installation
+
+```bash
+npm install --save @quid/stylis-plugin-focus-visible
+
+# or
+
+yarn add @quid/stylis-plugin-focus-visible
+```
+
 #### Usage with Emotion
 
 Is it suggested to use this plugin with [Emotion][emotion]'s `CacheProvider`:
