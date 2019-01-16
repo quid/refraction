@@ -20,6 +20,7 @@ exports[`works with "withFallback" powered styles 1`] = `
   color: #6C7983;
   color: #8F9BA3;
   color: #28beb8;
+  cursor: pointer;
   color: rgba(0,193,187,0.6);
 }
 
