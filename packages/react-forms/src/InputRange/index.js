@@ -58,15 +58,20 @@ export function wrapWithSvg(
   );
 }
 
-export const Rect = styled.rect`
-  fill: ${wf(props =>
+export const Rect = styled(props => (
+  <rect
+    {...props}
+    fill="currentColor"
+    height={2}
+    width={Math.max(props.width, 0)}
+    x={Math.max(props.offset, 0)}
+    rx={1}
+    ry={1}
+  />
+))`
+  color: ${wf(props =>
     props.disabled ? TRACK_BACKGROUND(props) : props.theme.selected
   )};
-  height: 2px;
-  width: ${props => (props.width >= 0 ? props.width : 0)}px;
-  x: ${props => (props.offset >= 0 ? props.offset : 0)}px;
-  rx: 1;
-  ry: 1;
 `;
 
 export function drawSegment(width: number, offset: number, disabled: boolean) {
