@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.21.1](https://github.com/quid/ui-framework/compare/v1.21.0...v1.21.1) (2019-01-16)
+
+
+### Bug Fixes
+
+* add pointer cursor to links ([3a4834d](https://github.com/quid/ui-framework/commit/3a4834d))
+* export Text component ([ebc3f56](https://github.com/quid/ui-framework/commit/ebc3f56))
+
+
+
+
+
 # [1.21.0](https://github.com/quid/ui-framework/compare/v1.20.0...v1.21.0) (2019-01-16)
 
 

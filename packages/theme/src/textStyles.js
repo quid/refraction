@@ -52,6 +52,7 @@ const styles = {
   link: wf(
     props => css`
       color: ${props.theme.link};
+      cursor: pointer;
     `
   ),
   highlighted: wf(
