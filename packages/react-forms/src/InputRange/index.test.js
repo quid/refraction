@@ -105,5 +105,9 @@ it('tests areValuesEqual', () => {
 it('renders Rect', () => {
   // $FlowIgnoreMe
   console.error = jest.fn();
-  expect(mount(<Rect width={-1} />)).toHaveStyleRule('width', '0px');
+  expect(
+    mount(<Rect width={-1} />)
+      .find('rect')
+      .prop('width')
+  ).toBe(0);
 });
