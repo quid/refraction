@@ -1,6 +1,10 @@
 // @noflow
 const fs = require('fs');
 const override = require('./config-overrides').webpack;
+const {
+  colors,
+  themes: { light },
+} = require('@quid/theme');
 
 const ignore = [
   '**/__mocks__/**',
@@ -38,5 +42,29 @@ module.exports = {
   styleguideComponents: {
     StyleGuide: require.resolve('./src/components/StyleGuide'),
     Wrapper: require.resolve('./src/components/Wrapper'),
+    Link: require.resolve('./src/components/Link'),
+    Logo: require.resolve('./src/components/Logo'),
+    TableOfContentsRenderer: require.resolve(
+      './src/components/TableOfContentsRenderer'
+    ),
+    ComponentsListRenderer: require.resolve(
+      './src/components/ComponentsListRenderer'
+    ),
+  },
+  theme: {
+    color: {
+      base: light.primary,
+      baseBackground: light.background,
+      sidebarBackground: light.background,
+      border: colors.gray1,
+    },
+    fontFamily: {
+      base: 'IBM Plex Sans, Lucida Grande, Tahoma, Verdana, Arial, sans-serif',
+      fontSize: {
+        base: 14,
+        text: 14,
+        small: 12,
+      },
+    },
   },
 };
