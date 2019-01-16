@@ -11747,10 +11747,10 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-resize-aware@^2.7.1:
-  version "2.7.1"
-  resolved "https://registry.npmjs.org/react-resize-aware/-/react-resize-aware-2.7.1.tgz#e54bc5fc4d67e3f9cc0342626e836bfc207e322e"
-  integrity sha1-5UvF/E1n4/nMA0JiboNr/CB+Mi4=
+react-resize-aware@^2.7.2:
+  version "2.7.2"
+  resolved "https://registry.npmjs.org/react-resize-aware/-/react-resize-aware-2.7.2.tgz#38a0040daaa28dfa9b88994889fbb1e2aa66df83"
+  integrity sha512-XyweQ3YTiZzNG1T5PNpCXvnpsI7mdy4A2oeySFToh8v02Yf+kOiUyWprvyp6T68fFB848w2F3RKfzH7KDk75JQ==
 
 react-router-dom@^4.3.1:
   version "4.3.1"
