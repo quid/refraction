@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.21.2](https://github.com/quid/ui-framework/compare/v1.21.1...v1.21.2) (2019-01-16)
+
+
+### Bug Fixes
+
+* InputRange compat on Firefox ([207cb98](https://github.com/quid/ui-framework/commit/207cb98))
+
+
+
+
+
 ## [1.21.1](https://github.com/quid/ui-framework/compare/v1.21.0...v1.21.1) (2019-01-16)
 
 **Note:** Version bump only for package @quid/react-forms
