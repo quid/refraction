@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.21.0](https://github.com/quid/ui-framework/compare/v1.20.0...v1.21.0) (2019-01-16)
+
+
+### Bug Fixes
+
+* add missing exports ([86f57b6](https://github.com/quid/ui-framework/commit/86f57b6))
+* generated invalid CSS with compiled library ([75c5ff6](https://github.com/quid/ui-framework/commit/75c5ff6))
+
+
+### Features
+
+* add InputCheckbox component ([8128fbb](https://github.com/quid/ui-framework/commit/8128fbb))
+* add InputRadio component ([3ebf90d](https://github.com/quid/ui-framework/commit/3ebf90d))
+
+
+
+
+
 # [1.20.0](https://github.com/quid/ui-framework/compare/v1.19.0...v1.20.0) (2019-01-14)
 
 
