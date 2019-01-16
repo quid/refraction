@@ -5,7 +5,7 @@ import styled from '@emotion/styled/macro';
 
 const TableOfContentsRenderer = styled(
   ({ searchTerm, onSearchTermChange, children, className }) => (
-    <div>
+    <div className={className}>
       <InputText
         className={className}
         value={searchTerm}
@@ -17,7 +17,12 @@ const TableOfContentsRenderer = styled(
     </div>
   )
 )`
-  margin: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  ${InputText} {
+    margin: 14px;
+  }
 `;
 
 export default TableOfContentsRenderer;
