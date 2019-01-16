@@ -8,6 +8,16 @@ are properly styled with the resources provided by this package.
 Additionally, you can import the `colors`, `sizes`, `textStyles`, and `themes`
 named exports to directly reference the variables.
 
+#### Installation
+
+```bash
+npm install --save @quid/theme
+
+# or
+
+yarn add @quid/theme
+```
+
 ### Usage
 
 Wrap your component with `ThemeProvider` and, optionally, define the desired
