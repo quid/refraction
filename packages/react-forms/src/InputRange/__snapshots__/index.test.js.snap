@@ -117,12 +117,7 @@ exports[`renders an InputRange 1`] = `
 }
 
 .emotion-0 {
-  fill: #00c1bb;
-  height: 2px;
-  width: 0px;
-  x: 0px;
-  rx: 1;
-  ry: 1;
+  color: #00c1bb;
 }
 
 .emotion-6 {
@@ -137,12 +132,7 @@ exports[`renders an InputRange 1`] = `
 }
 
 .emotion-4 {
-  fill: #6C7983;
-  height: 2px;
-  width: 0px;
-  x: 0px;
-  rx: 1;
-  ry: 1;
+  color: #6C7983;
 }
 
 .emotion-10 {
@@ -289,11 +279,11 @@ exports[`renders an InputRange 1`] = `
             "display": "block",
             "height": "100%",
             "left": 0,
+            "opacity": 0,
             "overflow": "hidden",
             "pointerEvents": "none",
             "position": "absolute",
             "top": 0,
-            "visibility": "hidden",
             "width": "100%",
             "zIndex": -1,
           }
@@ -332,8 +322,13 @@ exports[`renders an InputRange 1`] = `
                 <rect
                   className="emotion-0 emotion-1"
                   disabled={false}
+                  fill="currentColor"
+                  height={2}
                   offset={0}
+                  rx={1}
+                  ry={1}
                   width={0}
+                  x={0}
                 />
               </Rect>
             </svg>
@@ -356,8 +351,13 @@ exports[`renders an InputRange 1`] = `
                 <rect
                   className="emotion-4 emotion-1"
                   disabled={true}
+                  fill="currentColor"
+                  height={2}
                   offset={0}
+                  rx={1}
+                  ry={1}
                   width={0}
+                  x={0}
                 />
               </Rect>
             </svg>
