@@ -5,4 +5,14 @@ at the end to denote some text has been cut.
 It provides the same functionality of the CSS [`text-overflow: ellipsis`][mdn-text-overflow]
 but with support for multi-line texts.
 
+#### Installation
+
+```bash
+npm install --save @quid/react-ellipsis
+
+# or
+
+yarn add @quid/react-ellipsis
+```
+
 [mdn-text-overflow]: https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow
