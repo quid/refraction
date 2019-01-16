@@ -1,0 +1,404 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a disabled InputCheckbox 1`] = `
+@keyframes animation-0 {
+  from {
+    box-shadow: inset 0 0 0 9px currentColor;
+  }
+
+  to {
+    box-shadow: inset 0 0 0 0 currentColor;
+  }
+}
+
+@keyframes animation-0 {
+  from {
+    box-shadow: inset 0 0 0 9px currentColor;
+  }
+
+  to {
+    box-shadow: inset 0 0 0 0 currentColor;
+  }
+}
+
+@keyframes animation-0 {
+  from {
+    box-shadow: inset 0 0 0 9px currentColor;
+  }
+
+  to {
+    box-shadow: inset 0 0 0 0 currentColor;
+  }
+}
+
+@keyframes animation-0 {
+  from {
+    box-shadow: inset 0 0 0 9px currentColor;
+  }
+
+  to {
+    box-shadow: inset 0 0 0 0 currentColor;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    box-shadow: 20.5px -7.5px 0 10px currentColor;
+  }
+
+  50% {
+    box-shadow: 25.8px -7.5px 0 10px currentColor;
+  }
+
+  100% {
+    box-shadow: 25.8px -21.5px 0 10px currentColor;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    box-shadow: 20.5px -7.5px 0 10px currentColor;
+  }
+
+  50% {
+    box-shadow: 25.8px -7.5px 0 10px currentColor;
+  }
+
+  100% {
+    box-shadow: 25.8px -21.5px 0 10px currentColor;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    box-shadow: 20.5px -7.5px 0 10px currentColor;
+  }
+
+  50% {
+    box-shadow: 25.8px -7.5px 0 10px currentColor;
+  }
+
+  100% {
+    box-shadow: 25.8px -21.5px 0 10px currentColor;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    box-shadow: 20.5px -7.5px 0 10px currentColor;
+  }
+
+  50% {
+    box-shadow: 25.8px -7.5px 0 10px currentColor;
+  }
+
+  100% {
+    box-shadow: 25.8px -21.5px 0 10px currentColor;
+  }
+}
+
+.emotion-0 {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.emotion-3 {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  color: #00c1bb;
+  border: 1px solid #8F9BA3;
+  margin: 1px;
+  overflow: hidden;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  opacity: 0.4;
+}
+
+.emotion-1:checked ~ .emotion-3 {
+  color: #8F9BA3;
+  border: 1px solid #00c1bb;
+}
+
+.emotion-3::before,
+.emotion-3::after {
+  content: '';
+  display: none;
+  position: absolute;
+}
+
+.emotion-1:not(:checked) ~ .emotion-3::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #8F9BA3;
+  -webkit-animation: animation-0 0s ease-in forwards;
+  animation: animation-0 0s ease-in forwards;
+}
+
+.emotion-1:focus:not(:checked) ~ .emotion-3::before {
+  -webkit-animation: animation-0 0.2s ease-in forwards;
+  animation: animation-0 0.2s ease-in forwards;
+}
+
+.emotion-1:checked ~ .emotion-3::before {
+  display: block;
+  top: -10px;
+  left: -10px;
+  width: 32px;
+  height: 32px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  outline: 1px solid green;
+  box-shadow: inset 7.5px -3px 0 7px currentColor,inset -3.5px -3px 0 7px currentColor,inset -3.5px 1.5px 0 7px currentColor;
+}
+
+.emotion-1:checked ~ .emotion-3::after {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg) translateX(-7.2px) translateY(-4px);
+  -ms-transform: rotate(45deg) translateX(-7.2px) translateY(-4px);
+  transform: rotate(45deg) translateX(-7.2px) translateY(-4px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 20.5px -7.5px 0 10px currentColor;
+}
+
+.emotion-1:checked ~ .emotion-3::after {
+  -webkit-animation: animation-1 0s ease-in forwards;
+  animation: animation-1 0s ease-in forwards;
+}
+
+.emotion-1:checked:focus ~ .emotion-3::after {
+  -webkit-animation: animation-1 0.4s ease-in forwards;
+  animation: animation-1 0.4s ease-in forwards;
+}
+
+.emotion-1:focus-visible ~ .emotion-3 {
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(143,155,163,0.8);
+}
+
+.emotion-1:checked:focus-visible ~ .emotion-3 {
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(0,193,187,0.8);
+}
+
+.emotion-1:checked:focus-visible ~ .emotion-3:hover {
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(0,193,187,0.8),0 0 4px rgba(27,31,34,0.8);
+}
+
+.emotion-3:hover {
+  box-shadow: 0 0 4px rgba(27,31,34,0.8);
+}
+
+.emotion-3:hover {
+  box-shadow: none;
+}
+
+<InputCheckbox
+  disabled={true}
+>
+  <label>
+    <Input
+      disabled={true}
+      type="checkbox"
+    >
+      <input
+        className="emotion-0 emotion-1"
+        disabled={true}
+        type="checkbox"
+      />
+    </Input>
+    <Checkbox
+      className="emotion-5 emotion-2"
+      disabled={true}
+    >
+      <div
+        className="emotion-2 emotion-3 emotion-4"
+        disabled={true}
+      />
+    </Checkbox>
+  </label>
+</InputCheckbox>
+`;
+
+exports[`renders an InputCheckbox 1`] = `
+@keyframes animation-0 {
+  from {
+    box-shadow: inset 0 0 0 9px currentColor;
+  }
+
+  to {
+    box-shadow: inset 0 0 0 0 currentColor;
+  }
+}
+
+@keyframes animation-0 {
+  from {
+    box-shadow: inset 0 0 0 9px currentColor;
+  }
+
+  to {
+    box-shadow: inset 0 0 0 0 currentColor;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    box-shadow: 20.5px -7.5px 0 10px currentColor;
+  }
+
+  50% {
+    box-shadow: 25.8px -7.5px 0 10px currentColor;
+  }
+
+  100% {
+    box-shadow: 25.8px -21.5px 0 10px currentColor;
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    box-shadow: 20.5px -7.5px 0 10px currentColor;
+  }
+
+  50% {
+    box-shadow: 25.8px -7.5px 0 10px currentColor;
+  }
+
+  100% {
+    box-shadow: 25.8px -21.5px 0 10px currentColor;
+  }
+}
+
+.emotion-0 {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.emotion-3 {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  color: #00c1bb;
+  border: 1px solid #8F9BA3;
+  margin: 1px;
+  overflow: hidden;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.emotion-1:checked ~ .emotion-3 {
+  color: #00c1bb;
+  border: 1px solid #00c1bb;
+}
+
+.emotion-3::before,
+.emotion-3::after {
+  content: '';
+  display: none;
+  position: absolute;
+}
+
+.emotion-1:not(:checked) ~ .emotion-3::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #8F9BA3;
+  -webkit-animation: animation-0 0s ease-in forwards;
+  animation: animation-0 0s ease-in forwards;
+}
+
+.emotion-1:focus:not(:checked) ~ .emotion-3::before {
+  -webkit-animation: animation-0 0.2s ease-in forwards;
+  animation: animation-0 0.2s ease-in forwards;
+}
+
+.emotion-1:checked ~ .emotion-3::before {
+  display: block;
+  top: -10px;
+  left: -10px;
+  width: 32px;
+  height: 32px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  outline: 1px solid green;
+  box-shadow: inset 7.5px -3px 0 7px currentColor,inset -3.5px -3px 0 7px currentColor,inset -3.5px 1.5px 0 7px currentColor;
+}
+
+.emotion-1:checked ~ .emotion-3::after {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg) translateX(-7.2px) translateY(-4px);
+  -ms-transform: rotate(45deg) translateX(-7.2px) translateY(-4px);
+  transform: rotate(45deg) translateX(-7.2px) translateY(-4px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 20.5px -7.5px 0 10px currentColor;
+}
+
+.emotion-1:checked ~ .emotion-3::after {
+  -webkit-animation: animation-1 0s ease-in forwards;
+  animation: animation-1 0s ease-in forwards;
+}
+
+.emotion-1:checked:focus ~ .emotion-3::after {
+  -webkit-animation: animation-1 0.4s ease-in forwards;
+  animation: animation-1 0.4s ease-in forwards;
+}
+
+.emotion-1:focus-visible ~ .emotion-3 {
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(143,155,163,0.8);
+}
+
+.emotion-1:checked:focus-visible ~ .emotion-3 {
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(0,193,187,0.8);
+}
+
+.emotion-1:checked:focus-visible ~ .emotion-3:hover {
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(0,193,187,0.8),0 0 4px rgba(27,31,34,0.8);
+}
+
+.emotion-3:hover {
+  box-shadow: 0 0 4px rgba(27,31,34,0.8);
+}
+
+<InputCheckbox>
+  <label>
+    <Input
+      type="checkbox"
+    >
+      <input
+        className="emotion-0 emotion-1"
+        type="checkbox"
+      />
+    </Input>
+    <Checkbox
+      className="emotion-5 emotion-2"
+    >
+      <div
+        className="emotion-2 emotion-3 emotion-4"
+      />
+    </Checkbox>
+  </label>
+</InputCheckbox>
+`;
