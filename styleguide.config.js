@@ -52,6 +52,7 @@ module.exports = {
     ),
   },
   theme: {
+    sidebarWidth: 300,
     color: {
       base: light.primary,
       baseBackground: light.background,
@@ -60,11 +61,17 @@ module.exports = {
     },
     fontFamily: {
       base: 'IBM Plex Sans, Lucida Grande, Tahoma, Verdana, Arial, sans-serif',
-      fontSize: {
-        base: 14,
-        text: 14,
-        small: 12,
-      },
+    },
+    fontSize: {
+      h1: 30,
+      h2: 24,
+      h3: 20,
+      h4: 16,
+      h5: 14,
+      h6: 14,
+      base: 14,
+      text: 14,
+      small: 12,
     },
   },
 };
