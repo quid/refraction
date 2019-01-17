@@ -136,10 +136,10 @@ const Button = styled(
       }
     `}
   ${props =>
-    props.disabled &&
     props.transparent &&
     css`
       background-color: transparent;
+      color: ${props.theme.primary};
     `}
 
   ${Icon} {
