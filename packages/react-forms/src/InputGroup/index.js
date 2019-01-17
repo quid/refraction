@@ -1,9 +1,9 @@
 // @flow
 import * as React from 'react';
-import { css, cx } from 'emotion';
+import { css } from 'emotion';
 import styled from '@emotion/styled/macro';
 import { withFallback as wf } from '@quid/theme';
-import InvalidHandler from '../InvalidHandler';
+import InvalidHandler from '@quid/react-invalid-handler';
 
 const toArray = (children): Array<React.Element<any> | Function> =>
   React.Children.toArray(children).length

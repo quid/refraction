@@ -1,6 +1,5 @@
 // @flow
 import * as React from 'react';
-import callAll from '../utils/callAll';
 
 type GetInputProps = (
   ?{ onChange?: Function, onInvalid?: Function }
@@ -17,6 +16,9 @@ type Props = {
 type State = {
   invalid: boolean,
 };
+
+const callAll = (...fns: Array<?Function>) => (...args: Array<any>) =>
+  fns.forEach(fn => fn && fn(...args));
 
 class InvalidHandler extends React.Component<Props, State> {
   state = {
@@ -37,14 +39,18 @@ class InvalidHandler extends React.Component<Props, State> {
     }
   };
 
+  getInputProps = (
+    props: ?{
+      onInvalid?: (SyntheticInputEvent<HTMLInputElement>) => void,
+      onChange?: (SyntheticInputEvent<HTMLInputElement>) => void,
+    }
+  ) => ({
+    onInvalid: callAll(this.handleOnInvalid, (props || {}).onInvalid),
+    onChange: callAll(this.handleOnChange, (props || {}).onChange),
+  });
+
   render() {
-    return this.props.children(
-      props => ({
-        onInvalid: callAll(this.handleOnInvalid, (props || {}).onInvalid),
-        onChange: callAll(this.handleOnChange, (props || {}).onChange),
-      }),
-      this.state.invalid
-    );
+    return this.props.children(this.getInputProps, this.state.invalid);
   }
 }
 

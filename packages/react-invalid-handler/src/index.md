@@ -1,14 +1,11 @@
-This render-prop component makes it easy to handle HTML form input
-validation on your input components.
-
 ```js
 <form onSubmit={evt => evt.preventDefault()}>
-  <InvalidHandler>
+  <InvalidHandler errorMessage="Custom error message here">
     {(getInputProps, isInvalid) => (
       <input
         type="email"
         required
-        {...getInputProps()}
+        {...getInputProps({ onChange: () => console.log('changed') })}
         style={{
           backgroundColor: isInvalid ? 'red' : 'white',
         }}
@@ -19,7 +16,7 @@ validation on your input components.
 </form>
 ```
 
-#### `getInputProps<{ onChange: Event => void, onInvalid: Event => void }>`
+#### `GetInputProps<{ onChange: Event => void, onInvalid: Event => void }>`
 
 Call `getInputProps` to get two custom event handlers needed by the
 target input element to properly report its validity state.
