@@ -12,7 +12,7 @@
     ]
   },
   "scripts": {
-    "start": "styleguidist server",
+    "start": "styleguidist server --open",
     "build": "styleguidist build",
     "create-package": "builder-init $(pwd)/packages/react-package-template",
     "test": "react-app-rewired test",

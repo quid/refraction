@@ -6,13 +6,15 @@ Welcome to the Quid UI styleguide.
 
 > _Quid puts the world’s information at your fingertips. It draws connections between big ideas, giving your brain more power than you ever dreamed possible._
 
-This is the home of all the open source UI libraries created at [Quid](https://www.quid.com).
+This is the home of all the **open source** UI libraries created at [Quid](https://www.quid.com).
 
 The goal of this project is to make available to the community the technologies we developed
 during our day-to-day work on our web applications.
 
-This includes several standalone libraries and utilities built to be highly reusable, but also
+This includes several **standalone libraries** and utilities built to be highly reusable, but also
 most of the UI elements that compose our own web apps, such as buttons, icons, inputs, etc...
+
+The libraries we think are going to be more useful to the community have a **"Community"** badge near them!
 
 The packages live in a single monorepo, but they are published individually to npm, so feel free
 to install only the ones you need!
