@@ -2,7 +2,7 @@
 
 ## PR checklist
 
-- [ ] I have followed the ["Committing and publishing"][committing-and-publishing] guide;
+- [ ] I have followed the ["Committing and publishing"][committing-and-publishing] guidelines;
 - [ ] I have added unit tests to cover my changes;
 - [ ] I updated the documentation and examples accordingly;
 
@@ -17,4 +17,4 @@
 - @quid/...
 - @quid/...
 
-[committing-and-publishing]: https://github.com/quid/ui-framework#committing-and-publishing
+[committing-and-publishing]: https://github.com/quid/ui-framework/blob/master/CONTRIBUTING.md
