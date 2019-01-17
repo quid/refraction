@@ -1,0 +1,25 @@
+{
+  "name": "@quid/react-invalid-handler",
+  "version": "1.0.0",
+  "description": "render-prop which provides an easy interface to interact with the HTML form validation API",
+  "main": "dist/index.js",
+  "main:umd": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quid/ui-framework.git"
+  },
+  "scripts": {
+    "start": "microbundle watch",
+    "prepare": "microbundle build --jsx React.createElement && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
+    "test": "cd ../.. && yarn test --testPathPattern packages/react-invalid-handler"
+  },
+  "devDependencies": {
+    "flow-copy-source": "^2.0.2",
+    "microbundle": "^0.8.3"
+  },
+  "dependencies": {
+    "react": "^16.7.0"
+  }
+}

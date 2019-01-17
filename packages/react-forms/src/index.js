@@ -8,7 +8,7 @@ export { default as InputRadio } from './InputRadio';
 export { default as InputRange } from './InputRange';
 export { default as InputText } from './InputText';
 export { default as InputToggle } from './InputToggle';
-export { default as InvalidHandler } from './InvalidHandler';
+export { default as InvalidHandler } from '@quid/react-invalid-handler';
 export { default as Label } from './Label';
 export { default as TextArea } from './TextArea';
 export { default as Button } from './Button';
