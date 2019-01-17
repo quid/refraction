@@ -1,0 +1,888 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the expected markup 1`] = `
+.emotion-2 {
+  height: 36px;
+  width: 30px;
+  vertical-align: middle;
+  color: #2E3338;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+}
+
+.emotion-0 {
+  font: inherit;
+  background: inherit;
+  border: inherit;
+  line-height: inherit;
+  color: inherit;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: default;
+  color: #8F9BA3;
+}
+
+.emotion-0:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.emotion-4 {
+  font: inherit;
+  background: inherit;
+  border: inherit;
+  line-height: inherit;
+  color: inherit;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #6C7983;
+  color: #E3E6E8;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-weight: bold;
+}
+
+.emotion-4:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.emotion-8 {
+  font: inherit;
+  background: inherit;
+  border: inherit;
+  line-height: inherit;
+  color: inherit;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.emotion-8:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+<table>
+  <tbody>
+    <Row
+      date={2017-02-01T00:00:00.000Z}
+      days={
+        Array [
+          undefined,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+        ]
+      }
+      onSelect={[Function]}
+      selected={2017-02-01T00:00:00.000Z}
+    >
+      <tr
+        className="emotion-128 emotion-129"
+      >
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={true}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-0 emotion-1"
+                disabled={true}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              />
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={true}
+              type="button"
+            >
+              <button
+                className="emotion-4 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={true}
+                type="button"
+              >
+                1
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                2
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                3
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                4
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                5
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                6
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                7
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                8
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                9
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                10
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                11
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                12
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                13
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                14
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                15
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                16
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                17
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                18
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                19
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                20
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                21
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                22
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                23
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                24
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                25
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                26
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                27
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                28
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                29
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                30
+              </button>
+            </Button>
+          </td>
+        </Td>
+        <Td
+          current={false}
+        >
+          <td
+            className="emotion-2 emotion-3"
+          >
+            <Button
+              disabled={false}
+              onClick={[Function]}
+              selected={false}
+              type="button"
+            >
+              <button
+                className="emotion-8 emotion-1"
+                disabled={false}
+                onClick={[Function]}
+                selected={false}
+                type="button"
+              >
+                31
+              </button>
+            </Button>
+          </td>
+        </Td>
+      </tr>
+    </Row>
+  </tbody>
+</table>
+`;
