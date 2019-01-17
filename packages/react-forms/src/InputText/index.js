@@ -3,7 +3,7 @@ import * as React from 'react';
 import { css } from 'emotion';
 import styled from '@emotion/styled/macro';
 import { textStyles, withFallback as wf } from '@quid/theme';
-import InvalidHandler from '../InvalidHandler';
+import InvalidHandler from '@quid/react-invalid-handler';
 import { INPUT_ATTRIBUTES, omit, include } from '../utils/inputPropsFilters';
 import mergeRefs from '../utils/mergeRefs';
 
