@@ -5,7 +5,7 @@
 This is the home of the front-end technologies that compose the awesome
 products we build at Quid!
 
-To see a live demo and read the documentation please visit [quid.github.io/ui-framework](https://quid.github.io/ui-framework).
+To see a live demo and read the documentation please visit [ui.quid.com](https://ui.quid.com).
 
 ## What can we do for you?
 
