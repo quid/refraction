@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.23.0](https://github.com/quid/ui-framework/compare/v1.22.0...v1.23.0) (2019-01-21)
+
+
+### Features
+
+* add caption text style ([71f4d3f](https://github.com/quid/ui-framework/commit/71f4d3f))
+
+
+
+
+
 ## [1.21.1](https://github.com/quid/ui-framework/compare/v1.21.0...v1.21.1) (2019-01-16)
 
 
