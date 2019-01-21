@@ -20,6 +20,10 @@ const styles = {
     font-size: 16px;
     line-height: 1.5;
   `,
+  caption: css`
+    font-size: 12px;
+    line-height: 1.5;
+  `,
   title: css`
     font-size: 16px;
     line-height: 1.5;
