@@ -9,7 +9,7 @@ To see a live demo and read the documentation please visit [ui.quid.com](https:/
 
 ## What can we do for you?
 
-Companies' styleguides are usually meant to be used by the company itself, with little
+Companies' UI frameworks are usually meant to be used by the company itself, with little
 benefits for the community.
 
 Our goal with this project, instead, is to provide a lot of highly reusable libraries
