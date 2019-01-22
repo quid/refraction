@@ -29,6 +29,7 @@ jobs:
         github-token: $GITHUB_TOKEN
         keep-history: true
         local-dir: styleguide
+        fqdn: ui.quid.com
     - stage: publish to Artifactory
       if: (NOT type IN (pull_request)) AND (branch = master)
       script: skip
