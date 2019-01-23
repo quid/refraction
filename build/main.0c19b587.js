@@ -1267,7 +1267,7 @@ eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader?
 /*! exports provided: oss, default */
 /***/ (function(module) {
 
-eval("module.exports = {\"oss\":[\"react-ellipsis\",\"react-mouse-outside\",\"stylis-plugin-focus-visible\"]};\n\n//# sourceURL=webpack:///./src/badges.json?");
+eval("module.exports = {\"oss\":[\"react-ellipsis\",\"react-invalid-handler\",\"react-mouse-outside\",\"stylis-plugin-focus-visible\"]};\n\n//# sourceURL=webpack:///./src/badges.json?");
 
 /***/ }),
 
