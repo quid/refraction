@@ -25,6 +25,7 @@ type Props = {
   className?: string,
   min?: string,
   max?: string,
+  disabled?: boolean,
 };
 
 type State = {
@@ -52,10 +53,12 @@ export default class InputDate extends React.Component<Props, State> {
 
   handleOpen = () => this.isOpen === false && this.setIsOpen(true);
 
-  handleClose = () => this.isOpen === true && this.setIsOpen(false);
+  handleClose = /* istanbul ignore next */ () =>
+    this.isOpen === true && this.setIsOpen(false);
 
   handleCloseOnBlur = (evt: MouseEvent) => {
     const { relatedTarget } = evt;
+    // istanbul ignore next (this is too DOM related)
     if (
       this.component.current && relatedTarget instanceof HTMLElement
         ? !this.component.current.contains(relatedTarget)
@@ -67,6 +70,7 @@ export default class InputDate extends React.Component<Props, State> {
 
   handleInputChange = (evt: SyntheticInputEvent<HTMLInputElement>) => {
     const current = new Date(evt.target.value);
+    // istanbul ignore else
     if (!isNaN(current.getTime())) {
       this.setState({ current });
     }

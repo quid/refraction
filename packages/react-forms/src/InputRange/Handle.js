@@ -98,7 +98,7 @@ const Handle = styled(
   }
 
   &:active::before {
-    ${handleTransform}
+    ${handleTransform};
   }
 
   ${props =>

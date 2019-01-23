@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import { advanceTo } from 'jest-date-mock';
 import Calendar from './';
 import Cell from './Cell';
@@ -10,21 +10,8 @@ const WEEK_DAYS = 7;
 const now = new Date(Date.UTC(2017, 0, 1));
 advanceTo(now);
 
-it('renders the expected markup', () => {
-  const wrapper = shallow(
-    <Calendar
-      current={now}
-      onChangeCurrent={f => f}
-      onCancel={f => f}
-      onSelect={f => f}
-      selected={now}
-    />
-  );
-  expect(wrapper).toMatchSnapshot();
-});
-
 it('works with no selection', () => {
-  const wrapper = shallow(
+  const wrapper = mount(
     <Calendar
       current={now}
       onChangeCurrent={f => f}
@@ -32,14 +19,33 @@ it('works with no selection', () => {
       onSelect={f => f}
     />
   );
-  expect(
-    wrapper.find('Row').findWhere(n => n.prop('selected') === undefined)
-  ).toHaveLength(6);
+  expect(wrapper.find('Year').find('span')).toMatchInlineSnapshot(`
+Array [
+  <span>
+     
+  </span>,
+  .emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+<span
+    className="emotion-0 emotion-1"
+  >
+    January
+     
+    2017
+  </span>,
+]
+`);
 });
 
 it('navigates to next month', () => {
   const handleChangeCurrent = jest.fn();
-  const wrapper = shallow(
+  const wrapper = mount(
     <Calendar
       current={now}
       onChangeCurrent={handleChangeCurrent}
@@ -59,7 +65,7 @@ it('navigates to next month', () => {
 
 it('navigates to prev month', () => {
   const handleChangeCurrent = jest.fn();
-  const wrapper = shallow(
+  const wrapper = mount(
     <Calendar
       current={now}
       onChangeCurrent={handleChangeCurrent}
