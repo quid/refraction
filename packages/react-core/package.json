@@ -23,11 +23,12 @@
     "@emotion/core": "^10.0.4",
     "@emotion/css": "^10.0.4",
     "@emotion/styled": "^10.0.4",
+    "@emotion/styled-base": "^10.0.4",
     "@quid/theme": "^1.23.0",
-    "color": "^3.1.0",
-    "react-router-dom": "^4.3.1"
+    "color": "^3.1.0"
   },
   "peerDependencies": {
-    "react": "15||16"
+    "react": "15||16",
+    "react-router-dom": "^4.0.0"
   }
 }

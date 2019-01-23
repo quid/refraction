@@ -17,6 +17,10 @@
   },
   "devDependencies": {
     "flow-copy-source": "^2.0.2",
-    "microbundle": "^0.8.3"
+    "microbundle": "^0.8.3",
+    "react": "^16.7.0"
+  },
+  "peerDependencies": {
+    "react": "15||16"
   }
 }
