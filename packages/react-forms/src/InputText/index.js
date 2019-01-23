@@ -19,6 +19,7 @@ type Props = {
   as?: string,
   onChange?: (SyntheticInputEvent<any>) => void,
   validationErrorMessage?: string,
+  focus?: boolean,
 };
 
 // istanbul ignore next
@@ -42,6 +43,7 @@ export const Input = styled.input`
   align-self: stretch;
   flex: 1;
   padding: 0 ${props => PADDING[props.size || 'regular']}px;
+  line-height: ${props => HEIGHT[props.size || 'regular'] - 4}px;
 
   // needed to remove :invalid red border in Firefox
   box-shadow: none;
@@ -97,7 +99,7 @@ const Container = styled.div`
     props.disabled ? props.theme.colors.gray2 : props.theme.colors.primary
   )};
 
-  &:focus-within {
+  &:focus-within ${props => props.focus && ', &'} {
     border-color: ${wf(props =>
       props.isInvalid
         ? /* istanbul ignore next */ props.theme.colors.red
