@@ -11,12 +11,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * several build problems that prevented proper usage ([d24bdd1](https://github.com/quid/ui-framework/commit/d24bdd1))
 
 
-
-
-
-# [1.12.0](https://github.com/quid/ui-framework/compare/v1.11.0...v1.12.0) (2018-12-18)
-
-
 ### Features
 
-* add react-mouse-outside pkg ([4e281c1](https://github.com/quid/ui-framework/commit/4e281c1))
+* date picker ([fdd1c7d](https://github.com/quid/ui-framework/commit/fdd1c7d))
