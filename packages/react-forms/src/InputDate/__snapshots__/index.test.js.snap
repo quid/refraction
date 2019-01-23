@@ -1,0 +1,230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the expected markup 1`] = `
+.emotion-2 {
+  margin-right: 10px;
+}
+
+.emotion-7 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  vertical-align: top;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #8F9BA3;
+  -webkit-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+  border-radius: 2px;
+  height: 32px;
+  background-color: transparent;
+}
+
+.emotion-7:focus-within,
+.emotion-7 {
+  border-color: #00c1bb;
+}
+
+.emotion-0 {
+  all: unset;
+  min-width: 0;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 10px;
+  line-height: 28px;
+  box-shadow: none;
+}
+
+.emotion-0[type='number'],
+.emotion-0[type='date'] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+.emotion-0[type='number']::-webkit-outer-spin-button,
+.emotion-0[type='date']::-webkit-outer-spin-button,
+.emotion-0[type='number']::-webkit-inner-spin-button,
+.emotion-0[type='date']::-webkit-inner-spin-button,
+.emotion-0[type='number']::-webkit-calendar-picker-indicator,
+.emotion-0[type='date']::-webkit-calendar-picker-indicator,
+.emotion-0[type='number']::-webkit-inner-spin-button,
+.emotion-0[type='date']::-webkit-inner-spin-button,
+.emotion-0[type='number']::-webkit-clear-button,
+.emotion-0[type='date']::-webkit-clear-button {
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  display: none;
+}
+
+.emotion-0:focus {
+  outline: 0;
+}
+
+.emotion-0:not(:last-child) {
+  padding-right: 10px;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #8F9BA3;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #8F9BA3;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #8F9BA3;
+}
+
+.emotion-0::placeholder {
+  color: #8F9BA3;
+}
+
+.emotion-0:disabled::-webkit-input-placeholder {
+  color: #C7CCD1;
+}
+
+.emotion-0:disabled::-moz-placeholder {
+  color: #C7CCD1;
+}
+
+.emotion-0:disabled:-ms-input-placeholder {
+  color: #C7CCD1;
+}
+
+.emotion-0:disabled::placeholder {
+  color: #C7CCD1;
+}
+
+.emotion-3 {
+  font-family: 'quid-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-feature-settings: 'liga';
+  font-variant-ligatures: discretionary-ligatures;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 1em;
+  width: 1em;
+}
+
+<span>
+  <x-manager>
+    <span
+      style={
+        Object {
+          "display": "inline-block",
+          "verticalAlign": "top",
+        }
+      }
+    >
+      <InputText
+        focus={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        renderAddon={[Function]}
+        type="date"
+        value="2019-01-01"
+      >
+        <ForwardRef
+          className="emotion-9 emotion-6"
+          focus={true}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          renderAddon={[Function]}
+          type="date"
+          value="2019-01-01"
+        >
+          <Container
+            className="emotion-9 emotion-6"
+            focus={true}
+            isInvalid={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            renderAddon={[Function]}
+          >
+            <div
+              className="emotion-6 emotion-7 emotion-8"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+            >
+              <Input
+                onChange={[Function]}
+                onInvalid={[Function]}
+                type="date"
+                value="2019-01-01"
+              >
+                <input
+                  className="emotion-0 emotion-1"
+                  onChange={[Function]}
+                  onInvalid={[Function]}
+                  type="date"
+                  value="2019-01-01"
+                />
+              </Input>
+              <Icon
+                className="emotion-2"
+                name="calendar"
+                onClick={[Function]}
+                squared={true}
+              >
+                <i
+                  className="emotion-2 emotion-3 emotion-4"
+                  onClick={[Function]}
+                >
+                  calendar
+                </i>
+              </Icon>
+            </div>
+          </Container>
+        </ForwardRef>
+      </InputText>
+    </span>
+    <x-date-picker
+      current={2019-01-01T00:00:00.000Z}
+      onClick={[Function]}
+      onFocus={[Function]}
+      selected={2019-01-01T00:00:00.000Z}
+    />
+  </x-manager>
+</span>
+`;

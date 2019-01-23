@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a disabled cell 1`] = `
+.emotion-2 {
+  height: 36px;
+  width: 30px;
+  vertical-align: middle;
+  color: #2E3338;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+}
+
+.emotion-0 {
+  font: inherit;
+  background: inherit;
+  border: inherit;
+  line-height: inherit;
+  color: inherit;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: default;
+  color: #8F9BA3;
+}
+
+.emotion-0:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+<table>
+  <tbody>
+    <tr>
+      <Td>
+        <td
+          className="emotion-2 emotion-3"
+        >
+          <Button
+            disabled={true}
+            type="button"
+          >
+            <button
+              className="emotion-0 emotion-1"
+              disabled={true}
+              type="button"
+            />
+          </Button>
+        </td>
+      </Td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`renders the expected markup 1`] = `
+.emotion-2 {
+  height: 36px;
+  width: 30px;
+  vertical-align: middle;
+  color: #2E3338;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+}
+
+.emotion-0 {
+  font: inherit;
+  background: inherit;
+  border: inherit;
+  line-height: inherit;
+  color: inherit;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: default;
+  color: #8F9BA3;
+}
+
+.emotion-0:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+<table>
+  <tbody>
+    <tr>
+      <Td>
+        <td
+          className="emotion-2 emotion-3"
+        >
+          <Button
+            disabled={true}
+            type="button"
+          >
+            <button
+              className="emotion-0 emotion-1"
+              disabled={true}
+              type="button"
+            />
+          </Button>
+        </td>
+      </Td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`renders the expected markup 2`] = `
+.emotion-0 {
+  font: inherit;
+  background: inherit;
+  border: inherit;
+  line-height: inherit;
+  color: inherit;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: default;
+  color: #8F9BA3;
+}
+
+.emotion-0:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.emotion-2 {
+  height: 36px;
+  width: 30px;
+  vertical-align: middle;
+  color: #00c1bb;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+}
+
+<table>
+  <tbody>
+    <tr>
+      <Td
+        current={true}
+        header={true}
+      >
+        <td
+          className="emotion-2 emotion-3"
+        >
+          <Button
+            disabled={true}
+            type="button"
+          >
+            <button
+              className="emotion-0 emotion-1"
+              disabled={true}
+              type="button"
+            />
+          </Button>
+        </td>
+      </Td>
+    </tr>
+  </tbody>
+</table>
+`;
