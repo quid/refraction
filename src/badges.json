@@ -1,6 +1,7 @@
 {
   "oss": [
     "react-ellipsis",
+    "react-invalid-handler",
     "react-mouse-outside",
     "stylis-plugin-focus-visible"
   ]
