@@ -16,8 +16,6 @@ function toYYYYMMDD(date) {
 }
 
 type Props = {
-  styles?: Object,
-  outerClassName?: string,
   value: string,
   onChange: Function,
   isOpen?: boolean,
@@ -87,7 +85,6 @@ export default class InputDate extends React.Component<Props, State> {
   render() {
     const {
       value,
-      outerClassName,
       onChange, // eslint-disable-line no-unused-vars
       isOpen: isOpenProp, // eslint-disable-line no-unused-vars
       onToggle, // eslint-disable-line no-unused-vars
@@ -107,7 +104,7 @@ export default class InputDate extends React.Component<Props, State> {
     return (
       <MouseOutside onClickOutside={this.handleClose}>
         {mouseOutsideRef => (
-          <span ref={mouseOutsideRef}>
+          <span ref={mouseOutsideRef} className={className}>
             <Manager>
               <Reference>
                 {({ ref }) => (
