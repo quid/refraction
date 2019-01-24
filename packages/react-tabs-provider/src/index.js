@@ -7,4 +7,4 @@ export { default as TabPanel } from './TabPanel';
  * @component
  * @visibleName Usage example
  */
-export default () => null;
+export default /* istanbul ignore next */ () => null;
