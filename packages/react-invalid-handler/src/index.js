@@ -20,6 +20,7 @@ type State = {
 const callAll = (...fns: Array<?Function>) => (...args: Array<any>) =>
   fns.forEach(fn => fn && fn(...args));
 
+/** @visibleName Usage example */
 class InvalidHandler extends React.Component<Props, State> {
   state = {
     invalid: false,

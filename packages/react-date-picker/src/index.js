@@ -185,6 +185,7 @@ const Inner = styled(
   }
 )``;
 
+/** @visibleName Usage example */
 const DatePicker = (React.forwardRef((props, ref) => (
   <Inner {...props} forwardedRef={ref} />
 )): React.ComponentType<Props>);
