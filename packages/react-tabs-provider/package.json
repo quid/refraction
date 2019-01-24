@@ -1,0 +1,26 @@
+{
+  "name": "@quid/react-tabs-provider",
+  "version": "1.0.0",
+  "description": "render-props based component to handle tab navigation",
+  "main": "dist/index.js",
+  "main:umd": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quid/ui-framework.git"
+  },
+  "scripts": {
+    "start": "microbundle watch",
+    "prepare": "microbundle build --jsx React.createElement && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
+    "test": "cd ../.. && yarn test --testPathPattern packages/react-tabs-provider"
+  },
+  "devDependencies": {
+    "flow-copy-source": "^2.0.2",
+    "microbundle": "^0.8.3",
+    "react": "^16.0.0"
+  },
+  "peerDependencies": {
+    "react": "15||16"
+  }
+}

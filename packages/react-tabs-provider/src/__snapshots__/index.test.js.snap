@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a TabList with interactable properties 1`] = `
+<x-wrapper>
+  <button
+    active="active"
+    type="button"
+  />
+</x-wrapper>
+`;
+
+exports[`renders an active TabPanel 1`] = `
+<x-wrapper>
+  foobar
+</x-wrapper>
+`;
+
+exports[`renders an inactive TabPanel 1`] = `<x-wrapper />`;
