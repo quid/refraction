@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-mouse-outside",
-  "version": "1.24.0",
+  "version": "1.25.0",
   "description": "Detect clicks and other mouse events outside of a React element",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
