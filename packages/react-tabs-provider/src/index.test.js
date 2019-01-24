@@ -112,6 +112,43 @@ it('renders an active TabPanel in controlled mode', () => {
   );
 });
 
+it('renders a Tab component that provides the expected context', () => {
+  const spySelect = jest.fn((select, name) => select(name));
+  let btn = {};
+  const wrapper = document.createElement('x-wrapper');
+  const tabListFn = jest.fn(({ active, select }) => {
+    btn = <button type="button" onClick={() => spySelect(select, 'bar')} />;
+    return (
+      <React.Fragment>
+        <button type="button" onClick={() => select('foo')} active="active" />
+        {btn}
+      </React.Fragment>
+    );
+  });
+
+  const hanleOnSelect = jest.fn();
+
+  render(
+    <Tabs active="foo" onSelect={hanleOnSelect}>
+      {() => (
+        <div>
+          <TabList>{tabListFn}</TabList>
+          <TabPanel name="foo">{() => 'foo'}</TabPanel>
+          <TabPanel name="bar">{() => 'bar'}</TabPanel>
+        </div>
+      )}
+    </Tabs>,
+    wrapper
+  );
+
+  btn.props.onClick();
+
+  // click on second button
+  expect(spySelect.mock.calls.length).toBe(1);
+  expect(spySelect.mock.calls[0][1]).toBe('bar');
+  expect(hanleOnSelect).toHaveBeenCalled();
+});
+
 it('throws an error if not both the controlled mode props are set', () => {
   const wrapper = document.createElement('x-wrapper');
   const handleError = jest.fn();

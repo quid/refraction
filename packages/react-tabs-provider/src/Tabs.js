@@ -7,6 +7,7 @@ export type ContextState = {
   register: string => void,
 };
 
+// istanbul ignore next
 const noop = () => {};
 
 // prettier-ignore
