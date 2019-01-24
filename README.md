@@ -1,4 +1,4 @@
-# Quid UI
+# Quid UI Framework
 
 [![lerna][lerna-badge]](https://lernajs.io/) [![Build Status][travis-badge]](https://travis-ci.com/quid/ui-framework)
 
