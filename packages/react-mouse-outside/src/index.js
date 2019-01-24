@@ -11,6 +11,7 @@ type Props = {
   children: RenderProp<React.ElementRef<any>>,
 };
 
+/** @visibleName Usage example */
 export default class MouseOutside extends React.Component<Props> {
   static defaultProps = {
     delay: 0,

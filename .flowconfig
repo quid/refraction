@@ -7,6 +7,10 @@
 [untyped]
 .*/node_modules/@emotion/core/src/context.js
 
+# This would be useful, but https://github.com/facebook/flow/issues/7388
+# [declarations]
+# .*/dist/.*
+
 [include]
 
 [libs]
