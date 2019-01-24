@@ -37,6 +37,7 @@ type State = {
   bad: ?number,
 };
 
+/** @visibleName Usage example */
 export default class Ellipsis extends React.Component<Props, State> {
   props: Props;
 
