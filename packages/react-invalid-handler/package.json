@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-invalid-handler",
-  "version": "1.22.0",
+  "version": "1.25.0",
   "description": "render-prop which provides an easy interface to interact with the HTML form validation API",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
