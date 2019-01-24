@@ -3,6 +3,7 @@
     "react-ellipsis",
     "react-invalid-handler",
     "react-mouse-outside",
+    "react-tabs-provider",
     "stylis-plugin-focus-visible"
   ]
 }
