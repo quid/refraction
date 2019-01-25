@@ -4,7 +4,6 @@ about: I have a suggestion (and might want to implement myself)
 title: ''
 labels: enhancement, needs triage
 assignees: ''
-
 ---
 
 <!-- Consider opening a pull request instead: it’s a more productive way to discuss new features -->

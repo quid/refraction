@@ -4,7 +4,6 @@ about: Something isn’t working as expected
 title: ''
 labels: bug, needs triage
 assignees: ''
-
 ---
 
 **Current behavior**
@@ -15,9 +14,9 @@ assignees: ''
 
 <!-- Provide the steps needed to reproduce the bug -->
 
-1.
-2.
-3.
+1. ...
+2. ...
+3. ...
 
 **Expected behavior**
 
