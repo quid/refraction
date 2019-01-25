@@ -1,12 +1,14 @@
 {
   "lerna": "3.3.2",
-  "version": "1.25.0",
+  "version": "1.25.1",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "ignoreChanges": ["*.md"]
+      "ignoreChanges": [
+        "*.md"
+      ]
     }
   }
 }
