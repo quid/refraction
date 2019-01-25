@@ -5,6 +5,12 @@ module.exports = {
   extends: 'react-app',
   rules: {
     'flow-header/flow-header': LEVEL,
+    'notice/notice': [
+      LEVEL,
+      {
+        templateFile: 'src/licenseHeader.js',
+      },
+    ],
   },
-  plugins: ['flow-header'],
+  plugins: ['flow-header', 'notice'],
 };

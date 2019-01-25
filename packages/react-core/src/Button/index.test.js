@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) Quid, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 // @flow
 import * as React from 'react';
 import { mount } from 'enzyme';
@@ -68,9 +74,12 @@ it('applies Button classes to child if child is Icon', () => {
       <Icon name="arrow" />
     </Button>
   );
-  expect(wrapper.find('i').props().className).toMatchInlineSnapshot(
-    `"css-68usj4-Icon-Icon e1t5eso00"`
-  );
+  expect(
+    wrapper
+      .find('i')
+      .props()
+      .className.split(' ')
+  ).toHaveLength(2);
 });
 
 it('does not apply Button classes to child if child is not Icon', () => {
@@ -91,9 +100,12 @@ it('applies Button classes to child if child is Icon with near text', () => {
       Foobar
     </Button>
   );
-  expect(wrapper.find('i').props().className).toMatchInlineSnapshot(
-    `"css-68usj4-Icon-Icon e1t5eso00"`
-  );
+  expect(
+    wrapper
+      .find('i')
+      .props()
+      .className.split(' ')
+  ).toHaveLength(2);
 });
 
 // it('renders properly with isGroupChild property', () => {
