@@ -1,0 +1,1619 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a basic closed dropdown 1`] = `
+.emotion-0 {
+  display: inline-block;
+}
+
+<x-manager>
+  <DropdownContainer
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-1-label"
+    aria-owns={null}
+    role="combobox"
+  >
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-labelledby="downshift-1-label"
+      aria-owns={null}
+      className="emotion-0 emotion-1"
+      role="combobox"
+    >
+      <x-fragment>
+        <input
+          aria-activedescendant={null}
+          aria-autocomplete="list"
+          aria-controls={null}
+          aria-labelledby="downshift-1-label"
+          autoComplete="off"
+          id="downshift-1-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          value=""
+        />
+      </x-fragment>
+    </div>
+  </DropdownContainer>
+</x-manager>
+`;
+
+exports[`renders an open dropdown 1`] = `
+.emotion-12 {
+  display: inline-block;
+}
+
+.emotion-10 {
+  z-index: 1;
+  list-style: none;
+  background-color: #FFFFFF;
+  color: #2E3338;
+  border: 1px solid #C7CCD1;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(18,18,18,0.4);
+  min-width: 27.86em;
+}
+
+.emotion-8 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+}
+
+<x-manager>
+  <DropdownContainer
+    aria-expanded={true}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-2-label"
+    aria-owns="downshift-2-menu"
+    role="combobox"
+  >
+    <div
+      aria-expanded={true}
+      aria-haspopup="listbox"
+      aria-labelledby="downshift-2-label"
+      aria-owns="downshift-2-menu"
+      className="emotion-12 emotion-13"
+      role="combobox"
+    >
+      <x-fragment>
+        <input
+          aria-activedescendant={null}
+          aria-autocomplete="list"
+          aria-controls="downshift-2-menu"
+          aria-labelledby="downshift-2-label"
+          autoComplete="off"
+          id="downshift-2-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          value=""
+        />
+        <ForwardRef
+          categories={Array []}
+          filterFn={[Function]}
+          getItemProps={[Function]}
+          highlight={false}
+          highlightedIndex={null}
+          inputValue=""
+          items={
+            Array [
+              Object {
+                "categoryId": "a",
+                "id": 10,
+                "label": "One",
+              },
+              Object {
+                "categoryId": "a",
+                "id": 22,
+                "label": "Two",
+              },
+            ]
+          }
+          selectedItems={Array []}
+          twoColumn={true}
+          useFilter={false}
+        >
+          <List>
+            <div
+              className="emotion-10 emotion-11"
+            >
+              <Items>
+                <ul
+                  className="emotion-8 emotion-9"
+                >
+                  <Item
+                    aria-selected={false}
+                    disabled={false}
+                    id="downshift-2-item-0"
+                    isHighlighted={false}
+                    isSelected={false}
+                    key="10"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseMove={[Function]}
+                    role="option"
+                  >
+                    <li
+                      aria-selected={false}
+                      className="emotion-2 emotion-3"
+                      disabled={false}
+                      id="downshift-2-item-0"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseMove={[Function]}
+                      role="option"
+                    >
+                      <HighlightValue
+                        disabled={false}
+                        highlight={false}
+                        value="One"
+                        valueToHighlight=""
+                      >
+                        <span
+                          className="emotion-0 emotion-1"
+                        >
+                          One
+                        </span>
+                      </HighlightValue>
+                    </li>
+                  </Item>
+                  <Item
+                    aria-selected={false}
+                    disabled={false}
+                    id="downshift-2-item-1"
+                    isHighlighted={false}
+                    isSelected={false}
+                    key="22"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseMove={[Function]}
+                    role="option"
+                  >
+                    <li
+                      aria-selected={false}
+                      className="emotion-2 emotion-3"
+                      disabled={false}
+                      id="downshift-2-item-1"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseMove={[Function]}
+                      role="option"
+                    >
+                      <HighlightValue
+                        disabled={false}
+                        highlight={false}
+                        value="Two"
+                        valueToHighlight=""
+                      >
+                        <span
+                          className="emotion-0 emotion-1"
+                        >
+                          Two
+                        </span>
+                      </HighlightValue>
+                    </li>
+                  </Item>
+                </ul>
+              </Items>
+            </div>
+          </List>
+        </ForwardRef>
+      </x-fragment>
+    </div>
+  </DropdownContainer>
+</x-manager>
+`;
+
+exports[`renders an open dropdown with categories 1`] = `
+.emotion-42 {
+  display: inline-block;
+}
+
+.emotion-40 {
+  z-index: 1;
+  list-style: none;
+  background-color: #FFFFFF;
+  color: #2E3338;
+  border: 1px solid #C7CCD1;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(18,18,18,0.4);
+  min-width: 27.86em;
+}
+
+.emotion-12 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.emotion-4 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+}
+
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-18:not(:last-child) {
+  border-bottom: 1px solid #C7CCD1;
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  font-weight: bold;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+<DropdownContainer
+  aria-expanded={true}
+  aria-haspopup="listbox"
+  aria-labelledby="downshift-3-label"
+  aria-owns="downshift-3-menu"
+  role="combobox"
+>
+  <div
+    aria-expanded={true}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-3-label"
+    aria-owns="downshift-3-menu"
+    className="emotion-42 emotion-43"
+    role="combobox"
+  >
+    <x-fragment>
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls="downshift-3-menu"
+        aria-labelledby="downshift-3-label"
+        autoComplete="off"
+        id="downshift-3-input"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        value=""
+      />
+      <ForwardRef
+        categories={
+          Array [
+            Object {
+              "id": "a",
+              "label": "Category A",
+            },
+            Object {
+              "id": "b",
+              "label": "Category B",
+            },
+          ]
+        }
+        filterFn={[Function]}
+        getItemProps={[Function]}
+        highlight={false}
+        highlightedIndex={null}
+        inputValue=""
+        items={
+          Array [
+            Object {
+              "categoryId": "a",
+              "id": 10,
+              "label": "One",
+            },
+            Object {
+              "categoryId": "a",
+              "id": 22,
+              "label": "Two",
+            },
+            Object {
+              "categoryId": "b",
+              "id": 33,
+              "label": "Three",
+            },
+            Object {
+              "categoryId": "b",
+              "id": 44,
+              "label": "Four",
+            },
+          ]
+        }
+        selectedItems={Array []}
+        twoColumn={false}
+        useFilter={false}
+      >
+        <List>
+          <div
+            className="emotion-40 emotion-41"
+          >
+            <div>
+              <Categories
+                key="a"
+              >
+                <div
+                  className="emotion-18 emotion-19"
+                >
+                  <Category
+                    twoColumn={false}
+                  >
+                    <main
+                      className="emotion-16 emotion-17"
+                    >
+                      <Divider
+                        isHighlighted={false}
+                        isSelected={false}
+                        twoColumn={false}
+                      >
+                        <section
+                          className="emotion-2 emotion-3"
+                        >
+                          <GroupTitle>
+                            <h3
+                              className="emotion-0 emotion-1"
+                            >
+                              Category A
+                            </h3>
+                          </GroupTitle>
+                        </section>
+                      </Divider>
+                      <Divider
+                        twoColumn={false}
+                      >
+                        <section
+                          className="emotion-2 emotion-3"
+                        >
+                          <Items>
+                            <ul
+                              className="emotion-12 emotion-13"
+                            >
+                              <Item
+                                aria-selected={false}
+                                categoryId="a"
+                                disabled={false}
+                                id="downshift-3-item-0"
+                                isHighlighted={false}
+                                isSelected={false}
+                                key="10"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseMove={[Function]}
+                                role="option"
+                                twoColumn={false}
+                              >
+                                <li
+                                  aria-selected={false}
+                                  className="emotion-6 emotion-7"
+                                  disabled={false}
+                                  id="downshift-3-item-0"
+                                  onClick={[Function]}
+                                  onMouseDown={[Function]}
+                                  onMouseMove={[Function]}
+                                  role="option"
+                                >
+                                  <HighlightValue
+                                    disabled={false}
+                                    highlight={false}
+                                    value="One"
+                                    valueToHighlight=""
+                                  >
+                                    <span
+                                      className="emotion-4 emotion-5"
+                                    >
+                                      One
+                                    </span>
+                                  </HighlightValue>
+                                </li>
+                              </Item>
+                              <Item
+                                aria-selected={false}
+                                categoryId="a"
+                                disabled={false}
+                                id="downshift-3-item-1"
+                                isHighlighted={false}
+                                isSelected={false}
+                                key="22"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseMove={[Function]}
+                                role="option"
+                                twoColumn={false}
+                              >
+                                <li
+                                  aria-selected={false}
+                                  className="emotion-6 emotion-7"
+                                  disabled={false}
+                                  id="downshift-3-item-1"
+                                  onClick={[Function]}
+                                  onMouseDown={[Function]}
+                                  onMouseMove={[Function]}
+                                  role="option"
+                                >
+                                  <HighlightValue
+                                    disabled={false}
+                                    highlight={false}
+                                    value="Two"
+                                    valueToHighlight=""
+                                  >
+                                    <span
+                                      className="emotion-4 emotion-5"
+                                    >
+                                      Two
+                                    </span>
+                                  </HighlightValue>
+                                </li>
+                              </Item>
+                            </ul>
+                          </Items>
+                        </section>
+                      </Divider>
+                    </main>
+                  </Category>
+                </div>
+              </Categories>
+              <Categories
+                key="b"
+              >
+                <div
+                  className="emotion-18 emotion-19"
+                >
+                  <Category
+                    twoColumn={false}
+                  >
+                    <main
+                      className="emotion-16 emotion-17"
+                    >
+                      <Divider
+                        isHighlighted={false}
+                        isSelected={false}
+                        twoColumn={false}
+                      >
+                        <section
+                          className="emotion-2 emotion-3"
+                        >
+                          <GroupTitle>
+                            <h3
+                              className="emotion-0 emotion-1"
+                            >
+                              Category B
+                            </h3>
+                          </GroupTitle>
+                        </section>
+                      </Divider>
+                      <Divider
+                        twoColumn={false}
+                      >
+                        <section
+                          className="emotion-2 emotion-3"
+                        >
+                          <Items>
+                            <ul
+                              className="emotion-12 emotion-13"
+                            >
+                              <Item
+                                aria-selected={false}
+                                categoryId="b"
+                                disabled={false}
+                                id="downshift-3-item-2"
+                                isHighlighted={false}
+                                isSelected={false}
+                                key="33"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseMove={[Function]}
+                                role="option"
+                                twoColumn={false}
+                              >
+                                <li
+                                  aria-selected={false}
+                                  className="emotion-6 emotion-7"
+                                  disabled={false}
+                                  id="downshift-3-item-2"
+                                  onClick={[Function]}
+                                  onMouseDown={[Function]}
+                                  onMouseMove={[Function]}
+                                  role="option"
+                                >
+                                  <HighlightValue
+                                    disabled={false}
+                                    highlight={false}
+                                    value="Three"
+                                    valueToHighlight=""
+                                  >
+                                    <span
+                                      className="emotion-4 emotion-5"
+                                    >
+                                      Three
+                                    </span>
+                                  </HighlightValue>
+                                </li>
+                              </Item>
+                              <Item
+                                aria-selected={false}
+                                categoryId="b"
+                                disabled={false}
+                                id="downshift-3-item-3"
+                                isHighlighted={false}
+                                isSelected={false}
+                                key="44"
+                                onClick={[Function]}
+                                onMouseDown={[Function]}
+                                onMouseMove={[Function]}
+                                role="option"
+                                twoColumn={false}
+                              >
+                                <li
+                                  aria-selected={false}
+                                  className="emotion-6 emotion-7"
+                                  disabled={false}
+                                  id="downshift-3-item-3"
+                                  onClick={[Function]}
+                                  onMouseDown={[Function]}
+                                  onMouseMove={[Function]}
+                                  role="option"
+                                >
+                                  <HighlightValue
+                                    disabled={false}
+                                    highlight={false}
+                                    value="Four"
+                                    valueToHighlight=""
+                                  >
+                                    <span
+                                      className="emotion-4 emotion-5"
+                                    >
+                                      Four
+                                    </span>
+                                  </HighlightValue>
+                                </li>
+                              </Item>
+                            </ul>
+                          </Items>
+                        </section>
+                      </Divider>
+                    </main>
+                  </Category>
+                </div>
+              </Categories>
+            </div>
+          </div>
+        </List>
+      </ForwardRef>
+    </x-fragment>
+  </div>
+</DropdownContainer>
+`;
+
+exports[`renders an open dropdown with categories and twoColumn 1`] = `
+.emotion-42 {
+  display: inline-block;
+}
+
+.emotion-40 {
+  z-index: 1;
+  list-style: none;
+  background-color: #FFFFFF;
+  color: #2E3338;
+  border: 1px solid #C7CCD1;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(18,18,18,0.4);
+  min-width: 27.86em;
+}
+
+.emotion-12 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-4 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+}
+
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-18:not(:last-child) {
+  border-bottom: 1px solid #C7CCD1;
+}
+
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  font-weight: bold;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+
+.emotion-2:first-of-type {
+  border-right: 1px solid #C7CCD1;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.emotion-6:not(:last-child) {
+  border-bottom: 1px solid #C7CCD1;
+}
+
+<x-manager>
+  <DropdownContainer
+    aria-expanded={true}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-4-label"
+    aria-owns="downshift-4-menu"
+    role="combobox"
+  >
+    <div
+      aria-expanded={true}
+      aria-haspopup="listbox"
+      aria-labelledby="downshift-4-label"
+      aria-owns="downshift-4-menu"
+      className="emotion-42 emotion-43"
+      role="combobox"
+    >
+      <x-fragment>
+        <input
+          aria-activedescendant={null}
+          aria-autocomplete="list"
+          aria-controls="downshift-4-menu"
+          aria-labelledby="downshift-4-label"
+          autoComplete="off"
+          id="downshift-4-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          value=""
+        />
+        <ForwardRef
+          categories={
+            Array [
+              Object {
+                "id": "a",
+                "label": "Category A",
+              },
+              Object {
+                "id": "b",
+                "label": "Category B",
+              },
+            ]
+          }
+          filterFn={[Function]}
+          getItemProps={[Function]}
+          highlight={false}
+          highlightedIndex={null}
+          inputValue=""
+          items={
+            Array [
+              Object {
+                "categoryId": "a",
+                "id": 10,
+                "label": "One",
+              },
+              Object {
+                "categoryId": "a",
+                "id": 22,
+                "label": "Two",
+              },
+              Object {
+                "categoryId": "b",
+                "id": 33,
+                "label": "Three",
+              },
+              Object {
+                "categoryId": "b",
+                "id": 44,
+                "label": "Four",
+              },
+            ]
+          }
+          selectedItems={Array []}
+          twoColumn={true}
+          useFilter={false}
+        >
+          <List>
+            <div
+              className="emotion-40 emotion-41"
+            >
+              <div>
+                <Categories
+                  key="a"
+                >
+                  <div
+                    className="emotion-18 emotion-19"
+                  >
+                    <Category
+                      twoColumn={true}
+                    >
+                      <main
+                        className="emotion-16 emotion-17"
+                      >
+                        <Divider
+                          isHighlighted={false}
+                          isSelected={false}
+                          twoColumn={true}
+                        >
+                          <section
+                            className="emotion-2 emotion-3"
+                          >
+                            <GroupTitle>
+                              <h3
+                                className="emotion-0 emotion-1"
+                              >
+                                Category A
+                              </h3>
+                            </GroupTitle>
+                          </section>
+                        </Divider>
+                        <Divider
+                          twoColumn={true}
+                        >
+                          <section
+                            className="emotion-2 emotion-3"
+                          >
+                            <Items>
+                              <ul
+                                className="emotion-12 emotion-13"
+                              >
+                                <Item
+                                  aria-selected={false}
+                                  categoryId="a"
+                                  disabled={false}
+                                  id="downshift-4-item-0"
+                                  isHighlighted={false}
+                                  isSelected={false}
+                                  key="10"
+                                  onClick={[Function]}
+                                  onMouseDown={[Function]}
+                                  onMouseMove={[Function]}
+                                  role="option"
+                                  twoColumn={true}
+                                >
+                                  <li
+                                    aria-selected={false}
+                                    className="emotion-6 emotion-7"
+                                    disabled={false}
+                                    id="downshift-4-item-0"
+                                    onClick={[Function]}
+                                    onMouseDown={[Function]}
+                                    onMouseMove={[Function]}
+                                    role="option"
+                                  >
+                                    <HighlightValue
+                                      disabled={false}
+                                      highlight={false}
+                                      value="One"
+                                      valueToHighlight=""
+                                    >
+                                      <span
+                                        className="emotion-4 emotion-5"
+                                      >
+                                        One
+                                      </span>
+                                    </HighlightValue>
+                                  </li>
+                                </Item>
+                                <Item
+                                  aria-selected={false}
+                                  categoryId="a"
+                                  disabled={false}
+                                  id="downshift-4-item-1"
+                                  isHighlighted={false}
+                                  isSelected={false}
+                                  key="22"
+                                  onClick={[Function]}
+                                  onMouseDown={[Function]}
+                                  onMouseMove={[Function]}
+                                  role="option"
+                                  twoColumn={true}
+                                >
+                                  <li
+                                    aria-selected={false}
+                                    className="emotion-6 emotion-7"
+                                    disabled={false}
+                                    id="downshift-4-item-1"
+                                    onClick={[Function]}
+                                    onMouseDown={[Function]}
+                                    onMouseMove={[Function]}
+                                    role="option"
+                                  >
+                                    <HighlightValue
+                                      disabled={false}
+                                      highlight={false}
+                                      value="Two"
+                                      valueToHighlight=""
+                                    >
+                                      <span
+                                        className="emotion-4 emotion-5"
+                                      >
+                                        Two
+                                      </span>
+                                    </HighlightValue>
+                                  </li>
+                                </Item>
+                              </ul>
+                            </Items>
+                          </section>
+                        </Divider>
+                      </main>
+                    </Category>
+                  </div>
+                </Categories>
+                <Categories
+                  key="b"
+                >
+                  <div
+                    className="emotion-18 emotion-19"
+                  >
+                    <Category
+                      twoColumn={true}
+                    >
+                      <main
+                        className="emotion-16 emotion-17"
+                      >
+                        <Divider
+                          isHighlighted={false}
+                          isSelected={false}
+                          twoColumn={true}
+                        >
+                          <section
+                            className="emotion-2 emotion-3"
+                          >
+                            <GroupTitle>
+                              <h3
+                                className="emotion-0 emotion-1"
+                              >
+                                Category B
+                              </h3>
+                            </GroupTitle>
+                          </section>
+                        </Divider>
+                        <Divider
+                          twoColumn={true}
+                        >
+                          <section
+                            className="emotion-2 emotion-3"
+                          >
+                            <Items>
+                              <ul
+                                className="emotion-12 emotion-13"
+                              >
+                                <Item
+                                  aria-selected={false}
+                                  categoryId="b"
+                                  disabled={false}
+                                  id="downshift-4-item-2"
+                                  isHighlighted={false}
+                                  isSelected={false}
+                                  key="33"
+                                  onClick={[Function]}
+                                  onMouseDown={[Function]}
+                                  onMouseMove={[Function]}
+                                  role="option"
+                                  twoColumn={true}
+                                >
+                                  <li
+                                    aria-selected={false}
+                                    className="emotion-6 emotion-7"
+                                    disabled={false}
+                                    id="downshift-4-item-2"
+                                    onClick={[Function]}
+                                    onMouseDown={[Function]}
+                                    onMouseMove={[Function]}
+                                    role="option"
+                                  >
+                                    <HighlightValue
+                                      disabled={false}
+                                      highlight={false}
+                                      value="Three"
+                                      valueToHighlight=""
+                                    >
+                                      <span
+                                        className="emotion-4 emotion-5"
+                                      >
+                                        Three
+                                      </span>
+                                    </HighlightValue>
+                                  </li>
+                                </Item>
+                                <Item
+                                  aria-selected={false}
+                                  categoryId="b"
+                                  disabled={false}
+                                  id="downshift-4-item-3"
+                                  isHighlighted={false}
+                                  isSelected={false}
+                                  key="44"
+                                  onClick={[Function]}
+                                  onMouseDown={[Function]}
+                                  onMouseMove={[Function]}
+                                  role="option"
+                                  twoColumn={true}
+                                >
+                                  <li
+                                    aria-selected={false}
+                                    className="emotion-6 emotion-7"
+                                    disabled={false}
+                                    id="downshift-4-item-3"
+                                    onClick={[Function]}
+                                    onMouseDown={[Function]}
+                                    onMouseMove={[Function]}
+                                    role="option"
+                                  >
+                                    <HighlightValue
+                                      disabled={false}
+                                      highlight={false}
+                                      value="Four"
+                                      valueToHighlight=""
+                                    >
+                                      <span
+                                        className="emotion-4 emotion-5"
+                                      >
+                                        Four
+                                      </span>
+                                    </HighlightValue>
+                                  </li>
+                                </Item>
+                              </ul>
+                            </Items>
+                          </section>
+                        </Divider>
+                      </main>
+                    </Category>
+                  </div>
+                </Categories>
+              </div>
+            </div>
+          </List>
+        </ForwardRef>
+      </x-fragment>
+    </div>
+  </DropdownContainer>
+</x-manager>
+`;
+
+exports[`test utils [filterItems] should filter items based on a string 1`] = `
+Array [
+  Object {
+    "categoryId": "a",
+    "id": 10,
+    "label": "One",
+  },
+  Object {
+    "categoryId": "a",
+    "id": 22,
+    "label": "Two",
+  },
+  Object {
+    "categoryId": "b",
+    "id": 33,
+    "label": "Three",
+  },
+  Object {
+    "categoryId": "b",
+    "id": 44,
+    "label": "Four",
+  },
+  Object {
+    "categoryId": "b",
+    "id": 55,
+    "label": "Five",
+  },
+  Object {
+    "categoryId": "b",
+    "disabled": true,
+    "id": 66,
+    "label": "Six",
+  },
+  Object {
+    "categoryId": "b",
+    "disabled": true,
+    "id": 77,
+    "label": "Seven",
+  },
+  Object {
+    "categoryId": "b",
+    "id": 88,
+    "label": "Eight",
+  },
+  Object {
+    "categoryId": "b",
+    "id": 99,
+    "label": "Nine",
+  },
+  Object {
+    "categoryId": "b",
+    "id": 101,
+    "label": "Ten",
+  },
+  Object {
+    "categoryId": "b",
+    "id": 111,
+    "label": "Eleven",
+  },
+  Object {
+    "categoryId": "b",
+    "id": 121,
+    "label": "Twelve",
+  },
+  Object {
+    "categoryId": "c",
+    "id": 131,
+    "label": "Thirteen",
+  },
+]
+`;
+
+exports[`using arrow down should hover on element 1`] = `
+.emotion-8 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #8F9BA3;
+  color: #2E3338;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #E3E6E8;
+  color: #2E3338;
+}
+
+<ul
+  className="emotion-8 emotion-9"
+>
+  <Item
+    aria-selected={true}
+    categoryId="a"
+    disabled={false}
+    id="downshift-16-item-0"
+    isHighlighted={true}
+    isSelected={false}
+    key="10"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    role="option"
+    twoColumn={false}
+  >
+    <li
+      aria-selected={true}
+      className="emotion-2 emotion-3"
+      disabled={false}
+      id="downshift-16-item-0"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseMove={[Function]}
+      role="option"
+    >
+      <HighlightValue
+        disabled={false}
+        highlight={false}
+        value="One"
+        valueToHighlight=""
+      >
+        <span
+          className="emotion-0 emotion-1"
+        >
+          One
+        </span>
+      </HighlightValue>
+    </li>
+  </Item>
+  <Item
+    aria-selected={false}
+    categoryId="a"
+    disabled={false}
+    id="downshift-16-item-1"
+    isHighlighted={false}
+    isSelected={true}
+    key="22"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    role="option"
+    twoColumn={false}
+  >
+    <li
+      aria-selected={false}
+      className="emotion-6 emotion-3"
+      disabled={false}
+      id="downshift-16-item-1"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseMove={[Function]}
+      role="option"
+    >
+      <HighlightValue
+        disabled={false}
+        highlight={false}
+        value="Two"
+        valueToHighlight=""
+      >
+        <span
+          className="emotion-0 emotion-1"
+        >
+          Two
+        </span>
+      </HighlightValue>
+    </li>
+  </Item>
+</ul>
+`;
+
+exports[`using useFilter should only return items that match the input value 1`] = `
+.emotion-16 {
+  display: inline-block;
+}
+
+.emotion-14 {
+  z-index: 1;
+  list-style: none;
+  background-color: #FFFFFF;
+  color: #2E3338;
+  border: 1px solid #C7CCD1;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(18,18,18,0.4);
+  min-width: 27.86em;
+}
+
+.emotion-12 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.emotion-2 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+}
+
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-weight: bold;
+}
+
+<x-manager>
+  <DropdownContainer
+    aria-expanded={true}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-9-label"
+    aria-owns="downshift-9-menu"
+    role="combobox"
+  >
+    <div
+      aria-expanded={true}
+      aria-haspopup="listbox"
+      aria-labelledby="downshift-9-label"
+      aria-owns="downshift-9-menu"
+      className="emotion-16 emotion-17"
+      role="combobox"
+    >
+      <x-fragment>
+        <input
+          aria-activedescendant={null}
+          aria-autocomplete="list"
+          aria-controls="downshift-9-menu"
+          aria-labelledby="downshift-9-label"
+          autoComplete="off"
+          id="downshift-9-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          value="F"
+        />
+        <ForwardRef
+          categories={Array []}
+          filterFn={[Function]}
+          getItemProps={[Function]}
+          highlight={true}
+          highlightedIndex={null}
+          inputValue="F"
+          items={
+            Array [
+              Object {
+                "categoryId": "a",
+                "id": 10,
+                "label": "One",
+              },
+              Object {
+                "categoryId": "a",
+                "id": 22,
+                "label": "Two",
+              },
+              Object {
+                "categoryId": "b",
+                "id": 33,
+                "label": "Three",
+              },
+              Object {
+                "categoryId": "b",
+                "id": 44,
+                "label": "Four",
+              },
+              Object {
+                "categoryId": "b",
+                "id": 55,
+                "label": "Five",
+              },
+              Object {
+                "categoryId": "b",
+                "disabled": true,
+                "id": 66,
+                "label": "Six",
+              },
+              Object {
+                "categoryId": "b",
+                "disabled": true,
+                "id": 77,
+                "label": "Seven",
+              },
+              Object {
+                "categoryId": "b",
+                "id": 88,
+                "label": "Eight",
+              },
+              Object {
+                "categoryId": "b",
+                "id": 99,
+                "label": "Nine",
+              },
+              Object {
+                "categoryId": "b",
+                "id": 101,
+                "label": "Ten",
+              },
+              Object {
+                "categoryId": "b",
+                "id": 111,
+                "label": "Eleven",
+              },
+              Object {
+                "categoryId": "b",
+                "id": 121,
+                "label": "Twelve",
+              },
+              Object {
+                "categoryId": "c",
+                "id": 131,
+                "label": "Thirteen",
+              },
+            ]
+          }
+          selectedItems={Array []}
+          twoColumn={true}
+          useFilter={true}
+        >
+          <List>
+            <div
+              className="emotion-14 emotion-15"
+            >
+              <Items>
+                <ul
+                  className="emotion-12 emotion-13"
+                >
+                  <Item
+                    aria-selected={false}
+                    disabled={false}
+                    id="downshift-9-item-0"
+                    isHighlighted={false}
+                    isSelected={false}
+                    key="44"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseMove={[Function]}
+                    role="option"
+                  >
+                    <li
+                      aria-selected={false}
+                      className="emotion-4 emotion-5"
+                      disabled={false}
+                      id="downshift-9-item-0"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseMove={[Function]}
+                      role="option"
+                    >
+                      <HighlightValue
+                        disabled={false}
+                        highlight={true}
+                        value="Four"
+                        valueToHighlight="F"
+                      >
+                        <span
+                          className="emotion-2 emotion-3"
+                        >
+                          <Text
+                            as="span"
+                            key="1"
+                            type="bold"
+                          >
+                            <span
+                              className="emotion-0 emotion-1"
+                              type="bold"
+                            >
+                              F
+                            </span>
+                          </Text>
+                          our
+                        </span>
+                      </HighlightValue>
+                    </li>
+                  </Item>
+                  <Item
+                    aria-selected={false}
+                    disabled={false}
+                    id="downshift-9-item-1"
+                    isHighlighted={false}
+                    isSelected={false}
+                    key="55"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseMove={[Function]}
+                    role="option"
+                  >
+                    <li
+                      aria-selected={false}
+                      className="emotion-4 emotion-5"
+                      disabled={false}
+                      id="downshift-9-item-1"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseMove={[Function]}
+                      role="option"
+                    >
+                      <HighlightValue
+                        disabled={false}
+                        highlight={true}
+                        value="Five"
+                        valueToHighlight="F"
+                      >
+                        <span
+                          className="emotion-2 emotion-3"
+                        >
+                          <Text
+                            as="span"
+                            key="1"
+                            type="bold"
+                          >
+                            <span
+                              className="emotion-0 emotion-1"
+                              type="bold"
+                            >
+                              F
+                            </span>
+                          </Text>
+                          ive
+                        </span>
+                      </HighlightValue>
+                    </li>
+                  </Item>
+                </ul>
+              </Items>
+            </div>
+          </List>
+        </ForwardRef>
+      </x-fragment>
+    </div>
+  </DropdownContainer>
+</x-manager>
+`;
