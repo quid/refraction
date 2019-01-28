@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @noflow
-import React from 'react';
+import * as React from 'react';
 import { getHash } from 'react-styleguidist/lib/utils/handleHash';
 import styled from '@emotion/styled/macro';
 import { colors, textStyles, themes } from '@quid/theme';
