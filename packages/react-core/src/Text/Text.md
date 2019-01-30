@@ -29,7 +29,7 @@ Alternatively, you can provide a fixed width to an empty skeleton:
 <Text.Skeleton type="normal" width="15em" />
 ```
 
-#### Migration from @quid/react-components#Text
+## Migration from @quid/react-components#Text
 
 If you were a user of the previous component, there are a few breaking changes:
 

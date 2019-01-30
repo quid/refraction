@@ -56,6 +56,8 @@ module.exports = {
     ComponentsListRenderer: require.resolve(
       './src/components/ComponentsListRenderer'
     ),
+    Examples: require.resolve('./src/components/Examples'),
+    SectionHeading: require.resolve('./src/components/SectionHeading'),
   },
   theme: {
     sidebarWidth: 300,

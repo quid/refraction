@@ -8,7 +8,7 @@ are properly styled with the resources provided by this package.
 Additionally, you can import the `colors`, `sizes`, `textStyles`, and `themes`
 named exports to directly reference the variables.
 
-#### Installation
+## Installation
 
 ```bash
 npm install --save @quid/theme

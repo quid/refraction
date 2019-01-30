@@ -12,22 +12,22 @@ const callback = () =>
 
 The component accepts 3 properties, included `children`:
 
-##### `onClickOutside: Event => void`
+### `onClickOutside: Event => void`
 
 A function that will take as first argument the event object
 and gets triggered anytime the user clicks outside.
 
-##### `onMoveOutside: Event => void`
+### `onMoveOutside: Event => void`
 
 A function that will take as first argument the event object
 and gets triggered anytime the user moves the mouse outside.
 
-##### `children: React.ElementRef => void`
+### `children: React.ElementRef => void`
 
 It takes as `children` a function with a `React.createRef` function
 as only argument. You can assign it as `ref` to any React element.
 
-#### Migration from @quid/react-components#MouseOutside
+## Migration from @quid/react-components#MouseOutside
 
 The component takes as child a render-prop rather than a React element.
 This allows for more flexibility and removes the requirement of an extra wrapper.

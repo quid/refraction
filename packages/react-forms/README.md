@@ -3,7 +3,7 @@ such as input, labels, buttons, etc... to be used to create forms in your apps.
 
 Most of the components provide the same API of the corresponding HTML element.
 
-#### Installation
+## Installation
 
 ```bash
 npm install --save @quid/react-forms
@@ -13,10 +13,16 @@ npm install --save @quid/react-forms
 yarn add @quid/react-forms
 ```
 
-#### Usage
+## Usage
 
 You can import any of the components as named imports from the package.
 
 ```js static
 import { InputNumber, Label, TextArea } from '@quid/react-forms';
 ```
+
+<!-- NPM_ONLY> -->
+
+The documentation of each of the exported components is available at https://ui.quid.com/#react-forms
+
+<!-- <NPM_ONLY -->

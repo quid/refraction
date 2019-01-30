@@ -118,7 +118,7 @@ with some useful additions.
 </form>
 ```
 
-#### HTML form validation
+## HTML form validation
 
 The `InputText` component supports HTML form validation, with some improvements.  
 The **invalid** state will not be visible until the `InputText`'s parent form is
@@ -139,7 +139,7 @@ define a custom error message to display when the field is marked as invalid.
 </form>
 ```
 
-#### Addon
+## Addon
 
 Is it possible to add an arbitrary element on the right of the `InputText` typing area
 by providing a `renderAddon` property.

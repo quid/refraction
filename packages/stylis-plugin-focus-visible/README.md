@@ -20,7 +20,7 @@ Example output:
 }
 ```
 
-#### Installation
+## Installation
 
 ```bash
 npm install --save @quid/stylis-plugin-focus-visible
@@ -30,7 +30,7 @@ npm install --save @quid/stylis-plugin-focus-visible
 yarn add @quid/stylis-plugin-focus-visible
 ```
 
-#### Usage with Emotion
+## Usage with Emotion
 
 Is it suggested to use this plugin with [Emotion][emotion]'s `CacheProvider`:
 
@@ -55,6 +55,12 @@ const App = () => (
 
 Beware, the cache instance should be shared across the app if multiple `CacheProvider`
 components are used. If you define a new cache, Emotion will parse all your styles twice.
+
+<!-- NPM_ONLY> -->
+
+More documentation is available at https://ui.quid.com
+
+<!-- <NPM_ONLY -->
 
 [stylis]: https://github.com/thysultan/stylis.js
 [focus-visible]: https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible
