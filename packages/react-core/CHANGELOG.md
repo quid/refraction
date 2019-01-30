@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.25.3](https://github.com/quid/ui-framework/tree/master/packages/react-core/compare/v1.25.2...v1.25.3) (2019-01-30)
+
+
+### Bug Fixes
+
+* vertical align Button component ([60f2ca9](https://github.com/quid/ui-framework/tree/master/packages/react-core/commit/60f2ca9))
+
+
+
+
+
 ## [1.25.2](https://github.com/quid/ui-framework/tree/master/packages/react-core/compare/v1.25.1...v1.25.2) (2019-01-30)
 
 **Note:** Version bump only for package @quid/react-core
