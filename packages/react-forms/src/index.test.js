@@ -12,6 +12,7 @@ it('exports the expected number of components', () => {
 Array [
   "InputCheckbox",
   "InputColor",
+  "InputDate",
   "InputFile",
   "InputGroup",
   "InputNumber",

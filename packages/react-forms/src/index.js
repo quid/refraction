@@ -7,6 +7,7 @@
 // @flow
 export { default as InputCheckbox } from './InputCheckbox';
 export { default as InputColor } from './InputColor';
+export { default as InputDate } from './InputDate';
 export { default as InputFile } from './InputFile';
 export { default as InputGroup } from './InputGroup';
 export { default as InputNumber } from './InputNumber';
