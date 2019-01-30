@@ -86,10 +86,12 @@ const Button = styled(
     return <Tag {...specificProps} {...props} />;
   }
 )`
-  ${reset}
+  ${reset};
 
-  ${textStyles('normal', 'bold')}
-  display: inline-block;
+  ${textStyles('normal', 'bold')};
+  display: inline-flex;
+  vertical-align: top;
+  align-items: center;
   border-radius: 2px;
   height: ${props => HEIGHT[props.size]}px;
   padding-left: 0.769em;
