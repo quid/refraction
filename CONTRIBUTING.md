@@ -1,3 +1,18 @@
+## Local development
+
+To contribute to this repository you will first need to setup a local development environment.
+
+You can do that running the following commands:
+
+```bash
+# Clone the repository
+git clone git@github.com:quid/ui-framework.git
+# Enter in the repository folder
+cd ui-framework
+# Install dependencies and build the packages (npm is not supported, use Yarn)
+yarn
+```
+
 ## Committing and publishing
 
 This repository follows the [conventional commits][conventional-commits] specification,
