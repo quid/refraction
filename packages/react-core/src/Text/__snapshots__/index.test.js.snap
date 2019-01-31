@@ -16,6 +16,8 @@ exports[`renders a Skeleton with a different tag 1`] = `
 }
 
 .emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
   color: transparent;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -25,8 +27,6 @@ exports[`renders a Skeleton with a different tag 1`] = `
   background-color: #C7CCD1;
   -webkit-animation: animation-0 3s ease-in-out infinite;
   animation: animation-0 3s ease-in-out infinite;
-  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
-  color: #2E3338;
 }
 
 <Skeleton
@@ -72,6 +72,8 @@ exports[`renders a Skeleton with set width 1`] = `
 }
 
 .emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
   color: transparent;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -81,8 +83,6 @@ exports[`renders a Skeleton with set width 1`] = `
   background-color: #C7CCD1;
   -webkit-animation: animation-0 3s ease-in-out infinite;
   animation: animation-0 3s ease-in-out infinite;
-  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
-  color: #2E3338;
   width: 20px;
   display: inline-block;
 }
@@ -150,6 +150,8 @@ exports[`renders the plain skeleton 1`] = `
 }
 
 .emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
   color: transparent;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -159,8 +161,6 @@ exports[`renders the plain skeleton 1`] = `
   background-color: #C7CCD1;
   -webkit-animation: animation-0 3s ease-in-out infinite;
   animation: animation-0 3s ease-in-out infinite;
-  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
-  color: #2E3338;
 }
 
 <Skeleton>
