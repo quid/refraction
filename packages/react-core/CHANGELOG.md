@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.26.1](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v1.26.0...v1.26.1) (2019-01-31)
+
+
+### Bug Fixes
+
+* set primary text color by default ([8d3d944](https://github.com/quid/refraction/tree/master/packages/react-core/commit/8d3d944))
+
+
+
+
+
 # 1.26.0 (2019-01-31)
 
 
