@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @noflow
-import React, { Component } from 'react';
+import * as React from 'react';
 import ThemeProvider from '@quid/theme';
 import styled from '@emotion/styled/macro';
 import { CacheProvider } from '@emotion/core';
@@ -32,7 +32,7 @@ const Header = styled.label`
   border-bottom: 1px solid ${props => props.theme.colors.gray1};
 `;
 
-export default class Wrapper extends Component {
+export default class Wrapper extends React.Component {
   state = { theme: 'light' };
 
   render() {

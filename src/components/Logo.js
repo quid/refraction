@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @noflow
-import React from 'react';
+import * as React from 'react';
 
 const path1 = // eslint-disable-next-line
   '\

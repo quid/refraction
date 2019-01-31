@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @noflow
-import React from 'react';
+import * as React from 'react';
 import { InputText } from '@quid/react-forms';
 import styled from '@emotion/styled/macro';
 

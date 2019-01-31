@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @noflow
-import React, { Component } from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
 import TableOfContents from 'react-styleguidist/lib/rsg-components/TableOfContents';
 import StyleGuideRenderer from 'react-styleguidist/lib/rsg-components/StyleGuide/StyleGuideRenderer';
@@ -39,7 +39,7 @@ function hasSidebar(displayMode, showSidebar) {
   );
 }
 
-export default class StyleGuide extends Component {
+export default class StyleGuide extends React.Component {
   static propTypes = {
     codeRevision: PropTypes.number.isRequired,
     config: PropTypes.object.isRequired,

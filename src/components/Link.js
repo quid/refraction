@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @noflow
-import React from 'react';
+import * as React from 'react';
 import { Text } from '@quid/react-core';
 
 const Link = props => <Text as="a" type="link bold" {...props} />;
