@@ -18,7 +18,7 @@ yarn
 This repository follows the [conventional commits][conventional-commits] specification,
 in addition with the Lerna `publish` command.
 
-This means that the package versions will automatically bump accordingly to the commit
+This means that the package versions will automatically bump according to the commit
 messages that you write. Also, CHANGELOG files will get automatically updated.
 
 If you edit a file in `packages/test` and commit the change with:
@@ -27,7 +27,7 @@ If you edit a file in `packages/test` and commit the change with:
 git commit -m 'fix: now it works'
 ```
 
-When the deploy will occur, the `test` package version will get automatically bumped
+When the deploy occurs, the `test` package version will get automatically bumped
 by one patch version. Also, any package depending on `test` will automatically get the
 new version (if matching the semver ranges defined) and will get a version bump as well.
 
@@ -48,7 +48,7 @@ The allowed commit prefixes are:
 
 ## Creating a new package
 
-You can quickly bootstrap a new package running:
+You can quickly bootstrap a new package by running:
 
 ```
 yarn create-package
@@ -71,8 +71,8 @@ The newly created package will have the following commands available:
 Most of the packages available in this code-base export React components.
 
 To test the components while you are working on their code, you can run
-`yarn start` on the root of the project, this will start the styleguide
-playground, where you'll find your components ready to be tested.
+`yarn start` on the root of the project. This will start the styleguide
+playground where you'll find your components ready to be tested.
 
 Any code change will be reflected instantly on the playground.
 
