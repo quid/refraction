@@ -1,6 +1,6 @@
 ---
 
-[![GitHub](https://img.shields.io/badge/GitHub-%23000.svg?logo=github&logoColor=white)](https://github.com/quid/ui-framework)
+[![GitHub](https://img.shields.io/badge/GitHub-%23000.svg?logo=github&logoColor=white)](https://github.com/quid/refraction)
 
 Welcome to the Quid UI styleguide.
 

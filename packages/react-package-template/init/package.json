@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/quid/ui-framework/tree/master/packages/<%= packageName %>"
+    "url": "https://github.com/quid/refraction/tree/master/packages/<%= packageName %>"
   },
   "scripts": {
     "start": "microbundle watch",
