@@ -1,6 +1,6 @@
 # Quid UI Framework
 
-[![lerna][lerna-badge]](https://lernajs.io/) [![Build Status][travis-badge]](https://travis-ci.com/quid/ui-framework)
+[![lerna][lerna-badge]](https://lernajs.io/) [![Build Status][travis-badge]](https://travis-ci.com/quid/refraction)
 
 This is the home of the front-end technologies that compose the awesome
 products we build at Quid!
@@ -9,7 +9,7 @@ To see a live demo and read the documentation please visit [ui.quid.com](https:/
 
 ## What can we do for you?
 
-Companies' UI frameworks are usually meant to be used by the company itself, with little
+Companies' UI libraries are usually meant to be used by the company itself, with little
 benefits for the community.
 
 Our goal with this project, instead, is to provide a lot of highly reusable libraries
@@ -34,9 +34,9 @@ Code and documentation copyright Quid, Inc. Code released under the [MIT license
 
 <!-- links -->
 
-[react-ellipsis]: https://quid.github.io/ui-framework/#react-ellipsis
-[stylis-plugin-focus-visible]: https://quid.github.io/ui-framework/#stylis-plugin-focus-visible
-[react-mouse-outside ]: https://quid.github.io/ui-framework/#react-mouse-outside
+[react-ellipsis]: https://quid.github.io/refraction/#react-ellipsis
+[stylis-plugin-focus-visible]: https://quid.github.io/refraction/#stylis-plugin-focus-visible
+[react-mouse-outside ]: https://quid.github.io/refraction/#react-mouse-outside
 [lerna-badge]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg
-[travis-badge]: https://travis-ci.com/quid/ui-framework.svg?token=eAsu8PgyKpfsPmbvLfUx&branch=master
+[travis-badge]: https://travis-ci.com/quid/refraction.svg?token=eAsu8PgyKpfsPmbvLfUx&branch=master
 [license]: LICENSE.md
