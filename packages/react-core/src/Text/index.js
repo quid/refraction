@@ -62,6 +62,7 @@ const Skeleton: React.StatelessFunctionalComponent<SkeletonProps> = styled(
     );
   }
 )`
+  ${({ type = '' }) => textStyles(...type.split(' '))};
   color: transparent;
   user-select: none;
   border-radius: 2px;
@@ -69,7 +70,6 @@ const Skeleton: React.StatelessFunctionalComponent<SkeletonProps> = styled(
     props => props.theme.colors[BACKGROUND[props.theme.current]]
   )};
   animation: ${pulse} 3s ease-in-out infinite;
-  ${({ type = '' }) => textStyles(...type.split(' '))}
   ${wf(
     props =>
       props.width != null &&
