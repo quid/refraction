@@ -179,7 +179,7 @@ const Button = styled(
 `;
 
 Button.defaultProps = {
-  importance: 'primary',
+  importance: 'secondary',
   size: 'regular',
 };
 
