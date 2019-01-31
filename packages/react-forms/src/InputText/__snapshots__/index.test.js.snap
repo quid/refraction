@@ -11,6 +11,7 @@ exports[`renders an input with addon 1`] = `
 exports[`renders the expected markup 1`] = `
 .emotion-3 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
   vertical-align: top;
