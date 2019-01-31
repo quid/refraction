@@ -90,6 +90,7 @@ exports[`renders an open dropdown 1`] = `
 
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
 }
 
 <x-manager>
@@ -287,6 +288,7 @@ exports[`renders an open dropdown with categories 1`] = `
 
 .emotion-4 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
 }
 
 .emotion-18 {
@@ -333,6 +335,7 @@ exports[`renders an open dropdown with categories 1`] = `
 
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
   font-weight: bold;
@@ -715,6 +718,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
 
 .emotion-4 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
 }
 
 .emotion-18 {
@@ -733,6 +737,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
 
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
   font-weight: bold;
@@ -1223,6 +1228,7 @@ exports[`using arrow down should hover on element 1`] = `
 
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
 }
 
 .emotion-6 {
@@ -1383,10 +1389,12 @@ exports[`using useFilter should only return items that match the input value 1`]
 
 .emotion-2 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
 }
 
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
   font-weight: bold;
 }
 
