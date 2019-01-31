@@ -6,9 +6,9 @@ You can do that running the following commands:
 
 ```bash
 # Clone the repository
-git clone git@github.com:quid/ui-framework.git
+git clone git@github.com:quid/refraction.git
 # Enter in the repository folder
-cd ui-framework
+cd refraction
 # Install dependencies and build the packages (npm is not supported, use Yarn)
 yarn
 ```
