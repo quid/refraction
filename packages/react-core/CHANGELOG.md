@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.27.0](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v1.26.1...v1.27.0) (2019-01-31)
+
+
+### Bug Fixes
+
+* button should be "secondary" by default ([e1cdb38](https://github.com/quid/refraction/tree/master/packages/react-core/commit/e1cdb38))
+
+
+
+
+
 ## [1.26.1](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v1.26.0...v1.26.1) (2019-01-31)
 
 
