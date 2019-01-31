@@ -26,6 +26,7 @@ exports[`renders a Skeleton with a different tag 1`] = `
   -webkit-animation: animation-0 3s ease-in-out infinite;
   animation: animation-0 3s ease-in-out infinite;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
 }
 
 <Skeleton
@@ -81,6 +82,7 @@ exports[`renders a Skeleton with set width 1`] = `
   -webkit-animation: animation-0 3s ease-in-out infinite;
   animation: animation-0 3s ease-in-out infinite;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
   width: 20px;
   display: inline-block;
 }
@@ -103,6 +105,7 @@ exports[`renders a Skeleton with set width 1`] = `
 exports[`renders a component with a different tag 1`] = `
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
   font-size: 20px;
   line-height: 1.4;
 }
@@ -121,6 +124,7 @@ exports[`renders a component with a different tag 1`] = `
 exports[`renders the expected markup 1`] = `
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
 }
 
 <Text>
@@ -156,6 +160,7 @@ exports[`renders the plain skeleton 1`] = `
   -webkit-animation: animation-0 3s ease-in-out infinite;
   animation: animation-0 3s ease-in-out infinite;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
 }
 
 <Skeleton>

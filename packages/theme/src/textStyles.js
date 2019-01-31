@@ -77,8 +77,9 @@ const textStyles = (...ss: Array<string>) => (props: Object) => {
     typeof styles[s] === 'function' ? styles[s](props) : styles[s]
   );
   return css`
-    ${primaryFontFamily}
-    ${rules}
+    ${primaryFontFamily};
+    color: ${wf(props => props.theme.primary)(props)};
+    ${rules};
   `;
 };
 

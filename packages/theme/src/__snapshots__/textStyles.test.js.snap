@@ -3,6 +3,7 @@
 exports[`returns a valid CSS 1`] = `
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
 }
@@ -17,6 +18,7 @@ exports[`returns a valid CSS 1`] = `
 exports[`works with "withFallback" powered styles 1`] = `
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
   color: #6C7983;
   color: #8F9BA3;
   color: #28beb8;
