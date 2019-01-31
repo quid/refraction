@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.26.0 (2019-01-31)
+
+
+### Bug Fixes
+
+* add missing exports ([e8b0b58](https://github.com/quid/refraction/commit/e8b0b58))
+* add missing exports ([b8aaf5f](https://github.com/quid/refraction/commit/b8aaf5f))
+* add pointer cursor to links ([d35f338](https://github.com/quid/refraction/commit/d35f338))
+* export Text component ([d641d1c](https://github.com/quid/refraction/commit/d641d1c))
+* generated invalid CSS with compiled library ([3b0c161](https://github.com/quid/refraction/commit/3b0c161))
+* InputRange compat on Firefox ([0ed3ffb](https://github.com/quid/refraction/commit/0ed3ffb))
+* missing export for InputDate ([9770e1a](https://github.com/quid/refraction/commit/9770e1a))
+* several build problems that prevented proper usage ([d18d06b](https://github.com/quid/refraction/commit/d18d06b))
+* styling issue ([cd2165c](https://github.com/quid/refraction/commit/cd2165c))
+* vertical align Button component ([49b12f4](https://github.com/quid/refraction/commit/49b12f4))
+
+
+### Features
+
+* add caption text style ([0cecd4a](https://github.com/quid/refraction/commit/0cecd4a))
+* add InputCheckbox component ([27e30aa](https://github.com/quid/refraction/commit/27e30aa))
+* add InputColor component ([ca924ba](https://github.com/quid/refraction/commit/ca924ba))
+* add InputFile component ([764f638](https://github.com/quid/refraction/commit/764f638))
+* add InputRadio component ([b84a764](https://github.com/quid/refraction/commit/b84a764))
+* add InputRange component ([e3328e7](https://github.com/quid/refraction/commit/e3328e7))
+* add InputToggle component ([f050fd3](https://github.com/quid/refraction/commit/f050fd3))
+* add Label component ([57da94d](https://github.com/quid/refraction/commit/57da94d))
+* add new stylis-plugin-focus-visible ([1f73cd5](https://github.com/quid/refraction/commit/1f73cd5))
+* add TextArea component ([9ab51c6](https://github.com/quid/refraction/commit/9ab51c6))
+* allow to manually define button states ([51ff519](https://github.com/quid/refraction/commit/51ff519))
+* date picker ([40d1287](https://github.com/quid/refraction/commit/40d1287))
+* inputdate component ([97e4c65](https://github.com/quid/refraction/commit/97e4c65))
+* move InvalidHandler to own standalone pkg ([e5470ce](https://github.com/quid/refraction/commit/e5470ce))
+* react-tabs-provider ([a3200f4](https://github.com/quid/refraction/commit/a3200f4))
+
+
+### Performance Improvements
+
+* "include" utils improvements ([f64f39b](https://github.com/quid/refraction/commit/f64f39b))
+
+
+
+
+
 ## [1.25.3](https://github.com/quid/refraction/compare/v1.25.2...v1.25.3) (2019-01-30)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.26.0 (2019-01-31)
+
+
+### Features
+
+* add new stylis-plugin-focus-visible ([1f73cd5](https://github.com/quid/refraction/tree/master/packages/stylis-plugin-focus-visible/commit/1f73cd5))
+
+
+
+
+
 ## [1.25.2](https://github.com/quid/refraction/tree/master/packages/stylis-plugin-focus-visible/compare/v1.25.1...v1.25.2) (2019-01-30)
 
 **Note:** Version bump only for package @quid/stylis-plugin-focus-visible

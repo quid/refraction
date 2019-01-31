@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.26.0 (2019-01-31)
+
+
+### Bug Fixes
+
+* add pointer cursor to links ([d35f338](https://github.com/quid/refraction/commit/d35f338))
+* several build problems that prevented proper usage ([d18d06b](https://github.com/quid/refraction/commit/d18d06b))
+
+
+### Features
+
+* add caption text style ([0cecd4a](https://github.com/quid/refraction/commit/0cecd4a))
+* add InputToggle component ([f050fd3](https://github.com/quid/refraction/commit/f050fd3))
+
+
+
+
+
 ## [1.25.1](https://github.com/quid/refraction/compare/v1.25.0...v1.25.1) (2019-01-25)
 
 **Note:** Version bump only for package @quid/theme

@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.26.0 (2019-01-31)
+
+
+### Bug Fixes
+
+* export Text component ([d641d1c](https://github.com/quid/refraction/tree/master/packages/react-core/commit/d641d1c))
+* several build problems that prevented proper usage ([d18d06b](https://github.com/quid/refraction/tree/master/packages/react-core/commit/d18d06b))
+* vertical align Button component ([49b12f4](https://github.com/quid/refraction/tree/master/packages/react-core/commit/49b12f4))
+
+
+### Features
+
+* add InputToggle component ([f050fd3](https://github.com/quid/refraction/tree/master/packages/react-core/commit/f050fd3))
+* allow to manually define button states ([51ff519](https://github.com/quid/refraction/tree/master/packages/react-core/commit/51ff519))
+* date picker ([40d1287](https://github.com/quid/refraction/tree/master/packages/react-core/commit/40d1287))
+
+
+
+
+
 ## [1.25.3](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v1.25.2...v1.25.3) (2019-01-30)
 
 

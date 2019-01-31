@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.26.0 (2019-01-31)
+
+
+### Bug Fixes
+
+* several build problems that prevented proper usage ([d18d06b](https://github.com/quid/refraction/commit/d18d06b))
+
+
+
+
+
 ## [1.25.2](https://github.com/quid/refraction/compare/v1.25.1...v1.25.2) (2019-01-30)
 
 **Note:** Version bump only for package @quid/react-package-template
