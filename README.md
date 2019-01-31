@@ -1,4 +1,4 @@
-# Quid UI Framework
+# Refraction
 
 [![lerna][lerna-badge]](https://lernajs.io/) [![Build Status][travis-badge]](https://travis-ci.com/quid/refraction)
 
