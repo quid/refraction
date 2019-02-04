@@ -3,6 +3,7 @@
 exports[`exposes the right sizes 1`] = `
 Object {
   "large": "20px",
+  "mini": "2.5px",
   "regular": "10px",
   "small": "5px",
 }

@@ -6,6 +6,7 @@
  */
 // @flow
 const sizes = {
+  mini: '2.5px',
   small: '5px',
   regular: '10px',
   large: '20px',
