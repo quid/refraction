@@ -30,7 +30,9 @@ const packages = fs
   }));
 
 module.exports = {
-  webpackConfig: override(require('react-scripts/config/webpack.config.dev')),
+  webpackConfig: override(
+    require('react-scripts/config/webpack.config')(process.env.NODE_ENV)
+  ),
   ignore: ['**/*.{test,spec}.js', '**/dist/**/*'],
   skipComponentsWithoutExample: true,
   sections: [
