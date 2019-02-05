@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a center Footer.Slot 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<Slot
+  center={true}
+>
+  <ForwardRef(render)>
+    <div
+      className="emotion-0 emotion-1"
+    />
+  </ForwardRef(render)>
+</Slot>
+`;
+
+exports[`renders a left Footer.Slot 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+<Slot
+  left={true}
+>
+  <ForwardRef(render)>
+    <div
+      className="emotion-0 emotion-1"
+    />
+  </ForwardRef(render)>
+</Slot>
+`;
+
+exports[`renders a right Footer.Slot 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+<Slot
+  right={true}
+>
+  <ForwardRef(render)>
+    <div
+      className="emotion-0 emotion-1"
+    />
+  </ForwardRef(render)>
+</Slot>
+`;
+
+exports[`renders a separated Footer.Slot 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-color: #E3E6E8;
+  border-style: solid;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+<Slot
+  separated={true}
+>
+  <ForwardRef(render)>
+    <div
+      className="emotion-0 emotion-1"
+    />
+  </ForwardRef(render)>
+</Slot>
+`;
+
+exports[`renders a separated Footer.Slot, dark theme 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+<Slot
+  separated={true}
+  theme={
+    Object {
+      "colors": Object {
+        "gray7": "gray7",
+      },
+      "current": "dark",
+    }
+  }
+>
+  <ForwardRef(render)>
+    <div
+      className="emotion-0 emotion-1"
+    />
+  </ForwardRef(render)>
+</Slot>
+`;
+
+exports[`renders the expected markup 1`] = `
+.emotion-0 {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.86em;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  background-color: #FFFFFF;
+}
+
+<Footer>
+  <nav
+    className="emotion-0 emotion-1"
+  >
+    Lorem ipsum
+  </nav>
+</Footer>
+`;
+
+exports[`renders the expected markup basic Footer.Slot 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<Slot>
+  <ForwardRef(render)>
+    <div
+      className="emotion-0 emotion-1"
+    />
+  </ForwardRef(render)>
+</Slot>
+`;
+
+exports[`renders the expected markup, transparent Footer 1`] = `
+.emotion-0 {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.86em;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  background-color: gray7;
+}
+
+<Footer
+  theme={
+    Object {
+      "colors": Object {
+        "gray7": "gray7",
+      },
+      "current": "dark",
+    }
+  }
+>
+  <nav
+    className="emotion-0 emotion-1"
+  >
+    Lorem ipsum
+  </nav>
+</Footer>
+`;
+
+exports[`should apply extra padding to first and last Slot child elements 1`] = `
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.emotion-0:first-of-type {
+  margin-left: calc(5px * 2);
+}
+
+.emotion-0:last-of-type {
+  margin-right: calc(5px * 2);
+}
+
+<Slot>
+  <ForwardRef(render)>
+    <div
+      className="emotion-5 emotion-6"
+    >
+      <button
+        className="emotion-0"
+      >
+        Button 1
+      </button>
+      <button
+        className="emotion-0"
+      >
+        Button 2
+      </button>
+      <button
+        className="emotion-0"
+      >
+        Button 3
+      </button>
+      <button
+        className="emotion-0"
+      >
+        Button 4
+      </button>
+      <button
+        className="emotion-0"
+      >
+        Button 5
+      </button>
+    </div>
+  </ForwardRef(render)>
+</Slot>
+`;
