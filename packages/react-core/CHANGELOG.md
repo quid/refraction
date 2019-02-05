@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.29.0](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v1.28.0...v1.29.0) (2019-02-05)
+
+**Note:** Version bump only for package @quid/react-core
+
+
+
+
+
 ## [1.27.1](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v1.27.0...v1.27.1) (2019-01-31)
 
 
