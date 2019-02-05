@@ -9,7 +9,7 @@ import * as React from 'react';
 import styled from '@emotion/styled/macro';
 import { sizes } from '@quid/theme';
 
-export type Props = {
+type Props = {
   logo?: React.Node,
   breadcrumb?: React.Node,
   tools?: React.Node,
