@@ -17,9 +17,7 @@ Footer component example:
   </Footer.Slot>
   <Footer.Slot right>
     {paddingClass => (
-      <React.Fragment>
-        <Button className={paddingClass}>Export all to PPT</Button>
-      </React.Fragment>
+      <Button className={paddingClass}>Export all to PPT</Button>
     )}
   </Footer.Slot>
 </Footer>
@@ -33,11 +31,7 @@ For transparent `Footer` use `transparent` prop.
 ```js
 <Footer transparent style={{ marginBottom: 10 }}>
   <Footer.Slot left>
-    {paddingClass => (
-      <React.Fragment>
-        <Button className={paddingClass}>How Quid Works</Button>
-      </React.Fragment>
-    )}
+    {paddingClass => <Button className={paddingClass}>How Quid Works</Button>}
   </Footer.Slot>
   <Footer.Slot center separated>
     {paddingClass => (
@@ -51,9 +45,7 @@ For transparent `Footer` use `transparent` prop.
   </Footer.Slot>
   <Footer.Slot right>
     {paddingClass => (
-      <React.Fragment>
-        <Button className={paddingClass}>Export all to PPT</Button>
-      </React.Fragment>
+      <Button className={paddingClass}>Export all to PPT</Button>
     )}
   </Footer.Slot>
 </Footer>
