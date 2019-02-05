@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the expected markup 1`] = `
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 50px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 {
+  padding-top: calc(3px + 5px);
+  padding-left: 5px;
+  padding-bottom: 5px;
+  min-width: 0;
+  height: 100%;
+}
+
+.emotion-2 {
+  padding-left: calc(5px * 3);
+}
+
+.emotion-4 {
+  margin-left: auto;
+  padding-right: 5px;
+}
+
+<NavBar
+  breadcrumb={
+    <span>
+      foo
+    </span>
+  }
+  logo={
+    <span>
+      foo
+    </span>
+  }
+  title="Example title for the nav tag."
+  tools={
+    <span>
+      foo
+    </span>
+  }
+>
+  <nav
+    className="emotion-6 emotion-7"
+    title="Example title for the nav tag."
+  >
+    <Left>
+      <div
+        className="emotion-0 emotion-1"
+      >
+        <span>
+          foo
+        </span>
+      </div>
+    </Left>
+    <Middle>
+      <div
+        className="emotion-2 emotion-3"
+      >
+        <span>
+          foo
+        </span>
+      </div>
+    </Middle>
+    <Right>
+      <div
+        className="emotion-4 emotion-5"
+      >
+        <span>
+          foo
+        </span>
+      </div>
+    </Right>
+  </nav>
+</NavBar>
+`;
