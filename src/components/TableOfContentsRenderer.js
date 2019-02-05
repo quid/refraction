@@ -26,6 +26,7 @@ const TableOfContentsRenderer = styled(
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  color: inherit;
   ${InputText} {
     margin: 14px;
   }
