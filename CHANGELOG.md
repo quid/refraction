@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.30.0](https://github.com/quid/refraction/compare/v1.29.0...v1.30.0) (2019-02-05)
+
+
+### Bug Fixes
+
+* removes unnecessary fragments from footer markdown ([389cef1](https://github.com/quid/refraction/commit/389cef1))
+
+
+### Features
+
+* adds footer to react-layout ([12aa00e](https://github.com/quid/refraction/commit/12aa00e))
+
+
+
+
+
 # [1.29.0](https://github.com/quid/refraction/compare/v1.28.0...v1.29.0) (2019-02-05)
 
 
