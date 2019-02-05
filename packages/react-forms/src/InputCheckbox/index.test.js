@@ -23,6 +23,7 @@ it('renders a disabled InputCheckbox', () => {
 
 it('works with dark theme', () => {
   expect(
+    // $FlowIgnoreMe: we don't need the whole theme object here
     OUTLINE_HOVER({ theme: { current: 'dark', colors: { gray2: 'black' } } })
   ).toMatchInlineSnapshot(`"rgba(0, 0, 0, 0.8)"`);
 });
