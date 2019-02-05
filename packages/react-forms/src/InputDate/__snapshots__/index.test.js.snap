@@ -25,6 +25,7 @@ exports[`renders the expected markup 1`] = `
   border-radius: 2px;
   height: 32px;
   background-color: transparent;
+  color: #2E3338;
 }
 
 .emotion-7:focus-within,

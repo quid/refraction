@@ -102,7 +102,7 @@ const Container = styled.div`
   height: ${props => HEIGHT[props.size || 'regular']}px;
   background-color: transparent;
   color: ${wf(props =>
-    props.disabled ? props.theme.colors.gray2 : props.theme.colors.primary
+    props.disabled ? props.theme.colors.gray2 : props.theme.primary
   )};
 
   &:focus-within ${props => props.focus && ', &'} {
