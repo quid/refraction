@@ -1,0 +1,30 @@
+{
+  "name": "@quid/react-layouts",
+  "version": "1.0.0",
+  "description": "Collection of layout related React components, such as Breadcrumb, Navbar, Tabs, etc...",
+  "main": "dist/index.js",
+  "main:umd": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quid/refraction/tree/master/packages/react-layouts"
+  },
+  "scripts": {
+    "start": "microbundle watch",
+    "prepare": "microbundle build --jsx React.createElement && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
+    "test": "cd ../.. && yarn test --testPathPattern packages/react-layouts"
+  },
+  "devDependencies": {
+    "flow-copy-source": "^2.0.2",
+    "microbundle": "^0.8.3",
+    "react": "^16.0.0"
+  },
+  "peerDependencies": {
+    "react": "15||16"
+  },
+  "dependencies": {
+    "@emotion/styled": "^10.0.7",
+    "@quid/theme": "^1.26.1"
+  }
+}
