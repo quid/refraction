@@ -9,7 +9,7 @@ import * as React from 'react';
 import { shallow } from 'enzyme';
 import { ThemeProvider } from 'emotion-theming';
 import * as exps from './index';
-import QuidThemeProvider from './index';
+import { ThemeProvider as QuidThemeProvider } from './index';
 
 it('exports all the expected modules', () => {
   expect(Object.keys(exps)).toMatchInlineSnapshot(`
@@ -18,7 +18,7 @@ Array [
   "sizes",
   "textStyles",
   "withFallback",
-  "default",
+  "ThemeProvider",
   "themes",
 ]
 `);

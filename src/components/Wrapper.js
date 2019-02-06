@@ -6,7 +6,7 @@
  */
 // @noflow
 import * as React from 'react';
-import ThemeProvider from '@quid/theme';
+import { ThemeProvider } from '@quid/theme';
 import styled from '@emotion/styled/macro';
 import { CacheProvider } from '@emotion/core';
 import 'what-input';

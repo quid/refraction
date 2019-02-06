@@ -14,7 +14,7 @@ import Welcome from 'react-styleguidist/lib/rsg-components/Welcome';
 import Error from 'react-styleguidist/lib/rsg-components/Error';
 import NotFound from 'react-styleguidist/lib/rsg-components/NotFound';
 import { DisplayModes } from 'react-styleguidist/lib/consts';
-import ThemeProvider from '@quid/theme';
+import { ThemeProvider } from '@quid/theme';
 
 /**
  * This function will return true, if the sidebar should be visible and false otherwise.
