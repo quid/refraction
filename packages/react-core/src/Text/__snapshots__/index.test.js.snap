@@ -18,6 +18,7 @@ exports[`renders a Skeleton with a different tag 1`] = `
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   color: #2E3338;
+  line-height: 2em;
   color: transparent;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -74,6 +75,7 @@ exports[`renders a Skeleton with set width 1`] = `
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   color: #2E3338;
+  line-height: 2em;
   color: transparent;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -152,6 +154,7 @@ exports[`renders the plain skeleton 1`] = `
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   color: #2E3338;
+  line-height: 2em;
   color: transparent;
   -webkit-user-select: none;
   -moz-user-select: none;

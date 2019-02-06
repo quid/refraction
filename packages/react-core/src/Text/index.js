@@ -63,6 +63,7 @@ const Skeleton: React.StatelessFunctionalComponent<SkeletonProps> = styled(
   }
 )`
   ${({ type = '' }) => textStyles(...type.split(' '))};
+  line-height: 2em;
   color: transparent;
   user-select: none;
   border-radius: 2px;
