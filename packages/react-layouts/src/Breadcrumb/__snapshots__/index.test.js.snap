@@ -1,0 +1,347 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a NavLink 1`] = `
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
+  color: #8F9BA3;
+  cursor: default;
+}
+
+<NavLink
+  activeClassName="foobar--active"
+  disabled={true}
+  external={true}
+  to="foobar"
+>
+  <a
+    activeClassName="foobar--active"
+    className="emotion-0 emotion-1"
+  />
+</NavLink>
+`;
+
+exports[`renders a default NavLink 1`] = `
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<NavLink
+  to="foobar"
+>
+  <ForwardRef(render)>
+    <a
+      aria-current={null}
+      className="emotion-0 emotion-1"
+      href="/foobar"
+      onClick={[Function]}
+    />
+  </ForwardRef(render)>
+</NavLink>
+`;
+
+exports[`renders the expected markup 1`] = `
+.emotion-27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2 {
+  font-weight: bold;
+}
+
+.emotion-5 {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #8F9BA3;
+}
+
+.emotion-3 {
+  font-family: 'quid-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-feature-settings: 'liga';
+  font-variant-ligatures: discretionary-ligatures;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 1em;
+  width: 1em;
+}
+
+.emotion-19 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
+  color: #8F9BA3;
+  cursor: default;
+}
+
+.emotion-25 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  color: #2E3338;
+  font-weight: bold;
+}
+
+<Breadcrumb
+  items={
+    Array [
+      Object {
+        "arrowIcon": "angle_double_right",
+        "label": "Project Name 13",
+        "path": "/",
+      },
+      Object {
+        "label": "SEARCH",
+        "path": "/search",
+        "tooltip": "project AND name",
+      },
+      Object {
+        "label": "REVIEW",
+        "path": "/search/review",
+      },
+      Object {
+        "disabled": true,
+        "label": "ANALYZE",
+        "path": "/search/review/analyze",
+      },
+      Object {
+        "emphasized": true,
+        "external": true,
+        "label": "SHARE",
+        "path": "/search/review/analyze/share",
+      },
+    ]
+  }
+>
+  <ul
+    className="emotion-27 emotion-28"
+  >
+    <NavLink
+      disabled={false}
+      emphasized={false}
+      external={false}
+      key="0"
+      to="/"
+    >
+      <ForwardRef(render)>
+        <a
+          aria-current="page"
+          className="emotion-0 emotion-1 emotion-2"
+          href="/"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Project Name 13
+        </a>
+      </ForwardRef(render)>
+    </NavLink>
+    <Arrow
+      key="0_arrow"
+    >
+      <div
+        className="emotion-5 emotion-6"
+      >
+        <Icon
+          name="angle_double_right"
+          squared={true}
+        >
+          <i
+            className="emotion-3 emotion-4"
+          >
+            angle_double_right
+          </i>
+        </Icon>
+      </div>
+    </Arrow>
+    <NavLink
+      disabled={false}
+      emphasized={false}
+      external={false}
+      key="1"
+      to="/search"
+    >
+      <ForwardRef(render)>
+        <a
+          aria-current={null}
+          className="emotion-0 emotion-1"
+          href="/search"
+          onClick={[Function]}
+        >
+          <span
+            id="breadcrumb-1-tooltip"
+            title="project AND name"
+          >
+            SEARCH
+          </span>
+        </a>
+      </ForwardRef(render)>
+    </NavLink>
+    <Arrow
+      key="1_arrow"
+    >
+      <div
+        className="emotion-5 emotion-6"
+      >
+        <Icon
+          name="angle_right"
+          squared={true}
+        >
+          <i
+            className="emotion-3 emotion-4"
+          >
+            angle_right
+          </i>
+        </Icon>
+      </div>
+    </Arrow>
+    <NavLink
+      disabled={false}
+      emphasized={false}
+      external={false}
+      key="2"
+      to="/search/review"
+    >
+      <ForwardRef(render)>
+        <a
+          aria-current={null}
+          className="emotion-0 emotion-1"
+          href="/search/review"
+          onClick={[Function]}
+        >
+          REVIEW
+        </a>
+      </ForwardRef(render)>
+    </NavLink>
+    <Arrow
+      key="2_arrow"
+    >
+      <div
+        className="emotion-5 emotion-6"
+      >
+        <Icon
+          name="angle_right"
+          squared={true}
+        >
+          <i
+            className="emotion-3 emotion-4"
+          >
+            angle_right
+          </i>
+        </Icon>
+      </div>
+    </Arrow>
+    <NavLink
+      disabled={true}
+      emphasized={false}
+      external={false}
+      key="3"
+      to="/search/review/analyze"
+    >
+      <a
+        className="emotion-19 emotion-1"
+      >
+        ANALYZE
+      </a>
+    </NavLink>
+    <Arrow
+      key="3_arrow"
+    >
+      <div
+        className="emotion-5 emotion-6"
+      >
+        <Icon
+          name="angle_right"
+          squared={true}
+        >
+          <i
+            className="emotion-3 emotion-4"
+          >
+            angle_right
+          </i>
+        </Icon>
+      </div>
+    </Arrow>
+    <NavLink
+      disabled={false}
+      emphasized={true}
+      external={true}
+      key="4"
+      to="/search/review/analyze/share"
+    >
+      <a
+        className="emotion-25 emotion-1"
+        href="/search/review/analyze/share"
+      >
+        SHARE
+      </a>
+    </NavLink>
+  </ul>
+</Breadcrumb>
+`;
