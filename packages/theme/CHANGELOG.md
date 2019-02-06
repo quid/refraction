@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.1](https://github.com/quid/refraction/compare/v1.30.0...v1.30.1) (2019-02-06)
+
+
+### Bug Fixes
+
+* export ThemeProvider as named export ([b1260bf](https://github.com/quid/refraction/commit/b1260bf))
+
+
+
+
+
 # [1.29.0](https://github.com/quid/refraction/compare/v1.28.0...v1.29.0) (2019-02-05)
 
 
