@@ -1,7 +1,7 @@
 This package provides a set of colors, sizes, and font styles, used to style
 the applications created at Quid.
 
-The default export of the package is an Emotion [theme provider][theme-provider]
+The named `ThemeProvider` export of the package is an Emotion [theme provider][theme-provider]
 that should wrap any application to make sure the other Quid components
 are properly styled with the resources provided by this package.
 
@@ -24,7 +24,7 @@ Wrap your component with `ThemeProvider` and, optionally, define the desired
 theme (`light` or `dark`, `light` is default):
 
 ```jsx static
-import ThemeProvider from '@quid/theme';
+import { ThemeProvider } from '@quid/theme';
 
 <ThemeProvider theme="light">
   <Button>I'll use the light theme</Button>
@@ -40,7 +40,7 @@ This can be useful to conditionally style a component depending by its theme.
 
 ```jsx static
 import styled from '@emotion/styled/macro';
-import ThemeProvider from '@quid/theme';
+import { ThemeProvider } from '@quid/theme';
 
 const Test = styled.span`
   color: ${props => props.theme.primary};

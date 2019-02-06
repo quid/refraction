@@ -25,4 +25,4 @@ const QuidThemeProvider = ({ theme = 'light', children, ...props }: Props) => (
   <ThemeProvider {...props} theme={themeData[theme]} children={children} />
 );
 
-export default QuidThemeProvider;
+export { QuidThemeProvider as ThemeProvider };
