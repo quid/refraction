@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.2](https://github.com/quid/refraction/compare/v1.30.1...v1.30.2) (2019-02-06)
+
+
+### Bug Fixes
+
+* ensure some top and bottom margin between text skeletons ([8aa767f](https://github.com/quid/refraction/commit/8aa767f))
+
+
+
+
+
 ## [1.30.1](https://github.com/quid/refraction/compare/v1.30.0...v1.30.1) (2019-02-06)
 
 
