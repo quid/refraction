@@ -34,22 +34,20 @@ const reduceOpacity = color =>
     .alpha(0.5)
     .string();
 
-const pulse = wf(
-  props => keyframes`
-  0% {
-    background-color: ${props.theme.colors[BACKGROUND[props.theme.current]]};
-  }
-
-  50% {
-    background-color: ${reduceOpacity(
-      props.theme.colors[BACKGROUND[props.theme.current]]
-    )};
-  }
-
-  100% {
-    background-color: ${props.theme.colors[BACKGROUND[props.theme.current]]};
-  }
-`
+const pulse = wf(props =>
+  keyframes({
+    '0%': {
+      backgroundColor: props.theme.colors[BACKGROUND[props.theme.current]],
+    },
+    '50%': {
+      backgroundColor: reduceOpacity(
+        props.theme.colors[BACKGROUND[props.theme.current]]
+      ),
+    },
+    '100%': {
+      backgroundColor: props.theme.colors[BACKGROUND[props.theme.current]],
+    },
+  })
 );
 
 // @component
