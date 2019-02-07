@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.3](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v1.30.2...v1.30.3) (2019-02-07)
+
+
+### Bug Fixes
+
+* use keyframes object notation to avoid Emotion bug ([723a110](https://github.com/quid/refraction/tree/master/packages/react-core/commit/723a110))
+
+
+
+
+
 ## [1.30.2](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v1.30.1...v1.30.2) (2019-02-06)
 
 
