@@ -3,9 +3,12 @@
 exports[`returns a valid CSS 1`] = `
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
+  color: #2E3338;
 }
 
 <T>
@@ -18,12 +21,16 @@ exports[`returns a valid CSS 1`] = `
 exports[`works with "withFallback" powered styles 1`] = `
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   color: #6C7983;
   color: #8F9BA3;
   color: #28beb8;
   cursor: pointer;
   color: rgba(0,193,187,0.6);
+  line-height: 1.57;
+  font-family: IBM Plex Serif,Gudea,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
 }
 
 <T>

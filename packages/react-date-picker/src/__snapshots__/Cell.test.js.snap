@@ -7,6 +7,8 @@ exports[`renders a disabled cell 1`] = `
   vertical-align: middle;
   color: #2E3338;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
 }
 
@@ -61,6 +63,8 @@ exports[`renders the expected markup 1`] = `
   vertical-align: middle;
   color: #2E3338;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
 }
 
@@ -135,6 +139,8 @@ exports[`renders the expected markup 2`] = `
   vertical-align: middle;
   color: #00c1bb;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
 }
 

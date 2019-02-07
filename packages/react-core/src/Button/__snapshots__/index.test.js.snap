@@ -13,9 +13,12 @@ exports[`renders a Button with small size 1`] = `
   box-sizing: border-box;
   color: inherit;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
+  color: #2E3338;
   font-weight: bold;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -93,9 +96,12 @@ exports[`renders a disabled and transparent Button 1`] = `
   box-sizing: border-box;
   color: inherit;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
+  color: #2E3338;
   font-weight: bold;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -184,9 +190,12 @@ exports[`renders the expected markup 1`] = `
   box-sizing: border-box;
   color: inherit;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
+  color: #2E3338;
   font-weight: bold;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

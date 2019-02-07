@@ -39,10 +39,13 @@ const styles = {
     line-height: 1.57;
     ${secondaryFontFamily}
   `,
-  normal: css`
-    font-size: 14px;
-    line-height: 1.57;
-  `,
+  normal: wf(
+    props => css`
+      font-size: 14px;
+      line-height: 1.57;
+      color: ${props.theme.primary};
+    `
+  ),
   bold: css`
     font-weight: bold;
   `,
@@ -73,12 +76,13 @@ const styles = {
 };
 
 const textStyles = (...ss: Array<string>) => (props: Object) => {
-  const rules = ss.map(s =>
-    typeof styles[s] === 'function' ? styles[s](props) : styles[s]
+  const rules = [styles.normal(props)].concat(
+    ss.map(s =>
+      typeof styles[s] === 'function' ? styles[s](props) : styles[s]
+    )
   );
   return css`
     ${primaryFontFamily};
-    color: ${wf(props => props.theme.primary)(props)};
     ${rules};
   `;
 };

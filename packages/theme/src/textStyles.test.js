@@ -22,7 +22,7 @@ it('returns a valid CSS', () => {
 
 it('works with "withFallback" powered styles', () => {
   const T = styled.div`
-    ${textStyles('secondary', 'disabled', 'link', 'highlighted')}
+    ${textStyles('secondary', 'disabled', 'link', 'highlighted', 'body')}
   `;
   expect(mount(<T />)).toMatchSnapshot();
 });

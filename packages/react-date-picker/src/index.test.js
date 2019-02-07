@@ -32,6 +32,8 @@ Array [
   </span>,
   .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   font-size: 16px;
   line-height: 1.5;
