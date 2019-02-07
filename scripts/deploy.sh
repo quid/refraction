@@ -14,4 +14,4 @@ bash scripts/npmrc.sh $AUTOMATED_WRITE_AUTH > .npmrc
 git update-index --assume-unchanged .npmrc
 
 # Bump versions, commit, push to git, publish to npm
-$(yarn bin)/lerna publish --yes --no-verify-access
+$(yarn bin)/lerna publish --yes
