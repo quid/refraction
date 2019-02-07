@@ -37,7 +37,9 @@ exports[`renders the expected markup 1`] = `
 }
 
 .emotion-0 {
-  all: unset;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
   min-width: 0;
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
@@ -46,7 +48,6 @@ exports[`renders the expected markup 1`] = `
   -ms-flex: 1;
   flex: 1;
   padding: 0 10px;
-  line-height: 28px;
   box-shadow: none;
 }
 
@@ -121,27 +122,29 @@ exports[`renders the expected markup 1`] = `
     className="emotion-5 emotion-2"
     data-foo="bar"
   >
-    <Container
-      className="emotion-5 emotion-2"
-      data-foo="bar"
-      isInvalid={false}
-    >
-      <div
-        className="emotion-2 emotion-3 emotion-4"
+    <ForwardRef(render)>
+      <Container
+        className="emotion-5 emotion-2"
         data-foo="bar"
+        isInvalid={false}
       >
-        <Input
-          onChange={[Function]}
-          onInvalid={[Function]}
+        <div
+          className="emotion-2 emotion-3 emotion-4"
+          data-foo="bar"
         >
-          <input
-            className="emotion-0 emotion-1"
+          <Input
             onChange={[Function]}
             onInvalid={[Function]}
-          />
-        </Input>
-      </div>
-    </Container>
+          >
+            <input
+              className="emotion-0 emotion-1"
+              onChange={[Function]}
+              onInvalid={[Function]}
+            />
+          </Input>
+        </div>
+      </Container>
+    </ForwardRef(render)>
   </ForwardRef>
 </InputText>
 `;

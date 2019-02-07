@@ -110,58 +110,48 @@ export default class InputDate extends React.Component<Props, State> {
     return (
       <MouseOutside onClickOutside={this.handleClose}>
         {mouseOutsideRef => (
-          <span ref={mouseOutsideRef} className={className}>
-            <Manager>
-              <Reference>
-                {({ ref }) => (
-                  <span
-                    style={{ display: 'inline-block', verticalAlign: 'top' }}
-                    ref={ref}
-                  >
-                    <InputText
-                      type="date"
-                      renderAddon={({ marginRightClass }) => (
-                        <Icon
-                          name="calendar"
-                          className={marginRightClass}
-                          onClick={
-                            !props.disabled ? this.handleOpen : undefined
-                          }
-                        />
-                      )}
-                      onFocus={this.handleOpen}
-                      focus={isOpen}
-                      onBlur={this.handleCloseOnBlur}
-                      value={value}
-                      onChange={this.handleInputChange}
-                      onClick={this.preventDefault}
-                      min={min}
-                      max={max}
-                      {...props}
-                    />
-                  </span>
-                )}
-              </Reference>
-              {isOpen && (
-                <Popper placement="bottom">
-                  {({ ref, style }) => (
-                    <Calendar
-                      onChangeCurrent={current => this.setState({ current })}
-                      current={
-                        current || (isDateValid ? dateValue : new Date())
-                      }
-                      onSelect={this.handleSelect}
-                      selected={isDateValid ? dateValue : undefined}
-                      minDate={min ? new Date(min) : undefined}
-                      maxDate={max ? new Date(max) : undefined}
-                      ref={mergeRefs(ref, this.component)}
-                      style={style}
+          <Manager>
+            <Reference>
+              {({ ref }) => (
+                <InputText
+                  type="date"
+                  renderAddon={({ marginRightClass }) => (
+                    <Icon
+                      name="calendar"
+                      className={marginRightClass}
+                      onClick={!props.disabled ? this.handleOpen : undefined}
                     />
                   )}
-                </Popper>
+                  onFocus={this.handleOpen}
+                  focus={isOpen}
+                  onBlur={this.handleCloseOnBlur}
+                  value={value}
+                  onChange={this.handleInputChange}
+                  onClick={this.preventDefault}
+                  min={min}
+                  max={max}
+                  ref={mergeRefs(ref, mouseOutsideRef)}
+                  {...props}
+                />
               )}
-            </Manager>
-          </span>
+            </Reference>
+            {isOpen && (
+              <Popper placement="bottom">
+                {({ ref, style }) => (
+                  <Calendar
+                    onChangeCurrent={current => this.setState({ current })}
+                    current={current || (isDateValid ? dateValue : new Date())}
+                    onSelect={this.handleSelect}
+                    selected={isDateValid ? dateValue : undefined}
+                    minDate={min ? new Date(min) : undefined}
+                    maxDate={max ? new Date(max) : undefined}
+                    ref={mergeRefs(ref, this.component)}
+                    style={style}
+                  />
+                )}
+              </Popper>
+            )}
+          </Manager>
         )}
       </MouseOutside>
     );
