@@ -6,8 +6,8 @@
  */
 // @flow
 import * as React from 'react';
-import { css } from 'emotion';
 import styled from '@emotion/styled/macro';
+import { ClassNames } from '@emotion/core';
 import { textStyles, withFallback as wf } from '@quid/theme';
 import InvalidHandler from '@quid/react-invalid-handler';
 import { INPUT_ATTRIBUTES, omit, include } from '../utils/inputPropsFilters';
@@ -44,12 +44,14 @@ export const PADDING = {
 };
 
 export const Input = styled.input`
-  all: unset;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+
   min-width: 0;
   align-self: stretch;
   flex: 1;
   padding: 0 ${props => PADDING[props.size || 'regular']}px;
-  line-height: ${props => HEIGHT[props.size || 'regular'] - 4}px;
 
   // needed to remove :invalid red border in Firefox
   box-shadow: none;
@@ -121,24 +123,34 @@ const InputText: React.StatelessFunctionalComponent<Props> = styled(
       return (
         <InvalidHandler errorMessage={validationErrorMessage}>
           {(getInputProps, isInvalid) => (
-            <Container {...omit(props)(INPUT_ATTRIBUTES)} isInvalid={isInvalid}>
-              <Input
-                ref={mergeRefs(input, ref)}
-                as={as}
-                {...include(props)([...INPUT_ATTRIBUTES, 'disabled'])}
-                {...getInputProps({ onChange })}
-              />
-              {props.renderAddon &&
-                props.renderAddon({
-                  onClick: () =>
-                    input.current
-                      ? input.current.focus()
-                      : /* istanbul ignore next */ noop(),
-                  marginRightClass: css`
-                    margin-right: ${PADDING[props.size || 'regular']}px;
-                  `,
-                })}
-            </Container>
+            <ClassNames>
+              {({
+                css,
+                marginRightClass = css({
+                  marginRight: PADDING[props.size || 'regular'],
+                }),
+              }) => (
+                <Container
+                  {...omit(props)(INPUT_ATTRIBUTES)}
+                  isInvalid={isInvalid}
+                >
+                  <Input
+                    ref={mergeRefs(input, ref)}
+                    as={as}
+                    {...include(props)([...INPUT_ATTRIBUTES, 'disabled'])}
+                    {...getInputProps({ onChange })}
+                  />
+                  {props.renderAddon &&
+                    props.renderAddon({
+                      onClick: () =>
+                        input.current
+                          ? input.current.focus()
+                          : /* istanbul ignore next */ noop(),
+                      marginRightClass,
+                    })}
+                </Container>
+              )}
+            </ClassNames>
           )}
         </InvalidHandler>
       );

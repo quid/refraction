@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders the expected markup 1`] = `
-.emotion-2 {
+.emotion-4 {
   margin-right: 10px;
 }
 
-.emotion-7 {
+.emotion-6 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   color: #2E3338;
   font-size: 14px;
@@ -28,13 +28,15 @@ exports[`renders the expected markup 1`] = `
   color: #2E3338;
 }
 
-.emotion-7:focus-within,
-.emotion-7 {
+.emotion-6:focus-within,
+.emotion-6 {
   border-color: #00c1bb;
 }
 
 .emotion-0 {
-  all: unset;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
   min-width: 0;
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
@@ -43,7 +45,6 @@ exports[`renders the expected markup 1`] = `
   -ms-flex: 1;
   flex: 1;
   padding: 0 10px;
-  line-height: 28px;
   box-shadow: none;
 }
 
@@ -111,7 +112,7 @@ exports[`renders the expected markup 1`] = `
   color: #C7CCD1;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: 'quid-icons' !important;
   speak: none;
   font-style: normal;
@@ -141,92 +142,84 @@ exports[`renders the expected markup 1`] = `
   justify-content: center;
   height: 1em;
   width: 1em;
+  margin-right: 10px;
 }
 
-<span>
-  <x-manager>
-    <span
-      style={
-        Object {
-          "display": "inline-block",
-          "verticalAlign": "top",
-        }
-      }
+<x-manager>
+  <InputText
+    focus={true}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    renderAddon={[Function]}
+    type="date"
+    value="2019-01-01"
+  >
+    <ForwardRef
+      className="emotion-8 emotion-5"
+      focus={true}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      renderAddon={[Function]}
+      type="date"
+      value="2019-01-01"
     >
-      <InputText
-        focus={true}
-        onBlur={[Function]}
-        onChange={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        renderAddon={[Function]}
-        type="date"
-        value="2019-01-01"
-      >
-        <ForwardRef
-          className="emotion-9 emotion-6"
+      <ForwardRef(render)>
+        <Container
+          className="emotion-8 emotion-5"
           focus={true}
+          isInvalid={false}
           onBlur={[Function]}
-          onChange={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           renderAddon={[Function]}
-          type="date"
-          value="2019-01-01"
         >
-          <Container
-            className="emotion-9 emotion-6"
-            focus={true}
-            isInvalid={false}
+          <div
+            className="emotion-5 emotion-6 emotion-7"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
-            renderAddon={[Function]}
           >
-            <div
-              className="emotion-6 emotion-7 emotion-8"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
+            <Input
+              onChange={[Function]}
+              onInvalid={[Function]}
+              type="date"
+              value="2019-01-01"
             >
-              <Input
+              <input
+                className="emotion-0 emotion-1"
                 onChange={[Function]}
                 onInvalid={[Function]}
                 type="date"
                 value="2019-01-01"
-              >
-                <input
-                  className="emotion-0 emotion-1"
-                  onChange={[Function]}
-                  onInvalid={[Function]}
-                  type="date"
-                  value="2019-01-01"
-                />
-              </Input>
-              <Icon
-                className="emotion-2"
-                name="calendar"
+              />
+            </Input>
+            <Icon
+              className="emotion-4"
+              name="calendar"
+              onClick={[Function]}
+              squared={true}
+            >
+              <i
+                className="emotion-2 emotion-3"
                 onClick={[Function]}
-                squared={true}
               >
-                <i
-                  className="emotion-2 emotion-3 emotion-4"
-                  onClick={[Function]}
-                >
-                  calendar
-                </i>
-              </Icon>
-            </div>
-          </Container>
-        </ForwardRef>
-      </InputText>
-    </span>
-    <x-date-picker
-      current={2019-01-01T00:00:00.000Z}
-      onClick={[Function]}
-      onFocus={[Function]}
-      selected={2019-01-01T00:00:00.000Z}
-    />
-  </x-manager>
-</span>
+                calendar
+              </i>
+            </Icon>
+          </div>
+        </Container>
+      </ForwardRef(render)>
+    </ForwardRef>
+  </InputText>
+  <x-date-picker
+    current={2019-01-01T00:00:00.000Z}
+    onClick={[Function]}
+    onFocus={[Function]}
+    selected={2019-01-01T00:00:00.000Z}
+  />
+</x-manager>
 `;
