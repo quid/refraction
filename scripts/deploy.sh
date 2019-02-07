@@ -10,8 +10,5 @@ git checkout master
 # the auth key is stored in Travis CI
 bash scripts/npmrc.sh $AUTOMATED_WRITE_AUTH > .npmrc
 
-# Without this, Lerna will not publish because it checks for uncommitted files
-git update-index --assume-unchanged .npmrc
-
 # Bump versions, commit, push to git, publish to npm
 $(yarn bin)/lerna publish --yes
