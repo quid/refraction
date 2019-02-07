@@ -3,13 +3,18 @@
 exports[`renders a NavLink 1`] = `
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
   color: #2E3338;
+  color: #2E3338;
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   color: #8F9BA3;
   cursor: default;
@@ -31,9 +36,12 @@ exports[`renders a NavLink 1`] = `
 exports[`renders a default NavLink 1`] = `
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
+  color: #2E3338;
   color: #2E3338;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -68,15 +76,22 @@ exports[`renders the expected markup 1`] = `
 
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
+  color: #2E3338;
   color: #2E3338;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
   font-weight: bold;
 }
 
@@ -84,9 +99,12 @@ exports[`renders the expected markup 1`] = `
   padding-left: 10px;
   padding-right: 10px;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
+  color: #2E3338;
   color: #8F9BA3;
 }
 
@@ -124,13 +142,18 @@ exports[`renders the expected markup 1`] = `
 
 .emotion-19 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
   color: #2E3338;
+  color: #2E3338;
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   color: #8F9BA3;
   cursor: default;
@@ -138,13 +161,18 @@ exports[`renders the expected markup 1`] = `
 
 .emotion-25 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   font-size: 14px;
   line-height: 1.57;
   color: #2E3338;
+  color: #2E3338;
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
   color: #2E3338;
   font-weight: bold;
 }
