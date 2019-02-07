@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.31.0](https://github.com/quid/refraction/compare/v1.30.4...v1.31.0) (2019-02-07)
+
+
+### Bug Fixes
+
+* adds index file with exports for react layout ([bdcd5d8](https://github.com/quid/refraction/commit/bdcd5d8))
+* updates breadcrumb tests ([6e53098](https://github.com/quid/refraction/commit/6e53098))
+
+
+### Features
+
+* adds Breadcrumb component for react layout ([6a3ef4c](https://github.com/quid/refraction/commit/6a3ef4c))
+
+
+
+
+
 ## [1.30.4](https://github.com/quid/refraction/compare/v1.30.3...v1.30.4) (2019-02-07)
 
 
