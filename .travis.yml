@@ -30,7 +30,7 @@ jobs:
         keep-history: true
         local-dir: styleguide
         fqdn: ui.quid.com
-    - stage: publish to Artifactory
+    - stage: publish to npm
       if: (NOT type IN (pull_request)) AND (branch = master)
       script: skip
       deploy:
