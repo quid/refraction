@@ -7,6 +7,7 @@
 // @noflow
 const path = require('path');
 const { override, useEslintRc, babelInclude } = require('customize-cra');
+const lernaAlias = require('lerna-alias');
 
 /**
  * react-app-rewired configuration file
@@ -25,6 +26,10 @@ module.exports = {
     config.testMatch = config.testMatch.map(m => m.replace('src', 'packages'));
     config.collectCoverageFrom = ['**/packages/**/*.js'];
     config.coveragePathIgnorePatterns = ['/dist/'];
+
+    // we tell Jest to import the @quid packages from their source directory
+    // rather than from the dist one, so we don't have to build them each time
+    config.moduleNameMapper = lernaAlias.jest();
     return config;
   },
 };

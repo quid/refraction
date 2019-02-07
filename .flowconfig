@@ -7,19 +7,12 @@
 [untyped]
 .*/node_modules/@emotion/core/src/context.js
 
-# This would be useful, but https://github.com/facebook/flow/issues/7388
-# [declarations]
-# .*/dist/.*
-
-[include]
-
-[libs]
-
-[lints]
-
 [options]
 suppress_comment= \\(.\\|\n\\)*\\$FlowExpectError
 suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
 suppress_comment= \\(.\\|\n\\)*\\$FlowIgnoreMe
 
-[strict]
+# This rule will make Flow read the types of this repository packages
+# from the source code rather than from the dist folder
+# Doing so we don't need to build new packages every time we make changes
+module.name_mapper='^@quid\/\([a-zA-Z0-9_\-]+\)$' -> '<PROJECT_ROOT>/packages/\1/src/index'
