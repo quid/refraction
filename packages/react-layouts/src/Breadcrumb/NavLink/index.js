@@ -38,12 +38,11 @@ const NavLink = styled(
     } else {
       return (
         <ClassNames>
-          {({ css }) => (
+          {({ css, theme }) => (
             <RouterNavLink
               exact
               activeClassName={css`
-                //FIXME(gabriel.micko) Find a way to use textStyles('bold')
-                font-weight: bold;
+                ${textStyles('bold')({ theme })};
               `}
               to={to}
               {...props}
