@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.4](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v1.30.3...v1.30.4) (2019-02-07)
+
+
+### Bug Fixes
+
+* apply normal style to text by default ([97cce43](https://github.com/quid/refraction/tree/master/packages/react-core/commit/97cce43))
+
+
+
+
+
 ## [1.30.3](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v1.30.2...v1.30.3) (2019-02-07)
 
 
