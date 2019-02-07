@@ -25,6 +25,10 @@
   },
   "dependencies": {
     "@emotion/styled": "^10.0.7",
-    "@quid/theme": "^1.30.4"
+    "@emotion/core": "^10.0.4",
+    "@emotion/css": "^10.0.4",
+    "@quid/react-core": "^1.29.0",
+    "@quid/theme": "^1.29.0",
+    "react-router-dom": "^4.3.1"
   }
 }

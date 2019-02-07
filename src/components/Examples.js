@@ -11,7 +11,6 @@ import Markdown from 'react-styleguidist/lib/rsg-components/Markdown';
 import ExamplesRenderer from 'react-styleguidist/lib/rsg-components/Examples/ExamplesRenderer';
 
 const cleanContent = content =>
-  console.log(content) ||
   content.replace(/<!-- NPM_ONLY> -->[^]*?<!-- <NPM_ONLY -->/g, '');
 
 export default function Examples(

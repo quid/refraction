@@ -9230,7 +9230,7 @@ metric-lcs@^0.1.2:
   resolved "https://registry.npmjs.org/metric-lcs/-/metric-lcs-0.1.2.tgz#87913f149410e39c7c5a19037512814eaf155e11"
   integrity sha512-+TZ5dUDPKPJaU/rscTzxyN8ZkX7eAVLAiQU/e+YINleXPv03SCmJShaMT1If1liTH8OcmWXZs0CmzCBRBLcMpA==
 
-microbundle@^0.8.3:
+microbundle@^0.8.3, "microbundle@https://github.com/FezVrasta/microbundle.git#quid-fork":
   version "0.8.3"
   resolved "https://github.com/FezVrasta/microbundle.git#834297a3134eaf24e0cc35da60812a53b2aef96b"
   dependencies:
