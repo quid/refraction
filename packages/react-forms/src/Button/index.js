@@ -5,4 +5,5 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @flow
+// @component
 export { Button as default } from '@quid/react-core';

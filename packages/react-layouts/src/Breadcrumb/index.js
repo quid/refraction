@@ -9,7 +9,7 @@ import React from 'react';
 import NavLink from './NavLink';
 import { Icon } from '@quid/react-core';
 import styled from '@emotion/styled/macro';
-import { withFallback as wf, textStyles } from '@quid/theme';
+import { textStyles } from '@quid/theme';
 import { sizes } from '@quid/theme';
 
 export type Props = {
@@ -78,4 +78,5 @@ const Breadcrumb = styled(({ items, ...props }: Props) => {
   align-items: baseline;
 `;
 
+// @component
 export default Breadcrumb;

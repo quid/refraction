@@ -77,7 +77,6 @@ const Circle = styled.div`
     `}
 `;
 
-// @component
 const InputRadio = styled(props => (
   <label>
     <Input
@@ -88,4 +87,5 @@ const InputRadio = styled(props => (
   </label>
 ))``;
 
+// @component
 export default InputRadio;
