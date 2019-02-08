@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.31.1](https://github.com/quid/refraction/compare/v1.31.0...v1.31.1) (2019-02-08)
+
+**Note:** Version bump only for package quid-ui
+
+
+
+
+
 # [1.31.0](https://github.com/quid/refraction/compare/v1.30.4...v1.31.0) (2019-02-07)
 
 
