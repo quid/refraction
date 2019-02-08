@@ -1,4 +1,4 @@
-<!-- thank you for contributing to Quid UI! -->
+<!-- thank you for contributing to Refraction! -->
 
 ## PR checklist
 

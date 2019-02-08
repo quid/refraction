@@ -2,7 +2,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-%23000.svg?logo=github&logoColor=white)](https://github.com/quid/refraction)
 
-Welcome to the Quid UI styleguide.
+Welcome to the Quid Refraction styleguide.
 
 > _Quid puts the world’s information at your fingertips. It draws connections between big ideas, giving your brain more power than you ever dreamed possible._
 

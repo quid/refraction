@@ -1,7 +1,7 @@
 {
   "name": "quid-ui",
   "version": "INDEPENDENT",
-  "description": "The official Quid UI project",
+  "description": "The official Quid Refraction project",
   "repository": "git@github.com:quid/refraction.git",
   "author": "Federico Zivolo <fzivolo@quid.com>",
   "license": "MIT",
