@@ -58,7 +58,7 @@ export default class InputDate extends React.Component<Props, State> {
   handleOpen = () => this.isOpen === false && this.setIsOpen(true);
 
   handleClose = /* istanbul ignore next */ () =>
-    this.isOpen === true && this.setIsOpen(false);
+    void (this.isOpen === true && this.setIsOpen(false));
 
   handleCloseOnBlur = (evt: MouseEvent) => {
     const { relatedTarget } = evt;
