@@ -6,8 +6,20 @@
  */
 // @noflow
 const path = require('path');
-const { override, useEslintRc, babelInclude } = require('customize-cra');
+const {
+  override,
+  useEslintRc,
+  babelInclude,
+  addWebpackAlias,
+} = require('customize-cra');
 const lernaAlias = require('lerna-alias');
+
+const removeModuleScopePlugin = () => config => {
+  config.resolve.plugins = config.resolve.plugins.filter(
+    p => p.constructor.name !== 'ModuleScopePlugin'
+  );
+  return config;
+};
 
 /**
  * react-app-rewired configuration file
@@ -19,7 +31,9 @@ const lernaAlias = require('lerna-alias');
 module.exports = {
   webpack: override(
     babelInclude([path.resolve('src'), path.resolve('packages')]),
-    useEslintRc()
+    useEslintRc(),
+    removeModuleScopePlugin(),
+    addWebpackAlias(lernaAlias.webpack())
   ),
   jest: config => {
     // create-react-app looks for tests in `src`, we look in `packages`

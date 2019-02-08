@@ -7,10 +7,6 @@
 // @noflow
 const fs = require('fs');
 const override = require('./config-overrides').webpack;
-const {
-  colors,
-  themes: { light },
-} = require('@quid/theme');
 
 const ignore = [
   '**/__mocks__/**',
@@ -62,10 +58,10 @@ module.exports = {
   theme: {
     sidebarWidth: 300,
     color: {
-      base: light.primary,
-      baseBackground: light.background,
-      sidebarBackground: light.background,
-      border: colors.gray1,
+      base: '#2E3338',
+      baseBackground: '#FFFFFF',
+      sidebarBackground: '#FFFFFF',
+      border: '#E3E6E8',
     },
     fontFamily: {
       base: 'IBM Plex Sans, Lucida Grande, Tahoma, Verdana, Arial, sans-serif',
