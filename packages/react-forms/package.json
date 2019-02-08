@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-forms",
-  "version": "1.30.4",
+  "version": "1.31.2",
   "description": "Collection of form-related React components, such as buttons, inputs, etc...",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
@@ -23,7 +23,7 @@
     "@quid/react-core": "^1.30.4",
     "@quid/react-date-picker": "^1.30.4",
     "@quid/react-invalid-handler": "^1.26.0",
-    "@quid/react-mouse-outside": "^1.26.0",
+    "@quid/react-mouse-outside": "^1.31.2",
     "@quid/theme": "^1.30.4",
     "color": "^3.1.0",
     "date-fns": "^1.30.1",

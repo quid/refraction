@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.31.2](https://github.com/quid/refraction/tree/master/packages/react-mouse-outside/compare/v1.31.1...v1.31.2) (2019-02-08)
+
+
+### Bug Fixes
+
+* react-mouse-outside type improvements ([d7907ad](https://github.com/quid/refraction/tree/master/packages/react-mouse-outside/commit/d7907ad))
+
+
+
+
+
 # 1.26.0 (2019-01-31)
 
 
