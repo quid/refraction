@@ -16,4 +16,5 @@ const TextArea = styled(props => <InputText as="textarea" {...props} />)`
   }
 `;
 
+// @component
 export default TextArea;

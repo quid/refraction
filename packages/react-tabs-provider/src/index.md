@@ -4,7 +4,7 @@ We just have to define an optional `defaultActive` property to specify
 which tab we want to select by default, and then all the state management
 will be handled by the component automatically.
 
-```js
+```js showcode
 const { Tabs, TabList, TabPanel } = require('.');
 
 <Tabs defaultActive="b">

@@ -163,7 +163,6 @@ const Checkbox = styled.div`
 
 type Props = {};
 
-// @component
 const InputCheckbox: React.StatelessFunctionalComponent<Props> = styled(
   props => (
     <label>
@@ -176,4 +175,5 @@ const InputCheckbox: React.StatelessFunctionalComponent<Props> = styled(
   )
 )``;
 
+// @component
 export default InputCheckbox;

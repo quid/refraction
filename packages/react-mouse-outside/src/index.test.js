@@ -9,12 +9,11 @@ import * as React from 'react';
 import { shallow, mount } from 'enzyme';
 import MouseOutside from './index';
 
-// $FlowFixMe(fzivolo): forwardRef not yet supported
 const Child = React.forwardRef((props, ref) => <div ref={ref} />);
 
 it('should render expected markup', () => {
   const wrapper = shallow(
-    <MouseOutside onClickOutside={f => f}>
+    <MouseOutside onClickOutside={f => void f}>
       {ref => <div ref={ref} />}
     </MouseOutside>
   );

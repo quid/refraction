@@ -11,8 +11,8 @@ import { conditionalDebounce } from './debounce';
 type RenderProp<P> = P => React.Node;
 
 type Props = {
-  onClickOutside?: Function,
-  onMoveOutside?: Function,
+  onClickOutside?: Event => void,
+  onMoveOutside?: Event => void,
   delay: number,
   children: RenderProp<React.ElementRef<any>>,
 };
@@ -21,7 +21,6 @@ type Props = {
 export default class MouseOutside extends React.Component<Props> {
   static defaultProps = {
     delay: 0,
-    tag: 'div',
   };
 
   container = React.createRef /*:: <HTMLElement> */();
