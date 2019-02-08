@@ -1,5 +1,6 @@
 {
   "name": "@quid/react-package-template",
   "version": "1.26.0",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true
 }
