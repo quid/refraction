@@ -108,3 +108,4 @@ const Header = styled(({ title, icon, ...props }: Props) => (
 `;
 
 export default Header;
+export { HeaderIcon };

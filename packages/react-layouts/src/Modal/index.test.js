@@ -8,7 +8,9 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import Modal from './index';
-/* import Logo from '../Logo'; */
+import Header from './Header';
+import { HeaderIcon } from './Header';
+import ActionBar from './ActionBar';
 
 describe('Modal', () => {
   it('renders the expected markup', () => {
@@ -126,11 +128,67 @@ describe('Modal', () => {
   });
   it('renders a vertically centered modal', () => {
     const wrapper = mount(
-      <Modal centerVertically contentLabel="Foobar" isOpen>
+      <Modal
+        theme={{ current: 'dark', colors: { black: '#000' } }}
+        centerVertically
+        contentLabel="Foobar"
+        isOpen
+        importance={'warning'}
+      >
         <span>Hello, World!</span>
       </Modal>
     );
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('renders Header, HeaderIcon, ActionBar with different themes', () => {
+    const ActionDarkHeader = mount(
+      <Header
+        theme={{ current: 'dark', colors: { black: '#000' } }}
+        title={'Hello world'}
+        icon={<i />}
+        importance={'action'}
+      />
+    );
+    expect(ActionDarkHeader).toMatchSnapshot();
+
+    const ActionLightHeader = mount(
+      <Header
+        theme={{ current: 'light', colors: { black: '#fff' } }}
+        title={'Hello world'}
+        icon={<i />}
+        importance={'action'}
+      />
+    );
+    expect(ActionLightHeader).toMatchSnapshot();
+
+    const WarningDarkHeader = mount(
+      <Header
+        theme={{ current: 'dark', colors: { black: '#fff' } }}
+        title={'Hello world'}
+        icon={<i />}
+        importance={'warning'}
+      />
+    );
+    expect(WarningDarkHeader).toMatchSnapshot();
+
+    const HeaderDarkIcon = mount(
+      <HeaderIcon
+        theme={{ current: 'dark', colors: { black: '#fff' } }}
+        name="test"
+      />
+    );
+    expect(HeaderDarkIcon).toMatchSnapshot();
+
+    const AcitonBarDark = mount(
+      <ActionBar
+        theme={{ current: 'dark', colors: { black: '#fff' } }}
+        action={'Hello'}
+        renderActionLeft={() => <div />}
+        renderActionRight={() => <div />}
+      />
+    );
+    expect(HeaderDarkIcon).toMatchSnapshot();
   });
 
   it('throws if title is not a string and alt not provided', () => {

@@ -1,5 +1,507 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Modal renders Header, HeaderIcon, ActionBar with different themes 1`] = `
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.4;
+  color: inherit;
+}
+
+.emotion-2 {
+  font-family: 'quid-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-feature-settings: 'liga';
+  font-variant-ligatures: discretionary-ligatures;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 1em;
+  width: 1em;
+  box-sizing: initial;
+  text-align: center;
+  font-size: 2.6em;
+  height: 0.93em;
+  width: 0.93em;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0.56em;
+  -webkit-transform: translateY(30%);
+  -ms-transform: translateY(30%);
+  transform: translateY(30%);
+  padding: 0.37em;
+  border-radius: 100%;
+  background-color: #E3E6E8;
+  box-shadow: 0 0 0 2px #FFFFFF;
+  color: #2E3338;
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 4.64em;
+  border-bottom: 1px solid transparent;
+  border-radius: 2px 2px 0 0;
+  background-color: #000;
+}
+
+<Header
+  icon={<i />}
+  importance="action"
+  theme={
+    Object {
+      "colors": Object {
+        "black": "#000",
+      },
+      "current": "dark",
+    }
+  }
+  title="Hello world"
+>
+  <header
+    className="emotion-4 emotion-5"
+    importance="action"
+  >
+    <HeaderTitle>
+      <h1
+        className="emotion-0 emotion-1"
+      >
+        Hello world
+      </h1>
+    </HeaderTitle>
+    <HeaderIcon
+      name={<i />}
+      squared={true}
+    >
+      <i
+        className="emotion-2 emotion-3"
+      >
+        <i />
+      </i>
+    </HeaderIcon>
+  </header>
+</Header>
+`;
+
+exports[`Modal renders Header, HeaderIcon, ActionBar with different themes 2`] = `
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.4;
+  color: inherit;
+}
+
+.emotion-2 {
+  font-family: 'quid-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-feature-settings: 'liga';
+  font-variant-ligatures: discretionary-ligatures;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 1em;
+  width: 1em;
+  box-sizing: initial;
+  text-align: center;
+  font-size: 2.6em;
+  height: 0.93em;
+  width: 0.93em;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0.56em;
+  -webkit-transform: translateY(30%);
+  -ms-transform: translateY(30%);
+  transform: translateY(30%);
+  padding: 0.37em;
+  border-radius: 100%;
+  background-color: #E3E6E8;
+  box-shadow: 0 0 0 2px #FFFFFF;
+  color: #2E3338;
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 4.64em;
+  border-bottom: 1px solid transparent;
+  border-radius: 2px 2px 0 0;
+}
+
+<Header
+  icon={<i />}
+  importance="action"
+  theme={
+    Object {
+      "colors": Object {
+        "black": "#fff",
+      },
+      "current": "light",
+    }
+  }
+  title="Hello world"
+>
+  <header
+    className="emotion-4 emotion-5"
+    importance="action"
+  >
+    <HeaderTitle>
+      <h1
+        className="emotion-0 emotion-1"
+      >
+        Hello world
+      </h1>
+    </HeaderTitle>
+    <HeaderIcon
+      name={<i />}
+      squared={true}
+    >
+      <i
+        className="emotion-2 emotion-3"
+      >
+        <i />
+      </i>
+    </HeaderIcon>
+  </header>
+</Header>
+`;
+
+exports[`Modal renders Header, HeaderIcon, ActionBar with different themes 3`] = `
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.4;
+  color: inherit;
+}
+
+.emotion-2 {
+  font-family: 'quid-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-feature-settings: 'liga';
+  font-variant-ligatures: discretionary-ligatures;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 1em;
+  width: 1em;
+  box-sizing: initial;
+  text-align: center;
+  font-size: 2.6em;
+  height: 0.93em;
+  width: 0.93em;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0.56em;
+  -webkit-transform: translateY(30%);
+  -ms-transform: translateY(30%);
+  transform: translateY(30%);
+  padding: 0.37em;
+  border-radius: 100%;
+  background-color: #E3E6E8;
+  box-shadow: 0 0 0 2px #FFFFFF;
+  color: #2E3338;
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 4.64em;
+  border-bottom: 1px solid transparent;
+  border-radius: 2px 2px 0 0;
+  background-color: #F5BBBE;
+  border-color: #F5BBBE;
+}
+
+<Header
+  icon={<i />}
+  importance="warning"
+  theme={
+    Object {
+      "colors": Object {
+        "black": "#fff",
+      },
+      "current": "dark",
+    }
+  }
+  title="Hello world"
+>
+  <header
+    className="emotion-4 emotion-5"
+    importance="warning"
+  >
+    <HeaderTitle>
+      <h1
+        className="emotion-0 emotion-1"
+      >
+        Hello world
+      </h1>
+    </HeaderTitle>
+    <HeaderIcon
+      name={<i />}
+      squared={true}
+    >
+      <i
+        className="emotion-2 emotion-3"
+      >
+        <i />
+      </i>
+    </HeaderIcon>
+  </header>
+</Header>
+`;
+
+exports[`Modal renders Header, HeaderIcon, ActionBar with different themes 4`] = `
+.emotion-0 {
+  font-family: 'quid-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-feature-settings: 'liga';
+  font-variant-ligatures: discretionary-ligatures;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 1em;
+  width: 1em;
+  box-sizing: initial;
+  text-align: center;
+  font-size: 2.6em;
+  height: 0.93em;
+  width: 0.93em;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0.56em;
+  -webkit-transform: translateY(30%);
+  -ms-transform: translateY(30%);
+  transform: translateY(30%);
+  padding: 0.37em;
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+<HeaderIcon
+  name="test"
+  squared={true}
+  theme={
+    Object {
+      "colors": Object {
+        "black": "#fff",
+      },
+      "current": "dark",
+    }
+  }
+>
+  <i
+    className="emotion-0 emotion-1"
+  >
+    test
+  </i>
+</HeaderIcon>
+`;
+
+exports[`Modal renders Header, HeaderIcon, ActionBar with different themes 5`] = `
+.emotion-0 {
+  font-family: 'quid-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  font-feature-settings: 'liga';
+  font-variant-ligatures: discretionary-ligatures;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 1em;
+  width: 1em;
+  box-sizing: initial;
+  text-align: center;
+  font-size: 2.6em;
+  height: 0.93em;
+  width: 0.93em;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0.56em;
+  -webkit-transform: translateY(30%);
+  -ms-transform: translateY(30%);
+  transform: translateY(30%);
+  padding: 0.37em;
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+<HeaderIcon
+  name="test"
+  squared={true}
+  theme={
+    Object {
+      "colors": Object {
+        "black": "#fff",
+      },
+      "current": "dark",
+    }
+  }
+>
+  <i
+    className="emotion-0 emotion-1"
+  >
+    test
+  </i>
+</HeaderIcon>
+`;
+
 exports[`Modal renders a Modal with formTag 1`] = `
 .emotion-18 {
   font-size: 1rem;
@@ -570,30 +1072,6 @@ exports[`Modal renders a Modal with formTag 1`] = `
 `;
 
 exports[`Modal renders a vertically centered modal 1`] = `
-.emotion-8 {
-  font-size: 1rem;
-  width: 57.11em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border-radius: 2px;
-  border: 1px solid;
-  color: #2E3338;
-  background-color: #FFFFFF;
-  box-shadow: 0.14em 0.14em 0.14em rgba(18,18,18,0.1);
-  border-color: #E3E6E8;
-  min-height: 25em;
-  max-height: 35.71em;
-}
-
-.emotion-8:focus:not(:focus-visible) {
-  outline: 0;
-}
-
 .emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -651,6 +1129,28 @@ exports[`Modal renders a vertically centered modal 1`] = `
   height: 50px;
   padding: 0.71em;
   border-top: 1px solid #E3E6E8;
+}
+
+.emotion-8 {
+  font-size: 1rem;
+  width: 57.11em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 2px;
+  border: 1px solid;
+  background-color: #000;
+  box-shadow: 0.14em 0.14em 0.14em rgba(0,0,0,0.1);
+  min-height: 25em;
+  max-height: 35.71em;
+}
+
+.emotion-8:focus:not(:focus-visible) {
+  outline: 0;
 }
 
 .emotion-2 {
@@ -679,36 +1179,21 @@ exports[`Modal renders a vertically centered modal 1`] = `
 <Modal
   centerVertically={true}
   contentLabel="Foobar"
+  importance="warning"
   isOpen={true}
+  theme={
+    Object {
+      "colors": Object {
+        "black": "#000",
+      },
+      "current": "dark",
+    }
+  }
 >
   <ForwardRef(render)>
     <Portal
       containerInfo={
-        .emotion-8 {
-  font-size: 1rem;
-  width: 57.11em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border-radius: 2px;
-  border: 1px solid;
-  color: #2E3338;
-  background-color: #FFFFFF;
-  box-shadow: 0.14em 0.14em 0.14em rgba(18,18,18,0.1);
-  border-color: #E3E6E8;
-  min-height: 25em;
-  max-height: 35.71em;
-}
-
-.emotion-8:focus:not(:focus-visible) {
-  outline: 0;
-}
-
-.emotion-10 {
+        .emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -765,6 +1250,28 @@ exports[`Modal renders a vertically centered modal 1`] = `
   height: 50px;
   padding: 0.71em;
   border-top: 1px solid #E3E6E8;
+}
+
+.emotion-8 {
+  font-size: 1rem;
+  width: 57.11em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 2px;
+  border: 1px solid;
+  background-color: #000;
+  box-shadow: 0.14em 0.14em 0.14em rgba(0,0,0,0.1);
+  min-height: 25em;
+  max-height: 35.71em;
+}
+
+.emotion-8:focus:not(:focus-visible) {
+  outline: 0;
 }
 
 .emotion-2 {
