@@ -10,7 +10,7 @@ import colors from '../colors';
 
 const lightTheme = {
   primary: colors.gray6,
-  primaryInverse: colors.gray1,
+  primaryInverse: colors.white,
   secondary: colors.gray4,
   background: colors.white,
   backdrop: Color(colors.white)

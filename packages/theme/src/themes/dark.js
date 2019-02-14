@@ -10,7 +10,7 @@ import colors from '../colors';
 
 const darkTheme = {
   primary: colors.gray1,
-  primaryInverse: colors.gray6,
+  primaryInverse: colors.black,
   secondary: colors.gray2,
   background: colors.gray6,
   backdrop: Color(colors.gray6)
