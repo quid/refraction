@@ -2,7 +2,7 @@
 
 ## PR checklist
 
-- [ ] I have followed the ["Committing and publishing"][committing-and-publishing] guidelines;
+- [ ] I have followed the ["Committing and publishing"](https://github.com/quid/refraction/blob/master/CONTRIBUTING.md) guidelines;
 - [ ] I have added unit tests to cover my changes;
 - [ ] I updated the documentation and examples accordingly;
 
@@ -17,4 +17,3 @@
 - @quid/...
 - @quid/...
 
-[committing-and-publishing]: https://github.com/quid/refraction/blob/master/CONTRIBUTING.md
