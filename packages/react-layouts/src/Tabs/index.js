@@ -16,7 +16,7 @@ import {
 import TabPanel from './TabPanel';
 import Tab from './Tab';
 
-export type Props = {
+type Props = {
   children?: React.Node,
   id: string,
   onChange: string => void,

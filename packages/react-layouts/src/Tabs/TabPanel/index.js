@@ -9,7 +9,7 @@ import React from 'react';
 import styled from '@emotion/styled/macro';
 import { sizes } from '@quid/theme';
 
-export type Props = {
+type Props = {
   label: string,
   id: string,
   className?: string,

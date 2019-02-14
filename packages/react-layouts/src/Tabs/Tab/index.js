@@ -10,7 +10,7 @@ import css from '@emotion/css/macro';
 import styled from '@emotion/styled/macro';
 import { textStyles, withFallback as wf, sizes } from '@quid/theme';
 
-export type Props = {
+type Props = {
   children: React.Node,
   id: string,
   isActive: boolean,
