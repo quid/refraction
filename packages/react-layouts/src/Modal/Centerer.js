@@ -10,17 +10,13 @@ import * as React from 'react';
 import styled from '@emotion/styled/macro';
 import css from '@emotion/css/macro';
 import { textStyles } from '@quid/theme';
-type ActionBarProps = {
+type Props = {
   children: React.Node,
   noPadding?: boolean,
   centerVertically?: boolean,
 };
 
-const Centerer = styled(
-  ({ children, centerVertically, noPadding, ...props }: ActionBarProps) => (
-    <div {...props}>{children}</div>
-  )
-)`
+const Centerer: React.ComponentType<Props> = styled.div`
   ${textStyles('normal')};
   display: flex;
   flex: 1;

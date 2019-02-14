@@ -12,11 +12,10 @@ import { withFallback as wf } from '@quid/theme';
 import css from '@emotion/css/macro';
 import { ClassNames } from '@emotion/core';
 
-type ActionBarProps = {
+type Props = {
   action?: React.Node,
   renderActionLeft?: string => React.Node,
   renderActionRight?: string => React.Node,
-  className?: string,
 };
 
 const Left = styled.div`
@@ -28,12 +27,7 @@ const Right = styled.div`
 `;
 
 const ActionBar = styled(
-  ({
-    action,
-    renderActionLeft,
-    renderActionRight,
-    ...props
-  }: ActionBarProps) => (
+  ({ action, renderActionLeft, renderActionRight, ...props }: Props) => (
     <ClassNames>
       {({
         css,

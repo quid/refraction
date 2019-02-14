@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @flow
-import React from 'react';
+import * as React from 'react';
 import { mount } from 'enzyme';
 import Modal from './index';
 import Header from './Header';
@@ -22,23 +22,41 @@ describe('Modal', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('renders the expected markup', () => {
+  it('should match props provided to Modal', () => {
+    const title = 'Did You Know...?';
+    const iconType = 'question';
+    const importance = 'info';
+    const leftAction = 'leftFoobar';
+    const rightAction = 'rightFoobar';
     const wrapper = mount(
       <Modal
-        title="Did You Know...?"
-        icon="question"
-        importance="info"
-        renderActionLeft={() => 'foobar'}
-        renderActionRight={() => 'foobar'}
+        title={title}
+        icon={iconType}
+        importance={importance}
+        renderActionLeft={() => leftAction}
+        renderActionRight={() => rightAction}
         isOpen
       >
         <span>Hello, World!</span>
       </Modal>
     );
-    expect(wrapper).toMatchSnapshot();
+
+    const Header = wrapper.find('Header');
+    const HeaderTitle = Header.find('HeaderTitle');
+    const HeaderIcon = Header.find('HeaderIcon');
+
+    expect(HeaderTitle.text()).toMatch(title);
+    expect(HeaderTitle).toMatchSnapshot();
+
+    expect(HeaderIcon.prop('name')).toMatch(iconType);
+    expect(HeaderIcon).toMatchSnapshot();
+
+    expect(Header.prop('importance')).toMatch(importance);
+    expect(wrapper.find('Left').text()).toMatch(rightAction);
+    expect(wrapper.find('Right').text()).toMatch(leftAction);
   });
 
-  it('renders a Modal with formTag', () => {
+  it('renders a Modal with form', () => {
     const wrapper = mount(
       <Modal
         title="Did You Know...?"
@@ -47,7 +65,7 @@ describe('Modal', () => {
         renderActionLeft={() => 'foobar'}
         renderActionRight={() => 'foobar'}
         isOpen
-        formTag="form"
+        isForm
         formPorps={{ onSubmit: jest.fn() }}
       >
         <span>Hello, World!</span>
@@ -56,7 +74,7 @@ describe('Modal', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('does not create a new styled formTag if formTag prop is unchanged', () => {
+  it('should submit the form', () => {
     const onSubmitFn = jest.fn();
     const wrapper = mount(
       <Modal
@@ -126,6 +144,7 @@ describe('Modal', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
   it('renders a vertically centered modal', () => {
     const wrapper = mount(
       <Modal
@@ -144,23 +163,23 @@ describe('Modal', () => {
   it('renders Header, HeaderIcon, ActionBar with different themes', () => {
     const ActionDarkHeader = mount(
       <Header
-        theme={{ current: 'dark', colors: { black: '#000' } }}
+        theme={{ current: 'dark', colors: { black: 'black' } }}
         title={'Hello world'}
         icon={<i />}
         importance={'action'}
       />
     );
-    expect(ActionDarkHeader).toMatchSnapshot();
+    expect(ActionDarkHeader).toHaveStyleRule('background-color', 'black');
 
     const ActionLightHeader = mount(
       <Header
-        theme={{ current: 'light', colors: { black: '#fff' } }}
+        theme={{ current: 'light', colors: { white: 'white' } }}
         title={'Hello world'}
         icon={<i />}
         importance={'action'}
       />
     );
-    expect(ActionLightHeader).toMatchSnapshot();
+    expect(ActionLightHeader).toHaveStyleRule('background-color', 'white');
 
     const WarningDarkHeader = mount(
       <Header
@@ -174,21 +193,23 @@ describe('Modal', () => {
 
     const HeaderDarkIcon = mount(
       <HeaderIcon
-        theme={{ current: 'dark', colors: { black: '#fff' } }}
+        theme={{ current: 'dark', colors: { gray7: 'gray' } }}
         name="test"
       />
     );
-    expect(HeaderDarkIcon).toMatchSnapshot();
+
+    expect(HeaderDarkIcon).toHaveStyleRule('background-color', 'gray');
 
     const AcitonBarDark = mount(
       <ActionBar
-        theme={{ current: 'dark', colors: { black: '#fff' } }}
+        theme={{ current: 'dark', colors: { gray7: 'gray' } }}
         action={'Hello'}
         renderActionLeft={() => <div />}
         renderActionRight={() => <div />}
       />
     );
-    expect(HeaderDarkIcon).toMatchSnapshot();
+
+    expect(AcitonBarDark).toHaveStyleRule('border-top', '1px solid gray');
   });
 
   it('throws if title is not a string and alt not provided', () => {

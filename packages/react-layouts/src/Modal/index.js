@@ -86,21 +86,24 @@ const Modal = styled(
 
     return (
       <ClassNames>
-        {({ css, theme }) => (
+        {({ css, theme, cx }) => (
           <ReactModal
-            overlayClassName={css`
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              position: fixed;
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              background-color: ${wf(({ theme }) =>
-                reduceOpacity(theme.colors.black, 0.6)
-              )({ theme })};
-            `}
+            overlayClassName={cx(
+              css`
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: ${wf(({ theme }) =>
+                  reduceOpacity(theme.colors.black, 0.6)
+                )({ theme })};
+              `,
+              overlayClassName
+            )}
             contentLabel={alt || title}
             ariaHideApp={ariaHideApp} // this can be overridden by the consumer to improve accessibility
             {...props}
