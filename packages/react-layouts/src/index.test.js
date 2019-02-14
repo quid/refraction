@@ -13,6 +13,7 @@ Array [
   "Footer",
   "Breadcrumb",
   "NavBar",
+  "Tabs",
 ]
 `);
 });
