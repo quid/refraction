@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.32.0](https://github.com/quid/refraction/tree/master/packages/react-layouts/compare/v1.31.2...v1.32.0) (2019-02-15)
+
+
+### Bug Fixes
+
+* removes export for Props in Tabs component ([fb801d7](https://github.com/quid/refraction/tree/master/packages/react-layouts/commit/fb801d7))
+
+
+### Features
+
+* adds tabs to react-layouts ([48e2da5](https://github.com/quid/refraction/tree/master/packages/react-layouts/commit/48e2da5))
+
+
+
+
+
 ## [1.31.2](https://github.com/quid/refraction/tree/master/packages/react-layouts/compare/v1.31.1...v1.31.2) (2019-02-08)
 
 **Note:** Version bump only for package @quid/react-layouts
