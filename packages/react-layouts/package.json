@@ -18,17 +18,19 @@
   "devDependencies": {
     "flow-copy-source": "^2.0.2",
     "microbundle": "^0.8.3",
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "react-router-dom": "^4.0.0"
   },
   "peerDependencies": {
-    "react": "15||16"
+    "react": "15||16",
+    "react-router-dom": "^4.0.0"
   },
   "dependencies": {
     "@emotion/core": "^10.0.4",
     "@emotion/css": "^10.0.4",
     "@emotion/styled": "^10.0.7",
     "@quid/react-core": "^1.29.0",
-    "@quid/theme": "^1.29.0",
-    "react-router-dom": "^4.3.1"
+    "@quid/theme": "^1.30.0",
+    "@quid/react-tabs-provider": "^1.26.0"
   }
 }

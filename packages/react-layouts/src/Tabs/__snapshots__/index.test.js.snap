@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match TabPanel 1`] = `
+.emotion-0 {
+  padding: calc(10px + 3px);
+}
+
+<TabPanel
+  id="0"
+  label="foo"
+  name="0"
+>
+  <div
+    aria-labelledby="0"
+    className="emotion-0 emotion-1"
+    id="0"
+    name="0"
+  >
+    foo
+  </div>
+</TabPanel>
+`;
+
+exports[`should match a Tabs example 1`] = `
+.emotion-10 {
+  padding: calc(10px + 3px);
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid;
+}
+
+.emotion-2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-0 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+  font-weight: bold;
+  border: 0;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: inherit;
+  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  line-height: 1;
+  background-color: #E3E6E8;
+  color: #00c1bb;
+}
+
+.emotion-0:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.emotion-0:focus-visible {
+  z-index: 1;
+}
+
+.emotion-4 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+  font-weight: bold;
+  border: 0;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: inherit;
+  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  line-height: 1;
+}
+
+.emotion-4:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.emotion-4:focus-visible {
+  z-index: 1;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: auto;
+}
+
+<Tabs
+  activeTab="one"
+  id="id"
+>
+  <div
+    className="emotion-14 emotion-15"
+  >
+    <x-fragment>
+      <TabList
+        role="tablist"
+      >
+        <ul
+          className="emotion-8 emotion-9"
+          role="tablist"
+        >
+          <Tab
+            id="id_tab_0"
+            isActive={true}
+            key="0/.0"
+            onClick={[Function]}
+          >
+            <li
+              className="emotion-2 emotion-3"
+              id="id_tab_0"
+            >
+              <TabButton
+                aria-controls="id_tab_0_panel"
+                aria-selected={true}
+                id="id_tab_0_button"
+                isActive={true}
+                onClick={[Function]}
+                role="tab"
+              >
+                <button
+                  aria-controls="id_tab_0_panel"
+                  aria-selected={true}
+                  className="emotion-0 emotion-1"
+                  id="id_tab_0_button"
+                  onClick={[Function]}
+                  role="tab"
+                >
+                  One
+                </button>
+              </TabButton>
+            </li>
+          </Tab>
+          <Tab
+            id="id_tab_1"
+            isActive={false}
+            key="1/.1"
+            onClick={[Function]}
+          >
+            <li
+              className="emotion-2 emotion-3"
+              id="id_tab_1"
+            >
+              <TabButton
+                aria-controls="id_tab_1_panel"
+                aria-selected={false}
+                id="id_tab_1_button"
+                isActive={false}
+                onClick={[Function]}
+                role="tab"
+              >
+                <button
+                  aria-controls="id_tab_1_panel"
+                  aria-selected={false}
+                  className="emotion-4 emotion-1"
+                  id="id_tab_1_button"
+                  onClick={[Function]}
+                  role="tab"
+                >
+                  Two
+                </button>
+              </TabButton>
+            </li>
+          </Tab>
+        </ul>
+      </TabList>
+      <TabPanels>
+        <div
+          className="emotion-12 emotion-13"
+        >
+          <TabPanel
+            id="id_panel_0"
+            key="0"
+            label="One"
+            name="one"
+          >
+            <div
+              aria-labelledby="id_panel_0"
+              className="emotion-10 emotion-11"
+              id="id_panel_0"
+              name="one"
+            >
+              foo
+            </div>
+          </TabPanel>
+        </div>
+      </TabPanels>
+    </x-fragment>
+  </div>
+</Tabs>
+`;
