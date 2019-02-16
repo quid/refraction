@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.32.1](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v1.32.0...v1.32.1) (2019-02-16)
+
+
+### Bug Fixes
+
+* adds support for multiple refs for mouse outside ([ea46b25](https://github.com/quid/refraction/tree/master/packages/react-forms/commit/ea46b25))
+
+
+
+
+
 ## [1.31.2](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v1.31.1...v1.31.2) (2019-02-08)
 
 
