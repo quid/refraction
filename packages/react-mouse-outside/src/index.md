@@ -1,12 +1,14 @@
 ```jsx
 initialState = { txt: 'click outside' };
+const refA = React.createRef();
+
 const callback = () =>
   setState({ txt: 'clicked!' }, () =>
     setTimeout(() => setState({ txt: 'click outside' }), 300)
   );
 
-<MouseOutside onClickOutside={callback}>
-  {getRef => <div ref={getRef}>{state.txt}</div>}
+<MouseOutside onClickOutside={callback} refs={[refA]}>
+  {() => <div ref={refA}>{state.txt}</div>}
 </MouseOutside>;
 ```
 

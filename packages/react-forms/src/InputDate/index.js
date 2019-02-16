@@ -39,7 +39,8 @@ type State = {
 
 export default class InputDate extends React.Component<Props, State> {
   component = React.createRef /*:: <HTMLElement> */();
-  s = React.createRef /*:: <HTMLElement> */();
+  refA = React.createRef /*:: <HTMLElement> */();
+  refB = React.createRef /*:: <HTMLElement> */();
 
   state = {
     current: undefined,
@@ -108,8 +109,11 @@ export default class InputDate extends React.Component<Props, State> {
     const isDateValid = !isNaN(dateValue.getTime());
 
     return (
-      <MouseOutside onClickOutside={this.handleClose}>
-        {mouseOutsideRef => (
+      <MouseOutside
+        onClickOutside={this.handleClose}
+        refs={[this.refA, this.refB]}
+      >
+        {() => (
           <Manager>
             <Reference>
               {({ ref }) => (
@@ -130,7 +134,7 @@ export default class InputDate extends React.Component<Props, State> {
                   onClick={this.preventDefault}
                   min={min}
                   max={max}
-                  ref={mergeRefs(ref, mouseOutsideRef)}
+                  ref={mergeRefs(ref, this.refA)}
                   {...props}
                 />
               )}
@@ -145,7 +149,7 @@ export default class InputDate extends React.Component<Props, State> {
                     selected={isDateValid ? dateValue : undefined}
                     minDate={min ? new Date(min) : undefined}
                     maxDate={max ? new Date(max) : undefined}
-                    ref={mergeRefs(ref, this.component)}
+                    ref={mergeRefs(ref, this.component, this.refB)}
                     style={style}
                   />
                 )}
