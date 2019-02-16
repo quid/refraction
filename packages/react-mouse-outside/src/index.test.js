@@ -120,3 +120,14 @@ it('should remove event listener on unmount', () => {
   document.dispatchEvent(new Event('mousemove'));
   expect(handleMouseMoveOutside).not.toBeCalled();
 });
+
+it('tests wrong target being provided', () => {
+  const handleMouseMoveOutside = jest.fn();
+  const wrapper = shallow(
+    <MouseOutside onClickOutside={handleMouseMoveOutside}>
+      {ref => <Child ref={ref} />}
+    </MouseOutside>
+  );
+
+  expect(wrapper.instance().areTargetsOutside(null)).toBe(false);
+});
