@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.33.0](https://github.com/quid/refraction/compare/v1.32.1...v1.33.0) (2019-02-19)
+
+
+### Bug Fixes
+
+* adds snapshot tests to fix coverage of modal ([002427f](https://github.com/quid/refraction/commit/002427f))
+* changes ems to pixels in Modal component ([07a9bc3](https://github.com/quid/refraction/commit/07a9bc3))
+* updates tests, simplifies Centerer and ActioBar component for Modal ([799a6bc](https://github.com/quid/refraction/commit/799a6bc))
+
+
+### Features
+
+* adds modal component to react layouts ([bb331f3](https://github.com/quid/refraction/commit/bb331f3))
+
+
+
+
+
 ## [1.32.1](https://github.com/quid/refraction/compare/v1.32.0...v1.32.1) (2019-02-16)
 
 
