@@ -10,6 +10,7 @@ import { css } from 'emotion';
 import styled from '@emotion/styled/macro';
 import { withFallback as wf } from '@quid/theme';
 import InvalidHandler from '@quid/react-invalid-handler';
+import InputText from '../InputText';
 
 const toArray = (children): Array<React.Element<any> | Function> =>
   React.Children.toArray(children).length
@@ -17,6 +18,14 @@ const toArray = (children): Array<React.Element<any> | Function> =>
     : Array.isArray(children)
     ? children
     : [];
+
+const FlexBox = styled.div`
+  display: flex;
+
+  ${InputText} {
+    flex: 1;
+  }
+`;
 
 type Props = {
   children: React.Node,
@@ -43,34 +52,36 @@ const InputGroup = styled(
           {...getInputProps({ onChange, onInvalid })}
           {...props}
         >
-          {React.Children.toArray(
-            toArray(children).map((child, i) => {
-              const className =
-                i === 0
-                  ? css`
-                      border-radius: 1px 0 0 1px;
-                      border-left: 0;
-                      border-top: 0;
-                      border-bottom: 0;
-                    `
-                  : i === toArray(children).length - 1
-                  ? css`
-                      border-radius: 0 1px 1px 0;
-                      border-right: 0;
-                      border-top: 0;
-                      border-bottom: 0;
-                    `
-                  : css`
-                      border-radius: 0;
-                      border-top: 0;
-                      border-bottom: 0;
-                    `;
+          <FlexBox>
+            {React.Children.toArray(
+              toArray(children).map((child, i) => {
+                const className =
+                  i === 0
+                    ? css`
+                        border-radius: 1px 0 0 1px;
+                        border-left: 0;
+                        border-top: 0;
+                        border-bottom: 0;
+                      `
+                    : i === toArray(children).length - 1
+                    ? css`
+                        border-radius: 0 1px 1px 0;
+                        border-right: 0;
+                        border-top: 0;
+                        border-bottom: 0;
+                      `
+                    : css`
+                        border-radius: 0;
+                        border-top: 0;
+                        border-bottom: 0;
+                      `;
 
-              return typeof child === 'function'
-                ? child(className)
-                : React.cloneElement(child, { className });
-            })
-          )}
+                return typeof child === 'function'
+                  ? child(className)
+                  : React.cloneElement(child, { className });
+              })
+            )}
+          </FlexBox>
         </fieldset>
       )}
     </InvalidHandler>
