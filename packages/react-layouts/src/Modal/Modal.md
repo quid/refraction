@@ -79,11 +79,18 @@ const ImportanceTypes = require('./importanceTypes');
 
 const ICONS = ['', 'question', 'network', 'heart'];
 
+function setName(evt) {
+  setState({
+    name: evt.target.value,
+  });
+}
+
 initialState = {
   importance: ImportanceTypes.ACTION,
   icon: ICONS[0],
   centerVertically: false,
   isOpen: false,
+  name: '',
 };
 
 <div>
@@ -104,56 +111,27 @@ initialState = {
     )}
     centerVertically={state.centerVertically}
     renderActionRight={actionClassName => [
-      <Button className={actionClassName} type="cancel" href="#" key="1">
-        Cancel
-      </Button>,
       <Button
         className={actionClassName}
         type="submit"
         importance="primary"
         key="2"
       >
-        Submit
+        Done
       </Button>,
     ]}
     isOpen={state.isOpen}
     formProps={{
       onSubmit: evt => {
         evt.preventDefault();
-        alert('You have submitted the form.');
+        alert(`Hey ${state.name}, thank you for checking out our library.`);
       },
     }}
   >
-    Importance:
-    <select onChange={evt => setState({ importance: evt.target.value })}>
-      {Object.values(ImportanceTypes).map(importance => (
-        <option key={importance} value={importance}>
-          {importance}
-        </option>
-      ))}
-    </select>
-    <br />
-    <br />
-    Icon:
-    <select onChange={evt => setState({ icon: evt.target.value })}>
-      {ICONS.map(icon => (
-        <option key={icon} value={icon}>
-          {icon}
-        </option>
-      ))}
-    </select>
-    <br />
-    <br />
-    Vertical align:
-    <input
-      type="checkbox"
-      onChange={() =>
-        setState(({ centerVertically }) => ({
-          centerVertically: !centerVertically,
-        }))
-      }
-      checked={state.centerVertically}
-    />
+    <label>
+      Please enter your name: <br />
+      <input type="text" value={state.name} onChange={setName} />
+    </label>
   </Modal>
 </div>;
 ```
