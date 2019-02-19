@@ -8,8 +8,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import Modal from './index';
-import Header from './Header';
-import { HeaderIcon } from './Header';
+import Header, { HeaderIcon } from './Header';
 import ActionBar from './ActionBar';
 
 describe('Modal', () => {

@@ -32,9 +32,7 @@ type Props = {
   renderActionRight?: string => React.Node,
   children: React.Node,
   overlayClassName?: string,
-  styles?: Object,
   ariaHideApp?: boolean,
-  className?: string,
   isForm?: boolean,
   formProps?: { [string]: * },
 };
@@ -128,8 +126,7 @@ const Modal = styled(
     );
   }
 )`
-  font-size: 1rem;
-  width: 57.11em;
+  width: 800px;
   display: flex;
   flex-direction: column;
   border-radius: 2px;
@@ -141,8 +138,7 @@ const Modal = styled(
       background-color: ${props.theme.current === 'light'
         ? props.theme.colors.white
         : props.theme.colors.black};
-      box-shadow: 0.14em 0.14em 0.14em
-        ${reduceOpacity(props.theme.colors.black, 0.1)};
+      box-shadow: 2px 2px 2px ${reduceOpacity(props.theme.colors.black, 0.1)};
       border-color: ${props.theme.current === 'light'
         ? props.theme.colors.gray1
         : props.theme.colors.gray7};
@@ -152,8 +148,8 @@ const Modal = styled(
   ${props =>
     !props.ignoreHeightLimits &&
     css`
-      min-height: 25em;
-      max-height: 35.71em;
+      min-height: 350px;
+      max-height: 500px;
     `}
 
   &:focus:not(:focus-visible) {

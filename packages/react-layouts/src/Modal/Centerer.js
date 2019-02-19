@@ -25,7 +25,7 @@ const Centerer: React.ComponentType<Props> = styled.div`
   ${props =>
     !props.noPadding &&
     css`
-      padding: 2.04em 7.06em;
+      padding: 30px 100px;
     `}
 
   ${props =>

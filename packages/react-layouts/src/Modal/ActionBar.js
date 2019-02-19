@@ -32,7 +32,7 @@ const ActionBar = styled(
       {({
         css,
         actionClassName = css`
-          margin: 0 calc(0.71em / 2);
+          margin: 0 5px;
           &:first-child {
             margin-left: 0;
           }
@@ -59,7 +59,7 @@ const ActionBar = styled(
   flex-shrink: 0;
   align-items: center;
   height: 50px;
-  padding: 0.71em;
+  padding: 10px;
   ${wf(
     props => css`
       border-top: 1px solid

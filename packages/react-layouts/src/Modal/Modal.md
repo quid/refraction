@@ -72,7 +72,7 @@ initialState = {
 </div>;
 ```
 
-With `isForm={true}`:
+If you would like to have a `<form>` within the modal, you can do that by using `isForm={true}` prop. Also pass `formProps` so that you can handle `onSubmit` event.
 
 ```js
 const ImportanceTypes = require('./importanceTypes');

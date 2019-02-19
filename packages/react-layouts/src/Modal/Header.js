@@ -17,7 +17,6 @@ type Props = {
   title: React.Node,
   icon?: string,
   importance: Importance,
-  className?: string,
 };
 
 const HeaderTitle = styled.h1`
@@ -28,15 +27,15 @@ const HeaderTitle = styled.h1`
 const HeaderIcon = styled(Icon)`
   box-sizing: initial;
   text-align: center;
-  font-size: 2.6em;
-  height: 0.93em;
-  width: 0.93em;
+  font-size: 35px;
+  height: 35px;
+  width: 35px;
   display: block;
   position: absolute;
   bottom: 0;
-  left: 0.56em;
+  left: 25px;
   transform: translateY(30%);
-  padding: 0.37em;
+  padding: 12px;
   border-radius: 100%;
 
   ${wf(
@@ -68,7 +67,7 @@ const Header = styled(({ title, icon, ...props }: Props) => (
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  height: 4.64em;
+  height: 65px;
   border-bottom: 1px solid transparent;
   border-radius: 2px 2px 0 0;
 
