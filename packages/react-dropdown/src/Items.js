@@ -122,12 +122,21 @@ export default function DropdownItems({
               disabled: isDisabled,
             })}
           >
-            <HighlightValue
-              highlight={highlight}
-              value={item.label}
-              valueToHighlight={inputValue}
-              disabled={isDisabled}
-            />
+            {item.children ? (
+              item.children({
+                isHighlighted: isHighlighted,
+                isSelected: isSelected,
+                isDisabled: isDisabled,
+                item,
+              })
+            ) : (
+              <HighlightValue
+                highlight={highlight}
+                value={item.label}
+                valueToHighlight={inputValue}
+                disabled={isDisabled}
+              />
+            )}
           </Item>
         );
       })}

@@ -143,7 +143,7 @@ const Dropdown = ({
                 </Reference>
                 {isOpen && (
                   <DropdownList
-                    innerRef={ref}
+                    ref={ref}
                     style={style}
                     twoColumn={twoColumn}
                     items={items}

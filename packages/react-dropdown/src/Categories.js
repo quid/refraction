@@ -135,13 +135,15 @@ export default function DropdownCategories({
         return (
           <Categories key={categoryId}>
             <Category twoColumn={twoColumn}>
-              <Divider
-                isHighlighted={isHighlighted}
-                isSelected={isSelected}
-                twoColumn={twoColumn}
-              >
-                <GroupTitle>{category.label}</GroupTitle>
-              </Divider>
+              {!category.hidden && (
+                <Divider
+                  isHighlighted={isHighlighted}
+                  isSelected={isSelected}
+                  twoColumn={twoColumn}
+                >
+                  <GroupTitle>{category.label}</GroupTitle>
+                </Divider>
+              )}
               <Divider twoColumn={twoColumn}>
                 <DropdownItems
                   categoryId={categoryId}
