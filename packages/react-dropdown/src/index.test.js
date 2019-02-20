@@ -521,3 +521,28 @@ it('supports dark theme', () => {
     )
   ).toHaveStyleRule('background-color', 'gray6');
 });
+
+it('Children provided trough items should be present', () => {
+  const wrapper = mount(
+    <Dropdown
+      items={[
+        {
+          id: 131,
+          categoryId: 'c',
+          label: 'Thirteen',
+          children: ({ isHighlighted, isSelected, isDisabled, item }) => (
+            <div data-child="hw" data-itemid={item.id}>
+              Hello world.
+            </div>
+          ),
+        },
+      ]}
+      initialIsOpen={true}
+    >
+      {({ getInputProps }) => <Input {...getInputProps()} />}
+    </Dropdown>
+  );
+  const children = wrapper.find('div[data-child="hw"]');
+  expect(children.prop('data-itemid')).toBe(131);
+  expect(children.length).toBe(1);
+});

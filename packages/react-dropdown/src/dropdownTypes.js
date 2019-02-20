@@ -12,11 +12,18 @@ export type DropdownItem = {
   label: string,
   categoryId?: number | string,
   disabled?: boolean,
+  children?: ({
+    isSelected: boolean,
+    isDisabled: boolean,
+    isHighlighted: boolean,
+    item: DropdownItem,
+  }) => React.Node,
 };
 
 export type DropdownCategory = {
   id: number | string,
   label: string,
+  hidden?: boolean,
 };
 
 export type ExtendedCategory = DropdownCategory & {
