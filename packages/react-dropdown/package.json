@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-dropdown",
-  "version": "1.30.4",
+  "version": "1.34.0",
   "description": "React dropdown component with ARIA accessibility and advanced functionalities",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",

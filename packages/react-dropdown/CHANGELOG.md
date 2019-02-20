@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.34.0](https://github.com/quid/ui-framework/compare/v1.33.0...v1.34.0) (2019-02-20)
+
+
+### Features
+
+* support for custom item children for the dropdown ([d481d5b](https://github.com/quid/ui-framework/commit/d481d5b))
+
+
+
+
+
 ## [1.30.4](https://github.com/quid/ui-framework/compare/v1.30.3...v1.30.4) (2019-02-07)
 
 
