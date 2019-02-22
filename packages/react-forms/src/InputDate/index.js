@@ -26,7 +26,6 @@ type Props = {
   onChange: Function,
   isOpen?: boolean,
   onToggle?: Function,
-  className?: string,
   min?: string,
   max?: string,
   disabled?: boolean,
@@ -95,7 +94,6 @@ export default class InputDate extends React.Component<Props, State> {
       onChange, // eslint-disable-line no-unused-vars
       isOpen: isOpenProp, // eslint-disable-line no-unused-vars
       onToggle, // eslint-disable-line no-unused-vars
-      className,
       min,
       max,
       ...props
