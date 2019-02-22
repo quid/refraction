@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.34.1](https://github.com/quid/refraction/compare/v1.34.0...v1.34.1) (2019-02-22)
+
+
+### Bug Fixes
+
+* allow InputDate styling ([c7d2605](https://github.com/quid/refraction/commit/c7d2605))
+* make InputGroup stretch its child Input field ([22170d3](https://github.com/quid/refraction/commit/22170d3))
+
+
+
+
+
 # [1.34.0](https://github.com/quid/refraction/compare/v1.33.0...v1.34.0) (2019-02-20)
 
 

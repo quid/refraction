@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.34.1](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v1.34.0...v1.34.1) (2019-02-22)
+
+
+### Bug Fixes
+
+* allow InputDate styling ([c7d2605](https://github.com/quid/refraction/tree/master/packages/react-forms/commit/c7d2605))
+* make InputGroup stretch its child Input field ([22170d3](https://github.com/quid/refraction/tree/master/packages/react-forms/commit/22170d3))
+
+
+
+
+
 ## [1.32.1](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v1.32.0...v1.32.1) (2019-02-16)
 
 
