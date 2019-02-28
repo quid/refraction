@@ -546,3 +546,34 @@ it('Children provided trough items should be present', () => {
   expect(children.prop('data-itemid')).toBe(131);
   expect(children.length).toBe(1);
 });
+
+it('should clear the previous selected items', () => {
+  const wrapper = mount(
+    <Dropdown items={[{ id: 10, label: 'Hello world' }]} initialIsOpen={true}>
+      {({ getInputProps, clearSelection }) => (
+        <div>
+          <Input {...getInputProps()} />
+          <button onClick={clearSelection}>Reset</button>
+        </div>
+      )}
+    </Dropdown>
+  );
+
+  wrapper.find('ul li').simulate('click');
+
+  expect(
+    wrapper
+      .find('input')
+      .at(0)
+      .props().value
+  ).toBe(10);
+
+  wrapper.find('button').simulate('click');
+
+  expect(
+    wrapper
+      .find('input')
+      .at(0)
+      .props().value
+  ).toBe('');
+});
