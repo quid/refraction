@@ -62,7 +62,7 @@ class MultiDownshift extends React.Component<Props, State> {
   };
 
   handleSelection = (
-    selectedItem: DropdownSelectedItem,
+    selectedItem: DropdownSelectedItem | null,
     downshift: ControllerStateAndHelpers<DropdownSelectedItem>
   ) => {
     const callOnChange = () => {
@@ -73,15 +73,27 @@ class MultiDownshift extends React.Component<Props, State> {
       }
     };
 
-    if (this.props.multiselect) {
-      if (includesId(this.state.selectedItems, selectedItem.id)) {
-        this.removeItem(selectedItem, callOnChange);
-      } else {
-        this.addSelectedItem(selectedItem, callOnChange);
-      }
+    if (selectedItem === null) {
+      this.clearItems(callOnChange);
     } else {
-      this.replaceItem(selectedItem, callOnChange);
+      if (this.props.multiselect) {
+        if (includesId(this.state.selectedItems, selectedItem.id)) {
+          this.removeItem(selectedItem, callOnChange);
+        } else {
+          this.addSelectedItem(selectedItem, callOnChange);
+        }
+      } else {
+        this.replaceItem(selectedItem, callOnChange);
+      }
     }
+  };
+
+  clearItems = (cb?: () => void) => {
+    this.setState(({ selectedItems }) => {
+      return {
+        selectedItems: [],
+      };
+    }, cb);
   };
 
   replaceItem = (item: DropdownSelectedItem, cb?: () => void) => {
