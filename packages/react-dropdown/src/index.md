@@ -20,8 +20,44 @@ const items = [
   { id: 131, label: 'One' },
 ];
 
-<Dropdown items={items} selectedItems={[items[0]]}>
+<Dropdown items={items} defaultSelectedItems={[items[3]]}>
   {({ getInputProps }) => <InputText readOnly {...getInputProps()} />}
+</Dropdown>;
+```
+
+This is usecase will allow you to use `Dropdown` as a controlled component.
+
+```js
+initialState = {
+  selectedItems: [{ id: 10, label: 'One' }],
+};
+
+const items = [
+  { id: 10, label: 'One' },
+  { id: 22, label: 'Two' },
+  { id: 33, label: 'Three' },
+  { id: 44, label: 'Four' },
+  { id: 55, label: 'Four' },
+  { id: 66, label: 'Three' },
+  { id: 77, label: 'Four' },
+  { id: 88, label: 'Three' },
+  { id: 99, label: 'Four' },
+  { id: 101, label: 'Three' },
+  { id: 111, label: 'Four' },
+  { id: 121, label: 'Three' },
+  { id: 131, label: 'One' },
+];
+
+<Dropdown
+  items={items}
+  selectedItems={[]}
+  onChange={newSelectedItems => {
+    setState({
+      selectedItems: newSelectedItems,
+    });
+  }}
+>
+  {({ getInputProps }) => <InputText {...getInputProps()} />}
 </Dropdown>;
 ```
 
@@ -56,7 +92,7 @@ const categories = [
   items={items}
   categories={categories}
   twoColumn={false}
-  selectedItems={[items[2]]}
+  defaultSelectedItems={[items[2]]}
 >
   {({ getInputProps }) => <InputText readOnly {...getInputProps()} />}
 </Dropdown>;

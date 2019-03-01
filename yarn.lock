@@ -12061,7 +12061,7 @@ react-resize-aware@^2.7.2:
   resolved "https://registry.npmjs.org/react-resize-aware/-/react-resize-aware-2.7.2.tgz#38a0040daaa28dfa9b88994889fbb1e2aa66df83"
   integrity sha512-XyweQ3YTiZzNG1T5PNpCXvnpsI7mdy4A2oeySFToh8v02Yf+kOiUyWprvyp6T68fFB848w2F3RKfzH7KDk75JQ==
 
-react-router-dom@^4.3.1:
+react-router-dom@^4.0.0, react-router-dom@^4.3.1:
   version "4.3.1"
   resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-4.3.1.tgz#4c2619fc24c4fa87c9fd18f4fb4a43fe63fbd5c6"
   integrity sha512-c/MlywfxDdCp7EnB7YfPMOfMD3tOtIjrQlj/CKfNMBxdmpJP8xcz5P/UAFn3JbnQCNUxsHyVVqllF9LhgVyFCA==

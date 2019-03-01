@@ -33,6 +33,7 @@ const DevFragment =
 type Props = {
   items: Array<DropdownItem>,
   categories?: Array<DropdownCategory>,
+  defaultSelectedItems?: Array<DropdownSelectedItem>,
   selectedItems?: Array<DropdownSelectedItem>,
   useFilter?: boolean,
   filterFn?: (
@@ -45,7 +46,7 @@ type Props = {
     Object & { getInputProps: Object => GetInputPropsReturn }
   ) => React.Node,
   twoColumn?: boolean,
-  initialIsOpen?: boolean,
+  defaultIsOpen?: boolean,
   highlight?: boolean,
   placement?: Placement,
   popperModifiers?: Modifiers,
@@ -74,8 +75,9 @@ const Dropdown = ({
   children,
   name = 'dropdown',
   twoColumn = true,
-  selectedItems = [],
-  initialIsOpen = false,
+  defaultSelectedItems = [],
+  selectedItems,
+  defaultIsOpen = false,
   placement = 'bottom-start',
   popperModifiers,
   popperPositionFixed = false,
@@ -83,87 +85,101 @@ const Dropdown = ({
   onSelect,
   highlight = false,
   ...props
-}: Props) => (
-  <Manager>
-    <MultiDownshift
-      initialSelectedItem={selectedItems.length ? selectedItems[0] : null}
-      multiselect={multiselect}
-      itemToString={item => (item && item.label ? item.label : '')}
-      selectedItems={selectedItems}
-      initialIsOpen={initialIsOpen}
-      onChange={onChange}
-      onSelect={onSelect}
-    >
-      {(
-        downshift,
-        {
-          openMenu,
-          getItemProps,
-          isOpen,
-          inputValue,
-          highlightedIndex,
-          selectedItems,
-          getInputProps,
-          getRootProps,
-        } = downshift
-      ) => (
-        <DropdownContainer {...getRootProps({ refKey: 'ref', ...props })}>
-          <InputCreator
-            multiselect={multiselect}
-            selectedItems={selectedItems}
-            name={name}
-          />
-          <Popper
-            placement={placement}
-            positionFixed={popperPositionFixed}
-            modifiers={popperModifiers}
-          >
-            {({ ref, style, scheduleUpdate }) => (
-              <DevFragment>
-                <Reference>
-                  {({ ref }) =>
-                    children({
-                      ...downshift,
-                      getInputProps: (inputProps = {}) => {
-                        // NOTE: if you contract this to (inputProps ...) => getInputProps
-                        // this thing is going to break compliation for some reason
-                        return getInputProps({
-                          ...inputProps,
-                          ref,
-                          onFocus: callAll(inputProps.onFocus, openMenu),
-                          onClick: callAll(inputProps.onClick, openMenu),
-                          onChange: callAll(
-                            inputProps.onChange,
-                            scheduleUpdate
-                          ),
-                        });
-                      },
-                    })
-                  }
-                </Reference>
-                {isOpen && (
-                  <DropdownList
-                    ref={ref}
-                    style={style}
-                    twoColumn={twoColumn}
-                    items={items}
-                    categories={categories}
-                    inputValue={inputValue}
-                    getItemProps={getItemProps}
-                    useFilter={useFilter}
-                    filterFn={filterFn}
-                    highlightedIndex={highlightedIndex}
-                    selectedItems={selectedItems}
-                    highlight={highlight}
-                  />
-                )}
-              </DevFragment>
-            )}
-          </Popper>
-        </DropdownContainer>
-      )}
-    </MultiDownshift>
-  </Manager>
-);
+}: Props) => {
+  if (defaultSelectedItems.length && selectedItems != null) {
+    console.error(
+      'Warning: App contains an input of type undefined with both `selectedItems` and `defaultSelectedItems` props. Dropdown elements must be either controlled or uncontrolled (specify either the selectedItems prop, or the defaultSelectedItems prop, but not both). Decide between using a controlled or uncontrolled input element and remove one of these props.'
+    );
+  }
+
+  if (selectedItems != null && onChange == null) {
+    console.error(
+      'Warning: Failed prop type: You provided a `selectedItems` prop to a form field without an `onChange` handler. If the field should be mutable use `defaultSelectedItems`. Otherwise, set `onChange`.'
+    );
+  }
+  return (
+    <Manager>
+      <MultiDownshift
+        multiselect={multiselect}
+        itemToString={item => (item && item.label ? item.label : '')}
+        defaultSelectedItems={defaultSelectedItems}
+        selectedItems={selectedItems}
+        defaultIsOpen={defaultIsOpen}
+        onChange={onChange}
+        onSelect={onSelect}
+        useFilter={useFilter}
+      >
+        {(
+          downshift,
+          {
+            openMenu,
+            getItemProps,
+            isOpen,
+            inputValue,
+            highlightedIndex,
+            selectedItems,
+            getInputProps,
+            getRootProps,
+          } = downshift
+        ) => (
+          <DropdownContainer {...getRootProps({ refKey: 'ref', ...props })}>
+            <InputCreator
+              multiselect={multiselect}
+              selectedItems={selectedItems}
+              name={name}
+            />
+            <Popper
+              placement={placement}
+              positionFixed={popperPositionFixed}
+              modifiers={popperModifiers}
+            >
+              {({ ref, style, scheduleUpdate }) => (
+                <DevFragment>
+                  <Reference>
+                    {({ ref }) =>
+                      children({
+                        ...downshift,
+                        getInputProps: (inputProps = {}) => {
+                          // NOTE: if you contract this to (inputProps ...) => getInputProps
+                          // this thing is going to break compliation for some reason
+                          return getInputProps({
+                            ...inputProps,
+                            ref,
+                            onFocus: callAll(inputProps.onFocus, openMenu),
+                            onClick: callAll(inputProps.onClick, openMenu),
+                            onChange: callAll(
+                              inputProps.onChange,
+                              scheduleUpdate
+                            ),
+                          });
+                        },
+                      })
+                    }
+                  </Reference>
+                  {isOpen && (
+                    <DropdownList
+                      ref={ref}
+                      style={style}
+                      twoColumn={twoColumn}
+                      items={items}
+                      categories={categories}
+                      inputValue={inputValue}
+                      getItemProps={getItemProps}
+                      useFilter={useFilter}
+                      filterFn={filterFn}
+                      highlightedIndex={highlightedIndex}
+                      selectedItems={selectedItems}
+                      highlight={highlight}
+                    />
+                  )}
+                </DevFragment>
+              )}
+            </Popper>
+          </DropdownContainer>
+        )}
+      </MultiDownshift>
+    </Manager>
+  );
+};
 
 export default Dropdown;
