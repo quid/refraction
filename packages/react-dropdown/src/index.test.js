@@ -8,6 +8,7 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { mount } from 'enzyme';
+import DropdownWrapper from './__mocks__/DropdownWrapper';
 import Dropdown from './index';
 import DropdownList, { List } from './List';
 import { Item, HIGHLIGHTED, SELECTED } from './Items';
@@ -57,8 +58,8 @@ const categories = [
 it('renders items without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(
-    <Dropdown items={items.slice(0, 2)} initialIsOpen={true}>
-      {({ getInputProps }) => <Input {...getInputProps()} />}
+    <Dropdown items={items.slice(0, 2)} defaultIsOpen={true}>
+      {({ getInputProps }) => <input {...getInputProps()} />}
     </Dropdown>,
     div
   );
@@ -67,7 +68,7 @@ it('renders items without crashing', () => {
 it('renders a basic closed dropdown', () => {
   const wrapper = mount(
     <Dropdown items={items.slice(0, 2)}>
-      {({ getInputProps }) => <Input {...getInputProps()} />}
+      {({ getInputProps }) => <input {...getInputProps()} />}
     </Dropdown>
   );
   expect(wrapper).toMatchSnapshot();
@@ -75,8 +76,8 @@ it('renders a basic closed dropdown', () => {
 
 it('renders an open dropdown', () => {
   const wrapper = mount(
-    <Dropdown items={items.slice(0, 2)} initialIsOpen={true}>
-      {({ getInputProps }) => <Input {...getInputProps()} />}
+    <Dropdown items={items.slice(0, 2)} defaultIsOpen={true}>
+      {({ getInputProps }) => <input {...getInputProps()} />}
     </Dropdown>
   );
   expect(wrapper).toMatchSnapshot();
@@ -87,10 +88,10 @@ it('renders an open dropdown with categories', () => {
     <Dropdown
       items={items.slice(0, 4)}
       categories={categories.slice(0, 2)}
-      initialIsOpen={true}
+      defaultIsOpen={true}
       twoColumn={false}
     >
-      {({ getInputProps }) => <Input {...getInputProps()} />}
+      {({ getInputProps }) => <input {...getInputProps()} />}
     </Dropdown>
   );
   expect(wrapper.find('DropdownContainer')).toMatchSnapshot();
@@ -101,10 +102,10 @@ it('renders an open dropdown with categories and twoColumn', () => {
     <Dropdown
       items={items.slice(0, 4)}
       categories={categories.slice(0, 2)}
-      initialIsOpen={true}
+      defaultIsOpen={true}
       twoColumn={true}
     >
-      {({ getInputProps }) => <Input {...getInputProps()} />}
+      {({ getInputProps }) => <input {...getInputProps()} />}
     </Dropdown>
   );
   expect(wrapper).toMatchSnapshot();
@@ -116,11 +117,11 @@ it('onChanges gets called when selecting second value', () => {
     <Dropdown
       items={items}
       categories={categories}
-      initialIsOpen={true}
+      defaultIsOpen={true}
       twoColumn={true}
       onChange={handleChange}
     >
-      {({ getInputProps }) => <Input {...getInputProps()} />}
+      {({ getInputProps }) => <input {...getInputProps()} />}
     </Dropdown>
   );
 
@@ -142,7 +143,7 @@ it('onChanges gets called when selecting first value', () => {
     <Dropdown
       items={items}
       categories={categories}
-      initialIsOpen={true}
+      defaultIsOpen={true}
       twoColumn={true}
       onChange={handleChange}
     >
@@ -182,11 +183,11 @@ it('multiselect should be visible in the onChange callback', () => {
   const wrapper = mount(
     <Dropdown
       items={items}
-      initialIsOpen={true}
+      defaultIsOpen={true}
       multiselect={true}
       onChange={handleChange}
     >
-      {({ getInputProps }) => <Input {...getInputProps()} />}
+      {({ getInputProps }) => <input {...getInputProps()} />}
     </Dropdown>
   );
   //Clicks on the first element
@@ -296,7 +297,7 @@ it('using arrow down and return key should select another element', () => {
   const wrapper = mount(
     <Dropdown
       items={items}
-      initialIsOpen={true}
+      defaultIsOpen={true}
       onSelect={handleSelect}
       multiselect={true}
     >
@@ -316,7 +317,7 @@ it('using useFilter should only return items that match the input value', () => 
   const wrapper = mount(
     <Dropdown
       items={items}
-      initialIsOpen={true}
+      defaultIsOpen={true}
       useFilter={true}
       highlight={true}
     >
@@ -332,7 +333,7 @@ it('using useFilter should only return items that match the input value', () => 
 
 it('DropDown list should return null when filtering returns 0 items', () => {
   const wrapper = mount(
-    <Dropdown items={items} initialIsOpen={true} useFilter={true}>
+    <Dropdown items={items} defaultIsOpen={true} useFilter={true}>
       {({ getInputProps }) => <Input {...getInputProps()} />}
     </Dropdown>
   );
@@ -348,11 +349,11 @@ it('Two clicks on the same item should call onChange twice, at the end nothing s
   const wrapper = mount(
     <Dropdown
       items={items}
-      initialIsOpen={true}
+      defaultIsOpen={true}
       onChange={handleChange}
       multiselect={true}
     >
-      {({ getInputProps }) => <Input {...getInputProps()} />}
+      {({ getInputProps }) => <input {...getInputProps()} />}
     </Dropdown>
   );
 
@@ -376,8 +377,8 @@ it('Two clicks on the same item should call onChange twice, at the end nothing s
 
 it('hovering on an item makes it highlighted', () => {
   const wrapper = mount(
-    <Dropdown items={items} initialIsOpen={true} categories={categories}>
-      {({ getInputProps }) => <Input {...getInputProps()} />}
+    <Dropdown items={items} defaultIsOpen={true} categories={categories}>
+      {({ getInputProps }) => <input {...getInputProps()} />}
     </Dropdown>
   );
 
@@ -398,8 +399,8 @@ it('Should not fail when a certaing category doesnt have any item.', () => {
   const extraCategory = [...categories, { id: 'x', label: 'Category X' }];
   expect(() =>
     mount(
-      <Dropdown items={items} initialIsOpen={true} categories={extraCategory}>
-        {({ getInputProps }) => <Input {...getInputProps()} />}
+      <Dropdown items={items} defaultIsOpen={true} categories={extraCategory}>
+        {({ getInputProps }) => <input {...getInputProps()} />}
       </Dropdown>
     )
   ).not.toThrowError();
@@ -411,10 +412,10 @@ it('Empty item label should not break anything.', () => {
     <Dropdown
       items={[{ id: 10, label: '' }]}
       multiselect={true}
-      initialIsOpen={true}
+      defaultIsOpen={true}
       onSelect={handleSelect}
     >
-      {({ getInputProps }) => <Input {...getInputProps()} />}
+      {({ getInputProps }) => <input {...getInputProps()} />}
     </Dropdown>
   );
 
@@ -435,8 +436,9 @@ it('initial selected item should set the input value', () => {
     <Dropdown
       items={items}
       categories={categories}
-      initialIsOpen={true}
+      defaultIsOpen={true}
       selectedItems={selectedItems}
+      onChange={() => {}}
     >
       {({ getInputProps }) => <Input {...getInputProps()} />}
     </Dropdown>
@@ -452,8 +454,9 @@ it('using arrow down should hover on element', () => {
       items={items}
       categories={categories.reverse()}
       twoColumn={false}
-      initialIsOpen={true}
+      defaultIsOpen={true}
       selectedItems={selectedItems}
+      onChange={() => {}}
       multiselect={true}
     >
       {({ getInputProps }) => <Input {...getInputProps()} />}
@@ -522,7 +525,7 @@ it('supports dark theme', () => {
   ).toHaveStyleRule('background-color', 'gray6');
 });
 
-it('Children provided trough items should be present', () => {
+it('Children provided trough itemds should be present', () => {
   const wrapper = mount(
     <Dropdown
       items={[
@@ -537,9 +540,9 @@ it('Children provided trough items should be present', () => {
           ),
         },
       ]}
-      initialIsOpen={true}
+      defaultIsOpen={true}
     >
-      {({ getInputProps }) => <Input {...getInputProps()} />}
+      {({ getInputProps }) => <input {...getInputProps()} />}
     </Dropdown>
   );
   const children = wrapper.find('div[data-child="hw"]');
@@ -547,12 +550,12 @@ it('Children provided trough items should be present', () => {
   expect(children.length).toBe(1);
 });
 
-it('should clear the previous selected items', () => {
+it('should clear the previously selected items', () => {
   const wrapper = mount(
-    <Dropdown items={[{ id: 10, label: 'Hello world' }]} initialIsOpen={true}>
+    <Dropdown items={[{ id: 10, label: 'Hello world' }]} defaultIsOpen={true}>
       {({ getInputProps, clearSelection }) => (
         <div>
-          <Input {...getInputProps()} />
+          <input {...getInputProps()} />
           <button onClick={clearSelection}>Reset</button>
         </div>
       )}
@@ -587,11 +590,11 @@ it('onChange should be called with the newly selected items', () => {
   const wrapper = mount(
     <Dropdown
       items={items}
-      initialIsOpen={true}
+      defaultIsOpen={true}
       selectedItems={[items[0]]}
       onChange={onChangeFn}
     >
-      {({ getInputProps }) => <Input {...getInputProps()} />}
+      {({ getInputProps }) => <input {...getInputProps()} />}
     </Dropdown>
   );
 
@@ -605,4 +608,140 @@ it('onChange should be called with the newly selected items', () => {
     [{ id: 22, label: 'Two' }],
     expect.anything()
   );
+});
+
+it('changing value using controlled component should result in the good value', () => {
+  const wrapper = mount(
+    <DropdownWrapper initialSelectedItems={[items[1]]} items={items} />
+  );
+  wrapper
+    .find('ul li')
+    .hostNodes()
+    .at(1)
+    .simulate('click');
+
+  expect(
+    wrapper
+      .find('input')
+      .at(0)
+      .props().value
+  ).toBe(22);
+
+  expect(
+    wrapper
+      .find('input')
+      .at(1)
+      .props().value
+  ).toBe('Two');
+});
+
+it('changing value and not updating it on change on controlled component should not override the input values', () => {
+  const wrapper = mount(
+    <DropdownWrapper
+      initialSelectedItems={[items[2]]}
+      items={items}
+      skipUpdate={true}
+    />
+  );
+  wrapper
+    .find('ul li')
+    .hostNodes()
+    .at(5)
+    .simulate('click');
+
+  expect(
+    wrapper
+      .find('input')
+      .at(0)
+      .props().value
+  ).toBe(33);
+
+  expect(
+    wrapper
+      .find('input')
+      .at(1)
+      .props().value
+  ).toBe('Three');
+});
+
+it('console error called when both defaultSelectedItems and selectedItems are provided', () => {
+  const spy = jest.spyOn(console, 'error');
+
+  mount(
+    <Dropdown
+      items={items}
+      defaultSelectedItems={[items[0]]}
+      selectedItems={[items[0]]}
+      onChange={() => {}}
+    >
+      {({ getInputProps }) => <input {...getInputProps()} />}
+    </Dropdown>
+  );
+
+  mount(
+    <Dropdown
+      items={items}
+      defaultSelectedItems={[items[0]]}
+      selectedItems={[items[0]]}
+    >
+      {({ getInputProps }) => <input {...getInputProps()} />}
+    </Dropdown>
+  );
+
+  expect(spy).toHaveBeenCalledWith(
+    'Warning: App contains an input of type undefined with both `selectedItems` and `defaultSelectedItems` props. Dropdown elements must be either controlled or uncontrolled (specify either the selectedItems prop, or the defaultSelectedItems prop, but not both). Decide between using a controlled or uncontrolled input element and remove one of these props.'
+  );
+
+  expect(spy).toHaveBeenCalledWith(
+    'Warning: Failed prop type: You provided a `selectedItems` prop to a form field without an `onChange` handler. If the field should be mutable use `defaultSelectedItems`. Otherwise, set `onChange`.'
+  );
+});
+
+it('tests functionality of defaultSelectedItems are properly set', () => {
+  const wrapper = mount(
+    <Dropdown
+      items={items}
+      defaultSelectedItems={[items[5]]}
+      defaultIsOpen={true}
+      onChange={() => {}}
+    >
+      {({ getInputProps }) => <input {...getInputProps()} />}
+    </Dropdown>
+  );
+
+  expect(
+    wrapper
+      .find('input')
+      .at(0)
+      .props().value
+  ).toBe(66);
+
+  expect(
+    wrapper
+      .find('input')
+      .at(1)
+      .props().value
+  ).toBe('Six');
+});
+
+it('empty selected items should result in empty string input value ', () => {
+  const wrapper = mount(
+    <DropdownWrapper
+      initialSelectedItems={[]}
+      items={[{ id: 11, label: 'asd' }]}
+    />
+  );
+
+  wrapper
+    .find('ul li')
+    .hostNodes()
+    .at(0)
+    .simulate('click');
+
+  expect(
+    wrapper
+      .find('input')
+      .at(0)
+      .props().value
+  ).toBe(11);
 });

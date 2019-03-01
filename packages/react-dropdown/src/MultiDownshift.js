@@ -18,7 +18,7 @@ export type MultiControllerStateAndHelpers = ControllerStateAndHelpers<DropdownS
 };
 
 type Props = {
-  initialSelectedItems: Array<DropdownSelectedItem>,
+  defaultSelectedItems: Array<DropdownSelectedItem>,
   selectedItems?: Array<DropdownSelectedItem>,
   onSelect?: (
     Array<DropdownSelectedItem>,
@@ -28,20 +28,44 @@ type Props = {
     Array<DropdownSelectedItem>,
     MultiControllerStateAndHelpers
   ) => void,
-  initialIsOpen: boolean,
+  defaultIsOpen: boolean,
   multiselect: boolean,
   children: MultiControllerStateAndHelpers => React.Node,
   selectedItem?: ?string,
+  useFilter: boolean,
 };
 
 type State = {
   selectedItems: Array<DropdownSelectedItem>,
+  inputValue: string,
 };
 
 class MultiDownshift extends React.Component<Props, State> {
-  state = {
-    selectedItems: this.props.initialSelectedItems,
-  };
+  constructor(props: Props) {
+    super(props);
+
+    this.state = {
+      selectedItems: this.props.defaultSelectedItems,
+      inputValue: this.getDefaultInputValue() || '',
+    };
+  }
+
+  getDefaultInputValue(): string {
+    if (
+      this.props.selectedItems &&
+      this.props.selectedItems.length &&
+      this.props.selectedItems[0].label
+    ) {
+      return this.props.selectedItems[0].label;
+    } else if (
+      this.props.defaultSelectedItems.length > 0 &&
+      this.props.defaultSelectedItems[0].label
+    ) {
+      return this.props.defaultSelectedItems[0].label;
+    } else {
+      return '';
+    }
+  }
 
   stateReducer = (
     state: ControllerStateAndHelpers<DropdownSelectedItem>,
@@ -90,9 +114,20 @@ class MultiDownshift extends React.Component<Props, State> {
         newSelectedItems = this.replaceItem(selectedItem);
       }
     }
-
     if (this.isSelectedItemsPresentInProps()) {
-      callOnChange(newSelectedItems);
+      //Updating the inputValue is necessary when Dropdown is used as controlled component and useFilter is true
+      this.setState(
+        ({ inputValue }) => {
+          return {
+            inputValue: selectedItems.length
+              ? selectedItems[selectedItems.length - 1].label
+              : inputValue,
+          };
+        },
+        () => {
+          callOnChange(newSelectedItems);
+        }
+      );
     } else {
       this.setState(
         {
@@ -150,6 +185,12 @@ class MultiDownshift extends React.Component<Props, State> {
     };
   };
 
+  handleInputValueChange = (inputValue: string): void => {
+    this.setState({
+      inputValue: inputValue,
+    });
+  };
+
   render() {
     const { multiselect, children, ...props } = this.props;
     const selectedItems = this.getSelectedItems();
@@ -159,8 +200,10 @@ class MultiDownshift extends React.Component<Props, State> {
         selectedItem={
           !multiselect && selectedItems.length ? selectedItems[0] : null
         }
+        onInputValueChange={this.handleInputValueChange}
         stateReducer={this.stateReducer}
         onChange={this.handleSelection}
+        inputValue={this.state.inputValue}
       >
         {downshift => children(this.getStateAndHelpers(downshift))}
       </Downshift>

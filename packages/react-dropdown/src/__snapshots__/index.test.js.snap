@@ -1304,7 +1304,7 @@ exports[`using arrow down should hover on element 1`] = `
         disabled={false}
         highlight={false}
         value="One"
-        valueToHighlight=""
+        valueToHighlight="Two"
       >
         <span
           className="emotion-0 emotion-1"
@@ -1342,7 +1342,7 @@ exports[`using arrow down should hover on element 1`] = `
         disabled={false}
         highlight={false}
         value="Two"
-        valueToHighlight=""
+        valueToHighlight="Two"
       >
         <span
           className="emotion-0 emotion-1"

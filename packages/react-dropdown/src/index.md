@@ -20,7 +20,7 @@ const items = [
   { id: 131, label: 'One' },
 ];
 
-<Dropdown items={items} initialSelectedItems={[items[3]]}>
+<Dropdown items={items} defaultSelectedItems={[items[3]]}>
   {({ getInputProps }) => <InputText readOnly {...getInputProps()} />}
 </Dropdown>;
 ```
@@ -50,14 +50,14 @@ const items = [
 
 <Dropdown
   items={items}
-  selectedItems={state.selectedItems}
+  selectedItems={[]}
   onChange={newSelectedItems => {
     setState({
       selectedItems: newSelectedItems,
     });
   }}
 >
-  {({ getInputProps }) => <InputText readOnly {...getInputProps()} />}
+  {({ getInputProps }) => <InputText {...getInputProps()} />}
 </Dropdown>;
 ```
 
@@ -92,7 +92,7 @@ const categories = [
   items={items}
   categories={categories}
   twoColumn={false}
-  initialSelectedItems={[items[2]]}
+  defaultSelectedItems={[items[2]]}
 >
   {({ getInputProps }) => <InputText readOnly {...getInputProps()} />}
 </Dropdown>;
