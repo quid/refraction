@@ -559,7 +559,10 @@ it('should clear the previous selected items', () => {
     </Dropdown>
   );
 
-  wrapper.find('ul li').simulate('click');
+  wrapper
+    .find('ul li')
+    .at(0)
+    .simulate('click');
 
   expect(
     wrapper
@@ -576,4 +579,30 @@ it('should clear the previous selected items', () => {
       .at(0)
       .props().value
   ).toBe('');
+});
+
+it('onChange should be called with the newly selected items', () => {
+  const onChangeFn = jest.fn();
+
+  const wrapper = mount(
+    <Dropdown
+      items={items}
+      initialIsOpen={true}
+      selectedItems={[items[0]]}
+      onChange={onChangeFn}
+    >
+      {({ getInputProps }) => <Input {...getInputProps()} />}
+    </Dropdown>
+  );
+
+  wrapper
+    .find('ul li')
+    .hostNodes()
+    .at(1)
+    .simulate('click');
+
+  expect(onChangeFn).toHaveBeenCalledWith(
+    [{ id: 22, label: 'Two' }],
+    expect.anything()
+  );
 });

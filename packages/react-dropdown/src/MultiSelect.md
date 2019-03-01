@@ -103,7 +103,7 @@ const handleDelete = ({ id }) => {
   items={items}
   categories={categories}
   multiselect={true}
-  selectedItems={selectedItems}
+  initialSelectedItems={selectedItems}
   onChange={mirrorDropdownState}
 >
   {({ getInputProps, removeItem, ...props }) => {

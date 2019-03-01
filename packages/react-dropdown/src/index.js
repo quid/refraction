@@ -33,6 +33,7 @@ const DevFragment =
 type Props = {
   items: Array<DropdownItem>,
   categories?: Array<DropdownCategory>,
+  initialSelectedItems?: Array<DropdownSelectedItem>,
   selectedItems?: Array<DropdownSelectedItem>,
   useFilter?: boolean,
   filterFn?: (
@@ -74,7 +75,8 @@ const Dropdown = ({
   children,
   name = 'dropdown',
   twoColumn = true,
-  selectedItems = [],
+  initialSelectedItems = [],
+  selectedItems,
   initialIsOpen = false,
   placement = 'bottom-start',
   popperModifiers,
@@ -86,9 +88,9 @@ const Dropdown = ({
 }: Props) => (
   <Manager>
     <MultiDownshift
-      initialSelectedItem={selectedItems.length ? selectedItems[0] : null}
       multiselect={multiselect}
       itemToString={item => (item && item.label ? item.label : '')}
+      initialSelectedItems={initialSelectedItems}
       selectedItems={selectedItems}
       initialIsOpen={initialIsOpen}
       onChange={onChange}
