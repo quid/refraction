@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.35.0](https://github.com/quid/ui-framework/compare/v1.34.1...v1.35.0) (2019-03-02)
+
+
+### Bug Fixes
+
+* fixes test coverage ([c1a27b7](https://github.com/quid/ui-framework/commit/c1a27b7))
+
+
+### Features
+
+* adds clearSelection support for Dropdown ([923a68d](https://github.com/quid/ui-framework/commit/923a68d))
+* adds support for dropdown being used as controlled component ([5928d80](https://github.com/quid/ui-framework/commit/5928d80))
+* adds test cases and warnings in case of wrong props applied ([d80b40e](https://github.com/quid/ui-framework/commit/d80b40e))
+
+
+
+
+
 # [1.34.0](https://github.com/quid/ui-framework/compare/v1.33.0...v1.34.0) (2019-02-20)
 
 
