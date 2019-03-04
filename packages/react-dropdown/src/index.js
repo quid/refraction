@@ -75,7 +75,7 @@ const Dropdown = ({
   children,
   name = 'dropdown',
   twoColumn = true,
-  defaultSelectedItems = [],
+  defaultSelectedItems,
   selectedItems,
   defaultIsOpen = false,
   placement = 'bottom-start',
@@ -102,7 +102,7 @@ const Dropdown = ({
       <MultiDownshift
         multiselect={multiselect}
         itemToString={item => (item && item.label ? item.label : '')}
-        defaultSelectedItems={defaultSelectedItems}
+        defaultSelectedItems={defaultSelectedItems || []}
         selectedItems={selectedItems}
         defaultIsOpen={defaultIsOpen}
         onChange={onChange}

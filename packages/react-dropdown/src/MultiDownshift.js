@@ -41,14 +41,10 @@ type State = {
 };
 
 class MultiDownshift extends React.Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
-
-    this.state = {
-      selectedItems: this.props.defaultSelectedItems,
-      inputValue: this.getDefaultInputValue() || '',
-    };
-  }
+  state = {
+    selectedItems: this.props.defaultSelectedItems,
+    inputValue: this.getDefaultInputValue(),
+  };
 
   getDefaultInputValue(): string {
     if (
@@ -101,9 +97,7 @@ class MultiDownshift extends React.Component<Props, State> {
 
     const selectedItems = this.getSelectedItems();
     let newSelectedItems = [];
-    if (selectedItem === null) {
-      newSelectedItems = this.clearItems();
-    } else {
+    if (selectedItem != null) {
       if (this.props.multiselect) {
         if (includesId(selectedItems, selectedItem.id)) {
           newSelectedItems = this.removeItem(selectedItem, selectedItems);
@@ -114,16 +108,15 @@ class MultiDownshift extends React.Component<Props, State> {
         newSelectedItems = this.replaceItem(selectedItem);
       }
     }
+
     if (this.isSelectedItemsPresentInProps()) {
       //Updating the inputValue is necessary when Dropdown is used as controlled component and useFilter is true
       this.setState(
-        ({ inputValue }) => {
-          return {
-            inputValue: selectedItems.length
-              ? selectedItems[selectedItems.length - 1].label
-              : inputValue,
-          };
-        },
+        ({ inputValue }) => ({
+          inputValue: selectedItems.length
+            ? selectedItems[selectedItems.length - 1].label
+            : inputValue,
+        }),
         () => {
           callOnChange(newSelectedItems);
         }
@@ -140,50 +133,32 @@ class MultiDownshift extends React.Component<Props, State> {
     }
   };
 
-  isSelectedItemsPresentInProps() {
-    return this.props.selectedItems ? true : false;
-  }
+  isSelectedItemsPresentInProps = () => this.props.selectedItems != null;
 
-  getSelectedItems() {
-    if (this.props.selectedItems) {
-      return this.props.selectedItems;
-    }
-    return this.state.selectedItems;
-  }
+  getSelectedItems = () => this.props.selectedItems || this.state.selectedItems;
 
-  clearItems = () => {
-    return [];
-  };
-
-  replaceItem = (item: DropdownSelectedItem) => {
-    return [item];
-  };
+  replaceItem = (item: DropdownSelectedItem): Array<DropdownSelectedItem> => [
+    item,
+  ];
 
   removeItem = (
     item: DropdownSelectedItem,
     selectedItems: Array<DropdownSelectedItem>
-  ): Array<DropdownSelectedItem> => {
-    return selectedItems.filter(({ id }) => id !== item.id);
-  };
+  ): Array<DropdownSelectedItem> =>
+    selectedItems.filter(({ id }) => id !== item.id);
 
   addSelectedItem = (
     item: DropdownSelectedItem,
     selectedItems: Array<DropdownSelectedItem>
-  ) => {
-    return [...selectedItems, item];
-  };
+  ): Array<DropdownSelectedItem> => [...selectedItems, item];
 
   getStateAndHelpers = (
     downshift: ControllerStateAndHelpers<DropdownSelectedItem>
-  ): MultiControllerStateAndHelpers => {
-    const { removeItem } = this;
-
-    return {
-      removeItem,
-      selectedItems: this.getSelectedItems(),
-      ...downshift,
-    };
-  };
+  ): MultiControllerStateAndHelpers => ({
+    removeItem: this.removeItem,
+    selectedItems: this.getSelectedItems(),
+    ...downshift,
+  });
 
   handleInputValueChange = (inputValue: string): void => {
     this.setState({
