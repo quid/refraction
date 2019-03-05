@@ -131,7 +131,7 @@ it('onChanges gets called when selecting second value', () => {
     .simulate('click');
 
   expect(handleChange).toHaveBeenCalledWith(
-    [{ id: 22, label: 'Two' }],
+    [{ categoryId: 'a', id: 22, label: 'Two' }],
     expect.any(Object)
   );
 });
@@ -168,11 +168,11 @@ it('onChanges gets called when selecting first value', () => {
 
   expect(handleChange).toHaveBeenCalledTimes(2);
   expect(handleChange).toHaveBeenCalledWith(
-    [{ id: 10, label: 'One' }],
+    [{ categoryId: 'a', id: 10, label: 'One' }],
     expect.any(Object)
   );
   expect(handleChange).toHaveBeenCalledWith(
-    [{ id: 22, label: 'Two' }],
+    [{ categoryId: 'a', id: 22, label: 'Two' }],
     expect.any(Object)
   );
 });
@@ -203,7 +203,10 @@ it('multiselect should be visible in the onChange callback', () => {
 
   expect(handleChange).toHaveBeenCalledTimes(2);
   expect(handleChange).toHaveBeenCalledWith(
-    [{ id: 10, label: 'One' }, { id: 22, label: 'Two' }],
+    [
+      { categoryId: 'a', id: 10, label: 'One' },
+      { categoryId: 'a', id: 22, label: 'Two' },
+    ],
     expect.any(Object)
   );
 });
@@ -308,7 +311,7 @@ it('using arrow down and return key should select another element', () => {
   wrapper.find(Input).simulate('keyDown', { key: 'Enter', keyCode: 13 });
 
   expect(handleSelect).toHaveBeenCalledWith(
-    { id: 10, label: 'One' },
+    { categoryId: 'a', id: 10, label: 'One' },
     expect.any(Object)
   );
 });
@@ -369,7 +372,7 @@ it('Two clicks on the same item should call onChange twice, at the end nothing s
 
   expect(handleChange).toHaveBeenCalledTimes(2);
   expect(handleChange).toHaveBeenCalledWith(
-    [{ id: 10, label: 'One' }],
+    [{ categoryId: 'a', id: 10, label: 'One' }],
     expect.any(Object)
   );
   expect(handleChange).toHaveBeenCalledWith([], expect.any(Object));
@@ -605,7 +608,7 @@ it('onChange should be called with the newly selected items', () => {
     .simulate('click');
 
   expect(onChangeFn).toHaveBeenCalledWith(
-    [{ id: 22, label: 'Two' }],
+    [{ categoryId: 'a', id: 22, label: 'Two' }],
     expect.anything()
   );
 });
