@@ -75,7 +75,7 @@ const Dropdown = ({
   children,
   name = 'dropdown',
   twoColumn = true,
-  defaultSelectedItems = [],
+  defaultSelectedItems,
   selectedItems,
   defaultIsOpen = false,
   placement = 'bottom-start',
@@ -86,7 +86,7 @@ const Dropdown = ({
   highlight = false,
   ...props
 }: Props) => {
-  if (defaultSelectedItems.length && selectedItems != null) {
+  if (defaultSelectedItems != null && selectedItems != null) {
     console.error(
       'Warning: App contains an input of type undefined with both `selectedItems` and `defaultSelectedItems` props. Dropdown elements must be either controlled or uncontrolled (specify either the selectedItems prop, or the defaultSelectedItems prop, but not both). Decide between using a controlled or uncontrolled input element and remove one of these props.'
     );
@@ -102,7 +102,7 @@ const Dropdown = ({
       <MultiDownshift
         multiselect={multiselect}
         itemToString={item => (item && item.label ? item.label : '')}
-        defaultSelectedItems={defaultSelectedItems}
+        defaultSelectedItems={defaultSelectedItems || []}
         selectedItems={selectedItems}
         defaultIsOpen={defaultIsOpen}
         onChange={onChange}

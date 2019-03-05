@@ -665,6 +665,8 @@ it('changing value and not updating it on change on controlled component should 
 });
 
 it('console error called when both defaultSelectedItems and selectedItems are provided', () => {
+  // $FlowIgnoreMe(fzivolo): we don't want to pollute the Jest output
+  console.error = jest.fn();
   const spy = jest.spyOn(console, 'error');
 
   mount(
