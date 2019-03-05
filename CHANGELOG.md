@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.35.1](https://github.com/quid/refraction/compare/v1.35.0...v1.35.1) (2019-03-05)
+
+
+### Bug Fixes
+
+* don’t type error on undefined defaultSelectedItems ([13275ae](https://github.com/quid/refraction/commit/13275ae))
+
+
+
+
+
 # [1.35.0](https://github.com/quid/refraction/compare/v1.34.1...v1.35.0) (2019-03-02)
 
 
