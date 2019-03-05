@@ -36,6 +36,6 @@ export type DropdownSelectedItem = {
 };
 
 export type GetItemProps = $PropertyType<
-  PropGetters<DropdownSelectedItem>,
+  PropGetters<DropdownItem>,
   'getItemProps'
 >;
