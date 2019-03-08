@@ -24,6 +24,7 @@
     "@emotion/styled": "^10.0.6",
     "@emotion/styled-base": "^10.0.4",
     "@quid/react-core": "^1.36.1",
+    "@quid/theme": "^1.30.4",
     "date-fns": "^1.30.1",
     "emotion": "^10.0.6"
   },
