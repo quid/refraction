@@ -108,6 +108,11 @@ it('applies Button classes to child if child is Icon with near text', () => {
   ).toHaveLength(2);
 });
 
+it('renders a Button with type=submit', () => {
+  const wrapper = mount(<Button type="submit">Foobar</Button>);
+  expect(wrapper.find('button').props().type).toBe('submit');
+});
+
 // it('renders properly with isGroupChild property', () => {
 //   const wrapper = mount(<Button isGroupChild />);
 //   expect(wrapper).toMatchSnapshot();
