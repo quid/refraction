@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-date-picker",
-  "version": "1.36.1",
+  "version": "1.36.2",
   "description": "Lightweight date picker component",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
