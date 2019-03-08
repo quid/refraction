@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.36.1](https://github.com/quid/refraction/compare/v1.36.0...v1.36.1) (2019-03-08)
+
+
+### Bug Fixes
+
+* default Button to type=button ([ba6a98d](https://github.com/quid/refraction/commit/ba6a98d))
+
+
+
+
+
 # [1.36.0](https://github.com/quid/refraction/compare/v1.35.1...v1.36.0) (2019-03-05)
 
 
