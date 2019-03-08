@@ -74,9 +74,11 @@ exports[`renders a Button with small size 1`] = `
 <Button
   importance="secondary"
   size="small"
+  type="button"
 >
   <button
     className="emotion-0 emotion-1"
+    type="button"
   >
     Hello, World!
   </button>
@@ -167,10 +169,12 @@ exports[`renders a disabled and transparent Button 1`] = `
   importance="secondary"
   size="regular"
   transparent={true}
+  type="button"
 >
   <button
     className="emotion-0 emotion-1"
     disabled={true}
+    type="button"
   >
     Hello, World!
   </button>
@@ -251,10 +255,12 @@ exports[`renders the expected markup 1`] = `
   data-action="foo"
   importance="secondary"
   size="regular"
+  type="button"
 >
   <button
     className="emotion-0 emotion-1"
     data-action="foo"
+    type="button"
   >
     Hello, World!
   </button>

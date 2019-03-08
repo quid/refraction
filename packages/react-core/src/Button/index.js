@@ -46,6 +46,8 @@ type Props = {
   to?: string | Object,
   /** when `true`, the button can't be clicked */
   disabled?: boolean,
+  /** type to apply to the button HTMLelement when rendering a "real" button */
+  type?: 'button' | 'submit' | 'reset',
 };
 
 const hoverMod = color =>
@@ -70,7 +72,16 @@ const reset = css`
 `;
 
 const Button = styled(
-  ({ to, href, transparent, size, importance, disabled, ...props }: Props) => {
+  ({
+    to,
+    href,
+    transparent,
+    size,
+    importance,
+    disabled,
+    type,
+    ...props
+  }: Props) => {
     let Tag, specificProps;
     if (to && !disabled) {
       Tag = Link;
@@ -80,7 +91,7 @@ const Button = styled(
       specificProps = { href };
     } else {
       Tag = 'button';
-      specificProps = { disabled };
+      specificProps = { disabled, type };
     }
 
     return <Tag {...specificProps} {...props} />;
@@ -181,6 +192,7 @@ const Button = styled(
 Button.defaultProps = {
   importance: 'secondary',
   size: 'regular',
+  type: 'button',
 };
 
 // @component
