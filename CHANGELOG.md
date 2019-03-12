@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.37.0](https://github.com/quid/refraction/compare/v1.36.2...v1.37.0) (2019-03-12)
+
+
+### Features
+
+* add renderArrowIcon support to Breadcrumb ([5c657ac](https://github.com/quid/refraction/commit/5c657ac))
+* adds navlink to breadcrumbs ([53c74eb](https://github.com/quid/refraction/commit/53c74eb))
+
+
+
+
+
 ## [1.36.2](https://github.com/quid/refraction/compare/v1.36.1...v1.36.2) (2019-03-08)
 
 
