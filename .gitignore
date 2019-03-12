@@ -3,7 +3,6 @@ node_modules
 styleguide
 dist
 coverage
-.npmrc
 
 # OS generated files
 .DS_Store
