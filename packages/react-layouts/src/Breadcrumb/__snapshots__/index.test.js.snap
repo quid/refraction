@@ -61,8 +61,16 @@ exports[`renders a default NavLink 1`] = `
 </NavLink>
 `;
 
+exports[`renders an item where label as defined 1`] = `
+<div
+  data-context="label"
+>
+  Children
+</div>
+`;
+
 exports[`renders the expected markup 1`] = `
-.emotion-27 {
+.emotion-42 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -74,7 +82,7 @@ exports[`renders the expected markup 1`] = `
   align-items: baseline;
 }
 
-.emotion-0 {
+.emotion-1 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
@@ -87,7 +95,7 @@ exports[`renders the expected markup 1`] = `
   text-decoration: none;
 }
 
-.emotion-2 {
+.emotion-3 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
@@ -95,7 +103,7 @@ exports[`renders the expected markup 1`] = `
   font-weight: bold;
 }
 
-.emotion-5 {
+.emotion-8 {
   padding-left: 10px;
   padding-right: 10px;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
@@ -108,7 +116,7 @@ exports[`renders the expected markup 1`] = `
   color: #8F9BA3;
 }
 
-.emotion-3 {
+.emotion-6 {
   font-family: 'quid-icons' !important;
   speak: none;
   font-style: normal;
@@ -140,7 +148,7 @@ exports[`renders the expected markup 1`] = `
   width: 1em;
 }
 
-.emotion-19 {
+.emotion-29 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
@@ -159,7 +167,7 @@ exports[`renders the expected markup 1`] = `
   cursor: default;
 }
 
-.emotion-25 {
+.emotion-38 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
@@ -208,168 +216,218 @@ exports[`renders the expected markup 1`] = `
     ]
   }
 >
-  <ul
-    className="emotion-27 emotion-28"
+  <nav
+    className="emotion-42 emotion-43"
   >
-    <NavLink
-      disabled={false}
-      emphasized={false}
-      external={false}
-      key="0"
-      to="/"
+    <Item
+      index={0}
+      key="0_item"
+      label="Project Name 13"
+      path="/"
     >
-      <ForwardRef(render)>
-        <a
-          aria-current="page"
-          className="emotion-0 emotion-1 emotion-2"
-          href="/"
-          onClick={[Function]}
-          style={Object {}}
-        >
-          Project Name 13
-        </a>
-      </ForwardRef(render)>
-    </NavLink>
+      <NavLink
+        className="emotion-4 emotion-0"
+        disabled={false}
+        emphasized={false}
+        external={false}
+        key="0"
+        to="/"
+      >
+        <ForwardRef(render)>
+          <a
+            aria-current="page"
+            className="emotion-0 emotion-1 emotion-2 emotion-3"
+            href="/"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Project Name 13
+          </a>
+        </ForwardRef(render)>
+      </NavLink>
+    </Item>
     <Arrow
       key="0_arrow"
     >
       <div
-        className="emotion-5 emotion-6"
+        className="emotion-8 emotion-9"
       >
         <Icon
           name="angle_double_right"
           squared={true}
         >
           <i
-            className="emotion-3 emotion-4"
+            className="emotion-6 emotion-7"
           >
             angle_double_right
           </i>
         </Icon>
       </div>
     </Arrow>
-    <NavLink
-      disabled={false}
-      emphasized={false}
-      external={false}
-      key="1"
-      to="/search"
+    <Item
+      index={1}
+      key="1_item"
+      label="SEARCH"
+      path="/search"
+      tooltip="project AND name"
     >
-      <ForwardRef(render)>
-        <a
-          aria-current={null}
-          className="emotion-0 emotion-1"
-          href="/search"
-          onClick={[Function]}
-        >
-          <span
-            id="breadcrumb-1-tooltip"
-            title="project AND name"
+      <NavLink
+        className="emotion-4 emotion-0"
+        disabled={false}
+        emphasized={false}
+        external={false}
+        key="1"
+        to="/search"
+      >
+        <ForwardRef(render)>
+          <a
+            aria-current={null}
+            className="emotion-0 emotion-1 emotion-2"
+            href="/search"
+            onClick={[Function]}
           >
-            SEARCH
-          </span>
-        </a>
-      </ForwardRef(render)>
-    </NavLink>
+            <span
+              id="breadcrumb-1-tooltip"
+              title="project AND name"
+            >
+              SEARCH
+            </span>
+          </a>
+        </ForwardRef(render)>
+      </NavLink>
+    </Item>
     <Arrow
       key="1_arrow"
     >
       <div
-        className="emotion-5 emotion-6"
+        className="emotion-8 emotion-9"
       >
         <Icon
           name="angle_right"
           squared={true}
         >
           <i
-            className="emotion-3 emotion-4"
+            className="emotion-6 emotion-7"
           >
             angle_right
           </i>
         </Icon>
       </div>
     </Arrow>
-    <NavLink
-      disabled={false}
-      emphasized={false}
-      external={false}
-      key="2"
-      to="/search/review"
+    <Item
+      index={2}
+      key="2_item"
+      label="REVIEW"
+      path="/search/review"
     >
-      <ForwardRef(render)>
-        <a
-          aria-current={null}
-          className="emotion-0 emotion-1"
-          href="/search/review"
-          onClick={[Function]}
-        >
-          REVIEW
-        </a>
-      </ForwardRef(render)>
-    </NavLink>
+      <NavLink
+        className="emotion-4 emotion-0"
+        disabled={false}
+        emphasized={false}
+        external={false}
+        key="2"
+        to="/search/review"
+      >
+        <ForwardRef(render)>
+          <a
+            aria-current={null}
+            className="emotion-0 emotion-1 emotion-2"
+            href="/search/review"
+            onClick={[Function]}
+          >
+            REVIEW
+          </a>
+        </ForwardRef(render)>
+      </NavLink>
+    </Item>
     <Arrow
       key="2_arrow"
     >
       <div
-        className="emotion-5 emotion-6"
+        className="emotion-8 emotion-9"
       >
         <Icon
           name="angle_right"
           squared={true}
         >
           <i
-            className="emotion-3 emotion-4"
+            className="emotion-6 emotion-7"
           >
             angle_right
           </i>
         </Icon>
       </div>
     </Arrow>
-    <NavLink
+    <Item
       disabled={true}
-      emphasized={false}
-      external={false}
-      key="3"
-      to="/search/review/analyze"
+      index={3}
+      key="3_item"
+      label="ANALYZE"
+      path="/search/review/analyze"
     >
-      <a
-        className="emotion-19 emotion-1"
+      <NavLink
+        className="emotion-4 emotion-0"
+        disabled={true}
+        emphasized={false}
+        external={false}
+        key="3"
+        to="/search/review/analyze"
       >
-        ANALYZE
-      </a>
-    </NavLink>
+        <a
+          className="emotion-0 emotion-29 emotion-2"
+        >
+          ANALYZE
+        </a>
+      </NavLink>
+    </Item>
     <Arrow
       key="3_arrow"
     >
       <div
-        className="emotion-5 emotion-6"
+        className="emotion-8 emotion-9"
       >
         <Icon
           name="angle_right"
           squared={true}
         >
           <i
-            className="emotion-3 emotion-4"
+            className="emotion-6 emotion-7"
           >
             angle_right
           </i>
         </Icon>
       </div>
     </Arrow>
-    <NavLink
-      disabled={false}
+    <Item
       emphasized={true}
       external={true}
-      key="4"
-      to="/search/review/analyze/share"
+      index={4}
+      key="4_item"
+      label="SHARE"
+      path="/search/review/analyze/share"
     >
-      <a
-        className="emotion-25 emotion-1"
-        href="/search/review/analyze/share"
+      <NavLink
+        className="emotion-4 emotion-0"
+        disabled={false}
+        emphasized={true}
+        external={true}
+        key="4"
+        to="/search/review/analyze/share"
       >
-        SHARE
-      </a>
-    </NavLink>
-  </ul>
+        <a
+          className="emotion-0 emotion-38 emotion-2"
+          href="/search/review/analyze/share"
+        >
+          SHARE
+        </a>
+      </NavLink>
+    </Item>
+  </nav>
 </Breadcrumb>
+`;
+
+exports[`renders x amount of Breadcrumb separators 1`] = `
+<div
+  data-context="separator"
+/>
 `;

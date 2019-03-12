@@ -69,3 +69,35 @@ it('renders a NavLink', () => {
 
   expect(wrapper).toMatchSnapshot();
 });
+
+it('renders x amount of Breadcrumb separators', () => {
+  const wrapper = mount(
+    <BrowserRouter>
+      <Breadcrumb items={items} separator={<div data-context="separator" />} />
+    </BrowserRouter>
+  );
+
+  expect(wrapper.find('[data-context="separator"]').length).toBe(
+    items.length - 1
+  );
+
+  expect(wrapper.find('[data-context="separator"]').first()).toMatchSnapshot();
+});
+
+it('renders an item where label as defined', () => {
+  const itemsWithChildren = [
+    ...items,
+    {
+      label: <div data-context="label">Children</div>,
+
+      path: '/children',
+    },
+  ];
+  const wrapper = mount(
+    <BrowserRouter>
+      <Breadcrumb items={itemsWithChildren} />
+    </BrowserRouter>
+  );
+
+  expect(wrapper.find('[data-context="label"]').first()).toMatchSnapshot();
+});

@@ -5,24 +5,27 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @flow
-import React from 'react';
+import * as React from 'react';
 import NavLink from './NavLink';
 import { Icon } from '@quid/react-core';
 import styled from '@emotion/styled/macro';
 import { textStyles } from '@quid/theme';
 import { sizes } from '@quid/theme';
 
+type BreadcrumbItem = {
+  label: React.Node,
+  path: string,
+  arrowIcon?: string,
+  disabled?: boolean,
+  external?: boolean,
+  emphasized?: boolean,
+  tooltip?: string,
+};
+
 export type Props = {
-  items: Array<{
-    label: React$Node,
-    path: string,
-    arrowIcon?: string,
-    disabled?: boolean,
-    external?: boolean,
-    emphasized?: boolean,
-    tooltip?: string,
-  }>,
+  items: Array<BreadcrumbItem>,
   className?: string,
+  separator?: React.Node,
 };
 
 const Arrow = styled.div`
@@ -31,25 +34,29 @@ const Arrow = styled.div`
   ${textStyles('normal', 'disabled')};
 `;
 
-function genItem(
-  {
+type ItemType = BreadcrumbItem & {
+  index: number,
+  component?: React.Node,
+};
+
+const Item = styled(
+  ({
+    index,
     label,
     path,
-    arrowIcon = 'angle_right',
     disabled = false,
     external = false,
     emphasized = false,
     tooltip = '',
-  },
-  index
-) {
-  return [
+    ...props
+  }: ItemType) => (
     <NavLink
       to={path}
       emphasized={emphasized}
       external={external}
       disabled={disabled}
       key={index}
+      {...props}
     >
       {tooltip ? (
         <span title={tooltip} id={`breadcrumb-${index}-tooltip`}>
@@ -58,25 +65,40 @@ function genItem(
       ) : (
         label
       )}
-    </NavLink>,
-    <Arrow key={`${index}_arrow`}>
-      <Icon name={arrowIcon} />
-    </Arrow>,
-  ];
-}
+    </NavLink>
+  )
+)``;
 
-const Breadcrumb = styled(({ items, ...props }: Props) => {
-  const processedItems = items
-    .map(genItem)
-    .reduce((a, b) => a.concat(b), [])
-    .slice(0, -1);
+const Breadcrumb = styled(({ items, separator, ...props }: Props) => (
+  <nav {...props}>
+    {items.reduce((accumulator, accItem, index) => {
+      const { arrowIcon = 'angle_right', ...item } = accItem;
+      const isLast = items.length === index + 1;
+      accumulator.push(<Item key={`${index}_item`} index={index} {...item} />);
 
-  return <ul {...props}>{processedItems}</ul>;
-})`
+      if (isLast === false) {
+        if (separator) {
+          accumulator.push(
+            <React.Fragment key={`${index}_arrow`}>{separator}</React.Fragment>
+          );
+        } else {
+          accumulator.push(
+            <Arrow key={`${index}_arrow`}>
+              <Icon name={arrowIcon} />
+            </Arrow>
+          );
+        }
+      }
+      return accumulator;
+    }, [])}
+  </nav>
+))`
   display: flex;
   padding: 0;
   align-items: baseline;
 `;
+
+Breadcrumb.Item = Item;
 
 // @component
 export default Breadcrumb;
