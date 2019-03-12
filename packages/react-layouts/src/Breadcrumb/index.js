@@ -78,5 +78,7 @@ const Breadcrumb = styled(({ items, ...props }: Props) => {
   align-items: baseline;
 `;
 
+Breadcrumb.NavLink = NavLink;
+
 // @component
 export default Breadcrumb;
