@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @flow
-export default (...refs: Array<any>) => (ref: any) => {
+const mergeRefs = (...refs: Array<any>) => (ref: any) => {
   refs.forEach(resolvableRef => {
     if (typeof resolvableRef === 'function') {
       resolvableRef(ref);
@@ -14,3 +14,5 @@ export default (...refs: Array<any>) => (ref: any) => {
     }
   });
 };
+
+export default mergeRefs;
