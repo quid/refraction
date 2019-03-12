@@ -26,6 +26,8 @@ export type Props = {
   className?: string,
 };
 
+const flatten = (a, b) => a.concat(b);
+
 const Arrow = styled.div`
   padding-left: ${sizes.regular};
   padding-right: ${sizes.regular};
@@ -73,9 +75,9 @@ function genItem(
 const Breadcrumb = styled(({ items, ...props }: Props) => {
   const processedItems = React.Children.toArray(
     items
-      .map(genItem)
-      .reduce((a, b) => a.concat(b), [])
-      .slice(0, -1)
+      .map(genItem) // generate couple of [[item, arrow], [item, arrow], ...]
+      .reduce(flatten, []) // flatten array
+      .slice(0, -1) // drop last item
   );
 
   return <ul {...props}>{processedItems}</ul>;
