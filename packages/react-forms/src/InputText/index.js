@@ -11,7 +11,7 @@ import { ClassNames } from '@emotion/core';
 import { textStyles, withFallback as wf } from '@quid/theme';
 import InvalidHandler from '@quid/react-invalid-handler';
 import { INPUT_ATTRIBUTES, omit, include } from '../utils/inputPropsFilters';
-import mergeRefs from '../utils/mergeRefs';
+import mergeRefs from '@quid/merge-refs';
 
 type RenderProp<P> = P => React.Node;
 

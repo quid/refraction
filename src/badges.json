@@ -1,5 +1,6 @@
 {
   "oss": [
+    "merge-refs",
     "react-ellipsis",
     "react-invalid-handler",
     "react-mouse-outside",

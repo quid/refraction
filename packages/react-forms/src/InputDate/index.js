@@ -12,7 +12,7 @@ import InputText from '../InputText';
 import Calendar from '@quid/react-date-picker';
 import { Icon } from '@quid/react-core';
 import MouseOutside from '@quid/react-mouse-outside';
-import mergeRefs from '../utils/mergeRefs';
+import mergeRefs from '@quid/merge-refs';
 
 function toYYYYMMDD(date) {
   const day = ('0' + date.getDate()).slice(-2);

@@ -6,7 +6,7 @@
  */
 // @flow
 import * as React from 'react';
-import mergeRefs from './mergeRefs';
+import mergeRefs from '.';
 
 it('merges two React refs', () => {
   const ref = document.createElement('div');

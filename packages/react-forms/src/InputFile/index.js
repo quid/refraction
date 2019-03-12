@@ -8,7 +8,7 @@
 import * as React from 'react';
 import styled from '@emotion/styled/macro';
 import callAll from '../utils/callAll';
-import mergeRefs from '../utils/mergeRefs';
+import mergeRefs from '@quid/merge-refs';
 import InputGroup from '../InputGroup';
 import InputText from '../InputText';
 import Button from '../Button';
