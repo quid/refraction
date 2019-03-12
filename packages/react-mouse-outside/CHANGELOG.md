@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.1](https://github.com/quid/refraction/tree/master/packages/react-mouse-outside/compare/v1.38.0...v1.38.1) (2019-03-12)
+
+
+### Bug Fixes
+
+* set all packages to public by default ([6a4d961](https://github.com/quid/refraction/tree/master/packages/react-mouse-outside/commit/6a4d961))
+
+
+
+
+
 ## [1.32.1](https://github.com/quid/refraction/tree/master/packages/react-mouse-outside/compare/v1.32.0...v1.32.1) (2019-02-16)
 
 

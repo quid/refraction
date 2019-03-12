@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-ellipsis",
-  "version": "1.26.0",
+  "version": "1.38.1",
   "description": "Trim multi-line text and add ellipsis to it",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",

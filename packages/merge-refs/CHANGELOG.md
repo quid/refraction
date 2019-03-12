@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.1](https://github.com/quid/refraction/tree/master/packages/merge-refs/compare/v1.38.0...v1.38.1) (2019-03-12)
+
+
+### Bug Fixes
+
+* set all packages to public by default ([6a4d961](https://github.com/quid/refraction/tree/master/packages/merge-refs/commit/6a4d961))
+
+
+
+
+
 # [1.38.0](https://github.com/quid/refraction/tree/master/packages/merge-refs/compare/v1.37.0...v1.38.0) (2019-03-12)
 
 
