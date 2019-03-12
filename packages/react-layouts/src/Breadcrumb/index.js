@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @flow
-import React from 'react';
+import * as React from 'react';
 import NavLink from './NavLink';
 import { Icon } from '@quid/react-core';
 import styled from '@emotion/styled/macro';
@@ -16,6 +16,7 @@ export type Props = {
   items: Array<{
     label: React$Node,
     path: string,
+    renderArrowIcon?: ({ index: number }) => React.Node,
     arrowIcon?: string,
     disabled?: boolean,
     external?: boolean,
@@ -24,6 +25,8 @@ export type Props = {
   }>,
   className?: string,
 };
+
+const flatten = (a, b) => a.concat(b);
 
 const Arrow = styled.div`
   padding-left: ${sizes.regular};
@@ -36,6 +39,7 @@ function genItem(
     label,
     path,
     arrowIcon = 'angle_right',
+    renderArrowIcon,
     disabled = false,
     external = false,
     emphasized = false,
@@ -49,7 +53,6 @@ function genItem(
       emphasized={emphasized}
       external={external}
       disabled={disabled}
-      key={index}
     >
       {tooltip ? (
         <span title={tooltip} id={`breadcrumb-${index}-tooltip`}>
@@ -59,17 +62,23 @@ function genItem(
         label
       )}
     </NavLink>,
-    <Arrow key={`${index}_arrow`}>
-      <Icon name={arrowIcon} />
-    </Arrow>,
+    renderArrowIcon ? (
+      renderArrowIcon({ index })
+    ) : (
+      <Arrow>
+        <Icon name={arrowIcon} />
+      </Arrow>
+    ),
   ];
 }
 
 const Breadcrumb = styled(({ items, ...props }: Props) => {
-  const processedItems = items
-    .map(genItem)
-    .reduce((a, b) => a.concat(b), [])
-    .slice(0, -1);
+  const processedItems = React.Children.toArray(
+    items
+      .map(genItem) // generate couple of [[item, arrow], [item, arrow], ...]
+      .reduce(flatten, []) // flatten array
+      .slice(0, -1) // drop last item
+  );
 
   return <ul {...props}>{processedItems}</ul>;
 })`

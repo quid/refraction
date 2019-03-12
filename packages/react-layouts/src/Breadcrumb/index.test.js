@@ -69,3 +69,27 @@ it('renders a NavLink', () => {
 
   expect(wrapper).toMatchSnapshot();
 });
+
+it('renders a custom arrowIcon', () => {
+  const CustomArrow = ({ foo }) => <div>{foo}</div>;
+
+  const wrapper = mount(
+    <BrowserRouter>
+      <Breadcrumb
+        items={[
+          {
+            label: 'SHARE',
+            path: '/',
+            renderArrowIcon: ({ index }) => <CustomArrow foo={index} />,
+          },
+          {
+            label: 'FOO',
+            path: '/foo',
+          },
+        ]}
+      />
+    </BrowserRouter>
+  );
+
+  expect(wrapper.find(CustomArrow)).toMatchSnapshot();
+});
