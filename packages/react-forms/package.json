@@ -15,6 +15,9 @@
     "prepare": "microbundle build --jsx React.createElement && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
     "test": "cd ../.. && yarn test --testPathPattern packages/react-forms"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.4",
     "@emotion/css": "^10.0.4",

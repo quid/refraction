@@ -10,6 +10,9 @@
     "type": "git",
     "url": "https://github.com/quid/refraction/tree/master/packages/<%= packageName %>"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "microbundle watch",
     "prepare": "microbundle build --jsx React.createElement && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
