@@ -33,6 +33,12 @@ exports[`renders a NavLink 1`] = `
 </NavLink>
 `;
 
+exports[`renders a custom arrowIcon 1`] = `
+<div>
+  0
+</div>
+`;
+
 exports[`renders a default NavLink 1`] = `
 .emotion-0 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
@@ -215,7 +221,7 @@ exports[`renders the expected markup 1`] = `
       disabled={false}
       emphasized={false}
       external={false}
-      key="0"
+      key=".0"
       to="/"
     >
       <ForwardRef(render)>
@@ -231,7 +237,7 @@ exports[`renders the expected markup 1`] = `
       </ForwardRef(render)>
     </NavLink>
     <Arrow
-      key="0_arrow"
+      key=".1"
     >
       <div
         className="emotion-5 emotion-6"
@@ -252,7 +258,7 @@ exports[`renders the expected markup 1`] = `
       disabled={false}
       emphasized={false}
       external={false}
-      key="1"
+      key=".2"
       to="/search"
     >
       <ForwardRef(render)>
@@ -272,7 +278,7 @@ exports[`renders the expected markup 1`] = `
       </ForwardRef(render)>
     </NavLink>
     <Arrow
-      key="1_arrow"
+      key=".3"
     >
       <div
         className="emotion-5 emotion-6"
@@ -293,7 +299,7 @@ exports[`renders the expected markup 1`] = `
       disabled={false}
       emphasized={false}
       external={false}
-      key="2"
+      key=".4"
       to="/search/review"
     >
       <ForwardRef(render)>
@@ -308,7 +314,7 @@ exports[`renders the expected markup 1`] = `
       </ForwardRef(render)>
     </NavLink>
     <Arrow
-      key="2_arrow"
+      key=".5"
     >
       <div
         className="emotion-5 emotion-6"
@@ -329,7 +335,7 @@ exports[`renders the expected markup 1`] = `
       disabled={true}
       emphasized={false}
       external={false}
-      key="3"
+      key=".6"
       to="/search/review/analyze"
     >
       <a
@@ -339,7 +345,7 @@ exports[`renders the expected markup 1`] = `
       </a>
     </NavLink>
     <Arrow
-      key="3_arrow"
+      key=".7"
     >
       <div
         className="emotion-5 emotion-6"
@@ -360,7 +366,7 @@ exports[`renders the expected markup 1`] = `
       disabled={false}
       emphasized={true}
       external={true}
-      key="4"
+      key=".8"
       to="/search/review/analyze/share"
     >
       <a
