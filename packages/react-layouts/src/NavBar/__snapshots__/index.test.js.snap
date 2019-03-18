@@ -17,11 +17,9 @@ exports[`renders the expected markup 1`] = `
 }
 
 .emotion-0 {
-  padding-top: calc(3px + 5px);
+  padding-top: 5px;
   padding-left: 5px;
   padding-bottom: 5px;
-  min-width: 0;
-  height: 100%;
 }
 
 .emotion-2 {
@@ -30,6 +28,7 @@ exports[`renders the expected markup 1`] = `
 
 .emotion-4 {
   margin-left: auto;
+  padding-left: calc(5px * 3);
   padding-right: 5px;
 }
 
