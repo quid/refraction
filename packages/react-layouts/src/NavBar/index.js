@@ -7,7 +7,7 @@
 // @flow
 import * as React from 'react';
 import styled from '@emotion/styled/macro';
-import { sizes } from '@quid/theme';
+import { withFallback as wf } from '@quid/theme';
 
 type Props = {
   logo?: React.Node,
@@ -15,14 +15,12 @@ type Props = {
   tools?: React.Node,
 };
 
-const PADDING = sizes.small;
+const PADDING = wf(({ theme }) => theme.sizes.small);
 
 const Left = styled.div`
-  padding-top: calc(3px + ${PADDING});
+  padding-top: ${PADDING};
   padding-left: ${PADDING};
   padding-bottom: ${PADDING};
-  min-width: 0;
-  height: 100%;
 `;
 
 const Middle = styled.div`
@@ -31,6 +29,7 @@ const Middle = styled.div`
 
 const Right = styled.div`
   margin-left: auto;
+  padding-left: calc(${PADDING} * 3);
   padding-right: ${PADDING};
 `;
 
