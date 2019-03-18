@@ -35,7 +35,7 @@
     "nanoid": "^2.0.0",
     "react-popper": "^1.3.3",
     "react-resize-aware": "^2.7.2",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^5.0.0"
   },
   "devDependencies": {
     "flow-copy-source": "^2.0.2",

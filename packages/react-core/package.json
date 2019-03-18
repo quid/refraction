@@ -21,7 +21,7 @@
   "devDependencies": {
     "flow-copy-source": "^2.0.2",
     "microbundle": "^0.8.3",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^5.0.0"
   },
   "dependencies": {
     "@emotion/core": "^10.0.4",
@@ -33,6 +33,6 @@
   },
   "peerDependencies": {
     "react": "15||16",
-    "react-router-dom": "^4.0.0"
+    "react-router-dom": "^4.0.0||^5.0.0"
   }
 }
