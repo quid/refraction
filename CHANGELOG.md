@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.4](https://github.com/quid/refraction/compare/v1.38.3...v1.38.4) (2019-03-18)
+
+
+### Bug Fixes
+
+* support React Router v5 ([6ab0170](https://github.com/quid/refraction/commit/6ab0170))
+
+
+
+
+
 ## [1.38.3](https://github.com/quid/refraction/compare/v1.38.2...v1.38.3) (2019-03-18)
 
 

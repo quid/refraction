@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.4](https://github.com/quid/refraction/tree/master/packages/react-date-picker/compare/v1.38.3...v1.38.4) (2019-03-18)
+
+**Note:** Version bump only for package @quid/react-date-picker
+
+
+
+
+
 ## [1.38.1](https://github.com/quid/refraction/tree/master/packages/react-date-picker/compare/v1.38.0...v1.38.1) (2019-03-12)
 
 
