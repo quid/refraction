@@ -96,8 +96,12 @@ const Modal = styled(
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: ${wf(({ theme }) =>
-                  reduceOpacity(theme.colors.black, 0.6)
+                ${wf(
+                  ({ theme }) =>
+                    `background-color: ${reduceOpacity(
+                      theme.colors.black,
+                      0.6
+                    )}`
                 )({ theme })};
               `,
               overlayClassName
