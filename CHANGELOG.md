@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.2](https://github.com/quid/refraction/compare/v1.38.1...v1.38.2) (2019-03-18)
+
+
+### Bug Fixes
+
+* export Modal ([b9d06e4](https://github.com/quid/refraction/commit/b9d06e4))
+* NavBar styling issues ([c80702b](https://github.com/quid/refraction/commit/c80702b))
+
+
+
+
+
 ## [1.38.1](https://github.com/quid/refraction/compare/v1.38.0...v1.38.1) (2019-03-12)
 
 
