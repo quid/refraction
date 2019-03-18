@@ -14,6 +14,7 @@ Array [
   "Breadcrumb",
   "NavBar",
   "Tabs",
+  "Modal",
 ]
 `);
 });

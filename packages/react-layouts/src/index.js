@@ -9,3 +9,4 @@ export { default as Footer } from './Footer';
 export { default as Breadcrumb } from './Breadcrumb';
 export { default as NavBar } from './NavBar';
 export { default as Tabs } from './Tabs';
+export { default as Modal } from './Modal';
