@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.6](https://github.com/quid/refraction/tree/master/packages/react-layouts/compare/v1.38.5...v1.38.6) (2019-03-21)
+
+**Note:** Version bump only for package @quid/react-layouts
+
+
+
+
+
 ## [1.38.5](https://github.com/quid/refraction/tree/master/packages/react-layouts/compare/v1.38.4...v1.38.5) (2019-03-21)
 
 

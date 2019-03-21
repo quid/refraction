@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.6](https://github.com/quid/refraction/compare/v1.38.5...v1.38.6) (2019-03-21)
+
+
+### Performance Improvements
+
+* reduce time to first render with font-family: swap ([e7f036e](https://github.com/quid/refraction/commit/e7f036e))
+
+
+
+
+
 ## [1.38.5](https://github.com/quid/refraction/compare/v1.38.4...v1.38.5) (2019-03-21)
 
 
