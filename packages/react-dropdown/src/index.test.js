@@ -750,3 +750,90 @@ it('empty selected items should result in empty string input value ', () => {
       .props().value
   ).toBe(11);
 });
+
+it('properly switches from fully uncontrolled to fully controlled', () => {
+  const wrapper = mount(
+    <Dropdown
+      items={items}
+      defaultSelectedItems={[items[5]]}
+      defaultIsOpen={true}
+      onChange={() => {}}
+    >
+      {({ getInputProps }) => <input {...getInputProps()} />}
+    </Dropdown>
+  );
+
+  expect(
+    wrapper
+      .find('input')
+      .at(0)
+      .props().value
+  ).toBe(66);
+
+  wrapper.setProps({ defaultSelectedItems: null, selectedItems: [items[6]] });
+
+  expect(
+    wrapper
+      .find('input')
+      .at(0)
+      .props().value
+  ).toBe(77);
+});
+
+it('updates state of fully uncontrolled component', () => {
+  const wrapper = mount(
+    <Dropdown
+      items={items}
+      defaultSelectedItems={[items[5]]}
+      defaultIsOpen={true}
+      onChange={() => {}}
+    >
+      {({ getInputProps }) => <input {...getInputProps()} />}
+    </Dropdown>
+  );
+
+  expect(
+    wrapper
+      .find('input')
+      .at(0)
+      .props().value
+  ).toBe(66);
+
+  wrapper.setProps({ defaultSelectedItems: [items[6]] });
+
+  expect(
+    wrapper
+      .find('input')
+      .at(0)
+      .props().value
+  ).toBe(77);
+});
+
+it('properly switches from fully controlled to fully uncontrolled', () => {
+  const wrapper = mount(
+    <Dropdown
+      items={items}
+      selectedItems={[items[5]]}
+      defaultIsOpen={true}
+      onChange={() => {}}
+    >
+      {({ getInputProps }) => <input {...getInputProps()} />}
+    </Dropdown>
+  );
+
+  expect(
+    wrapper
+      .find('input')
+      .at(0)
+      .props().value
+  ).toBe(66);
+
+  wrapper.setProps({ selectedItems: null, defaultSelectedItems: [items[6]] });
+
+  expect(
+    wrapper
+      .find('input')
+      .at(0)
+      .props().value
+  ).toBe(77);
+});
