@@ -101,8 +101,8 @@ const Modal = styled(
                     `background-color: ${reduceOpacity(
                       theme.colors.black,
                       0.6
-                    )}`
-                )({ theme })};
+                    )};`
+                )({ theme })}
               `,
               overlayClassName
             )}
