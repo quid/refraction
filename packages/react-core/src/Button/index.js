@@ -80,6 +80,7 @@ const Button = styled(
     importance,
     disabled,
     type,
+    children,
     ...props
   }: Props) => {
     let Tag, specificProps;
@@ -94,7 +95,17 @@ const Button = styled(
       specificProps = { disabled, type };
     }
 
-    return <Tag {...specificProps} {...props} />;
+    return (
+      <Tag {...specificProps} {...props}>
+        {React.Children.map(children, node =>
+          ['string', 'number'].includes(typeof node) ? (
+            <span>{node}</span>
+          ) : (
+            node
+          )
+        )}
+      </Tag>
+    );
   }
 )`
   ${reset};
@@ -162,31 +173,33 @@ const Button = styled(
     `}
 
   ${Icon} {
-      display: block;
-      line-height: 1;
-      font-size: 1.42em;
-      margin-left: -6px;
-      margin-right: -6px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-
-      ${props =>
-        props.size === 'small' &&
-        css`
-          font-size: 1em;
-        `}
-
-      ${props =>
-        React.Children.count(props.children) > 1 &&
-        css`
-          display: inline-block;
-          position: relative;
-          font-size: 1em;
-          margin-left: 0;
-          bottom: -1px;
-          margin-right: 0.35em;
-        `}
+    display: block;
+    line-height: 1;
+    font-size: ${props => (props.size === 'small' ? 1 : 1.42)}em;
+    margin: 5px -6px;
   }
+
+  ${props =>
+    React.Children.count(props.children) > 1 &&
+    css`
+      ${Icon} {
+        display: inline-block;
+        position: relative;
+        font-size: 1em;
+        margin-left: 0;
+        bottom: -1px;
+        margin-left: 0.35em;
+        margin-right: 0;
+        &:first-child {
+          margin-right: 0.35em;
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-left: 0.35em;
+          margin-right: 0;
+        }
+      }
+    `}
 `;
 
 Button.defaultProps = {
