@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.39.0](https://github.com/quid/refraction/compare/v1.38.6...v1.39.0) (2019-04-02)
+
+
+### Features
+
+* add `renderDropdown` prop to react-dropdown ([de5a528](https://github.com/quid/refraction/commit/de5a528))
+
+
+
+
+
 ## [1.38.6](https://github.com/quid/refraction/compare/v1.38.5...v1.38.6) (2019-03-21)
 
 
