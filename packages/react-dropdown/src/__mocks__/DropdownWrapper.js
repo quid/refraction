@@ -6,7 +6,7 @@
  */
 // @flow
 
-import React from 'react';
+import * as React from 'react';
 import Dropdown from '../index';
 
 type State = {
@@ -33,10 +33,10 @@ class DropdownWrapper extends React.Component<Props, State> {
   render() {
     return (
       <Dropdown
-        items={this.props.items}
         defaultIsOpen={true}
         selectedItems={this.state.selectedItems}
         onChange={this.handleChange}
+        {...this.props}
       >
         {({ getInputProps }) => <input {...getInputProps()} />}
       </Dropdown>
