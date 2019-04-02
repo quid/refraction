@@ -156,3 +156,39 @@ const items = [
   )}
 </Dropdown>;
 ```
+
+#### Dropdown with custom render function:
+
+```js
+const ReactDOM = require('react-dom');
+
+const items = [
+  { id: 1, label: 'Alaska airlines' },
+  { id: 2, label: 'Allegiant Air' },
+  { id: 3, label: 'American Airlines' },
+  { id: 4, label: 'Delta Air Lines' },
+  { id: 5, label: 'Frontier Airlines' },
+  { id: 6, label: 'Hawaiian Airlines' },
+  { id: 7, label: 'JetBlue Airways' },
+  { id: 8, label: 'Southwest Airlines' },
+  { id: 9, label: 'Spirit Airlines' },
+  { id: 10, label: 'Sun Country Airlines' },
+  { id: 11, label: 'United Airlines' },
+];
+<Dropdown
+  items={items}
+  useFilter={true}
+  highlight={true}
+  renderDropdown={({ dropdown }) =>
+    ReactDOM.createPortal(dropdown, document.querySelector('#rsg-root'))
+  }
+>
+  {({ getInputProps }) => (
+    <InputText
+      style={{ width: 300 }}
+      placeholder="Type the word 'airlines' to see highlights..."
+      {...getInputProps()}
+    />
+  )}
+</Dropdown>;
+```

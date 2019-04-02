@@ -59,11 +59,14 @@ type Props = {
     Array<DropdownSelectedItem>,
     MultiControllerStateAndHelpers
   ) => void,
+  renderDropdown?: ({ dropdown: React.Node }) => React.Node,
 };
 
 const DropdownContainer = styled.div`
   display: inline-block;
 `;
+
+const defaultRenderDropdown = ({ dropdown }) => dropdown;
 
 /** @visibleName Usage example */
 const Dropdown = ({
@@ -84,6 +87,7 @@ const Dropdown = ({
   onChange,
   onSelect,
   highlight = false,
+  renderDropdown = defaultRenderDropdown,
   ...props
 }: Props) => {
   if (defaultSelectedItems != null && selectedItems != null) {
@@ -156,22 +160,25 @@ const Dropdown = ({
                       })
                     }
                   </Reference>
-                  {isOpen && (
-                    <DropdownList
-                      ref={ref}
-                      style={style}
-                      twoColumn={twoColumn}
-                      items={items}
-                      categories={categories}
-                      inputValue={inputValue}
-                      getItemProps={getItemProps}
-                      useFilter={useFilter}
-                      filterFn={filterFn}
-                      highlightedIndex={highlightedIndex}
-                      selectedItems={selectedItems}
-                      highlight={highlight}
-                    />
-                  )}
+                  {isOpen &&
+                    renderDropdown({
+                      dropdown: (
+                        <DropdownList
+                          ref={ref}
+                          style={style}
+                          twoColumn={twoColumn}
+                          items={items}
+                          categories={categories}
+                          inputValue={inputValue}
+                          getItemProps={getItemProps}
+                          useFilter={useFilter}
+                          filterFn={filterFn}
+                          highlightedIndex={highlightedIndex}
+                          selectedItems={selectedItems}
+                          highlight={highlight}
+                        />
+                      ),
+                    })}
                 </DevFragment>
               )}
             </Popper>

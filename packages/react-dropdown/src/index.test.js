@@ -750,3 +750,18 @@ it('empty selected items should result in empty string input value ', () => {
       .props().value
   ).toBe(11);
 });
+
+it('custom renderDropdown function should render', () => {
+  const wrapper = mount(
+    <DropdownWrapper
+      initialSelectedItems={[]}
+      items={[{ id: 11, label: 'asd' }]}
+      defaultIsOpen={true}
+      renderDropdown={({ dropdown }) => <div id="foobar">{dropdown}</div>}
+    />
+  );
+
+  expect(wrapper.find('#foobar')).toHaveLength(1);
+
+  expect(wrapper.find('ul li').hostNodes().length > 0).toBe(true);
+});
