@@ -72,41 +72,35 @@ const reset = css`
 `;
 
 const Button = styled(
-  ({
-    to,
-    href,
-    transparent,
-    size,
-    importance,
-    disabled,
-    type,
-    children,
-    ...props
-  }: Props) => {
-    let Tag, specificProps;
-    if (to && !disabled) {
-      Tag = Link;
-      specificProps = { to };
-    } else if ((href || to) && !disabled) {
-      Tag = 'a';
-      specificProps = { href };
-    } else {
-      Tag = 'button';
-      specificProps = { disabled, type };
-    }
+  React.forwardRef(
+    (
+      {
+        to,
+        href,
+        transparent,
+        size,
+        importance,
+        disabled,
+        type,
+        ...props
+      }: Props,
+      ref: React.ElementRef<any>
+    ) => {
+      let Tag, specificProps;
+      if (to && !disabled) {
+        Tag = Link;
+        specificProps = { to };
+      } else if ((href || to) && !disabled) {
+        Tag = 'a';
+        specificProps = { href };
+      } else {
+        Tag = 'button';
+        specificProps = { disabled, type };
+      }
 
-    return (
-      <Tag {...specificProps} {...props}>
-        {React.Children.map(children, node =>
-          ['string', 'number'].includes(typeof node) ? (
-            <span>{node}</span>
-          ) : (
-            node
-          )
-        )}
-      </Tag>
-    );
-  }
+      return <Tag {...specificProps} {...props} ref={ref} />;
+    }
+  )
 )`
   ${reset};
 

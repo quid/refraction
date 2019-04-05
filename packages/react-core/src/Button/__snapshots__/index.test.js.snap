@@ -72,16 +72,19 @@ exports[`renders a Button with small size 1`] = `
   size="small"
   type="button"
 >
-  <button
+  <ForwardRef
     className="emotion-0 emotion-1"
+    importance="secondary"
+    size="small"
     type="button"
   >
-    <span
-      key=".0"
+    <button
+      className="emotion-0 emotion-1"
+      type="button"
     >
       Hello, World!
-    </span>
-  </button>
+    </button>
+  </ForwardRef>
 </Button>
 `;
 
@@ -168,17 +171,22 @@ exports[`renders a disabled and transparent Button 1`] = `
   transparent={true}
   type="button"
 >
-  <button
+  <ForwardRef
     className="emotion-0 emotion-1"
     disabled={true}
+    importance="secondary"
+    size="regular"
+    transparent={true}
     type="button"
   >
-    <span
-      key=".0"
+    <button
+      className="emotion-0 emotion-1"
+      disabled={true}
+      type="button"
     >
       Hello, World!
-    </span>
-  </button>
+    </button>
+  </ForwardRef>
 </Button>
 `;
 
@@ -255,16 +263,20 @@ exports[`renders the expected markup 1`] = `
   size="regular"
   type="button"
 >
-  <button
+  <ForwardRef
     className="emotion-0 emotion-1"
     data-action="foo"
+    importance="secondary"
+    size="regular"
     type="button"
   >
-    <span
-      key=".0"
+    <button
+      className="emotion-0 emotion-1"
+      data-action="foo"
+      type="button"
     >
       Hello, World!
-    </span>
-  </button>
+    </button>
+  </ForwardRef>
 </Button>
 `;
