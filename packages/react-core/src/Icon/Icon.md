@@ -12,9 +12,8 @@ import '@quid/theme/fonts/icons';
 This is the complete list of available icons:
 
 ```js noeditor
-const iconNames = require('@quid/theme/fonts/icons/quid-icons.json').icons.map(
-  ({ icon }) => icon.tags[0]
-);
+import { icons } from '@quid/theme/fonts/icons/quid-icons.json';
+const iconNames = icons.map(({ icon }) => icon.tags[0]);
 const cell = {
   maxWidth: 0,
 };

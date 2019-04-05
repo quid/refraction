@@ -6,12 +6,14 @@
  */
 // @noflow
 import * as React from 'react';
-import Playground from 'react-styleguidist/lib/rsg-components/Playground';
-import Markdown from 'react-styleguidist/lib/rsg-components/Markdown';
-import ExamplesRenderer from 'react-styleguidist/lib/rsg-components/Examples/ExamplesRenderer';
+import Playground from 'react-styleguidist/lib/client/rsg-components/Playground';
+import Markdown from 'react-styleguidist/lib/client/rsg-components/Markdown';
+import ExamplesRenderer from 'react-styleguidist/lib/client/rsg-components/Examples/ExamplesRenderer';
 
 const cleanContent = content =>
-  content.replace(/<!-- NPM_ONLY> -->[^]*?<!-- <NPM_ONLY -->/g, '');
+  content
+    .replace(/<!-- NPM_ONLY> -->[^]*?<!-- <NPM_ONLY -->/g, '')
+    .replace(/<!--[^]*?-->/gm, '');
 
 export default function Examples(
   { examples, name, exampleMode },

@@ -1,6 +1,8 @@
 `Tabs` organize content across different screens, data sets, and other interactions.
 
 ```js
+import { Button, Icon } from '@quid/react-core';
+
 initialState = {
   activeTab: 'two',
 };

@@ -11,10 +11,12 @@ and shares all the features provided by the `InputText` component.
 Along with all the `InputText` features, there's the HTML form validation:
 
 ```js
+import { Button } from '@quid/react-core';
+
 <form onSubmit={e => e.preventDefault()}>
   <TextArea style={{ height: 100 }} required placeholder="This is required" />
   <br />
   <br />
   <Button type="submit">Submit</Button>
-</form>
+</form>;
 ```

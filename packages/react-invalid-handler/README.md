@@ -6,6 +6,8 @@ validation on your input components.
 <!-- NPM_ONLY> -->
 
 ```js
+import InvalidHandler from '@quid/react-invalid-handler';
+
 <form onSubmit={evt => evt.preventDefault()}>
   <InvalidHandler errorMessage="Custom error message here">
     {(getInputProps, isInvalid) => (
@@ -20,7 +22,7 @@ validation on your input components.
     )}
   </InvalidHandler>
   <button type="submit">Submit</button>
-</form>
+</form>;
 ```
 
 <!-- <NPM_ONLY -->

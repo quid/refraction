@@ -7,13 +7,13 @@
 // @noflow
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import TableOfContents from 'react-styleguidist/lib/rsg-components/TableOfContents';
-import StyleGuideRenderer from 'react-styleguidist/lib/rsg-components/StyleGuide/StyleGuideRenderer';
-import Sections from 'react-styleguidist/lib/rsg-components/Sections';
-import Welcome from 'react-styleguidist/lib/rsg-components/Welcome';
-import Error from 'react-styleguidist/lib/rsg-components/Error';
-import NotFound from 'react-styleguidist/lib/rsg-components/NotFound';
-import { DisplayModes } from 'react-styleguidist/lib/consts';
+import TableOfContents from 'react-styleguidist/lib/client/rsg-components/TableOfContents';
+import StyleGuideRenderer from 'react-styleguidist/lib/client/rsg-components/StyleGuide/StyleGuideRenderer';
+import Sections from 'react-styleguidist/lib/client/rsg-components/Sections';
+import Welcome from 'react-styleguidist/lib/client/rsg-components/Welcome';
+import Error from 'react-styleguidist/lib/client/rsg-components/Error';
+import NotFound from 'react-styleguidist/lib/client/rsg-components/NotFound';
+import { DisplayModes } from 'react-styleguidist/lib/client/consts';
 import { ThemeProvider } from '@quid/theme';
 
 /**

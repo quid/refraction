@@ -5,6 +5,7 @@ which tab we want to select by default, and then all the state management
 will be handled by the component automatically.
 
 ```js showcode
+import { Button } from '@quid/react-core';
 const { Tabs, TabList, TabPanel } = require('.');
 
 <Tabs defaultActive="b">
@@ -58,6 +59,7 @@ currently active tab, and the `onSelect` callback that gets called anytime
 the user changes tab.
 
 ```js
+import { Button } from '@quid/react-core';
 initialState = { active: 'b' };
 const { Tabs, TabList, TabPanel } = require('.');
 <>
@@ -70,7 +72,7 @@ const { Tabs, TabList, TabPanel } = require('.');
       <>
         <TabList>
           {({ select, active }) => (
-            <React.Fragment>
+            <>
               <Button
                 onClick={() => select('a')}
                 importance={active === 'a' ? 'primary' : 'secondary'}
@@ -89,7 +91,7 @@ const { Tabs, TabList, TabPanel } = require('.');
               >
                 Tab C
               </Button>
-            </React.Fragment>
+            </>
           )}
         </TabList>
         <div>

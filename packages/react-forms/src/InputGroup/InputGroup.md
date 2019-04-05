@@ -6,16 +6,20 @@ in the middle will lose `border-radius` on both sides, and the last element
 will lose `border-radius` on its left.
 
 ```js
+import { InputText, Button } from '@quid/react-forms';
+
 <InputGroup>
   <InputText placeholder="InputText" />
   <Button importance="secondary">Button</Button>
-</InputGroup>
+</InputGroup>;
 ```
 
 The above method will automatically inject the `className`, if this behavior is
 not desired, a render-prop can be passed, with the `className` as first argument.
 
 ```js
+import { InputText, Button } from '@quid/react-forms';
+
 <InputGroup>
   {className => <InputText className={className} placeholder="InputText" />}
   {className => (
@@ -23,12 +27,14 @@ not desired, a render-prop can be passed, with the `className` as first argument
       Button
     </Button>
   )}
-</InputGroup>
+</InputGroup>;
 ```
 
 The component supports HTML validation:
 
 ```js
+import { InputText, Button } from '@quid/react-forms';
+
 <form onSubmit={e => e.preventDefault()}>
   <InputGroup>
     <InputText type="email" required placeholder="InputText" />
@@ -36,14 +42,16 @@ The component supports HTML validation:
       Submit
     </Button>
   </InputGroup>
-</form>
+</form>;
 ```
 
 You can combine any of the components exported by `@quid/react-forms`:
 
 ```js
+import { InputNumber, Button } from '@quid/react-forms';
+
 <InputGroup>
   <Button>Btn</Button>
   <InputNumber />
-</InputGroup>
+</InputGroup>;
 ```

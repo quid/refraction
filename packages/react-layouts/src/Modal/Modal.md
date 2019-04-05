@@ -1,6 +1,7 @@
 The modal component provides a solution for creating dialogs, popups, lightboxes, or whatever else.
 
 ```js
+import { Button } from '@quid/react-core';
 const ImportanceTypes = require('./importanceTypes');
 
 const ICONS = ['', 'question', 'network', 'heart'];
@@ -75,6 +76,7 @@ initialState = {
 If you would like to have a `<form>` within the modal, you can do that by using `isForm={true}` prop. Also pass `formProps` so that you can handle `onSubmit` event.
 
 ```js
+import { Button } from '@quid/react-core';
 const ImportanceTypes = require('./importanceTypes');
 
 const ICONS = ['', 'question', 'network', 'heart'];
