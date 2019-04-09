@@ -1174,7 +1174,7 @@
     "@emotion/utils" "0.11.1"
     object-assign "^4.1.1"
 
-"@emotion/styled-base@^10.0.4":
+"@emotion/styled-base@10.0.4", "@emotion/styled-base@^10.0.4":
   version "10.0.4"
   resolved "https://registry.npmjs.org/@emotion/styled-base/-/styled-base-10.0.4.tgz#7b8243755a9757f4a0f5504b6b3431c84a0008e2"
   integrity sha512-GQl1nv31ASgjCt0FVR/0NyjXXZXuYVDjgrpNi1bPNosSwAKKAMddqJtt6X/f6A2KhmCfresDjscXs5NrdgKAGA==
@@ -9265,7 +9265,7 @@ metric-lcs@^0.1.2:
   resolved "https://registry.npmjs.org/metric-lcs/-/metric-lcs-0.1.2.tgz#87913f149410e39c7c5a19037512814eaf155e11"
   integrity sha512-+TZ5dUDPKPJaU/rscTzxyN8ZkX7eAVLAiQU/e+YINleXPv03SCmJShaMT1If1liTH8OcmWXZs0CmzCBRBLcMpA==
 
-microbundle@^0.8.3, "microbundle@https://github.com/FezVrasta/microbundle.git#quid-fork":
+microbundle@^0.8.3:
   version "0.8.3"
   resolved "https://github.com/FezVrasta/microbundle.git#834297a3134eaf24e0cc35da60812a53b2aef96b"
   dependencies:
