@@ -131,7 +131,7 @@ it('onChanges gets called when selecting second value', () => {
     .simulate('click');
 
   expect(handleChange).toHaveBeenCalledWith(
-    [{ categoryId: 'a', id: 22, label: 'Two' }],
+    [{ categoryId: 'a', id: 10, label: 'One' }],
     expect.any(Object)
   );
 });
@@ -498,9 +498,9 @@ it('supports dark theme', () => {
 
   expect(
     SELECTED({
-      theme: { current: 'dark', colors: { gray1: 'gray1' } },
+      theme: { current: 'dark', colors: { gray3: 'gray3' } },
     })
-  ).toBe('gray1');
+  ).toBe('gray3');
 
   expect(
     mount(
