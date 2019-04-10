@@ -47,6 +47,8 @@ export const Input = styled.input`
   border: 0;
   font-family: inherit;
   font-size: inherit;
+  background-color: transparent;
+  color: inherit;
 
   min-width: 0;
   align-self: stretch;

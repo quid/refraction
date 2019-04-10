@@ -43,6 +43,8 @@ exports[`renders the expected markup 1`] = `
   border: 0;
   font-family: inherit;
   font-size: inherit;
+  background-color: transparent;
+  color: inherit;
   min-width: 0;
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;

@@ -45,10 +45,7 @@ export const HIGHLIGHTED = (props: { theme: Object }) =>
     ? props.theme.colors.gray1
     : props.theme.colors.gray5;
 
-export const SELECTED = (props: { theme: Object }) =>
-  props.theme.current === 'light'
-    ? props.theme.colors.gray3
-    : props.theme.colors.gray1;
+export const SELECTED = (props: { theme: Object }) => props.theme.colors.gray3;
 
 export const Item = styled.li`
   display: flex;
