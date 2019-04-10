@@ -131,7 +131,7 @@ it('onChanges gets called when selecting second value', () => {
     .simulate('click');
 
   expect(handleChange).toHaveBeenCalledWith(
-    [{ categoryId: 'a', id: 10, label: 'One' }],
+    [{ categoryId: 'a', id: 22, label: 'Two' }],
     expect.any(Object)
   );
 });

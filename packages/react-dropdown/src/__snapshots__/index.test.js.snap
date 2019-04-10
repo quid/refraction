@@ -481,7 +481,7 @@ exports[`renders an open dropdown with categories 1`] = `
                                 id="downshift-3-item-0"
                                 isHighlighted={false}
                                 isSelected={false}
-                                key="22"
+                                key="10"
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
                                 onMouseMove={[Function]}
@@ -501,13 +501,13 @@ exports[`renders an open dropdown with categories 1`] = `
                                   <HighlightValue
                                     disabled={false}
                                     highlight={false}
-                                    value="Two"
+                                    value="One"
                                     valueToHighlight=""
                                   >
                                     <span
                                       className="emotion-4 emotion-5"
                                     >
-                                      Two
+                                      One
                                     </span>
                                   </HighlightValue>
                                 </li>
@@ -519,7 +519,7 @@ exports[`renders an open dropdown with categories 1`] = `
                                 id="downshift-3-item-1"
                                 isHighlighted={false}
                                 isSelected={false}
-                                key="10"
+                                key="22"
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
                                 onMouseMove={[Function]}
@@ -539,13 +539,13 @@ exports[`renders an open dropdown with categories 1`] = `
                                   <HighlightValue
                                     disabled={false}
                                     highlight={false}
-                                    value="One"
+                                    value="Two"
                                     valueToHighlight=""
                                   >
                                     <span
                                       className="emotion-4 emotion-5"
                                     >
-                                      One
+                                      Two
                                     </span>
                                   </HighlightValue>
                                 </li>
@@ -604,7 +604,7 @@ exports[`renders an open dropdown with categories 1`] = `
                                 id="downshift-3-item-2"
                                 isHighlighted={false}
                                 isSelected={false}
-                                key="44"
+                                key="33"
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
                                 onMouseMove={[Function]}
@@ -624,13 +624,13 @@ exports[`renders an open dropdown with categories 1`] = `
                                   <HighlightValue
                                     disabled={false}
                                     highlight={false}
-                                    value="Four"
+                                    value="Three"
                                     valueToHighlight=""
                                   >
                                     <span
                                       className="emotion-4 emotion-5"
                                     >
-                                      Four
+                                      Three
                                     </span>
                                   </HighlightValue>
                                 </li>
@@ -642,7 +642,7 @@ exports[`renders an open dropdown with categories 1`] = `
                                 id="downshift-3-item-3"
                                 isHighlighted={false}
                                 isSelected={false}
-                                key="33"
+                                key="44"
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
                                 onMouseMove={[Function]}
@@ -662,13 +662,13 @@ exports[`renders an open dropdown with categories 1`] = `
                                   <HighlightValue
                                     disabled={false}
                                     highlight={false}
-                                    value="Three"
+                                    value="Four"
                                     valueToHighlight=""
                                   >
                                     <span
                                       className="emotion-4 emotion-5"
                                     >
-                                      Three
+                                      Four
                                     </span>
                                   </HighlightValue>
                                 </li>
@@ -938,7 +938,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                   id="downshift-4-item-0"
                                   isHighlighted={false}
                                   isSelected={false}
-                                  key="22"
+                                  key="10"
                                   onClick={[Function]}
                                   onMouseDown={[Function]}
                                   onMouseMove={[Function]}
@@ -958,13 +958,13 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                     <HighlightValue
                                       disabled={false}
                                       highlight={false}
-                                      value="Two"
+                                      value="One"
                                       valueToHighlight=""
                                     >
                                       <span
                                         className="emotion-4 emotion-5"
                                       >
-                                        Two
+                                        One
                                       </span>
                                     </HighlightValue>
                                   </li>
@@ -976,7 +976,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                   id="downshift-4-item-1"
                                   isHighlighted={false}
                                   isSelected={false}
-                                  key="10"
+                                  key="22"
                                   onClick={[Function]}
                                   onMouseDown={[Function]}
                                   onMouseMove={[Function]}
@@ -996,13 +996,13 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                     <HighlightValue
                                       disabled={false}
                                       highlight={false}
-                                      value="One"
+                                      value="Two"
                                       valueToHighlight=""
                                     >
                                       <span
                                         className="emotion-4 emotion-5"
                                       >
-                                        One
+                                        Two
                                       </span>
                                     </HighlightValue>
                                   </li>
@@ -1061,7 +1061,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                   id="downshift-4-item-2"
                                   isHighlighted={false}
                                   isSelected={false}
-                                  key="44"
+                                  key="33"
                                   onClick={[Function]}
                                   onMouseDown={[Function]}
                                   onMouseMove={[Function]}
@@ -1081,13 +1081,13 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                     <HighlightValue
                                       disabled={false}
                                       highlight={false}
-                                      value="Four"
+                                      value="Three"
                                       valueToHighlight=""
                                     >
                                       <span
                                         className="emotion-4 emotion-5"
                                       >
-                                        Four
+                                        Three
                                       </span>
                                     </HighlightValue>
                                   </li>
@@ -1099,7 +1099,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                   id="downshift-4-item-3"
                                   isHighlighted={false}
                                   isSelected={false}
-                                  key="33"
+                                  key="44"
                                   onClick={[Function]}
                                   onMouseDown={[Function]}
                                   onMouseMove={[Function]}
@@ -1119,13 +1119,13 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                     <HighlightValue
                                       disabled={false}
                                       highlight={false}
-                                      value="Three"
+                                      value="Four"
                                       valueToHighlight=""
                                     >
                                       <span
                                         className="emotion-4 emotion-5"
                                       >
-                                        Three
+                                        Four
                                       </span>
                                     </HighlightValue>
                                   </li>
