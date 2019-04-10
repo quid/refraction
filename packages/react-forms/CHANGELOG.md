@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.39.1](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v1.39.0...v1.39.1) (2019-04-10)
+
+**Note:** Version bump only for package @quid/react-forms
+
+
+
+
+
 ## [1.38.6](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v1.38.5...v1.38.6) (2019-03-21)
 
 **Note:** Version bump only for package @quid/react-forms
