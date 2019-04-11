@@ -68,8 +68,8 @@
     "react-app-rewired": "^2.1.1",
     "react-dom": "^16.7.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^2.1.1",
-    "react-styleguidist": "^9.0.5",
+    "react-scripts": "^2.1.8",
+    "react-styleguidist": "^9.0.7",
     "rimraf": "^2.6.2",
     "what-input": "^5.1.3"
   },

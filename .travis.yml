@@ -20,11 +20,12 @@ jobs:
       script:
         - flow check
         - react-app-rewired test --coverage --colors
-    - stage: build packages
+    - stage: build packages and docs
       # on master we always run the publish step, which runs the same command
-      if: type IN (pull_request)
+      if: type = pull_request
       script:
         - lerna run prepare
+        - yarn build
     - stage: publish gh-pages
       if: (NOT type IN (pull_request)) AND (branch = master)
       script: yarn build
