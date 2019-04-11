@@ -7,6 +7,7 @@
 // @flow
 import Color from 'color';
 import colors from '../colors';
+import sizes from '../sizes';
 
 const darkTheme = {
   primary: colors.gray1,
@@ -20,6 +21,8 @@ const darkTheme = {
   link: colors.link,
   disabled: colors.gray3,
   shadow: colors.black,
+  colors,
+  sizes,
 };
 
 export default darkTheme;
