@@ -63,12 +63,8 @@ exports[`renders a Button with small size 1`] = `
 .emotion-0 .e1t5eso00 {
   display: block;
   line-height: 1;
-  font-size: 1.42em;
-  margin-left: -6px;
-  margin-right: -6px;
-  margin-top: 5px;
-  margin-bottom: 5px;
   font-size: 1em;
+  margin: 5px -6px;
 }
 
 <Button
@@ -80,7 +76,11 @@ exports[`renders a Button with small size 1`] = `
     className="emotion-0 emotion-1"
     type="button"
   >
-    Hello, World!
+    <span
+      key=".0"
+    >
+      Hello, World!
+    </span>
   </button>
 </Button>
 `;
@@ -158,10 +158,7 @@ exports[`renders a disabled and transparent Button 1`] = `
   display: block;
   line-height: 1;
   font-size: 1.42em;
-  margin-left: -6px;
-  margin-right: -6px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px -6px;
 }
 
 <Button
@@ -176,7 +173,11 @@ exports[`renders a disabled and transparent Button 1`] = `
     disabled={true}
     type="button"
   >
-    Hello, World!
+    <span
+      key=".0"
+    >
+      Hello, World!
+    </span>
   </button>
 </Button>
 `;
@@ -245,10 +246,7 @@ exports[`renders the expected markup 1`] = `
   display: block;
   line-height: 1;
   font-size: 1.42em;
-  margin-left: -6px;
-  margin-right: -6px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px -6px;
 }
 
 <Button
@@ -262,7 +260,11 @@ exports[`renders the expected markup 1`] = `
     data-action="foo"
     type="button"
   >
-    Hello, World!
+    <span
+      key=".0"
+    >
+      Hello, World!
+    </span>
   </button>
 </Button>
 `;

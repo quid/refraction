@@ -83,6 +83,21 @@ import Icon from '../Icon';
       </td>
     </tr>
     <tr>
+      <td>Primary with both (alt)</td>
+      <td>
+        <Button importance="primary">
+          Button
+          <Icon name="download" />
+        </Button>
+      </td>
+      <td>
+        <Button importance="primary" disabled>
+          Button
+          <Icon name="download" />
+        </Button>
+      </td>
+    </tr>
+    <tr>
       <td>Primary Small with both</td>
       <td>
         <Button importance="primary" size="small">
