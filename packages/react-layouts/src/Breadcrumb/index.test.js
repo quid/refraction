@@ -63,7 +63,7 @@ it('renders a default NavLink', () => {
 it('renders a NavLink', () => {
   const wrapper = mount(
     <BrowserRouter>
-      <NavLink to="foobar" external disabled activeClassName="foobar--active" />
+      <NavLink to="foobar" external disabled />
     </BrowserRouter>
   );
 

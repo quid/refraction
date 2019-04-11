@@ -212,6 +212,8 @@ describe('Modal', () => {
   });
 
   it('throws if title is not a string and alt not provided', () => {
+    // $FlowIgnoreMe
+    console.error = jest.fn();
     // FIXME intentionally throwing errors in jest + React 16 is janky
     // info: https://github.com/facebook/react/issues/11098
     // more info: https://github.com/facebook/react/issues/11083
