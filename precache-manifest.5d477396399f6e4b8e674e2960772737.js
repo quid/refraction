@@ -80,12 +80,12 @@ self.__precacheManifest = [
     "url": "static/media/ibmplexserif-semibolditalic-webfont.1331719a.woff"
   },
   {
-    "revision": "68fbaa3ca3845a9870aca06ec4230ea7",
-    "url": "static/media/quid-icons.68fbaa3c.ttf"
-  },
-  {
     "revision": "59e17cee731d655305efd28188379e2a",
     "url": "static/media/quid-icons.59e17cee.woff"
+  },
+  {
+    "revision": "68fbaa3ca3845a9870aca06ec4230ea7",
+    "url": "static/media/quid-icons.68fbaa3c.ttf"
   },
   {
     "revision": "2186f210b09fac282cb85fc9d3f03972",
