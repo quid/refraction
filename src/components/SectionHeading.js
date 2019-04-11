@@ -6,9 +6,9 @@
  */
 // @noflow
 import * as React from 'react';
-import Slot from 'react-styleguidist/lib/rsg-components/Slot';
-import SectionHeadingRenderer from 'react-styleguidist/lib/rsg-components/SectionHeading/SectionHeadingRenderer';
-import getUrl from 'react-styleguidist/lib/utils/getUrl';
+import Slot from 'react-styleguidist/lib/client/rsg-components/Slot';
+import SectionHeadingRenderer from 'react-styleguidist/lib/client/rsg-components/SectionHeading/SectionHeadingRenderer';
+import getUrl from 'react-styleguidist/lib/client/utils/getUrl';
 
 export default function SectionHeading({
   slotName,

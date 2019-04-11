@@ -6,7 +6,7 @@
  */
 // @noflow
 import * as React from 'react';
-import { getHash } from 'react-styleguidist/lib/utils/handleHash';
+import { getHash } from 'react-styleguidist/lib/client/utils/handleHash';
 import styled from '@emotion/styled/macro';
 import { colors, textStyles, themes } from '@quid/theme';
 import { oss } from '../badges.json';

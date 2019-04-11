@@ -5,6 +5,8 @@ It reproduces all the functionalities of a standard HTML `<input />` element,
 with some useful additions.
 
 ```js
+import { Icon } from '@quid/react-core';
+
 <form>
   <table className="DemoTable">
     <thead>
@@ -115,7 +117,7 @@ with some useful additions.
       </tr>
     </tbody>
   </table>
-</form>
+</form>;
 ```
 
 ## HTML form validation
@@ -149,9 +151,11 @@ proprty. This property should be assigned to the addon element to make sure the
 text fields get focused when its addon is clicked.
 
 ```js
+import { Icon } from '@quid/react-core';
+
 <InputText
   renderAddon={({ onClick, marginRightClass }) => (
     <Icon className={marginRightClass} name="caret_down" onClick={onClick} />
   )}
-/>
+/>;
 ```

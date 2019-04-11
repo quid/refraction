@@ -50,12 +50,15 @@ it('renders a disabled Handle', () => {
 it('renders a zero Handle', () => {
   expect(mount(<Handle zero />)).toHaveStyleRule(
     'border',
-    `1px solid ${colors.gray4}`
+    `1px solid ${colors.gray4}`,
+    { target: '::before' }
   );
 });
 
 it('renders a dragging Handle', () => {
-  expect(mount(<Handle dragging />)).toHaveStyleRule('transition-delay', `0s`);
+  expect(mount(<Handle dragging />)).toHaveStyleRule('transition-delay', `0s`, {
+    target: '::before',
+  });
 });
 
 it('returns the alt background on dark theme', () => {

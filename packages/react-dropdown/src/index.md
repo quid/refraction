@@ -4,6 +4,8 @@ This is the most basic use case, the dropdown will behave like a
 normal HTML `select` element:
 
 ```js
+import { InputText } from '@quid/react-forms';
+
 const items = [
   { id: 10, label: 'One' },
   { id: 22, label: 'Two' },
@@ -28,6 +30,8 @@ const items = [
 This is usecase will allow you to use `Dropdown` as a controlled component.
 
 ```js
+import { InputText } from '@quid/react-forms';
+
 initialState = {
   selectedItems: [{ id: 10, label: 'One' }],
 };
@@ -66,6 +70,8 @@ const items = [
 In this example, the items are grouped by category.
 
 ```jsx
+import { InputText } from '@quid/react-forms';
+
 const items = [
   { id: 10, categoryId: 'a', label: 'One', disabled: true },
   { id: 22, categoryId: 'a', label: 'Two', disabled: true },
@@ -101,6 +107,8 @@ const categories = [
 #### Dropdown with multi-level item list (two columns).
 
 ```js
+import { InputText } from '@quid/react-forms';
+
 const items = [
   { id: 10, categoryId: 'a', label: 'One' },
   { id: 22, categoryId: 'a', label: 'Two' },
@@ -133,6 +141,8 @@ const categories = [
 #### Dropdown with highlight and filter function.
 
 ```js
+import { InputText } from '@quid/react-forms';
+
 const items = [
   { id: 1, label: 'Alaska airlines' },
   { id: 2, label: 'Allegiant Air' },
@@ -160,6 +170,8 @@ const items = [
 #### Dropdown with custom render function:
 
 ```js
+import { InputText } from '@quid/react-forms';
+
 const ReactDOM = require('react-dom');
 
 const items = [

@@ -8,6 +8,8 @@ once it's clicked:
 These are all the supported style variations:
 
 ```js
+import Icon from '../Icon';
+
 <table className="DemoTable">
   <thead>
     <tr>
@@ -213,5 +215,5 @@ These are all the supported style variations:
       </td>
     </tr>
   </tbody>
-</table>
+</table>;
 ```

@@ -21,13 +21,11 @@ exports[`renders a NavLink 1`] = `
 }
 
 <NavLink
-  activeClassName="foobar--active"
   disabled={true}
   external={true}
   to="foobar"
 >
   <a
-    activeClassName="foobar--active"
     className="emotion-0 emotion-1"
   />
 </NavLink>
