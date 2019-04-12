@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.40.0](https://github.com/quid/refraction/compare/v1.39.3...v1.40.0) (2019-04-12)
+
+
+### Bug Fixes
+
+* expose colors and sizes from themes ([38e507f](https://github.com/quid/refraction/commit/38e507f))
+* make Button accept `ref` property ([9f0c810](https://github.com/quid/refraction/commit/9f0c810))
+
+
+### Features
+
+* add react-use-controlled-state package ([cdadf9a](https://github.com/quid/refraction/commit/cdadf9a))
+* new react-popover component ([269f345](https://github.com/quid/refraction/commit/269f345))
+
+
+
+
+
 ## [1.39.3](https://github.com/quid/refraction/compare/v1.39.2...v1.39.3) (2019-04-11)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.40.0](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v1.39.3...v1.40.0) (2019-04-12)
+
+
+### Bug Fixes
+
+* make Button accept `ref` property ([9f0c810](https://github.com/quid/refraction/tree/master/packages/react-core/commit/9f0c810))
+
+
+
+
+
 ## [1.39.3](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v1.39.2...v1.39.3) (2019-04-11)
 
 

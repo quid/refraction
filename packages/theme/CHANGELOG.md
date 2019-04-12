@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.40.0](https://github.com/quid/refraction/compare/v1.39.3...v1.40.0) (2019-04-12)
+
+
+### Bug Fixes
+
+* expose colors and sizes from themes ([38e507f](https://github.com/quid/refraction/commit/38e507f))
+
+
+
+
+
 ## [1.38.6](https://github.com/quid/refraction/compare/v1.38.5...v1.38.6) (2019-03-21)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-date-picker",
-  "version": "1.39.3",
+  "version": "1.40.0",
   "description": "Lightweight date picker component",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
@@ -26,8 +26,8 @@
     "@emotion/css": "^10.0.6",
     "@emotion/styled": "^10.0.6",
     "@emotion/styled-base": "^10.0.4",
-    "@quid/react-core": "^1.39.3",
-    "@quid/theme": "^1.38.6",
+    "@quid/react-core": "^1.40.0",
+    "@quid/theme": "^1.40.0",
     "date-fns": "^1.30.1",
     "emotion": "^10.0.6"
   },
