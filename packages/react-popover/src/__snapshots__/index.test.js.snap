@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a basic popover 1`] = `
+Array [
+  <div>
+    referece
+  </div>,
+  <div>
+    popover
+  </div>,
+]
+`;
+
+exports[`renders the Arrow component 1`] = `
+.emotion-3 {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #E3E6E8;
+}
+
+.emotion-1 {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #E3E6E8;
+}
+
+<Arrow
+  theme={
+    Object {
+      "backdrop": "rgba(255, 255, 255, 0.8)",
+      "background": "#FFFFFF",
+      "colors": Object {
+        "aqua": "#1ED7D1",
+        "black": "#121212",
+        "blue": "#2E56BC",
+        "brown": "#9A6051",
+        "coral": "#F04E53",
+        "emerald": "#00804F",
+        "gray1": "#E3E6E8",
+        "gray2": "#C7CCD1",
+        "gray3": "#8F9BA3",
+        "gray4": "#6C7983",
+        "gray5": "#49535A",
+        "gray6": "#2E3338",
+        "gray7": "#1B1F22",
+        "green": "#039849",
+        "highlighted": "rgba(0, 193, 187, 0.6)",
+        "lemon": "#EAE962",
+        "lilac": "#9581BC",
+        "lime": "#87C445",
+        "link": "#28beb8",
+        "margenta": "#B22264",
+        "orange": "#F9621E",
+        "peach": "#F4A467",
+        "pink": "#D72E8E",
+        "purple": "#A8499A",
+        "quidTeal": "#00a7b8",
+        "red": "#E61E27",
+        "rose": "#BF8092",
+        "selected": "#00c1bb",
+        "sky": "#A6DEF3",
+        "tan": "#C1966B",
+        "teal": "#3C8790",
+        "white": "#FFFFFF",
+        "yellow": "#FFCE03",
+      },
+      "disabled": "#8F9BA3",
+      "link": "#28beb8",
+      "primary": "#2E3338",
+      "primaryInverse": "#E3E6E8",
+      "secondary": "#6C7983",
+      "selected": "#00c1bb",
+      "shadow": "#121212",
+      "sizes": Object {
+        "large": "20px",
+        "regular": "10px",
+        "small": "5px",
+      },
+    }
+  }
+>
+  <ForwardRef
+    className="emotion-3 emotion-0"
+  >
+    <div
+      className="emotion-3 emotion-0"
+    >
+      <ArrowBorder
+        className="emotion-3 emotion-0"
+      >
+        <div
+          className="emotion-0 emotion-1 emotion-2"
+        />
+      </ArrowBorder>
+    </div>
+  </ForwardRef>
+</Arrow>
+`;
+
+exports[`renders the Container component 1`] = `
+.emotion-0 {
+  background-color: #E3E6E8;
+  color: #2E3338;
+  border: 1px solid #C7CCD1;
+  border-radius: 2px;
+  padding: 5px;
+  -webkit-filter: drop-shadow( 0 2px 2px rgba(18,18,18,0.2) );
+  filter: drop-shadow( 0 2px 2px rgba(18,18,18,0.2) );
+  z-index: 1;
+  margin-top: 6px;
+}
+
+.emotion-0 .e1oyuzn01 {
+  border-width: 6px;
+  top: -6px;
+  border-top-width: 0;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  left: 0px;
+  top: 0px;
+}
+
+.emotion-0 .e1oyuzn00 {
+  border-width: 7px;
+  border-bottom-color: #C7CCD1;
+  left: -7px;
+  top: -7px;
+  -webkit-transform: translateY( -1.5px );
+  -ms-transform: translateY( -1.5px );
+  transform: translateY( -1.5px );
+  z-index: -1;
+}
+
+<Container
+  arrowProps={
+    Object {
+      "style": Object {
+        "left": 0,
+        "top": 0,
+      },
+    }
+  }
+  arrowSize={6}
+  placement="bottom"
+  theme={
+    Object {
+      "backdrop": "rgba(255, 255, 255, 0.8)",
+      "background": "#FFFFFF",
+      "colors": Object {
+        "aqua": "#1ED7D1",
+        "black": "#121212",
+        "blue": "#2E56BC",
+        "brown": "#9A6051",
+        "coral": "#F04E53",
+        "emerald": "#00804F",
+        "gray1": "#E3E6E8",
+        "gray2": "#C7CCD1",
+        "gray3": "#8F9BA3",
+        "gray4": "#6C7983",
+        "gray5": "#49535A",
+        "gray6": "#2E3338",
+        "gray7": "#1B1F22",
+        "green": "#039849",
+        "highlighted": "rgba(0, 193, 187, 0.6)",
+        "lemon": "#EAE962",
+        "lilac": "#9581BC",
+        "lime": "#87C445",
+        "link": "#28beb8",
+        "margenta": "#B22264",
+        "orange": "#F9621E",
+        "peach": "#F4A467",
+        "pink": "#D72E8E",
+        "purple": "#A8499A",
+        "quidTeal": "#00a7b8",
+        "red": "#E61E27",
+        "rose": "#BF8092",
+        "selected": "#00c1bb",
+        "sky": "#A6DEF3",
+        "tan": "#C1966B",
+        "teal": "#3C8790",
+        "white": "#FFFFFF",
+        "yellow": "#FFCE03",
+      },
+      "disabled": "#8F9BA3",
+      "link": "#28beb8",
+      "primary": "#2E3338",
+      "primaryInverse": "#E3E6E8",
+      "secondary": "#6C7983",
+      "selected": "#00c1bb",
+      "shadow": "#121212",
+      "sizes": Object {
+        "large": "20px",
+        "regular": "10px",
+        "small": "5px",
+      },
+    }
+  }
+>
+  <div
+    className="emotion-0 emotion-1"
+  />
+</Container>
+`;

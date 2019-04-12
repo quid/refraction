@@ -1,0 +1,29 @@
+{
+  "name": "@quid/react-use-controlled-state",
+  "version": "1.0.0",
+  "description": "React Hook to easily create fully controlled/uncontrolled React components.",
+  "main": "dist/index.js",
+  "main:umd": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quid/refraction/tree/master/packages/react-use-controlled-state"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "microbundle watch",
+    "prepare": "microbundle build --jsx React.createElement && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
+    "test": "cd ../.. && yarn test --testPathPattern packages/react-use-controlled-state"
+  },
+  "devDependencies": {
+    "flow-copy-source": "^2.0.2",
+    "microbundle": "^0.8.3",
+    "react": "^16.8.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
+}
