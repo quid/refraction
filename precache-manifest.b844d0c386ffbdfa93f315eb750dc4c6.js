@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "13d4a34b2dbb27edb727",
+    "revision": "ebf6f71d9a5656ef487a",
     "url": "static/css/main.38b3498f.chunk.css"
   },
   {
-    "revision": "13d4a34b2dbb27edb727",
-    "url": "build/main.13d4a34b.js"
+    "revision": "ebf6f71d9a5656ef487a",
+    "url": "build/main.ebf6f71d.js"
   },
   {
     "revision": "feb19782ca779508500c",
     "url": "build/bundle.feb19782.js"
   },
   {
-    "revision": "74fd093250e9ebef0b7b",
-    "url": "build/2.74fd0932.js"
+    "revision": "7da4257536cf556e0987",
+    "url": "build/2.7da42575.js"
   },
   {
     "revision": "11d4b5bf464591bde5b7469fd68c7d02",
@@ -80,19 +80,19 @@ self.__precacheManifest = [
     "url": "static/media/ibmplexserif-semibolditalic-webfont.1331719a.woff"
   },
   {
-    "revision": "59e17cee731d655305efd28188379e2a",
-    "url": "static/media/quid-icons.59e17cee.woff"
-  },
-  {
     "revision": "68fbaa3ca3845a9870aca06ec4230ea7",
     "url": "static/media/quid-icons.68fbaa3c.ttf"
+  },
+  {
+    "revision": "59e17cee731d655305efd28188379e2a",
+    "url": "static/media/quid-icons.59e17cee.woff"
   },
   {
     "revision": "2186f210b09fac282cb85fc9d3f03972",
     "url": "static/media/quid-icons.2186f210.svg"
   },
   {
-    "revision": "bd659865346cd44e27bd26aaf10849e8",
+    "revision": "9367a3c3e3a9e7610e431d37d531bce7",
     "url": "index.html"
   }
 ];
