@@ -82,6 +82,7 @@ const Button = styled(
         importance,
         disabled,
         type,
+        children,
         ...props
       }: Props,
       ref: React.ElementRef<any>
@@ -98,7 +99,17 @@ const Button = styled(
         specificProps = { disabled, type };
       }
 
-      return <Tag {...specificProps} {...props} ref={ref} />;
+      return (
+        <Tag {...specificProps} {...props}>
+          {React.Children.map(children, node =>
+            ['string', 'number'].includes(typeof node) ? (
+              <span>{node}</span>
+            ) : (
+              node
+            )
+          )}
+        </Tag>
+      );
     }
   )
 )`
