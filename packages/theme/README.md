@@ -104,14 +104,14 @@ an iconic font family used to provide our icons.
 You can import both of them in your project with:
 
 ```js static
-import '@quid/theme/fonts';
+import '@quid/theme/fonts/index.css';
 ```
 
 Or singularly with:
 
 ```js static
-import '@quid/theme/fonts/ibmplex';
-import '@quid/theme/fonts/icons';
+import '@quid/theme/fonts/ibmplex/index.css';
+import '@quid/theme/fonts/icons/index.css';
 ```
 
 Once imported, they will be globally available for all the consumer components.
