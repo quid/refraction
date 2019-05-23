@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/quid/refraction/compare/v1.40.1...v2.0.0) (2019-05-23)
+
+**Note:** Version bump only for package @quid/react-package-template
+
+
+
+
+
 ## [1.38.1](https://github.com/quid/refraction/compare/v1.38.0...v1.38.1) (2019-03-12)
 
 

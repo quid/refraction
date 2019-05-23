@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/quid/refraction/compare/v1.40.1...v2.0.0) (2019-05-23)
+
+
+### Bug Fixes
+
+* reduce quid-icons footprint ([dd4411a](https://github.com/quid/refraction/commit/dd4411a))
+
+
+### BREAKING CHANGES
+
+* this release removes a lot of icons from the quid-icons font since they weren’t used in our applications. We suggest to use a general purpose iconic font if you need a wider set of icons.
+
+This commit also adds support for woff2 compression.
+
+
+
+
+
 ## [1.40.1](https://github.com/quid/refraction/compare/v1.40.0...v1.40.1) (2019-04-18)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@quid/theme",
-  "version": "1.40.0",
+  "version": "2.0.0",
   "description": "Colors, fonts and other styling related resources, consumable by Emotion",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
