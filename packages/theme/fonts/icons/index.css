@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'quid-icons';
-  src: url('quid-icons.ttf') format('truetype'),
+  src: url('quid-icons.woff2') format('woff2'),
     url('quid-icons.woff') format('woff'),
+    url('quid-icons.ttf') format('truetype'),
     url('quid-icons.svg#quid-icons') format('svg');
   font-weight: normal;
   font-style: normal;

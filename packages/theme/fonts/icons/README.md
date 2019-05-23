@@ -4,7 +4,7 @@
 
 This package is going to define and expose a `quid-icons` font-face in your project.
 
-To use it, you most likely want to look at `@quid/react-components/components/Icon`.
+To use it, you most likely want to look at `@quid/react-core#Icon`.
 
 ## Update the iconic font
 
