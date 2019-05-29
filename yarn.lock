@@ -1162,6 +1162,14 @@
     "@emotion/utils" "0.11.1"
     object-assign "^4.1.1"
 
+"@emotion/styled@^10.0.10":
+  version "10.0.11"
+  resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-10.0.11.tgz#f749ca95bfe398b3e511b65ea14b16984f049e6d"
+  integrity sha512-c/M/JJHTQuqdY9viSZD41ccCJDe07/VMrj+JgOcyb8uDnRAr+3cCQ03tyrgl72bQD0YWcjXHhpA7Ja9S3+vuRw==
+  dependencies:
+    "@emotion/styled-base" "^10.0.10"
+    babel-plugin-emotion "^10.0.9"
+
 "@emotion/styled@^10.0.2", "@emotion/styled@^10.0.4":
   version "10.0.10"
   resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-10.0.10.tgz#ec241a9389a585b2c2638b709c262c28469ed92e"
@@ -1893,6 +1901,22 @@
     once "^1.4.0"
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
+
+"@quid/stylis-plugin-focus-visible@^1.0.0":
+  version "1.38.1"
+  resolved "https://registry.yarnpkg.com/@quid/stylis-plugin-focus-visible/-/stylis-plugin-focus-visible-1.38.1.tgz#ff7edb2570e6718911e6f9bf11f141a2d108ad97"
+  integrity sha512-MQOLu33xQVX9QoIt1UaJWZ+JvUttSoQt7am/v+S7AFEOTKV8auKLxDJP8o7Ok9/xWtc16+izXWMlogtMReGHeg==
+
+"@quid/theme@^1.0.0":
+  version "1.40.0"
+  resolved "https://registry.yarnpkg.com/@quid/theme/-/theme-1.40.0.tgz#7d133748b640dd95af755c9169cc8af759d32d46"
+  integrity sha512-A+lgmQ8tJIpwDZkRcml3yjQMvG/1AlxAbZoFPo+I3G25E4IM3fpDuI5DXvj5/RoKUKKC1QhN+y0aXnvh4AnMDA==
+  dependencies:
+    "@emotion/core" "^10.0.4"
+    "@emotion/css" "^10.0.4"
+    "@emotion/utils" "^0.11.1"
+    color "^3.1.0"
+    emotion-theming "^10.0.2"
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
