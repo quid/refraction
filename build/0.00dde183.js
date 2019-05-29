@@ -259,6 +259,226 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar weakMemoize = function we
 
 /***/ }),
 
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-italic-webfont.woff":
+/*!********************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-italic-webfont.woff ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexsans-italic-webfont.1cb6b740.woff\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-italic-webfont.woff?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-italic-webfont.woff2":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-italic-webfont.woff2 ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexsans-italic-webfont.dae1bcde.woff2\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-italic-webfont.woff2?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-regular-webfont.woff":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-regular-webfont.woff ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexsans-regular-webfont.b62839fe.woff\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-regular-webfont.woff?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-regular-webfont.woff2":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-regular-webfont.woff2 ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexsans-regular-webfont.11d4b5bf.woff2\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-regular-webfont.woff2?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibold-webfont.woff":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibold-webfont.woff ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexsans-semibold-webfont.e9d49113.woff\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibold-webfont.woff?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibold-webfont.woff2":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibold-webfont.woff2 ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexsans-semibold-webfont.cf82f99c.woff2\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibold-webfont.woff2?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibolditalic-webfont.woff":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibolditalic-webfont.woff ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexsans-semibolditalic-webfont.b6e21acb.woff\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibolditalic-webfont.woff?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibolditalic-webfont.woff2":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibolditalic-webfont.woff2 ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexsans-semibolditalic-webfont.34e78d87.woff2\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibolditalic-webfont.woff2?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-italic-webfont.woff":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-italic-webfont.woff ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexserif-italic-webfont.8560c258.woff\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-italic-webfont.woff?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-italic-webfont.woff2":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-italic-webfont.woff2 ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexserif-italic-webfont.47d1bbd5.woff2\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-italic-webfont.woff2?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-regular-webfont.woff":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-regular-webfont.woff ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexserif-regular-webfont.7855a195.woff\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-regular-webfont.woff?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-regular-webfont.woff2":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-regular-webfont.woff2 ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexserif-regular-webfont.aa3a2583.woff2\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-regular-webfont.woff2?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibold-webfont.woff":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibold-webfont.woff ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexserif-semibold-webfont.51abd2a3.woff\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibold-webfont.woff?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibold-webfont.woff2":
+/*!************************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibold-webfont.woff2 ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexserif-semibold-webfont.d3f358ce.woff2\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibold-webfont.woff2?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibolditalic-webfont.woff":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibolditalic-webfont.woff ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexserif-semibolditalic-webfont.1331719a.woff\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibolditalic-webfont.woff?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibolditalic-webfont.woff2":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibolditalic-webfont.woff2 ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/ibmplexserif-semibolditalic-webfont.9e64f5e0.woff2\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibolditalic-webfont.woff2?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/icons/quid-icons.svg":
+/*!*************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/icons/quid-icons.svg ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/quid-icons.2186f210.svg\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/icons/quid-icons.svg?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/icons/quid-icons.ttf":
+/*!*************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/icons/quid-icons.ttf ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/quid-icons.68fbaa3c.ttf\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/icons/quid-icons.ttf?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/icons/quid-icons.woff":
+/*!**************************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/icons/quid-icons.woff ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"static/media/quid-icons.59e17cee.woff\";\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/icons/quid-icons.woff?");
+
+/***/ }),
+
+/***/ "./node_modules/@quid/theme/fonts/index.css":
+/*!**************************************************!*\
+  !*** ./node_modules/@quid/theme/fonts/index.css ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../css-loader??ref--6-oneOf-3-1!../../../postcss-loader/src??postcss!./index.css */ \"./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/@quid/theme/fonts/index.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/index.css?");
+
+/***/ }),
+
 /***/ "./node_modules/acorn-jsx/index.js":
 /*!*****************************************!*\
   !*** ./node_modules/acorn-jsx/index.js ***!
@@ -886,6 +1106,39 @@ eval("module.exports = {\n  \"align-content\": \"stretch\",\n  \"align-items\": 
 /***/ (function(module, exports) {
 
 eval("module.exports = {\n  \"azimuth\": \"center\",\n  \"border-collapse\": \"separate\",\n  \"border-spacing\": \"0\",\n  \"caption-side\": \"top\",\n  \"caret-color\": \"auto\",\n  \"color\": \"initial\",\n  \"cursor\": \"auto\",\n  \"empty-cells\": \"show\",\n  \"font-family\": \"initial\",\n  \"font-feature-settings\": \"normal\",\n  \"font-kerning\": \"auto\",\n  \"font-language-override\": \"normal\",\n  \"font-size\": \"medium\",\n  \"font-size-adjust\": \"none\",\n  \"font-stretch\": \"normal\",\n  \"font-style\": \"normal\",\n  \"font-synthesis\": \"weight style\",\n  \"font-variant\": \"normal\",\n  \"font-variant-alternates\": \"normal\",\n  \"font-variant-caps\": \"normal\",\n  \"font-variant-east-asian\": \"normal\",\n  \"font-variant-ligatures\": \"normal\",\n  \"font-variant-numeric\": \"normal\",\n  \"font-variant-position\": \"normal\",\n  \"font-weight\": \"normal\",\n  \"hyphens\": \"manual\",\n  \"image-orientation\": \"0deg\",\n  \"image-rendering\": \"auto\",\n  \"image-resolution\": \"1dppx\",\n  \"letter-spacing\": \"normal\",\n  \"line-height\": \"normal\",\n  \"list-style-image\": \"none\",\n  \"list-style-position\": \"outside\",\n  \"list-style-type\": \"disc\",\n  \"object-position\": \"50% 50%\",\n  \"orphans\": \"2\",\n  \"overflow-wrap\": \"normal\",\n  \"pointer-events\": \"auto\",\n  \"quotes\": \"initial\",\n  \"ruby-align\": \"space-around\",\n  \"ruby-merge\": \"separate\",\n  \"ruby-position\": \"over\",\n  \"tab-size\": \"8\",\n  \"text-align\": \"initial\",\n  \"text-align-last\": \"auto\",\n  \"text-combine-upright\": \"none\",\n  \"text-indent\": \"0\",\n  \"text-justify\": \"auto\",\n  \"text-orientation\": \"mixed\",\n  \"text-rendering\": \"auto\",\n  \"text-shadow\": \"none\",\n  \"text-transform\": \"none\",\n  \"text-underline-position\": \"auto\",\n  \"visibility\": \"visible\",\n  \"white-space\": \"normal\",\n  \"widows\": \"2\",\n  \"word-break\": \"normal\",\n  \"word-spacing\": \"normal\",\n  \"word-wrap\": \"normal\",\n  \"writing-mode\": \"horizontal-tb\",\n  \"-webkit-appearance\": \"none\",\n  \"-moz-appearance\": \"none\",\n  \"-ms-appearance\": \"none\",\n  \"appearance\": \"none\"\n};\n\n//# sourceURL=webpack:///./node_modules/css-initials/inherited.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/@quid/theme/fonts/ibmplex/index.css":
+/*!*************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./node_modules/@quid/theme/fonts/ibmplex/index.css ***!
+  \*************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var escape = __webpack_require__(/*! ../../../../css-loader/lib/url/escape.js */ \"./node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = __webpack_require__(/*! ../../../../css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"@font-face {\\n  font-family: 'IBM Plex Sans';\\n  font-weight: 400;\\n  font-style: normal;\\n  font-display: swap;\\n  src: url(\" + escape(__webpack_require__(/*! ./ibmplexsans-regular-webfont.woff2 */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-regular-webfont.woff2\")) + \") format('woff2'),\\n    url(\" + escape(__webpack_require__(/*! ./ibmplexsans-regular-webfont.woff */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-regular-webfont.woff\")) + \") format('woff');\\n}\\n\\n@font-face {\\n  font-family: 'IBM Plex Sans';\\n  font-weight: 400;\\n  font-style: italic;\\n  font-display: swap;\\n  src: url(\" + escape(__webpack_require__(/*! ./ibmplexsans-italic-webfont.woff2 */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-italic-webfont.woff2\")) + \") format('woff2'),\\n    url(\" + escape(__webpack_require__(/*! ./ibmplexsans-italic-webfont.woff */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-italic-webfont.woff\")) + \") format('woff');\\n}\\n\\n@font-face {\\n  font-family: 'IBM Plex Sans';\\n  font-weight: 700;\\n  font-style: normal;\\n  font-display: swap;\\n  src: url(\" + escape(__webpack_require__(/*! ./ibmplexsans-semibold-webfont.woff2 */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibold-webfont.woff2\")) + \") format('woff2'),\\n    url(\" + escape(__webpack_require__(/*! ./ibmplexsans-semibold-webfont.woff */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibold-webfont.woff\")) + \") format('woff');\\n}\\n\\n@font-face {\\n  font-family: 'IBM Plex Sans';\\n  font-weight: 700;\\n  font-style: italic;\\n  font-display: swap;\\n  src: url(\" + escape(__webpack_require__(/*! ./ibmplexsans-semibolditalic-webfont.woff2 */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibolditalic-webfont.woff2\")) + \") format('woff2'),\\n    url(\" + escape(__webpack_require__(/*! ./ibmplexsans-semibolditalic-webfont.woff */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexsans-semibolditalic-webfont.woff\")) + \") format('woff');\\n}\\n\\n@font-face {\\n  font-family: 'IBM Plex Serif';\\n  font-weight: 400;\\n  font-style: normal;\\n  font-display: swap;\\n  src: url(\" + escape(__webpack_require__(/*! ./ibmplexserif-regular-webfont.woff2 */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-regular-webfont.woff2\")) + \") format('woff2'),\\n    url(\" + escape(__webpack_require__(/*! ./ibmplexserif-regular-webfont.woff */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-regular-webfont.woff\")) + \") format('woff');\\n}\\n\\n@font-face {\\n  font-family: 'IBM Plex Serif';\\n  font-weight: 400;\\n  font-style: italic;\\n  font-display: swap;\\n  src: url(\" + escape(__webpack_require__(/*! ./ibmplexserif-italic-webfont.woff2 */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-italic-webfont.woff2\")) + \") format('woff2'),\\n    url(\" + escape(__webpack_require__(/*! ./ibmplexserif-italic-webfont.woff */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-italic-webfont.woff\")) + \") format('woff');\\n}\\n\\n@font-face {\\n  font-family: 'IBM Plex Serif';\\n  font-weight: 700;\\n  font-style: normal;\\n  font-display: swap;\\n  src: url(\" + escape(__webpack_require__(/*! ./ibmplexserif-semibold-webfont.woff2 */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibold-webfont.woff2\")) + \") format('woff2'),\\n    url(\" + escape(__webpack_require__(/*! ./ibmplexserif-semibold-webfont.woff */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibold-webfont.woff\")) + \") format('woff');\\n}\\n\\n@font-face {\\n  font-family: 'IBM Plex Serif';\\n  font-weight: 700;\\n  font-style: italic;\\n  font-display: swap;\\n  src: url(\" + escape(__webpack_require__(/*! ./ibmplexserif-semibolditalic-webfont.woff2 */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibolditalic-webfont.woff2\")) + \") format('woff2'),\\n    url(\" + escape(__webpack_require__(/*! ./ibmplexserif-semibolditalic-webfont.woff */ \"./node_modules/@quid/theme/fonts/ibmplex/ibmplexserif-semibolditalic-webfont.woff\")) + \") format('woff');\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/ibmplex/index.css?./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/@quid/theme/fonts/icons/index.css":
+/*!***********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./node_modules/@quid/theme/fonts/icons/index.css ***!
+  \***********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var escape = __webpack_require__(/*! ../../../../css-loader/lib/url/escape.js */ \"./node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = __webpack_require__(/*! ../../../../css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"@font-face {\\n  font-family: 'quid-icons';\\n  src: url(\" + escape(__webpack_require__(/*! ./quid-icons.ttf */ \"./node_modules/@quid/theme/fonts/icons/quid-icons.ttf\")) + \") format('truetype'),\\n    url(\" + escape(__webpack_require__(/*! ./quid-icons.woff */ \"./node_modules/@quid/theme/fonts/icons/quid-icons.woff\")) + \") format('woff'),\\n    url(\" + escape(__webpack_require__(/*! ./quid-icons.svg */ \"./node_modules/@quid/theme/fonts/icons/quid-icons.svg\")) + \"#quid-icons) format('svg');\\n  font-weight: normal;\\n  font-style: normal;\\n  font-display: swap;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/icons/index.css?./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/@quid/theme/fonts/index.css":
+/*!*****************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./node_modules/@quid/theme/fonts/index.css ***!
+  \*****************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\nexports.i(__webpack_require__(/*! -!../../../css-loader??ref--6-oneOf-3-1!../../../postcss-loader/src??postcss!./ibmplex/index.css */ \"./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/@quid/theme/fonts/ibmplex/index.css\"), \"\");\nexports.i(__webpack_require__(/*! -!../../../css-loader??ref--6-oneOf-3-1!../../../postcss-loader/src??postcss!./icons/index.css */ \"./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/@quid/theme/fonts/icons/index.css\"), \"\");\n\n// module\nexports.push([module.i, \"\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./node_modules/@quid/theme/fonts/index.css?./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss");
 
 /***/ }),
 
