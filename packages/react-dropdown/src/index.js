@@ -189,4 +189,6 @@ const Dropdown = ({
   );
 };
 
+export { DropdownList };
+
 export default Dropdown;

@@ -204,3 +204,26 @@ const items = [
   )}
 </Dropdown>;
 ```
+
+#### Dropdown with custom DropdownList style
+
+Depending by your use case, you may want to override the dropdown styles, for instance, to increase its width.
+
+This can be achieved by using [Emotion's "component as selector"](https://emotion.sh/docs/styled#targeting-another-emotion-component) feature:
+
+```js static
+import Dropdown, { DropdownList } from '@quid/react-dropdown';
+import styled from '@emotion/styled/macro';
+
+const CustomDropdown = styled(Dropdown)`
+  ${DropdownList} {
+    width: 300px;
+  }
+`;
+
+const items = [{ id: 10, label: 'One' }, { id: 22, label: 'Two' }];
+
+<CustomDropdown items={items}>
+  {({ getInputProps }) => <InputText readOnly {...getInputProps()} />}
+</CustomDropdown>;
+```
