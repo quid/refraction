@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/quid/ui-framework/compare/v2.0.0...v2.1.0) (2019-05-30)
+
+
+### Features
+
+* **react-dropdown:** export DropdownList to allow to be styled ([#84](https://github.com/quid/ui-framework/issues/84)) ([d56ef20](https://github.com/quid/ui-framework/commit/d56ef20))
+
+
+
+
+
 # [2.0.0](https://github.com/quid/ui-framework/compare/v1.40.1...v2.0.0) (2019-05-23)
 
 **Note:** Version bump only for package @quid/react-dropdown

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/quid/refraction/compare/v2.0.0...v2.1.0) (2019-05-30)
+
+
+### Bug Fixes
+
+* updates yarn.lock file ([4d88cce](https://github.com/quid/refraction/commit/4d88cce))
+
+
+### Features
+
+* **react-dropdown:** export DropdownList to allow to be styled ([#84](https://github.com/quid/refraction/issues/84)) ([d56ef20](https://github.com/quid/refraction/commit/d56ef20))
+
+
+
+
+
 # [2.0.0](https://github.com/quid/refraction/compare/v1.40.1...v2.0.0) (2019-05-23)
 
 
