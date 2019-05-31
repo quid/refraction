@@ -8,8 +8,9 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { mount } from 'enzyme';
+import styled from '@emotion/styled/macro';
 import DropdownWrapper from './__mocks__/DropdownWrapper';
-import Dropdown from './index';
+import Dropdown, { DropdownList as DL } from './index';
 import DropdownList, { List } from './List';
 import { Item, HIGHLIGHTED, SELECTED } from './Items';
 import { Divider } from './Categories';
@@ -764,4 +765,19 @@ it('custom renderDropdown function should render', () => {
   expect(wrapper.find('#foobar')).toHaveLength(1);
 
   expect(wrapper.find('ul li').hostNodes().length > 0).toBe(true);
+});
+
+it('DropdownList could be styled', () => {
+  const StyledDropdown = styled(Dropdown)`
+    ${DL} {
+      width: 100px;
+    }
+  `;
+
+  const wrapper = mount(
+    <StyledDropdown items={items.slice(0, 2)} defaultIsOpen={true}>
+      {({ getInputProps }) => <input {...getInputProps()} />}
+    </StyledDropdown>
+  );
+  expect(wrapper).toHaveStyleRule('width', '100px', { target: DL });
 });
