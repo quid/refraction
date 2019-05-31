@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/quid/refraction/compare/v2.1.0...v2.1.1) (2019-05-31)
+
+
+### Bug Fixes
+
+* wraps DropdownList with styled ([#86](https://github.com/quid/refraction/issues/86)) ([bfe5533](https://github.com/quid/refraction/commit/bfe5533))
+
+
+
+
+
 # [2.1.0](https://github.com/quid/refraction/compare/v2.0.0...v2.1.0) (2019-05-30)
 
 
