@@ -43,11 +43,11 @@ exports[`renders a basic closed dropdown 1`] = `
 `;
 
 exports[`renders an open dropdown 1`] = `
-.emotion-12 {
+.emotion-17 {
   display: inline-block;
 }
 
-.emotion-10 {
+.emotion-11 {
   z-index: 1;
   list-style: none;
   background-color: #FFFFFF;
@@ -108,7 +108,7 @@ exports[`renders an open dropdown 1`] = `
       aria-haspopup="listbox"
       aria-labelledby="downshift-2-label"
       aria-owns="downshift-2-menu"
-      className="emotion-12 emotion-13"
+      className="emotion-17 emotion-18"
       role="combobox"
     >
       <x-fragment>
@@ -126,7 +126,7 @@ exports[`renders an open dropdown 1`] = `
           onKeyDown={[Function]}
           value=""
         />
-        <ForwardRef
+        <DropdownList
           categories={Array []}
           filterFn={[Function]}
           getItemProps={[Function]}
@@ -151,91 +151,120 @@ exports[`renders an open dropdown 1`] = `
           twoColumn={true}
           useFilter={false}
         >
-          <List>
-            <div
-              className="emotion-10 emotion-11"
+          <ForwardRef
+            categories={Array []}
+            className="emotion-13 emotion-10"
+            filterFn={[Function]}
+            getItemProps={[Function]}
+            highlight={false}
+            highlightedIndex={null}
+            inputValue=""
+            items={
+              Array [
+                Object {
+                  "categoryId": "a",
+                  "id": 10,
+                  "label": "One",
+                },
+                Object {
+                  "categoryId": "a",
+                  "id": 22,
+                  "label": "Two",
+                },
+              ]
+            }
+            selectedItems={Array []}
+            twoColumn={true}
+            useFilter={false}
+          >
+            <List
+              className="emotion-13 emotion-10"
             >
-              <Items>
-                <ul
-                  className="emotion-8 emotion-9"
-                >
-                  <Item
-                    aria-selected={false}
-                    disabled={false}
-                    id="downshift-2-item-0"
-                    isHighlighted={false}
-                    isSelected={false}
-                    key="10"
-                    onClick={[Function]}
-                    onMouseDown={[Function]}
-                    onMouseMove={[Function]}
-                    role="option"
+              <div
+                className="emotion-10 emotion-11 emotion-12"
+              >
+                <Items>
+                  <ul
+                    className="emotion-8 emotion-9"
                   >
-                    <li
+                    <Item
                       aria-selected={false}
-                      className="emotion-2 emotion-3"
                       disabled={false}
                       id="downshift-2-item-0"
+                      isHighlighted={false}
+                      isSelected={false}
+                      key="10"
                       onClick={[Function]}
                       onMouseDown={[Function]}
                       onMouseMove={[Function]}
                       role="option"
                     >
-                      <HighlightValue
+                      <li
+                        aria-selected={false}
+                        className="emotion-2 emotion-3"
                         disabled={false}
-                        highlight={false}
-                        value="One"
-                        valueToHighlight=""
+                        id="downshift-2-item-0"
+                        onClick={[Function]}
+                        onMouseDown={[Function]}
+                        onMouseMove={[Function]}
+                        role="option"
                       >
-                        <span
-                          className="emotion-0 emotion-1"
+                        <HighlightValue
+                          disabled={false}
+                          highlight={false}
+                          value="One"
+                          valueToHighlight=""
                         >
-                          One
-                        </span>
-                      </HighlightValue>
-                    </li>
-                  </Item>
-                  <Item
-                    aria-selected={false}
-                    disabled={false}
-                    id="downshift-2-item-1"
-                    isHighlighted={false}
-                    isSelected={false}
-                    key="22"
-                    onClick={[Function]}
-                    onMouseDown={[Function]}
-                    onMouseMove={[Function]}
-                    role="option"
-                  >
-                    <li
+                          <span
+                            className="emotion-0 emotion-1"
+                          >
+                            One
+                          </span>
+                        </HighlightValue>
+                      </li>
+                    </Item>
+                    <Item
                       aria-selected={false}
-                      className="emotion-2 emotion-3"
                       disabled={false}
                       id="downshift-2-item-1"
+                      isHighlighted={false}
+                      isSelected={false}
+                      key="22"
                       onClick={[Function]}
                       onMouseDown={[Function]}
                       onMouseMove={[Function]}
                       role="option"
                     >
-                      <HighlightValue
+                      <li
+                        aria-selected={false}
+                        className="emotion-2 emotion-3"
                         disabled={false}
-                        highlight={false}
-                        value="Two"
-                        valueToHighlight=""
+                        id="downshift-2-item-1"
+                        onClick={[Function]}
+                        onMouseDown={[Function]}
+                        onMouseMove={[Function]}
+                        role="option"
                       >
-                        <span
-                          className="emotion-0 emotion-1"
+                        <HighlightValue
+                          disabled={false}
+                          highlight={false}
+                          value="Two"
+                          valueToHighlight=""
                         >
-                          Two
-                        </span>
-                      </HighlightValue>
-                    </li>
-                  </Item>
-                </ul>
-              </Items>
-            </div>
-          </List>
-        </ForwardRef>
+                          <span
+                            className="emotion-0 emotion-1"
+                          >
+                            Two
+                          </span>
+                        </HighlightValue>
+                      </li>
+                    </Item>
+                  </ul>
+                </Items>
+              </div>
+            </List>
+          </ForwardRef>
+        </DropdownList>
       </x-fragment>
     </div>
   </DropdownContainer>
@@ -243,11 +272,11 @@ exports[`renders an open dropdown 1`] = `
 `;
 
 exports[`renders an open dropdown with categories 1`] = `
-.emotion-42 {
+.emotion-47 {
   display: inline-block;
 }
 
-.emotion-40 {
+.emotion-41 {
   z-index: 1;
   list-style: none;
   background-color: #FFFFFF;
@@ -366,7 +395,7 @@ exports[`renders an open dropdown with categories 1`] = `
     aria-haspopup="listbox"
     aria-labelledby="downshift-3-label"
     aria-owns="downshift-3-menu"
-    className="emotion-42 emotion-43"
+    className="emotion-47 emotion-48"
     role="combobox"
   >
     <x-fragment>
@@ -384,7 +413,7 @@ exports[`renders an open dropdown with categories 1`] = `
         onKeyDown={[Function]}
         value=""
       />
-      <ForwardRef
+      <DropdownList
         categories={
           Array [
             Object {
@@ -430,272 +459,322 @@ exports[`renders an open dropdown with categories 1`] = `
         twoColumn={false}
         useFilter={false}
       >
-        <List>
-          <div
-            className="emotion-40 emotion-41"
+        <ForwardRef
+          categories={
+            Array [
+              Object {
+                "id": "a",
+                "label": "Category A",
+              },
+              Object {
+                "id": "b",
+                "label": "Category B",
+              },
+            ]
+          }
+          className="emotion-43 emotion-40"
+          filterFn={[Function]}
+          getItemProps={[Function]}
+          highlight={false}
+          highlightedIndex={null}
+          inputValue=""
+          items={
+            Array [
+              Object {
+                "categoryId": "a",
+                "id": 10,
+                "label": "One",
+              },
+              Object {
+                "categoryId": "a",
+                "id": 22,
+                "label": "Two",
+              },
+              Object {
+                "categoryId": "b",
+                "id": 33,
+                "label": "Three",
+              },
+              Object {
+                "categoryId": "b",
+                "id": 44,
+                "label": "Four",
+              },
+            ]
+          }
+          selectedItems={Array []}
+          twoColumn={false}
+          useFilter={false}
+        >
+          <List
+            className="emotion-43 emotion-40"
           >
-            <div>
-              <Categories
-                key="a"
-              >
-                <div
-                  className="emotion-18 emotion-19"
+            <div
+              className="emotion-40 emotion-41 emotion-42"
+            >
+              <div>
+                <Categories
+                  key="a"
                 >
-                  <Category
-                    twoColumn={false}
+                  <div
+                    className="emotion-18 emotion-19"
                   >
-                    <main
-                      className="emotion-16 emotion-17"
+                    <Category
+                      twoColumn={false}
                     >
-                      <Divider
-                        isHighlighted={false}
-                        isSelected={false}
-                        twoColumn={false}
+                      <main
+                        className="emotion-16 emotion-17"
                       >
-                        <section
-                          className="emotion-2 emotion-3"
+                        <Divider
+                          isHighlighted={false}
+                          isSelected={false}
+                          twoColumn={false}
                         >
-                          <GroupTitle>
-                            <h3
-                              className="emotion-0 emotion-1"
-                            >
-                              Category A
-                            </h3>
-                          </GroupTitle>
-                        </section>
-                      </Divider>
-                      <Divider
-                        twoColumn={false}
-                      >
-                        <section
-                          className="emotion-2 emotion-3"
-                        >
-                          <Items>
-                            <ul
-                              className="emotion-12 emotion-13"
-                            >
-                              <Item
-                                aria-selected={false}
-                                categoryId="a"
-                                disabled={false}
-                                id="downshift-3-item-0"
-                                isHighlighted={false}
-                                isSelected={false}
-                                key="10"
-                                onClick={[Function]}
-                                onMouseDown={[Function]}
-                                onMouseMove={[Function]}
-                                role="option"
-                                twoColumn={false}
+                          <section
+                            className="emotion-2 emotion-3"
+                          >
+                            <GroupTitle>
+                              <h3
+                                className="emotion-0 emotion-1"
                               >
-                                <li
+                                Category A
+                              </h3>
+                            </GroupTitle>
+                          </section>
+                        </Divider>
+                        <Divider
+                          twoColumn={false}
+                        >
+                          <section
+                            className="emotion-2 emotion-3"
+                          >
+                            <Items>
+                              <ul
+                                className="emotion-12 emotion-13"
+                              >
+                                <Item
                                   aria-selected={false}
-                                  className="emotion-6 emotion-7"
+                                  categoryId="a"
                                   disabled={false}
                                   id="downshift-3-item-0"
+                                  isHighlighted={false}
+                                  isSelected={false}
+                                  key="10"
                                   onClick={[Function]}
                                   onMouseDown={[Function]}
                                   onMouseMove={[Function]}
                                   role="option"
+                                  twoColumn={false}
                                 >
-                                  <HighlightValue
+                                  <li
+                                    aria-selected={false}
+                                    className="emotion-6 emotion-7"
                                     disabled={false}
-                                    highlight={false}
-                                    value="One"
-                                    valueToHighlight=""
+                                    id="downshift-3-item-0"
+                                    onClick={[Function]}
+                                    onMouseDown={[Function]}
+                                    onMouseMove={[Function]}
+                                    role="option"
                                   >
-                                    <span
-                                      className="emotion-4 emotion-5"
+                                    <HighlightValue
+                                      disabled={false}
+                                      highlight={false}
+                                      value="One"
+                                      valueToHighlight=""
                                     >
-                                      One
-                                    </span>
-                                  </HighlightValue>
-                                </li>
-                              </Item>
-                              <Item
-                                aria-selected={false}
-                                categoryId="a"
-                                disabled={false}
-                                id="downshift-3-item-1"
-                                isHighlighted={false}
-                                isSelected={false}
-                                key="22"
-                                onClick={[Function]}
-                                onMouseDown={[Function]}
-                                onMouseMove={[Function]}
-                                role="option"
-                                twoColumn={false}
-                              >
-                                <li
+                                      <span
+                                        className="emotion-4 emotion-5"
+                                      >
+                                        One
+                                      </span>
+                                    </HighlightValue>
+                                  </li>
+                                </Item>
+                                <Item
                                   aria-selected={false}
-                                  className="emotion-6 emotion-7"
+                                  categoryId="a"
                                   disabled={false}
                                   id="downshift-3-item-1"
+                                  isHighlighted={false}
+                                  isSelected={false}
+                                  key="22"
                                   onClick={[Function]}
                                   onMouseDown={[Function]}
                                   onMouseMove={[Function]}
                                   role="option"
+                                  twoColumn={false}
                                 >
-                                  <HighlightValue
+                                  <li
+                                    aria-selected={false}
+                                    className="emotion-6 emotion-7"
                                     disabled={false}
-                                    highlight={false}
-                                    value="Two"
-                                    valueToHighlight=""
+                                    id="downshift-3-item-1"
+                                    onClick={[Function]}
+                                    onMouseDown={[Function]}
+                                    onMouseMove={[Function]}
+                                    role="option"
                                   >
-                                    <span
-                                      className="emotion-4 emotion-5"
+                                    <HighlightValue
+                                      disabled={false}
+                                      highlight={false}
+                                      value="Two"
+                                      valueToHighlight=""
                                     >
-                                      Two
-                                    </span>
-                                  </HighlightValue>
-                                </li>
-                              </Item>
-                            </ul>
-                          </Items>
-                        </section>
-                      </Divider>
-                    </main>
-                  </Category>
-                </div>
-              </Categories>
-              <Categories
-                key="b"
-              >
-                <div
-                  className="emotion-18 emotion-19"
+                                      <span
+                                        className="emotion-4 emotion-5"
+                                      >
+                                        Two
+                                      </span>
+                                    </HighlightValue>
+                                  </li>
+                                </Item>
+                              </ul>
+                            </Items>
+                          </section>
+                        </Divider>
+                      </main>
+                    </Category>
+                  </div>
+                </Categories>
+                <Categories
+                  key="b"
                 >
-                  <Category
-                    twoColumn={false}
+                  <div
+                    className="emotion-18 emotion-19"
                   >
-                    <main
-                      className="emotion-16 emotion-17"
+                    <Category
+                      twoColumn={false}
                     >
-                      <Divider
-                        isHighlighted={false}
-                        isSelected={false}
-                        twoColumn={false}
+                      <main
+                        className="emotion-16 emotion-17"
                       >
-                        <section
-                          className="emotion-2 emotion-3"
+                        <Divider
+                          isHighlighted={false}
+                          isSelected={false}
+                          twoColumn={false}
                         >
-                          <GroupTitle>
-                            <h3
-                              className="emotion-0 emotion-1"
-                            >
-                              Category B
-                            </h3>
-                          </GroupTitle>
-                        </section>
-                      </Divider>
-                      <Divider
-                        twoColumn={false}
-                      >
-                        <section
-                          className="emotion-2 emotion-3"
-                        >
-                          <Items>
-                            <ul
-                              className="emotion-12 emotion-13"
-                            >
-                              <Item
-                                aria-selected={false}
-                                categoryId="b"
-                                disabled={false}
-                                id="downshift-3-item-2"
-                                isHighlighted={false}
-                                isSelected={false}
-                                key="33"
-                                onClick={[Function]}
-                                onMouseDown={[Function]}
-                                onMouseMove={[Function]}
-                                role="option"
-                                twoColumn={false}
+                          <section
+                            className="emotion-2 emotion-3"
+                          >
+                            <GroupTitle>
+                              <h3
+                                className="emotion-0 emotion-1"
                               >
-                                <li
+                                Category B
+                              </h3>
+                            </GroupTitle>
+                          </section>
+                        </Divider>
+                        <Divider
+                          twoColumn={false}
+                        >
+                          <section
+                            className="emotion-2 emotion-3"
+                          >
+                            <Items>
+                              <ul
+                                className="emotion-12 emotion-13"
+                              >
+                                <Item
                                   aria-selected={false}
-                                  className="emotion-6 emotion-7"
+                                  categoryId="b"
                                   disabled={false}
                                   id="downshift-3-item-2"
+                                  isHighlighted={false}
+                                  isSelected={false}
+                                  key="33"
                                   onClick={[Function]}
                                   onMouseDown={[Function]}
                                   onMouseMove={[Function]}
                                   role="option"
+                                  twoColumn={false}
                                 >
-                                  <HighlightValue
+                                  <li
+                                    aria-selected={false}
+                                    className="emotion-6 emotion-7"
                                     disabled={false}
-                                    highlight={false}
-                                    value="Three"
-                                    valueToHighlight=""
+                                    id="downshift-3-item-2"
+                                    onClick={[Function]}
+                                    onMouseDown={[Function]}
+                                    onMouseMove={[Function]}
+                                    role="option"
                                   >
-                                    <span
-                                      className="emotion-4 emotion-5"
+                                    <HighlightValue
+                                      disabled={false}
+                                      highlight={false}
+                                      value="Three"
+                                      valueToHighlight=""
                                     >
-                                      Three
-                                    </span>
-                                  </HighlightValue>
-                                </li>
-                              </Item>
-                              <Item
-                                aria-selected={false}
-                                categoryId="b"
-                                disabled={false}
-                                id="downshift-3-item-3"
-                                isHighlighted={false}
-                                isSelected={false}
-                                key="44"
-                                onClick={[Function]}
-                                onMouseDown={[Function]}
-                                onMouseMove={[Function]}
-                                role="option"
-                                twoColumn={false}
-                              >
-                                <li
+                                      <span
+                                        className="emotion-4 emotion-5"
+                                      >
+                                        Three
+                                      </span>
+                                    </HighlightValue>
+                                  </li>
+                                </Item>
+                                <Item
                                   aria-selected={false}
-                                  className="emotion-6 emotion-7"
+                                  categoryId="b"
                                   disabled={false}
                                   id="downshift-3-item-3"
+                                  isHighlighted={false}
+                                  isSelected={false}
+                                  key="44"
                                   onClick={[Function]}
                                   onMouseDown={[Function]}
                                   onMouseMove={[Function]}
                                   role="option"
+                                  twoColumn={false}
                                 >
-                                  <HighlightValue
+                                  <li
+                                    aria-selected={false}
+                                    className="emotion-6 emotion-7"
                                     disabled={false}
-                                    highlight={false}
-                                    value="Four"
-                                    valueToHighlight=""
+                                    id="downshift-3-item-3"
+                                    onClick={[Function]}
+                                    onMouseDown={[Function]}
+                                    onMouseMove={[Function]}
+                                    role="option"
                                   >
-                                    <span
-                                      className="emotion-4 emotion-5"
+                                    <HighlightValue
+                                      disabled={false}
+                                      highlight={false}
+                                      value="Four"
+                                      valueToHighlight=""
                                     >
-                                      Four
-                                    </span>
-                                  </HighlightValue>
-                                </li>
-                              </Item>
-                            </ul>
-                          </Items>
-                        </section>
-                      </Divider>
-                    </main>
-                  </Category>
-                </div>
-              </Categories>
+                                      <span
+                                        className="emotion-4 emotion-5"
+                                      >
+                                        Four
+                                      </span>
+                                    </HighlightValue>
+                                  </li>
+                                </Item>
+                              </ul>
+                            </Items>
+                          </section>
+                        </Divider>
+                      </main>
+                    </Category>
+                  </div>
+                </Categories>
+              </div>
             </div>
-          </div>
-        </List>
-      </ForwardRef>
+          </List>
+        </ForwardRef>
+      </DropdownList>
     </x-fragment>
   </div>
 </DropdownContainer>
 `;
 
 exports[`renders an open dropdown with categories and twoColumn 1`] = `
-.emotion-42 {
+.emotion-47 {
   display: inline-block;
 }
 
-.emotion-40 {
+.emotion-41 {
   z-index: 1;
   list-style: none;
   background-color: #FFFFFF;
@@ -823,7 +902,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
       aria-haspopup="listbox"
       aria-labelledby="downshift-4-label"
       aria-owns="downshift-4-menu"
-      className="emotion-42 emotion-43"
+      className="emotion-47 emotion-48"
       role="combobox"
     >
       <x-fragment>
@@ -841,7 +920,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
           onKeyDown={[Function]}
           value=""
         />
-        <ForwardRef
+        <DropdownList
           categories={
             Array [
               Object {
@@ -887,261 +966,311 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
           twoColumn={true}
           useFilter={false}
         >
-          <List>
-            <div
-              className="emotion-40 emotion-41"
+          <ForwardRef
+            categories={
+              Array [
+                Object {
+                  "id": "a",
+                  "label": "Category A",
+                },
+                Object {
+                  "id": "b",
+                  "label": "Category B",
+                },
+              ]
+            }
+            className="emotion-43 emotion-40"
+            filterFn={[Function]}
+            getItemProps={[Function]}
+            highlight={false}
+            highlightedIndex={null}
+            inputValue=""
+            items={
+              Array [
+                Object {
+                  "categoryId": "a",
+                  "id": 10,
+                  "label": "One",
+                },
+                Object {
+                  "categoryId": "a",
+                  "id": 22,
+                  "label": "Two",
+                },
+                Object {
+                  "categoryId": "b",
+                  "id": 33,
+                  "label": "Three",
+                },
+                Object {
+                  "categoryId": "b",
+                  "id": 44,
+                  "label": "Four",
+                },
+              ]
+            }
+            selectedItems={Array []}
+            twoColumn={true}
+            useFilter={false}
+          >
+            <List
+              className="emotion-43 emotion-40"
             >
-              <div>
-                <Categories
-                  key="a"
-                >
-                  <div
-                    className="emotion-18 emotion-19"
+              <div
+                className="emotion-40 emotion-41 emotion-42"
+              >
+                <div>
+                  <Categories
+                    key="a"
                   >
-                    <Category
-                      twoColumn={true}
+                    <div
+                      className="emotion-18 emotion-19"
                     >
-                      <main
-                        className="emotion-16 emotion-17"
+                      <Category
+                        twoColumn={true}
                       >
-                        <Divider
-                          isHighlighted={false}
-                          isSelected={false}
-                          twoColumn={true}
+                        <main
+                          className="emotion-16 emotion-17"
                         >
-                          <section
-                            className="emotion-2 emotion-3"
+                          <Divider
+                            isHighlighted={false}
+                            isSelected={false}
+                            twoColumn={true}
                           >
-                            <GroupTitle>
-                              <h3
-                                className="emotion-0 emotion-1"
-                              >
-                                Category A
-                              </h3>
-                            </GroupTitle>
-                          </section>
-                        </Divider>
-                        <Divider
-                          twoColumn={true}
-                        >
-                          <section
-                            className="emotion-2 emotion-3"
-                          >
-                            <Items>
-                              <ul
-                                className="emotion-12 emotion-13"
-                              >
-                                <Item
-                                  aria-selected={false}
-                                  categoryId="a"
-                                  disabled={false}
-                                  id="downshift-4-item-0"
-                                  isHighlighted={false}
-                                  isSelected={false}
-                                  key="10"
-                                  onClick={[Function]}
-                                  onMouseDown={[Function]}
-                                  onMouseMove={[Function]}
-                                  role="option"
-                                  twoColumn={true}
+                            <section
+                              className="emotion-2 emotion-3"
+                            >
+                              <GroupTitle>
+                                <h3
+                                  className="emotion-0 emotion-1"
                                 >
-                                  <li
+                                  Category A
+                                </h3>
+                              </GroupTitle>
+                            </section>
+                          </Divider>
+                          <Divider
+                            twoColumn={true}
+                          >
+                            <section
+                              className="emotion-2 emotion-3"
+                            >
+                              <Items>
+                                <ul
+                                  className="emotion-12 emotion-13"
+                                >
+                                  <Item
                                     aria-selected={false}
-                                    className="emotion-6 emotion-7"
+                                    categoryId="a"
                                     disabled={false}
                                     id="downshift-4-item-0"
+                                    isHighlighted={false}
+                                    isSelected={false}
+                                    key="10"
                                     onClick={[Function]}
                                     onMouseDown={[Function]}
                                     onMouseMove={[Function]}
                                     role="option"
+                                    twoColumn={true}
                                   >
-                                    <HighlightValue
+                                    <li
+                                      aria-selected={false}
+                                      className="emotion-6 emotion-7"
                                       disabled={false}
-                                      highlight={false}
-                                      value="One"
-                                      valueToHighlight=""
+                                      id="downshift-4-item-0"
+                                      onClick={[Function]}
+                                      onMouseDown={[Function]}
+                                      onMouseMove={[Function]}
+                                      role="option"
                                     >
-                                      <span
-                                        className="emotion-4 emotion-5"
+                                      <HighlightValue
+                                        disabled={false}
+                                        highlight={false}
+                                        value="One"
+                                        valueToHighlight=""
                                       >
-                                        One
-                                      </span>
-                                    </HighlightValue>
-                                  </li>
-                                </Item>
-                                <Item
-                                  aria-selected={false}
-                                  categoryId="a"
-                                  disabled={false}
-                                  id="downshift-4-item-1"
-                                  isHighlighted={false}
-                                  isSelected={false}
-                                  key="22"
-                                  onClick={[Function]}
-                                  onMouseDown={[Function]}
-                                  onMouseMove={[Function]}
-                                  role="option"
-                                  twoColumn={true}
-                                >
-                                  <li
+                                        <span
+                                          className="emotion-4 emotion-5"
+                                        >
+                                          One
+                                        </span>
+                                      </HighlightValue>
+                                    </li>
+                                  </Item>
+                                  <Item
                                     aria-selected={false}
-                                    className="emotion-6 emotion-7"
+                                    categoryId="a"
                                     disabled={false}
                                     id="downshift-4-item-1"
+                                    isHighlighted={false}
+                                    isSelected={false}
+                                    key="22"
                                     onClick={[Function]}
                                     onMouseDown={[Function]}
                                     onMouseMove={[Function]}
                                     role="option"
+                                    twoColumn={true}
                                   >
-                                    <HighlightValue
+                                    <li
+                                      aria-selected={false}
+                                      className="emotion-6 emotion-7"
                                       disabled={false}
-                                      highlight={false}
-                                      value="Two"
-                                      valueToHighlight=""
+                                      id="downshift-4-item-1"
+                                      onClick={[Function]}
+                                      onMouseDown={[Function]}
+                                      onMouseMove={[Function]}
+                                      role="option"
                                     >
-                                      <span
-                                        className="emotion-4 emotion-5"
+                                      <HighlightValue
+                                        disabled={false}
+                                        highlight={false}
+                                        value="Two"
+                                        valueToHighlight=""
                                       >
-                                        Two
-                                      </span>
-                                    </HighlightValue>
-                                  </li>
-                                </Item>
-                              </ul>
-                            </Items>
-                          </section>
-                        </Divider>
-                      </main>
-                    </Category>
-                  </div>
-                </Categories>
-                <Categories
-                  key="b"
-                >
-                  <div
-                    className="emotion-18 emotion-19"
+                                        <span
+                                          className="emotion-4 emotion-5"
+                                        >
+                                          Two
+                                        </span>
+                                      </HighlightValue>
+                                    </li>
+                                  </Item>
+                                </ul>
+                              </Items>
+                            </section>
+                          </Divider>
+                        </main>
+                      </Category>
+                    </div>
+                  </Categories>
+                  <Categories
+                    key="b"
                   >
-                    <Category
-                      twoColumn={true}
+                    <div
+                      className="emotion-18 emotion-19"
                     >
-                      <main
-                        className="emotion-16 emotion-17"
+                      <Category
+                        twoColumn={true}
                       >
-                        <Divider
-                          isHighlighted={false}
-                          isSelected={false}
-                          twoColumn={true}
+                        <main
+                          className="emotion-16 emotion-17"
                         >
-                          <section
-                            className="emotion-2 emotion-3"
+                          <Divider
+                            isHighlighted={false}
+                            isSelected={false}
+                            twoColumn={true}
                           >
-                            <GroupTitle>
-                              <h3
-                                className="emotion-0 emotion-1"
-                              >
-                                Category B
-                              </h3>
-                            </GroupTitle>
-                          </section>
-                        </Divider>
-                        <Divider
-                          twoColumn={true}
-                        >
-                          <section
-                            className="emotion-2 emotion-3"
-                          >
-                            <Items>
-                              <ul
-                                className="emotion-12 emotion-13"
-                              >
-                                <Item
-                                  aria-selected={false}
-                                  categoryId="b"
-                                  disabled={false}
-                                  id="downshift-4-item-2"
-                                  isHighlighted={false}
-                                  isSelected={false}
-                                  key="33"
-                                  onClick={[Function]}
-                                  onMouseDown={[Function]}
-                                  onMouseMove={[Function]}
-                                  role="option"
-                                  twoColumn={true}
+                            <section
+                              className="emotion-2 emotion-3"
+                            >
+                              <GroupTitle>
+                                <h3
+                                  className="emotion-0 emotion-1"
                                 >
-                                  <li
+                                  Category B
+                                </h3>
+                              </GroupTitle>
+                            </section>
+                          </Divider>
+                          <Divider
+                            twoColumn={true}
+                          >
+                            <section
+                              className="emotion-2 emotion-3"
+                            >
+                              <Items>
+                                <ul
+                                  className="emotion-12 emotion-13"
+                                >
+                                  <Item
                                     aria-selected={false}
-                                    className="emotion-6 emotion-7"
+                                    categoryId="b"
                                     disabled={false}
                                     id="downshift-4-item-2"
+                                    isHighlighted={false}
+                                    isSelected={false}
+                                    key="33"
                                     onClick={[Function]}
                                     onMouseDown={[Function]}
                                     onMouseMove={[Function]}
                                     role="option"
+                                    twoColumn={true}
                                   >
-                                    <HighlightValue
+                                    <li
+                                      aria-selected={false}
+                                      className="emotion-6 emotion-7"
                                       disabled={false}
-                                      highlight={false}
-                                      value="Three"
-                                      valueToHighlight=""
+                                      id="downshift-4-item-2"
+                                      onClick={[Function]}
+                                      onMouseDown={[Function]}
+                                      onMouseMove={[Function]}
+                                      role="option"
                                     >
-                                      <span
-                                        className="emotion-4 emotion-5"
+                                      <HighlightValue
+                                        disabled={false}
+                                        highlight={false}
+                                        value="Three"
+                                        valueToHighlight=""
                                       >
-                                        Three
-                                      </span>
-                                    </HighlightValue>
-                                  </li>
-                                </Item>
-                                <Item
-                                  aria-selected={false}
-                                  categoryId="b"
-                                  disabled={false}
-                                  id="downshift-4-item-3"
-                                  isHighlighted={false}
-                                  isSelected={false}
-                                  key="44"
-                                  onClick={[Function]}
-                                  onMouseDown={[Function]}
-                                  onMouseMove={[Function]}
-                                  role="option"
-                                  twoColumn={true}
-                                >
-                                  <li
+                                        <span
+                                          className="emotion-4 emotion-5"
+                                        >
+                                          Three
+                                        </span>
+                                      </HighlightValue>
+                                    </li>
+                                  </Item>
+                                  <Item
                                     aria-selected={false}
-                                    className="emotion-6 emotion-7"
+                                    categoryId="b"
                                     disabled={false}
                                     id="downshift-4-item-3"
+                                    isHighlighted={false}
+                                    isSelected={false}
+                                    key="44"
                                     onClick={[Function]}
                                     onMouseDown={[Function]}
                                     onMouseMove={[Function]}
                                     role="option"
+                                    twoColumn={true}
                                   >
-                                    <HighlightValue
+                                    <li
+                                      aria-selected={false}
+                                      className="emotion-6 emotion-7"
                                       disabled={false}
-                                      highlight={false}
-                                      value="Four"
-                                      valueToHighlight=""
+                                      id="downshift-4-item-3"
+                                      onClick={[Function]}
+                                      onMouseDown={[Function]}
+                                      onMouseMove={[Function]}
+                                      role="option"
                                     >
-                                      <span
-                                        className="emotion-4 emotion-5"
+                                      <HighlightValue
+                                        disabled={false}
+                                        highlight={false}
+                                        value="Four"
+                                        valueToHighlight=""
                                       >
-                                        Four
-                                      </span>
-                                    </HighlightValue>
-                                  </li>
-                                </Item>
-                              </ul>
-                            </Items>
-                          </section>
-                        </Divider>
-                      </main>
-                    </Category>
-                  </div>
-                </Categories>
+                                        <span
+                                          className="emotion-4 emotion-5"
+                                        >
+                                          Four
+                                        </span>
+                                      </HighlightValue>
+                                    </li>
+                                  </Item>
+                                </ul>
+                              </Items>
+                            </section>
+                          </Divider>
+                        </main>
+                      </Category>
+                    </div>
+                  </Categories>
+                </div>
               </div>
-            </div>
-          </List>
-        </ForwardRef>
+            </List>
+          </ForwardRef>
+        </DropdownList>
       </x-fragment>
     </div>
   </DropdownContainer>
@@ -1356,11 +1485,11 @@ exports[`using arrow down should hover on element 1`] = `
 `;
 
 exports[`using useFilter should only return items that match the input value 1`] = `
-.emotion-16 {
+.emotion-21 {
   display: inline-block;
 }
 
-.emotion-14 {
+.emotion-15 {
   z-index: 1;
   list-style: none;
   background-color: #FFFFFF;
@@ -1429,7 +1558,7 @@ exports[`using useFilter should only return items that match the input value 1`]
       aria-haspopup="listbox"
       aria-labelledby="downshift-9-label"
       aria-owns="downshift-9-menu"
-      className="emotion-16 emotion-17"
+      className="emotion-21 emotion-22"
       role="combobox"
     >
       <x-fragment>
@@ -1447,7 +1576,7 @@ exports[`using useFilter should only return items that match the input value 1`]
           onKeyDown={[Function]}
           value="F"
         />
-        <ForwardRef
+        <DropdownList
           categories={Array []}
           filterFn={[Function]}
           getItemProps={[Function]}
@@ -1529,115 +1658,201 @@ exports[`using useFilter should only return items that match the input value 1`]
           twoColumn={true}
           useFilter={true}
         >
-          <List>
-            <div
-              className="emotion-14 emotion-15"
+          <ForwardRef
+            categories={Array []}
+            className="emotion-17 emotion-14"
+            filterFn={[Function]}
+            getItemProps={[Function]}
+            highlight={true}
+            highlightedIndex={null}
+            inputValue="F"
+            items={
+              Array [
+                Object {
+                  "categoryId": "a",
+                  "id": 10,
+                  "label": "One",
+                },
+                Object {
+                  "categoryId": "a",
+                  "id": 22,
+                  "label": "Two",
+                },
+                Object {
+                  "categoryId": "b",
+                  "id": 33,
+                  "label": "Three",
+                },
+                Object {
+                  "categoryId": "b",
+                  "id": 44,
+                  "label": "Four",
+                },
+                Object {
+                  "categoryId": "b",
+                  "id": 55,
+                  "label": "Five",
+                },
+                Object {
+                  "categoryId": "b",
+                  "disabled": true,
+                  "id": 66,
+                  "label": "Six",
+                },
+                Object {
+                  "categoryId": "b",
+                  "disabled": true,
+                  "id": 77,
+                  "label": "Seven",
+                },
+                Object {
+                  "categoryId": "b",
+                  "id": 88,
+                  "label": "Eight",
+                },
+                Object {
+                  "categoryId": "b",
+                  "id": 99,
+                  "label": "Nine",
+                },
+                Object {
+                  "categoryId": "b",
+                  "id": 101,
+                  "label": "Ten",
+                },
+                Object {
+                  "categoryId": "b",
+                  "id": 111,
+                  "label": "Eleven",
+                },
+                Object {
+                  "categoryId": "b",
+                  "id": 121,
+                  "label": "Twelve",
+                },
+                Object {
+                  "categoryId": "c",
+                  "id": 131,
+                  "label": "Thirteen",
+                },
+              ]
+            }
+            selectedItems={Array []}
+            twoColumn={true}
+            useFilter={true}
+          >
+            <List
+              className="emotion-17 emotion-14"
             >
-              <Items>
-                <ul
-                  className="emotion-12 emotion-13"
-                >
-                  <Item
-                    aria-selected={false}
-                    disabled={false}
-                    id="downshift-9-item-0"
-                    isHighlighted={false}
-                    isSelected={false}
-                    key="44"
-                    onClick={[Function]}
-                    onMouseDown={[Function]}
-                    onMouseMove={[Function]}
-                    role="option"
+              <div
+                className="emotion-14 emotion-15 emotion-16"
+              >
+                <Items>
+                  <ul
+                    className="emotion-12 emotion-13"
                   >
-                    <li
+                    <Item
                       aria-selected={false}
-                      className="emotion-4 emotion-5"
                       disabled={false}
                       id="downshift-9-item-0"
+                      isHighlighted={false}
+                      isSelected={false}
+                      key="44"
                       onClick={[Function]}
                       onMouseDown={[Function]}
                       onMouseMove={[Function]}
                       role="option"
                     >
-                      <HighlightValue
+                      <li
+                        aria-selected={false}
+                        className="emotion-4 emotion-5"
                         disabled={false}
-                        highlight={true}
-                        value="Four"
-                        valueToHighlight="F"
+                        id="downshift-9-item-0"
+                        onClick={[Function]}
+                        onMouseDown={[Function]}
+                        onMouseMove={[Function]}
+                        role="option"
                       >
-                        <span
-                          className="emotion-2 emotion-3"
+                        <HighlightValue
+                          disabled={false}
+                          highlight={true}
+                          value="Four"
+                          valueToHighlight="F"
                         >
-                          <Text
-                            as="span"
-                            key="1"
-                            type="bold"
+                          <span
+                            className="emotion-2 emotion-3"
                           >
-                            <span
-                              className="emotion-0 emotion-1"
+                            <Text
+                              as="span"
+                              key="1"
                               type="bold"
                             >
-                              F
-                            </span>
-                          </Text>
-                          our
-                        </span>
-                      </HighlightValue>
-                    </li>
-                  </Item>
-                  <Item
-                    aria-selected={false}
-                    disabled={false}
-                    id="downshift-9-item-1"
-                    isHighlighted={false}
-                    isSelected={false}
-                    key="55"
-                    onClick={[Function]}
-                    onMouseDown={[Function]}
-                    onMouseMove={[Function]}
-                    role="option"
-                  >
-                    <li
+                              <span
+                                className="emotion-0 emotion-1"
+                                type="bold"
+                              >
+                                F
+                              </span>
+                            </Text>
+                            our
+                          </span>
+                        </HighlightValue>
+                      </li>
+                    </Item>
+                    <Item
                       aria-selected={false}
-                      className="emotion-4 emotion-5"
                       disabled={false}
                       id="downshift-9-item-1"
+                      isHighlighted={false}
+                      isSelected={false}
+                      key="55"
                       onClick={[Function]}
                       onMouseDown={[Function]}
                       onMouseMove={[Function]}
                       role="option"
                     >
-                      <HighlightValue
+                      <li
+                        aria-selected={false}
+                        className="emotion-4 emotion-5"
                         disabled={false}
-                        highlight={true}
-                        value="Five"
-                        valueToHighlight="F"
+                        id="downshift-9-item-1"
+                        onClick={[Function]}
+                        onMouseDown={[Function]}
+                        onMouseMove={[Function]}
+                        role="option"
                       >
-                        <span
-                          className="emotion-2 emotion-3"
+                        <HighlightValue
+                          disabled={false}
+                          highlight={true}
+                          value="Five"
+                          valueToHighlight="F"
                         >
-                          <Text
-                            as="span"
-                            key="1"
-                            type="bold"
+                          <span
+                            className="emotion-2 emotion-3"
                           >
-                            <span
-                              className="emotion-0 emotion-1"
+                            <Text
+                              as="span"
+                              key="1"
                               type="bold"
                             >
-                              F
-                            </span>
-                          </Text>
-                          ive
-                        </span>
-                      </HighlightValue>
-                    </li>
-                  </Item>
-                </ul>
-              </Items>
-            </div>
-          </List>
-        </ForwardRef>
+                              <span
+                                className="emotion-0 emotion-1"
+                                type="bold"
+                              >
+                                F
+                              </span>
+                            </Text>
+                            ive
+                          </span>
+                        </HighlightValue>
+                      </li>
+                    </Item>
+                  </ul>
+                </Items>
+              </div>
+            </List>
+          </ForwardRef>
+        </DropdownList>
       </x-fragment>
     </div>
   </DropdownContainer>

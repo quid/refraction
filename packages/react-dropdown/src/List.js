@@ -51,53 +51,55 @@ export const List = styled.div`
   min-width: 27.86em;
 `;
 
-const DropdownList: React.ComponentType<Props> = React.forwardRef(
-  (
-    {
-      items,
-      categories,
-      inputValue,
-      getItemProps,
-      useFilter,
-      filterFn,
-      twoColumn,
-      highlightedIndex,
-      selectedItems,
-      highlight,
-      ...props
-    }: Props,
-    ref: React.ElementRef<any>
-  ) => {
-    const filteredItems = useFilter ? filterFn(items, inputValue) : items;
-    if (filteredItems.length) {
-      return (
-        <List ref={ref} {...props}>
-          {categories.length > 0 ? (
-            <DropdownCategories
-              categories={categories}
-              items={filteredItems}
-              getItemProps={getItemProps}
-              twoColumn={twoColumn}
-              inputValue={inputValue}
-              highlightedIndex={highlightedIndex}
-              selectedItems={selectedItems}
-              highlight={highlight}
-            />
-          ) : (
-            <DropdownItems
-              items={filteredItems}
-              getItemProps={getItemProps}
-              inputValue={inputValue}
-              highlightedIndex={highlightedIndex}
-              selectedItems={selectedItems}
-              highlight={highlight}
-            />
-          )}
-        </List>
-      );
+const DropdownList: React.ComponentType<Props> = styled(
+  React.forwardRef(
+    (
+      {
+        items,
+        categories,
+        inputValue,
+        getItemProps,
+        useFilter,
+        filterFn,
+        twoColumn,
+        highlightedIndex,
+        selectedItems,
+        highlight,
+        ...props
+      }: Props,
+      ref: React.ElementRef<any>
+    ) => {
+      const filteredItems = useFilter ? filterFn(items, inputValue) : items;
+      if (filteredItems.length) {
+        return (
+          <List ref={ref} {...props}>
+            {categories.length > 0 ? (
+              <DropdownCategories
+                categories={categories}
+                items={filteredItems}
+                getItemProps={getItemProps}
+                twoColumn={twoColumn}
+                inputValue={inputValue}
+                highlightedIndex={highlightedIndex}
+                selectedItems={selectedItems}
+                highlight={highlight}
+              />
+            ) : (
+              <DropdownItems
+                items={filteredItems}
+                getItemProps={getItemProps}
+                inputValue={inputValue}
+                highlightedIndex={highlightedIndex}
+                selectedItems={selectedItems}
+                highlight={highlight}
+              />
+            )}
+          </List>
+        );
+      }
+      return null;
     }
-    return null;
-  }
-);
+  )
+)();
 
 export default DropdownList;
