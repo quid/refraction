@@ -29,7 +29,7 @@
     "react-router-dom": "^4.0.0||^5.0.0"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.4",
+    "@emotion/core": "^10.0.10",
     "@emotion/css": "^10.0.4",
     "@emotion/styled": "^10.0.7",
     "@quid/react-core": "^2.0.0",

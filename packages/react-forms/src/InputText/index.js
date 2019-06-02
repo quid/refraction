@@ -120,18 +120,16 @@ const Container = styled.div`
 
 const InputText: React.StatelessFunctionalComponent<Props> = styled(
   React.forwardRef(
-    ({ onChange, validationErrorMessage, as, ...props }: Props, ref) => {
+    (
+      { onChange, validationErrorMessage, as, renderAddon, ...props }: Props,
+      ref
+    ) => {
       const input = React.createRef();
       return (
         <InvalidHandler errorMessage={validationErrorMessage}>
           {(getInputProps, isInvalid) => (
             <ClassNames>
-              {({
-                css,
-                marginRightClass = css({
-                  marginRight: PADDING[props.size || 'regular'],
-                }),
-              }) => (
+              {({ css }) => (
                 <Container
                   {...omit(props)(INPUT_ATTRIBUTES)}
                   isInvalid={isInvalid}
@@ -142,13 +140,15 @@ const InputText: React.StatelessFunctionalComponent<Props> = styled(
                     {...include(props)([...INPUT_ATTRIBUTES, 'disabled'])}
                     {...getInputProps({ onChange })}
                   />
-                  {props.renderAddon &&
-                    props.renderAddon({
+                  {renderAddon &&
+                    renderAddon({
                       onClick: () =>
                         input.current
                           ? input.current.focus()
                           : /* istanbul ignore next */ noop(),
-                      marginRightClass,
+                      marginRightClass: css({
+                        marginRight: PADDING[props.size || 'regular'],
+                      }),
                     })}
                 </Container>
               )}

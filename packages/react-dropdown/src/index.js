@@ -164,6 +164,7 @@ const Dropdown = ({
                     renderDropdown({
                       dropdown: (
                         <DropdownList
+                          // $FlowFixMe(fzivolo): react-popper has wrong types?
                           ref={ref}
                           style={style}
                           twoColumn={twoColumn}

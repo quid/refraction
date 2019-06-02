@@ -29,29 +29,28 @@ const Right = styled.div`
 const ActionBar = styled(
   ({ action, renderActionLeft, renderActionRight, ...props }: Props) => (
     <ClassNames>
-      {({
-        css,
-        actionClassName = css`
+      {({ css }) => {
+        const actionClassName = css`
           margin: 0 5px;
           &:first-child {
             margin-left: 0;
           }
-
           &:last-child {
             margin-right: 0;
           }
-        `,
-      }) => (
-        <div {...props}>
-          {renderActionLeft && (
-            <Right>{renderActionLeft(actionClassName)}</Right>
-          )}
-          {action}
-          {renderActionRight && (
-            <Left>{renderActionRight(actionClassName)}</Left>
-          )}
-        </div>
-      )}
+        `;
+        return (
+          <div {...props}>
+            {renderActionLeft && (
+              <Right>{renderActionLeft(actionClassName)}</Right>
+            )}
+            {action}
+            {renderActionRight && (
+              <Left>{renderActionRight(actionClassName)}</Left>
+            )}
+          </div>
+        );
+      }}
     </ClassNames>
   )
 )`

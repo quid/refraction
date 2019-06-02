@@ -49,7 +49,7 @@ function hasName(name): boolean %checks {
 // producing a bad visual result (crbug.com/696603)
 export function wrapWithSvg(
   content: React$Element<any>,
-  { className, on, ...props }: { className?: string }
+  { className, on, ...props }: { className?: string, on: boolean }
 ) {
   return (
     <svg

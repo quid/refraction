@@ -4,8 +4,8 @@
 .*/node_modules/.*[^e]\.json$
 .*/node_modules/.*\(lib\|test\).*\.json$
 
-[untyped]
-.*/node_modules/@emotion/core/src/context.js
+# .flow files are generated for distribution purpose only, we don't need to check them
+<PROJECT_ROOT>/packages/.*/dist/**/.*\.flow
 
 [options]
 suppress_comment= \\(.\\|\n\\)*\\$FlowExpectError

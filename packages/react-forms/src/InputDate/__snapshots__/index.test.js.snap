@@ -180,7 +180,6 @@ exports[`renders the expected markup 1`] = `
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
-          renderAddon={[Function]}
         >
           <div
             className="emotion-5 emotion-6 emotion-7"

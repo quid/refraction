@@ -5,6 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @flow
+import { type Node } from 'react';
 import { type PropGetters } from 'downshift';
 
 export type DropdownItem = {
@@ -17,7 +18,7 @@ export type DropdownItem = {
     isDisabled: boolean,
     isHighlighted: boolean,
     item: DropdownItem,
-  }) => React.Node,
+  }) => Node,
 };
 
 export type DropdownCategory = {
