@@ -26,6 +26,7 @@ type Props = {
   labelAlignment?: 'left' | 'right',
   children: React.Node,
   size?: 'large' | 'small' | 'regular',
+  inline?: boolean,
 };
 
 const margin = {

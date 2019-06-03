@@ -81,7 +81,7 @@ const Tabs = styled(
               {React.Children.map(children, (child, index) => {
                 return (
                   <RTPTabPanel name={child.props.name}>
-                    {({ label }) => {
+                    {() => {
                       return React.cloneElement(child, {
                         id: `${id}_panel_${index}`,
                         key: index,

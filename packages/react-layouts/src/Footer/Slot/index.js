@@ -31,20 +31,21 @@ const Slot = styled(
     ...props
   }: Props) => (
     <ClassNames>
-      {({
-        css,
-        paddingClass = css`
-          margin-left: ${PADDING};
-          margin-right: ${PADDING};
-          &:first-of-type {
-            margin-left: calc(${PADDING} * 2);
-          }
+      {({ css }) => (
+        <div {...props}>
+          {children(css`
+            margin-left: ${PADDING};
+            margin-right: ${PADDING};
+            &:first-of-type {
+              margin-left: calc(${PADDING} * 2);
+            }
 
-          &:last-of-type {
-            margin-right: calc(${PADDING} * 2);
-          }
-        `,
-      }) => <div {...props}>{children(paddingClass)}</div>}
+            &:last-of-type {
+              margin-right: calc(${PADDING} * 2);
+            }
+          `)}
+        </div>
+      )}
     </ClassNames>
   )
 )`
