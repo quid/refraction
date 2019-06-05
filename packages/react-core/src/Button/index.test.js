@@ -113,6 +113,12 @@ it('renders a Button with type=submit', () => {
   expect(wrapper.find('button').props().type).toBe('submit');
 });
 
+it('forwards ref properly', () => {
+  const ref = React.createRef();
+  mount(<Button ref={ref}>Foobar</Button>);
+  expect(ref.current).toBeDefined();
+});
+
 // it('renders properly with isGroupChild property', () => {
 //   const wrapper = mount(<Button isGroupChild />);
 //   expect(wrapper).toMatchSnapshot();
