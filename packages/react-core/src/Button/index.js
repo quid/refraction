@@ -100,7 +100,7 @@ const Button = styled(
       }
 
       return (
-        <Tag {...specificProps} {...props}>
+        <Tag {...specificProps} {...props} ref={ref}>
           {React.Children.map(children, node =>
             ['string', 'number'].includes(typeof node) ? (
               <span>{node}</span>
