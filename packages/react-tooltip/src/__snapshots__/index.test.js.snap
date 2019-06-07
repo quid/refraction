@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Container component 1`] = `
+<Container
+  arrowProps={
+    Object {
+      "ref": Object {
+        "current": <x-popover-arrow />,
+      },
+      "style": Object {
+        "left": 0,
+        "top": 0,
+      },
+    }
+  }
+>
+  <ForwardRef
+    arrowProps={
+      Object {
+        "ref": Object {
+          "current": <x-popover-arrow />,
+        },
+        "style": Object {
+          "left": 0,
+          "top": 0,
+        },
+      }
+    }
+    className="css-yfonvn-Container emotion-0"
+  >
+    <x-popover-container
+      arrowProps={
+        Object {
+          "ref": Object {
+            "current": <x-popover-arrow />,
+          },
+          "style": Object {
+            "left": 0,
+            "top": 0,
+          },
+        }
+      }
+      className="css-yfonvn-Container emotion-0"
+    >
+      foobar
+      <x-popover-arrow />
+    </x-popover-container>
+  </ForwardRef>
+</Container>
+`;
