@@ -13,8 +13,10 @@ import {
   type PopperArrowProps,
 } from 'react-popper';
 import { type Placement, type Modifiers } from 'popper.js';
+import { useDebouncedCallback } from 'use-debounce';
 import styled from '@emotion/styled/macro';
 import css from '@emotion/css/macro';
+import isPropValid from '@emotion/is-prop-valid';
 import { themes } from '@quid/theme';
 import Color from 'color';
 import MouseOutside from '@quid/react-mouse-outside';
@@ -46,7 +48,10 @@ Arrow.defaultProps = {
   theme: themes.light,
 };
 
-const Container = styled.div`
+const Container = styled('div', {
+  shouldForwardProp: prop =>
+    !['open', 'close', 'toggle'].includes(prop) && isPropValid(prop),
+})`
   background-color: ${props => props.theme.primaryInverse};
   color: ${props => props.theme.primary};
   border: 1px solid ${props => props.theme.colors.gray2};
@@ -115,13 +120,17 @@ Container.defaultProps = {
   theme: themes.light,
 };
 
+type Helpers = {
+  toggle: () => void,
+  open: () => void,
+  close: () => void,
+};
 type RenderPopoverProps = {
   ref: React.ElementRef<any>,
   style: $Shape<CSSStyleDeclaration>,
   placement: Placement,
   arrowProps: PopperArrowProps,
-  toggle: () => void,
-};
+} & Helpers;
 
 type Props = {
   open?: boolean,
@@ -132,7 +141,10 @@ type Props = {
   modifiers?: Modifiers,
   eventsEnabled?: boolean,
   positionFixed?: boolean,
-  children: ({ ref: React.ElementRef<any>, toggle: () => void }) => React.Node,
+  mouseMoveBehavior?: boolean,
+  openDelay?: number,
+  closeDelay?: number,
+  children: ({ ref: React.ElementRef<any> } & Helpers) => React.Node,
 };
 
 const Popover = ({
@@ -144,21 +156,60 @@ const Popover = ({
   modifiers,
   eventsEnabled = true,
   positionFixed = false,
+  mouseMoveBehavior = false,
+  openDelay = 0,
+  closeDelay = 0,
   children,
 }: Props) => {
-  const [isOpen, setOpen] = useControlledState(defaultOpen, open, onToggle);
-  const toggle = React.useCallback(() => setOpen(open => !open), [setOpen]);
-  const close = React.useCallback(() => setOpen(false), [setOpen]);
   const referenceRef = React.useRef();
   const popperRef = React.useRef();
 
+  const [isOpen, setOpen] = useControlledState(defaultOpen, open, onToggle);
+
+  const [debouncedOpen, cancelOpen] = useDebouncedCallback(
+    () => setOpen(true),
+    openDelay
+  );
+  const [debouncedClose, cancelClose] = useDebouncedCallback(
+    () => setOpen(false),
+    closeDelay
+  );
+
+  // When a callback is fired, we cancel any inflight call to leave the new one alone
+  const openFn = React.useCallback(
+    () => void (cancelClose(), debouncedOpen()),
+    [cancelClose, debouncedOpen]
+  );
+  const closeFn = React.useCallback(
+    () => void (cancelOpen(), debouncedClose()),
+    [cancelOpen, debouncedClose]
+  );
+  const toggleFn = React.useCallback(() => (isOpen ? closeFn() : openFn()), [
+    isOpen,
+    closeFn,
+    openFn,
+  ]);
+
+  const helpers = {
+    toggle: toggleFn,
+    open: openFn,
+    close: closeFn,
+  };
+
   return (
-    <MouseOutside refs={[referenceRef, popperRef]} onClickOutside={close}>
+    <MouseOutside
+      refs={[referenceRef, popperRef]}
+      onClickOutside={closeFn}
+      onMoveOutside={mouseMoveBehavior ? closeFn : undefined}
+    >
       {() => (
         <Manager>
           <Reference>
             {({ ref }) =>
-              children({ ref: mergeRefs(ref, referenceRef), toggle })
+              children({
+                ...helpers,
+                ref: mergeRefs(ref, referenceRef),
+              })
             }
           </Reference>
           {isOpen && (
@@ -171,8 +222,8 @@ const Popover = ({
               {({ ref, ...popperProps }) =>
                 renderPopover({
                   ...popperProps,
+                  ...helpers,
                   ref: mergeRefs(ref, popperRef),
-                  toggle,
                 })
               }
             </Popper>

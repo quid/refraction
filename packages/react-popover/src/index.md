@@ -32,7 +32,7 @@ import Popover, { Container, Arrow } from '.'; // @quid/react-popover
     </Container>
   )}
 >
-  {({ ref, toggle }) => (
+  {({ ref, toggle, onMouseEnter }) => (
     <Button type="button" onClick={toggle} ref={ref}>
       Reference element
     </Button>
