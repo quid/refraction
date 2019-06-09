@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/quid/refraction/compare/v2.1.3...v2.2.0) (2019-06-09)
+
+
+### Features
+
+* add mousemove and delay feats to Popover ([8518851](https://github.com/quid/refraction/commit/8518851))
+* new Tooltip component ([0df5371](https://github.com/quid/refraction/commit/0df5371))
+
+
+
+
+
 ## [2.1.3](https://github.com/quid/refraction/compare/v2.1.2...v2.1.3) (2019-06-05)
 
 

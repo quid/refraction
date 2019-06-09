@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-popover",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "Popover component based on react-popper",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
