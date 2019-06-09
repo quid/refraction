@@ -3,8 +3,8 @@ used to quickly create popovers in your applications.
 
 It supports all the advanced positioning provided by `react-popper`,
 a "click outside" detection system to automatically close the popover
-whenever the user clicks outside of it, and a render-props based API
-to allow full customization of the component rendering.
+whenever the user clicks outside of it, open and close delays, and a
+render-props based API to allow full customization of the component rendering.
 
 As convenience utility, a `Container` component is exported from the paclage
 
