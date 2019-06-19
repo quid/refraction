@@ -18,7 +18,7 @@ const lightTheme = {
     .alpha(0.8)
     .string(),
   selected: colors.selected,
-  link: colors.link,
+  link: '#3C8790',
   disabled: colors.gray3,
   shadow: colors.black,
   colors,

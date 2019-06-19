@@ -12,6 +12,7 @@ import Color from 'color';
 
 export const grayPalette = {
   white: '#FFFFFF',
+  gray0: '#F8F8F8',
   gray1: '#E3E6E8',
   gray2: '#C7CCD1',
   gray3: '#8F9BA3',
@@ -51,7 +52,7 @@ const brandPalette = {
   highlighted: Color('#00c1bb')
     .alpha(0.6)
     .string(),
-  link: '#28beb8',
+  link: '#3C8790', // DEPRECATED! Use `theme.link` instead
 };
 
 const colors = {

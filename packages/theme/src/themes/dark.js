@@ -18,7 +18,7 @@ const darkTheme = {
     .alpha(0.8)
     .string(),
   selected: colors.selected,
-  link: colors.link,
+  link: '#1ED7D1',
   disabled: colors.gray3,
   shadow: colors.black,
   colors,
