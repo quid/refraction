@@ -51,7 +51,7 @@ const brandPalette = {
   highlighted: Color('#00c1bb')
     .alpha(0.6)
     .string(),
-  link: '#28beb8',
+  link: '#3C8790', // DEPRECATED! Use `theme.link` instead
 };
 
 const colors = {
