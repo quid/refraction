@@ -12,6 +12,7 @@ import Color from 'color';
 
 export const grayPalette = {
   white: '#FFFFFF',
+  gray0: '#F8F8F8',
   gray1: '#E3E6E8',
   gray2: '#C7CCD1',
   gray3: '#8F9BA3',
