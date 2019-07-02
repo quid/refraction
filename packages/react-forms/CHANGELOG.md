@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v2.3.0...v2.4.0) (2019-07-02)
+
+
+### Bug Fixes
+
+* forward ref to Icon ([6641ad2](https://github.com/quid/refraction/tree/master/packages/react-forms/commit/6641ad2))
+* tooltip and icon issues ([#91](https://github.com/quid/refraction/tree/master/packages/react-forms/issues/91)) ([6f18bc3](https://github.com/quid/refraction/tree/master/packages/react-forms/commit/6f18bc3))
+
+
+
+
+
 # [2.3.0](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v2.2.0...v2.3.0) (2019-06-19)
 
 **Note:** Version bump only for package @quid/react-forms

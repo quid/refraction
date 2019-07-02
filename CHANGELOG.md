@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/quid/refraction/compare/v2.3.0...v2.4.0) (2019-07-02)
+
+
+### Bug Fixes
+
+* forward ref to Icon ([6641ad2](https://github.com/quid/refraction/commit/6641ad2))
+* use react-popover Helpers type to define react-tooltip render-prop ([c37a41c](https://github.com/quid/refraction/commit/c37a41c))
+
+
+### Features
+
+* export Helpers type from react-popover ([3a86bcc](https://github.com/quid/refraction/commit/3a86bcc))
+
+
+
+
+
 # [2.3.0](https://github.com/quid/refraction/compare/v2.2.0...v2.3.0) (2019-06-19)
 
 
