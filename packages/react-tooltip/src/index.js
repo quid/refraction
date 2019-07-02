@@ -12,6 +12,7 @@ import styled from '@emotion/styled/macro';
 import Popover, {
   Container as PopoverContainer,
   Arrow,
+  type Helpers,
 } from '@quid/react-popover';
 
 type RenderTooltipProps = {
@@ -31,7 +32,7 @@ type Props = {
   modifiers?: Modifiers,
   eventsEnabled?: boolean,
   positionFixed?: boolean,
-  children: ({ ref: React.ElementRef<any>, toggle: () => void }) => React.Node,
+  children: ({ ref: React.ElementRef<any> } & Helpers) => React.Node,
 };
 
 const Tooltip = ({ renderTooltip, ...props }: Props) => (
