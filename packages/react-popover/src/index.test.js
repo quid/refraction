@@ -34,23 +34,23 @@ it('renders the Container component', () => {
 
 it('renders the Container component on different placements', () => {
   expect(mount(<Container placement="bottom" />)).toHaveStyleRule(
-    'border-right-color',
-    'transparent',
-    { target: `${Arrow}` }
-  );
-  expect(mount(<Container placement="top" />)).toHaveStyleRule(
-    'border-right-color',
-    'transparent',
+    'border-bottom-color',
+    '#FFFFFF',
     { target: `${Arrow}` }
   );
   expect(mount(<Container placement="right" />)).toHaveStyleRule(
+    'border-right-color',
+    '#FFFFFF',
+    { target: `${Arrow}` }
+  );
+  expect(mount(<Container placement="top" />)).toHaveStyleRule(
     'border-top-color',
-    'transparent',
+    '#FFFFFF',
     { target: `${Arrow}` }
   );
   expect(mount(<Container placement="left" />)).toHaveStyleRule(
-    'border-top-color',
-    'transparent',
+    'border-left-color',
+    '#FFFFFF',
     { target: `${Arrow}` }
   );
 });

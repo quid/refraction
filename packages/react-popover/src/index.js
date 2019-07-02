@@ -23,6 +23,14 @@ import MouseOutside from '@quid/react-mouse-outside';
 import mergeRefs from '@quid/merge-refs';
 import useControlledState from '@quid/react-use-controlled-state';
 
+const theme = {
+  ...themes.light,
+  popover: {
+    backgroundColor: themes.light.colors.white,
+    borderColor: themes.light.colors.gray1,
+  },
+};
+
 function getOppositePlacement(placement) {
   const hash = { left: 'right', right: 'left', bottom: 'top', top: 'bottom' };
   return placement.replace(/left|right|bottom|top/g, matched => hash[matched]);
@@ -42,19 +50,19 @@ const Arrow = styled(
   width: 0;
   height: 0;
   border-style: solid;
-  border-color: ${props => props.theme.primaryInverse};
+  border-color: ${props => props.theme.popover.borderColor};
 `;
 Arrow.defaultProps = {
-  theme: themes.light,
+  theme,
 };
 
 const Container = styled('div', {
   shouldForwardProp: prop =>
     !['open', 'close', 'toggle'].includes(prop) && isPropValid(prop),
 })`
-  background-color: ${props => props.theme.primaryInverse};
+  background-color: ${props => props.theme.popover.backgroundColor};
   color: ${props => props.theme.primary};
-  border: 1px solid ${props => props.theme.colors.gray2};
+  border: 1px solid ${props => props.theme.popover.borderColor};
   border-radius: 2px;
   padding: ${props => props.theme.sizes.small};
   filter: drop-shadow(
@@ -73,42 +81,22 @@ const Container = styled('div', {
       border-width: ${props.arrowSize}px;
       ${getOppositePlacement(props.placement)}: -${props.arrowSize}px;
       border-${getOppositePlacement(props.placement)}-width: 0;
-      border-${getOppositePlacement(props.placement)}-color: transparent;
-      ${
-        ['top', 'bottom'].includes(props.placement)
-          ? css`
-              border-right-color: transparent;
-              border-left-color: transparent;
-            `
-          : css`
-              border-top-color: transparent;
-              border-bottom-color: transparent;
-            `
-      }
-
+      border-color: transparent;
+      border-${props.placement}-color: ${props.theme.popover.backgroundColor};
       left: ${props.arrowProps.style.left}px;
       top: ${props.arrowProps.style.top}px;
     }
 
     ${ArrowBorder} {
       border-width: ${props.arrowSize + 1}px;
-      border-${props.placement}-color: ${props.theme.colors.gray2};
+      border-${props.placement}-color: ${props.theme.popover.borderColor};
       left: -${props.arrowSize + 1}px;
       top: -${props.arrowSize + 1}px;
-      ${
+      transform: ${
         ['left', 'right'].includes(props.placement)
-          ? css`
-              transform: translateX(
-                ${props.placement === 'left' ? 1.5 : -1.5}px
-              );
-            `
-          : css`
-              transform: translateY(
-                ${props.placement === 'top' ? 1.5 : -1.5}px
-              );
-            `
-      }
-
+          ? `translateX(${props.placement === 'left' ? 1.5 : -1.5}px)`
+          : `translateY(${props.placement === 'top' ? 1.5 : -1.5}px)`
+      };
       z-index: -1;
     }
   `}
@@ -117,7 +105,7 @@ Container.defaultProps = {
   arrowSize: 6,
   placement: 'bottom',
   arrowProps: { style: { top: 0, left: 0 } },
-  theme: themes.light,
+  theme,
 };
 
 export type Helpers = {

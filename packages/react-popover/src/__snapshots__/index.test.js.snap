@@ -73,6 +73,10 @@ exports[`renders the Arrow component 1`] = `
       },
       "disabled": "#8F9BA3",
       "link": "#3C8790",
+      "popover": Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#E3E6E8",
+      },
       "primary": "#2E3338",
       "primaryInverse": "#E3E6E8",
       "secondary": "#6C7983",
@@ -106,9 +110,9 @@ exports[`renders the Arrow component 1`] = `
 
 exports[`renders the Container component 1`] = `
 .emotion-0 {
-  background-color: #E3E6E8;
+  background-color: #FFFFFF;
   color: #2E3338;
-  border: 1px solid #C7CCD1;
+  border: 1px solid #E3E6E8;
   border-radius: 2px;
   padding: 5px;
   -webkit-filter: drop-shadow( 0 2px 2px rgba(18,18,18,0.2) );
@@ -121,21 +125,20 @@ exports[`renders the Container component 1`] = `
   border-width: 6px;
   top: -6px;
   border-top-width: 0;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-left-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #FFFFFF;
   left: 0px;
   top: 0px;
 }
 
 .emotion-0 .e1oyuzn00 {
   border-width: 7px;
-  border-bottom-color: #C7CCD1;
+  border-bottom-color: #E3E6E8;
   left: -7px;
   top: -7px;
-  -webkit-transform: translateY( -1.5px );
-  -ms-transform: translateY( -1.5px );
-  transform: translateY( -1.5px );
+  -webkit-transform: translateY(-1.5px);
+  -ms-transform: translateY(-1.5px);
+  transform: translateY(-1.5px);
   z-index: -1;
 }
 
@@ -192,6 +195,10 @@ exports[`renders the Container component 1`] = `
       },
       "disabled": "#8F9BA3",
       "link": "#3C8790",
+      "popover": Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#E3E6E8",
+      },
       "primary": "#2E3338",
       "primaryInverse": "#E3E6E8",
       "secondary": "#6C7983",
