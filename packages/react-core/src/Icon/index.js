@@ -16,9 +16,13 @@ type Props = {
   squared?: boolean,
 };
 
-const Icon = styled(({ name, squared, ...props }: Props) => (
-  <i {...props}>{name}</i>
-))`
+const Icon = styled(
+  React.forwardRef(({ name, squared, ...props }: Props, ref) => (
+    <i {...props} ref={ref}>
+      {name}
+    </i>
+  ))
+)`
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'quid-icons' !important;
   speak: none;

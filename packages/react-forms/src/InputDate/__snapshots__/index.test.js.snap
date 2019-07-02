@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders the expected markup 1`] = `
-.emotion-4 {
+.emotion-6 {
   margin-right: 10px;
 }
 
-.emotion-6 {
+.emotion-8 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
@@ -31,8 +31,8 @@ exports[`renders the expected markup 1`] = `
   color: #2E3338;
 }
 
-.emotion-6:focus-within,
-.emotion-6 {
+.emotion-8:focus-within,
+.emotion-8 {
   border-color: #00c1bb;
 }
 
@@ -162,7 +162,7 @@ exports[`renders the expected markup 1`] = `
     value="2019-01-01"
   >
     <ForwardRef
-      className="emotion-8 emotion-5"
+      className="emotion-10 emotion-7"
       focus={true}
       onBlur={[Function]}
       onChange={[Function]}
@@ -174,7 +174,7 @@ exports[`renders the expected markup 1`] = `
     >
       <ForwardRef(render)>
         <Container
-          className="emotion-8 emotion-5"
+          className="emotion-10 emotion-7"
           focus={true}
           isInvalid={false}
           onBlur={[Function]}
@@ -182,7 +182,7 @@ exports[`renders the expected markup 1`] = `
           onFocus={[Function]}
         >
           <div
-            className="emotion-5 emotion-6 emotion-7"
+            className="emotion-7 emotion-8 emotion-9"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -202,17 +202,24 @@ exports[`renders the expected markup 1`] = `
               />
             </Input>
             <Icon
-              className="emotion-4"
+              className="emotion-6"
               name="calendar"
               onClick={[Function]}
               squared={true}
             >
-              <i
+              <ForwardRef
                 className="emotion-2 emotion-3"
+                name="calendar"
                 onClick={[Function]}
+                squared={true}
               >
-                calendar
-              </i>
+                <i
+                  className="emotion-2 emotion-3"
+                  onClick={[Function]}
+                >
+                  calendar
+                </i>
+              </ForwardRef>
             </Icon>
           </div>
         </Container>

@@ -120,7 +120,7 @@ Container.defaultProps = {
   theme: themes.light,
 };
 
-type Helpers = {
+export type Helpers = {
   toggle: () => void,
   open: () => void,
   close: () => void,
