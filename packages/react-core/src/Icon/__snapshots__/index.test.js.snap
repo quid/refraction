@@ -23,11 +23,17 @@ exports[`renders a non squared Icon 1`] = `
   name="network"
   squared={false}
 >
-  <i
+  <ForwardRef
     className="emotion-0 emotion-1"
+    name="network"
+    squared={false}
   >
-    network
-  </i>
+    <i
+      className="emotion-0 emotion-1"
+    >
+      network
+    </i>
+  </ForwardRef>
 </Icon>
 `;
 
@@ -68,10 +74,16 @@ exports[`renders the expected markup 1`] = `
   name="network"
   squared={true}
 >
-  <i
+  <ForwardRef
     className="emotion-0 emotion-1"
+    name="network"
+    squared={true}
   >
-    network
-  </i>
+    <i
+      className="emotion-0 emotion-1"
+    >
+      network
+    </i>
+  </ForwardRef>
 </Icon>
 `;

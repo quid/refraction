@@ -66,7 +66,7 @@ exports[`renders a default NavLink 1`] = `
 `;
 
 exports[`renders the expected markup 1`] = `
-.emotion-27 {
+.emotion-35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -99,7 +99,7 @@ exports[`renders the expected markup 1`] = `
   font-weight: bold;
 }
 
-.emotion-5 {
+.emotion-7 {
   padding-left: 10px;
   padding-right: 10px;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
@@ -144,7 +144,7 @@ exports[`renders the expected markup 1`] = `
   width: 1em;
 }
 
-.emotion-19 {
+.emotion-25 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
@@ -163,7 +163,7 @@ exports[`renders the expected markup 1`] = `
   cursor: default;
 }
 
-.emotion-25 {
+.emotion-33 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
@@ -213,7 +213,7 @@ exports[`renders the expected markup 1`] = `
   }
 >
   <ul
-    className="emotion-27 emotion-28"
+    className="emotion-35 emotion-36"
   >
     <NavLink
       disabled={false}
@@ -238,17 +238,23 @@ exports[`renders the expected markup 1`] = `
       key=".1"
     >
       <div
-        className="emotion-5 emotion-6"
+        className="emotion-7 emotion-8"
       >
         <Icon
           name="angle_double_right"
           squared={true}
         >
-          <i
+          <ForwardRef
             className="emotion-3 emotion-4"
+            name="angle_double_right"
+            squared={true}
           >
-            angle_double_right
-          </i>
+            <i
+              className="emotion-3 emotion-4"
+            >
+              angle_double_right
+            </i>
+          </ForwardRef>
         </Icon>
       </div>
     </Arrow>
@@ -279,17 +285,23 @@ exports[`renders the expected markup 1`] = `
       key=".3"
     >
       <div
-        className="emotion-5 emotion-6"
+        className="emotion-7 emotion-8"
       >
         <Icon
           name="angle_right"
           squared={true}
         >
-          <i
+          <ForwardRef
             className="emotion-3 emotion-4"
+            name="angle_right"
+            squared={true}
           >
-            angle_right
-          </i>
+            <i
+              className="emotion-3 emotion-4"
+            >
+              angle_right
+            </i>
+          </ForwardRef>
         </Icon>
       </div>
     </Arrow>
@@ -315,17 +327,23 @@ exports[`renders the expected markup 1`] = `
       key=".5"
     >
       <div
-        className="emotion-5 emotion-6"
+        className="emotion-7 emotion-8"
       >
         <Icon
           name="angle_right"
           squared={true}
         >
-          <i
+          <ForwardRef
             className="emotion-3 emotion-4"
+            name="angle_right"
+            squared={true}
           >
-            angle_right
-          </i>
+            <i
+              className="emotion-3 emotion-4"
+            >
+              angle_right
+            </i>
+          </ForwardRef>
         </Icon>
       </div>
     </Arrow>
@@ -337,7 +355,7 @@ exports[`renders the expected markup 1`] = `
       to="/search/review/analyze"
     >
       <a
-        className="emotion-19 emotion-1"
+        className="emotion-25 emotion-1"
       >
         ANALYZE
       </a>
@@ -346,17 +364,23 @@ exports[`renders the expected markup 1`] = `
       key=".7"
     >
       <div
-        className="emotion-5 emotion-6"
+        className="emotion-7 emotion-8"
       >
         <Icon
           name="angle_right"
           squared={true}
         >
-          <i
+          <ForwardRef
             className="emotion-3 emotion-4"
+            name="angle_right"
+            squared={true}
           >
-            angle_right
-          </i>
+            <i
+              className="emotion-3 emotion-4"
+            >
+              angle_right
+            </i>
+          </ForwardRef>
         </Icon>
       </div>
     </Arrow>
@@ -368,7 +392,7 @@ exports[`renders the expected markup 1`] = `
       to="/search/review/analyze/share"
     >
       <a
-        className="emotion-25 emotion-1"
+        className="emotion-33 emotion-1"
         href="/search/review/analyze/share"
       >
         SHARE

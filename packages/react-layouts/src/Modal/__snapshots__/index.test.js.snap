@@ -61,7 +61,7 @@ exports[`Modal renders Header, HeaderIcon, ActionBar with different themes 1`] =
   color: #2E3338;
 }
 
-.emotion-4 {
+.emotion-6 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -99,7 +99,7 @@ exports[`Modal renders Header, HeaderIcon, ActionBar with different themes 1`] =
   title="Hello world"
 >
   <header
-    className="emotion-4 emotion-5"
+    className="emotion-6 emotion-7"
     importance="warning"
   >
     <HeaderTitle>
@@ -113,18 +113,24 @@ exports[`Modal renders Header, HeaderIcon, ActionBar with different themes 1`] =
       name={<i />}
       squared={true}
     >
-      <i
+      <ForwardRef
         className="emotion-2 emotion-3"
+        name={<i />}
+        squared={true}
       >
-        <i />
-      </i>
+        <i
+          className="emotion-2 emotion-3"
+        >
+          <i />
+        </i>
+      </ForwardRef>
     </HeaderIcon>
   </header>
 </Header>
 `;
 
 exports[`Modal renders a Modal with form 1`] = `
-.emotion-18 {
+.emotion-20 {
   width: 800px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -143,11 +149,11 @@ exports[`Modal renders a Modal with form 1`] = `
   max-height: 500px;
 }
 
-.emotion-18:focus:not(:focus-visible) {
+.emotion-20:focus:not(:focus-visible) {
   outline: 0;
 }
 
-.emotion-20 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -168,7 +174,7 @@ exports[`Modal renders a Modal with form 1`] = `
   background-color: rgba(18,18,18,0.6);
 }
 
-.emotion-16 {
+.emotion-18 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -182,7 +188,7 @@ exports[`Modal renders a Modal with form 1`] = `
   overflow-y: auto;
 }
 
-.emotion-8 {
+.emotion-10 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
@@ -201,14 +207,14 @@ exports[`Modal renders a Modal with form 1`] = `
   padding: 30px 100px;
 }
 
-.emotion-6 {
+.emotion-8 {
   min-height: inherit;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.emotion-14 {
+.emotion-16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -225,7 +231,7 @@ exports[`Modal renders a Modal with form 1`] = `
   border-top: 1px solid #E3E6E8;
 }
 
-.emotion-4 {
+.emotion-6 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -310,11 +316,11 @@ exports[`Modal renders a Modal with form 1`] = `
   color: #2E3338;
 }
 
-.emotion-10 {
+.emotion-12 {
   margin-right: auto;
 }
 
-.emotion-12 {
+.emotion-14 {
   margin-left: auto;
 }
 
@@ -591,14 +597,14 @@ exports[`Modal renders a Modal with form 1`] = `
       }
     >
       <div
-        className="ReactModal__Overlay ReactModal__Overlay--after-open emotion-20"
+        className="ReactModal__Overlay ReactModal__Overlay--after-open emotion-22"
         onClick={[Function]}
         onMouseDown={[Function]}
         style={Object {}}
       >
         <div
           aria-label="Did You Know...?"
-          className="ReactModal__Content ReactModal__Content--after-open emotion-18 emotion-19"
+          className="ReactModal__Content ReactModal__Content--after-open emotion-20 emotion-21"
           onClick={[Function]}
           onKeyDown={[Function]}
           onMouseDown={[Function]}
@@ -611,7 +617,7 @@ exports[`Modal renders a Modal with form 1`] = `
             isForm={true}
           >
             <form
-              className="emotion-16 emotion-17"
+              className="emotion-18 emotion-19"
             >
               <Header
                 icon="question"
@@ -619,7 +625,7 @@ exports[`Modal renders a Modal with form 1`] = `
                 title="Did You Know...?"
               >
                 <header
-                  className="emotion-4 emotion-5"
+                  className="emotion-6 emotion-7"
                   importance="info"
                 >
                   <HeaderTitle>
@@ -633,11 +639,17 @@ exports[`Modal renders a Modal with form 1`] = `
                     name="question"
                     squared={true}
                   >
-                    <i
+                    <ForwardRef
                       className="emotion-2 emotion-3"
+                      name="question"
+                      squared={true}
                     >
-                      question
-                    </i>
+                      <i
+                        className="emotion-2 emotion-3"
+                      >
+                        question
+                      </i>
+                    </ForwardRef>
                   </HeaderIcon>
                 </header>
               </Header>
@@ -645,11 +657,11 @@ exports[`Modal renders a Modal with form 1`] = `
                 centerVertically={false}
               >
                 <div
-                  className="emotion-8 emotion-9"
+                  className="emotion-10 emotion-11"
                 >
                   <Main>
                     <main
-                      className="emotion-6 emotion-7"
+                      className="emotion-8 emotion-9"
                     >
                       <span>
                         Hello, World!
@@ -664,18 +676,18 @@ exports[`Modal renders a Modal with form 1`] = `
               >
                 <ForwardRef(render)>
                   <div
-                    className="emotion-14 emotion-15"
+                    className="emotion-16 emotion-17"
                   >
                     <Right>
                       <div
-                        className="emotion-10 emotion-11"
+                        className="emotion-12 emotion-13"
                       >
                         foobar
                       </div>
                     </Right>
                     <Left>
                       <div
-                        className="emotion-12 emotion-13"
+                        className="emotion-14 emotion-15"
                       >
                         foobar
                       </div>
@@ -1601,7 +1613,7 @@ exports[`Modal renders the expected markup 1`] = `
 `;
 
 exports[`Modal renders the expected markup 2`] = `
-.emotion-21 {
+.emotion-23 {
   width: 800px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1620,11 +1632,11 @@ exports[`Modal renders the expected markup 2`] = `
   max-height: 500px;
 }
 
-.emotion-21:focus:not(:focus-visible) {
+.emotion-23:focus:not(:focus-visible) {
   outline: 0;
 }
 
-.emotion-23 {
+.emotion-25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1645,7 +1657,7 @@ exports[`Modal renders the expected markup 2`] = `
   background-color: rgba(18,18,18,0.6);
 }
 
-.emotion-19 {
+.emotion-21 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1659,7 +1671,7 @@ exports[`Modal renders the expected markup 2`] = `
   overflow-y: auto;
 }
 
-.emotion-8 {
+.emotion-10 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
@@ -1678,14 +1690,14 @@ exports[`Modal renders the expected markup 2`] = `
   padding: 30px 100px;
 }
 
-.emotion-6 {
+.emotion-8 {
   min-height: inherit;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.emotion-17 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1702,19 +1714,19 @@ exports[`Modal renders the expected markup 2`] = `
   border-top: 1px solid #E3E6E8;
 }
 
-.emotion-10 {
+.emotion-12 {
   margin: 0 5px;
 }
 
-.emotion-10:first-child {
+.emotion-12:first-child {
   margin-left: 0;
 }
 
-.emotion-10:last-child {
+.emotion-12:last-child {
   margin-right: 0;
 }
 
-.emotion-4 {
+.emotion-6 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1799,11 +1811,11 @@ exports[`Modal renders the expected markup 2`] = `
   color: #2E3338;
 }
 
-.emotion-12 {
+.emotion-14 {
   margin-right: auto;
 }
 
-.emotion-15 {
+.emotion-17 {
   margin-left: auto;
 }
 
@@ -2114,14 +2126,14 @@ exports[`Modal renders the expected markup 2`] = `
       }
     >
       <div
-        className="ReactModal__Overlay ReactModal__Overlay--after-open emotion-23"
+        className="ReactModal__Overlay ReactModal__Overlay--after-open emotion-25"
         onClick={[Function]}
         onMouseDown={[Function]}
         style={Object {}}
       >
         <div
           aria-label="Did You Know...?"
-          className="ReactModal__Content ReactModal__Content--after-open emotion-21 emotion-22"
+          className="ReactModal__Content ReactModal__Content--after-open emotion-23 emotion-24"
           onClick={[Function]}
           onKeyDown={[Function]}
           onMouseDown={[Function]}
@@ -2132,7 +2144,7 @@ exports[`Modal renders the expected markup 2`] = `
         >
           <OptionalForm>
             <div
-              className="emotion-19 emotion-20"
+              className="emotion-21 emotion-22"
             >
               <Header
                 icon="question"
@@ -2140,7 +2152,7 @@ exports[`Modal renders the expected markup 2`] = `
                 title="Did You Know...?"
               >
                 <header
-                  className="emotion-4 emotion-5"
+                  className="emotion-6 emotion-7"
                   importance="info"
                 >
                   <HeaderTitle>
@@ -2154,11 +2166,17 @@ exports[`Modal renders the expected markup 2`] = `
                     name="question"
                     squared={true}
                   >
-                    <i
+                    <ForwardRef
                       className="emotion-2 emotion-3"
+                      name="question"
+                      squared={true}
                     >
-                      question
-                    </i>
+                      <i
+                        className="emotion-2 emotion-3"
+                      >
+                        question
+                      </i>
+                    </ForwardRef>
                   </HeaderIcon>
                 </header>
               </Header>
@@ -2166,11 +2184,11 @@ exports[`Modal renders the expected markup 2`] = `
                 centerVertically={false}
               >
                 <div
-                  className="emotion-8 emotion-9"
+                  className="emotion-10 emotion-11"
                 >
                   <Main>
                     <main
-                      className="emotion-6 emotion-7"
+                      className="emotion-8 emotion-9"
                     >
                       <span>
                         Hello, World!
@@ -2185,20 +2203,20 @@ exports[`Modal renders the expected markup 2`] = `
               >
                 <ForwardRef(render)>
                   <div
-                    className="emotion-17 emotion-18"
+                    className="emotion-19 emotion-20"
                   >
                     <Right>
                       <div
-                        className="emotion-12 emotion-13"
+                        className="emotion-14 emotion-15"
                       >
                         <button
-                          className="emotion-10"
+                          className="emotion-12"
                           key="1"
                         >
                           foo
                         </button>
                         <button
-                          className="emotion-10"
+                          className="emotion-12"
                           key="2"
                         >
                           foo
@@ -2207,10 +2225,10 @@ exports[`Modal renders the expected markup 2`] = `
                     </Right>
                     <Left>
                       <div
-                        className="emotion-15 emotion-16"
+                        className="emotion-17 emotion-18"
                       >
                         <button
-                          className="emotion-10"
+                          className="emotion-12"
                           key="1"
                         >
                           foo
@@ -2304,11 +2322,17 @@ exports[`Modal should match props provided to Modal 2`] = `
   name="question"
   squared={true}
 >
-  <i
+  <ForwardRef
     className="emotion-0 emotion-1"
+    name="question"
+    squared={true}
   >
-    question
-  </i>
+    <i
+      className="emotion-0 emotion-1"
+    >
+      question
+    </i>
+  </ForwardRef>
 </HeaderIcon>
 `;
 
