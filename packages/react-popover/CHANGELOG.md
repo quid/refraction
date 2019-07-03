@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/quid/refraction/tree/master/packages/react-popover/compare/v2.4.0...v2.5.0) (2019-07-03)
+
+
+### Features
+
+* add theme support for Popover and Tooltip ([cc98c84](https://github.com/quid/refraction/tree/master/packages/react-popover/commit/cc98c84))
+
+
+
+
+
 # [2.4.0](https://github.com/quid/refraction/tree/master/packages/react-popover/compare/v2.3.0...v2.4.0) (2019-07-02)
 
 
