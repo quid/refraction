@@ -71,3 +71,12 @@ initialState = { open: false };
   )}
 </Popover>;
 ```
+
+### Theming
+
+You can override the default background and border colors of the `Container` and
+`Arrow` components exported by `@quid/react-popover` defining a `popover` property
+in your Emotion theme-provider.
+
+The `popover` property should be an object, containing a `backgroundColor` and
+`borderColor` properties, defining the colors you'd like to use.
