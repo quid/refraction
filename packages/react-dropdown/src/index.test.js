@@ -10,7 +10,7 @@ import ReactDOM from 'react-dom';
 import { mount } from 'enzyme';
 import styled from '@emotion/styled/macro';
 import DropdownWrapper from './__mocks__/DropdownWrapper';
-import Dropdown, { DropdownList as DL } from './index';
+import { Dropdown, DropdownList as DL } from './index';
 import DropdownList, { List } from './List';
 import { Item, HIGHLIGHTED, SELECTED } from './Items';
 import { Divider } from './Categories';

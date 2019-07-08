@@ -8,7 +8,7 @@
 import * as React from 'react';
 import { act } from 'react-dom/test-utils';
 import { mount } from 'enzyme';
-import Popover, { Container, Arrow } from '.';
+import { Popover, Container, Arrow } from '.';
 
 jest.mock('use-debounce', () => ({
   useDebouncedCallback: callback => [callback, jest.fn()],
