@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/quid/refraction/compare/v2.5.0...v3.0.0) (2019-07-08)
+
+
+### Bug Fixes
+
+* never mix named and default exports ([06e907c](https://github.com/quid/refraction/commit/06e907c))
+
+
+### BREAKING CHANGES
+
+* we don’t mix default and named exports anymore, whenever a package needs to export multiple modules, it will export all of them as named exports.
+
+Affected packages:
+- @quid/react-tooltip
+- @quid/react-popover
+- @quid/react-dropdown
+
+
+
+
+
 # [2.5.0](https://github.com/quid/refraction/compare/v2.4.0...v2.5.0) (2019-07-03)
 
 

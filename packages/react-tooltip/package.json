@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-tooltip",
-  "version": "2.5.0",
+  "version": "3.0.0",
   "description": "Tooltip component based on react-popper",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "@emotion/styled": "^10.0.11",
-    "@quid/react-popover": "^2.5.0"
+    "@quid/react-popover": "^3.0.0"
   }
 }
