@@ -6,13 +6,12 @@
  */
 // @flow
 import * as React from 'react';
-import { act } from 'react-dom/test-utils';
 import { mount } from 'enzyme';
-import Tooltip, { Container } from '.';
+import { Tooltip, Container } from '.';
 
 jest.mock('@quid/react-popover', () => ({
   __esModule: true,
-  default: ({ children, ...props }) => children(props),
+  Popover: ({ children, ...props }) => children(props),
   Container: 'x-popover-container',
   Arrow: 'x-popover-arrow',
 }));

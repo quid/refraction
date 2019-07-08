@@ -9,7 +9,8 @@ import * as React from 'react';
 import { type Placement, type Modifiers } from 'popper.js';
 import { type PopperArrowProps } from 'react-popper';
 import styled from '@emotion/styled/macro';
-import Popover, {
+import {
+  Popover,
   Container as PopoverContainer,
   Arrow,
   type Helpers,
@@ -35,7 +36,7 @@ type Props = {
   children: ({ ref: React.ElementRef<any> } & Helpers) => React.Node,
 };
 
-const Tooltip = ({ renderTooltip, ...props }: Props) => (
+export const Tooltip = ({ renderTooltip, ...props }: Props) => (
   <Popover renderPopover={renderTooltip} mouseMoveBehavior {...props} />
 );
 Tooltip.defaultProps = {
@@ -50,5 +51,3 @@ export const Container = styled(
     </PopoverContainer>
   ))
 )``;
-
-export default Tooltip;

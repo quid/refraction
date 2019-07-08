@@ -222,6 +222,4 @@ const Popover = ({
   );
 };
 
-export { Container, Arrow };
-
-export default Popover;
+export { Popover, Container, Arrow };

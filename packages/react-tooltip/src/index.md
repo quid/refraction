@@ -21,7 +21,7 @@ state in a declarative way.
 
 ```jsx
 import { Button } from '@quid/react-core';
-import Tooltip, { Container } from '.'; // @quid/react-tooltip
+import { Tooltip, Container } from '.'; // @quid/react-tooltip
 
 <Tooltip
   renderTooltip={props => <Container {...props}>Tooltip content</Container>}
@@ -43,7 +43,7 @@ a state change is triggered.
 
 ```jsx
 import { Button } from '@quid/react-core';
-import Tooltip, { Container } from '.'; // @quid/react-tooltip
+import { Tooltip, Container } from '.'; // @quid/react-tooltip
 
 initialState = { open: false };
 
