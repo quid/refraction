@@ -34,6 +34,18 @@ const items = [
     path: 'https://quid.com',
     external: true,
   },
+  {
+    label: 'Quid custom',
+    path: 'https://quid.com',
+    external: true,
+    renderContent: ({ label, path, index, external }) => (
+      <div>
+        <a href={path}>
+          {label} {index}
+        </a>
+      </div>
+    ),
+  },
 ];
 
 <MemoryRouter>

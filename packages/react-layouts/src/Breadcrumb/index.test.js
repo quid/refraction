@@ -93,3 +93,33 @@ it('renders a custom arrowIcon', () => {
 
   expect(wrapper.find(CustomArrow)).toMatchSnapshot();
 });
+
+it('renderContent presence', () => {
+  const renderContentFn = jest.fn(() => <div id="test" />);
+  const wrapper = mount(
+    <BrowserRouter>
+      <Breadcrumb
+        items={[
+          {
+            label: 'FOO',
+            path: '/foo',
+            renderContent: renderContentFn,
+          },
+        ]}
+      />
+    </BrowserRouter>
+  );
+
+  expect(renderContentFn).toHaveBeenCalled();
+
+  expect(wrapper.exists('#test')).toBe(true);
+
+  expect(renderContentFn).toHaveBeenCalledWith({
+    index: 0,
+    label: 'FOO',
+    path: '/foo',
+    disabled: false,
+    emphasized: false,
+    external: false,
+  });
+});
