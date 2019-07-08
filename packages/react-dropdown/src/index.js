@@ -190,6 +190,4 @@ const Dropdown = ({
   );
 };
 
-export { DropdownList };
-
-export default Dropdown;
+export { Dropdown, DropdownList };

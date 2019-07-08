@@ -212,7 +212,7 @@ Depending by your use case, you may want to override the dropdown styles, for in
 This can be achieved by using [Emotion's "component as selector"](https://emotion.sh/docs/styled#targeting-another-emotion-component) feature:
 
 ```js static
-import Dropdown, { DropdownList } from '@quid/react-dropdown';
+import { Dropdown, DropdownList } from '@quid/react-dropdown';
 import styled from '@emotion/styled/macro';
 
 const CustomDropdown = styled(Dropdown)`

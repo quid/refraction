@@ -7,7 +7,7 @@
 // @flow
 
 import * as React from 'react';
-import Dropdown from '../index';
+import { Dropdown } from '../index';
 
 type State = {
   selectedItems: Array<Object>,

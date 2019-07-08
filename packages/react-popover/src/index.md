@@ -22,7 +22,7 @@ state in a declarative way.
 
 ```jsx
 import { Button } from '@quid/react-core';
-import Popover, { Container, Arrow } from '.'; // @quid/react-popover
+import { Popover, Container, Arrow } from '.'; // @quid/react-popover
 
 <Popover
   renderPopover={props => (
@@ -49,7 +49,7 @@ a state change is triggered.
 
 ```jsx
 import { Button } from '@quid/react-core';
-import Popover, { Container, Arrow } from '.'; // @quid/react-popover
+import { Popover, Container, Arrow } from '.'; // @quid/react-popover
 
 initialState = { open: false };
 
