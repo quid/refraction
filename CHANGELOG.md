@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/quid/refraction/compare/v3.1.0...v3.2.0) (2019-07-09)
+
+
+### Features
+
+* exports flow ContentProps from Breadcrumb component ([#95](https://github.com/quid/refraction/issues/95)) ([ae23fab](https://github.com/quid/refraction/commit/ae23fab))
+
+
+
+
+
 # [3.1.0](https://github.com/quid/refraction/compare/v3.0.0...v3.1.0) (2019-07-09)
 
 
