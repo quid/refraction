@@ -12,18 +12,31 @@ import styled from '@emotion/styled/macro';
 import { textStyles } from '@quid/theme';
 import { sizes } from '@quid/theme';
 
+type BasicProps = {
+  path: string,
+  label: React$Node,
+};
+
+export type ContentProps = {
+  ...BasicProps,
+  index: number,
+  disabled: boolean,
+  external: boolean,
+  emphasized: boolean,
+};
+
 export type Props = {
-  items: Array<{
-    label: React$Node,
-    path: string,
-    renderContent?: ({ index: number }) => React.Node,
-    renderArrowIcon?: ({ index: number }) => React.Node,
-    arrowIcon?: string,
-    disabled?: boolean,
-    external?: boolean,
-    emphasized?: boolean,
-    tooltip?: string,
-  }>,
+  items: Array<
+    {
+      renderContent?: ContentProps => React.Node,
+      renderArrowIcon?: ({ index: number }) => React.Node,
+      arrowIcon?: string,
+      tooltip?: string,
+      disabled?: boolean,
+      external?: boolean,
+      emphasized?: boolean,
+    } & BasicProps
+  >,
   className?: string,
 };
 
