@@ -17,7 +17,8 @@ type BasicProps = {
   label: React$Node,
 };
 
-export type ContentProps = BasicProps & {
+export type ContentProps = {
+  ...BasicProps,
   index: number,
   disabled: boolean,
   external: boolean,
