@@ -16,6 +16,7 @@ export type Props = {
   items: Array<{
     label: React$Node,
     path: string,
+    renderContent?: ({ index: number }) => React.Node,
     renderArrowIcon?: ({ index: number }) => React.Node,
     arrowIcon?: string,
     disabled?: boolean,
@@ -39,6 +40,7 @@ function genItem(
     label,
     path,
     arrowIcon = 'angle_right',
+    renderContent,
     renderArrowIcon,
     disabled = false,
     external = false,
@@ -48,20 +50,24 @@ function genItem(
   index
 ) {
   return [
-    <NavLink
-      to={path}
-      emphasized={emphasized}
-      external={external}
-      disabled={disabled}
-    >
-      {tooltip ? (
-        <span title={tooltip} id={`breadcrumb-${index}-tooltip`}>
-          {label}
-        </span>
-      ) : (
-        label
-      )}
-    </NavLink>,
+    renderContent ? (
+      renderContent({ index, path, label, disabled, external, emphasized })
+    ) : (
+      <NavLink
+        to={path}
+        emphasized={emphasized}
+        external={external}
+        disabled={disabled}
+      >
+        {tooltip ? (
+          <span title={tooltip} id={`breadcrumb-${index}-tooltip`}>
+            {label}
+          </span>
+        ) : (
+          label
+        )}
+      </NavLink>
+    ),
     renderArrowIcon ? (
       renderArrowIcon({ index })
     ) : (
