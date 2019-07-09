@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-layouts",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Collection of layout related React components, such as Breadcrumb, Navbar, Tabs, etc...",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",

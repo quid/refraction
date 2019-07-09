@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/quid/refraction/tree/master/packages/react-layouts/compare/v3.0.0...v3.1.0) (2019-07-09)
+
+
+### Features
+
+* adds renderContent to BreadCrumb component ([#94](https://github.com/quid/refraction/tree/master/packages/react-layouts/issues/94)) ([5e9be65](https://github.com/quid/refraction/tree/master/packages/react-layouts/commit/5e9be65))
+
+
+
+
+
 # [3.0.0](https://github.com/quid/refraction/tree/master/packages/react-layouts/compare/v2.5.0...v3.0.0) (2019-07-08)
 
 **Note:** Version bump only for package @quid/react-layouts
