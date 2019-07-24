@@ -4,6 +4,7 @@ This is the most basic use case, the dropdown will behave like a
 normal HTML `select` element:
 
 ```js
+import { Dropdown } from '@quid/react-dropdown';
 import { InputText } from '@quid/react-forms';
 
 const items = [
@@ -30,6 +31,7 @@ const items = [
 This is usecase will allow you to use `Dropdown` as a controlled component.
 
 ```js
+import { Dropdown } from '@quid/react-dropdown';
 import { InputText } from '@quid/react-forms';
 
 initialState = {
@@ -70,6 +72,7 @@ const items = [
 In this example, the items are grouped by category.
 
 ```jsx
+import { Dropdown } from '@quid/react-dropdown';
 import { InputText } from '@quid/react-forms';
 
 const items = [
@@ -107,6 +110,7 @@ const categories = [
 #### Dropdown with multi-level item list (two columns).
 
 ```js
+import { Dropdown } from '@quid/react-dropdown';
 import { InputText } from '@quid/react-forms';
 
 const items = [
@@ -141,6 +145,7 @@ const categories = [
 #### Dropdown with highlight and filter function.
 
 ```js
+import { Dropdown } from '@quid/react-dropdown';
 import { InputText } from '@quid/react-forms';
 
 const items = [
@@ -170,6 +175,7 @@ const items = [
 #### Dropdown with custom render function:
 
 ```js
+import { Dropdown } from '@quid/react-dropdown';
 import { InputText } from '@quid/react-forms';
 
 const ReactDOM = require('react-dom');
