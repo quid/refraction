@@ -1,0 +1,38 @@
+{
+  "name": "@quid/react-expandable-table",
+  "version": "1.0.0",
+  "description": "Simple table with expandable row content and column sorting capabilities.",
+  "main": "dist/index.js",
+  "main:umd": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quid/refraction/tree/master/packages/react-expandable-table"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "microbundle watch",
+    "prepare": "microbundle build --jsx React.createElement && flow-copy-source --ignore '{__mocks__/*,*.test}.js' src dist",
+    "test": "cd ../.. && yarn test --testPathPattern packages/react-expandable-table"
+  },
+  "devDependencies": {
+    "flow-copy-source": "^2.0.2",
+    "microbundle": "^0.8.3",
+    "react": "^16.8.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "dependencies": {
+    "@emotion/styled": "^10.0.15",
+    "@emotion/styled-base": "^10.0.15",
+    "@quid/react-core": "^3.0.0",
+    "@quid/react-tooltip": "^3.0.0",
+    "@quid/react-use-controlled-state": "^3.0.0",
+    "@quid/theme": "^3.0.0",
+    "react-virtuoso": "^0.10.2"
+  }
+}
