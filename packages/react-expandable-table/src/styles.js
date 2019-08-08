@@ -7,6 +7,7 @@
 // @flow
 import * as React from 'react';
 import styled from '@emotion/styled/macro';
+import css from '@emotion/css/macro';
 import { GroupedVirtuoso } from 'react-virtuoso';
 import { themes, textStyles } from '@quid/theme';
 import { Icon, Text } from '@quid/react-core';
@@ -170,9 +171,9 @@ InfoIcon.defaultProps = {
 const SortAsc = styled(props => <Icon name="sort_asc" {...props} />)``;
 const SortDesc = styled(props => <Icon name="sort_desc" {...props} />)``;
 const NEXT_ARROW = props =>
-  props.sort == null ? SortDesc : props.sort === 'desc' ? SortAsc : '';
+  props.sort == null ? SortDesc : props.sort === 'desc' ? SortAsc : false;
 const ACTIVE_ARROW = props =>
-  props.sort === 'desc' ? SortDesc : props.sort === 'asc' ? SortAsc : '';
+  props.sort === 'desc' ? SortDesc : props.sort === 'asc' ? SortAsc : false;
 
 export const SortIcon = styled(
   React.forwardRef(({ sort, ...props }, ref) => (
@@ -197,15 +198,23 @@ export const SortIcon = styled(
     color: ${props => props.theme.colors.gray5};
   }
 
-  ${ACTIVE_ARROW} {
-    color: ${props => props.theme.selected};
-  }
+  ${props =>
+    ACTIVE_ARROW(props) &&
+    css`
+      ${ACTIVE_ARROW(props)} {
+        color: ${props.theme.selected};
+      }
+    `}
 
   &:hover,
   &:focus-visible {
-    ${NEXT_ARROW} {
-      color: ${props => props.theme.primary};
-    }
+    ${props =>
+      NEXT_ARROW(props) &&
+      css`
+        ${NEXT_ARROW(props)} {
+          color: ${props.theme.primary};
+        }
+      `}
   }
 `;
 SortIcon.defaultProps = {
@@ -213,9 +222,9 @@ SortIcon.defaultProps = {
 };
 
 export const TooltipContainer = styled(
-  React.forwardRef(({ tooltip, ...props }, ref) => (
+  React.forwardRef(({ children, ...props }, ref) => (
     <Container {...props} ref={ref}>
-      {tooltip}
+      {children}
     </Container>
   ))
 )`

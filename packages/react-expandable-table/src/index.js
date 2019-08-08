@@ -185,7 +185,7 @@ const ExpandableTable = ({
         });
       }
     },
-    [defaultSortOrder, defaultIsSorting, sorting, setSorting]
+    [defaultSortOrder, sorting, setSorting]
   );
   const groomedData = React.useMemo(
     () =>
@@ -249,7 +249,12 @@ const ExpandableTable = ({
               />
 
               {column.tooltip != null && (
-                <Tooltip openDelay={200} renderTooltip={TooltipContainer}>
+                <Tooltip
+                  openDelay={200}
+                  renderTooltip={props => (
+                    <TooltipContainer {...props} children={column.tooltip} />
+                  )}
+                >
                   {({ ref, open, close }) => (
                     <InfoIcon
                       ref={ref}

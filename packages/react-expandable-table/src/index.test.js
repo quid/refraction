@@ -8,6 +8,8 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import { ExpandableTable } from '.';
+// $FlowIgnoreMe: this is a mocked export
+import { open } from '@quid/react-tooltip';
 
 jest.mock('react-virtuoso', () => ({
   GroupedVirtuoso: ({ groupCounts, group, item, ...props }) => (
@@ -417,6 +419,15 @@ it('empty data set should not be sorted', () => {
   );
 });
 
+jest.mock('@quid/react-tooltip', () => {
+  const open = jest.fn();
+  return {
+    open,
+    Container: 'x-container',
+    Tooltip: ({ children }) => <x-tooltip>{children({ open })}</x-tooltip>,
+  };
+});
+
 it('checks for tooltip presence', () => {
   const columnsWithTooltip = [
     {
@@ -437,4 +448,7 @@ it('checks for tooltip presence', () => {
 
   const infoIcon = wrapper.find('InfoIcon');
   expect(infoIcon).toHaveLength(1);
+
+  infoIcon.find('button').simulate('mouseenter');
+  expect(open).toHaveBeenCalled();
 });

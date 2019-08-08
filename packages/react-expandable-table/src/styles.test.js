@@ -9,11 +9,11 @@ import * as React from 'react';
 import { mount } from 'enzyme';
 import { TooltipContainer } from './styles';
 
-it('should map tooltip property to children', () => {
+it('should forward children property', () => {
   expect(
     mount(
       <TooltipContainer
-        tooltip="foobar"
+        children="foobar"
         arrowProps={{ ref: jest.fn(), style: { left: 0 } }}
       />
     ).text()
