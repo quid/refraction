@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-forms",
-  "version": "3.0.0",
+  "version": "3.2.1",
   "description": "Collection of form-related React components, such as buttons, inputs, etc...",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
