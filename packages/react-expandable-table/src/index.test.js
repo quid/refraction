@@ -424,7 +424,20 @@ jest.mock('@quid/react-tooltip', () => {
   return {
     open,
     Container: 'x-container',
-    Tooltip: ({ children }) => <x-tooltip>{children({ open })}</x-tooltip>,
+    Tooltip: ({ children, renderTooltip }) => {
+      const [isOpen, setOpen] = require('react').useState(false);
+      return (
+        <x-tooltip>
+          {children({
+            open: () => {
+              setOpen(true);
+              open();
+            },
+          })}
+          {isOpen && renderTooltip()}
+        </x-tooltip>
+      );
+    },
   };
 });
 
