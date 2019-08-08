@@ -156,3 +156,19 @@ it('handles onblur', () => {
   expect(handleOnToggle).toHaveBeenCalledWith(false);
   expect(handleOnToggle).toHaveBeenCalledTimes(2);
 });
+
+it('handles close on click outside', () => {
+  const handleOnToggle = jest.fn();
+  mount(
+    <InputDate
+      onChange={jest.fn()}
+      value="2019-01-01"
+      isOpen
+      onToggle={handleOnToggle}
+    />
+  );
+
+  document.dispatchEvent(new Event('click'));
+
+  expect(handleOnToggle).toHaveBeenCalledWith(false);
+});
