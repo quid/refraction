@@ -9,7 +9,7 @@ import * as React from 'react';
 import styled from '@emotion/styled/macro';
 import css from '@emotion/css/macro';
 import { GroupedVirtuoso } from 'react-virtuoso';
-import { themes, textStyles } from '@quid/theme';
+import { ThemeProvider, themes, textStyles } from '@quid/theme';
 import { Icon, Text } from '@quid/react-core';
 import { Container } from '@quid/react-tooltip';
 import isPropValid from '@emotion/is-prop-valid';
@@ -33,6 +33,7 @@ export const ColumnCell = styled.div`
   padding: 0 ${props => props.theme.sizes.small};
   ${props =>
     textStyles(...[props.bold ? 'bold' : null].filter(Boolean))(props)};
+  color: ${themes.dark.primary};
 `;
 ColumnCell.defaultProps = {
   theme: themes.dark,
@@ -243,10 +244,13 @@ SortIcon.defaultProps = {
 
 export const TooltipContainer = styled(
   React.forwardRef(({ children, ...props }, ref) => (
-    <Container {...props} ref={ref}>
-      {children}
-    </Container>
+    <ThemeProvider theme="light">
+      <Container {...props} ref={ref}>
+        {children}
+      </Container>
+    </ThemeProvider>
   ))
 )`
   font-weight: normal;
+  color: ${themes.light.primary};
 `;

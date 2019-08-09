@@ -8,7 +8,7 @@
 import * as React from 'react';
 import styled from '@emotion/styled/macro';
 import { Icon } from '@quid/react-core';
-import { themes } from '@quid/theme';
+import { ThemeProvider, themes } from '@quid/theme';
 import { Tooltip } from '@quid/react-tooltip';
 import useControlledState from '@quid/react-use-controlled-state';
 import {
@@ -214,68 +214,70 @@ const ExpandableTable = ({
   }, [columns]);
 
   return (
-    <List
-      {...props}
-      groupCounts={[totalCount]}
-      maxHeight={maxBodyHeight}
-      group={index => (
-        <Header>
-          {columns.map(column => (
-            <ColumnCell
-              width={getCellWidth(column.width || baseColumnWidth)}
-              key={column.key}
-              align={column.align}
-            >
-              <HeaderTitle
-                onClick={() => changeSorting(column.key)}
-                inactive={sorting.sort && sorting.key !== column.key}
-                data-action="sort-alt"
+    <ThemeProvider theme="dark">
+      <List
+        {...props}
+        groupCounts={[totalCount]}
+        maxHeight={maxBodyHeight}
+        group={index => (
+          <Header>
+            {columns.map(column => (
+              <ColumnCell
+                width={getCellWidth(column.width || baseColumnWidth)}
+                key={column.key}
+                align={column.align}
               >
-                {column.label}
-              </HeaderTitle>
-
-              <SortIcon
-                sort={sorting.key === column.key ? sorting.sort : null}
-                onClick={() => changeSorting(column.key)}
-                data-action="sort"
-              />
-
-              {column.tooltip != null && (
-                <Tooltip
-                  openDelay={200}
-                  renderTooltip={props => (
-                    <TooltipContainer {...props} children={column.tooltip} />
-                  )}
+                <HeaderTitle
+                  onClick={() => changeSorting(column.key)}
+                  inactive={sorting.sort && sorting.key !== column.key}
+                  data-action="sort-alt"
                 >
-                  {({ ref, open, close }) => (
-                    <InfoIcon
-                      ref={ref}
-                      onMouseEnter={open}
-                      onFocus={open}
-                      onBlur={close}
-                    />
-                  )}
-                </Tooltip>
-              )}
-            </ColumnCell>
-          ))}
-          <ColumnCell width={`${ARROW_CELL_WIDTH}px`} />
-        </Header>
-      )}
-      item={index => (
-        <ItemWrapper
-          data={groomedData[index]}
-          columns={columns}
-          index={index}
-          totalCount={totalCount}
-          onClick={() => toggleRow(groomedData[index].id)}
-          renderRow={renderRow}
-          open={openedRows.includes(groomedData[index].id)}
-          odd={Boolean(index % 2)}
-          baseColumnWidth={baseColumnWidth}
-        />
-      )}
-    />
+                  {column.label}
+                </HeaderTitle>
+
+                <SortIcon
+                  sort={sorting.key === column.key ? sorting.sort : null}
+                  onClick={() => changeSorting(column.key)}
+                  data-action="sort"
+                />
+
+                {column.tooltip != null && (
+                  <Tooltip
+                    openDelay={200}
+                    renderTooltip={props => (
+                      <TooltipContainer {...props} children={column.tooltip} />
+                    )}
+                  >
+                    {({ ref, open, close }) => (
+                      <InfoIcon
+                        ref={ref}
+                        onMouseEnter={open}
+                        onFocus={open}
+                        onBlur={close}
+                      />
+                    )}
+                  </Tooltip>
+                )}
+              </ColumnCell>
+            ))}
+            <ColumnCell width={`${ARROW_CELL_WIDTH}px`} />
+          </Header>
+        )}
+        item={index => (
+          <ItemWrapper
+            data={groomedData[index]}
+            columns={columns}
+            index={index}
+            totalCount={totalCount}
+            onClick={() => toggleRow(groomedData[index].id)}
+            renderRow={renderRow}
+            open={openedRows.includes(groomedData[index].id)}
+            odd={Boolean(index % 2)}
+            baseColumnWidth={baseColumnWidth}
+          />
+        )}
+      />
+    </ThemeProvider>
   );
 };
 
