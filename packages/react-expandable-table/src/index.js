@@ -117,6 +117,7 @@ export const ItemWrapper = styled(
             width={getCellWidth(column.width || baseColumnWidth)}
             align={column.align}
             key={column.key}
+            bold={column.bold}
           >
             {data[column.key]}
           </ColumnCell>

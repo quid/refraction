@@ -30,7 +30,12 @@ export const ColumnCell = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  ${props =>
+    textStyles(...[props.bold ? 'bold' : null].filter(Boolean))(props)};
 `;
+ColumnCell.defaultProps = {
+  theme: themes.dark,
+};
 
 export const Row = styled.div`
   display: flex;

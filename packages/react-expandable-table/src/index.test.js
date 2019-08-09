@@ -41,6 +41,7 @@ const columns = [
     label: 'Rank',
     key: 'rank',
     align: 'right',
+    bold: true,
   },
   {
     label: 'Mentions',
@@ -76,6 +77,26 @@ const data = [
     reach: '99.45%',
   },
 ];
+
+it('should make column bold', () => {
+  const wrapper = mount(
+    <ExpandableTable
+      maxOpen={1}
+      maxBodyHeight={300}
+      renderRow={props => <ExampleExtendedComponent {...props} />}
+      columns={columns}
+      data={data}
+    />
+  );
+
+  expect(
+    wrapper
+      .find('Row')
+      .at(0)
+      .find('ColumnCell')
+      .at(1)
+  ).toHaveStyleRule('font-weight', 'bold');
+});
 
 it('should keep only one item open when maxOpen is 1', () => {
   const wrapper = mount(
