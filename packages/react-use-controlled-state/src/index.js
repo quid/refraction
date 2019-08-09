@@ -44,7 +44,7 @@ function useControlledState(defaultValue, controlledValue, controlValue) {
 
       setInternalState(value);
     },
-    [controlledValue, controlValue, defaultValue]
+    [controlledValue, controlValue]
   );
 
   const state = isControlled(controlledValue, defaultValue)
