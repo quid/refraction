@@ -18,6 +18,7 @@ import {
   List,
   Header,
   AngleButton,
+  HeaderTitle,
   Ellipsis,
   InfoIcon,
   SortIcon,
@@ -119,7 +120,7 @@ export const ItemWrapper = styled(
             key={column.key}
             bold={column.bold}
           >
-            {data[column.key]}
+            <Ellipsis>{data[column.key]}</Ellipsis>
           </ColumnCell>
         ))}
         <ColumnCell width={`${ARROW_CELL_WIDTH}px`} align="right">
@@ -225,13 +226,13 @@ const ExpandableTable = ({
               key={column.key}
               align={column.align}
             >
-              <Ellipsis
+              <HeaderTitle
                 onClick={() => changeSorting(column.key)}
                 inactive={sorting.sort && sorting.key !== column.key}
                 data-action="sort-alt"
               >
                 {column.label}
-              </Ellipsis>
+              </HeaderTitle>
 
               <SortIcon
                 sort={sorting.key === column.key ? sorting.sort : null}

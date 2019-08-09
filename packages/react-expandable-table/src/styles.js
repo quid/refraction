@@ -141,6 +141,12 @@ export const Ellipsis = styled(Text)`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+`;
+Ellipsis.defaultProps = {
+  theme: themes.dark,
+};
+
+export const HeaderTitle = styled(Ellipsis)`
   margin-top: -2px;
   cursor: pointer;
   user-select: none;
@@ -150,7 +156,7 @@ export const Ellipsis = styled(Text)`
     outline: 0;
   }
 `;
-Ellipsis.defaultProps = {
+HeaderTitle.defaultProps = {
   theme: themes.dark,
   tabIndex: -1,
 };
