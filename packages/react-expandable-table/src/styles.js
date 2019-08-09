@@ -30,6 +30,7 @@ export const ColumnCell = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding: 0 ${props => props.theme.sizes.small};
   ${props =>
     textStyles(...[props.bold ? 'bold' : null].filter(Boolean))(props)};
 `;
@@ -173,6 +174,7 @@ export const InfoIcon = styled(
   color: ${props => props.theme.colors.gray5};
   color: ${props => props.theme.prmary};
   margin-left: ${props => props.theme.sizes.small};
+  flex-shrink: 0;
 
   &:hover,
   &:focus-visible {
@@ -205,6 +207,7 @@ export const SortIcon = styled(
   width: 14px;
   cursor: pointer;
   margin-left: ${props => props.theme.sizes.small};
+  flex-shrink: 0;
 
   ${SortAsc}, ${SortDesc} {
     position: absolute;
