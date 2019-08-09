@@ -76,8 +76,5 @@
     "react-styleguidist": "^9.0.7",
     "rimraf": "^2.6.2",
     "what-input": "^5.1.3"
-  },
-  "resolutions": {
-    "microbundle": "https://github.com/FezVrasta/microbundle.git#quid-fork"
   }
 }

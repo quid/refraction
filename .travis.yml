@@ -1,5 +1,5 @@
 language: node_js
-node_js: 11.10
+node_js: 11
 
 # We cache the node_modules and other Yarn related files to speed up the build
 cache: yarn
