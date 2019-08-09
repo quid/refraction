@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-popover",
-  "version": "3.0.0",
+  "version": "3.2.2",
   "description": "Popover component based on react-popper",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
@@ -32,7 +32,7 @@
     "@emotion/styled": "^10.0.10",
     "@quid/merge-refs": "^3.0.0",
     "@quid/react-mouse-outside": "^3.0.0",
-    "@quid/react-use-controlled-state": "^3.0.0",
+    "@quid/react-use-controlled-state": "^3.2.2",
     "@quid/theme": "^3.0.0",
     "color": "^3.1.0",
     "popper.js": "^1.15.0",
