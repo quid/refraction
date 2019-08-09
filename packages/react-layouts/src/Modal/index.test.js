@@ -218,7 +218,7 @@ describe('Modal', () => {
     // info: https://github.com/facebook/react/issues/11098
     // more info: https://github.com/facebook/react/issues/11083
     // $FlowFixMe
-    Error.prototype.suppressReactErrorLogging = true;
+    Error.prototype.suppressReactErrorLogging = true; // eslint-disable-line no-extend-native
     const Logo = function Welcome() {
       return <div>Logo</div>;
     };
@@ -232,7 +232,7 @@ describe('Modal', () => {
       ).toThrowErrorMatchingSnapshot();
     } finally {
       // $FlowFixMe
-      Error.prototype.suppressReactErrorLogging = false;
+      Error.prototype.suppressReactErrorLogging = false; // eslint-disable-line no-extend-native
     }
   });
 });
