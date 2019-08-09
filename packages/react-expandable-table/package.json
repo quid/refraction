@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-expandable-table",
-  "version": "1.0.0",
+  "version": "3.3.0",
   "description": "Simple table with expandable row content and column sorting capabilities.",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
@@ -31,10 +31,10 @@
     "@emotion/is-prop-valid": "^0.8.2",
     "@emotion/styled": "^10.0.15",
     "@emotion/styled-base": "^10.0.15",
-    "@quid/react-core": "^3.0.0",
-    "@quid/react-tooltip": "^3.0.0",
+    "@quid/react-core": "^3.3.0",
+    "@quid/react-tooltip": "^3.3.0",
     "@quid/react-use-controlled-state": "^3.0.0",
-    "@quid/theme": "^3.0.0",
+    "@quid/theme": "^3.3.0",
     "react-virtuoso": "^0.10.2"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-layouts",
-  "version": "3.2.2",
+  "version": "3.3.0",
   "description": "Collection of layout related React components, such as Breadcrumb, Navbar, Tabs, etc...",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
@@ -32,9 +32,9 @@
     "@emotion/core": "^10.0.10",
     "@emotion/css": "^10.0.4",
     "@emotion/styled": "^10.0.7",
-    "@quid/react-core": "^3.0.0",
+    "@quid/react-core": "^3.3.0",
     "@quid/react-tabs-provider": "^3.0.0",
-    "@quid/theme": "^3.0.0",
+    "@quid/theme": "^3.3.0",
     "color": "^3.1.0",
     "react-modal": "^3.8.1"
   }

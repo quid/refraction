@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-core",
-  "version": "3.0.0",
+  "version": "3.3.0",
   "description": "Core React Quid components",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
@@ -28,7 +28,7 @@
     "@emotion/css": "^10.0.4",
     "@emotion/styled": "^10.0.4",
     "@emotion/styled-base": "^10.0.4",
-    "@quid/theme": "^3.0.0",
+    "@quid/theme": "^3.3.0",
     "color": "^3.1.0"
   },
   "peerDependencies": {
