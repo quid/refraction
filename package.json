@@ -15,8 +15,9 @@
     "start": "styleguidist server --open",
     "build": "styleguidist build",
     "create-package": "builder-init $(pwd)/packages/react-package-template",
-    "test": "react-app-rewired test",
-    "format": "eslint \"**/*.js\" --fix && prettier \"**/*.{js,md,json}\" --write",
+    "test": "yarn eslint && react-app-rewired test",
+    "eslint": "eslint \"**/*.js\"",
+    "format": "yarn eslint --fix && prettier \"**/*.{js,md,json}\" --write",
     "clean": "rimraf 'packages/*/dist' && rimraf '**/node_modules'"
   },
   "lint-staged": {
@@ -54,6 +55,7 @@
     "enzyme-adapter-react-16": "^1.8.0",
     "enzyme-to-json": "^3.3.5",
     "eslint-plugin-flow-header": "^0.2.0",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-notice": "^0.7.7",
     "flow-bin": "0.100.0",
     "husky": "^1.2.0",
