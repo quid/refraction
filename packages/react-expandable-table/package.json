@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@emotion/css": "^10.0.14",
+    "@emotion/is-prop-valid": "^0.8.2",
     "@emotion/styled": "^10.0.15",
     "@emotion/styled-base": "^10.0.15",
     "@quid/react-core": "^3.0.0",
