@@ -14,8 +14,12 @@ import { Icon, Text } from '@quid/react-core';
 import { Container } from '@quid/react-tooltip';
 import isPropValid from '@emotion/is-prop-valid';
 
-const alignToFlex = (align = 'left') =>
-  align === 'left' ? 'flex-start' : align === 'right' ? 'flex-end' : 'center';
+const FLEX_ALIGN_MAP = {
+  left: 'flex-start',
+  right: 'flex-end',
+  center: 'center',
+};
+const alignToFlex = (align = 'left') => FLEX_ALIGN_MAP[align];
 
 export const ColumnCell = styled.div`
   flex-shrink: 0;
