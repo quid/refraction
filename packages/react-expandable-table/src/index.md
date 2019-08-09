@@ -183,7 +183,6 @@ const Content = ({ style = { height: 100, padding: 10 } }) => (
 
   <ExpandableTable
     onToggle={openedRows => setState({ openedRows })}
-    defaultIsSorting
     maxOpen={3}
     maxItemPerPage={10}
     page={state.page}

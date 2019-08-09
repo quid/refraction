@@ -68,15 +68,6 @@ type Props = {
   maxItemPerPage?: number,
   /** Sorting order, you can invert this to have a different behavior */
   defaultSortOrder?: SortOrder,
-  // FIXME: this logic is weak, we should have a better way to control the sorting
-  // maybe just like we do for the openedRows logic, where we allow both a controlled
-  // and uncontrolled way to use the functionality. Keeping as is for now for backward compat
-  /**
-   * @deprecated When set to `true`, the first column will be automatically sorted by
-   * the first order value defined in `defaultSortOrder`, it will be replaced by a
-   * more flexible implementation in the future
-   */
-  defaultIsSorting?: boolean,
   /*
    * Render-prop used to define what to render when a row is expanded.
    * It provides isOdd (boolean), isLast (boolean), and a `data` property with the interested row.
@@ -166,13 +157,12 @@ const ExpandableTable = ({
   page = 0,
   maxItemPerPage = 10,
   defaultSortOrder = ['desc', 'asc'],
-  defaultIsSorting = false,
   renderRow,
   ...props
 }: Props) => {
   const [sorting, setSorting] = React.useState({
-    key: defaultIsSorting ? columns[0].key : null,
-    sort: defaultIsSorting ? defaultSortOrder[0] : null,
+    key: null,
+    sort: null,
   });
   const changeSorting = React.useCallback(
     key => {

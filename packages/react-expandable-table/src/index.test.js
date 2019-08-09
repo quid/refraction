@@ -399,7 +399,6 @@ Array [
 it('empty data set should not be sorted', () => {
   const wrapper = mount(
     <ExpandableTable
-      defaultIsSorting={true}
       maxOpen={2}
       maxBodyHeight={300}
       renderRow={props => <ExampleExtendedComponent {...props} />}
