@@ -137,7 +137,9 @@ AngleButton.defaultProps = {
   theme: themes.dark,
 };
 
-export const Ellipsis = styled(Text)`
+export const Ellipsis = styled(props => (
+  <Text title={props.children} {...props} />
+))`
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
