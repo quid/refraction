@@ -22,6 +22,7 @@ const FLEX_ALIGN_MAP = {
 const alignToFlex = (align = 'left') => FLEX_ALIGN_MAP[align];
 
 export const ColumnCell = styled.div`
+  box-sizing: border-box;
   flex-shrink: 0;
   display: flex;
   align-items: center;
