@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-expandable-table",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "Simple table with expandable row content and column sorting capabilities.",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",

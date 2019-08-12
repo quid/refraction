@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.1](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/compare/v3.3.0...v3.3.1) (2019-08-12)
+
+
+### Bug Fixes
+
+* set box-sizing to ExpandableTable cell ([#101](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/issues/101)) ([0ecfeb3](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/commit/0ecfeb3))
+
+
+
+
+
 # [3.3.0](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/compare/v3.2.2...v3.3.0) (2019-08-09)
 
 
