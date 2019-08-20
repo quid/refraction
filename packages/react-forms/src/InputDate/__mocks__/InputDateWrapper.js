@@ -13,6 +13,7 @@ type InputDateWrapperProps = {
   defaultCalendarValue?: Date,
   onChange?: string => void,
   onCalendarChange?: Date => void,
+  isOpen?: boolean,
 };
 
 const InputDateWrapper = ({
@@ -20,8 +21,10 @@ const InputDateWrapper = ({
   defaultValue,
   onCalendarChange,
   defaultCalendarValue,
+  isOpen: isOpenProp,
   ...props
 }: InputDateWrapperProps) => {
+  const [isOpen, setOpen] = useState(isOpenProp);
   const [value, setValue] = useState(defaultValue);
   const [calendarValue, setCalendarValue] = useState(
     onCalendarChange ? defaultCalendarValue : new Date()
@@ -43,6 +46,10 @@ const InputDateWrapper = ({
     [setCalendarValue, onCalendarChange]
   );
 
+  const handleClose = useCallback(() => {
+    setOpen(false);
+  }, [setOpen]);
+
   return (
     <Fragment>
       <InputDate
@@ -50,6 +57,7 @@ const InputDateWrapper = ({
         onChange={onChangeHandler}
         onCalendarChange={onCalendarChange ? handleCalendarChange : undefined}
         calendarValue={onCalendarChange ? calendarValue : undefined}
+        isOpen={isOpen}
         {...props}
       />
       <button
@@ -66,6 +74,10 @@ const InputDateWrapper = ({
         onClick={() => handleCalendarChange(new Date(value))}
       >
         Reset calendar position
+      </button>
+
+      <button data-action="close" onClick={handleClose}>
+        Close
       </button>
     </Fragment>
   );

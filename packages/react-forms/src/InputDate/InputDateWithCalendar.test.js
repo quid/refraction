@@ -136,5 +136,9 @@ describe('InputDate calendar tests', () => {
         .at(1)
         .text()
     ).toBe('February 2019');
+
+    wrapper.find('[data-action="close"]').simulate('click');
+
+    expect(wrapper.find('[data-context="calendar"]').length).toBe(0);
   });
 });

@@ -67,6 +67,7 @@ const InputDate = ({
   );
 
   const handleOpen = useCallback(() => {
+    // istanbul ignore else
     if (isOpen === false) {
       setIsOpen(true);
     }
@@ -132,7 +133,7 @@ const InputDate = ({
 
   useEffect(() => {
     if (onCalendarChange && current !== calendarValue) {
-      setCurrent(onCalendarChange ? calendarValue : current);
+      setCurrent(calendarValue);
     }
   }, [current, calendarValue, onCalendarChange]);
 
