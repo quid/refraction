@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @flow
-import React, { useCallback, useState, useEffect } from 'react';
+import React, { useCallback, useState, useEffect, createRef } from 'react';
 import parse from 'date-fns/parse';
 import { Manager, Popper, Reference } from 'react-popper';
 import InputText from '../InputText';
@@ -21,7 +21,7 @@ function toYYYYMMDD(date) {
   return `${year}-${month}-${day}`;
 }
 
-type Props = {
+export type Props = {
   value: string,
   onChange: Function,
   isOpen?: boolean,
@@ -29,40 +29,41 @@ type Props = {
   min?: string,
   max?: string,
   disabled?: boolean,
+  onCalendarChange?: Date => void,
+  calendarValue?: Date,
 };
-
-type State = {
-  current?: Date,
-  isOpen: boolean,
-};
-
+function isBoolean(bool) {
+  return bool === true || bool === false;
+}
 const InputDate = ({
   value,
-  onChange, // eslint-disable-line no-unused-vars
-  isOpen: isOpenProp, // eslint-disable-line no-unused-vars
-  onToggle, // eslint-disable-line no-unused-vars
+  onChange,
+  isOpen: isOpenProp,
+  onToggle,
   min,
   max,
+  onCalendarChange,
+  calendarValue,
   ...props
 }: Props) => {
-  const component = React.createRef();
-  const refA = React.createRef();
-  const refB = React.createRef();
+  const component = createRef();
+  const refA = createRef();
+  const refB = createRef();
 
-  const [current, setCurrent] = useState();
-  const [isOpen, setOpen] = useState(isOpenProp);
-
-  useEffect(() => {
-    if (isOpen !== isOpenProp) {
-      setOpen(isOpenProp);
-    }
-  }, [isOpen, isOpenProp]);
+  const [current, setCurrent] = useState(calendarValue);
+  const [isOpen, setOpen] = useState(
+    isBoolean(isOpenProp) ? isOpenProp : false
+  );
 
   const setIsOpen = useCallback(
     (isOpen: boolean) => {
-      onToggle ? onToggle(isOpen) : setOpen(isOpen);
+      if (onToggle) {
+        onToggle(isOpen);
+      } else if (!isBoolean(isOpenProp)) {
+        setOpen(isOpen);
+      }
     },
-    [onToggle, setOpen]
+    [onToggle, setOpen, isOpenProp]
   );
 
   const handleOpen = useCallback(() => {
@@ -94,14 +95,9 @@ const InputDate = ({
 
   const handleInputChange = useCallback(
     (evt: SyntheticInputEvent<HTMLInputElement>) => {
-      const current = new Date(evt.target.value);
-      // istanbul ignore else
-      if (!isNaN(current.getTime())) {
-        setCurrent(current);
-      }
       onChange(evt.target.value);
     },
-    [setCurrent, onChange]
+    [onChange]
   );
 
   const handleSelect = useCallback(
@@ -112,10 +108,37 @@ const InputDate = ({
     [setIsOpen, onChange]
   );
 
-  const preventDefault = useCallback((evt: Event) => evt.preventDefault(), []);
+  const handleCurrentChange = useCallback(
+    current => {
+      onCalendarChange ? onCalendarChange(current) : setCurrent(current);
+    },
+    [setCurrent, onCalendarChange]
+  );
+
+  useEffect(() => {
+    const current = new Date(value);
+    // istanbul ignore else
+    if (!isNaN(current.getTime()) && !onCalendarChange) {
+      setCurrent(current);
+    }
+  }, [value, setCurrent, onCalendarChange]);
+
+  //Sync is isOpenProp with state: isOpen
+  useEffect(() => {
+    if (isBoolean(isOpenProp) && isOpen !== isOpenProp) {
+      setOpen(isOpenProp);
+    }
+  }, [isOpen, isOpenProp, setOpen]);
+
+  useEffect(() => {
+    if (onCalendarChange && current !== calendarValue) {
+      setCurrent(onCalendarChange ? calendarValue : current);
+    }
+  }, [current, calendarValue, onCalendarChange]);
+
+  const preventDefault = (evt: Event) => evt.preventDefault();
   const dateValue = parse(value);
   const isDateValid = !isNaN(dateValue.getTime());
-
   return (
     <MouseOutside onClickOutside={handleClose} refs={[refA, refB]}>
       {() => (
@@ -148,7 +171,7 @@ const InputDate = ({
             <Popper placement="bottom">
               {({ ref, style }) => (
                 <Calendar
-                  onChangeCurrent={current => setCurrent(current)}
+                  onChangeCurrent={handleCurrentChange}
                   current={current || (isDateValid ? dateValue : new Date())}
                   onSelect={handleSelect}
                   selected={isDateValid ? dateValue : undefined}
