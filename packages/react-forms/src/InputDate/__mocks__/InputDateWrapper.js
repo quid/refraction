@@ -46,9 +46,7 @@ const InputDateWrapper = ({
     [setCalendarValue, onCalendarChange]
   );
 
-  const handleClose = useCallback(() => {
-    setOpen(false);
-  }, [setOpen]);
+  const handleClose = useCallback(() => setOpen(false), [setOpen]);
 
   return (
     <Fragment>

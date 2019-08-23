@@ -8,7 +8,6 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import InputDateWrapper from './__mocks__/InputDateWrapper';
-import { act } from 'react-dom/test-utils';
 
 describe('InputDate calendar tests', () => {
   it('checks if the calendar resets to proper date when value changes', () => {
