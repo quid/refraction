@@ -7,137 +7,138 @@
 // @flow
 import * as React from 'react';
 import { mount } from 'enzyme';
-import InputDateWrapper from './__mocks__/InputDateWrapper';
+import InputDate from './';
 
 describe('InputDate calendar tests', () => {
-  it('checks if the calendar resets to proper date when value changes', () => {
-    const onChangeHandler = jest.fn();
-
+  it('checks if onCalendarChange is called when calendar arrow is clicked', () => {
+    const handleCalendarChange = jest.fn();
     const wrapper = mount(
-      <InputDateWrapper
-        onChange={onChangeHandler}
-        defaultValue="2019-01-01"
-        isOpen={true}
+      <InputDate
+        defaultIsOpen={true}
+        value={'2019-01-01'}
+        onChange={jest.fn()}
+        calendarValue={new Date('2019-01-01')}
+        onCalendarChange={handleCalendarChange}
       />
     );
 
-    //Expected calendar is focused at January 2019
-    expect(
-      wrapper
-        .find('[data-context="calendar"]')
-        .find('Year')
-        .at(1)
-        .text()
-    ).toBe('January 2019');
-
-    //Click next month arrow twice
     const nextMonthButton = wrapper
       .find('[data-context="calendar"]')
       .find('[data-action="next-month"]')
       .hostNodes();
 
     nextMonthButton.simulate('click');
-    nextMonthButton.simulate('click');
 
-    //Expected calendar is focused at March 2019
-    expect(
-      wrapper
-        .find('[data-context="calendar"]')
-        .find('Year')
-        .at(1)
-        .text()
-    ).toBe('March 2019');
-
-    //Select 10th of March
-    const marchTenButton = wrapper
-      .find('[data-context="calendar"]')
-      .find('tbody')
-      .find('tr')
-      .find('td')
-      .find('button')
-      .at(14);
-
-    expect(marchTenButton.text()).toBe('10');
-
-    marchTenButton.simulate('click');
-    expect(onChangeHandler).toHaveBeenCalledWith('2019-03-10');
-
-    //Change the value of InputDate to default
-    wrapper.find('[data-action="reset"]').simulate('click');
-
-    //Expected calendar to focus according to date change
-
-    expect(
-      wrapper
-        .find('[data-context="calendar"]')
-        .find('Year')
-        .at(1)
-        .text()
-    ).toBe('January 2019');
-    const calendarHeaderProps = wrapper
-      .find('[data-context="calendar"]')
-      .find('Header')
-      .props();
-
-    expect(calendarHeaderProps.day).toBe(1);
-    expect(calendarHeaderProps.month).toBe(0);
-    expect(calendarHeaderProps.year).toBe(2019);
+    expect(handleCalendarChange).toHaveBeenCalledWith(new Date('2019-02-01'));
   });
 
-  it('checks if the calendarValue changes properly', () => {
-    const onCalendarChange = jest.fn();
-    const defaultDate = '2019-02-01';
+  it('checks if if defaultCalendarValue works', () => {
     const wrapper = mount(
-      <InputDateWrapper
-        defaultValue={defaultDate}
-        isOpen={true}
-        onCalendarChange={onCalendarChange}
-        defaultCalendarValue={new Date(defaultDate)}
+      <InputDate
+        defaultIsOpen={true}
+        value={'2019-01-01'}
+        onChange={jest.fn()}
+        defaultCalendarValue={new Date('2019-05-01')}
       />
     );
 
-    //Expected calendar is focused at January 2019
     expect(
       wrapper
         .find('[data-context="calendar"]')
+        .find('Navigator')
         .find('Year')
-        .at(1)
+        .text()
+    ).toBe('May 2019');
+  });
+
+  it('checks if default calendar page equals to the value without defaultCalendarValue prop', () => {
+    const wrapper = mount(
+      <InputDate
+        defaultIsOpen={true}
+        value={'2019-02-01'}
+        onChange={jest.fn()}
+      />
+    );
+
+    expect(
+      wrapper
+        .find('[data-context="calendar"]')
+        .find('Navigator')
+        .find('Year')
         .text()
     ).toBe('February 2019');
+  });
 
-    //Click next month arrow twice
-    const nextMonthButton = wrapper
-      .find('[data-context="calendar"]')
-      .find('[data-action="next-month"]')
-      .hostNodes();
-    nextMonthButton.simulate('click');
-    nextMonthButton.simulate('click');
+  it('checks if default calendar page equals to the value without defaultCalendarValue prop', () => {
+    const wrapper = mount(
+      <InputDate
+        defaultIsOpen={true}
+        value={'2019-02-01'}
+        onChange={jest.fn()}
+      />
+    );
 
-    //Expected calendar is focused at March 2019
     expect(
       wrapper
         .find('[data-context="calendar"]')
+        .find('Navigator')
         .find('Year')
-        .at(1)
-        .text()
-    ).toBe('April 2019');
-
-    expect(onCalendarChange).toHaveBeenCalledWith(new Date('2019-03-01'));
-
-    //Reset calendar position to selected date
-    wrapper.find('[data-action="reset-position"]').simulate('click');
-
-    //Expected calendar is focused at February 2019
-    expect(
-      wrapper
-        .find('[data-context="calendar"]')
-        .find('Year')
-        .at(1)
         .text()
     ).toBe('February 2019');
+  });
 
-    wrapper.find('[data-action="close"]').simulate('click');
+  it('checks if calendarValue is set when defined', () => {
+    const wrapper = mount(
+      <InputDate
+        defaultIsOpen={true}
+        value={'2019-01-01'}
+        onChange={jest.fn()}
+        calendarValue={new Date('2019-10-01')}
+        onCalendarChange={jest.fn()}
+      />
+    );
 
-    expect(wrapper.find('[data-context="calendar"]').length).toBe(0);
+    expect(
+      wrapper
+        .find('[data-context="calendar"]')
+        .find('Navigator')
+        .find('Year')
+        .text()
+    ).toBe('October 2019');
+  });
+
+  it('checks if defaultIsOpen opens the calendar', () => {
+    const wrapperWithDef = mount(
+      <InputDate onChange={jest.fn()} value="2019-01-01" defaultIsOpen />
+    );
+    const wrapperWithoutDef = mount(
+      <InputDate onChange={jest.fn()} value="2019-01-01" />
+    );
+
+    expect(wrapperWithDef.exists('[data-context="calendar"]')).toBe(true);
+    expect(wrapperWithoutDef.exists('[data-context="calendar"]')).toBe(false);
+  });
+
+  it('value change should change the calendar page if calendarValue is not controlled', () => {
+    const wrapper = mount(
+      <InputDate
+        onChange={jest.fn()}
+        value="2019-01-01"
+        isOpen={true}
+        onToggle={jest.fn()}
+      />
+    );
+
+    wrapper.setProps({
+      value: '2019-10-02',
+    });
+
+    expect(
+      wrapper
+        .find('[data-context="calendar"]')
+        .find('Navigator')
+        .find('Year')
+        .text()
+    ).toBe('October 2019');
   });
 });

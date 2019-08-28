@@ -28,6 +28,7 @@
     "@quid/react-date-picker": "^3.3.0",
     "@quid/react-invalid-handler": "^3.0.0",
     "@quid/react-mouse-outside": "^3.0.0",
+    "@quid/react-use-controlled-state": "^3.2.2",
     "@quid/theme": "^3.3.0",
     "color": "^3.1.0",
     "date-fns": "^1.30.1",

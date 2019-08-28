@@ -8,6 +8,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import InputDate from './';
+import { act } from 'react-dom/test-utils';
 
 jest.mock(
   '@quid/react-date-picker',
@@ -168,7 +169,7 @@ it('handles close on click outside', () => {
     />
   );
 
-  document.dispatchEvent(new Event('click'));
+  act(() => void document.dispatchEvent(new Event('click')));
 
   expect(handleOnToggle).toHaveBeenCalledWith(false);
 });

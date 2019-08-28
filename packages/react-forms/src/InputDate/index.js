@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @flow
-import React, { useCallback, useState, useEffect, createRef } from 'react';
+import React, { useCallback, useRef, useEffect, createRef } from 'react';
 import parse from 'date-fns/parse';
 import { Manager, Popper, Reference } from 'react-popper';
 import InputText from '../InputText';
@@ -13,6 +13,7 @@ import Calendar from '@quid/react-date-picker';
 import { Icon } from '@quid/react-core';
 import MouseOutside from '@quid/react-mouse-outside';
 import mergeRefs from '@quid/merge-refs';
+import useControlledState from '@quid/react-use-controlled-state';
 
 function toYYYYMMDD(date) {
   const day = ('0' + date.getDate()).slice(-2);
@@ -21,27 +22,33 @@ function toYYYYMMDD(date) {
   return `${year}-${month}-${day}`;
 }
 
-export type Props = {
-  value: string,
-  onChange: Function,
-  isOpen?: boolean,
-  onToggle?: Function,
-  min?: string,
-  max?: string,
-  disabled?: boolean,
-  onCalendarChange?: Date => void,
-  calendarValue?: Date,
-};
 function isBoolean(bool) {
   return bool === true || bool === false;
 }
+
+export type Props = {
+  value: string,
+  onChange: string => void,
+  defaultIsOpen?: boolean,
+  isOpen?: boolean,
+  onToggle?: boolean => void,
+  min?: string,
+  max?: string,
+  disabled?: boolean,
+  defaultCalendarValue?: Date,
+  onCalendarChange?: Date => void,
+  calendarValue?: Date,
+};
+
 const InputDate = ({
   value,
   onChange,
+  defaultIsOpen = false,
   isOpen: isOpenProp,
   onToggle,
   min,
   max,
+  defaultCalendarValue,
   onCalendarChange,
   calendarValue,
   ...props
@@ -49,35 +56,36 @@ const InputDate = ({
   const component = createRef();
   const refA = createRef();
   const refB = createRef();
+  const didMount = useRef();
 
-  const [current, setCurrent] = useState(calendarValue);
-  const [isOpen, setOpen] = useState(
-    isBoolean(isOpenProp) ? isOpenProp : false
+  const [isOpen, setOpen] = useControlledState(
+    isBoolean(isOpenProp) ? undefined : defaultIsOpen,
+    isOpenProp,
+    onToggle
   );
 
-  const setIsOpen = useCallback(
-    (isOpen: boolean) => {
-      if (onToggle) {
-        onToggle(isOpen);
-      } else if (!isBoolean(isOpenProp)) {
-        setOpen(isOpen);
-      }
-    },
-    [onToggle, setOpen, isOpenProp]
+  const [current, setCurrent] = useControlledState(
+    calendarValue === undefined
+      ? defaultCalendarValue
+        ? defaultCalendarValue
+        : new Date(value)
+      : undefined,
+    calendarValue,
+    onCalendarChange
   );
 
   const handleOpen = useCallback(() => {
     // istanbul ignore else
     if (isOpen === false) {
-      setIsOpen(true);
+      setOpen(true);
     }
-  }, [isOpen, setIsOpen]);
+  }, [isOpen, setOpen]);
 
   const handleClose = useCallback(() => {
     if (isOpen) {
-      setIsOpen(false);
+      setOpen(false);
     }
-  }, [isOpen, setIsOpen]);
+  }, [isOpen, setOpen]);
 
   const handleCloseOnBlur = useCallback(
     (evt: MouseEvent) => {
@@ -88,10 +96,20 @@ const InputDate = ({
           ? !component.current.contains(relatedTarget)
           : true
       ) {
-        setIsOpen(false);
+        setOpen(false);
       }
     },
-    [component, setIsOpen]
+    [component, setOpen]
+  );
+
+  const setCurrentOnValueChange = useCallback(
+    value => {
+      const current = new Date(value);
+      if (!isNaN(current.getTime())) {
+        setCurrent(current);
+      }
+    },
+    [setCurrent]
   );
 
   const handleInputChange = useCallback(
@@ -103,39 +121,24 @@ const InputDate = ({
 
   const handleSelect = useCallback(
     (selected: Date) => {
-      setIsOpen(false);
+      setOpen(false);
       onChange(toYYYYMMDD(selected));
     },
-    [setIsOpen, onChange]
+    [setOpen, onChange]
   );
 
-  const handleCurrentChange = useCallback(
-    current => {
-      onCalendarChange ? onCalendarChange(current) : setCurrent(current);
-    },
-    [setCurrent, onCalendarChange]
-  );
-
+  //Syncs calendar page with value
+  //Avoid first run for defaultCalendarValue to take effect
+  //Avoid when onCalendarChange or calendarValue is defined
   useEffect(() => {
-    const current = new Date(value);
-    // istanbul ignore else
-    if (!isNaN(current.getTime()) && !onCalendarChange) {
-      setCurrent(current);
+    if (!(onCalendarChange || calendarValue)) {
+      if (didMount.current === true) {
+        setCurrentOnValueChange(value);
+      } else {
+        didMount.current = true;
+      }
     }
-  }, [value, setCurrent, onCalendarChange]);
-
-  //Sync is isOpenProp with state: isOpen
-  useEffect(() => {
-    if (isBoolean(isOpenProp) && isOpen !== isOpenProp) {
-      setOpen(isOpenProp);
-    }
-  }, [isOpen, isOpenProp, setOpen]);
-
-  useEffect(() => {
-    if (onCalendarChange && current !== calendarValue) {
-      setCurrent(calendarValue);
-    }
-  }, [current, calendarValue, onCalendarChange]);
+  }, [value, calendarValue, onCalendarChange, setCurrentOnValueChange]);
 
   const preventDefault = (evt: Event) => evt.preventDefault();
   const dateValue = parse(value);
@@ -172,7 +175,7 @@ const InputDate = ({
             <Popper placement="bottom">
               {({ ref, style }) => (
                 <Calendar
-                  onChangeCurrent={handleCurrentChange}
+                  onChangeCurrent={setCurrent}
                   current={current || (isDateValid ? dateValue : new Date())}
                   onSelect={handleSelect}
                   selected={isDateValid ? dateValue : undefined}
