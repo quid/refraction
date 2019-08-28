@@ -105,6 +105,7 @@ const InputDate = ({
   const setCurrentOnValueChange = useCallback(
     value => {
       const current = new Date(value);
+      // istanbul ignore else
       if (!isNaN(current.getTime())) {
         setCurrent(current);
       }
@@ -143,6 +144,7 @@ const InputDate = ({
   const preventDefault = (evt: Event) => evt.preventDefault();
   const dateValue = parse(value);
   const isDateValid = !isNaN(dateValue.getTime());
+
   return (
     <MouseOutside onClickOutside={handleClose} refs={[refA, refB]}>
       {() => (
@@ -176,7 +178,7 @@ const InputDate = ({
               {({ ref, style }) => (
                 <Calendar
                   onChangeCurrent={setCurrent}
-                  current={current || (isDateValid ? dateValue : new Date())}
+                  current={current}
                   onSelect={handleSelect}
                   selected={isDateValid ? dateValue : undefined}
                   minDate={min ? new Date(min) : undefined}
