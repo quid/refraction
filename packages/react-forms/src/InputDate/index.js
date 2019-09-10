@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @flow
-import React, { useCallback, useRef, useEffect, createRef } from 'react';
+import React, { useCallback, createRef } from 'react';
 import parse from 'date-fns/parse';
 import { Manager, Popper, Reference } from 'react-popper';
 import InputText from '../InputText';
@@ -56,7 +56,6 @@ const InputDate = ({
   const component = createRef();
   const refA = createRef();
   const refB = createRef();
-  const didMount = useRef();
 
   const [isOpen, setOpen] = useControlledState(
     isBoolean(isOpenProp) ? undefined : defaultIsOpen,
@@ -116,8 +115,9 @@ const InputDate = ({
   const handleInputChange = useCallback(
     (evt: SyntheticInputEvent<HTMLInputElement>) => {
       onChange(evt.target.value);
+      setCurrentOnValueChange(evt.target.value);
     },
-    [onChange]
+    [onChange, setCurrentOnValueChange]
   );
 
   const handleSelect = useCallback(
@@ -127,19 +127,6 @@ const InputDate = ({
     },
     [setOpen, onChange]
   );
-
-  //Syncs calendar page with value
-  //Avoid first run for defaultCalendarValue to take effect
-  //Avoid when onCalendarChange or calendarValue is defined
-  useEffect(() => {
-    if (!(onCalendarChange || calendarValue)) {
-      if (didMount.current === true) {
-        setCurrentOnValueChange(value);
-      } else {
-        didMount.current = true;
-      }
-    }
-  }, [value, calendarValue, onCalendarChange, setCurrentOnValueChange]);
 
   const preventDefault = (evt: Event) => evt.preventDefault();
   const dateValue = parse(value);
