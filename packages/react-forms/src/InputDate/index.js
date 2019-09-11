@@ -31,8 +31,8 @@ export type Props = {
   min?: string,
   max?: string,
   disabled?: boolean,
-  onCalendarChange?: Date => void,
-  calendarValue?: Date,
+  onCalendarChange?: string => void,
+  calendarValue?: string,
 };
 
 const InputDate = ({
@@ -50,6 +50,7 @@ const InputDate = ({
   const inputRef = createRef();
   const calendarRef = createRef();
 
+  const calendarDate = calendarValue == null ? undefined : parse(calendarValue);
   const dateValue = parse(value);
   const isDateValid = !isNaN(dateValue.getTime());
 
@@ -59,11 +60,13 @@ const InputDate = ({
     onToggle
   );
 
-  const [current, setCurrent] = useControlledState(
-    dateValue,
-    calendarValue,
-    onCalendarChange
+  const [baseCurrent, setCurrent] = useControlledState(
+    undefined,
+    calendarDate,
+    date => onCalendarChange && onCalendarChange(toYYYYMMDD(date))
   );
+
+  const current = baseCurrent || dateValue;
 
   const handleOpen = useCallback(() => setOpen(true), [setOpen]);
   const handleClose = useCallback(() => setOpen(false), [setOpen]);

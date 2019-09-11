@@ -15,9 +15,9 @@ describe('InputDate calendar tests', () => {
     const wrapper = mount(
       <InputDate
         defaultIsOpen={true}
-        value={'2019-01-01'}
+        value="2019-01-01'"
         onChange={jest.fn()}
-        calendarValue={new Date('2019-01-01')}
+        calendarValue="2019-01-01"
         onCalendarChange={handleCalendarChange}
       />
     );
@@ -29,29 +29,10 @@ describe('InputDate calendar tests', () => {
 
     nextMonthButton.simulate('click');
 
-    expect(handleCalendarChange).toHaveBeenCalledWith(new Date('2019-02-01'));
+    expect(handleCalendarChange).toHaveBeenCalledWith('2019-02-01');
   });
 
-  it('checks if if defaultCalendarValue works', () => {
-    const wrapper = mount(
-      <InputDate
-        defaultIsOpen={true}
-        value={'2019-01-01'}
-        onChange={jest.fn()}
-        defaultCalendarValue={new Date('2019-05-01')}
-      />
-    );
-
-    expect(
-      wrapper
-        .find('[data-context="calendar"]')
-        .find('Navigator')
-        .find('Year')
-        .text()
-    ).toBe('May 2019');
-  });
-
-  it('checks if default calendar page equals to the value without defaultCalendarValue prop', () => {
+  it('checks if default calendar page equals to the value', () => {
     const wrapper = mount(
       <InputDate
         defaultIsOpen={true}
@@ -91,9 +72,9 @@ describe('InputDate calendar tests', () => {
     const wrapper = mount(
       <InputDate
         defaultIsOpen={true}
-        value={'2019-01-01'}
+        value="2019-01-01"
         onChange={jest.fn()}
-        calendarValue={new Date('2019-10-01')}
+        calendarValue="2019-10-01"
         onCalendarChange={jest.fn()}
       />
     );
