@@ -15,7 +15,7 @@ import MouseOutside from '@quid/react-mouse-outside';
 import mergeRefs from '@quid/merge-refs';
 import useControlledState from '@quid/react-use-controlled-state';
 
-function toYYYYMMDD(date) {
+function toYYYYMMDD(date: Date): string {
   const day = ('0' + date.getDate()).slice(-2);
   const month = ('0' + (date.getMonth() + 1)).slice(-2);
   const year = date.getFullYear();
@@ -50,7 +50,6 @@ const InputDate = ({
   const inputRef = createRef();
   const calendarRef = createRef();
 
-  const calendarDate = calendarValue == null ? undefined : parse(calendarValue);
   const dateValue = parse(value);
   const isDateValid = !isNaN(dateValue.getTime());
 
@@ -60,13 +59,13 @@ const InputDate = ({
     onToggle
   );
 
-  const [baseCurrent, setCurrent] = useControlledState(
+  const [baseCurrent = dateValue, setCurrent] = useControlledState(
     undefined,
-    calendarDate,
-    date => onCalendarChange && onCalendarChange(toYYYYMMDD(date))
+    calendarValue,
+    onCalendarChange
   );
 
-  const current = baseCurrent || dateValue;
+  const current = parse(baseCurrent);
 
   const handleOpen = useCallback(() => setOpen(true), [setOpen]);
   const handleClose = useCallback(() => setOpen(false), [setOpen]);
@@ -90,7 +89,7 @@ const InputDate = ({
       const current = new Date(value);
       // istanbul ignore else
       if (!isNaN(current.getTime())) {
-        setCurrent(current);
+        setCurrent(toYYYYMMDD(current));
       }
     },
     [setCurrent]
@@ -110,6 +109,11 @@ const InputDate = ({
       onChange(toYYYYMMDD(selected));
     },
     [setOpen, onChange]
+  );
+
+  const handleCurrentChange = useCallback(
+    date => setCurrent(toYYYYMMDD(date)),
+    [setCurrent]
   );
 
   return (
@@ -144,7 +148,7 @@ const InputDate = ({
             <Popper placement="bottom">
               {({ ref, style }) => (
                 <Calendar
-                  onChangeCurrent={setCurrent}
+                  onChangeCurrent={handleCurrentChange}
                   current={current}
                   onSelect={handleSelect}
                   selected={isDateValid ? dateValue : undefined}

@@ -54,7 +54,7 @@ const addDays = require('date-fns/add_days');
 initialState = {
   value: new Date().toISOString().split('T')[0],
   isOpen: false,
-  calendarValue: new Date(),
+  calendarValue: new Date().toISOString().split('T')[0],
 };
 
 const handleChange = value =>
@@ -72,7 +72,7 @@ const handleCalendarChange = calendarValue => setState({ calendarValue });
   <Button
     onClick={() => {
       setState({
-        calendarValue: new Date(state.value),
+        calendarValue: new Date(state.value).toISOString().split('T')[0],
       });
     }}
   >
