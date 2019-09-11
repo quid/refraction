@@ -31,7 +31,6 @@ export type Props = {
   min?: string,
   max?: string,
   disabled?: boolean,
-  defaultCalendarValue?: Date,
   onCalendarChange?: Date => void,
   calendarValue?: Date,
 };
@@ -44,7 +43,6 @@ const InputDate = ({
   onToggle,
   min,
   max,
-  defaultCalendarValue,
   onCalendarChange,
   calendarValue,
   ...props
@@ -61,8 +59,8 @@ const InputDate = ({
     onToggle
   );
 
-  const [current = dateValue, setCurrent] = useControlledState(
-    defaultCalendarValue,
+  const [current, setCurrent] = useControlledState(
+    dateValue,
     calendarValue,
     onCalendarChange
   );

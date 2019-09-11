@@ -148,35 +148,4 @@ describe('InputDate calendar tests', () => {
         .text()
     ).toBe('October 2018');
   });
-
-  it('value change should change change the calendar page if defaultCalendarValue is defined', () => {
-    const wrapper = mount(
-      <InputDate
-        value="2019-01-01"
-        defaultCalendarValue={new Date('2020-05-05')}
-        onChange={jest.fn()}
-        defaultIsOpen={true}
-      />
-    );
-
-    expect(
-      wrapper
-        .find('[data-context="calendar"]')
-        .find('Navigator')
-        .find('Year')
-        .text()
-    ).toBe('May 2020');
-
-    wrapper.setProps({
-      value: '2018-10-02',
-    });
-
-    expect(
-      wrapper
-        .find('[data-context="calendar"]')
-        .find('Navigator')
-        .find('Year')
-        .text()
-    ).toBe('October 2018');
-  });
 });
