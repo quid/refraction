@@ -121,12 +121,7 @@ describe('InputDate calendar tests', () => {
 
   it('value change should change the calendar page if calendarValue is not controlled', () => {
     const wrapper = mount(
-      <InputDate
-        onChange={jest.fn()}
-        value="2019-01-01"
-        isOpen={true}
-        onToggle={jest.fn()}
-      />
+      <InputDate value="2019-01-01" onChange={jest.fn()} defaultIsOpen={true} />
     );
 
     wrapper.setProps({
@@ -140,5 +135,17 @@ describe('InputDate calendar tests', () => {
         .find('Year')
         .text()
     ).toBe('October 2019');
+
+    wrapper.setProps({
+      value: '2018-10-02',
+    });
+
+    expect(
+      wrapper
+        .find('[data-context="calendar"]')
+        .find('Navigator')
+        .find('Year')
+        .text()
+    ).toBe('October 2018');
   });
 });

@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @flow
-import React, { useCallback, createRef } from 'react';
+import React, { useCallback, createRef, useEffect } from 'react';
 import parse from 'date-fns/parse';
 import { Manager, Popper, Reference } from 'react-popper';
 import InputText from '../InputText';
@@ -63,15 +63,12 @@ const InputDate = ({
     onToggle
   );
 
-  const [current, setCurrent] = useControlledState(
-    calendarValue === undefined
-      ? defaultCalendarValue
-        ? defaultCalendarValue
-        : new Date(value)
-      : undefined,
+  const [baseCurrent, setCurrent] = useControlledState(
+    defaultCalendarValue,
     calendarValue,
     onCalendarChange
   );
+  const current = baseCurrent || new Date(value);
 
   const handleOpen = useCallback(() => {
     // istanbul ignore else
