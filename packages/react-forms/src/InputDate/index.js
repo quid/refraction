@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @flow
-import React, { useCallback, createRef, useEffect } from 'react';
+import React, { useCallback, createRef } from 'react';
 import parse from 'date-fns/parse';
 import { Manager, Popper, Reference } from 'react-popper';
 import InputText from '../InputText';
@@ -20,10 +20,6 @@ function toYYYYMMDD(date) {
   const month = ('0' + (date.getMonth() + 1)).slice(-2);
   const year = date.getFullYear();
   return `${year}-${month}-${day}`;
-}
-
-function isBoolean(bool) {
-  return bool === true || bool === false;
 }
 
 export type Props = {
@@ -43,7 +39,7 @@ export type Props = {
 const InputDate = ({
   value,
   onChange,
-  defaultIsOpen = false,
+  defaultIsOpen,
   isOpen: isOpenProp,
   onToggle,
   min,
@@ -53,49 +49,39 @@ const InputDate = ({
   calendarValue,
   ...props
 }: Props) => {
-  const component = createRef();
-  const refA = createRef();
-  const refB = createRef();
+  const inputRef = createRef();
+  const calendarRef = createRef();
 
-  const [isOpen, setOpen] = useControlledState(
-    isBoolean(isOpenProp) ? undefined : defaultIsOpen,
+  const dateValue = parse(value);
+  const isDateValid = !isNaN(dateValue.getTime());
+
+  const [isOpen = false, setOpen] = useControlledState(
+    defaultIsOpen,
     isOpenProp,
     onToggle
   );
 
-  const [baseCurrent, setCurrent] = useControlledState(
+  const [current = dateValue, setCurrent] = useControlledState(
     defaultCalendarValue,
     calendarValue,
     onCalendarChange
   );
-  const current = baseCurrent || new Date(value);
 
-  const handleOpen = useCallback(() => {
-    // istanbul ignore else
-    if (isOpen === false) {
-      setOpen(true);
-    }
-  }, [isOpen, setOpen]);
-
-  const handleClose = useCallback(() => {
-    if (isOpen) {
-      setOpen(false);
-    }
-  }, [isOpen, setOpen]);
+  const handleOpen = useCallback(() => setOpen(true), [setOpen]);
+  const handleClose = useCallback(() => setOpen(false), [setOpen]);
 
   const handleCloseOnBlur = useCallback(
-    (evt: MouseEvent) => {
-      const { relatedTarget } = evt;
+    ({ relatedTarget }: MouseEvent) => {
       // istanbul ignore next (this is too DOM related)
       if (
-        component.current && relatedTarget instanceof HTMLElement
-          ? !component.current.contains(relatedTarget)
+        calendarRef.current && relatedTarget instanceof HTMLElement
+          ? !calendarRef.current.contains(relatedTarget)
           : true
       ) {
         setOpen(false);
       }
     },
-    [component, setOpen]
+    [calendarRef, setOpen]
   );
 
   const setCurrentOnValueChange = useCallback(
@@ -125,12 +111,8 @@ const InputDate = ({
     [setOpen, onChange]
   );
 
-  const preventDefault = (evt: Event) => evt.preventDefault();
-  const dateValue = parse(value);
-  const isDateValid = !isNaN(dateValue.getTime());
-
   return (
-    <MouseOutside onClickOutside={handleClose} refs={[refA, refB]}>
+    <MouseOutside onClickOutside={handleClose} refs={[inputRef, calendarRef]}>
       {() => (
         <Manager>
           <Reference>
@@ -149,10 +131,10 @@ const InputDate = ({
                 onBlur={handleCloseOnBlur}
                 value={value}
                 onChange={handleInputChange}
-                onClick={preventDefault}
+                onClick={(evt: Event) => evt.preventDefault()}
                 min={min}
                 max={max}
-                ref={mergeRefs(ref, refA)}
+                ref={mergeRefs(ref, inputRef)}
                 {...props}
               />
             )}
@@ -167,7 +149,7 @@ const InputDate = ({
                   selected={isDateValid ? dateValue : undefined}
                   minDate={min ? new Date(min) : undefined}
                   maxDate={max ? new Date(max) : undefined}
-                  ref={mergeRefs(ref, component, refB)}
+                  ref={mergeRefs(ref, calendarRef)}
                   style={style}
                 />
               )}
