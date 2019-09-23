@@ -66,6 +66,7 @@ const InputDate = ({
   );
 
   const current = parse(baseCurrent);
+  const isCurrentValid = !isNaN(current.getTime());
 
   const handleOpen = useCallback(() => setOpen(true), [setOpen]);
   const handleClose = useCallback(() => setOpen(false), [setOpen]);
@@ -97,8 +98,10 @@ const InputDate = ({
 
   const handleInputChange = useCallback(
     (evt: SyntheticInputEvent<HTMLInputElement>) => {
-      onChange(evt.target.value);
-      setCurrentOnValueChange(evt.target.value);
+      if (evt.target.value) {
+        onChange(evt.target.value);
+        setCurrentOnValueChange(evt.target.value);
+      }
     },
     [onChange, setCurrentOnValueChange]
   );
@@ -149,7 +152,13 @@ const InputDate = ({
               {({ ref, style }) => (
                 <Calendar
                   onChangeCurrent={handleCurrentChange}
-                  current={current}
+                  current={
+                    isCurrentValid
+                      ? current
+                      : isDateValid
+                      ? dateValue
+                      : new Date()
+                  }
                   onSelect={handleSelect}
                   selected={isDateValid ? dateValue : undefined}
                   minDate={min ? new Date(min) : undefined}
