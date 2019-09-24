@@ -98,6 +98,7 @@ const InputDate = ({
 
   const handleInputChange = useCallback(
     (evt: SyntheticInputEvent<HTMLInputElement>) => {
+      // istanbul ignore else (this is too DOM related)
       if (evt.target.value) {
         onChange(evt.target.value);
         setCurrentOnValueChange(evt.target.value);
