@@ -10,6 +10,19 @@ import { mount } from 'enzyme';
 import InputDate from './';
 
 describe('InputDate calendar tests', () => {
+  const RealDate = Date;
+  function mockDate(isoDate) {
+    global.Date = class extends RealDate {
+      constructor() {
+        return new RealDate(isoDate);
+      }
+    };
+  }
+
+  afterEach(() => {
+    global.Date = RealDate;
+  });
+
   it('checks if onCalendarChange is called when calendar arrow is clicked', () => {
     const handleCalendarChange = jest.fn();
     const wrapper = mount(
@@ -128,5 +141,42 @@ describe('InputDate calendar tests', () => {
         .find('Year')
         .text()
     ).toBe('October 2018');
+  });
+
+  it('wrong value given to the input will not cause calendar picker error', () => {
+    const wrapper = mount(
+      <InputDate value="2019-02-01" onChange={jest.fn()} defaultIsOpen={true} />
+    );
+
+    wrapper
+      .find('input')
+      .simulate('change', { target: { value: '0019-10-01' } });
+
+    expect(
+      wrapper
+        .find('[data-context="calendar"]')
+        .find('Navigator')
+        .find('Year')
+        .text()
+    ).toBe('February 2019');
+  });
+
+  it('wrong value given to the input and current will not cause calendar picker error', () => {
+    mockDate('2019-03-01T10:00:00z');
+    const wrapper = mount(
+      <InputDate value="0000-XX-00" onChange={jest.fn()} defaultIsOpen={true} />
+    );
+
+    wrapper
+      .find('input')
+      .simulate('change', { target: { value: '0019-10-01' } });
+
+    expect(
+      wrapper
+        .find('[data-context="calendar"]')
+        .find('Navigator')
+        .find('Year')
+        .text()
+    ).toBe('March 2019');
   });
 });
