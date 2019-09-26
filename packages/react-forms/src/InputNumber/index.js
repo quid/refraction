@@ -16,6 +16,7 @@ type Props = {
   disabled?: boolean,
   readOnly?: boolean,
   unit?: string,
+  onChange?: (SyntheticInputEvent<any> | Event) => void,
 };
 
 const Addon = styled.div`
@@ -45,8 +46,21 @@ const Caret = styled.button`
 `;
 
 const InputNumber = styled(
-  ({ step = 1, disabled = false, readOnly = false, unit, ...props }: Props) => {
+  ({
+    step = 1,
+    disabled = false,
+    readOnly = false,
+    unit,
+    onChange,
+    ...props
+  }: Props) => {
     const input = React.createRef();
+    const dispatchChange = React.useCallback(() => {
+      const event = new Event('change');
+      input.current && input.current.dispatchEvent(event);
+      onChange && onChange(event);
+    }, [input, onChange]);
+
     return (
       <InputText
         ref={input}
@@ -60,19 +74,26 @@ const InputNumber = styled(
             <Addon className={marginRightClass}>
               <Caret
                 disabled={disabled || readOnly}
-                onClick={() => input.current && input.current.stepUp(step)}
+                onClick={() => {
+                  input.current && input.current.stepUp(step);
+                  dispatchChange();
+                }}
               >
                 <Icon name="caret_up" />
               </Caret>
               <Caret
                 disabled={disabled || readOnly}
-                onClick={() => input.current && input.current.stepDown(step)}
+                onClick={() => {
+                  input.current && input.current.stepDown(step);
+                  dispatchChange();
+                }}
               >
                 <Icon name="caret_down" />
               </Caret>
             </Addon>
           </React.Fragment>
         )}
+        onChange={onChange}
         {...props}
       />
     );
