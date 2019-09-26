@@ -10,11 +10,11 @@ and using as selectors all the components exported by the library.
 ## Installation
 
 ```bash
-npm install --save @quid/expandable-table
+npm install --save @quid/react-expandable-table
 
 # or
 
-yarn add @quid/expandable-table
+yarn add @quid/react-expandable-table
 ```
 
 <!--
