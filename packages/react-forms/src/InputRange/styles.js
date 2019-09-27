@@ -14,10 +14,11 @@ export const HANDLE_SIZE = BASE_HANDLE_SIZE;
 export const TICK_HEIGHT = 6;
 export const TICK_WIDTH = 2;
 
-export const TRACK_BACKGROUND = (props: Object) =>
+export const TRACK_BACKGROUND = wf((props: Object) =>
   props.theme.current === 'light'
     ? props.theme.colors.gray4
-    : props.theme.colors.gray2;
+    : props.theme.colors.gray2
+);
 
 export const Container = styled.div`
   position: relative;
@@ -64,30 +65,52 @@ export const Tick = styled.div`
   transform: translateX(${TICK_WIDTH / 2}px) translateY(${TICK_HEIGHT / 2}px);
   color: ${wf(props => props.theme.selected)};
   border-radius: ${TICK_WIDTH}px;
-  background-color: ${wf(TRACK_BACKGROUND)};
-  opacity: ${props => (props.hidden ? 0 : 1)};
+  background-color: ${TRACK_BACKGROUND};
+  opacity: ${wf(props => (props.hidden ? 0 : 1))};
 
   &:first-of-type {
     transform: translateY(${TICK_HEIGHT / 2}px);
   }
 `;
 
-export const StepTicks = styled(({ step, max, min, hidden, ...props }) => (
-  <div {...props}>
-    {Array(Math.ceil((max - min) / step) + 2)
-      .fill()
-      .map((_, key) => (
-        <Tick key={key} hidden={hidden.includes(key)} />
-      ))}
-  </div>
-))`
+export const StepTicks = styled(({ step, max, min, values, ...props }) => {
+  const hidden = values
+    .map(value => (value - min) / step)
+    .filter(value => value !== undefined);
+
+  return (
+    <div {...props}>
+      {Array(Math.ceil((max - min) / step) + 2)
+        .fill()
+        .map((_, key) => (
+          <Tick key={key} hidden={hidden.includes(key)} />
+        ))}
+    </div>
+  );
+})`
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
   display: flex;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -${BASE_HANDLE_SIZE - 1}px;
   right: 0;
   bottom: 0;
   justify-content: space-between;
+`;
+
+export const Rect = styled(props => (
+  <rect
+    {...props}
+    fill="currentColor"
+    height={2}
+    width={Math.max(props.width, 0)}
+    x={Math.max(props.offset, 0)}
+    rx={1}
+    ry={1}
+  />
+))`
+  color: ${wf(props =>
+    props.disabled ? TRACK_BACKGROUND(props) : props.theme.selected
+  )};
 `;

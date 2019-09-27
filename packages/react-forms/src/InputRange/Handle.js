@@ -77,16 +77,11 @@ const Handle = styled(
   margin-top: ${HANDLE_SIZE / -2}px;
   cursor: default;
   z-index: 2;
-  transform: translateX(calc(${props => props.offset}px - 50%));
   &::before {
     content: '';
     display: block;
     background-color: ${wf(props =>
-      props.disabled
-        ? TRACK_BACKGROUND(props)
-        : props.zero
-        ? 'transparent'
-        : 'currentColor'
+      props.disabled ? TRACK_BACKGROUND(props) : 'currentColor'
     )};
     width: ${HANDLE_SIZE}px;
     height: ${HANDLE_SIZE}px;
@@ -94,13 +89,6 @@ const Handle = styled(
     border-radius: 50%;
     transition: transform 0.2s ease-in-out, width 0.2s ease-in-out,
       height 0.2s ease-in-out;
-    ${wf(
-      props =>
-        props.zero &&
-        css`
-          border: 1px solid ${TRACK_BACKGROUND(props)};
-        `
-    )}
   }
 
   &:active::before {
