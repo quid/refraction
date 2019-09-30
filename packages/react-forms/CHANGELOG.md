@@ -3,17 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [4.0.1](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v4.0.0...v4.0.1) (2019-09-30)
-
-
-### Bug Fixes
-
-* eslint issues with version 6.5.0 ([48dad40](https://github.com/quid/refraction/tree/master/packages/react-forms/commit/48dad40))
-
-
-
-
-
 # [4.0.0](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v3.3.5...v4.0.0) (2019-09-30)
 
 
