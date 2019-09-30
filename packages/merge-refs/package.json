@@ -1,6 +1,6 @@
 {
   "name": "@quid/merge-refs",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Utility to merge different React “refs” into a single call.",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
