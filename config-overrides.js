@@ -37,6 +37,7 @@ module.exports = {
   ),
   jest: config => {
     // create-react-app looks for tests in `src`, we look in `packages`
+    config.roots = ['<rootDir>/packages'];
     config.testMatch = config.testMatch.map(m => m.replace('src', 'packages'));
     config.collectCoverageFrom = ['**/packages/**/*.js'];
     config.coveragePathIgnorePatterns = ['/dist/'];
@@ -44,6 +45,7 @@ module.exports = {
     // we tell Jest to import the @quid packages from their source directory
     // rather than from the dist one, so we don't have to build them each time
     config.moduleNameMapper = lernaAlias.jest();
+
     return config;
   },
 };

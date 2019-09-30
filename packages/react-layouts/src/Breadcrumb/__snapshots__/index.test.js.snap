@@ -55,18 +55,45 @@ exports[`renders a default NavLink 1`] = `
   to="foobar"
 >
   <ForwardRef(render)>
-    <a
-      aria-current={null}
+    <NavLink
+      activeClassName="css-c5kiin-primaryFontFamily-bold"
       className="emotion-0 emotion-1"
-      href="/foobar"
-      onClick={[Function]}
-    />
+      exact={true}
+      to="foobar"
+    >
+      <Link
+        aria-current={null}
+        className="emotion-0 emotion-1"
+        to={
+          Object {
+            "hash": "",
+            "pathname": "/foobar",
+            "search": "",
+            "state": null,
+          }
+        }
+      >
+        <LinkAnchor
+          aria-current={null}
+          className="emotion-0 emotion-1"
+          href="/foobar"
+          navigate={[Function]}
+        >
+          <a
+            aria-current={null}
+            className="emotion-0 emotion-1"
+            href="/foobar"
+            onClick={[Function]}
+          />
+        </LinkAnchor>
+      </Link>
+    </NavLink>
   </ForwardRef(render)>
 </NavLink>
 `;
 
 exports[`renders the expected markup 1`] = `
-.emotion-35 {
+.emotion-55 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -99,7 +126,7 @@ exports[`renders the expected markup 1`] = `
   font-weight: bold;
 }
 
-.emotion-7 {
+.emotion-15 {
   padding-left: 10px;
   padding-right: 10px;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
@@ -112,7 +139,7 @@ exports[`renders the expected markup 1`] = `
   color: #8F9BA3;
 }
 
-.emotion-3 {
+.emotion-11 {
   font-family: 'quid-icons' !important;
   speak: none;
   font-style: normal;
@@ -144,7 +171,7 @@ exports[`renders the expected markup 1`] = `
   width: 1em;
 }
 
-.emotion-25 {
+.emotion-45 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
@@ -163,7 +190,7 @@ exports[`renders the expected markup 1`] = `
   cursor: default;
 }
 
-.emotion-33 {
+.emotion-53 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
@@ -213,7 +240,7 @@ exports[`renders the expected markup 1`] = `
   }
 >
   <ul
-    className="emotion-35 emotion-36"
+    className="emotion-55 emotion-56"
   >
     <NavLink
       disabled={false}
@@ -223,34 +250,63 @@ exports[`renders the expected markup 1`] = `
       to="/"
     >
       <ForwardRef(render)>
-        <a
-          aria-current="page"
-          className="emotion-0 emotion-1 emotion-2"
-          href="/"
-          onClick={[Function]}
-          style={Object {}}
+        <NavLink
+          activeClassName="emotion-2"
+          className="emotion-0 emotion-1"
+          exact={true}
+          to="/"
         >
-          Project Name 13
-        </a>
+          <Link
+            aria-current="page"
+            className="emotion-0 emotion-1 emotion-2"
+            style={Object {}}
+            to={
+              Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": null,
+              }
+            }
+          >
+            <LinkAnchor
+              aria-current="page"
+              className="emotion-0 emotion-1 emotion-2"
+              href="/"
+              navigate={[Function]}
+              style={Object {}}
+            >
+              <a
+                aria-current="page"
+                className="emotion-0 emotion-1 emotion-2"
+                href="/"
+                onClick={[Function]}
+                style={Object {}}
+              >
+                Project Name 13
+              </a>
+            </LinkAnchor>
+          </Link>
+        </NavLink>
       </ForwardRef(render)>
     </NavLink>
     <Arrow
       key=".1"
     >
       <div
-        className="emotion-7 emotion-8"
+        className="emotion-15 emotion-16"
       >
         <Icon
           name="angle_double_right"
           squared={true}
         >
           <ForwardRef
-            className="emotion-3 emotion-4"
+            className="emotion-11 emotion-12"
             name="angle_double_right"
             squared={true}
           >
             <i
-              className="emotion-3 emotion-4"
+              className="emotion-11 emotion-12"
             >
               angle_double_right
             </i>
@@ -266,38 +322,65 @@ exports[`renders the expected markup 1`] = `
       to="/search"
     >
       <ForwardRef(render)>
-        <a
-          aria-current={null}
+        <NavLink
+          activeClassName="emotion-2"
           className="emotion-0 emotion-1"
-          href="/search"
-          onClick={[Function]}
+          exact={true}
+          to="/search"
         >
-          <span
-            id="breadcrumb-1-tooltip"
-            title="project AND name"
+          <Link
+            aria-current={null}
+            className="emotion-0 emotion-1"
+            to={
+              Object {
+                "hash": "",
+                "pathname": "/search",
+                "search": "",
+                "state": null,
+              }
+            }
           >
-            SEARCH
-          </span>
-        </a>
+            <LinkAnchor
+              aria-current={null}
+              className="emotion-0 emotion-1"
+              href="/search"
+              navigate={[Function]}
+            >
+              <a
+                aria-current={null}
+                className="emotion-0 emotion-1"
+                href="/search"
+                onClick={[Function]}
+              >
+                <span
+                  id="breadcrumb-1-tooltip"
+                  title="project AND name"
+                >
+                  SEARCH
+                </span>
+              </a>
+            </LinkAnchor>
+          </Link>
+        </NavLink>
       </ForwardRef(render)>
     </NavLink>
     <Arrow
       key=".3"
     >
       <div
-        className="emotion-7 emotion-8"
+        className="emotion-15 emotion-16"
       >
         <Icon
           name="angle_right"
           squared={true}
         >
           <ForwardRef
-            className="emotion-3 emotion-4"
+            className="emotion-11 emotion-12"
             name="angle_right"
             squared={true}
           >
             <i
-              className="emotion-3 emotion-4"
+              className="emotion-11 emotion-12"
             >
               angle_right
             </i>
@@ -313,33 +396,60 @@ exports[`renders the expected markup 1`] = `
       to="/search/review"
     >
       <ForwardRef(render)>
-        <a
-          aria-current={null}
+        <NavLink
+          activeClassName="emotion-2"
           className="emotion-0 emotion-1"
-          href="/search/review"
-          onClick={[Function]}
+          exact={true}
+          to="/search/review"
         >
-          REVIEW
-        </a>
+          <Link
+            aria-current={null}
+            className="emotion-0 emotion-1"
+            to={
+              Object {
+                "hash": "",
+                "pathname": "/search/review",
+                "search": "",
+                "state": null,
+              }
+            }
+          >
+            <LinkAnchor
+              aria-current={null}
+              className="emotion-0 emotion-1"
+              href="/search/review"
+              navigate={[Function]}
+            >
+              <a
+                aria-current={null}
+                className="emotion-0 emotion-1"
+                href="/search/review"
+                onClick={[Function]}
+              >
+                REVIEW
+              </a>
+            </LinkAnchor>
+          </Link>
+        </NavLink>
       </ForwardRef(render)>
     </NavLink>
     <Arrow
       key=".5"
     >
       <div
-        className="emotion-7 emotion-8"
+        className="emotion-15 emotion-16"
       >
         <Icon
           name="angle_right"
           squared={true}
         >
           <ForwardRef
-            className="emotion-3 emotion-4"
+            className="emotion-11 emotion-12"
             name="angle_right"
             squared={true}
           >
             <i
-              className="emotion-3 emotion-4"
+              className="emotion-11 emotion-12"
             >
               angle_right
             </i>
@@ -355,7 +465,7 @@ exports[`renders the expected markup 1`] = `
       to="/search/review/analyze"
     >
       <a
-        className="emotion-25 emotion-1"
+        className="emotion-45 emotion-1"
       >
         ANALYZE
       </a>
@@ -364,19 +474,19 @@ exports[`renders the expected markup 1`] = `
       key=".7"
     >
       <div
-        className="emotion-7 emotion-8"
+        className="emotion-15 emotion-16"
       >
         <Icon
           name="angle_right"
           squared={true}
         >
           <ForwardRef
-            className="emotion-3 emotion-4"
+            className="emotion-11 emotion-12"
             name="angle_right"
             squared={true}
           >
             <i
-              className="emotion-3 emotion-4"
+              className="emotion-11 emotion-12"
             >
               angle_right
             </i>
@@ -392,7 +502,7 @@ exports[`renders the expected markup 1`] = `
       to="/search/review/analyze/share"
     >
       <a
-        className="emotion-33 emotion-1"
+        className="emotion-53 emotion-1"
         href="/search/review/analyze/share"
       >
         SHARE
