@@ -8,7 +8,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import InputRange from '.';
-import { Track, Rect, TRACK_BACKGROUND, HANDLE_SIZE } from './styles';
+import { Track, Rect, TRACK_BACKGROUND } from './styles';
 import Handle from './Handle';
 
 jest.mock('react-resize-aware', () => () => [
