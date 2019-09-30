@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v3.3.5...v4.0.0) (2019-09-30)
+
+
+### Bug Fixes
+
+* controlled InputRange and performance improvements ([#107](https://github.com/quid/refraction/tree/master/packages/react-forms/issues/107)) ([70b24bc](https://github.com/quid/refraction/tree/master/packages/react-forms/commit/70b24bc))
+
+
+### BREAKING CHANGES
+
+* the InputRange “value” property has been replaced by a “values” property that takes an array rather than an object.
+
+
+
+
+
 ## [3.3.5](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v3.3.4...v3.3.5) (2019-09-26)
 
 
