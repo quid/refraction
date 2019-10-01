@@ -12,6 +12,7 @@
     ]
   },
   "scripts": {
+    "prepare": "node scripts/yarn-link-binaries.js",
     "start": "styleguidist server --open",
     "build": "styleguidist build",
     "create-package": "builder-init $(pwd)/packages/react-package-template",
