@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/quid/refraction/tree/master/packages/react-popover/compare/v4.0.0...v4.0.1) (2019-10-04)
+
+
+### Bug Fixes
+
+* updated use-debouce to 3.x([#111](https://github.com/quid/refraction/tree/master/packages/react-popover/issues/111)) ([784bc1b](https://github.com/quid/refraction/tree/master/packages/react-popover/commit/784bc1b))
+
+
+
+
+
 # [4.0.0](https://github.com/quid/refraction/tree/master/packages/react-popover/compare/v3.3.5...v4.0.0) (2019-10-01)
 
 **Note:** Version bump only for package @quid/react-popover
