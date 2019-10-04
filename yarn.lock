@@ -14795,10 +14795,10 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-use-debounce@^2.1.0:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/use-debounce/-/use-debounce-2.2.1.tgz#0b50e98486a17084c2ba063467ea4cd06071fa3d"
-  integrity sha512-5+8dPOaSecXG+hsjjqDu57k+sIfRLQ2fyRVTq8Q+tK2XYLT3FmBxVy3B+C8l33mLuFkiVu6uE5JqbuQIruxh/g==
+use-debounce@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/use-debounce/-/use-debounce-3.0.1.tgz#da9f63f4e212048cd747a64032aff21e60bc4e69"
+  integrity sha512-uCPUD1BtzNjwJBsMFggtvNRfw5vCsarw75TM6Tcj0kCg58YvMnIAuvcPrl6mA91m4BtVvRfPTajZv1OEQpN+hw==
 
 use@^3.1.0:
   version "3.1.1"
