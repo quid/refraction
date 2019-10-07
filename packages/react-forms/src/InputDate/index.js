@@ -7,7 +7,7 @@
 // @flow
 import React, { useCallback, createRef } from 'react';
 import parse from 'date-fns/parse';
-import { Manager, Popper, Reference } from 'react-popper';
+import { Manager, Popper, Reference, type PopperProps } from 'react-popper';
 import InputText from '../InputText';
 import Calendar from '@quid/react-date-picker';
 import { Icon } from '@quid/react-core';
@@ -33,6 +33,7 @@ export type Props = {
   disabled?: boolean,
   onCalendarChange?: string => void,
   calendarValue?: string,
+  popperProps?: PopperProps,
 };
 
 const InputDate = ({
@@ -45,6 +46,7 @@ const InputDate = ({
   max,
   onCalendarChange,
   calendarValue,
+  popperProps,
   ...props
 }: Props) => {
   const inputRef = createRef();
@@ -149,7 +151,7 @@ const InputDate = ({
             )}
           </Reference>
           {isOpen && (
-            <Popper placement="bottom">
+            <Popper placement="bottom" {...popperProps}>
               {({ ref, style }) => (
                 <Calendar
                   onChangeCurrent={handleCurrentChange}
