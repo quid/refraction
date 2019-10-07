@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v4.0.1...v4.1.0) (2019-10-07)
+
+
+### Features
+
+* allow to override InputDate Popper.js props ([#112](https://github.com/quid/refraction/tree/master/packages/react-forms/issues/112)) ([f3d7a72](https://github.com/quid/refraction/tree/master/packages/react-forms/commit/f3d7a72))
+
+
+
+
+
 # [4.0.0](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v3.3.5...v4.0.0) (2019-10-01)
 
 
