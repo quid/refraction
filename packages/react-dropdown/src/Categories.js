@@ -19,15 +19,19 @@ import {
   type GetItemProps,
 } from './dropdownTypes.js';
 
+import { type DropdownItemWithIndex } from './Items';
+
 type Props = {
   items: Array<DropdownItem>,
   categories: Array<DropdownCategory>,
   inputValue: ?string,
   getItemProps: GetItemProps,
   twoColumn?: boolean,
-  highlightedIndex: ?number,
+  highlightedIndex: ?number | ?string,
   highlight: boolean,
   selectedItems: Array<DropdownSelectedItem>,
+  enableCategorySelection: boolean,
+  multiselect: boolean,
 };
 
 const Categories = styled.div`
@@ -78,6 +82,62 @@ const GroupTitle = styled.h3`
   padding: 5px;
 `;
 
+type CategorySelectionProps = {
+  categoryId: string | number,
+  enabled: boolean,
+  children: React.Node,
+  getItemProps: GetItemProps,
+  items: Array<$Shape<DropdownItemWithIndex>>,
+};
+
+export const createCategoryIndex = (categoryId: string | number): string => {
+  return `group_${categoryId}`;
+};
+
+export const isEntityHighlighted = (
+  enabled: boolean = false,
+  highlightedIndex: ?number | ?string,
+  id: ?number | ?string
+): boolean => {
+  return (
+    enabled === true &&
+    id != null &&
+    highlightedIndex === createCategoryIndex(id)
+  );
+};
+
+const CategorySelection = styled(
+  ({
+    categoryId,
+    enabled,
+    children,
+    getItemProps,
+    items,
+    ...props
+  }: CategorySelectionProps) => {
+    if (enabled) {
+      return (
+        <div
+          key={categoryId}
+          {...getItemProps({
+            index: createCategoryIndex(categoryId),
+            item: items,
+          })}
+          {...props}
+        >
+          {children}
+        </div>
+      );
+    }
+
+    return children;
+  }
+)`
+  display: flex;
+  flex-grow: 1;
+  cursor: pointer;
+`;
+
 export default function DropdownCategories({
   items,
   categories,
@@ -87,6 +147,8 @@ export default function DropdownCategories({
   highlightedIndex,
   highlight,
   selectedItems,
+  enableCategorySelection,
+  multiselect,
 }: Props) {
   const sortedItems = categories
     .map(category => items.filter(item => item.categoryId === category.id))
@@ -122,10 +184,20 @@ export default function DropdownCategories({
     <div>
       {categoriesedItems.map(category => {
         const categoryId = category.id;
+
+        const isMultipleCategorySelectionEnabled =
+          enableCategorySelection && multiselect;
+
         const isHighlighted =
           highlightedIndex != null &&
-          highlightedIndex >= category.firstIndex &&
-          highlightedIndex <= category.lastIndex;
+          ((typeof highlightedIndex === 'number' &&
+            highlightedIndex >= category.firstIndex &&
+            highlightedIndex <= category.lastIndex) ||
+            isEntityHighlighted(
+              isMultipleCategorySelectionEnabled,
+              highlightedIndex,
+              categoryId
+            ));
 
         const isSelected = isItemInCategorySelected(
           selectedItems,
@@ -141,7 +213,16 @@ export default function DropdownCategories({
                   isSelected={isSelected}
                   twoColumn={twoColumn}
                 >
-                  <GroupTitle>{category.label}</GroupTitle>
+                  <CategorySelection
+                    categoryId={categoryId}
+                    getItemProps={getItemProps}
+                    enabled={isMultipleCategorySelectionEnabled}
+                    items={category.items.filter(
+                      ({ disabled = false }) => disabled === false
+                    )}
+                  >
+                    <GroupTitle>{category.label}</GroupTitle>
+                  </CategorySelection>
                 </Divider>
               )}
               <Divider twoColumn={twoColumn}>
@@ -154,6 +235,8 @@ export default function DropdownCategories({
                   highlightedIndex={highlightedIndex}
                   selectedItems={selectedItems}
                   highlight={highlight}
+                  enableCategorySelection={enableCategorySelection}
+                  multiselect={multiselect}
                 />
               </Divider>
             </Category>
