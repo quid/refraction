@@ -10,7 +10,6 @@ import Downshift, {
   type StateChangeOptions,
 } from 'downshift';
 import * as React from 'react';
-import { includesId } from './utils';
 import { type DropdownSelectedItem } from './dropdownTypes.js';
 
 export type MultiControllerStateAndHelpers = ControllerStateAndHelpers<DropdownSelectedItem> & {
