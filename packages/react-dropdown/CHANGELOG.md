@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/quid/ui-framework/compare/v4.1.1...v4.2.0) (2019-10-17)
+
+
+### Features
+
+* adds dropdown category selection option ([#113](https://github.com/quid/ui-framework/issues/113)) ([893bc14](https://github.com/quid/ui-framework/commit/893bc14))
+
+
+
+
+
 # [4.0.0](https://github.com/quid/ui-framework/compare/v3.3.5...v4.0.0) (2019-10-01)
 
 **Note:** Version bump only for package @quid/react-dropdown
