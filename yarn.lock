@@ -1053,7 +1053,7 @@
     "@emotion/utils" "0.11.2"
     "@emotion/weak-memoize" "0.2.4"
 
-"@emotion/core@^10.0.10", "@emotion/core@^10.0.4", "@emotion/core@^10.0.6":
+"@emotion/core@^10.0.10", "@emotion/core@^10.0.6":
   version "10.0.17"
   resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.17.tgz#3367376709721f4ee2068cff54ba581d362789d8"
   integrity sha512-gykyjjr0sxzVuZBVTVK4dUmYsorc2qLhdYgSiOVK+m7WXgcYTKZevGWZ7TLAgTZvMelCTvhNq8xnf8FR1IdTbg==
@@ -2150,104 +2150,6 @@
     octokit-pagination-methods "^1.1.0"
     once "^1.4.0"
     universal-user-agent "^4.0.0"
-
-"@quid/merge-refs@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@quid/merge-refs/-/merge-refs-3.0.0.tgz#37f256c3276a53c2eac6ba98b34907b847c83bac"
-  integrity sha512-sHcaPhejpaogb0aP1dFNQohKBGkVLQAHBfpL0wJKUOkc0Zzwi3UrWXp+pP9VptrMk2BmC7n40gsXmkUUl/MOIg==
-
-"@quid/react-core@^3.0.0", "@quid/react-core@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@quid/react-core/-/react-core-3.3.0.tgz#9eaf1c7cc7bbcc593438c23177b60bd14e2b64cb"
-  integrity sha512-7sNrubfXTqnluHqD0JgUgIm5k7h2MbzpIG6aLHsqnlsspQJ87vTXtb8b4Ntf1ACeoDJfxoErUEX3omM3pze84Q==
-  dependencies:
-    "@emotion/core" "^10.0.10"
-    "@emotion/css" "^10.0.4"
-    "@emotion/styled" "^10.0.4"
-    "@emotion/styled-base" "^10.0.4"
-    "@quid/theme" "^3.3.0"
-    color "^3.1.0"
-
-"@quid/react-date-picker@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@quid/react-date-picker/-/react-date-picker-3.3.0.tgz#a67cb63d618df53b65245638f6c36db41ca54a45"
-  integrity sha512-dYABz9T9kqMrKJ/6Oj+vZOGcVXkUdniW6p5DEk4ee8mvEFRzT6MKomnXnBfGxswthTUhRgLRWZzRSC7UK3EK2A==
-  dependencies:
-    "@emotion/css" "^10.0.6"
-    "@emotion/styled" "^10.0.6"
-    "@emotion/styled-base" "^10.0.4"
-    "@quid/react-core" "^3.3.0"
-    "@quid/theme" "^3.3.0"
-    date-fns "^1.30.1"
-    emotion "^10.0.6"
-
-"@quid/react-forms@^3.0.0":
-  version "3.3.5"
-  resolved "https://registry.yarnpkg.com/@quid/react-forms/-/react-forms-3.3.5.tgz#ec5afcae4cf4a00de662b726dd1d9b0fb5a5f7fb"
-  integrity sha512-VeTrd/Gu4vibHBIaZg7sJscaIp4ADekQl7WYjcdiuiUhawK4RN728smDN900gC0Ou9LbDVHL1udZ0mBWj+2fmQ==
-  dependencies:
-    "@emotion/core" "^10.0.10"
-    "@emotion/css" "^10.0.4"
-    "@emotion/styled" "^10.0.2"
-    "@emotion/styled-base" "^10.0.4"
-    "@quid/merge-refs" "^3.0.0"
-    "@quid/react-core" "^3.3.0"
-    "@quid/react-date-picker" "^3.3.0"
-    "@quid/react-invalid-handler" "^3.0.0"
-    "@quid/react-mouse-outside" "^3.0.0"
-    "@quid/react-use-controlled-state" "^3.2.2"
-    "@quid/theme" "^3.3.0"
-    color "^3.1.0"
-    date-fns "^1.30.1"
-    emotion "^10.0.5"
-    nanoid "^2.0.0"
-    react-popper "^1.3.3"
-    react-resize-aware "^2.7.2"
-    react-router-dom "^5.0.0"
-
-"@quid/react-invalid-handler@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@quid/react-invalid-handler/-/react-invalid-handler-3.0.0.tgz#dfc314d67d704f152290a450c73ea33ab39f41fb"
-  integrity sha512-4KPsgkWwSzw7aeksK1WcBsZwujXGNcGLQQlQp2kX1gHHz7M6Okwr1AnR5AJ047xBATc7BC7mrESW3Wo3w5urYw==
-  dependencies:
-    react "^16.7.0"
-
-"@quid/react-mouse-outside@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@quid/react-mouse-outside/-/react-mouse-outside-3.0.0.tgz#42e2c23ba6fe8c08e418384635a81c8785710a9e"
-  integrity sha512-apUOM0nUSTSJHAY/CbpEUt32DV3sTXYl2OChYGRtdaMsWF683PuiazuLIAlEZ3dxKTmY5sLnUhvZjUeVEIZlqA==
-
-"@quid/react-use-controlled-state@^3.2.2":
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/@quid/react-use-controlled-state/-/react-use-controlled-state-3.2.2.tgz#4e0fde574c46a8aac194b329054c1876828e0a5a"
-  integrity sha512-cvyQVsbokMlAAgjuHteVxhaPIhsG0Wh03HcJkw4fbYArUQ9fQt7vqzIuiiXhK13Pg2sGV5qCNdHwjZXpE1wwvw==
-
-"@quid/stylis-plugin-focus-visible@^1.0.0":
-  version "1.38.1"
-  resolved "https://registry.yarnpkg.com/@quid/stylis-plugin-focus-visible/-/stylis-plugin-focus-visible-1.38.1.tgz#ff7edb2570e6718911e6f9bf11f141a2d108ad97"
-  integrity sha512-MQOLu33xQVX9QoIt1UaJWZ+JvUttSoQt7am/v+S7AFEOTKV8auKLxDJP8o7Ok9/xWtc16+izXWMlogtMReGHeg==
-
-"@quid/theme@^1.0.0":
-  version "1.40.0"
-  resolved "https://registry.yarnpkg.com/@quid/theme/-/theme-1.40.0.tgz#7d133748b640dd95af755c9169cc8af759d32d46"
-  integrity sha512-A+lgmQ8tJIpwDZkRcml3yjQMvG/1AlxAbZoFPo+I3G25E4IM3fpDuI5DXvj5/RoKUKKC1QhN+y0aXnvh4AnMDA==
-  dependencies:
-    "@emotion/core" "^10.0.4"
-    "@emotion/css" "^10.0.4"
-    "@emotion/utils" "^0.11.1"
-    color "^3.1.0"
-    emotion-theming "^10.0.2"
-
-"@quid/theme@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@quid/theme/-/theme-3.3.0.tgz#c4f242f1a701972922fe1c6f3698bea192ce7da0"
-  integrity sha512-rRg8CjBIhQSr9GCR7FvWCoIwPSWMNhJzf3pKEH8bDiyvVERd5fnn06L7MEw3Bv/wugKi54icQfV63x1AEGMAmg==
-  dependencies:
-    "@emotion/core" "^10.0.10"
-    "@emotion/css" "^10.0.4"
-    "@emotion/utils" "^0.11.1"
-    color "^3.1.0"
-    emotion-theming "^10.0.2"
 
 "@reach/auto-id@^0.2.0":
   version "0.2.0"
@@ -5904,7 +5806,7 @@ eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
-eslint@6.4.0, eslint@^6.1.0:
+eslint@^6.1.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.4.0.tgz#5aa9227c3fbe921982b2eda94ba0d7fae858611a"
   integrity sha512-WTVEzK3lSFoXUovDHEbkJqCVPEPwbhCq4trDktNI6ygs7aO41d4cDT0JFAT5MivzZeVLWlg7vHL+bgrQv/t3vA==
@@ -12234,15 +12136,10 @@ react-range@^1.4.1:
   resolved "https://registry.yarnpkg.com/react-range/-/react-range-1.4.1.tgz#f211c0fbf9695bf46bcfcef3047bc46c1dbf3f9b"
   integrity sha512-uzqRgrFZzQI96H7vS7WNE8yyVrZzNq0N1JJMhgFb9BxBGBzy0LHbZjyhLiSZrbJTFkPD0hC99Z5U/2sGEeuy+Q==
 
-react-resize-aware@^2.7.2:
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/react-resize-aware/-/react-resize-aware-2.7.2.tgz#38a0040daaa28dfa9b88994889fbb1e2aa66df83"
-  integrity sha512-XyweQ3YTiZzNG1T5PNpCXvnpsI7mdy4A2oeySFToh8v02Yf+kOiUyWprvyp6T68fFB848w2F3RKfzH7KDk75JQ==
-
-react-resize-aware@^3.0.0-beta.3:
-  version "3.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/react-resize-aware/-/react-resize-aware-3.0.0-beta.3.tgz#35aeddebfc4595f01323d0f473884099c4633f1b"
-  integrity sha512-XRnj1qgEAvrjOM7c/wsrVLBJxu0TNOKrhgWG7OasCdYiQSCyqiACxJUScTIknUk0bGV7MaagBjMa0CCYXK4ktQ==
+react-resize-aware@^3.0.0-beta.7:
+  version "3.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/react-resize-aware/-/react-resize-aware-3.0.0-beta.7.tgz#5cb9ad8e440d8bbf8e29ae16fbbf146ee1db79aa"
+  integrity sha512-wG55n8WWPpHGibz4NCGiAvpaMr1307ilDwWO/1mhut18nm29iXy4El+C52fPR2YqSBY2239Y9wOvSlSZlrysag==
 
 react-router-dom@^5.0.0:
   version "5.1.1"
