@@ -16,7 +16,8 @@ import { Item, HIGHLIGHTED, SELECTED } from './Items';
 import {
   Divider,
   createCategoryIndex,
-  isEntityHighlighted,
+  isCategoryHighlighted,
+  isCategoryItemHighlighted,
 } from './Categories';
 import {
   filterItems,
@@ -790,10 +791,17 @@ it('createCategoryIndex fn should create a string', () => {
   expect(createCategoryIndex('12')).toBe('group_12');
 });
 
-it('isEntityHighlighted fn should return boolean based on params', () => {
-  expect(isEntityHighlighted(false, null, null)).toBe(false);
-  expect(isEntityHighlighted(true, 'group_12', 12)).toBe(true);
-  expect(isEntityHighlighted(true, 'group_12', 13)).toBe(false);
+it('isCategoryHighlighted fn should return boolean based on params', () => {
+  expect(isCategoryHighlighted(false, null, null)).toBe(false);
+  expect(isCategoryHighlighted(true, 'group_12', 12)).toBe(true);
+  expect(isCategoryHighlighted(true, 'group_12', 13)).toBe(false);
+});
+
+it('isCategoryItemHighlighted fn should return boolean based on params', () => {
+  expect(isCategoryItemHighlighted(10, 1, 10)).toBe(true);
+  expect(isCategoryItemHighlighted(null, 1, 10)).toBe(false);
+  expect(isCategoryItemHighlighted(50, 1, 10)).toBe(false);
+  expect(isCategoryItemHighlighted(undefined, 1, 10)).toBe(false);
 });
 
 it('enableCategorySelection should allow group selection', () => {

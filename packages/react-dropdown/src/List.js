@@ -16,6 +16,7 @@ import {
   type DropdownCategory,
   type DropdownSelectedItem,
   type GetItemProps,
+  type HighlightedIndex,
 } from './dropdownTypes.js';
 
 type Props = {
@@ -26,7 +27,7 @@ type Props = {
   useFilter?: boolean,
   filterFn: (Array<DropdownItem>, ?string) => Array<DropdownItem>,
   twoColumn?: boolean,
-  highlightedIndex: ?number | ?string,
+  highlightedIndex: ?HighlightedIndex,
   selectedItems: Array<DropdownSelectedItem>,
   highlight: boolean,
   enableCategorySelection: boolean,

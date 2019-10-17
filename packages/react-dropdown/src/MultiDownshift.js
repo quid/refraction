@@ -84,7 +84,7 @@ class MultiDownshift extends React.Component<Props, State> {
   };
 
   handleSelection = (
-    selectedItems: Array<DropdownSelectedItem> | null,
+    selectedItems: ?Array<DropdownSelectedItem>,
     downshift: ControllerStateAndHelpers<DropdownSelectedItem>
   ) => {
     const callOnChange = selectedItems => {
@@ -138,14 +138,14 @@ class MultiDownshift extends React.Component<Props, State> {
     selectedItems: Array<DropdownSelectedItem>
   ): Array<DropdownSelectedItem> => {
     const currentSelectedIds = currentSelection.map(({ id }) => id);
-    const duplatedItems = selectedItems.reduce((accumulator, { id }) => {
+    const duplicatedItems = selectedItems.reduce((accumulator, { id }) => {
       if (currentSelectedIds.includes(id)) {
         accumulator.push(id);
       }
       return accumulator;
     }, []);
     return [...currentSelection, ...selectedItems].filter(({ id }) => {
-      return duplatedItems.includes(id) === false;
+      return duplicatedItems.includes(id) === false;
     });
   };
 
@@ -160,13 +160,14 @@ class MultiDownshift extends React.Component<Props, State> {
   removeItem = (
     item: DropdownSelectedItem,
     selectedItems: Array<DropdownSelectedItem>
-  ): Array<DropdownSelectedItem> =>
-    selectedItems.filter(({ id }) => id !== item.id);
+  ): Array<DropdownSelectedItem> => {
+    console.log('RemoveItem');
+    return selectedItems.filter(({ id }) => id !== item.id);
+  };
 
   getStateAndHelpers = (
     downshift: ControllerStateAndHelpers<DropdownSelectedItem>
   ): MultiControllerStateAndHelpers => ({
-    removeItem: this.removeItem,
     selectedItems: this.getSelectedItems(),
     ...downshift,
   });

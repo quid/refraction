@@ -16,8 +16,9 @@ import {
   type DropdownItem,
   type DropdownSelectedItem,
   type GetItemProps,
+  type HighlightedIndex,
 } from './dropdownTypes.js';
-import { isEntityHighlighted } from './Categories';
+import { isCategoryHighlighted } from './Categories';
 
 export type DropdownItemWithIndex = DropdownItem & { index?: number };
 
@@ -27,7 +28,7 @@ type Props = {
   items: Array<$Shape<DropdownItemWithIndex>>,
   getItemProps: GetItemProps,
   inputValue: ?string,
-  highlightedIndex: ?number | ?string,
+  highlightedIndex: ?HighlightedIndex,
   highlight: boolean,
   selectedItems: Array<DropdownSelectedItem>,
   enableCategorySelection?: boolean,
@@ -111,7 +112,7 @@ export default function DropdownItems({
 
         const isHighlighted =
           itemIndex === highlightedIndex ||
-          isEntityHighlighted(
+          isCategoryHighlighted(
             isMultipleCategorySelectionEnabled,
             highlightedIndex,
             categoryId

@@ -17,6 +17,7 @@ import {
   type DropdownCategory,
   type DropdownSelectedItem,
   type GetItemProps,
+  type HighlightedIndex,
 } from './dropdownTypes.js';
 
 import { type DropdownItemWithIndex } from './Items';
@@ -27,7 +28,7 @@ type Props = {
   inputValue: ?string,
   getItemProps: GetItemProps,
   twoColumn?: boolean,
-  highlightedIndex: ?number | ?string,
+  highlightedIndex: ?HighlightedIndex,
   highlight: boolean,
   selectedItems: Array<DropdownSelectedItem>,
   enableCategorySelection: boolean,
@@ -94,15 +95,26 @@ export const createCategoryIndex = (categoryId: string | number): string => {
   return `group_${categoryId}`;
 };
 
-export const isEntityHighlighted = (
+type ID = number | string;
+
+export const isCategoryHighlighted = (
   enabled: boolean = false,
-  highlightedIndex: ?number | ?string,
-  id: ?number | ?string
-): boolean => {
+  highlightedIndex: ?HighlightedIndex,
+  id: ?ID
+): boolean =>
+  enabled === true &&
+  id != null &&
+  highlightedIndex === createCategoryIndex(id);
+
+export const isCategoryItemHighlighted = (
+  highlightedIndex: ?HighlightedIndex,
+  firstIndex: number,
+  lastIndex: number
+) => {
   return (
-    enabled === true &&
-    id != null &&
-    highlightedIndex === createCategoryIndex(id)
+    typeof highlightedIndex === 'number' &&
+    highlightedIndex >= firstIndex &&
+    highlightedIndex <= lastIndex
   );
 };
 
@@ -189,15 +201,16 @@ export default function DropdownCategories({
           enableCategorySelection && multiselect;
 
         const isHighlighted =
-          highlightedIndex != null &&
-          ((typeof highlightedIndex === 'number' &&
-            highlightedIndex >= category.firstIndex &&
-            highlightedIndex <= category.lastIndex) ||
-            isEntityHighlighted(
-              isMultipleCategorySelectionEnabled,
-              highlightedIndex,
-              categoryId
-            ));
+          isCategoryItemHighlighted(
+            highlightedIndex,
+            category.firstIndex,
+            category.lastIndex
+          ) ||
+          isCategoryHighlighted(
+            isMultipleCategorySelectionEnabled,
+            highlightedIndex,
+            categoryId
+          );
 
         const isSelected = isItemInCategorySelected(
           selectedItems,
