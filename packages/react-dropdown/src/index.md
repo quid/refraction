@@ -107,6 +107,48 @@ const categories = [
 </Dropdown>;
 ```
 
+#### Dropdown with multi-level item list (two columns) and multiselect.
+
+With `multiselect` enabled you are able to select multiple items from the list. By clicking on the category you can select / deselect all the items within the category.
+
+```js
+import { Dropdown } from '@quid/react-dropdown';
+import { InputText } from '@quid/react-forms';
+
+const items = [
+  { id: 10, categoryId: 'a', label: 'One' },
+  { id: 22, categoryId: 'a', label: 'Two' },
+  { id: 33, categoryId: 'b', label: 'Three' },
+  { id: 44, categoryId: 'b', label: 'Four' },
+  { id: 55, categoryId: 'b', label: 'Four', disabled: true },
+  { id: 66, categoryId: 'b', label: 'Three', disabled: true },
+  { id: 77, categoryId: 'b', label: 'Four' },
+  { id: 88, categoryId: 'b', label: 'Three' },
+  { id: 99, categoryId: 'b', label: 'Four' },
+  { id: 101, categoryId: 'b', label: 'Three' },
+  { id: 111, categoryId: 'b', label: 'Four' },
+  { id: 121, categoryId: 'b', label: 'Three' },
+  { id: 131, categoryId: 'c', label: 'One' },
+];
+
+const categories = [
+  { id: 'a', label: 'Category A' },
+  { id: 'b', label: 'Category B' },
+  { id: 'c', label: 'Category C' },
+];
+
+<Dropdown
+  items={items}
+  multiselect={true}
+  categories={categories}
+  twoColumn={false}
+>
+  {({ getInputProps }) => (
+    <InputText readOnly placeholder="Select an item..." {...getInputProps()} />
+  )}
+</Dropdown>;
+```
+
 #### Dropdown with multi-level item list (two columns).
 
 ```js

@@ -147,6 +147,7 @@ exports[`renders an open dropdown 1`] = `
               },
             ]
           }
+          multiselect={false}
           selectedItems={Array []}
           twoColumn={true}
           useFilter={false}
@@ -173,6 +174,7 @@ exports[`renders an open dropdown 1`] = `
                 },
               ]
             }
+            multiselect={false}
             selectedItems={Array []}
             twoColumn={true}
             useFilter={false}
@@ -455,6 +457,7 @@ exports[`renders an open dropdown with categories 1`] = `
             },
           ]
         }
+        multiselect={false}
         selectedItems={Array []}
         twoColumn={false}
         useFilter={false}
@@ -502,6 +505,7 @@ exports[`renders an open dropdown with categories 1`] = `
               },
             ]
           }
+          multiselect={false}
           selectedItems={Array []}
           twoColumn={false}
           useFilter={false}
@@ -533,13 +537,35 @@ exports[`renders an open dropdown with categories 1`] = `
                           <section
                             className="emotion-2 emotion-3"
                           >
-                            <GroupTitle>
-                              <h3
-                                className="emotion-0 emotion-1"
-                              >
-                                Category A
-                              </h3>
-                            </GroupTitle>
+                            <CategorySelection
+                              categoryId="a"
+                              enabled={false}
+                              getItemProps={[Function]}
+                              items={
+                                Array [
+                                  Object {
+                                    "categoryId": "a",
+                                    "id": 10,
+                                    "index": 0,
+                                    "label": "One",
+                                  },
+                                  Object {
+                                    "categoryId": "a",
+                                    "id": 22,
+                                    "index": 1,
+                                    "label": "Two",
+                                  },
+                                ]
+                              }
+                            >
+                              <GroupTitle>
+                                <h3
+                                  className="emotion-0 emotion-1"
+                                >
+                                  Category A
+                                </h3>
+                              </GroupTitle>
+                            </CategorySelection>
                           </section>
                         </Divider>
                         <Divider
@@ -656,13 +682,35 @@ exports[`renders an open dropdown with categories 1`] = `
                           <section
                             className="emotion-2 emotion-3"
                           >
-                            <GroupTitle>
-                              <h3
-                                className="emotion-0 emotion-1"
-                              >
-                                Category B
-                              </h3>
-                            </GroupTitle>
+                            <CategorySelection
+                              categoryId="b"
+                              enabled={false}
+                              getItemProps={[Function]}
+                              items={
+                                Array [
+                                  Object {
+                                    "categoryId": "b",
+                                    "id": 33,
+                                    "index": 2,
+                                    "label": "Three",
+                                  },
+                                  Object {
+                                    "categoryId": "b",
+                                    "id": 44,
+                                    "index": 3,
+                                    "label": "Four",
+                                  },
+                                ]
+                              }
+                            >
+                              <GroupTitle>
+                                <h3
+                                  className="emotion-0 emotion-1"
+                                >
+                                  Category B
+                                </h3>
+                              </GroupTitle>
+                            </CategorySelection>
                           </section>
                         </Divider>
                         <Divider
@@ -962,6 +1010,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
               },
             ]
           }
+          multiselect={false}
           selectedItems={Array []}
           twoColumn={true}
           useFilter={false}
@@ -1009,6 +1058,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                 },
               ]
             }
+            multiselect={false}
             selectedItems={Array []}
             twoColumn={true}
             useFilter={false}
@@ -1040,13 +1090,35 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                             <section
                               className="emotion-2 emotion-3"
                             >
-                              <GroupTitle>
-                                <h3
-                                  className="emotion-0 emotion-1"
-                                >
-                                  Category A
-                                </h3>
-                              </GroupTitle>
+                              <CategorySelection
+                                categoryId="a"
+                                enabled={false}
+                                getItemProps={[Function]}
+                                items={
+                                  Array [
+                                    Object {
+                                      "categoryId": "a",
+                                      "id": 10,
+                                      "index": 0,
+                                      "label": "One",
+                                    },
+                                    Object {
+                                      "categoryId": "a",
+                                      "id": 22,
+                                      "index": 1,
+                                      "label": "Two",
+                                    },
+                                  ]
+                                }
+                              >
+                                <GroupTitle>
+                                  <h3
+                                    className="emotion-0 emotion-1"
+                                  >
+                                    Category A
+                                  </h3>
+                                </GroupTitle>
+                              </CategorySelection>
                             </section>
                           </Divider>
                           <Divider
@@ -1163,13 +1235,35 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                             <section
                               className="emotion-2 emotion-3"
                             >
-                              <GroupTitle>
-                                <h3
-                                  className="emotion-0 emotion-1"
-                                >
-                                  Category B
-                                </h3>
-                              </GroupTitle>
+                              <CategorySelection
+                                categoryId="b"
+                                enabled={false}
+                                getItemProps={[Function]}
+                                items={
+                                  Array [
+                                    Object {
+                                      "categoryId": "b",
+                                      "id": 33,
+                                      "index": 2,
+                                      "label": "Three",
+                                    },
+                                    Object {
+                                      "categoryId": "b",
+                                      "id": 44,
+                                      "index": 3,
+                                      "label": "Four",
+                                    },
+                                  ]
+                                }
+                              >
+                                <GroupTitle>
+                                  <h3
+                                    className="emotion-0 emotion-1"
+                                  >
+                                    Category B
+                                  </h3>
+                                </GroupTitle>
+                              </CategorySelection>
                             </section>
                           </Divider>
                           <Divider
@@ -1654,6 +1748,7 @@ exports[`using useFilter should only return items that match the input value 1`]
               },
             ]
           }
+          multiselect={false}
           selectedItems={Array []}
           twoColumn={true}
           useFilter={true}
@@ -1737,6 +1832,7 @@ exports[`using useFilter should only return items that match the input value 1`]
                 },
               ]
             }
+            multiselect={false}
             selectedItems={Array []}
             twoColumn={true}
             useFilter={true}

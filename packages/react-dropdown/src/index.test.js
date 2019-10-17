@@ -13,7 +13,12 @@ import DropdownWrapper from './__mocks__/DropdownWrapper';
 import { Dropdown, DropdownList as DL } from './index';
 import DropdownList, { List } from './List';
 import { Item, HIGHLIGHTED, SELECTED } from './Items';
-import { Divider } from './Categories';
+import {
+  Divider,
+  createCategoryIndex,
+  isCategoryHighlighted,
+  isCategoryItemHighlighted,
+} from './Categories';
 import {
   filterItems,
   includesId,
@@ -312,7 +317,7 @@ it('using arrow down and return key should select another element', () => {
   wrapper.find(Input).simulate('keyDown', { key: 'Enter', keyCode: 13 });
 
   expect(handleSelect).toHaveBeenCalledWith(
-    { categoryId: 'a', id: 10, label: 'One' },
+    [{ categoryId: 'a', id: 10, label: 'One' }],
     expect.any(Object)
   );
 });
@@ -429,7 +434,7 @@ it('Empty item label should not break anything.', () => {
     .simulate('click');
 
   expect(handleSelect).toHaveBeenCalledWith(
-    { id: 10, label: '' },
+    [{ id: 10, label: '' }],
     expect.any(Object)
   );
 });
@@ -780,4 +785,63 @@ it('DropdownList could be styled', () => {
     </StyledDropdown>
   );
   expect(wrapper).toHaveStyleRule('width', '100px', { target: DL });
+});
+
+it('createCategoryIndex fn should create a string', () => {
+  expect(createCategoryIndex('12')).toBe('group_12');
+});
+
+it('isCategoryHighlighted fn should return boolean based on params', () => {
+  expect(isCategoryHighlighted(false, null, null)).toBe(false);
+  expect(isCategoryHighlighted(true, 'group_12', 12)).toBe(true);
+  expect(isCategoryHighlighted(true, 'group_12', 13)).toBe(false);
+});
+
+it('isCategoryItemHighlighted fn should return boolean based on params', () => {
+  expect(isCategoryItemHighlighted(10, 1, 10)).toBe(true);
+  expect(isCategoryItemHighlighted(null, 1, 10)).toBe(false);
+  expect(isCategoryItemHighlighted(50, 1, 10)).toBe(false);
+  expect(isCategoryItemHighlighted(undefined, 1, 10)).toBe(false);
+});
+
+it('multiselect should allow group selection', () => {
+  const handleSelect = jest.fn();
+  const handleChange = jest.fn();
+  const wrapper = mount(
+    <Dropdown
+      items={items.slice(0, 4)}
+      categories={categories.slice(0, 2)}
+      defaultIsOpen={true}
+      twoColumn={true}
+      multiselect={true}
+      onSelect={handleSelect}
+      onChange={handleChange}
+    >
+      {({ getInputProps }) => <input {...getInputProps()} />}
+    </Dropdown>
+  );
+
+  wrapper
+    .find('CategorySelection')
+    .filterWhere(e => {
+      return e.props().categoryId === 'b';
+    })
+    .find('div')
+    .simulate('click');
+
+  expect(handleSelect).toHaveBeenCalledWith(
+    [
+      { categoryId: 'b', id: 33, index: 0, label: 'Three' },
+      { categoryId: 'b', id: 44, index: 1, label: 'Four' },
+    ],
+    expect.any(Object)
+  );
+
+  expect(handleChange).toHaveBeenCalledWith(
+    [
+      { categoryId: 'b', id: 33, index: 0, label: 'Three' },
+      { categoryId: 'b', id: 44, index: 1, label: 'Four' },
+    ],
+    expect.any(Object)
+  );
 });

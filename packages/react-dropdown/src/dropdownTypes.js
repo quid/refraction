@@ -40,3 +40,5 @@ export type GetItemProps = $PropertyType<
   PropGetters<DropdownItem>,
   'getItemProps'
 >;
+
+export type HighlightedIndex = number | string;

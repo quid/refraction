@@ -10,7 +10,6 @@ import Downshift, {
   type StateChangeOptions,
 } from 'downshift';
 import * as React from 'react';
-import { includesId } from './utils';
 import { type DropdownSelectedItem } from './dropdownTypes.js';
 
 export type MultiControllerStateAndHelpers = ControllerStateAndHelpers<DropdownSelectedItem> & {
@@ -85,7 +84,7 @@ class MultiDownshift extends React.Component<Props, State> {
   };
 
   handleSelection = (
-    selectedItem: DropdownSelectedItem | null,
+    selectedItems: ?Array<DropdownSelectedItem>,
     downshift: ControllerStateAndHelpers<DropdownSelectedItem>
   ) => {
     const callOnChange = selectedItems => {
@@ -95,15 +94,16 @@ class MultiDownshift extends React.Component<Props, State> {
       }
     };
 
-    const selectedItems = this.getSelectedItems();
+    const currentSelection = this.getSelectedItems();
+
     let newSelectedItems = [];
-    if (selectedItem != null) {
+    if (selectedItems != null) {
+      const selectedItem = selectedItems[0];
       if (this.props.multiselect) {
-        if (includesId(selectedItems, selectedItem.id)) {
-          newSelectedItems = this.removeItem(selectedItem, selectedItems);
-        } else {
-          newSelectedItems = this.addSelectedItem(selectedItem, selectedItems);
-        }
+        newSelectedItems = this.toggleSelectedItems(
+          currentSelection,
+          selectedItems
+        );
       } else {
         newSelectedItems = this.replaceItem(selectedItem);
       }
@@ -113,8 +113,8 @@ class MultiDownshift extends React.Component<Props, State> {
       //Updating the inputValue is necessary when Dropdown is used as controlled component and useFilter is true
       this.setState(
         ({ inputValue }) => ({
-          inputValue: selectedItems.length
-            ? selectedItems[selectedItems.length - 1].label
+          inputValue: currentSelection.length
+            ? currentSelection[currentSelection.length - 1].label
             : inputValue,
         }),
         () => {
@@ -133,6 +133,22 @@ class MultiDownshift extends React.Component<Props, State> {
     }
   };
 
+  toggleSelectedItems = (
+    currentSelection: Array<DropdownSelectedItem>,
+    selectedItems: Array<DropdownSelectedItem>
+  ): Array<DropdownSelectedItem> => {
+    const currentSelectedIds = currentSelection.map(({ id }) => id);
+    const duplicatedItems = selectedItems.reduce((accumulator, { id }) => {
+      if (currentSelectedIds.includes(id)) {
+        accumulator.push(id);
+      }
+      return accumulator;
+    }, []);
+    return [...currentSelection, ...selectedItems].filter(({ id }) => {
+      return duplicatedItems.includes(id) === false;
+    });
+  };
+
   isSelectedItemsPresentInProps = () => this.props.selectedItems != null;
 
   getSelectedItems = () => this.props.selectedItems || this.state.selectedItems;
@@ -141,21 +157,9 @@ class MultiDownshift extends React.Component<Props, State> {
     item,
   ];
 
-  removeItem = (
-    item: DropdownSelectedItem,
-    selectedItems: Array<DropdownSelectedItem>
-  ): Array<DropdownSelectedItem> =>
-    selectedItems.filter(({ id }) => id !== item.id);
-
-  addSelectedItem = (
-    item: DropdownSelectedItem,
-    selectedItems: Array<DropdownSelectedItem>
-  ): Array<DropdownSelectedItem> => [...selectedItems, item];
-
   getStateAndHelpers = (
     downshift: ControllerStateAndHelpers<DropdownSelectedItem>
   ): MultiControllerStateAndHelpers => ({
-    removeItem: this.removeItem,
     selectedItems: this.getSelectedItems(),
     ...downshift,
   });

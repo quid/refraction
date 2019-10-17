@@ -174,9 +174,12 @@ const Dropdown = ({
                           getItemProps={getItemProps}
                           useFilter={useFilter}
                           filterFn={filterFn}
-                          highlightedIndex={highlightedIndex}
+                          highlightedIndex={
+                            highlightedIndex != null ? highlightedIndex : null
+                          }
                           selectedItems={selectedItems}
                           highlight={highlight}
+                          multiselect={multiselect}
                         />
                       ),
                     })}

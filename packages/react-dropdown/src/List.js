@@ -16,6 +16,7 @@ import {
   type DropdownCategory,
   type DropdownSelectedItem,
   type GetItemProps,
+  type HighlightedIndex,
 } from './dropdownTypes.js';
 
 type Props = {
@@ -26,9 +27,10 @@ type Props = {
   useFilter?: boolean,
   filterFn: (Array<DropdownItem>, ?string) => Array<DropdownItem>,
   twoColumn?: boolean,
-  highlightedIndex: ?number,
+  highlightedIndex: ?HighlightedIndex,
   selectedItems: Array<DropdownSelectedItem>,
   highlight: boolean,
+  multiselect: boolean,
 };
 
 export const List = styled.div`
@@ -65,6 +67,7 @@ const DropdownList: React.ComponentType<Props> = styled(
         highlightedIndex,
         selectedItems,
         highlight,
+        multiselect,
         ...props
       }: Props,
       ref: React.ElementRef<any>
@@ -83,6 +86,7 @@ const DropdownList: React.ComponentType<Props> = styled(
                 highlightedIndex={highlightedIndex}
                 selectedItems={selectedItems}
                 highlight={highlight}
+                multiselect={multiselect}
               />
             ) : (
               <DropdownItems
@@ -92,6 +96,7 @@ const DropdownList: React.ComponentType<Props> = styled(
                 highlightedIndex={highlightedIndex}
                 selectedItems={selectedItems}
                 highlight={highlight}
+                multiselect={multiselect}
               />
             )}
           </List>

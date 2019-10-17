@@ -16,9 +16,11 @@ import {
   type DropdownItem,
   type DropdownSelectedItem,
   type GetItemProps,
+  type HighlightedIndex,
 } from './dropdownTypes.js';
+import { isCategoryHighlighted } from './Categories';
 
-type DropdownItemWithIndex = DropdownItem & { index?: number };
+export type DropdownItemWithIndex = DropdownItem & { index?: number };
 
 type Props = {
   categoryId?: number | string,
@@ -26,9 +28,10 @@ type Props = {
   items: Array<$Shape<DropdownItemWithIndex>>,
   getItemProps: GetItemProps,
   inputValue: ?string,
-  highlightedIndex: ?number,
+  highlightedIndex: ?HighlightedIndex,
   highlight: boolean,
   selectedItems: Array<DropdownSelectedItem>,
+  multiselect: boolean,
 };
 
 const Items = styled.ul`
@@ -95,13 +98,18 @@ export default function DropdownItems({
   selectedItems,
   categoryId,
   highlight,
+  multiselect,
   ...props
 }: Props) {
   return (
     <Items>
       {items.map((item, i) => {
         const itemIndex = item.hasOwnProperty('index') ? item.index : i;
-        const isHighlighted = itemIndex === highlightedIndex;
+
+        const isHighlighted =
+          itemIndex === highlightedIndex ||
+          isCategoryHighlighted(multiselect, highlightedIndex, categoryId);
+
         const isSelected = includesId(selectedItems, item.id);
         const isDisabled = Boolean(item.disabled);
         const { index, ...itemWithoutIndex } = item;
@@ -115,7 +123,7 @@ export default function DropdownItems({
             twoColumn={twoColumn}
             {...getItemProps({
               index: itemIndex,
-              item: itemWithoutIndex,
+              item: [itemWithoutIndex],
               disabled: isDisabled,
             })}
           >
