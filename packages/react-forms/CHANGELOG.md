@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.1](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v4.1.0...v4.1.1) (2019-10-17)
+
+
+### Bug Fixes
+
+* upgrade react-resize-aware and fix yarn.lock ([#114](https://github.com/quid/refraction/tree/master/packages/react-forms/issues/114)) ([28ee9cc](https://github.com/quid/refraction/tree/master/packages/react-forms/commit/28ee9cc))
+
+
+
+
+
 # [4.1.0](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v4.0.1...v4.1.0) (2019-10-07)
 
 
