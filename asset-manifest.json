@@ -1,7 +1,7 @@
 {
   "files": {
-    "build/0.6418b324.js": "/build/0.6418b324.js",
-    "main.js": "/build/main.bf0c0cd8.js",
+    "build/0.0f7a3add.js": "/build/0.0f7a3add.js",
+    "main.js": "/build/main.f6e01b4d.js",
     "runtime-main.js": "/build/bundle.105de5e2.js",
     "index.html": "/index.html",
     "static/media/ibmplexsans-italic-webfont.woff": "/static/media/ibmplexsans-italic-webfont.1cb6b740.woff",
@@ -20,8 +20,9 @@
     "static/media/ibmplexserif-semibold-webfont.woff2": "/static/media/ibmplexserif-semibold-webfont.d3f358ce.woff2",
     "static/media/ibmplexserif-semibolditalic-webfont.woff": "/static/media/ibmplexserif-semibolditalic-webfont.1331719a.woff",
     "static/media/ibmplexserif-semibolditalic-webfont.woff2": "/static/media/ibmplexserif-semibolditalic-webfont.9e64f5e0.woff2",
-    "static/media/quid-icons.svg": "/static/media/quid-icons.2186f210.svg",
-    "static/media/quid-icons.woff": "/static/media/quid-icons.59e17cee.woff",
-    "static/media/quid-icons.ttf": "/static/media/quid-icons.68fbaa3c.ttf"
+    "static/media/quid-icons.woff2": "/static/media/quid-icons.1b1eb050.woff2",
+    "static/media/quid-icons.woff": "/static/media/quid-icons.9572a819.woff",
+    "static/media/quid-icons.ttf": "/static/media/quid-icons.9774a86e.ttf",
+    "static/media/quid-icons.svg": "/static/media/quid-icons.cad5ce96.svg"
   }
 }
