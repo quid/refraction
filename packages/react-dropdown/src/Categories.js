@@ -97,7 +97,7 @@ export const createCategoryIndex = (categoryId: string | number): string => {
 type ID = number | string;
 
 export const isCategoryHighlighted = (
-  enabled: boolean = false,
+  enabled: boolean,
   highlightedIndex: ?HighlightedIndex,
   id: ?ID
 ): boolean =>
