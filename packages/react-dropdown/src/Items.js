@@ -31,7 +31,7 @@ type Props = {
   highlightedIndex: ?HighlightedIndex,
   highlight: boolean,
   selectedItems: Array<DropdownSelectedItem>,
-  multiselect?: boolean,
+  multiselect: boolean,
 };
 
 const Items = styled.ul`
