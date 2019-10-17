@@ -31,7 +31,6 @@ type Props = {
   highlightedIndex: ?HighlightedIndex,
   highlight: boolean,
   selectedItems: Array<DropdownSelectedItem>,
-  enableCategorySelection?: boolean,
   multiselect?: boolean,
 };
 
@@ -99,7 +98,6 @@ export default function DropdownItems({
   selectedItems,
   categoryId,
   highlight,
-  enableCategorySelection,
   multiselect,
   ...props
 }: Props) {
@@ -107,16 +105,10 @@ export default function DropdownItems({
     <Items>
       {items.map((item, i) => {
         const itemIndex = item.hasOwnProperty('index') ? item.index : i;
-        const isMultipleCategorySelectionEnabled =
-          enableCategorySelection && multiselect;
 
         const isHighlighted =
           itemIndex === highlightedIndex ||
-          isCategoryHighlighted(
-            isMultipleCategorySelectionEnabled,
-            highlightedIndex,
-            categoryId
-          );
+          isCategoryHighlighted(multiselect, highlightedIndex, categoryId);
 
         const isSelected = includesId(selectedItems, item.id);
         const isDisabled = Boolean(item.disabled);

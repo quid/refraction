@@ -128,7 +128,6 @@ exports[`renders an open dropdown 1`] = `
         />
         <DropdownList
           categories={Array []}
-          enableCategorySelection={false}
           filterFn={[Function]}
           getItemProps={[Function]}
           highlight={false}
@@ -156,7 +155,6 @@ exports[`renders an open dropdown 1`] = `
           <ForwardRef
             categories={Array []}
             className="emotion-13 emotion-10"
-            enableCategorySelection={false}
             filterFn={[Function]}
             getItemProps={[Function]}
             highlight={false}
@@ -430,7 +428,6 @@ exports[`renders an open dropdown with categories 1`] = `
             },
           ]
         }
-        enableCategorySelection={false}
         filterFn={[Function]}
         getItemProps={[Function]}
         highlight={false}
@@ -479,7 +476,6 @@ exports[`renders an open dropdown with categories 1`] = `
             ]
           }
           className="emotion-43 emotion-40"
-          enableCategorySelection={false}
           filterFn={[Function]}
           getItemProps={[Function]}
           highlight={false}
@@ -985,7 +981,6 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
               },
             ]
           }
-          enableCategorySelection={false}
           filterFn={[Function]}
           getItemProps={[Function]}
           highlight={false}
@@ -1034,7 +1029,6 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
               ]
             }
             className="emotion-43 emotion-40"
-            enableCategorySelection={false}
             filterFn={[Function]}
             getItemProps={[Function]}
             highlight={false}
@@ -1678,7 +1672,6 @@ exports[`using useFilter should only return items that match the input value 1`]
         />
         <DropdownList
           categories={Array []}
-          enableCategorySelection={false}
           filterFn={[Function]}
           getItemProps={[Function]}
           highlight={true}
@@ -1763,7 +1756,6 @@ exports[`using useFilter should only return items that match the input value 1`]
           <ForwardRef
             categories={Array []}
             className="emotion-17 emotion-14"
-            enableCategorySelection={false}
             filterFn={[Function]}
             getItemProps={[Function]}
             highlight={true}

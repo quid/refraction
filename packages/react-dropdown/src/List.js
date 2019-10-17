@@ -30,7 +30,6 @@ type Props = {
   highlightedIndex: ?HighlightedIndex,
   selectedItems: Array<DropdownSelectedItem>,
   highlight: boolean,
-  enableCategorySelection: boolean,
   multiselect: boolean,
 };
 
@@ -68,7 +67,6 @@ const DropdownList: React.ComponentType<Props> = styled(
         highlightedIndex,
         selectedItems,
         highlight,
-        enableCategorySelection,
         multiselect,
         ...props
       }: Props,
@@ -88,7 +86,6 @@ const DropdownList: React.ComponentType<Props> = styled(
                 highlightedIndex={highlightedIndex}
                 selectedItems={selectedItems}
                 highlight={highlight}
-                enableCategorySelection={enableCategorySelection}
                 multiselect={multiselect}
               />
             ) : (

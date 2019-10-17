@@ -31,7 +31,6 @@ type Props = {
   highlightedIndex: ?HighlightedIndex,
   highlight: boolean,
   selectedItems: Array<DropdownSelectedItem>,
-  enableCategorySelection: boolean,
   multiselect: boolean,
 };
 
@@ -159,7 +158,6 @@ export default function DropdownCategories({
   highlightedIndex,
   highlight,
   selectedItems,
-  enableCategorySelection,
   multiselect,
 }: Props) {
   const sortedItems = categories
@@ -197,20 +195,12 @@ export default function DropdownCategories({
       {categoriesedItems.map(category => {
         const categoryId = category.id;
 
-        const isMultipleCategorySelectionEnabled =
-          enableCategorySelection && multiselect;
-
         const isHighlighted =
           isCategoryItemHighlighted(
             highlightedIndex,
             category.firstIndex,
             category.lastIndex
-          ) ||
-          isCategoryHighlighted(
-            isMultipleCategorySelectionEnabled,
-            highlightedIndex,
-            categoryId
-          );
+          ) || isCategoryHighlighted(multiselect, highlightedIndex, categoryId);
 
         const isSelected = isItemInCategorySelected(
           selectedItems,
@@ -229,7 +219,7 @@ export default function DropdownCategories({
                   <CategorySelection
                     categoryId={categoryId}
                     getItemProps={getItemProps}
-                    enabled={isMultipleCategorySelectionEnabled}
+                    enabled={multiselect}
                     items={category.items.filter(
                       ({ disabled = false }) => disabled === false
                     )}
@@ -248,7 +238,6 @@ export default function DropdownCategories({
                   highlightedIndex={highlightedIndex}
                   selectedItems={selectedItems}
                   highlight={highlight}
-                  enableCategorySelection={enableCategorySelection}
                   multiselect={multiselect}
                 />
               </Divider>

@@ -804,7 +804,7 @@ it('isCategoryItemHighlighted fn should return boolean based on params', () => {
   expect(isCategoryItemHighlighted(undefined, 1, 10)).toBe(false);
 });
 
-it('enableCategorySelection should allow group selection', () => {
+it('multiselect should allow group selection', () => {
   const handleSelect = jest.fn();
   const handleChange = jest.fn();
   const wrapper = mount(
@@ -813,7 +813,6 @@ it('enableCategorySelection should allow group selection', () => {
       categories={categories.slice(0, 2)}
       defaultIsOpen={true}
       twoColumn={true}
-      enableCategorySelection={true}
       multiselect={true}
       onSelect={handleSelect}
       onChange={handleChange}

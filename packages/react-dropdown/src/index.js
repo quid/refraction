@@ -60,7 +60,6 @@ type Props = {
     MultiControllerStateAndHelpers
   ) => void,
   renderDropdown?: ({ dropdown: React.Node }) => React.Node,
-  enableCategorySelection?: boolean,
 };
 
 const DropdownContainer = styled.div`
@@ -89,7 +88,6 @@ const Dropdown = ({
   onSelect,
   highlight = false,
   renderDropdown = defaultRenderDropdown,
-  enableCategorySelection = false,
   ...props
 }: Props) => {
   if (defaultSelectedItems != null && selectedItems != null) {
@@ -181,7 +179,6 @@ const Dropdown = ({
                           }
                           selectedItems={selectedItems}
                           highlight={highlight}
-                          enableCategorySelection={enableCategorySelection}
                           multiselect={multiselect}
                         />
                       ),

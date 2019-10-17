@@ -109,8 +109,7 @@ const categories = [
 
 #### Dropdown with multi-level item list (two columns) and multiselect.
 
-With `multiselect` enabled you are able to select multiple items from the list.
-Additionnaly you may want to add `enableCategorySelection` so that you select all the items from a category.
+With `multiselect` enabled you are able to select multiple items from the list. By clicking on the category you can select / deselect all the items within the category.
 
 ```js
 import { Dropdown } from '@quid/react-dropdown';
@@ -141,7 +140,6 @@ const categories = [
 <Dropdown
   items={items}
   multiselect={true}
-  enableCategorySelection={true}
   categories={categories}
   twoColumn={false}
 >
