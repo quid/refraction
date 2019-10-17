@@ -109,13 +109,10 @@ export const isCategoryItemHighlighted = (
   highlightedIndex: ?HighlightedIndex,
   firstIndex: number,
   lastIndex: number
-) => {
-  return (
-    typeof highlightedIndex === 'number' &&
-    highlightedIndex >= firstIndex &&
-    highlightedIndex <= lastIndex
-  );
-};
+) =>
+  typeof highlightedIndex === 'number' &&
+  highlightedIndex >= firstIndex &&
+  highlightedIndex <= lastIndex;
 
 const CategorySelection = styled(
   ({
