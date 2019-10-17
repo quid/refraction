@@ -157,14 +157,6 @@ class MultiDownshift extends React.Component<Props, State> {
     item,
   ];
 
-  removeItem = (
-    item: DropdownSelectedItem,
-    selectedItems: Array<DropdownSelectedItem>
-  ): Array<DropdownSelectedItem> => {
-    console.log('RemoveItem');
-    return selectedItems.filter(({ id }) => id !== item.id);
-  };
-
   getStateAndHelpers = (
     downshift: ControllerStateAndHelpers<DropdownSelectedItem>
   ): MultiControllerStateAndHelpers => ({
