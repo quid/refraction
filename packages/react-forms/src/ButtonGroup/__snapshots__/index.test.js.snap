@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a 2 buttons ButtonGroup 1`] = `
+.emotion-2 {
+  all: unset;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.emotion-0::before {
+  content: '';
+  position: absolute;
+  isolation: isolate;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #49535A;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.emotion-0 button,
+.emotion-0 .NOT_VERY_RANDOM_STRING {
+  border-radius: 0;
+  background-color: transparent;
+  color: #49535A;
+  box-shadow: inset 0 0 0 0.5px #49535A;
+  border: 0;
+}
+
+.emotion-0 button:hover,
+.emotion-0 .NOT_VERY_RANDOM_STRING:hover {
+  background-color: #E3E6E8;
+}
+
+.emotion-0 button:active,
+.emotion-0 .NOT_VERY_RANDOM_STRING:active {
+  background-color: #C7CCD1;
+}
+
+.emotion-0 button:disabled,
+.emotion-0 .NOT_VERY_RANDOM_STRING:disabled,
+.emotion-0 button:disabled:hover,
+.emotion-0 .NOT_VERY_RANDOM_STRING:disabled:hover,
+.emotion-0 button:disabled:active,
+.emotion-0 .NOT_VERY_RANDOM_STRING:disabled:active {
+  background-color: transparent;
+}
+
+.emotion-0 button.NOT_VERY_RANDOM_STRING,
+.emotion-0 .NOT_VERY_RANDOM_STRING.NOT_VERY_RANDOM_STRING,
+.emotion-0 button.NOT_VERY_RANDOM_STRING:disabled,
+.emotion-0 .NOT_VERY_RANDOM_STRING.NOT_VERY_RANDOM_STRING:disabled {
+  background-color: #E3E6E8;
+  color: #1B1F22;
+}
+
+.emotion-0 button:focus-visible,
+.emotion-0 .NOT_VERY_RANDOM_STRING:focus-visible {
+  z-index: 1;
+  background-color: #E3E6E8;
+  box-shadow: inset 0 0 0 1px #49535A,0 0 1px 0.5px #FFFFFF,0 0 2px 2px #1B1F22;
+}
+
+.emotion-0 button:first-of-type,
+.emotion-0 .NOT_VERY_RANDOM_STRING:first-of-type {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.emotion-0 button:last-of-type,
+.emotion-0 .NOT_VERY_RANDOM_STRING:last-of-type {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+<Fieldset>
+  <fieldset
+    className="emotion-2 emotion-3"
+  >
+    <Container
+      buttonClass="NOT_VERY_RANDOM_STRING"
+      selectedButtonClass="NOT_VERY_RANDOM_STRING"
+    >
+      <div
+        className="emotion-0 emotion-1"
+      >
+        <ForwardRef(render)>
+          <button>
+            a
+          </button>
+          <button>
+            b
+          </button>
+        </ForwardRef(render)>
+      </div>
+    </Container>
+  </fieldset>
+</Fieldset>
+`;
+
+exports[`renders the dark theme version 1`] = `
+.emotion-2 {
+  all: unset;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.emotion-0::before {
+  content: '';
+  position: absolute;
+  isolation: isolate;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #C7CCD1;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.emotion-0 button,
+.emotion-0 .NOT_VERY_RANDOM_STRING {
+  border-radius: 0;
+  background-color: transparent;
+  color: #C7CCD1;
+  box-shadow: inset 0 0 0 0.5px #C7CCD1;
+  border: 0;
+}
+
+.emotion-0 button:hover,
+.emotion-0 .NOT_VERY_RANDOM_STRING:hover {
+  background-color: #49535A;
+}
+
+.emotion-0 button:active,
+.emotion-0 .NOT_VERY_RANDOM_STRING:active {
+  background-color: #6C7983;
+}
+
+.emotion-0 button:disabled,
+.emotion-0 .NOT_VERY_RANDOM_STRING:disabled,
+.emotion-0 button:disabled:hover,
+.emotion-0 .NOT_VERY_RANDOM_STRING:disabled:hover,
+.emotion-0 button:disabled:active,
+.emotion-0 .NOT_VERY_RANDOM_STRING:disabled:active {
+  background-color: transparent;
+}
+
+.emotion-0 button.NOT_VERY_RANDOM_STRING,
+.emotion-0 .NOT_VERY_RANDOM_STRING.NOT_VERY_RANDOM_STRING,
+.emotion-0 button.NOT_VERY_RANDOM_STRING:disabled,
+.emotion-0 .NOT_VERY_RANDOM_STRING.NOT_VERY_RANDOM_STRING:disabled {
+  background-color: #49535A;
+  color: #FFFFFF;
+}
+
+.emotion-0 button:focus-visible,
+.emotion-0 .NOT_VERY_RANDOM_STRING:focus-visible {
+  z-index: 1;
+  background-color: #49535A;
+  box-shadow: inset 0 0 0 1px #C7CCD1,0 0 1px 0.5px #2E3338,0 0 2px 2px #1B1F22;
+}
+
+.emotion-0 button:first-of-type,
+.emotion-0 .NOT_VERY_RANDOM_STRING:first-of-type {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.emotion-0 button:last-of-type,
+.emotion-0 .NOT_VERY_RANDOM_STRING:last-of-type {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+<Fieldset>
+  <fieldset
+    className="emotion-2 emotion-3"
+  >
+    <Container
+      buttonClass="NOT_VERY_RANDOM_STRING"
+      selectedButtonClass="NOT_VERY_RANDOM_STRING"
+    >
+      <div
+        className="emotion-0 emotion-1"
+      >
+        <ForwardRef(render)>
+          <button>
+            a
+          </button>
+          <button>
+            b
+          </button>
+        </ForwardRef(render)>
+      </div>
+    </Container>
+  </fieldset>
+</Fieldset>
+`;
