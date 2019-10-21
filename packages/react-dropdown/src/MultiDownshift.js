@@ -177,7 +177,7 @@ class MultiDownshift extends React.Component<Props, State> {
         stateReducer={this.stateReducer}
         onChange={this.handleSelection}
         itemToString={item => {
-          if (useFilter && multiselect) return this.state.inputValue;
+          if (multiselect) return this.state.inputValue;
           return item && item.label ? item.label : '';
         }}
         inputValue={this.state.inputValue}
