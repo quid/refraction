@@ -20,7 +20,7 @@ type Props = {
   innerRef?: React.ElementRef<any>,
   disabled?: boolean,
   defaultValue?: string,
-  size?: 'regular' | 'small' | 'large',
+  size?: typeof Button.Size,
 };
 
 type State = {

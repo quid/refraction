@@ -20,7 +20,7 @@ export default function Examples(
   { codeRevision }
 ) {
   return (
-    <ExamplesRenderer>
+    <ExamplesRenderer name={name}>
       {examples.map((example, index) => {
         switch (example.type) {
           case 'code':
