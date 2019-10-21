@@ -46,17 +46,21 @@ class MultiDownshift extends React.Component<Props, State> {
   };
 
   getDefaultInputValue(): string {
-    if (
-      this.props.selectedItems &&
-      this.props.selectedItems.length &&
-      this.props.selectedItems[0].label
-    ) {
-      return this.props.selectedItems[0].label;
+    const { multiselect, selectedItems, defaultSelectedItems } = this.props;
+    if (multiselect) {
+      return '';
     } else if (
-      this.props.defaultSelectedItems.length > 0 &&
-      this.props.defaultSelectedItems[0].label
+      selectedItems &&
+      selectedItems.length &&
+      selectedItems[0].label
     ) {
-      return this.props.defaultSelectedItems[0].label;
+      return selectedItems[0].label;
+    } else if (
+      defaultSelectedItems &&
+      defaultSelectedItems.length > 0 &&
+      defaultSelectedItems[0].label
+    ) {
+      return defaultSelectedItems[0].label;
     } else {
       return '';
     }
@@ -110,17 +114,7 @@ class MultiDownshift extends React.Component<Props, State> {
     }
 
     if (this.isSelectedItemsPresentInProps()) {
-      //Updating the inputValue is necessary when Dropdown is used as controlled component and useFilter is true
-      this.setState(
-        ({ inputValue }) => ({
-          inputValue: currentSelection.length
-            ? currentSelection[currentSelection.length - 1].label
-            : inputValue,
-        }),
-        () => {
-          callOnChange(newSelectedItems);
-        }
-      );
+      callOnChange(newSelectedItems);
     } else {
       this.setState(
         {
@@ -171,7 +165,7 @@ class MultiDownshift extends React.Component<Props, State> {
   };
 
   render() {
-    const { multiselect, children, ...props } = this.props;
+    const { multiselect, useFilter, children, ...props } = this.props;
     const selectedItems = this.getSelectedItems();
     return (
       <Downshift
@@ -182,6 +176,10 @@ class MultiDownshift extends React.Component<Props, State> {
         onInputValueChange={this.handleInputValueChange}
         stateReducer={this.stateReducer}
         onChange={this.handleSelection}
+        itemToString={item => {
+          if (useFilter && multiselect) return this.state.inputValue;
+          return item && item.label ? item.label : '';
+        }}
         inputValue={this.state.inputValue}
       >
         {downshift => children(this.getStateAndHelpers(downshift))}

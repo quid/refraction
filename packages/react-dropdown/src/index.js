@@ -105,7 +105,6 @@ const Dropdown = ({
     <Manager>
       <MultiDownshift
         multiselect={multiselect}
-        itemToString={item => (item && item.label ? item.label : '')}
         defaultSelectedItems={defaultSelectedItems || []}
         selectedItems={selectedItems}
         defaultIsOpen={defaultIsOpen}
