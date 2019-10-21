@@ -119,6 +119,21 @@ it('forwards ref properly', () => {
   expect(ref.current).toBeDefined();
 });
 
+it('does not trigger a click callback when the button is disabled by a parent fieldset', () => {
+  const onClick = jest.fn();
+  const wrapper = mount(
+    <fieldset disabled>
+      <Button onClick={onClick} />
+    </fieldset>
+  );
+
+  const btn = wrapper.find('button');
+
+  btn.prop('onClick')({ currentTarget: { matches: () => true } });
+
+  expect(onClick).not.toHaveBeenCalled();
+});
+
 // it('renders properly with isGroupChild property', () => {
 //   const wrapper = mount(<Button isGroupChild />);
 //   expect(wrapper).toMatchSnapshot();
