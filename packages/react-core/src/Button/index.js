@@ -48,6 +48,8 @@ type Props = {
   disabled?: boolean,
   /** type to apply to the button HTMLelement when rendering a "real" button */
   type?: 'button' | 'submit' | 'reset',
+  /** onClick callback, called when the element is clicked */
+  onClick?: (SyntheticEvent<HTMLElement>) => void,
 };
 
 const hoverMod = color =>
@@ -57,6 +59,10 @@ const hoverMod = color =>
 const activeMod = color =>
   Color(color)
     .darken(0.2)
+    .string();
+const disabledMod = color =>
+  Color(color)
+    .alpha(0.4)
     .string();
 
 const reset = css`
@@ -71,7 +77,10 @@ const reset = css`
   color: inherit;
 `;
 
-const Button = styled(
+const Button: React.StatelessFunctionalComponent<Props> & {
+  Importance: Importance,
+  Size: Size,
+} = styled(
   React.forwardRef(
     (
       {
@@ -83,6 +92,7 @@ const Button = styled(
         disabled,
         type,
         children,
+        onClick,
         ...props
       }: Props,
       ref: React.ElementRef<any>
@@ -99,8 +109,24 @@ const Button = styled(
         specificProps = { disabled, type };
       }
 
+      // FIXME: React doesn't detect when buttons are disabled because
+      // of a disabled parent fieldset. With this function we can check it
+      // by ourselves and avoid to call `onClick` when it shouldn't.
+      // https://github.com/facebook/react/issues/7711
+      const isButtonDisabled = button =>
+        Tag === 'button' && button.matches(':disabled');
+
       return (
-        <Tag {...specificProps} {...props} ref={ref}>
+        <Tag
+          {...specificProps}
+          {...props}
+          onClick={evt =>
+            onClick && !isButtonDisabled(evt.currentTarget)
+              ? onClick(evt)
+              : undefined
+          }
+          ref={ref}
+        >
           {React.Children.map(children, node =>
             ['string', 'number'].includes(typeof node) ? (
               <span>{node}</span>
@@ -148,6 +174,14 @@ const Button = styled(
       &[data-state*='active'] {
         background-color: ${activeMod(color)};
       }
+      ${props.disabled ? '&' : '&:disabled'} {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: ${disabledMod(color)};
+        }
+      }
       &:focus:not(:focus-visible) {
         outline: 0;
       }
@@ -160,22 +194,22 @@ const Button = styled(
   })}
 
   ${props =>
-    props.disabled &&
-    css`
-      cursor: default;
-      &,
-      &:hover,
-      &:focus,
-      &:active {
-        opacity: 0.4;
-      }
-    `}
-  ${props =>
     props.transparent &&
     css`
       background-color: transparent;
       color: ${props.theme.primary};
     `}
+
+
+  ${props => (props.disabled ? '&' : '&:disabled')} {
+    cursor: default;
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: ${props => props.theme.disabled};
+    }
+  }
 
   ${Icon} {
     display: block;
@@ -207,6 +241,7 @@ const Button = styled(
     `}
 `;
 
+// $FlowFixMe: https://github.com/facebook/flow/issues/5692
 Button.defaultProps = {
   importance: 'secondary',
   size: 'regular',
