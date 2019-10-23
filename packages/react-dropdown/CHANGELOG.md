@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.1](https://github.com/quid/ui-framework/compare/v4.2.0...v4.2.1) (2019-10-23)
+
+
+### Bug Fixes
+
+* fixes dropdown multiple selection wrong behaviour for input value ([#115](https://github.com/quid/ui-framework/issues/115)) ([ce1edb1](https://github.com/quid/ui-framework/commit/ce1edb1))
+
+
+
+
+
 # [4.2.0](https://github.com/quid/ui-framework/compare/v4.1.1...v4.2.0) (2019-10-17)
 
 
