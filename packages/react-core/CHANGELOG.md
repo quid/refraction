@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v4.2.1...v4.3.0) (2019-10-29)
+
+
+### Bug Fixes
+
+* onClick triggered when Button is child of disabled fieldset ([29e4928](https://github.com/quid/refraction/tree/master/packages/react-core/commit/29e4928))
+
+
+
+
+
 # [4.0.0](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v3.3.5...v4.0.0) (2019-10-01)
 
 **Note:** Version bump only for package @quid/react-core

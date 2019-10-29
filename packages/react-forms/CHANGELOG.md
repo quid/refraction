@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v4.2.1...v4.3.0) (2019-10-29)
+
+
+### Features
+
+* add new ButtonGroup component ([610a519](https://github.com/quid/refraction/tree/master/packages/react-forms/commit/610a519))
+
+
+
+
+
 ## [4.1.1](https://github.com/quid/refraction/tree/master/packages/react-forms/compare/v4.1.0...v4.1.1) (2019-10-17)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-core",
-  "version": "4.0.0",
+  "version": "4.3.0",
   "description": "Core React Quid components",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",

@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-dropdown",
-  "version": "4.2.1",
+  "version": "4.3.0",
   "description": "React dropdown component with ARIA accessibility and advanced functionalities",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
@@ -31,7 +31,7 @@
     "@emotion/css": "^10.0.6",
     "@emotion/styled": "^10.0.6",
     "@emotion/styled-base": "^10.0.4",
-    "@quid/react-core": "^4.0.0",
+    "@quid/react-core": "^4.3.0",
     "@quid/theme": "^4.0.0",
     "color": "^3.1.0",
     "downshift": "^3.2.0",
