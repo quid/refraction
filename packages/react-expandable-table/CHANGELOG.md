@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.4.0](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/compare/v4.3.1...v4.4.0) (2019-11-01)
+
+
+### Features
+
+* add light theme support to react-expandable-table ([ad888b6](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/commit/ad888b6))
+
+
+
+
+
 # [4.3.0](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/compare/v4.2.1...v4.3.0) (2019-10-29)
 
 **Note:** Version bump only for package @quid/react-expandable-table
