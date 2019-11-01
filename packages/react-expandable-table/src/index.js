@@ -8,7 +8,7 @@
 import * as React from 'react';
 import styled from '@emotion/styled/macro';
 import { Icon } from '@quid/react-core';
-import { ThemeProvider, themes } from '@quid/theme';
+import { withFallback as wf } from '@quid/theme';
 import { Tooltip } from '@quid/react-tooltip';
 import useControlledState from '@quid/react-use-controlled-state';
 import {
@@ -79,6 +79,10 @@ type Props = {
 const ARROW_CELL_WIDTH = 40;
 const getCellWidth = width =>
   `calc((100% - ${ARROW_CELL_WIDTH}px) / 100 * ${width})`;
+const BG_ODD_COLOR = ({ theme }) =>
+  theme.current === 'light' ? theme.colors.gray0 : theme.colors.gray7;
+const BG_EVEN_COLOR = ({ theme }) =>
+  theme.current === 'light' ? theme.colors.white : theme.colors.gray6;
 
 type RowProps = {
   index: number,
@@ -141,12 +145,10 @@ export const ItemWrapper = styled(
     </div>
   )
 )`
-  background-color: ${({ theme, odd }) =>
-    odd ? theme.colors.gray7 : theme.colors.gray6};
+  background-color: ${wf(({ theme, odd }) =>
+    odd ? BG_ODD_COLOR({ theme }) : BG_EVEN_COLOR({ theme })
+  )};
 `;
-ItemWrapper.defaultProps = {
-  theme: themes.dark,
-};
 
 const ExpandableTable = ({
   defaultOpenedRows,
@@ -214,70 +216,68 @@ const ExpandableTable = ({
   }, [columns]);
 
   return (
-    <ThemeProvider theme="dark">
-      <List
-        {...props}
-        groupCounts={[totalCount]}
-        maxHeight={maxBodyHeight}
-        group={index => (
-          <Header>
-            {columns.map(column => (
-              <ColumnCell
-                width={getCellWidth(column.width || baseColumnWidth)}
-                key={column.key}
-                align={column.align}
+    <List
+      {...props}
+      groupCounts={[totalCount]}
+      maxHeight={maxBodyHeight}
+      group={index => (
+        <Header>
+          {columns.map(column => (
+            <ColumnCell
+              width={getCellWidth(column.width || baseColumnWidth)}
+              key={column.key}
+              align={column.align}
+            >
+              <HeaderTitle
+                onClick={() => changeSorting(column.key)}
+                inactive={sorting.sort && sorting.key !== column.key}
+                data-action="sort-alt"
               >
-                <HeaderTitle
-                  onClick={() => changeSorting(column.key)}
-                  inactive={sorting.sort && sorting.key !== column.key}
-                  data-action="sort-alt"
+                {column.label}
+              </HeaderTitle>
+
+              <SortIcon
+                sort={sorting.key === column.key ? sorting.sort : null}
+                onClick={() => changeSorting(column.key)}
+                data-action="sort"
+              />
+
+              {column.tooltip != null && (
+                <Tooltip
+                  openDelay={200}
+                  renderTooltip={props => (
+                    <TooltipContainer {...props} children={column.tooltip} />
+                  )}
                 >
-                  {column.label}
-                </HeaderTitle>
-
-                <SortIcon
-                  sort={sorting.key === column.key ? sorting.sort : null}
-                  onClick={() => changeSorting(column.key)}
-                  data-action="sort"
-                />
-
-                {column.tooltip != null && (
-                  <Tooltip
-                    openDelay={200}
-                    renderTooltip={props => (
-                      <TooltipContainer {...props} children={column.tooltip} />
-                    )}
-                  >
-                    {({ ref, open, close }) => (
-                      <InfoIcon
-                        ref={ref}
-                        onMouseEnter={open}
-                        onFocus={open}
-                        onBlur={close}
-                      />
-                    )}
-                  </Tooltip>
-                )}
-              </ColumnCell>
-            ))}
-            <ColumnCell width={`${ARROW_CELL_WIDTH}px`} />
-          </Header>
-        )}
-        item={index => (
-          <ItemWrapper
-            data={groomedData[index]}
-            columns={columns}
-            index={index}
-            totalCount={totalCount}
-            onClick={() => toggleRow(groomedData[index].id)}
-            renderRow={renderRow}
-            open={openedRows.includes(groomedData[index].id)}
-            odd={Boolean(index % 2)}
-            baseColumnWidth={baseColumnWidth}
-          />
-        )}
-      />
-    </ThemeProvider>
+                  {({ ref, open, close }) => (
+                    <InfoIcon
+                      ref={ref}
+                      onMouseEnter={open}
+                      onFocus={open}
+                      onBlur={close}
+                    />
+                  )}
+                </Tooltip>
+              )}
+            </ColumnCell>
+          ))}
+          <ColumnCell width={`${ARROW_CELL_WIDTH}px`} />
+        </Header>
+      )}
+      item={index => (
+        <ItemWrapper
+          data={groomedData[index]}
+          columns={columns}
+          index={index}
+          totalCount={totalCount}
+          onClick={() => toggleRow(groomedData[index].id)}
+          renderRow={renderRow}
+          open={openedRows.includes(groomedData[index].id)}
+          odd={Boolean(index % 2)}
+          baseColumnWidth={baseColumnWidth}
+        />
+      )}
+    />
   );
 };
 

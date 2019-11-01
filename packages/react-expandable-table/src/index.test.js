@@ -7,6 +7,7 @@
 // @flow
 import * as React from 'react';
 import { mount } from 'enzyme';
+import { ThemeProvider } from '@quid/theme';
 import { ExpandableTable } from '.';
 // $FlowIgnoreMe: this is a mocked export
 import { open } from '@quid/react-tooltip';
@@ -96,6 +97,22 @@ it('should make column bold', () => {
       .find('ColumnCell')
       .at(1)
   ).toHaveStyleRule('font-weight', 'bold');
+});
+
+it('should render dark theme without raising errors', () => {
+  expect(() =>
+    mount(
+      <ThemeProvider theme="dark">
+        <ExpandableTable
+          maxOpen={1}
+          maxBodyHeight={300}
+          renderRow={props => <ExampleExtendedComponent {...props} />}
+          columns={columns}
+          data={data}
+        />
+      </ThemeProvider>
+    )
+  ).not.toThrowError();
 });
 
 it('should keep only one item open when maxOpen is 1', () => {
