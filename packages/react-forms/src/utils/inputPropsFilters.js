@@ -40,6 +40,8 @@ export const omit = (obj: Object) => (keys: Array<string>) =>
 
 export const include = (obj: Object) => (keys: Array<string>) =>
   keys.reduce((acc, current) => {
-    acc[current] = obj[current];
+    if (obj.hasOwnProperty(current)) {
+      acc[current] = obj[current];
+    }
     return acc;
   }, {});

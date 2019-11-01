@@ -16,6 +16,16 @@ it('renders an InputCheckbox', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
+it('renders a checked InputCheckbox', () => {
+  const wrapper = mount(<InputCheckbox defaultChecked />);
+  expect(wrapper.find('input').getDOMNode().attributes).toHaveProperty(
+    'checked'
+  );
+  expect(wrapper.find('input').getDOMNode().attributes).not.toHaveProperty(
+    'value'
+  );
+});
+
 it('renders a disabled InputCheckbox', () => {
   const wrapper = mount(<InputCheckbox disabled />);
   expect(wrapper).toMatchSnapshot();
