@@ -9,11 +9,25 @@ import * as React from 'react';
 import styled from '@emotion/styled/macro';
 import css from '@emotion/css/macro';
 import { GroupedVirtuoso } from 'react-virtuoso';
-import { ThemeProvider, themes, textStyles } from '@quid/theme';
+import {
+  ThemeProvider,
+  themes,
+  textStyles,
+  withFallback as wf,
+} from '@quid/theme';
 import { Icon, Text } from '@quid/react-core';
 import { Container } from '@quid/react-tooltip';
 import isPropValid from '@emotion/is-prop-valid';
 
+const BG_COLOR = wf(({ theme }) =>
+  theme.current === 'light' ? theme.colors.gray0 : theme.colors.gray7
+);
+const INACTIVE_COLOR = wf(({ theme }) =>
+  theme.current === 'light' ? theme.colors.gray3 : theme.colors.gray5
+);
+const BORDER_COLOR = wf(({ theme }) =>
+  theme.current === 'light' ? theme.colors.gray1 : theme.colors.gray6
+);
 const FLEX_ALIGN_MAP = {
   left: 'flex-start',
   right: 'flex-end',
@@ -31,14 +45,12 @@ export const ColumnCell = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding: 0 ${props => props.theme.sizes.small};
-  ${props =>
-    textStyles(...[props.bold ? 'bold' : null].filter(Boolean))(props)};
+  padding: 0 ${wf(props => props.theme.sizes.small)};
+  ${wf(props =>
+    textStyles(...[props.bold ? 'bold' : null].filter(Boolean))(props)
+  )};
   color: ${themes.dark.primary};
 `;
-ColumnCell.defaultProps = {
-  theme: themes.dark,
-};
 
 export const Row = styled.div`
   display: flex;
@@ -46,12 +58,12 @@ export const Row = styled.div`
   position: relative;
   height: 40px;
   cursor: pointer;
-  padding: 0 ${props => props.theme.sizes.regular};
+  padding: 0 ${wf(props => props.theme.sizes.regular)};
   &::before,
   &::after {
     content: '';
     position: absolute;
-    background-color: ${({ theme }) => theme.colors.gray5};
+    background-color: ${INACTIVE_COLOR};
     transition: transform 0.2s ease-in-out;
   }
   &::before {
@@ -72,43 +84,34 @@ export const Row = styled.div`
     outline: 0;
   }
   &:focus-visible {
-    box-shadow: inset 0 0 0 1px ${props => props.theme.selected};
+    box-shadow: inset 0 0 0 1px ${wf(props => props.theme.selected)};
     z-index: 1;
   }
 `;
-Row.defaultProps = {
-  theme: themes.dark,
-};
 
 export const ExpandableContent = styled.div`
-  box-shadow: inset 0 -2px 2px -2px ${props => props.theme.colors.gray5};
-  background-color: ${props => props.theme.colors.gray7};
+  box-shadow: inset 0 -2px 2px -2px ${INACTIVE_COLOR};
+  background-color: ${BG_COLOR};
 `;
-ExpandableContent.defaultProps = {
-  theme: themes.dark,
-};
 
 export const List = styled(GroupedVirtuoso, {
   shouldForwardProp: prop =>
     ['group', 'item', 'groupCounts'].includes(prop) || isPropValid(prop),
 })`
-  color: ${props => props.theme.primary};
-  background-color: ${props => props.theme.colors.gray7};
-  border: 2px solid ${props => props.theme.colors.gray6};
+  color: ${wf(props => props.theme.primary)};
+  background-color: ${BG_COLOR};
+  border: 2px solid ${BORDER_COLOR};
   border-radius: 2px;
   max-height: ${props => (props.maxHeight ? `${props.maxHeight}px` : 'auto')};
 `;
-List.defaultProps = {
-  theme: themes.dark,
-};
 
 export const Header = styled.header`
   display: flex;
   align-items: stretch;
-  background-color: ${props => props.theme.colors.gray7};
-  border-bottom: 1px solid ${props => props.theme.selected};
+  background-color: ${BG_COLOR};
+  border-bottom: 1px solid ${wf(props => props.theme.selected)};
   border-radius: 2px 2px 0 0;
-  padding: 0 ${props => props.theme.sizes.regular};
+  padding: 0 ${wf(props => props.theme.sizes.regular)};
   height: 40px;
   font-weight: bold;
 
@@ -116,28 +119,22 @@ export const Header = styled.header`
     font-weight: regular;
   }
 `;
-Header.defaultProps = {
-  theme: themes.dark,
-};
 
 export const AngleButton = styled.button`
   all: unset;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotate(${props => (props.open ? 180 : 0)}deg);
+  transform: rotate(${wf(props => (props.open ? 180 : 0))}deg);
   transition: transform 0.5s ease-out;
   ${textStyles('xlarge')};
   border-radius: 50%;
   width: 20px;
   height: 20px;
   &:focus-visible {
-    box-shadow: 0 0 2px 2px ${props => props.theme.selected};
+    box-shadow: 0 0 2px 2px ${wf(props => props.theme.selected)};
   }
 `;
-AngleButton.defaultProps = {
-  theme: themes.dark,
-};
 
 export const Ellipsis = styled(props => (
   <Text title={props.children} {...props} />
@@ -147,22 +144,19 @@ export const Ellipsis = styled(props => (
   text-overflow: ellipsis;
   white-space: nowrap;
 `;
-Ellipsis.defaultProps = {
-  theme: themes.dark,
-};
 
 export const HeaderTitle = styled(Ellipsis)`
   margin-top: -2px;
   cursor: pointer;
   user-select: none;
-  color: ${props =>
-    props.inactive ? props.theme.colors.gray5 : props.theme.primary};
+  color: ${wf(props =>
+    props.inactive ? INACTIVE_COLOR(props) : props.theme.primary
+  )};
   &:focus:not(:focus-visible) {
     outline: 0;
   }
 `;
 HeaderTitle.defaultProps = {
-  theme: themes.dark,
   tabIndex: -1,
 };
 
@@ -175,19 +169,15 @@ export const InfoIcon = styled(
 )`
   all: unset;
   cursor: pointer;
-  color: ${props => props.theme.colors.gray5};
-  color: ${props => props.theme.prmary};
-  margin-left: ${props => props.theme.sizes.small};
+  color: ${INACTIVE_COLOR};
+  margin-left: ${wf(props => props.theme.sizes.small)};
   flex-shrink: 0;
 
   &:hover,
   &:focus-visible {
-    color: ${props => props.theme.primary};
+    color: ${wf(props => props.theme.primary)};
   }
 `;
-InfoIcon.defaultProps = {
-  theme: themes.dark,
-};
 
 const SortAsc = styled(props => <Icon name="sort_asc" {...props} />)``;
 const SortDesc = styled(props => <Icon name="sort_desc" {...props} />)``;
@@ -210,38 +200,39 @@ export const SortIcon = styled(
   height: 14px;
   width: 14px;
   cursor: pointer;
-  margin-left: ${props => props.theme.sizes.small};
+  margin-left: ${wf(props => props.theme.sizes.small)};
   flex-shrink: 0;
 
   ${SortAsc}, ${SortDesc} {
     position: absolute;
     top: 0;
     left: 0;
-    color: ${props => props.theme.colors.gray5};
+    color: ${INACTIVE_COLOR};
   }
 
-  ${props =>
-    ACTIVE_ARROW(props) &&
-    css`
-      ${ACTIVE_ARROW(props)} {
-        color: ${props.theme.selected};
-      }
-    `}
+  ${wf(
+    props =>
+      ACTIVE_ARROW(props) &&
+      css`
+        ${ACTIVE_ARROW(props)} {
+          color: ${props.theme.selected};
+        }
+      `
+  )}
 
   &:hover,
   &:focus-visible {
-    ${props =>
-      NEXT_ARROW(props) &&
-      css`
-        ${NEXT_ARROW(props)} {
-          color: ${props.theme.primary};
-        }
-      `}
+    ${wf(
+      props =>
+        NEXT_ARROW(props) &&
+        css`
+          ${NEXT_ARROW(props)} {
+            color: ${props.theme.primary};
+          }
+        `
+    )}
   }
 `;
-SortIcon.defaultProps = {
-  theme: themes.dark,
-};
 
 export const TooltipContainer = styled(
   React.forwardRef(({ children, ...props }, ref) => (
