@@ -36,6 +36,7 @@ const Caret = styled.button`
   all: unset;
   display: flex;
   align-items: center;
+  overflow: hidden;
   &:focus-visible {
     box-shadow: 0 0 0 0.5px ${wf(props => props.theme.background)},
       0 0 2px 2px ${wf(props => props.theme.selected)};
@@ -100,6 +101,18 @@ const InputNumber = styled(
   }
 )`
   text-align: right;
+
+  ${Addon} {
+    opacity: 0;
+  }
+
+  &:focus,
+  &:focus-within,
+  &:hover {
+    ${Addon} {
+      opacity: 1;
+    }
+  }
 `;
 
 // @component
