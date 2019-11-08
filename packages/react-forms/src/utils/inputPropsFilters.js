@@ -28,6 +28,7 @@ export const INPUT_ATTRIBUTES = [
   'title',
   'type',
   'value',
+  'disabled',
 ];
 
 export const omit = (obj: Object) => (keys: Array<string>) =>

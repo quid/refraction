@@ -166,11 +166,8 @@ type Props = {};
 const InputCheckbox: React.StatelessFunctionalComponent<Props> = styled(
   props => (
     <label>
-      <Input
-        {...include(props)([...INPUT_ATTRIBUTES, 'disabled'])}
-        type="checkbox"
-      />
-      <Checkbox {...omit(props)(INPUT_ATTRIBUTES)} />
+      <Input {...include(props)(INPUT_ATTRIBUTES)} type="checkbox" />
+      <Checkbox {...omit(props)(INPUT_ATTRIBUTES)} disabled={props.disabled} />
     </label>
   )
 )``;
