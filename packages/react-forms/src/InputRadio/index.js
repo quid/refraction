@@ -79,11 +79,8 @@ const Circle = styled.div`
 
 const InputRadio = styled(props => (
   <label>
-    <Input
-      {...include(props)([...INPUT_ATTRIBUTES, 'disabled'])}
-      type="radio"
-    />
-    <Circle {...omit(props)(INPUT_ATTRIBUTES)} />
+    <Input {...include(props)(INPUT_ATTRIBUTES)} type="radio" />
+    <Circle {...omit(props)(INPUT_ATTRIBUTES)} disabled={props.disabled} />
   </label>
 ))``;
 

@@ -132,9 +132,9 @@ class InputToggle extends React.Component<Props, State> {
   render() {
     const isDisabled = this.props.disabled;
     return (
-      <Container {...omit(this.props)(INPUT_ATTRIBUTES)}>
+      <Container {...omit(this.props)(INPUT_ATTRIBUTES)} disabled={isDisabled}>
         <Input
-          {...include(this.props)([...INPUT_ATTRIBUTES, 'disabled'])}
+          {...include(this.props)(INPUT_ATTRIBUTES)}
           id={this.props.id || this.state.id}
           type="checkbox"
         />

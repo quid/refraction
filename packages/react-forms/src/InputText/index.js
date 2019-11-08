@@ -26,6 +26,7 @@ type Props = {
   onChange?: (SyntheticInputEvent<any>) => void,
   validationErrorMessage?: string,
   focus?: boolean,
+  disabled?: boolean,
 };
 
 // istanbul ignore next
@@ -132,12 +133,13 @@ const InputText: React.StatelessFunctionalComponent<Props> = styled(
               {({ css }) => (
                 <Container
                   {...omit(props)(INPUT_ATTRIBUTES)}
+                  disabled={props.disabled}
                   isInvalid={isInvalid}
                 >
                   <Input
                     ref={mergeRefs(input, ref)}
                     as={as}
-                    {...include(props)([...INPUT_ATTRIBUTES, 'disabled'])}
+                    {...include(props)(INPUT_ATTRIBUTES)}
                     {...getInputProps({ onChange })}
                   />
                   {renderAddon &&
