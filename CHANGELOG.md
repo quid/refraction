@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.5.0](https://github.com/quid/refraction/compare/v4.4.1...v4.5.0) (2019-11-08)
+
+
+### Bug Fixes
+
+* add `disabled` to INPUT_ATTRIBUTES list ([4001692](https://github.com/quid/refraction/commit/4001692))
+
+
+### Features
+
+* expose INPUT_ATTRIBUTES list ([aa2bc3b](https://github.com/quid/refraction/commit/aa2bc3b))
+
+
+
+
+
 ## [4.4.1](https://github.com/quid/refraction/compare/v4.4.0...v4.4.1) (2019-11-04)
 
 
