@@ -9,21 +9,22 @@ import * as components from '.';
 
 it('exports the expected number of components', () => {
   expect(Object.keys(components)).toMatchInlineSnapshot(`
-Array [
-  "InputCheckbox",
-  "InputColor",
-  "InputDate",
-  "InputFile",
-  "InputGroup",
-  "InputNumber",
-  "InputRadio",
-  "InputRange",
-  "InputText",
-  "InputToggle",
-  "InvalidHandler",
-  "Label",
-  "TextArea",
-  "Button",
-]
-`);
+    Array [
+      "InputCheckbox",
+      "InputColor",
+      "InputDate",
+      "InputFile",
+      "InputGroup",
+      "InputNumber",
+      "InputRadio",
+      "InputRange",
+      "InputText",
+      "InputToggle",
+      "InvalidHandler",
+      "Label",
+      "TextArea",
+      "Button",
+      "INPUT_ATTRIBUTES",
+    ]
+  `);
 });

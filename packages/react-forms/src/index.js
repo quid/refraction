@@ -19,3 +19,4 @@ export { default as InvalidHandler } from '@quid/react-invalid-handler';
 export { default as Label } from './Label';
 export { default as TextArea } from './TextArea';
 export { default as Button } from './Button';
+export { INPUT_ATTRIBUTES } from './utils/inputPropsFilters';
