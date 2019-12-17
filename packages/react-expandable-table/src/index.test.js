@@ -502,3 +502,29 @@ it('checks for tooltip presence', () => {
   infoIcon.find('button').simulate('mouseenter');
   expect(open).toHaveBeenCalled();
 });
+
+it('content should be rendered when provided', () => {
+  const wrapper = mount(
+    <ExpandableTable
+      maxBodyHeight={300}
+      renderRow={props => <ExampleExtendedComponent {...props} />}
+      columns={columns}
+      data={[
+        ...data,
+        {
+          id: '2',
+          name: {
+            raw: 'Hulk',
+            content: <span data-context="hulk">Hulk</span>,
+          },
+          rank: '2',
+          mentions: '38',
+          kol_score: '99.70%',
+          reach: '99.45%',
+        },
+      ]}
+    />
+  );
+
+  expect(wrapper.find('[data-context="hulk"]').exists()).toBe(true);
+});

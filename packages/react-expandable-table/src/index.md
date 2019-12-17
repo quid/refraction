@@ -87,6 +87,10 @@ initialState = {
     {
       id: '5',
       name: 'Hulk',
+      name: {
+        raw: 'Hulk',
+        content: <span style={{ color: 'gray' }}>Hulk</span>,
+      },
       rank: '5',
       mentions: '35',
       kol_score: '99.10%',

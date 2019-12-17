@@ -14,8 +14,12 @@ export const getSortedData = (
 ): Array<Data> => {
   if (data.length && sortOrder && sortBy) {
     return [...data].sort((a, b) => {
-      const valueA = a[sortBy];
-      const valueB = b[sortBy];
+      const valueA = String(
+        typeof a[sortBy] === 'object' ? a[sortBy].raw : a[sortBy]
+      );
+      const valueB = String(
+        typeof b[sortBy] === 'object' ? b[sortBy].raw : b[sortBy]
+      );
       const parsedA = parseFloat(valueA);
       const parsedB = parseFloat(valueB);
       if (isNaN(parsedA) === false && isNaN(parsedB) === false) {

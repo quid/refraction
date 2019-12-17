@@ -24,7 +24,7 @@ import {
   SortIcon,
   TooltipContainer,
 } from './styles';
-import type { Data, ID, SortOrder } from './types';
+import type { Data, ID, SortOrder, Label, Cell } from './types';
 import {
   getSortedData,
   onKeyboardSelect,
@@ -124,7 +124,11 @@ export const ItemWrapper = styled(
             key={column.key}
             bold={column.bold}
           >
-            <Ellipsis>{data[column.key]}</Ellipsis>
+            <Ellipsis>
+              {typeof data[column.key] === 'object'
+                ? data[column.key].content
+                : data[column.key]}
+            </Ellipsis>
           </ColumnCell>
         ))}
         <ColumnCell width={`${ARROW_CELL_WIDTH}px`} align="right">
