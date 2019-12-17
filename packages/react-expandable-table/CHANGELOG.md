@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.6.0](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/compare/v4.5.0...v4.6.0) (2019-12-17)
+
+
+### Features
+
+* adds support for raw and content object in ExpandableTable ([#122](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/issues/122)) ([8e4084b](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/commit/8e4084b))
+
+
+
+
+
 # [4.4.0](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/compare/v4.3.1...v4.4.0) (2019-11-01)
 
 
