@@ -86,7 +86,6 @@ initialState = {
     },
     {
       id: '5',
-      name: 'Hulk',
       name: {
         raw: 'Hulk',
         content: <span style={{ color: 'gray' }}>Hulk</span>,

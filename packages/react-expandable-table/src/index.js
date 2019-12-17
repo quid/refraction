@@ -24,7 +24,7 @@ import {
   SortIcon,
   TooltipContainer,
 } from './styles';
-import type { Data, ID, SortOrder, Label, Cell } from './types';
+import type { Data, ID, SortOrder } from './types';
 import {
   getSortedData,
   onKeyboardSelect,

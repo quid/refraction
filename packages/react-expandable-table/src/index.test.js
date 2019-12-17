@@ -288,16 +288,35 @@ it('clicking on name in the header should sort data according to names in descen
         ...data,
         {
           id: '5',
-          name: 'Jamie Dimon',
+          name: {
+            raw: 'Iron Manuel',
+            content: <span>Iron Manuel</span>,
+          },
+          rank: '6',
+          mentions: '34',
+          kol_score: '0.00%',
+          reach: '0.00%',
+          score: 300,
+        },
+        {
+          id: '6',
+          name: {
+            raw: 'Jamie Dimon',
+            content: <span>Jamie Dimon</span>,
+          },
           rank: '5',
           mentions: '35',
           kol_score: '99.10%',
           reach: '99.10%',
           score: 250,
         },
+
         {
-          id: '6',
-          name: 'Agustín Carstens',
+          id: '7',
+          name: {
+            raw: 'Agustín Carstens',
+            content: <span>Agustín Carstens</span>,
+          },
           rank: '6',
           mentions: '34',
           kol_score: '0.00%',
@@ -316,6 +335,7 @@ it('clicking on name in the header should sort data according to names in descen
   expect(wrapper.find('Row').map(node => node.text())).toMatchInlineSnapshot(`
 Array [
   "Jamie Dimon53599.10%99.10%angle_down",
+  "Iron Manuel6340.00%0.00%angle_down",
   "Iron Man1993.70%93.60%angle_down",
   "Captain America23899.70%99.45%angle_down",
   "Agustín Carstens6340.00%0.00%angle_down",
