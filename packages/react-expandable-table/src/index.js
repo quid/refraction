@@ -29,6 +29,7 @@ import {
   getSortedData,
   onKeyboardSelect,
   filterDataForPagination,
+  isCell,
 } from './utils';
 
 type Column = {
@@ -125,7 +126,7 @@ export const ItemWrapper = styled(
             bold={column.bold}
           >
             <Ellipsis>
-              {typeof data[column.key] === 'object'
+              {isCell(data[column.key]) && data[column.key].content != null
                 ? data[column.key].content
                 : data[column.key]}
             </Ellipsis>

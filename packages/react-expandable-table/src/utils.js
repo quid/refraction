@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @flow
-import { ASC, DESC, type Data } from './types';
+import { ASC, DESC, type Data, type Cell } from './types';
 
 export const getSortedData = (
   data: Array<Data>,
@@ -15,10 +15,10 @@ export const getSortedData = (
   if (data.length && sortOrder && sortBy) {
     return [...data].sort((a, b) => {
       const valueA = String(
-        typeof a[sortBy] === 'object' ? a[sortBy].raw : a[sortBy]
+        isCell(a[sortBy]) && a[sortBy].raw != null ? a[sortBy].raw : a[sortBy]
       );
       const valueB = String(
-        typeof b[sortBy] === 'object' ? b[sortBy].raw : b[sortBy]
+        isCell(b[sortBy]) && b[sortBy].raw != null ? b[sortBy].raw : b[sortBy]
       );
       const parsedA = parseFloat(valueA);
       const parsedB = parseFloat(valueB);
@@ -56,4 +56,13 @@ export const filterDataForPagination = (
     return data.slice(sliceFrom, sliceTo);
   }
   return data;
+};
+
+export const isCell = (value: Cell): boolean %checks => {
+  return (
+    value != null &&
+    typeof value === 'object' &&
+    value.hasOwnProperty('raw') &&
+    value.hasOwnProperty('content')
+  );
 };
