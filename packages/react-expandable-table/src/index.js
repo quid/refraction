@@ -29,6 +29,8 @@ import {
   getSortedData,
   onKeyboardSelect,
   filterDataForPagination,
+  isCell,
+  checkUnsupportedCellType,
 } from './utils';
 
 type Column = {
@@ -125,7 +127,7 @@ export const ItemWrapper = styled(
             bold={column.bold}
           >
             <Ellipsis>
-              {typeof data[column.key] === 'object'
+              {isCell(data[column.key]) && data[column.key].content != null
                 ? data[column.key].content
                 : data[column.key]}
             </Ellipsis>
@@ -168,6 +170,11 @@ const ExpandableTable = ({
   renderRow,
   ...props
 }: Props) => {
+  if (checkUnsupportedCellType(data)) {
+    console.warn(
+      '[react-expandable-table]: Unsupported cell type in data provided. Please use cell.raw & cell.content instead (example: https://ui.quid.com/#!/ExpandableTable).'
+    );
+  }
   const [sorting, setSorting] = React.useState({
     key: null,
     sort: null,

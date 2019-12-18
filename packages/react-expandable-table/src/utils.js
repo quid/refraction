@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 // @flow
-import { ASC, DESC, type Data } from './types';
+import { ASC, DESC, type Data, type Cell } from './types';
 
 export const getSortedData = (
   data: Array<Data>,
@@ -15,10 +15,10 @@ export const getSortedData = (
   if (data.length && sortOrder && sortBy) {
     return [...data].sort((a, b) => {
       const valueA = String(
-        typeof a[sortBy] === 'object' ? a[sortBy].raw : a[sortBy]
+        isCell(a[sortBy]) && a[sortBy].raw != null ? a[sortBy].raw : a[sortBy]
       );
       const valueB = String(
-        typeof b[sortBy] === 'object' ? b[sortBy].raw : b[sortBy]
+        isCell(b[sortBy]) && b[sortBy].raw != null ? b[sortBy].raw : b[sortBy]
       );
       const parsedA = parseFloat(valueA);
       const parsedB = parseFloat(valueB);
@@ -57,3 +57,26 @@ export const filterDataForPagination = (
   }
   return data;
 };
+
+export const isCell = (value: Cell): boolean %checks => {
+  return (
+    value != null &&
+    typeof value === 'object' &&
+    value.hasOwnProperty('raw') &&
+    value.hasOwnProperty('content')
+  );
+};
+
+//NOTE(gabrielmicko): Supporting React.Node for the cell directly is deprecated.
+//We have a check that ensures it stays working, but will be removed in the future.
+//In case React.Node is needed we encourage using CellObject instead.
+export const checkUnsupportedCellType = (data: Array<Data>): boolean =>
+  data.some(row =>
+    Object.values(row).some(
+      value =>
+        value != null &&
+        typeof value === 'object' &&
+        (value.hasOwnProperty('raw') === false ||
+          value.hasOwnProperty('content') === false)
+    )
+  );

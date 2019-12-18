@@ -523,7 +523,7 @@ it('checks for tooltip presence', () => {
   expect(open).toHaveBeenCalled();
 });
 
-it('content should be rendered when provided', () => {
+it('content with object or node should be rendered when provided', () => {
   const wrapper = mount(
     <ExpandableTable
       maxBodyHeight={300}
@@ -537,7 +537,7 @@ it('content should be rendered when provided', () => {
             raw: 'Hulk',
             content: <span data-context="hulk">Hulk</span>,
           },
-          rank: '2',
+          rank: <span data-context="rank">2</span>,
           mentions: '38',
           kol_score: '99.70%',
           reach: '99.45%',
@@ -547,4 +547,6 @@ it('content should be rendered when provided', () => {
   );
 
   expect(wrapper.find('[data-context="hulk"]').exists()).toBe(true);
+  //NOTE(gabrielmicko): to be deprecated soon
+  expect(wrapper.find('[data-context="rank"]').exists()).toBe(true);
 });

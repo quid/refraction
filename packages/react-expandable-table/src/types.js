@@ -7,17 +7,18 @@
 // @flow
 import * as React from 'react';
 export type ID = string | number;
-export type Label = string | number;
 export const ASC: 'asc' = 'asc';
 export const DESC: 'desc' = 'desc';
 export type SortOrder = Array<typeof ASC | typeof DESC | null>;
 
-export type Cell = {
-  raw: Label,
+export type CellObject = {|
+  raw: string | number,
   content: React.Node,
-};
+|};
+
+export type Cell = CellObject | React.Node;
 
 export type Data = {
   id: ID,
-  [string]: Label | Cell,
+  [string]: Cell,
 };
