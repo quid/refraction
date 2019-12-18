@@ -66,3 +66,17 @@ export const isCell = (value: Cell): boolean %checks => {
     value.hasOwnProperty('content')
   );
 };
+
+//NOTE(gabrielmicko): Supporting React.Node for the cell directly is deprecated.
+//We have a check that ensures it stays working, but will be removed in the future.
+//In case React.Node is needed we encourage using CellObject instead.
+export const checkUnsupportedCellType = (data: Array<Data>): boolean =>
+  data.some(row =>
+    Object.values(row).some(
+      value =>
+        value != null &&
+        typeof value === 'object' &&
+        (value.hasOwnProperty('raw') === false ||
+          value.hasOwnProperty('content') === false)
+    )
+  );
