@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.6.1](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/compare/v4.6.0...v4.6.1) (2019-12-18)
+
+
+### Bug Fixes
+
+* backwards compatibility support for react node for the cell ([#123](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/issues/123)) ([f712875](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/commit/f712875))
+
+
+
+
+
 # [4.6.0](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/compare/v4.5.0...v4.6.0) (2019-12-17)
 
 
