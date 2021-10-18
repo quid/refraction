@@ -29,7 +29,7 @@ export const nodePalette = {
   lime: '#87C445',
   purple: '#A8499A',
   yellow: '#FFCE03',
-  teal: '#3C8790',
+  teal: '#317C85',
   peach: '#F4A467',
   red: '#E61E27',
   rose: '#BF8092',
