@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.7.0](https://github.com/quid/ui-framework/compare/v4.6.1...v4.7.0) (2021-10-19)
+
+**Note:** Version bump only for package @quid/react-dropdown
+
+
+
+
+
 # [4.3.0](https://github.com/quid/ui-framework/compare/v4.2.1...v4.3.0) (2019-10-29)
 
 **Note:** Version bump only for package @quid/react-dropdown

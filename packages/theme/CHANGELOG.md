@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.7.0](https://github.com/quid/refraction/compare/v4.6.1...v4.7.0) (2021-10-19)
+
+
+### Features
+
+* udpate colors.teal to [#317](https://github.com/quid/refraction/issues/317)C85 ([31e642b](https://github.com/quid/refraction/commit/31e642b)), closes [#317C85](https://github.com/quid/refraction/issues/317C85)
+
+
+
+
+
 # [4.0.0](https://github.com/quid/refraction/compare/v3.3.5...v4.0.0) (2019-10-01)
 
 **Note:** Version bump only for package @quid/theme
