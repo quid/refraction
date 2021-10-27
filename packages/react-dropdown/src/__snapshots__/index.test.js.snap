@@ -1478,7 +1478,7 @@ exports[`using arrow down should hover on element 1`] = `
   flex-direction: row;
   cursor: pointer;
   padding: 5px;
-  background-color: #8F9BA3;
+  background-color: rgba(30,215,209,0.2);
   color: #2E3338;
 }
 
