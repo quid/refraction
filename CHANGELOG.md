@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.8.0](https://github.com/quid/refraction/compare/v4.7.0...v4.8.0) (2021-11-01)
+
+
+### Features
+
+* change dropdown selected item background to aqua with 0.2 opacity ([1018949](https://github.com/quid/refraction/commit/1018949))
+
+
+
+
+
 # [4.7.0](https://github.com/quid/refraction/compare/v4.6.1...v4.7.0) (2021-10-19)
 
 
