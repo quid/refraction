@@ -220,7 +220,7 @@ const Button: React.StatelessFunctionalComponent<Props> & {
         bottom: -1px;
         margin-left: 0.35em;
         margin-right: 0;
-        &:first-child {
+        &:first-of-type {
           margin-right: 0.35em;
           margin-left: 0;
         }
