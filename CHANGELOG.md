@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.8.1](https://github.com/quid/refraction/compare/v4.8.0...v4.8.1) (2021-11-10)
+
+
+### Bug Fixes
+
+* props.theme.disabled should be replaced inside wf() ([04b80ec](https://github.com/quid/refraction/commit/04b80ec))
+* unit test of Button disabled text color ([5288068](https://github.com/quid/refraction/commit/5288068))
+
+
+
+
+
 # [4.8.0](https://github.com/quid/refraction/compare/v4.7.0...v4.8.0) (2021-11-01)
 
 

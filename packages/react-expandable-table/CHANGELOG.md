@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.8.1](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/compare/v4.8.0...v4.8.1) (2021-11-10)
+
+**Note:** Version bump only for package @quid/react-expandable-table
+
+
+
+
+
 # [4.7.0](https://github.com/quid/refraction/tree/master/packages/react-expandable-table/compare/v4.6.1...v4.7.0) (2021-10-19)
 
 **Note:** Version bump only for package @quid/react-expandable-table

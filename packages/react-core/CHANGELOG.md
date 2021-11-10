@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.8.1](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v4.8.0...v4.8.1) (2021-11-10)
+
+
+### Bug Fixes
+
+* props.theme.disabled should be replaced inside wf() ([04b80ec](https://github.com/quid/refraction/tree/master/packages/react-core/commit/04b80ec))
+* unit test of Button disabled text color ([5288068](https://github.com/quid/refraction/tree/master/packages/react-core/commit/5288068))
+
+
+
+
+
 # [4.7.0](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v4.6.1...v4.7.0) (2021-10-19)
 
 **Note:** Version bump only for package @quid/react-core
