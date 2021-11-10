@@ -50,11 +50,16 @@ exports[`renders a Button with small size 1`] = `
   background-color: hsl(210,9.8%,64%);
 }
 
+.emotion-0:disabled {
+  cursor: default;
+}
+
 .emotion-0:disabled,
 .emotion-0:disabled:hover,
 .emotion-0:disabled:focus,
 .emotion-0:disabled:active {
   background-color: rgba(199,204,209,0.4);
+  color: #8F9BA3;
 }
 
 .emotion-0:focus:not(:focus-visible) {
@@ -65,10 +70,6 @@ exports[`renders a Button with small size 1`] = `
 .emotion-0[data-state*='focus'] {
   outline: 0;
   box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px #C7CCD1;
-}
-
-.emotion-0:disabled {
-  cursor: default;
 }
 
 .emotion-0 .e1t5eso00 {
@@ -155,11 +156,16 @@ exports[`renders a disabled and transparent Button 1`] = `
   background-color: hsl(210,9.8%,64%);
 }
 
+.emotion-0 {
+  cursor: default;
+}
+
 .emotion-0,
 .emotion-0:hover,
 .emotion-0:focus,
 .emotion-0:active {
   background-color: rgba(199,204,209,0.4);
+  color: #8F9BA3;
 }
 
 .emotion-0:focus:not(:focus-visible) {
@@ -170,10 +176,6 @@ exports[`renders a disabled and transparent Button 1`] = `
 .emotion-0[data-state*='focus'] {
   outline: 0;
   box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px #C7CCD1;
-}
-
-.emotion-0 {
-  cursor: default;
 }
 
 .emotion-0 .e1t5eso00 {
@@ -264,11 +266,16 @@ exports[`renders the expected markup 1`] = `
   background-color: hsl(210,9.8%,64%);
 }
 
+.emotion-0:disabled {
+  cursor: default;
+}
+
 .emotion-0:disabled,
 .emotion-0:disabled:hover,
 .emotion-0:disabled:focus,
 .emotion-0:disabled:active {
   background-color: rgba(199,204,209,0.4);
+  color: #8F9BA3;
 }
 
 .emotion-0:focus:not(:focus-visible) {
@@ -279,10 +286,6 @@ exports[`renders the expected markup 1`] = `
 .emotion-0[data-state*='focus'] {
   outline: 0;
   box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px #C7CCD1;
-}
-
-.emotion-0:disabled {
-  cursor: default;
 }
 
 .emotion-0 .e1t5eso00 {

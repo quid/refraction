@@ -175,11 +175,13 @@ const Button: React.StatelessFunctionalComponent<Props> & {
         background-color: ${activeMod(color)};
       }
       ${props.disabled ? '&' : '&:disabled'} {
+        cursor: default;
         &,
         &:hover,
         &:focus,
         &:active {
           background-color: ${disabledMod(color)};
+          color: ${props.theme.disabled};
         }
       }
       &:focus:not(:focus-visible) {
@@ -200,17 +202,6 @@ const Button: React.StatelessFunctionalComponent<Props> & {
       color: ${props.theme.primary};
     `}
 
-
-  ${props => (props.disabled ? '&' : '&:disabled')} {
-    cursor: default;
-    &,
-    &:hover,
-    &:focus,
-    &:active {
-      color: ${props => props.theme.disabled};
-    }
-  }
-
   ${Icon} {
     display: block;
     line-height: 1;
@@ -229,7 +220,7 @@ const Button: React.StatelessFunctionalComponent<Props> & {
         bottom: -1px;
         margin-left: 0.35em;
         margin-right: 0;
-        &:first-child {
+        &:first-of-type {
           margin-right: 0.35em;
           margin-left: 0;
         }
