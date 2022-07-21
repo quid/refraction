@@ -8,7 +8,7 @@
 import * as React from 'react';
 import { type GetInputPropsReturn } from 'downshift';
 import { filterItems, callAll } from './utils';
-import DropdownList from './List';
+import DropdownList, { type ListProps } from './List';
 import InputCreator from './InputCreator';
 import styled from '@emotion/styled/macro';
 import MultiDownshift, {
@@ -60,6 +60,7 @@ type Props = {
     MultiControllerStateAndHelpers
   ) => void,
   renderDropdown?: ({ dropdown: React.Node }) => React.Node,
+  customizeDropdownList?: React.ComponentType<ListProps>,
 };
 
 const DropdownContainer = styled.div`
@@ -88,6 +89,7 @@ const Dropdown = ({
   onSelect,
   highlight = false,
   renderDropdown = defaultRenderDropdown,
+  customizeDropdownList,
   ...props
 }: Props) => {
   if (defaultSelectedItems != null && selectedItems != null) {
@@ -101,6 +103,8 @@ const Dropdown = ({
       'Warning: Failed prop type: You provided a `selectedItems` prop to a form field without an `onChange` handler. If the field should be mutable use `defaultSelectedItems`. Otherwise, set `onChange`.'
     );
   }
+  const List = customizeDropdownList || DropdownList;
+
   return (
     <Manager>
       <MultiDownshift
@@ -162,7 +166,7 @@ const Dropdown = ({
                   {isOpen &&
                     renderDropdown({
                       dropdown: (
-                        <DropdownList
+                        <List
                           // $FlowFixMe(fzivolo): react-popper has wrong types?
                           ref={ref}
                           style={style}

@@ -19,7 +19,7 @@ import {
   type HighlightedIndex,
 } from './dropdownTypes.js';
 
-type Props = {
+export type ListProps = {
   items: Array<DropdownItem>,
   categories: Array<DropdownCategory>,
   inputValue: ?string,
@@ -53,7 +53,7 @@ export const List = styled.div`
   min-width: 27.86em;
 `;
 
-const DropdownList: React.ComponentType<Props> = styled(
+const DropdownList: React.ComponentType<ListProps> = styled(
   React.forwardRef(
     (
       {
@@ -69,7 +69,7 @@ const DropdownList: React.ComponentType<Props> = styled(
         highlight,
         multiselect,
         ...props
-      }: Props,
+      }: ListProps,
       ref: React.ElementRef<any>
     ) => {
       const filteredItems = useFilter ? filterFn(items, inputValue) : items;
