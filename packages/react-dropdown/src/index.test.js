@@ -772,7 +772,7 @@ it('custom renderDropdown function should render', () => {
   expect(wrapper.find('ul li').hostNodes().length > 0).toBe(true);
 });
 
-it('custom dropdown list should be rendered', () => {
+it('customize DropdownList should be rendered', () => {
   const customizeDropdownList = () => <div id="customizeList"></div>;
   const wrapper = mount(
     <Dropdown
