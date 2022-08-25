@@ -772,6 +772,20 @@ it('custom renderDropdown function should render', () => {
   expect(wrapper.find('ul li').hostNodes().length > 0).toBe(true);
 });
 
+it('customize DropdownList should be rendered', () => {
+  const customizeDropdownList = () => <div id="customizeList"></div>;
+  const wrapper = mount(
+    <Dropdown
+      items={items.slice(0, 2)}
+      defaultIsOpen={true}
+      customizeDropdownList={customizeDropdownList}
+    >
+      {({ getInputProps }) => <input {...getInputProps()} />}
+    </Dropdown>
+  );
+  expect(wrapper.find('#customizeList')).toHaveLength(1);
+});
+
 it('DropdownList could be styled', () => {
   const StyledDropdown = styled(Dropdown)`
     ${DL} {
