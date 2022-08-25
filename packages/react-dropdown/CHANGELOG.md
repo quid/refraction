@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.9.0](https://github.com/quid/ui-framework/compare/v4.8.1...v4.9.0) (2022-08-25)
+
+
+### Bug Fixes
+
+* change trigger publish ([c50eaf5](https://github.com/quid/ui-framework/commit/c50eaf5))
+
+
+### Features
+
+* add unit test ([265ea87](https://github.com/quid/ui-framework/commit/265ea87))
+* make Dropdown supports customize dropdown list ([0210d39](https://github.com/quid/ui-framework/commit/0210d39))
+
+
+
+
+
 ## [4.8.1](https://github.com/quid/ui-framework/compare/v4.8.0...v4.8.1) (2021-11-10)
 
 **Note:** Version bump only for package @quid/react-dropdown
