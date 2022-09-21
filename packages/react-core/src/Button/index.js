@@ -155,7 +155,7 @@ const Button: React.StatelessFunctionalComponent<Props> & {
 
   ${wf(props => {
     const variations = {
-      primary: props.theme.colors.aqua,
+      primary: props.theme.primaryDefaultBg,
       secondary: props.theme.colors.gray2,
       okay: OKAY,
       warning: WARNING,

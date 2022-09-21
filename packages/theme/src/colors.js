@@ -46,19 +46,28 @@ export const nodePalette = {
   pink: '#D72E8E',
 };
 
+const tealPalette = {
+  teal300: '#91D1D4',
+  teal400: '#72C3C6',
+  teal840: '#13797D',
+  teal900: '#106F73',
+  teal1000: '#0B5B5E',
+};
+
 const brandPalette = {
-  quidTeal: '#00a7b8',
-  selected: '#00c1bb',
-  highlighted: Color('#00c1bb')
-    .alpha(0.6)
+  quidTeal: tealPalette.teal400,
+  selected: tealPalette.teal400,
+  highlighted: Color(tealPalette.teal400)
+    .alpha(0.3)
     .string(),
-  link: '#3C8790', // DEPRECATED! Use `theme.link` instead
+  link: tealPalette.teal400, // DEPRECATED! Use `theme.link` instead
 };
 
 const colors = {
   ...grayPalette,
   ...nodePalette,
   ...brandPalette,
+  ...tealPalette,
 };
 
 export default colors;
