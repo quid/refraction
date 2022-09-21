@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.10.0](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v4.9.0...v4.10.0) (2022-09-21)
+
+
+### Features
+
+* update colors to adapt platform UI design update ([3f6394e](https://github.com/quid/refraction/tree/master/packages/react-core/commit/3f6394e))
+
+
+
+
+
 ## [4.8.1](https://github.com/quid/refraction/tree/master/packages/react-core/compare/v4.8.0...v4.8.1) (2021-11-10)
 
 
