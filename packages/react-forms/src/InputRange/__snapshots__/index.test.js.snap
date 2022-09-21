@@ -68,11 +68,11 @@ exports[`renders a Track component 2`] = `
 exports[`renders an InputRange 1`] = `
 @keyframes animation-0 {
   from {
-    box-shadow: 0 0 0 0 rgba(0,167,184,0.26);
+    box-shadow: 0 0 0 0 rgba(114,195,198,0.26);
   }
 
   to {
-    box-shadow: 0 0 0 3px rgba(0,167,184,0.26);
+    box-shadow: 0 0 0 3px rgba(114,195,198,0.26);
   }
 }
 
@@ -111,7 +111,7 @@ exports[`renders an InputRange 1`] = `
 }
 
 .emotion-0 {
-  color: #00c1bb;
+  color: #72C3C6;
 }
 
 .emotion-6 {
@@ -122,7 +122,7 @@ exports[`renders an InputRange 1`] = `
   right: 0;
   height: 100%;
   width: 100%;
-  color: #00c1bb;
+  color: #72C3C6;
 }
 
 .emotion-4 {
@@ -130,7 +130,7 @@ exports[`renders an InputRange 1`] = `
 }
 
 .emotion-13 {
-  color: #00c1bb;
+  color: #72C3C6;
   top: 50%;
   left: 0;
   position: absolute;

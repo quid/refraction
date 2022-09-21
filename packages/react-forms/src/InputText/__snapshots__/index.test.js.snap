@@ -36,7 +36,7 @@ exports[`renders the expected markup 1`] = `
 }
 
 .emotion-3:focus-within {
-  border-color: #00c1bb;
+  border-color: #72C3C6;
 }
 
 .emotion-0 {

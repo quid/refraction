@@ -18,9 +18,11 @@ const lightTheme = {
     .alpha(0.8)
     .string(),
   selected: colors.selected,
-  link: '#3C8790',
+  link: colors.teal840,
   disabled: colors.gray3,
   shadow: colors.black,
+  primaryDefaultBg: colors.teal840,
+  primaryHoverBg: colors.teal900,
   colors,
   sizes,
 };

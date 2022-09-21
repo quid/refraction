@@ -24,15 +24,15 @@ exports[`renders a disabled InputRadio 1`] = `
 
 .emotion-1:checked ~ .emotion-3 {
   border-width: 5px;
-  border-color: #00c1bb;
+  border-color: #72C3C6;
 }
 
 .emotion-1:focus-visible ~ .emotion-3 {
-  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(0,193,187,0.8);
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(114,195,198,0.8);
 }
 
 .emotion-1:focus-visible ~ .emotion-3:hover {
-  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(0,193,187,0.8),0 0 4px rgba(27,31,34,0.8);
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(114,195,198,0.8),0 0 4px rgba(27,31,34,0.8);
 }
 
 .emotion-3:hover {
@@ -93,15 +93,15 @@ exports[`renders an InputRadio 1`] = `
 
 .emotion-1:checked ~ .emotion-3 {
   border-width: 5px;
-  border-color: #00c1bb;
+  border-color: #72C3C6;
 }
 
 .emotion-1:focus-visible ~ .emotion-3 {
-  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(0,193,187,0.8);
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(114,195,198,0.8);
 }
 
 .emotion-1:focus-visible ~ .emotion-3:hover {
-  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(0,193,187,0.8),0 0 4px rgba(27,31,34,0.8);
+  box-shadow: 0 0 0 0.5px #FFFFFF,0 0 2px 2px rgba(114,195,198,0.8),0 0 4px rgba(27,31,34,0.8);
 }
 
 .emotion-3:hover {

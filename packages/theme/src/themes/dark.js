@@ -18,9 +18,11 @@ const darkTheme = {
     .alpha(0.8)
     .string(),
   selected: colors.selected,
-  link: '#1ED7D1',
+  link: colors.teal400,
   disabled: colors.gray3,
   shadow: colors.black,
+  primaryDefaultBg: colors.teal400,
+  primaryHoverBg: colors.teal300,
   colors,
   sizes,
 };
