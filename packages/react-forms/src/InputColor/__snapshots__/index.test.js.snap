@@ -11,7 +11,7 @@ exports[`renders the expected markup 1`] = `
 }
 
 .emotion-9:focus-within {
-  border-color: #00c1bb;
+  border-color: #72C3C6;
 }
 
 .emotion-9[data-invalid='true'] {

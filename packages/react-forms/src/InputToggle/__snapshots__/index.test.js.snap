@@ -21,11 +21,11 @@ exports[`renders a disabled InputToggle 1`] = `
 }
 
 .emotion-0:checked.emotion-0:focus-visible ~ .emotion-5 {
-  box-shadow: 0 0 2px 2px rgba(0,193,187,0.8);
+  box-shadow: 0 0 2px 2px rgba(114,195,198,0.8);
 }
 
 .emotion-0:checked ~ .emotion-3 {
-  background-color: #00c1bb;
+  background-color: #72C3C6;
 }
 
 .emotion-0:checked ~ .emotion-5 {
@@ -142,11 +142,11 @@ exports[`renders an InputToggle 1`] = `
 }
 
 .emotion-0:checked.emotion-0:focus-visible ~ .emotion-5 {
-  box-shadow: 0 0 2px 2px rgba(0,193,187,0.8);
+  box-shadow: 0 0 2px 2px rgba(114,195,198,0.8);
 }
 
 .emotion-0:checked ~ .emotion-3 {
-  background-color: #00c1bb;
+  background-color: #72C3C6;
 }
 
 .emotion-0:checked ~ .emotion-5 {

@@ -137,7 +137,7 @@ exports[`renders the expected markup 2`] = `
   height: 36px;
   width: 30px;
   vertical-align: middle;
-  color: #00c1bb;
+  color: #72C3C6;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;

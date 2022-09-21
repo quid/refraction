@@ -26,9 +26,9 @@ exports[`works with "withFallback" powered styles 1`] = `
   color: #2E3338;
   color: #6C7983;
   color: #8F9BA3;
-  color: #3C8790;
+  color: #13797D;
   cursor: pointer;
-  color: rgba(0,193,187,0.6);
+  color: rgba(114,195,198,0.3);
   line-height: 1.57;
   font-family: IBM Plex Serif,Gudea,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
 }

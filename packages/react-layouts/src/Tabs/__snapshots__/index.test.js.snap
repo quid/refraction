@@ -80,7 +80,7 @@ exports[`should match a Tabs example 1`] = `
   padding: 10px;
   line-height: 1;
   background-color: #E3E6E8;
-  color: #00c1bb;
+  color: #72C3C6;
 }
 
 .emotion-0:focus:not(:focus-visible) {

@@ -11,7 +11,7 @@ exports[`renders an InputFile 1`] = `
 }
 
 .emotion-7:focus-within {
-  border-color: #00c1bb;
+  border-color: #72C3C6;
 }
 
 .emotion-7[data-invalid='true'] {

@@ -34,6 +34,11 @@ Object {
   "sky": "#A6DEF3",
   "tan": "#C1966B",
   "teal": "#317C85",
+  "teal1000": "#0B5B5E",
+  "teal300": "#91D1D4",
+  "teal400": "#72C3C6",
+  "teal840": "#13797D",
+  "teal900": "#106F73",
   "white": "#FFFFFF",
   "yellow": "#FFCE03",
 }

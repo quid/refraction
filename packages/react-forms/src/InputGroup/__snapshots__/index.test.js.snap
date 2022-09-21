@@ -11,7 +11,7 @@ exports[`applies the expected class names 1`] = `
 }
 
 .emotion-5:focus-within {
-  border-color: #00c1bb;
+  border-color: #72C3C6;
 }
 
 .emotion-5[data-invalid='true'] {
