@@ -41,6 +41,7 @@ const Items = styled.ul`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  width: 100%;
 `;
 
 export const HIGHLIGHTED = (props: { theme: Object }) =>
