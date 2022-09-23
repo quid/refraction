@@ -73,6 +73,7 @@ exports[`renders an open dropdown 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  width: 100%;
 }
 
 .emotion-2 {
@@ -304,6 +305,7 @@ exports[`renders an open dropdown with categories 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  width: 100%;
 }
 
 .emotion-6 {
@@ -848,6 +850,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  width: 100%;
 }
 
 .emotion-4 {
@@ -1459,6 +1462,7 @@ exports[`using arrow down should hover on element 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  width: 100%;
 }
 
 .emotion-0 {
@@ -1609,6 +1613,7 @@ exports[`using useFilter should only return items that match the input value 1`]
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  width: 100%;
 }
 
 .emotion-4 {
