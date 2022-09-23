@@ -354,6 +354,7 @@ exports[`renders an open dropdown with categories 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  width: 100%;
 }
 
 .emotion-2 {
@@ -903,6 +904,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  width: 100%;
 }
 
 .emotion-2 {
