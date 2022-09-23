@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.10.1](https://github.com/quid/refraction/compare/v4.10.0...v4.10.1) (2022-09-23)
+
+
+### Bug Fixes
+
+* react-dropdown width ([2dcbd47](https://github.com/quid/refraction/commit/2dcbd47))
+* unit test snapshots ([8d93b37](https://github.com/quid/refraction/commit/8d93b37))
+* unit test snapshots ([86974e4](https://github.com/quid/refraction/commit/86974e4))
+
+
+
+
+
 # [4.10.0](https://github.com/quid/refraction/compare/v4.9.0...v4.10.0) (2022-09-21)
 
 
