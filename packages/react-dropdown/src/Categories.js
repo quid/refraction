@@ -46,6 +46,7 @@ const Category = styled.main`
   display: flex;
   flex-direction: ${props => (props.twoColumn ? 'row' : 'column')};
   flex-grow: 1;
+  width: 100%;
 `;
 
 export const Divider = styled.section`
