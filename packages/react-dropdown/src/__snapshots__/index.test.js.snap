@@ -43,11 +43,11 @@ exports[`renders a basic closed dropdown 1`] = `
 `;
 
 exports[`renders an open dropdown 1`] = `
-.emotion-17 {
+.emotion-23 {
   display: inline-block;
 }
 
-.emotion-11 {
+.emotion-17 {
   z-index: 1;
   list-style: none;
   background-color: #FFFFFF;
@@ -58,7 +58,7 @@ exports[`renders an open dropdown 1`] = `
   min-width: 27.86em;
 }
 
-.emotion-8 {
+.emotion-14 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -76,7 +76,7 @@ exports[`renders an open dropdown 1`] = `
   width: 100%;
 }
 
-.emotion-2 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -89,7 +89,17 @@ exports[`renders an open dropdown 1`] = `
   background-color: transparent;
 }
 
-.emotion-0 {
+.emotion-3 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+}
+
+.emotion-1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
@@ -109,7 +119,7 @@ exports[`renders an open dropdown 1`] = `
       aria-haspopup="listbox"
       aria-labelledby="downshift-2-label"
       aria-owns="downshift-2-menu"
-      className="emotion-17 emotion-18"
+      className="emotion-23 emotion-24"
       role="combobox"
     >
       <x-fragment>
@@ -155,7 +165,7 @@ exports[`renders an open dropdown 1`] = `
         >
           <ForwardRef
             categories={Array []}
-            className="emotion-13 emotion-10"
+            className="emotion-19 emotion-16"
             filterFn={[Function]}
             getItemProps={[Function]}
             highlight={false}
@@ -181,14 +191,14 @@ exports[`renders an open dropdown 1`] = `
             useFilter={false}
           >
             <List
-              className="emotion-13 emotion-10"
+              className="emotion-19 emotion-16"
             >
               <div
-                className="emotion-10 emotion-11 emotion-12"
+                className="emotion-16 emotion-17 emotion-18"
               >
                 <Items>
                   <ul
-                    className="emotion-8 emotion-9"
+                    className="emotion-14 emotion-15"
                   >
                     <Item
                       aria-selected={false}
@@ -204,7 +214,7 @@ exports[`renders an open dropdown 1`] = `
                     >
                       <li
                         aria-selected={false}
-                        className="emotion-2 emotion-3"
+                        className="emotion-5 emotion-6"
                         disabled={false}
                         id="downshift-2-item-0"
                         onClick={[Function]}
@@ -218,11 +228,15 @@ exports[`renders an open dropdown 1`] = `
                           value="One"
                           valueToHighlight=""
                         >
-                          <span
-                            className="emotion-0 emotion-1"
+                          <Value
+                            className="emotion-3 emotion-0"
                           >
-                            One
-                          </span>
+                            <span
+                              className="emotion-0 emotion-1 emotion-2"
+                            >
+                              One
+                            </span>
+                          </Value>
                         </HighlightValue>
                       </li>
                     </Item>
@@ -240,7 +254,7 @@ exports[`renders an open dropdown 1`] = `
                     >
                       <li
                         aria-selected={false}
-                        className="emotion-2 emotion-3"
+                        className="emotion-5 emotion-6"
                         disabled={false}
                         id="downshift-2-item-1"
                         onClick={[Function]}
@@ -254,11 +268,15 @@ exports[`renders an open dropdown 1`] = `
                           value="Two"
                           valueToHighlight=""
                         >
-                          <span
-                            className="emotion-0 emotion-1"
+                          <Value
+                            className="emotion-3 emotion-0"
                           >
-                            Two
-                          </span>
+                            <span
+                              className="emotion-0 emotion-1 emotion-2"
+                            >
+                              Two
+                            </span>
+                          </Value>
                         </HighlightValue>
                       </li>
                     </Item>
@@ -275,11 +293,11 @@ exports[`renders an open dropdown 1`] = `
 `;
 
 exports[`renders an open dropdown with categories 1`] = `
-.emotion-47 {
+.emotion-59 {
   display: inline-block;
 }
 
-.emotion-41 {
+.emotion-53 {
   z-index: 1;
   list-style: none;
   background-color: #FFFFFF;
@@ -290,7 +308,7 @@ exports[`renders an open dropdown with categories 1`] = `
   min-width: 27.86em;
 }
 
-.emotion-12 {
+.emotion-18 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -308,7 +326,7 @@ exports[`renders an open dropdown with categories 1`] = `
   width: 100%;
 }
 
-.emotion-6 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -321,14 +339,24 @@ exports[`renders an open dropdown with categories 1`] = `
   background-color: transparent;
 }
 
-.emotion-4 {
+.emotion-7 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
   color: #2E3338;
 }
 
-.emotion-18 {
+.emotion-5 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+}
+
+.emotion-24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -338,11 +366,11 @@ exports[`renders an open dropdown with categories 1`] = `
   flex-direction: row;
 }
 
-.emotion-18:not(:last-child) {
+.emotion-24:not(:last-child) {
   border-bottom: 1px solid #C7CCD1;
 }
 
-.emotion-16 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -400,7 +428,7 @@ exports[`renders an open dropdown with categories 1`] = `
     aria-haspopup="listbox"
     aria-labelledby="downshift-3-label"
     aria-owns="downshift-3-menu"
-    className="emotion-47 emotion-48"
+    className="emotion-59 emotion-60"
     role="combobox"
   >
     <x-fragment>
@@ -478,7 +506,7 @@ exports[`renders an open dropdown with categories 1`] = `
               },
             ]
           }
-          className="emotion-43 emotion-40"
+          className="emotion-55 emotion-52"
           filterFn={[Function]}
           getItemProps={[Function]}
           highlight={false}
@@ -514,23 +542,23 @@ exports[`renders an open dropdown with categories 1`] = `
           useFilter={false}
         >
           <List
-            className="emotion-43 emotion-40"
+            className="emotion-55 emotion-52"
           >
             <div
-              className="emotion-40 emotion-41 emotion-42"
+              className="emotion-52 emotion-53 emotion-54"
             >
               <div>
                 <Categories
                   key="a"
                 >
                   <div
-                    className="emotion-18 emotion-19"
+                    className="emotion-24 emotion-25"
                   >
                     <Category
                       twoColumn={false}
                     >
                       <main
-                        className="emotion-16 emotion-17"
+                        className="emotion-22 emotion-23"
                       >
                         <Divider
                           isHighlighted={false}
@@ -579,7 +607,7 @@ exports[`renders an open dropdown with categories 1`] = `
                           >
                             <Items>
                               <ul
-                                className="emotion-12 emotion-13"
+                                className="emotion-18 emotion-19"
                               >
                                 <Item
                                   aria-selected={false}
@@ -597,7 +625,7 @@ exports[`renders an open dropdown with categories 1`] = `
                                 >
                                   <li
                                     aria-selected={false}
-                                    className="emotion-6 emotion-7"
+                                    className="emotion-9 emotion-10"
                                     disabled={false}
                                     id="downshift-3-item-0"
                                     onClick={[Function]}
@@ -611,11 +639,15 @@ exports[`renders an open dropdown with categories 1`] = `
                                       value="One"
                                       valueToHighlight=""
                                     >
-                                      <span
-                                        className="emotion-4 emotion-5"
+                                      <Value
+                                        className="emotion-7 emotion-4"
                                       >
-                                        One
-                                      </span>
+                                        <span
+                                          className="emotion-4 emotion-5 emotion-6"
+                                        >
+                                          One
+                                        </span>
+                                      </Value>
                                     </HighlightValue>
                                   </li>
                                 </Item>
@@ -635,7 +667,7 @@ exports[`renders an open dropdown with categories 1`] = `
                                 >
                                   <li
                                     aria-selected={false}
-                                    className="emotion-6 emotion-7"
+                                    className="emotion-9 emotion-10"
                                     disabled={false}
                                     id="downshift-3-item-1"
                                     onClick={[Function]}
@@ -649,11 +681,15 @@ exports[`renders an open dropdown with categories 1`] = `
                                       value="Two"
                                       valueToHighlight=""
                                     >
-                                      <span
-                                        className="emotion-4 emotion-5"
+                                      <Value
+                                        className="emotion-7 emotion-4"
                                       >
-                                        Two
-                                      </span>
+                                        <span
+                                          className="emotion-4 emotion-5 emotion-6"
+                                        >
+                                          Two
+                                        </span>
+                                      </Value>
                                     </HighlightValue>
                                   </li>
                                 </Item>
@@ -669,13 +705,13 @@ exports[`renders an open dropdown with categories 1`] = `
                   key="b"
                 >
                   <div
-                    className="emotion-18 emotion-19"
+                    className="emotion-24 emotion-25"
                   >
                     <Category
                       twoColumn={false}
                     >
                       <main
-                        className="emotion-16 emotion-17"
+                        className="emotion-22 emotion-23"
                       >
                         <Divider
                           isHighlighted={false}
@@ -724,7 +760,7 @@ exports[`renders an open dropdown with categories 1`] = `
                           >
                             <Items>
                               <ul
-                                className="emotion-12 emotion-13"
+                                className="emotion-18 emotion-19"
                               >
                                 <Item
                                   aria-selected={false}
@@ -742,7 +778,7 @@ exports[`renders an open dropdown with categories 1`] = `
                                 >
                                   <li
                                     aria-selected={false}
-                                    className="emotion-6 emotion-7"
+                                    className="emotion-9 emotion-10"
                                     disabled={false}
                                     id="downshift-3-item-2"
                                     onClick={[Function]}
@@ -756,11 +792,15 @@ exports[`renders an open dropdown with categories 1`] = `
                                       value="Three"
                                       valueToHighlight=""
                                     >
-                                      <span
-                                        className="emotion-4 emotion-5"
+                                      <Value
+                                        className="emotion-7 emotion-4"
                                       >
-                                        Three
-                                      </span>
+                                        <span
+                                          className="emotion-4 emotion-5 emotion-6"
+                                        >
+                                          Three
+                                        </span>
+                                      </Value>
                                     </HighlightValue>
                                   </li>
                                 </Item>
@@ -780,7 +820,7 @@ exports[`renders an open dropdown with categories 1`] = `
                                 >
                                   <li
                                     aria-selected={false}
-                                    className="emotion-6 emotion-7"
+                                    className="emotion-9 emotion-10"
                                     disabled={false}
                                     id="downshift-3-item-3"
                                     onClick={[Function]}
@@ -794,11 +834,15 @@ exports[`renders an open dropdown with categories 1`] = `
                                       value="Four"
                                       valueToHighlight=""
                                     >
-                                      <span
-                                        className="emotion-4 emotion-5"
+                                      <Value
+                                        className="emotion-7 emotion-4"
                                       >
-                                        Four
-                                      </span>
+                                        <span
+                                          className="emotion-4 emotion-5 emotion-6"
+                                        >
+                                          Four
+                                        </span>
+                                      </Value>
                                     </HighlightValue>
                                   </li>
                                 </Item>
@@ -821,11 +865,11 @@ exports[`renders an open dropdown with categories 1`] = `
 `;
 
 exports[`renders an open dropdown with categories and twoColumn 1`] = `
-.emotion-47 {
+.emotion-59 {
   display: inline-block;
 }
 
-.emotion-41 {
+.emotion-53 {
   z-index: 1;
   list-style: none;
   background-color: #FFFFFF;
@@ -836,7 +880,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
   min-width: 27.86em;
 }
 
-.emotion-12 {
+.emotion-18 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -854,14 +898,24 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
   width: 100%;
 }
 
-.emotion-4 {
+.emotion-7 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
   color: #2E3338;
 }
 
-.emotion-18 {
+.emotion-5 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+}
+
+.emotion-24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -871,7 +925,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
   flex-direction: row;
 }
 
-.emotion-18:not(:last-child) {
+.emotion-24:not(:last-child) {
   border-bottom: 1px solid #C7CCD1;
 }
 
@@ -892,7 +946,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
   padding: 5px;
 }
 
-.emotion-16 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -925,7 +979,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
   border-right: 1px solid #C7CCD1;
 }
 
-.emotion-6 {
+.emotion-9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -938,7 +992,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
   background-color: transparent;
 }
 
-.emotion-6:not(:last-child) {
+.emotion-9:not(:last-child) {
   border-bottom: 1px solid #C7CCD1;
 }
 
@@ -955,7 +1009,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
       aria-haspopup="listbox"
       aria-labelledby="downshift-4-label"
       aria-owns="downshift-4-menu"
-      className="emotion-47 emotion-48"
+      className="emotion-59 emotion-60"
       role="combobox"
     >
       <x-fragment>
@@ -1033,7 +1087,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                 },
               ]
             }
-            className="emotion-43 emotion-40"
+            className="emotion-55 emotion-52"
             filterFn={[Function]}
             getItemProps={[Function]}
             highlight={false}
@@ -1069,23 +1123,23 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
             useFilter={false}
           >
             <List
-              className="emotion-43 emotion-40"
+              className="emotion-55 emotion-52"
             >
               <div
-                className="emotion-40 emotion-41 emotion-42"
+                className="emotion-52 emotion-53 emotion-54"
               >
                 <div>
                   <Categories
                     key="a"
                   >
                     <div
-                      className="emotion-18 emotion-19"
+                      className="emotion-24 emotion-25"
                     >
                       <Category
                         twoColumn={true}
                       >
                         <main
-                          className="emotion-16 emotion-17"
+                          className="emotion-22 emotion-23"
                         >
                           <Divider
                             isHighlighted={false}
@@ -1134,7 +1188,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                             >
                               <Items>
                                 <ul
-                                  className="emotion-12 emotion-13"
+                                  className="emotion-18 emotion-19"
                                 >
                                   <Item
                                     aria-selected={false}
@@ -1152,7 +1206,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                   >
                                     <li
                                       aria-selected={false}
-                                      className="emotion-6 emotion-7"
+                                      className="emotion-9 emotion-10"
                                       disabled={false}
                                       id="downshift-4-item-0"
                                       onClick={[Function]}
@@ -1166,11 +1220,15 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                         value="One"
                                         valueToHighlight=""
                                       >
-                                        <span
-                                          className="emotion-4 emotion-5"
+                                        <Value
+                                          className="emotion-7 emotion-4"
                                         >
-                                          One
-                                        </span>
+                                          <span
+                                            className="emotion-4 emotion-5 emotion-6"
+                                          >
+                                            One
+                                          </span>
+                                        </Value>
                                       </HighlightValue>
                                     </li>
                                   </Item>
@@ -1190,7 +1248,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                   >
                                     <li
                                       aria-selected={false}
-                                      className="emotion-6 emotion-7"
+                                      className="emotion-9 emotion-10"
                                       disabled={false}
                                       id="downshift-4-item-1"
                                       onClick={[Function]}
@@ -1204,11 +1262,15 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                         value="Two"
                                         valueToHighlight=""
                                       >
-                                        <span
-                                          className="emotion-4 emotion-5"
+                                        <Value
+                                          className="emotion-7 emotion-4"
                                         >
-                                          Two
-                                        </span>
+                                          <span
+                                            className="emotion-4 emotion-5 emotion-6"
+                                          >
+                                            Two
+                                          </span>
+                                        </Value>
                                       </HighlightValue>
                                     </li>
                                   </Item>
@@ -1224,13 +1286,13 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                     key="b"
                   >
                     <div
-                      className="emotion-18 emotion-19"
+                      className="emotion-24 emotion-25"
                     >
                       <Category
                         twoColumn={true}
                       >
                         <main
-                          className="emotion-16 emotion-17"
+                          className="emotion-22 emotion-23"
                         >
                           <Divider
                             isHighlighted={false}
@@ -1279,7 +1341,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                             >
                               <Items>
                                 <ul
-                                  className="emotion-12 emotion-13"
+                                  className="emotion-18 emotion-19"
                                 >
                                   <Item
                                     aria-selected={false}
@@ -1297,7 +1359,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                   >
                                     <li
                                       aria-selected={false}
-                                      className="emotion-6 emotion-7"
+                                      className="emotion-9 emotion-10"
                                       disabled={false}
                                       id="downshift-4-item-2"
                                       onClick={[Function]}
@@ -1311,11 +1373,15 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                         value="Three"
                                         valueToHighlight=""
                                       >
-                                        <span
-                                          className="emotion-4 emotion-5"
+                                        <Value
+                                          className="emotion-7 emotion-4"
                                         >
-                                          Three
-                                        </span>
+                                          <span
+                                            className="emotion-4 emotion-5 emotion-6"
+                                          >
+                                            Three
+                                          </span>
+                                        </Value>
                                       </HighlightValue>
                                     </li>
                                   </Item>
@@ -1335,7 +1401,7 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                   >
                                     <li
                                       aria-selected={false}
-                                      className="emotion-6 emotion-7"
+                                      className="emotion-9 emotion-10"
                                       disabled={false}
                                       id="downshift-4-item-3"
                                       onClick={[Function]}
@@ -1349,11 +1415,15 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                         value="Four"
                                         valueToHighlight=""
                                       >
-                                        <span
-                                          className="emotion-4 emotion-5"
+                                        <Value
+                                          className="emotion-7 emotion-4"
                                         >
-                                          Four
-                                        </span>
+                                          <span
+                                            className="emotion-4 emotion-5 emotion-6"
+                                          >
+                                            Four
+                                          </span>
+                                        </Value>
                                       </HighlightValue>
                                     </li>
                                   </Item>
@@ -1449,7 +1519,7 @@ Array [
 `;
 
 exports[`using arrow down should hover on element 1`] = `
-.emotion-8 {
+.emotion-14 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1467,14 +1537,24 @@ exports[`using arrow down should hover on element 1`] = `
   width: 100%;
 }
 
-.emotion-0 {
+.emotion-3 {
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
   color: #2E3338;
 }
 
-.emotion-6 {
+.emotion-1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+}
+
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1488,7 +1568,7 @@ exports[`using arrow down should hover on element 1`] = `
   color: #2E3338;
 }
 
-.emotion-2 {
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1503,7 +1583,7 @@ exports[`using arrow down should hover on element 1`] = `
 }
 
 <ul
-  className="emotion-8 emotion-9"
+  className="emotion-14 emotion-15"
 >
   <Item
     aria-selected={true}
@@ -1521,7 +1601,7 @@ exports[`using arrow down should hover on element 1`] = `
   >
     <li
       aria-selected={true}
-      className="emotion-2 emotion-3"
+      className="emotion-5 emotion-6"
       disabled={false}
       id="downshift-16-item-0"
       onClick={[Function]}
@@ -1535,11 +1615,15 @@ exports[`using arrow down should hover on element 1`] = `
         value="One"
         valueToHighlight=""
       >
-        <span
-          className="emotion-0 emotion-1"
+        <Value
+          className="emotion-3 emotion-0"
         >
-          One
-        </span>
+          <span
+            className="emotion-0 emotion-1 emotion-2"
+          >
+            One
+          </span>
+        </Value>
       </HighlightValue>
     </li>
   </Item>
@@ -1559,7 +1643,7 @@ exports[`using arrow down should hover on element 1`] = `
   >
     <li
       aria-selected={false}
-      className="emotion-6 emotion-3"
+      className="emotion-12 emotion-6"
       disabled={false}
       id="downshift-16-item-1"
       onClick={[Function]}
@@ -1573,11 +1657,15 @@ exports[`using arrow down should hover on element 1`] = `
         value="Two"
         valueToHighlight=""
       >
-        <span
-          className="emotion-0 emotion-1"
+        <Value
+          className="emotion-3 emotion-0"
         >
-          Two
-        </span>
+          <span
+            className="emotion-0 emotion-1 emotion-2"
+          >
+            Two
+          </span>
+        </Value>
       </HighlightValue>
     </li>
   </Item>
@@ -1585,11 +1673,11 @@ exports[`using arrow down should hover on element 1`] = `
 `;
 
 exports[`using useFilter should only return items that match the input value 1`] = `
-.emotion-21 {
+.emotion-27 {
   display: inline-block;
 }
 
-.emotion-15 {
+.emotion-21 {
   z-index: 1;
   list-style: none;
   background-color: #FFFFFF;
@@ -1600,7 +1688,7 @@ exports[`using useFilter should only return items that match the input value 1`]
   min-width: 27.86em;
 }
 
-.emotion-12 {
+.emotion-18 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1618,7 +1706,7 @@ exports[`using useFilter should only return items that match the input value 1`]
   width: 100%;
 }
 
-.emotion-4 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1631,7 +1719,17 @@ exports[`using useFilter should only return items that match the input value 1`]
   background-color: transparent;
 }
 
-.emotion-2 {
+.emotion-5 {
+  font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #2E3338;
+}
+
+.emotion-3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   font-family: IBM Plex Sans,Lucida Grande,Tahoma,Verdana,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.57;
@@ -1659,7 +1757,7 @@ exports[`using useFilter should only return items that match the input value 1`]
       aria-haspopup="listbox"
       aria-labelledby="downshift-9-label"
       aria-owns="downshift-9-menu"
-      className="emotion-21 emotion-22"
+      className="emotion-27 emotion-28"
       role="combobox"
     >
       <x-fragment>
@@ -1762,7 +1860,7 @@ exports[`using useFilter should only return items that match the input value 1`]
         >
           <ForwardRef
             categories={Array []}
-            className="emotion-17 emotion-14"
+            className="emotion-23 emotion-20"
             filterFn={[Function]}
             getItemProps={[Function]}
             highlight={true}
@@ -1845,14 +1943,14 @@ exports[`using useFilter should only return items that match the input value 1`]
             useFilter={true}
           >
             <List
-              className="emotion-17 emotion-14"
+              className="emotion-23 emotion-20"
             >
               <div
-                className="emotion-14 emotion-15 emotion-16"
+                className="emotion-20 emotion-21 emotion-22"
               >
                 <Items>
                   <ul
-                    className="emotion-12 emotion-13"
+                    className="emotion-18 emotion-19"
                   >
                     <Item
                       aria-selected={false}
@@ -1868,7 +1966,7 @@ exports[`using useFilter should only return items that match the input value 1`]
                     >
                       <li
                         aria-selected={false}
-                        className="emotion-4 emotion-5"
+                        className="emotion-7 emotion-8"
                         disabled={false}
                         id="downshift-9-item-0"
                         onClick={[Function]}
@@ -1882,23 +1980,27 @@ exports[`using useFilter should only return items that match the input value 1`]
                           value="Four"
                           valueToHighlight="F"
                         >
-                          <span
-                            className="emotion-2 emotion-3"
+                          <Value
+                            className="emotion-5 emotion-2"
                           >
-                            <Text
-                              as="span"
-                              key="1"
-                              type="bold"
+                            <span
+                              className="emotion-2 emotion-3 emotion-4"
                             >
-                              <span
-                                className="emotion-0 emotion-1"
+                              <Text
+                                as="span"
+                                key="1"
                                 type="bold"
                               >
-                                F
-                              </span>
-                            </Text>
-                            our
-                          </span>
+                                <span
+                                  className="emotion-0 emotion-1"
+                                  type="bold"
+                                >
+                                  F
+                                </span>
+                              </Text>
+                              our
+                            </span>
+                          </Value>
                         </HighlightValue>
                       </li>
                     </Item>
@@ -1916,7 +2018,7 @@ exports[`using useFilter should only return items that match the input value 1`]
                     >
                       <li
                         aria-selected={false}
-                        className="emotion-4 emotion-5"
+                        className="emotion-7 emotion-8"
                         disabled={false}
                         id="downshift-9-item-1"
                         onClick={[Function]}
@@ -1930,23 +2032,27 @@ exports[`using useFilter should only return items that match the input value 1`]
                           value="Five"
                           valueToHighlight="F"
                         >
-                          <span
-                            className="emotion-2 emotion-3"
+                          <Value
+                            className="emotion-5 emotion-2"
                           >
-                            <Text
-                              as="span"
-                              key="1"
-                              type="bold"
+                            <span
+                              className="emotion-2 emotion-3 emotion-4"
                             >
-                              <span
-                                className="emotion-0 emotion-1"
+                              <Text
+                                as="span"
+                                key="1"
                                 type="bold"
                               >
-                                F
-                              </span>
-                            </Text>
-                            ive
-                          </span>
+                                <span
+                                  className="emotion-0 emotion-1"
+                                  type="bold"
+                                >
+                                  F
+                                </span>
+                              </Text>
+                              ive
+                            </span>
+                          </Value>
                         </HighlightValue>
                       </li>
                     </Item>
