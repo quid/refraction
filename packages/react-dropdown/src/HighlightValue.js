@@ -42,6 +42,7 @@ const HighlightValue = styled(
         </Value>
       );
     }
+
     return <Value className={className}>{value}</Value>;
   }
 )`
