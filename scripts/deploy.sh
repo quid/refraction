@@ -11,4 +11,4 @@ git checkout master
 bash scripts/npmrc.sh $AUTOMATED_WRITE_AUTH > .npmrc
 
 # Bump versions, commit, push to git, publish to npm
-$(yarn bin)/lerna publish --yes
+$(yarn bin)/lerna publish --yes --canary
