@@ -37,11 +37,9 @@ jobs:
         local-dir: styleguide
         fqdn: ui.quid.com
     - stage: publish to npm
-      if: branch = "feat/QUID-27202-dropdown-string-overflow-truncation"
+      if: (NOT type IN (pull_request)) AND (branch = master)
       script: skip
       deploy:
         skip_cleanup: true # Keep all the artifacts generated on prev steps
         provider: script
         script: bash scripts/deploy.sh
-        on:
-          branch: feat/QUID-27202-dropdown-string-overflow-truncation
