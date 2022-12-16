@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.11.0](https://github.com/quid/ui-framework/compare/v4.10.1...v4.11.0) (2022-12-16)
+
+
+### Bug Fixes
+
+* update snapshot ([c9967b9](https://github.com/quid/ui-framework/commit/c9967b9))
+
+
+### Features
+
+* dropdown option string truncation ([1f09b49](https://github.com/quid/ui-framework/commit/1f09b49))
+
+
+
+
+
 ## [4.10.1](https://github.com/quid/ui-framework/compare/v4.10.0...v4.10.1) (2022-09-23)
 
 
