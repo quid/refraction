@@ -29,7 +29,7 @@ const HighlightValue = styled(
     if (highlight && valueToHighlight.length && value.length) {
       const splittedText = splitStringByValue(value, valueToHighlight, 1);
       return (
-        <Value className={className}>
+        <Value id={`highlight-value-${value}`} className={className}>
           {splittedText.map((chunk, index) => {
             return chunk.highlight ? (
               <Text key={index} as="span" type="bold">
@@ -43,7 +43,11 @@ const HighlightValue = styled(
       );
     }
 
-    return <Value className={className}>{value}</Value>;
+    return (
+      <Value id={`highlight-value-${value}`} className={className}>
+        {value}
+      </Value>
+    );
   }
 )`
   ${props => textStyles(props.disabled ? 'disabled' : '')};
