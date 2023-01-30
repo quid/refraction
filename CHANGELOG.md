@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.11.1](https://github.com/quid/refraction/compare/v4.11.0...v4.11.1) (2023-01-30)
+
+
+### Bug Fixes
+
+* update unit test snapshot ([80042ba](https://github.com/quid/refraction/commit/80042ba))
+
+
+
+
+
 # [4.11.0](https://github.com/quid/refraction/compare/v4.10.1...v4.11.0) (2022-12-16)
 
 
