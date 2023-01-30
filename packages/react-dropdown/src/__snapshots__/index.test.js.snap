@@ -230,9 +230,11 @@ exports[`renders an open dropdown 1`] = `
                         >
                           <Value
                             className="emotion-3 emotion-0"
+                            id="highlight-value-One"
                           >
                             <span
                               className="emotion-0 emotion-1 emotion-2"
+                              id="highlight-value-One"
                             >
                               One
                             </span>
@@ -270,9 +272,11 @@ exports[`renders an open dropdown 1`] = `
                         >
                           <Value
                             className="emotion-3 emotion-0"
+                            id="highlight-value-Two"
                           >
                             <span
                               className="emotion-0 emotion-1 emotion-2"
+                              id="highlight-value-Two"
                             >
                               Two
                             </span>
@@ -641,9 +645,11 @@ exports[`renders an open dropdown with categories 1`] = `
                                     >
                                       <Value
                                         className="emotion-7 emotion-4"
+                                        id="highlight-value-One"
                                       >
                                         <span
                                           className="emotion-4 emotion-5 emotion-6"
+                                          id="highlight-value-One"
                                         >
                                           One
                                         </span>
@@ -683,9 +689,11 @@ exports[`renders an open dropdown with categories 1`] = `
                                     >
                                       <Value
                                         className="emotion-7 emotion-4"
+                                        id="highlight-value-Two"
                                       >
                                         <span
                                           className="emotion-4 emotion-5 emotion-6"
+                                          id="highlight-value-Two"
                                         >
                                           Two
                                         </span>
@@ -794,9 +802,11 @@ exports[`renders an open dropdown with categories 1`] = `
                                     >
                                       <Value
                                         className="emotion-7 emotion-4"
+                                        id="highlight-value-Three"
                                       >
                                         <span
                                           className="emotion-4 emotion-5 emotion-6"
+                                          id="highlight-value-Three"
                                         >
                                           Three
                                         </span>
@@ -836,9 +846,11 @@ exports[`renders an open dropdown with categories 1`] = `
                                     >
                                       <Value
                                         className="emotion-7 emotion-4"
+                                        id="highlight-value-Four"
                                       >
                                         <span
                                           className="emotion-4 emotion-5 emotion-6"
+                                          id="highlight-value-Four"
                                         >
                                           Four
                                         </span>
@@ -1222,9 +1234,11 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                       >
                                         <Value
                                           className="emotion-7 emotion-4"
+                                          id="highlight-value-One"
                                         >
                                           <span
                                             className="emotion-4 emotion-5 emotion-6"
+                                            id="highlight-value-One"
                                           >
                                             One
                                           </span>
@@ -1264,9 +1278,11 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                       >
                                         <Value
                                           className="emotion-7 emotion-4"
+                                          id="highlight-value-Two"
                                         >
                                           <span
                                             className="emotion-4 emotion-5 emotion-6"
+                                            id="highlight-value-Two"
                                           >
                                             Two
                                           </span>
@@ -1375,9 +1391,11 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                       >
                                         <Value
                                           className="emotion-7 emotion-4"
+                                          id="highlight-value-Three"
                                         >
                                           <span
                                             className="emotion-4 emotion-5 emotion-6"
+                                            id="highlight-value-Three"
                                           >
                                             Three
                                           </span>
@@ -1417,9 +1435,11 @@ exports[`renders an open dropdown with categories and twoColumn 1`] = `
                                       >
                                         <Value
                                           className="emotion-7 emotion-4"
+                                          id="highlight-value-Four"
                                         >
                                           <span
                                             className="emotion-4 emotion-5 emotion-6"
+                                            id="highlight-value-Four"
                                           >
                                             Four
                                           </span>
@@ -1617,9 +1637,11 @@ exports[`using arrow down should hover on element 1`] = `
       >
         <Value
           className="emotion-3 emotion-0"
+          id="highlight-value-One"
         >
           <span
             className="emotion-0 emotion-1 emotion-2"
+            id="highlight-value-One"
           >
             One
           </span>
@@ -1659,9 +1681,11 @@ exports[`using arrow down should hover on element 1`] = `
       >
         <Value
           className="emotion-3 emotion-0"
+          id="highlight-value-Two"
         >
           <span
             className="emotion-0 emotion-1 emotion-2"
+            id="highlight-value-Two"
           >
             Two
           </span>
@@ -1982,9 +2006,11 @@ exports[`using useFilter should only return items that match the input value 1`]
                         >
                           <Value
                             className="emotion-5 emotion-2"
+                            id="highlight-value-Four"
                           >
                             <span
                               className="emotion-2 emotion-3 emotion-4"
+                              id="highlight-value-Four"
                             >
                               <Text
                                 as="span"
@@ -2034,9 +2060,11 @@ exports[`using useFilter should only return items that match the input value 1`]
                         >
                           <Value
                             className="emotion-5 emotion-2"
+                            id="highlight-value-Five"
                           >
                             <span
                               className="emotion-2 emotion-3 emotion-4"
+                              id="highlight-value-Five"
                             >
                               <Text
                                 as="span"
