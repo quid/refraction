@@ -10,6 +10,8 @@ import * as components from '.';
 it('exports the expected number of components', () => {
   expect(Object.keys(components)).toMatchInlineSnapshot(`
     Array [
+      "Button",
+      "INPUT_ATTRIBUTES",
       "InputCheckbox",
       "InputColor",
       "InputDate",
@@ -23,8 +25,6 @@ it('exports the expected number of components', () => {
       "InvalidHandler",
       "Label",
       "TextArea",
-      "Button",
-      "INPUT_ATTRIBUTES",
     ]
   `);
 });

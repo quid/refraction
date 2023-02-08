@@ -10,11 +10,11 @@ import * as components from '.';
 it('exports the expected named exports', () => {
   expect(Object.keys(components)).toMatchInlineSnapshot(`
 Array [
-  "Footer",
   "Breadcrumb",
+  "Footer",
+  "Modal",
   "NavBar",
   "Tabs",
-  "Modal",
 ]
 `);
 });
