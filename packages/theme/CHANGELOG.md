@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.11.4](https://github.com/quid/refraction/compare/v4.11.1...v4.11.4) (2023-02-08)
+
+
+### Bug Fixes
+
+* sorting issue on FireFox ([8c2740a](https://github.com/quid/refraction/commit/8c2740a))
+
+
+
+
+
 # [4.10.0](https://github.com/quid/refraction/compare/v4.9.0...v4.10.0) (2022-09-21)
 
 
