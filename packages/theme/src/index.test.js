@@ -14,12 +14,12 @@ import { ThemeProvider as QuidThemeProvider } from './index';
 it('exports all the expected modules', () => {
   expect(Object.keys(exps)).toMatchInlineSnapshot(`
 Array [
+  "ThemeProvider",
   "colors",
   "sizes",
   "textStyles",
-  "withFallback",
-  "ThemeProvider",
   "themes",
+  "withFallback",
 ]
 `);
 });

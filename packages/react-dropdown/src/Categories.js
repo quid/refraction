@@ -164,7 +164,19 @@ export default function DropdownCategories({
 
   // Add index to our items
   const itemsWithIndex = sortedItems
-    .sort((a, b) => (String(a.categoryId) < String(b.categoryId) ? -1 : 1))
+    .sort((a, b) => {
+      const strA = String(a.categoryId);
+      const strB = String(b.categoryId);
+      if (strA < strB) {
+        return -1;
+      }
+      else if (strA === strB) {
+        return 0;
+      }
+      else {
+        return 1;
+      }
+    })
     .map((item, index) => ({ ...item, index }));
 
   // put the items inside their categories
