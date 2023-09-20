@@ -50,7 +50,7 @@ export const HIGHLIGHTED = (props: { theme: Object }) =>
     : props.theme.colors.gray5;
 
 export const SELECTED = (props: { theme: Object }) =>
-  Color(props.theme.colors.teal400)
+  Color(props.theme.colors.teal400 || '#72C3C6')
     .alpha(props.theme.current === 'light' ? 0.3 : 0.15)
     .string();
 
@@ -69,16 +69,6 @@ export const Item = styled.li`
       : props.isSelected
       ? SELECTED(props)
       : 'transparent'
-  )};
-  ${wf(
-    props =>
-      ((props.isHighlighted && props.theme.current === 'light') ||
-        props.isSelected) &&
-      css`
-        color: ${props.theme.current === 'light'
-          ? props.theme.primary
-          : props.theme.primaryInverse};
-      `
   )};
 
   ${wf(

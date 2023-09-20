@@ -1584,8 +1584,7 @@ exports[`using arrow down should hover on element 1`] = `
   flex-direction: row;
   cursor: pointer;
   padding: 5px;
-  background-color: rgba(30,215,209,0.2);
-  color: #2E3338;
+  background-color: rgba(114,195,198,0.3);
 }
 
 .emotion-5 {
@@ -1599,7 +1598,6 @@ exports[`using arrow down should hover on element 1`] = `
   cursor: pointer;
   padding: 5px;
   background-color: #E3E6E8;
-  color: #2E3338;
 }
 
 <ul
