@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.11.5](https://github.com/quid/refraction/compare/v4.11.4...v4.11.5) (2023-09-21)
+
+
+### Bug Fixes
+
+* rebrand | please update the outliers button and selected state color ([b67cf2b](https://github.com/quid/refraction/commit/b67cf2b))
+* rebrand | please update the outliers button and selected state color ([7850fa9](https://github.com/quid/refraction/commit/7850fa9))
+
+
+
+
+
 ## [4.11.4](https://github.com/quid/refraction/compare/v4.11.1...v4.11.4) (2023-02-08)
 
 
