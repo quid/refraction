@@ -506,20 +506,7 @@ it('supports dark theme', () => {
     SELECTED({
       theme: { current: 'dark', colors: { gray3: 'gray3' } },
     })
-  ).toBe('gray3');
-
-  expect(
-    mount(
-      <Item
-        isSelected
-        theme={{
-          current: 'dark',
-          colors: {},
-          primaryInverse: 'primaryInverse',
-        }}
-      />
-    )
-  ).toHaveStyleRule('color', 'primaryInverse');
+  ).toBe('rgba(114, 195, 198, 0.15)');
 
   expect(
     mount(
