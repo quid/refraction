@@ -1,0 +1,79 @@
+name: ci
+
+on:
+  push:
+    branches:
+    - '**'
+    tags:
+    - '**'
+  workflow_dispatch:
+
+jobs:
+  cancel:
+    runs-on: public-runner
+    steps:
+    - name: Cancel Previous Runs
+      uses: styfle/cancel-workflow-action@0.9.1
+      with:
+        all_but_latest: true
+
+  test-and-deploy:
+    runs-on: public-runner
+    steps:
+    - name: Checkout Master
+      uses: actions/checkout@v4
+      if: ${{ github.ref == 'refs/heads/master' }}
+      with:
+        fetch-depth: 50
+
+    - name: Checkout Non-Master
+      uses: actions/checkout@v4
+      if: ${{ github.ref != 'refs/heads/master' }}
+
+    - name: Install Yarn
+      run: |
+        curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.17.3
+        echo "$HOME/.yarn/bin" >> $GITHUB_PATH
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 11.10.1
+
+    - name: Install Dependencies
+      run: |
+        yarn --frozen-lockfile
+        npm install -g flow-bin@0.100.0
+        npm install -g react-app-rewired@^2.1.1
+        npm install -g react-scripts@^3.0.1
+
+    - name: Type Checks and Unit Tests
+      run: |
+        flow check
+        react-app-rewired test --coverage --colors
+
+    - name: Build
+      if: ${{ github.ref == 'refs/heads/master' || contains(github.event.head_commit.message, 'test-publish') }}
+      run: yarn build
+
+    - name: Publish gh-pages
+      if: ${{ github.ref == 'refs/heads/master' || contains(github.event.head_commit.message, 'test-publish') }}
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./styleguide
+        keep_files: true
+        user_name: 'quid-bot'
+        user_email: 'infratructure@quid.com'
+        cname: ui.quid.com
+
+    - name: Publish to npm
+      if: ${{ github.ref == 'refs/heads/master' || contains(github.event.head_commit.message, 'test-publish') }}
+      run: |
+        export GITHUB_NAME=quid-bot
+        export GITHUB_EMAIL=infratructure@quid.com
+        export AUTOMATED_WRITE_AUTH=${{ secrets.AUTOMATED_WRITE_AUTH }}
+        scripts/deploy.sh
+
+    - name: Setup tmate session
+      if: ${{ failure() }}
+      uses: mxschmitt/action-tmate@v3
