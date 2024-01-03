@@ -93,7 +93,6 @@ export default function DropdownItems({
   categoryId,
   highlight,
   multiselect,
-  ...props
 }: Props) {
   return (
     <Items>
