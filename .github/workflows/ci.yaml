@@ -73,6 +73,6 @@ jobs:
       run: |
         export GITHUB_NAME=quid-bot
         export GITHUB_EMAIL=infratructure@quid.com
-        export GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+        export GITHUB_TOKEN=${{ secrets.PAT }}
         export AUTOMATED_WRITE_AUTH=${{ secrets.AUTOMATED_WRITE_AUTH }}
         scripts/deploy.sh
