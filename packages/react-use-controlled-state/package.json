@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-use-controlled-state",
-  "version": "4.11.6",
+  "version": "4.11.7",
   "description": "React Hook to easily create fully controlled/uncontrolled React components.",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",

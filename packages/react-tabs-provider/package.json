@@ -1,6 +1,6 @@
 {
   "name": "@quid/react-tabs-provider",
-  "version": "4.11.6",
+  "version": "4.11.7",
   "description": "render-props based component to handle tab navigation",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
