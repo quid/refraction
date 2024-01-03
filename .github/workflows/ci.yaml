@@ -19,8 +19,6 @@ jobs:
 
   test-and-deploy:
     runs-on: public-runner
-    permissions:
-      contents: write
     steps:
     - name: Checkout Master
       uses: actions/checkout@v4
@@ -75,4 +73,4 @@ jobs:
         export GITHUB_EMAIL=infratructure@quid.com
         export GITHUB_TOKEN=${{ secrets.PAT }}
         export AUTOMATED_WRITE_AUTH=${{ secrets.AUTOMATED_WRITE_AUTH }}
-        scripts/deploy.sh
+        bash scripts/deploy.sh
