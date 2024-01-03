@@ -1,6 +1,6 @@
 {
   "name": "@quid/stylis-plugin-focus-visible",
-  "version": "4.0.0",
+  "version": "4.11.6",
   "description": "Polyfill for the CSS :focus-visible pseudo-class, to use with Emotion",
   "main": "dist/index.js",
   "main:umd": "dist/index.umd.js",
