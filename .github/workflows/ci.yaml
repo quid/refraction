@@ -52,11 +52,11 @@ jobs:
         react-app-rewired test --coverage --colors
 
     - name: Build
-      if: ${{ github.ref == 'refs/heads/master' || contains(github.event.head_commit.message, 'test-publish') }}
+      if: ${{ github.ref == 'refs/heads/master' }}
       run: yarn build
 
     - name: Publish gh-pages
-      if: ${{ github.ref == 'refs/heads/master' || contains(github.event.head_commit.message, 'test-publish') }}
+      if: ${{ github.ref == 'refs/heads/master' }}
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -67,13 +67,9 @@ jobs:
         cname: ui.quid.com
 
     - name: Publish to npm
-      if: ${{ github.ref == 'refs/heads/master' || contains(github.event.head_commit.message, 'test-publish') }}
+      if: ${{ github.ref == 'refs/heads/master' }}
       run: |
         export GITHUB_NAME=quid-bot
         export GITHUB_EMAIL=infratructure@quid.com
         export AUTOMATED_WRITE_AUTH=${{ secrets.AUTOMATED_WRITE_AUTH }}
         scripts/deploy.sh
-
-    - name: Setup tmate session
-      if: ${{ failure() }}
-      uses: mxschmitt/action-tmate@v3
