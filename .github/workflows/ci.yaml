@@ -19,6 +19,8 @@ jobs:
 
   test-and-deploy:
     runs-on: public-runner
+    permissions:
+      contents: write
     steps:
     - name: Checkout Master
       uses: actions/checkout@v4
