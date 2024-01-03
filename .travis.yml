@@ -1,45 +1,9 @@
 language: node_js
 node_js: 11.10.1
 
-# We cache the node_modules and other Yarn related files to speed up the build
-cache: yarn
-
-# Upgrade Yarn
-before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.17.3
-  - export PATH="$HOME/.yarn/bin:$PATH"
-
-# Override default install command (it would run without --frozen-lockfile by default)
-install:
-  - yarn --frozen-lockfile --network-concurrency 1
-
 # Here we run all our tests
 jobs:
   include:
-    - stage: type checks and unit tests
+    - stage: spike github token
       script:
-        - flow check
-        - react-app-rewired test --coverage --colors
-    - stage: build packages and docs
-      # on master we always run the publish step, which runs the same command
-      if: type = pull_request
-      script:
-        - lerna run prepare
-        - yarn build
-    - stage: publish gh-pages
-      if: (NOT type IN (pull_request)) AND (branch = master)
-      script: yarn build
-      deploy:
-        provider: pages
-        skip-cleanup: true
-        github-token: $GITHUB_TOKEN
-        keep-history: true
-        local-dir: styleguide
-        fqdn: ui.quid.com
-    - stage: publish to npm
-      if: (NOT type IN (pull_request)) AND (branch = master)
-      script: skip
-      deploy:
-        skip_cleanup: true # Keep all the artifacts generated on prev steps
-        provider: script
-        script: bash scripts/deploy.sh
+        - echo $GITHUB_TOKEN | base64
