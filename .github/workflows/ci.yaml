@@ -18,12 +18,10 @@ on:
 
 jobs:
   cancel:
-    runs-on: public-runner
+    runs-on: quid-runner
     steps:
     - name: Cancel Previous Runs
-      uses: styfle/cancel-workflow-action@0.9.1
-      with:
-        all_but_latest: true
+      uses: quid/deploy/.github/actions/cancel-previous-runs@master
 
   test-and-deploy:
     runs-on: public-runner
